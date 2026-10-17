@@ -1,0 +1,1390 @@
+[
+ {
+  "termo": "Parada de dados",
+  "linha": "vtm",
+  "def": "Quantidade de d10 rolados num teste, em geral Atributo + Habilidade.",
+  "pagina": 190
+ },
+ {
+  "termo": "Dificuldade",
+  "linha": "vtm",
+  "def": "Número de 2 a 10 que cada dado precisa igualar ou superar para contar sucesso; o padrão é 6.",
+  "pagina": 190
+ },
+ {
+  "termo": "Sucesso",
+  "linha": "vtm",
+  "def": "Dado com resultado igual ou maior que a dificuldade.",
+  "pagina": 190
+ },
+ {
+  "termo": "Falha crítica",
+  "linha": "vtm",
+  "def": "Teste sem nenhum sucesso e com pelo menos um 1; traz consequência ruim além do fracasso.",
+  "pagina": 191
+ },
+ {
+  "termo": "Sucesso automático",
+  "linha": "vtm",
+  "def": "Sucesso obtido sem rolar, gastando Força de Vontade ou por parada alta em tarefa rotineira.",
+  "pagina": 192
+ },
+ {
+  "termo": "Ação prolongada",
+  "linha": "vtm",
+  "def": "Tarefa em que se acumulam sucessos ao longo de vários testes até um total.",
+  "pagina": 193
+ },
+ {
+  "termo": "Ação resistida",
+  "linha": "vtm",
+  "def": "Teste em que os sucessos do oponente cancelam os seus.",
+  "pagina": 193
+ },
+ {
+  "termo": "Ato reflexo",
+  "linha": "vtm",
+  "def": "Coisa feita sem gastar a ação do turno, como absorver dano ou gastar sangue.",
+  "pagina": 190
+ },
+ {
+  "termo": "Especialização",
+  "linha": "vtm",
+  "def": "Área de destaque numa Característica de 4+; os 10 rolados nela são rolados de novo.",
+  "pagina": 110
+ },
+ {
+  "termo": "Turno",
+  "linha": "vtm",
+  "def": "Menor unidade de tempo do jogo, de alguns segundos a poucos minutos.",
+  "pagina": 189
+ },
+ {
+  "termo": "Cena",
+  "linha": "vtm",
+  "def": "Trecho contínuo de ação num mesmo lugar e momento.",
+  "pagina": 189
+ },
+ {
+  "termo": "Capítulo",
+  "linha": "vtm",
+  "def": "Parte de uma história, em geral uma sessão de jogo.",
+  "pagina": 189
+ },
+ {
+  "termo": "Crônica",
+  "linha": "vtm",
+  "def": "A série de histórias que forma a campanha do grupo.",
+  "pagina": 189
+ },
+ {
+  "termo": "Narrador",
+  "linha": "vtm",
+  "def": "Quem conduz o jogo, interpreta o mundo e os coadjuvantes e aplica as regras.",
+  "pagina": 20
+ },
+ {
+  "termo": "Pontos de bônus",
+  "linha": "vtm",
+  "def": "Pontos gastos no fim da criação para melhorar Características, com custos diferentes para cada tipo.",
+  "pagina": 104
+ },
+ {
+  "termo": "Natureza",
+  "linha": "vtm",
+  "def": "A personalidade verdadeira do personagem; define como recupera Força de Vontade.",
+  "pagina": 105
+ },
+ {
+  "termo": "Comportamento",
+  "linha": "vtm",
+  "def": "A personalidade que o personagem mostra aos outros; sem efeito em regras.",
+  "pagina": 105
+ },
+ {
+  "termo": "Força de Vontade",
+  "linha": "vtm",
+  "def": "Traço de 1 a 10 que mede determinação; seus pontos compram sucessos e resistem a impulsos.",
+  "pagina": 135
+ },
+ {
+  "termo": "Vitalidade",
+  "linha": "vtm",
+  "def": "Os níveis de saúde do personagem, de Escoriado a Incapacitado.",
+  "pagina": 216
+ },
+ {
+  "termo": "Absorção",
+  "linha": "vtm",
+  "def": "Teste de Vigor (e outros traços) para reduzir o dano recebido.",
+  "pagina": 211
+ },
+ {
+  "termo": "Dano agravado",
+  "linha": "vtm",
+  "def": "Dano de fogo, sol ou garras sobrenaturais, mais difícil de absorver e curar.",
+  "pagina": 210
+ },
+ {
+  "termo": "Dano letal",
+  "linha": "vtm",
+  "def": "Dano de lâminas e balas; mortais não o absorvem.",
+  "pagina": 210
+ },
+ {
+  "termo": "Dano por contusão",
+  "linha": "vtm",
+  "def": "Dano de impacto, como socos e porretes; o mais fácil de curar.",
+  "pagina": 210
+ },
+ {
+  "termo": "Experiência",
+  "linha": "vtm",
+  "def": "Pontos ganhos em jogo e gastos para melhorar o personagem.",
+  "pagina": 142
+ },
+ {
+  "termo": "Qualidade",
+  "linha": "vtm",
+  "def": "Vantagem opcional comprada com pontos de bônus na criação.",
+  "pagina": 295
+ },
+ {
+  "termo": "Defeito",
+  "linha": "vtm",
+  "def": "Desvantagem opcional que rende pontos de bônus extras.",
+  "pagina": 295
+ },
+ {
+  "termo": "Abraço",
+  "linha": "vtm",
+  "def": "O ato de drenar um mortal e devolver-lhe um pouco de sangue vampírico, tornando-o vampiro.",
+  "pagina": 59
+ },
+ {
+  "termo": "Anarquista",
+  "linha": "vtm",
+  "def": "Vampiro rebelde que se opõe ao domínio dos anciões e quer repartir o poder.",
+  "pagina": 59
+ },
+ {
+  "termo": "Ancião",
+  "linha": "vtm",
+  "def": "Vampiro com 300 anos ou mais, peça ativa da Jyhad.",
+  "pagina": 59
+ },
+ {
+  "termo": "Beijo",
+  "linha": "vtm",
+  "def": "Beber sangue, sobretudo de mortais; provoca êxtase na vítima.",
+  "pagina": 59
+ },
+ {
+  "termo": "Besta",
+  "linha": "vtm",
+  "def": "Os impulsos selvagens que ameaçam transformar o vampiro num monstro sem controle.",
+  "pagina": 59
+ },
+ {
+  "termo": "Caitiff",
+  "linha": "vtm",
+  "def": "Vampiro sem clã conhecido, em geral de geração alta e malvisto.",
+  "pagina": 59
+ },
+ {
+  "termo": "Camarilla",
+  "linha": "vtm",
+  "def": "A maior seita vampírica, dedicada às Tradições e à Máscara.",
+  "pagina": 59
+ },
+ {
+  "termo": "Carniçal",
+  "linha": "vtm",
+  "def": "Mortal que bebe vitae sem ser Abraçado e vira servo do vampiro.",
+  "pagina": 59
+ },
+ {
+  "termo": "Círculo",
+  "linha": "vtm",
+  "def": "Pequeno grupo de vampiros unidos por apoio mútuo ou interesse comum (coterie).",
+  "pagina": 59
+ },
+ {
+  "termo": "Clã",
+  "linha": "vtm",
+  "def": "Família de vampiros que herda as mesmas Disciplinas e fraquezas pelo sangue.",
+  "pagina": 59
+ },
+ {
+  "termo": "Criança da Noite",
+  "linha": "vtm",
+  "def": "Vampiro recém-criado; também usado como insulto a quem é inexperiente.",
+  "pagina": 59
+ },
+ {
+  "termo": "Diablerie",
+  "linha": "vtm",
+  "def": "Beber o sangue e a alma de outro vampiro até sua Morte Final.",
+  "pagina": 59
+ },
+ {
+  "termo": "Domínio",
+  "linha": "vtm",
+  "def": "Área de influência de um vampiro; o Príncipe reivindica a cidade inteira.",
+  "pagina": 59
+ },
+ {
+  "termo": "Elísio",
+  "linha": "vtm",
+  "def": "Lugar neutro, em geral cultural, onde vampiros se reúnem sem violência.",
+  "pagina": 59
+ },
+ {
+  "termo": "Filhote",
+  "linha": "vtm",
+  "def": "Vampiro recém-criado ainda sob a tutela do senhor.",
+  "pagina": 59
+ },
+ {
+  "termo": "Fome",
+  "linha": "vtm",
+  "def": "A necessidade de sangue, que acaba superando todas as outras vontades.",
+  "pagina": 59
+ },
+ {
+  "termo": "Fonte",
+  "linha": "vtm",
+  "def": "Quem fornece sangue ao vampiro, normalmente um humano.",
+  "pagina": 59
+ },
+ {
+  "termo": "Gehenna",
+  "linha": "vtm",
+  "def": "O fim profetizado em que os Antediluvianos despertarão para devorar sua prole.",
+  "pagina": 59
+ },
+ {
+  "termo": "Gênese",
+  "linha": "vtm",
+  "def": "O momento em que o filhote é reconhecido como vampiro pleno, com aval do senhor e do Príncipe.",
+  "pagina": 59
+ },
+ {
+  "termo": "Geração",
+  "linha": "vtm",
+  "def": "Quantos passos separam o vampiro de Caim; quanto menor, mais poder.",
+  "pagina": 59
+ },
+ {
+  "termo": "Homem",
+  "linha": "vtm",
+  "def": "A centelha de humanidade que o vampiro preserva contra a Besta.",
+  "pagina": 59
+ },
+ {
+  "termo": "Inconnu",
+  "linha": "vtm",
+  "def": "Seita de anciões que se afastaram da Jyhad e da sociedade vampírica.",
+  "pagina": 59
+ },
+ {
+  "termo": "Laço de sangue",
+  "linha": "vtm",
+  "def": "Vínculo de devoção criado quando alguém bebe três vezes do mesmo vampiro.",
+  "pagina": 59
+ },
+ {
+  "termo": "Jyhad",
+  "linha": "vtm",
+  "def": "A guerra oculta entre gerações, em que anciões manipulam os mais jovens.",
+  "pagina": 59
+ },
+ {
+  "termo": "Livro de Nod",
+  "linha": "vtm",
+  "def": "Coletânea fragmentada de lendas sobre a origem dos vampiros.",
+  "pagina": 59
+ },
+ {
+  "termo": "Lupino",
+  "linha": "vtm",
+  "def": "Lobisomem, inimigo natural dos vampiros.",
+  "pagina": 59
+ },
+ {
+  "termo": "Máscara",
+  "linha": "vtm",
+  "def": "A Tradição de esconder a existência dos vampiros da humanidade.",
+  "pagina": 59
+ },
+ {
+  "termo": "Membro",
+  "linha": "vtm",
+  "def": "Um vampiro, ou a raça vampírica; o Sabá despreza o termo.",
+  "pagina": 59
+ },
+ {
+  "termo": "Príncipe",
+  "linha": "vtm",
+  "def": "Vampiro que governa uma cidade; vale para qualquer gênero.",
+  "pagina": 59
+ },
+ {
+  "termo": "Refúgio",
+  "linha": "vtm",
+  "def": "Onde o vampiro dorme protegido do sol.",
+  "pagina": 59
+ },
+ {
+  "termo": "Regiões Ermas",
+  "linha": "vtm",
+  "def": "Partes da cidade sem vida: cemitérios, ruínas, fábricas abandonadas.",
+  "pagina": 60
+ },
+ {
+  "termo": "Sabá",
+  "linha": "vtm",
+  "def": "Seita que rejeita a humanidade e quer dominar os mortais em vez de se esconder.",
+  "pagina": 60
+ },
+ {
+  "termo": "Sangue",
+  "linha": "vtm",
+  "def": "A herança vampírica; aquilo que faz do vampiro o que ele é.",
+  "pagina": 60
+ },
+ {
+  "termo": "Seita",
+  "linha": "vtm",
+  "def": "Grupo de vampiros unido por uma filosofia, como Camarilla ou Sabá.",
+  "pagina": 60
+ },
+ {
+  "termo": "Senhor",
+  "linha": "vtm",
+  "def": "O vampiro que Abraçou outro; seu criador.",
+  "pagina": 60
+ },
+ {
+  "termo": "Viciado",
+  "linha": "vtm",
+  "def": "Vampiro que bebe de mortais drogados ou bêbados para sentir o efeito.",
+  "pagina": 60
+ },
+ {
+  "termo": "Vida",
+  "linha": "vtm",
+  "def": "Eufemismo pudico para sangue mortal.",
+  "pagina": 60
+ },
+ {
+  "termo": "Amarante",
+  "linha": "vtm",
+  "def": "Termo antigo para diablerie.",
+  "pagina": 60
+ },
+ {
+  "termo": "Ancilla",
+  "linha": "vtm",
+  "def": "Vampiro já não neófito, mas ainda não ancião.",
+  "pagina": 60
+ },
+ {
+  "termo": "Antediluviano",
+  "linha": "vtm",
+  "def": "Um dos vampiros da Terceira Geração, fundadores dos clãs.",
+  "pagina": 60
+ },
+ {
+  "termo": "Arconte",
+  "linha": "vtm",
+  "def": "Agente a serviço de um Justicar, muitas vezes caçando fugitivos.",
+  "pagina": 60
+ },
+ {
+  "termo": "Autarca",
+  "linha": "vtm",
+  "def": "Vampiro que recusa a sociedade vampírica e a autoridade do Príncipe.",
+  "pagina": 60
+ },
+ {
+  "termo": "Burguês",
+  "linha": "vtm",
+  "def": "Quem caça em boates, bares e lugares de má fama.",
+  "pagina": 60
+ },
+ {
+  "termo": "Caçador de bruxas",
+  "linha": "vtm",
+  "def": "Mortal que caça e destrói vampiros.",
+  "pagina": 60
+ },
+ {
+  "termo": "Canaille",
+  "linha": "vtm",
+  "def": "O rebanho humano, sobretudo os mais ignorantes.",
+  "pagina": 60
+ },
+ {
+  "termo": "Cainita",
+  "linha": "vtm",
+  "def": "Vampiro, descendente de Caim.",
+  "pagina": 60
+ },
+ {
+  "termo": "Cauchemar",
+  "linha": "vtm",
+  "def": "Vampiro que só bebe de vítimas adormecidas.",
+  "pagina": 60
+ },
+ {
+  "termo": "Consanguíneo",
+  "linha": "vtm",
+  "def": "Quem pertence à mesma linhagem.",
+  "pagina": 60
+ },
+ {
+  "termo": "Cria",
+  "linha": "vtm",
+  "def": "Vampiro jovem, em especial a própria progênie; tom pejorativo.",
+  "pagina": 60
+ },
+ {
+  "termo": "Dominador",
+  "linha": "vtm",
+  "def": "Vampiro que alimenta e comanda carniçais.",
+  "pagina": 60
+ },
+ {
+  "termo": "Escravo",
+  "linha": "vtm",
+  "def": "Quem está preso a um laço de sangue.",
+  "pagina": 60
+ },
+ {
+  "termo": "Gente",
+  "linha": "vtm",
+  "def": "Humano, mortal.",
+  "pagina": 60
+ },
+ {
+  "termo": "Golconda",
+  "linha": "vtm",
+  "def": "Estado lendário de equilíbrio entre a Besta e a consciência.",
+  "pagina": 60
+ },
+ {
+  "termo": "Humanitas",
+  "linha": "vtm",
+  "def": "O grau de humanidade que um vampiro mantém.",
+  "pagina": 60
+ },
+ {
+  "termo": "Lacaio",
+  "linha": "vtm",
+  "def": "Humano a serviço de um vampiro; termo quase arcaico.",
+  "pagina": 60
+ },
+ {
+  "termo": "Lextalionis",
+  "linha": "vtm",
+  "def": "Código de punição da sociedade vampírica, do tipo olho por olho.",
+  "pagina": 60
+ },
+ {
+  "termo": "Linhagem",
+  "linha": "vtm",
+  "def": "A ascendência do vampiro: senhor, senhor do senhor e assim por diante.",
+  "pagina": 60
+ },
+ {
+  "termo": "Matusalém",
+  "linha": "vtm",
+  "def": "Vampiro com mil anos ou mais, de quarta ou quinta geração, que vive oculto.",
+  "pagina": 60
+ },
+ {
+  "termo": "Neófito",
+  "linha": "vtm",
+  "def": "Vampiro jovem, recém-criado.",
+  "pagina": 60
+ },
+ {
+  "termo": "Osíris",
+  "linha": "vtm",
+  "def": "Vampiro que reúne um culto de mortais ou carniçais para se alimentar.",
+  "pagina": 60
+ },
+ {
+  "termo": "Papillon",
+  "linha": "vtm",
+  "def": "A zona de boates, bordéis e cassinos, principal território de caça.",
+  "pagina": 60
+ },
+ {
+  "termo": "Praxis",
+  "linha": "vtm",
+  "def": "O direito do Príncipe de governar e as leis que ele impõe.",
+  "pagina": 60
+ },
+ {
+  "termo": "Primigênie",
+  "linha": "vtm",
+  "def": "Conselho de anciões da cidade, em geral um por clã.",
+  "pagina": 60
+ },
+ {
+  "termo": "Progênie",
+  "linha": "vtm",
+  "def": "Todos os vampiros criados por um mesmo senhor.",
+  "pagina": 60
+ },
+ {
+  "termo": "Rebanho",
+  "linha": "vtm",
+  "def": "Os mortais em geral, vistos como alimento; também o Antecedente de fontes seguras.",
+  "pagina": 60
+ },
+ {
+  "termo": "Regente",
+  "linha": "vtm",
+  "def": "Vampiro que mantém outro sob laço de sangue.",
+  "pagina": 60
+ },
+ {
+  "termo": "Sanguessuga",
+  "linha": "vtm",
+  "def": "Humano que bebe sangue de vampiro mas mantém a liberdade.",
+  "pagina": 60
+ },
+ {
+  "termo": "Sereia",
+  "linha": "vtm",
+  "def": "Vampira que seduz mortais e bebe pouco para não matá-los.",
+  "pagina": 60
+ },
+ {
+  "termo": "Suspiro",
+  "linha": "vtm",
+  "def": "A suposta experiência divina no fim da busca pela Golconda.",
+  "pagina": 60
+ },
+ {
+  "termo": "Terceiro Mortal",
+  "linha": "vtm",
+  "def": "Caim, o primeiro vampiro.",
+  "pagina": 60
+ },
+ {
+  "termo": "Vitae",
+  "linha": "vtm",
+  "def": "Sangue, sobretudo o sangue vampírico.",
+  "pagina": 60
+ },
+ {
+  "termo": "Curral",
+  "linha": "vtm",
+  "def": "Gíria para o território de caça da noite: bares, boates, bordéis.",
+  "pagina": 61
+ },
+ {
+  "termo": "Doador",
+  "linha": "vtm",
+  "def": "Gíria sarcástica para fonte de sangue.",
+  "pagina": 61
+ },
+ {
+  "termo": "Fazendeiro",
+  "linha": "vtm",
+  "def": "Vampiro que cria animais para se alimentar deles.",
+  "pagina": 61
+ },
+ {
+  "termo": "Vegetariano",
+  "linha": "vtm",
+  "def": "Gíria para quem só bebe sangue de animais.",
+  "pagina": 61
+ },
+ {
+  "termo": "Lambedor",
+  "linha": "vtm",
+  "def": "Gíria para vampiro.",
+  "pagina": 61
+ },
+ {
+  "termo": "Mão Negra",
+  "linha": "vtm",
+  "def": "Apelido do Sabá entre os jovens.",
+  "pagina": 61
+ },
+ {
+  "termo": "Casanova",
+  "linha": "vtm",
+  "def": "Vampiro que seduz para beber e apaga a memória das vítimas.",
+  "pagina": 61
+ },
+ {
+  "termo": "Tiazinha",
+  "linha": "vtm",
+  "def": "Versão feminina do Casanova.",
+  "pagina": 61
+ },
+ {
+  "termo": "Vira-latas",
+  "linha": "vtm",
+  "def": "Vampiro sem refúgio fixo, que dorme cada dia num lugar.",
+  "pagina": 61
+ },
+ {
+  "termo": "Suco",
+  "linha": "vtm",
+  "def": "Gíria pejorativa para humanos vistos só como comida.",
+  "pagina": 61
+ },
+ {
+  "termo": "Ladrão de banco",
+  "linha": "vtm",
+  "def": "Quem rouba sangue de hospitais e bancos de sangue.",
+  "pagina": 61
+ },
+ {
+  "termo": "Boneco de sangue",
+  "linha": "vtm",
+  "def": "Mortal que se oferece de propósito para ser mordido.",
+  "pagina": 61
+ },
+ {
+  "termo": "Caçador de cabeças",
+  "linha": "vtm",
+  "def": "Vampiro que caça outros vampiros para beber deles.",
+  "pagina": 61
+ },
+ {
+  "termo": "João Pestana",
+  "linha": "vtm",
+  "def": "Gíria para quem bebe de pessoas dormindo.",
+  "pagina": 61
+ },
+ {
+  "termo": "Portador",
+  "linha": "vtm",
+  "def": "Vampiro que contraiu uma doença e a espalha a cada vítima.",
+  "pagina": 61
+ },
+ {
+  "termo": "Vadio",
+  "linha": "vtm",
+  "def": "Quem se alimenta de mendigos e moradores de rua.",
+  "pagina": 61
+ },
+ {
+  "termo": "Justicar",
+  "linha": "vtm",
+  "def": "Juiz supremo da Camarilla, acima dos príncipes.",
+  "pagina": 42
+ },
+ {
+  "termo": "Bando",
+  "linha": "vtm",
+  "def": "Grupo de combate do Sabá, equivalente ao círculo.",
+  "pagina": 43
+ },
+ {
+  "termo": "Antitribu",
+  "linha": "vtm",
+  "def": "Membros de um clã que seguem a seita oposta à do clã.",
+  "pagina": 62
+ },
+ {
+  "termo": "Trilha",
+  "linha": "vtm",
+  "def": "Código moral inumano que substitui a Humanidade.",
+  "pagina": 286
+ },
+ {
+  "termo": "Rötschreck",
+  "linha": "vtm",
+  "def": "O medo vermelho: pânico do vampiro diante de fogo ou sol.",
+  "pagina": 229
+ },
+ {
+  "termo": "Frenesi",
+  "linha": "vtm",
+  "def": "Momento em que a Besta toma o controle por fome ou raiva.",
+  "pagina": 228
+ },
+ {
+  "termo": "Torpor",
+  "linha": "vtm",
+  "def": "Sono semelhante à morte em que o vampiro cai quando gravemente ferido ou sem sangue.",
+  "pagina": 218
+ },
+ {
+  "termo": "Morte Final",
+  "linha": "vtm",
+  "def": "A destruição definitiva de um vampiro.",
+  "pagina": 218
+ },
+ {
+  "termo": "Disciplina",
+  "linha": "vtm",
+  "def": "Poder sobrenatural despertado pelo sangue vampírico.",
+  "pagina": 144
+ },
+ {
+  "termo": "Fé Verdadeira",
+  "linha": "vtm",
+  "def": "Ligação real com o divino que permite a um mortal repelir vampiros.",
+  "pagina": 229
+ },
+ {
+  "termo": "Caminho",
+  "linha": "vdta",
+  "def": "Código moral medieval (Estrada ou Via) que define as Virtudes do vampiro.",
+  "pagina": 113
+ },
+ {
+  "termo": "Via",
+  "linha": "vdta",
+  "def": "Nome latino de um Caminho, como Via Humanitatis ou Via Bestiae.",
+  "pagina": 113
+ },
+ {
+  "termo": "Voto de Sangue",
+  "linha": "vdta",
+  "def": "Nome medieval do laço de sangue.",
+  "pagina": 205
+ },
+ {
+  "termo": "Frangote",
+  "linha": "vdta",
+  "def": "Vampiro muito jovem e ingênuo.",
+  "pagina": 27
+ },
+ {
+  "termo": "Silêncio do Sangue",
+  "linha": "vdta",
+  "def": "A Tradição medieval equivalente à Máscara.",
+  "pagina": 38
+ },
+ {
+  "termo": "Furiosos",
+  "linha": "vdta",
+  "def": "Movimento de jovens vampiros contra os anciões em 1197.",
+  "pagina": 40
+ },
+ {
+  "termo": "Prometeanos",
+  "linha": "vdta",
+  "def": "Seita que sonha em refundar uma cidade onde vampiros e mortais convivam, como Cartago.",
+  "pagina": 41
+ },
+ {
+  "termo": "Ordem das Cinzas Amargas",
+  "linha": "vdta",
+  "def": "Ordem cavaleiresca de vampiros na Idade das Trevas.",
+  "pagina": 41
+ },
+ {
+  "termo": "Manus Nigrum",
+  "linha": "vdta",
+  "def": "A Mão Negra, sociedade secreta e antiga de vampiros.",
+  "pagina": 41
+ },
+ {
+  "termo": "Heresia Cainita",
+  "linha": "vdta",
+  "def": "Igreja secreta que venera Caim e enxerga os vampiros como escolhidos.",
+  "pagina": 47
+ },
+ {
+  "termo": "Capadócios",
+  "linha": "vdta",
+  "def": "Clã medieval de estudiosos da morte, antecessores dos Giovanni.",
+  "pagina": 56
+ },
+ {
+  "termo": "Mortis",
+  "linha": "vdta",
+  "def": "Disciplina dos Capadócios sobre a morte e a decadência.",
+  "pagina": 160
+ },
+ {
+  "termo": "Baali",
+  "linha": "vdta",
+  "def": "Linhagem infernal de vampiros adoradores de demônios, só para o Narrador.",
+  "pagina": 242
+ },
+ {
+  "termo": "Senescalia",
+  "linha": "vdta",
+  "def": "Conhecimento de administrar terras, casas e abadias.",
+  "pagina": 127
+ },
+ {
+  "termo": "Instrução",
+  "linha": "vdta",
+  "def": "Conhecimento de leitura, escrita, latim e noções de teologia e filosofia.",
+  "pagina": 125
+ },
+ {
+  "termo": "Sabedoria Popular",
+  "linha": "vdta",
+  "def": "Conhecimento do folclore, costumes e superstições do povo.",
+  "pagina": 125
+ },
+ {
+  "termo": "Rego Vitae",
+  "linha": "vdta",
+  "def": "Trilha taumatúrgica medieval do domínio sobre o sangue.",
+  "pagina": 166
+ },
+ {
+  "termo": "Alamut",
+  "linha": "vdta",
+  "def": "O Ninho da Águia, fortaleza dos Assamitas.",
+  "pagina": 54
+ },
+ {
+  "termo": "Ancillae",
+  "linha": "vdta",
+  "def": "Plural de ancilla: vampiros de meia-idade.",
+  "pagina": 36
+ },
+ {
+  "termo": "Garou",
+  "linha": "lob",
+  "def": "Lobisomem; o nome que a raça usa para si.",
+  "pagina": 53
+ },
+ {
+  "termo": "Gaia",
+  "linha": "lob",
+  "def": "A Mãe Terra, a quem os Garou servem.",
+  "pagina": 53
+ },
+ {
+  "termo": "Wyrm",
+  "linha": "lob",
+  "def": "Força cósmica de corrupção e destruição, a grande inimiga dos Garou.",
+  "pagina": 53
+ },
+ {
+  "termo": "Weaver",
+  "linha": "lob",
+  "def": "Força cósmica da ordem e do padrão, que hoje sufoca o mundo em concreto.",
+  "pagina": 53
+ },
+ {
+  "termo": "Wyld",
+  "linha": "lob",
+  "def": "Força cósmica do caos criativo e da mudança pura.",
+  "pagina": 53
+ },
+ {
+  "termo": "Tríade",
+  "linha": "lob",
+  "def": "As três forças: Wyld, Weaver e Wyrm.",
+  "pagina": 34
+ },
+ {
+  "termo": "Umbra",
+  "linha": "lob",
+  "def": "O mundo espiritual que existe ao lado do físico.",
+  "pagina": 53
+ },
+ {
+  "termo": "Película",
+  "linha": "lob",
+  "def": "A barreira entre o mundo físico e a Umbra (Gauntlet).",
+  "pagina": 225
+ },
+ {
+  "termo": "Penumbra",
+  "linha": "lob",
+  "def": "A camada da Umbra mais próxima do mundo físico, seu reflexo espiritual.",
+  "pagina": 220
+ },
+ {
+  "termo": "Percorrer atalhos",
+  "linha": "lob",
+  "def": "Atravessar a Película para entrar ou sair da Umbra.",
+  "pagina": 227
+ },
+ {
+  "termo": "Caern",
+  "linha": "lob",
+  "def": "Lugar sagrado onde o mundo espiritual é forte, guardado pelos Garou.",
+  "pagina": 53
+ },
+ {
+  "termo": "Seita (Garou)",
+  "linha": "lob",
+  "def": "O grupo de matilhas que protege um caern.",
+  "pagina": 41
+ },
+ {
+  "termo": "Matilha",
+  "linha": "lob",
+  "def": "Grupo de Garou unidos por um totem, como os personagens.",
+  "pagina": 41
+ },
+ {
+  "termo": "Alfa",
+  "linha": "lob",
+  "def": "O líder de uma matilha.",
+  "pagina": 41
+ },
+ {
+  "termo": "Totem",
+  "linha": "lob",
+  "def": "Espírito patrono de uma matilha ou tribo.",
+  "pagina": 42
+ },
+ {
+  "termo": "Parente",
+  "linha": "lob",
+  "def": "Humano ou lobo com sangue Garou que não se transforma; imune ao Delírio.",
+  "pagina": 53
+ },
+ {
+  "termo": "Filhote",
+  "linha": "lob",
+  "def": "Jovem Garou que ainda não passou pelo Ritual de Passagem.",
+  "pagina": 30
+ },
+ {
+  "termo": "Primeira Mudança",
+  "linha": "lob",
+  "def": "A primeira transformação, quando o Garou descobre sua natureza.",
+  "pagina": 30
+ },
+ {
+  "termo": "Cliath",
+  "linha": "lob",
+  "def": "Garou de Posto 1, recém-iniciado.",
+  "pagina": 185
+ },
+ {
+  "termo": "Fostern",
+  "linha": "lob",
+  "def": "Garou de Posto 2.",
+  "pagina": 185
+ },
+ {
+  "termo": "Adren",
+  "linha": "lob",
+  "def": "Garou de Posto 3.",
+  "pagina": 185
+ },
+ {
+  "termo": "Athro",
+  "linha": "lob",
+  "def": "Garou de Posto 4.",
+  "pagina": 185
+ },
+ {
+  "termo": "Ancião (Garou)",
+  "linha": "lob",
+  "def": "Garou de Posto 5, líder respeitado.",
+  "pagina": 185
+ },
+ {
+  "termo": "Augúrio",
+  "linha": "lob",
+  "def": "A fase da lua sob a qual o Garou nasceu e que define seu papel.",
+  "pagina": 62
+ },
+ {
+  "termo": "Ragabash",
+  "linha": "lob",
+  "def": "Garou da lua nova, o trapaceiro que questiona as tradições.",
+  "pagina": 63
+ },
+ {
+  "termo": "Theurge",
+  "linha": "lob",
+  "def": "Garou da lua crescente, o vidente que lida com espíritos.",
+  "pagina": 64
+ },
+ {
+  "termo": "Philodox",
+  "linha": "lob",
+  "def": "Garou da meia-lua, juiz e guardião da Litania.",
+  "pagina": 65
+ },
+ {
+  "termo": "Galliard",
+  "linha": "lob",
+  "def": "Garou da lua gibosa, contador de histórias e guardião do saber.",
+  "pagina": 66
+ },
+ {
+  "termo": "Ahroun",
+  "linha": "lob",
+  "def": "Garou da lua cheia, o guerreiro.",
+  "pagina": 67
+ },
+ {
+  "termo": "Hominídeo",
+  "linha": "lob",
+  "def": "Garou nascido de mãe humana; também a forma humana.",
+  "pagina": 59
+ },
+ {
+  "termo": "Impuro",
+  "linha": "lob",
+  "def": "Garou filho de dois Garou; estéril e deformado (metis).",
+  "pagina": 59
+ },
+ {
+  "termo": "Lupino (Garou)",
+  "linha": "lob",
+  "def": "Garou nascido lobo; também a forma de lobo.",
+  "pagina": 61
+ },
+ {
+  "termo": "Glabro",
+  "linha": "lob",
+  "def": "Forma quase humana, grande e peluda.",
+  "pagina": 203
+ },
+ {
+  "termo": "Crinos",
+  "linha": "lob",
+  "def": "A forma de guerra, meio lobo meio homem, que provoca o Delírio.",
+  "pagina": 203
+ },
+ {
+  "termo": "Hispo",
+  "linha": "lob",
+  "def": "Forma de lobo gigante, quase pré-histórico.",
+  "pagina": 203
+ },
+ {
+  "termo": "Fúria",
+  "linha": "lob",
+  "def": "A raiva interior do Garou; dá ações extras e leva ao frenesi.",
+  "pagina": 125
+ },
+ {
+  "termo": "Gnose",
+  "linha": "lob",
+  "def": "A ligação espiritual do Garou com Gaia.",
+  "pagina": 127
+ },
+ {
+  "termo": "Renome",
+  "linha": "lob",
+  "def": "A reputação entre os Garou, em Glória, Honra e Sabedoria.",
+  "pagina": 124
+ },
+ {
+  "termo": "Posto",
+  "linha": "lob",
+  "def": "A posição hierárquica do Garou, de Cliath a Ancião.",
+  "pagina": 125
+ },
+ {
+  "termo": "Delírio",
+  "linha": "lob",
+  "def": "O terror que leva humanos a esquecer ou racionalizar a visão de um Crinos.",
+  "pagina": 192
+ },
+ {
+  "termo": "Véu",
+  "linha": "lob",
+  "def": "O segredo da existência dos Garou, protegido pelo Delírio e pela Litania.",
+  "pagina": 40
+ },
+ {
+  "termo": "Litania",
+  "linha": "lob",
+  "def": "O código de leis da Nação Garou.",
+  "pagina": 37
+ },
+ {
+  "termo": "Impergium",
+  "linha": "lob",
+  "def": "Época antiga em que os Garou controlavam a população humana pela força.",
+  "pagina": 28
+ },
+ {
+  "termo": "Dom",
+  "linha": "lob",
+  "def": "Poder ensinado por um espírito.",
+  "pagina": 132
+ },
+ {
+  "termo": "Fetiche",
+  "linha": "lob",
+  "def": "Objeto que aprisiona um espírito e tem poderes.",
+  "pagina": 240
+ },
+ {
+  "termo": "Amuleto",
+  "linha": "lob",
+  "def": "Item espiritual de uso único (talen).",
+  "pagina": 241
+ },
+ {
+  "termo": "Klaive",
+  "linha": "lob",
+  "def": "Faca ou espada ritual de prata, em geral um fetiche.",
+  "pagina": 302
+ },
+ {
+  "termo": "Fomor",
+  "linha": "lob",
+  "def": "Humano ou animal possuído por um espírito da Wyrm (plural: fomori).",
+  "pagina": 275
+ },
+ {
+  "termo": "Malditos",
+  "linha": "lob",
+  "def": "Espíritos da Wyrm.",
+  "pagina": 283
+ },
+ {
+  "termo": "Dançarinos da Espiral Negra",
+  "linha": "lob",
+  "def": "Tribo Garou caída para a Wyrm.",
+  "pagina": 272
+ },
+ {
+  "termo": "Pentex",
+  "linha": "lob",
+  "def": "Conglomerado de empresas a serviço da Wyrm.",
+  "pagina": 50
+ },
+ {
+  "termo": "Ronin",
+  "linha": "lob",
+  "def": "Garou exilado ou sem tribo, que vive sozinho.",
+  "pagina": 161
+ },
+ {
+  "termo": "Gafflings",
+  "linha": "lob",
+  "def": "Espíritos menores, servos de espíritos mais poderosos.",
+  "pagina": 236
+ },
+ {
+  "termo": "Jagglings",
+  "linha": "lob",
+  "def": "Espíritos intermediários, servos dos Incarnae.",
+  "pagina": 236
+ },
+ {
+  "termo": "Incarna",
+  "linha": "lob",
+  "def": "Espírito poderoso, como os totens das tribos.",
+  "pagina": 236
+ },
+ {
+  "termo": "Celestino",
+  "linha": "lob",
+  "def": "Espírito imenso, como Luna e Hélios.",
+  "pagina": 236
+ },
+ {
+  "termo": "Luna",
+  "linha": "lob",
+  "def": "A lua como espírito, protetora dos Garou.",
+  "pagina": 236
+ },
+ {
+  "termo": "Lunos",
+  "linha": "lob",
+  "def": "Espíritos servos de Luna que guardam as trilhas da lua.",
+  "pagina": 299
+ },
+ {
+  "termo": "Ponte da lua",
+  "linha": "lob",
+  "def": "Caminho espiritual que liga dois caerns.",
+  "pagina": 226
+ },
+ {
+  "termo": "Essência",
+  "linha": "lob",
+  "def": "A soma de Fúria, Gnose e FV de um espírito, que funciona como sua vitalidade.",
+  "pagina": 236
+ },
+ {
+  "termo": "Modorra",
+  "linha": "lob",
+  "def": "Estado de sono de um espírito sem Essência.",
+  "pagina": 240
+ },
+ {
+  "termo": "Instinto Primitivo",
+  "linha": "lob",
+  "def": "Talento que mede a natureza animal e ajuda a mudar de forma.",
+  "pagina": 113
+ },
+ {
+  "termo": "Enigmas",
+  "linha": "lob",
+  "def": "Conhecimento de charadas, mistérios e lógica espiritual.",
+  "pagina": 117
+ },
+ {
+  "termo": "Assembleia",
+  "linha": "lob",
+  "def": "Reunião da seita, normalmente na lua cheia.",
+  "pagina": 44
+ },
+ {
+  "termo": "Cicatriz de Batalha",
+  "linha": "lob",
+  "def": "Marca permanente de um ferimento grave, que rende Glória.",
+  "pagina": 189
+ },
+ {
+  "termo": "Frenesi da raposa",
+  "linha": "lob",
+  "def": "Frenesi em que o Garou foge apavorado em vez de atacar.",
+  "pagina": 191
+ },
+ {
+  "termo": "Desligamento",
+  "linha": "lob",
+  "def": "Processo em que um Garou que passa tempo demais na Umbra vira espírito.",
+  "pagina": 230
+ },
+ {
+  "termo": "Engling",
+  "linha": "lob",
+  "def": "Espírito feito de pura Gnose, caçado na Caçada Sagrada.",
+  "pagina": 300
+ },
+ {
+  "termo": "Sentinelas dos Homens",
+  "linha": "lidt",
+  "def": "Tribo medieval que vive entre os humanos, antecessora dos Andarilhos do Asfalto.",
+  "pagina": 60
+ },
+ {
+  "termo": "Luperci",
+  "linha": "lidt",
+  "def": "Nome dos Sentinelas na Itália.",
+  "pagina": 60
+ },
+ {
+  "termo": "Vidas Passadas",
+  "linha": "lidt",
+  "def": "Antecedente medieval equivalente a Ancestrais.",
+  "pagina": 99
+ },
+ {
+  "termo": "Campo",
+  "linha": "lidt",
+  "def": "Subgrupo ou facção dentro de uma tribo.",
+  "pagina": 60
+ },
+ {
+  "termo": "Casa (Presas de Prata)",
+  "linha": "lidt",
+  "def": "Linhagem nobre dentro dos Presas de Prata, como a Casa da Lua Crescente.",
+  "pagina": 60
+ },
+ {
+  "termo": "Nobreza (Qualidade)",
+  "linha": "lidt",
+  "def": "Qualidade medieval que torna o Garou senhor de terras.",
+  "pagina": 100
+ },
+ {
+  "termo": "Crime (Talento)",
+  "linha": "lidt",
+  "def": "Talento de furtos, falsificações, venenos e fechaduras.",
+  "pagina": 98
+ },
+ {
+  "termo": "Caçador",
+  "linha": "cac",
+  "def": "Mortal que dedica a vida a encontrar e destruir sobrenaturais.",
+  "pagina": 6
+ },
+ {
+  "termo": "Motivo",
+  "linha": "cac",
+  "def": "A razão pela qual o caçador caça: vingança, dever, curiosidade etc.",
+  "pagina": 22
+ },
+ {
+  "termo": "Método",
+  "linha": "cac",
+  "def": "A forma como o caçador caça: científico, religioso, místico etc.",
+  "pagina": 23
+ },
+ {
+  "termo": "Residência",
+  "linha": "cac",
+  "def": "O lar ou esconderijo do caçador, no lugar do Refúgio do vampiro.",
+  "pagina": 60
+ },
+ {
+  "termo": "Númina",
+  "linha": "cac",
+  "def": "Poderes de um mortal: psíquicos, taumaturgia de caçador ou Fé.",
+  "pagina": 62
+ },
+ {
+  "termo": "Inquisição",
+  "linha": "cac",
+  "def": "Ordem católica de caça a vampiros e bruxas, a Sociedade de Leopoldo.",
+  "pagina": 48
+ },
+ {
+  "termo": "Arcano",
+  "linha": "cac",
+  "def": "Sociedade de eruditos que estuda o oculto, fundada em 1885.",
+  "pagina": 44
+ },
+ {
+  "termo": "Filhos de Osíris",
+  "linha": "cac",
+  "def": "Seita secreta de vampiros que busca a redenção e caça Setitas.",
+  "pagina": 50
+ },
+ {
+  "termo": "Bardo",
+  "linha": "cac",
+  "def": "Disciplina exclusiva dos Filhos de Osíris.",
+  "pagina": 53
+ },
+ {
+  "termo": "Young Bloods",
+  "linha": "cac",
+  "def": "Gangue de carniçais motoqueiros que caça vampiros para beber vitae.",
+  "pagina": 55
+ },
+ {
+  "termo": "Teurgia",
+  "linha": "cac",
+  "def": "Magia de superstição cristã usada pela Inquisição."
+ },
+ {
+  "termo": "Magia de Superstição",
+  "linha": "cac",
+  "def": "Classe de Numina em que a crença em superstições gera efeitos sutis."
+ },
+ {
+  "termo": "Fenômeno Psíquico",
+  "linha": "cac",
+  "def": "Classe de Numina de poderes da mente, como telecinese."
+ },
+ {
+  "termo": "Anti-Psi",
+  "linha": "cac",
+  "def": "Poder que cria uma nuvem de estática mental contra outros psíquicos."
+ },
+ {
+  "termo": "Sopro de Dragão",
+  "linha": "cac",
+  "def": "Cartucho de espingarda que dispara chamas.",
+  "pagina": 30
+ }
+]

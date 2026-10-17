@@ -1,0 +1,11 @@
+{
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/grimorio/browser",
+  "installCommand": "npm install",
+  "rewrites": [{ "source": "/((?!.*\.).*)", "destination": "/index.html" }],
+  "headers": [
+    { "source": "/ngsw-worker.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] },
+    { "source": "/ngsw.json", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }
+  ]
+}

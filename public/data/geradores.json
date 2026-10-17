@@ -1,0 +1,628 @@
+{
+ "moderno": {
+  "nome": {
+   "titulos": [
+    "Rafaela Quintão",
+    "Davi Albuquerque",
+    "Marisa Toledo",
+    "Caio Bittencourt",
+    "Lívia Aragão",
+    "Otávio Mendonça",
+    "Jéssica Rangel",
+    "Heitor Paranhos",
+    "Bianca Sobral",
+    "Wesley Cardim",
+    "Tainá Muniz",
+    "Rodrigo Vilaça",
+    "Nayara Lustosa",
+    "Gilberto Saldanha",
+    "Priscila Ventura",
+    "Luan Figueiredo"
+   ],
+   "a": {
+    "rotulo": "Apelido",
+    "opcoes": [
+     "Doutor",
+     "Ferrugem",
+     "Madrinha",
+     "Sombra",
+     "Vovô",
+     "Faísca",
+     "Catedral",
+     "Zé Ninguém",
+     "Gata",
+     "Patrão",
+     "Reverendo",
+     "Agulha",
+     "Neon",
+     "Cinzeiro"
+    ]
+   },
+   "b": {
+    "rotulo": "Origem",
+    "opcoes": [
+     "cresceu no Centro, filho de camelôs",
+     "veio do interior fugindo de uma dívida",
+     "ex-policial afastado por um caso nunca resolvido",
+     "herdeira de uma família de cartório",
+     "estudante de Medicina que largou o curso",
+     "músico de bar que tocava até de madrugada",
+     "motorista de aplicativo que conhece cada viela",
+     "ex-funcionária de um banco de sangue",
+     "veio de Recife atrás de um irmão desaparecido",
+     "criado em orfanato religioso",
+     "grafiteiro conhecido nos viadutos",
+     "segurança de boate há quinze anos"
+    ]
+   }
+  },
+  "refugio": {
+   "titulos": [
+    "Apartamento sobre uma lavanderia 24 horas",
+    "Porão de um sebo de livros",
+    "Cobertura de um prédio comercial vazio",
+    "Casa geminada em vila operária",
+    "Antigo cinema de rua fechado",
+    "Galpão no fundo de uma oficina mecânica",
+    "Quarto de hotel barato pago por mês",
+    "Cripta num cemitério municipal",
+    "Andar técnico de um hospital desativado",
+    "Sobrado colonial tombado no centro histórico",
+    "Container adaptado num ferro-velho",
+    "Bunker sob uma igreja evangélica",
+    "Kitnet atrás de uma academia"
+   ],
+   "a": {
+    "rotulo": "Segurança",
+    "opcoes": [
+     "janelas emparedadas e porta de aço",
+     "um carniçal leal dorme na entrada",
+     "câmeras ligadas a um celular velho",
+     "só se chega pelo telhado",
+     "ninguém sabe que o lugar existe",
+     "fechadura antiga, mas o bairro é tranquilo",
+     "saída de emergência pelo esgoto",
+     "cachorros soltos no pátio",
+     "protegido por um ritual que precisa ser renovado"
+    ]
+   },
+   "b": {
+    "rotulo": "Problema",
+    "opcoes": [
+     "o síndico anda curioso",
+     "infiltração deixa entrar luz no fim da tarde",
+     "a prefeitura marcou demolição",
+     "o vizinho é policial",
+     "um Nosferatu usa o porão como passagem",
+     "o dono antigo quer o imóvel de volta",
+     "um fantasma não aceita o novo morador",
+     "fica dentro do domínio de outro vampiro",
+     "a vigilância sanitária vai visitar",
+     "goteira bem em cima do caixão"
+    ]
+   }
+  },
+  "local": {
+   "titulos": [
+    "Boate subterrânea na Augusta",
+    "Viaduto ocupado por artistas de rua",
+    "Mercado municipal de madrugada",
+    "Hospital público em greve",
+    "Estação de metrô desativada",
+    "Shopping fechado após o expediente",
+    "Terreiro na periferia",
+    "Cobertura de festa de um empresário",
+    "Pátio de uma escola de samba",
+    "Parque com mata fechada",
+    "Delegacia de bairro",
+    "Rodoviária às três da manhã",
+    "Ocupação em prédio abandonado"
+   ],
+   "a": {
+    "rotulo": "Clima",
+    "opcoes": [
+     "chuva fina e neon refletido no asfalto",
+     "calor abafado e cheiro de fritura",
+     "silêncio estranho, sem cachorros latindo",
+     "música alta que abafa qualquer grito",
+     "blecaute no quarteirão inteiro",
+     "névoa vinda do rio",
+     "luz de sirene girando ao longe",
+     "festa no auge, todo mundo bêbado",
+     "sensação de estar sendo observado",
+     "frio fora de época"
+    ]
+   },
+   "b": {
+    "rotulo": "Quem está lá",
+    "opcoes": [
+     "uma Harpia colhendo fofocas",
+     "dois carniçais de um Ventrue",
+     "um repórter investigativo",
+     "uma matilha de Garou de passagem",
+     "policiais à paisana",
+     "um bando do Sabá testando limites",
+     "um padre que vê demais",
+     "crianças de rua que conhecem todos os atalhos",
+     "um Malkaviano falando sozinho",
+     "um caçador com uma mala pesada",
+     "ninguém — e isso é o mais preocupante"
+    ]
+   }
+  },
+  "cena": {
+   "titulos": [
+    "Uma fonte aparece morta com marcas de mordida",
+    "O Príncipe convoca todos ao Elísio",
+    "Um vídeo viraliza mostrando algo impossível",
+    "Um carniçal pede asilo",
+    "A energia da cidade cai por uma noite",
+    "Alguém roubou o estoque de um banco de sangue",
+    "Um caçador marca o refúgio de um dos personagens",
+    "Um ancião acorda do torpor",
+    "Uma Harpia espalha um boato sobre o grupo",
+    "Lobisomens reivindicam um parque",
+    "Um mortal querido descobre a verdade",
+    "Uma festa termina em frenesi",
+    "O Xerife pede ajuda num caso discreto"
+   ],
+   "a": {
+    "rotulo": "Conflito",
+    "opcoes": [
+     "duas facções querem a mesma coisa",
+     "o tempo corre até o amanhecer",
+     "a Máscara está por um fio",
+     "um aliado está mentindo",
+     "a polícia chega antes da hora",
+     "alguém do grupo está sob laço de sangue",
+     "é preciso escolher entre salvar um mortal e cumprir a ordem",
+     "a Besta está com fome",
+     "o inimigo tem Dominação",
+     "há testemunhas demais"
+    ]
+   },
+   "b": {
+    "rotulo": "Reviravolta",
+    "opcoes": [
+     "o culpado é o mandante",
+     "a vítima ainda está viva",
+     "tudo foi armado para ver como o grupo reage",
+     "o caçador é parente de um personagem",
+     "o objeto roubado é falso",
+     "há um diablerista na cidade",
+     "o Príncipe já sabia de tudo",
+     "um Nosferatu gravou a cena inteira",
+     "a pista leva ao refúgio de um aliado",
+     "o mortal tem Fé Verdadeira",
+     "a ordem veio de um ancião em torpor"
+    ]
+   }
+  },
+  "gancho": {
+   "titulos": [
+    "Encontrar uma cria fugitiva",
+    "Recuperar um diário com segredos da Primigênie",
+    "Proteger uma testemunha até o julgamento",
+    "Descobrir quem está matando moradores de rua",
+    "Entregar um pacote do outro lado da cidade sem abri-lo",
+    "Investigar um culto que cresce num bairro",
+    "Sabotar um empreendimento imobiliário",
+    "Resgatar um carniçal preso pela polícia",
+    "Negociar uma trégua com uma matilha",
+    "Sumir com as provas de uma quebra da Máscara",
+    "Seguir um ancião sem ser notado",
+    "Achar a origem de um sangue que vicia",
+    "Expulsar um caçador da cidade"
+   ],
+   "a": {
+    "rotulo": "Quem pede",
+    "opcoes": [
+     "o Xerife",
+     "uma Harpia endividada",
+     "o senhor de um personagem",
+     "um Nosferatu informante",
+     "uma mortal desesperada",
+     "um Tremere que não pode aparecer",
+     "o Barão anarquista",
+     "um padre que sabe de tudo",
+     "um Garou ferido",
+     "uma voz anônima ao telefone",
+     "o próprio Príncipe, em segredo"
+    ]
+   },
+   "b": {
+    "rotulo": "Recompensa",
+    "opcoes": [
+     "um favor do Príncipe",
+     "território de caça próprio",
+     "um ponto de Status",
+     "dinheiro limpo e farto",
+     "um segredo sobre um rival",
+     "acesso a um refúgio seguro",
+     "a dívida de um ancião",
+     "um carniçal treinado",
+     "a verdade sobre o próprio Abraço",
+     "um contato na polícia",
+     "proteção contra uma Caçada de Sangue"
+    ]
+   }
+  }
+ },
+ "medieval": {
+  "nome": {
+   "titulos": [
+    "Godofredo de Valmont",
+    "Isolda de Kerlouan",
+    "Ansgar Haraldsson",
+    "Beatriz de Huesca",
+    "Teodoro Kalamas",
+    "Matilde de Mons",
+    "Ewan mac Tavish",
+    "Radomir de Pressburgo",
+    "Sancha de Estella",
+    "Guilherme Fitzroger",
+    "Irmã Adelaide",
+    "Ulrich de Landshut",
+    "Ottokar o Velho",
+    "Leonor de Poitiers",
+    "Bertrand de Carcassona"
+   ],
+   "a": {
+    "rotulo": "Alcunha",
+    "opcoes": [
+     "o Pálido",
+     "Mão de Ferro",
+     "a Viúva",
+     "o Peregrino",
+     "Língua de Prata",
+     "o Corvo",
+     "Sete Feridas",
+     "a Santa",
+     "o Lobo Manso",
+     "Barba de Cinza",
+     "o Sem-Terra",
+     "a Bruxa do Vau"
+    ]
+   },
+   "b": {
+    "rotulo": "Ofício",
+    "opcoes": [
+     "escriba de mosteiro",
+     "ferreiro de aldeia",
+     "cavaleiro sem senhor",
+     "mercador de sal",
+     "falcoeiro de um barão",
+     "cirurgião-barbeiro",
+     "jogral itinerante",
+     "cobrador de dízimos",
+     "carpinteiro de catedral",
+     "herbanária",
+     "mercenário brabantino",
+     "cozinheiro de castelo",
+     "copista de Constantinopla"
+    ]
+   }
+  },
+  "refugio": {
+   "titulos": [
+    "Cripta sob uma capela abandonada",
+    "Torre de vigia em ruínas",
+    "Adega de um mosteiro cisterciense",
+    "Caverna atrás de uma cachoeira",
+    "Casa de pedra no bairro judeu",
+    "Moinho parado à beira do rio",
+    "Aposentos secretos num castelo",
+    "Catacumbas romanas sob a cidade",
+    "Celeiro de uma granja fortificada",
+    "Mausoléu de uma família nobre",
+    "Ermida no alto do monte",
+    "Porão de uma estalagem de peregrinos",
+    "Antiga mina de prata"
+   ],
+   "a": {
+    "rotulo": "Segurança",
+    "opcoes": [
+     "só se entra por um alçapão escondido",
+     "monges leais guardam a porta",
+     "a aldeia teme o lugar",
+     "muralhas grossas e portão de carvalho",
+     "um rio corta o caminho",
+     "cães de caça do senhor local",
+     "ninguém lembra que existe",
+     "um juramento antigo protege o lugar",
+     "terra natal espalhada no chão"
+    ]
+   },
+   "b": {
+    "rotulo": "Problema",
+    "opcoes": [
+     "o abade quer reformar a capela",
+     "peregrinos param ali para rezar",
+     "há um caern perto demais",
+     "o barão cobra imposto do imóvel",
+     "a peste chegou à aldeia vizinha",
+     "um inquisidor passou pela região",
+     "ratos atraem um Nosferatu rival",
+     "o teto deixa passar o sol de inverno",
+     "é terra reivindicada por um Tzimisce",
+     "fantasmas de soldados assombram o pátio"
+    ]
+   }
+  },
+  "local": {
+   "titulos": [
+    "Feira de Champagne em plena noite",
+    "Corte do príncipe Ventrue em Paris",
+    "Porto de Veneza à luz de tochas",
+    "Floresta Negra no inverno",
+    "Mosteiro nos Pirineus",
+    "Mercado de Constantinopla",
+    "Aldeia nos Cárpatos sob domínio de um voivode",
+    "Campo de batalha na guerra entre Oto e Filipe",
+    "Estalagem na estrada de Santiago",
+    "Clareira de pedras erguidas na Irlanda",
+    "Pântano no Báltico pagão",
+    "Catedral em construção",
+    "Acampamento de cruzados de volta da Terra Santa"
+   ],
+   "a": {
+    "rotulo": "Clima",
+    "opcoes": [
+     "neve caindo sem vento",
+     "sinos tocando a hora morta",
+     "nevoeiro denso vindo do rio",
+     "lua cheia e uivos ao longe",
+     "cheiro de incenso e cera derretida",
+     "chuva gelada e lama até o tornozelo",
+     "fogueiras de festa de santo",
+     "silêncio de quem espera a peste",
+     "vento trazendo cinzas de uma aldeia queimada",
+     "céu limpo e estrelado demais"
+    ]
+   },
+   "b": {
+    "rotulo": "Quem está lá",
+    "opcoes": [
+     "um inquisidor dominicano",
+     "monges que rezam sem parar",
+     "uma matilha de Fianna",
+     "cavaleiros templários de passagem",
+     "um Ravnos vendendo relíquias falsas",
+     "servos de um voivode Tzimisce",
+     "leprosos tocando matracas",
+     "um bardo que canta coisas que não devia saber",
+     "peregrinos famintos",
+     "um Assamita disfarçado de mercador",
+     "a guarda do barão"
+    ]
+   }
+  },
+  "cena": {
+   "titulos": [
+    "Um corpo exangue aparece no adro da igreja",
+    "O príncipe convoca uma corte de vassalos",
+    "Um bispo prega cruzada contra os demônios da noite",
+    "Lobos atacam o rebanho do barão",
+    "Uma relíquia é roubada do altar",
+    "Um cavaleiro desafia um personagem para duelo",
+    "A peste chega à cidade",
+    "Um mensageiro traz carta selada de Constantinopla",
+    "Um ancião desperta sob a abadia",
+    "Uma bruxa é levada à fogueira",
+    "Os Furiosos incendeiam a casa de um ancião",
+    "Uma ponte da lua se abre na clareira",
+    "O senhor de um personagem exige tributo de sangue"
+   ],
+   "a": {
+    "rotulo": "Conflito",
+    "opcoes": [
+     "honra contra sobrevivência",
+     "a aurora se aproxima",
+     "a Igreja está atenta",
+     "dois senhores exigem lealdade",
+     "o povo quer um culpado",
+     "a Besta está faminta",
+     "um juramento impede de agir",
+     "há Fé Verdadeira no caminho",
+     "os Garou reclamam a floresta",
+     "o inverno isolou todos"
+    ]
+   },
+   "b": {
+    "rotulo": "Reviravolta",
+    "opcoes": [
+     "o inquisidor é carniçal de um Lasombra",
+     "a relíquia é verdadeira",
+     "a vítima foi diablerizada",
+     "o duelo foi arranjado pelo príncipe",
+     "a bruxa é inocente e tem Fé",
+     "o mensageiro está morto há dias",
+     "o lobo era um Parente",
+     "o ancião é da Heresia Cainita",
+     "o tributo é uma armadilha",
+     "um aliado serve à Manus Nigrum",
+     "o mosteiro esconde um caern"
+    ]
+   }
+  },
+  "gancho": {
+   "titulos": [
+    "Escoltar uma relíquia até Roma",
+    "Encontrar um herege que conhece o Livro de Nod",
+    "Recuperar terra natal roubada de um Tzimisce",
+    "Descobrir quem envenena o rebanho do príncipe",
+    "Negociar passagem pela floresta dos Garou",
+    "Levar uma carta a Alamut",
+    "Proteger uma aldeia durante o inverno",
+    "Desmascarar um bispo infernalista",
+    "Achar o cavaleiro que desertou da cruzada",
+    "Sabotar uma capela Tremere",
+    "Silenciar um jogral que canta a verdade",
+    "Encontrar o túmulo de um Matusalém",
+    "Libertar um vassalo preso pelo barão"
+   ],
+   "a": {
+    "rotulo": "Quem pede",
+    "opcoes": [
+     "o príncipe da cidade",
+     "uma abadessa que sabe demais",
+     "o senhor de um personagem",
+     "um Capadócio erudito",
+     "um mercador veneziano",
+     "um ancião Ventrue da corte de Paris",
+     "um Gangrel errante",
+     "uma Fianna disfarçada de camponesa",
+     "um monge de olhar febril",
+     "um Furioso arrependido",
+     "um voivode distante"
+    ]
+   },
+   "b": {
+    "rotulo": "Recompensa",
+    "opcoes": [
+     "um feudo dentro do domínio",
+     "o direito de criar uma cria",
+     "o perdão de uma dívida de sangue",
+     "uma relíquia menor",
+     "cavalos e armas",
+     "um manuscrito antigo",
+     "um lugar à mesa do príncipe",
+     "um servo leal",
+     "a proteção de uma ordem cavaleiresca",
+     "uma passagem segura até a Terra Santa",
+     "o segredo do próprio senhor"
+    ]
+   }
+  }
+ },
+ "npc": {
+  "nomesModernos": [
+   "Adriana Peixoto",
+   "Bruno Carvalhal",
+   "Cíntia Barreto",
+   "Diego Amaral",
+   "Elaine Rocha Lima",
+   "Fabrício Neves",
+   "Gabriela Fontoura",
+   "Hugo Sampaio",
+   "Isadora Brandão",
+   "Juliano Teixeira",
+   "Karina Moura",
+   "Leandro Pimentel",
+   "Mônica Rezende",
+   "Natan Cordeiro",
+   "Olívia Prates",
+   "Paulo Henrique Sá",
+   "Quézia Antunes",
+   "Ricardo Bastos",
+   "Simone Arruda",
+   "Thiago Lemos Reis",
+   "Úrsula Campelo",
+   "Vinícius Morato Leal",
+   "Wanessa Duarte",
+   "Yuri Falcão",
+   "Zuleica Dantas",
+   "Anderson Gusmão",
+   "Bárbara Tavares",
+   "Cleiton Rabelo",
+   "Daniela Miranda",
+   "Edson Calixto",
+   "Fernanda Okada",
+   "Gustavo Nakamura",
+   "Helena Sabbag",
+   "Igor Benevides",
+   "Joana Darc Silva"
+  ],
+  "nomesMedievais": [
+   "Aelfric de Wessex",
+   "Berengária",
+   "Conrado de Ulm",
+   "Dagmar Ulfsdottir",
+   "Eudes de Pontoise",
+   "Fiametta Orsini",
+   "Gerberto o Monge",
+   "Hildegunda",
+   "Ivo de Dreux",
+   "Juliana de Ely",
+   "Kazimierz de Cracóvia",
+   "Lotário de Brema",
+   "Maud de Thornbury",
+   "Nikephoros o Escriba",
+   "Odo de Fontenay",
+   "Petronila",
+   "Raimundo de Albi",
+   "Sigrid a Ruiva",
+   "Tancredo de Bari",
+   "Urraca de Zamora",
+   "Vasco Pais",
+   "Waleran de Gisors",
+   "Yolanda de Flandres",
+   "Zoé de Tessalônica",
+   "Arnulfo de Metz",
+   "Brígida de Wexford",
+   "Cáspar o Ferreiro",
+   "Dervla Ní Bhriain",
+   "Esteban de Calatrava",
+   "Filipa de Lamego",
+   "Gunnar Pé-de-Ferro",
+   "Herluíno de Évreux"
+  ],
+  "jeitos": [
+   "sempre limpa as mãos num lenço, mesmo limpas",
+   "fala baixo e obriga os outros a chegar perto",
+   "conta os passos em voz alta quando está nervoso",
+   "ri na hora errada",
+   "nunca senta de costas para a porta",
+   "cita provérbios que ninguém conhece",
+   "coleciona pequenos objetos dos outros",
+   "chama todo mundo pelo sobrenome",
+   "mexe no anel do dedo quando mente",
+   "responde perguntas com perguntas",
+   "cheira tudo antes de tocar",
+   "tem uma tosse seca que some quando esquece dela",
+   "cantarola a mesma melodia antiga",
+   "se oferece para ajudar antes de saber o que é",
+   "olha fixamente para a garganta das pessoas",
+   "anota tudo num caderno gasto",
+   "fala de si mesmo na terceira pessoa",
+   "é educado demais com quem odeia"
+  ],
+  "segredos": [
+   "está sob laço de sangue de alguém que ninguém imagina",
+   "matou o próprio irmão e culpou outro",
+   "é informante de um caçador",
+   "perdeu a memória de uma noite inteira",
+   "tem um filho mortal escondido",
+   "deve um favor a um ancião do Sabá",
+   "já provou sangue de vampiro e não esquece o gosto",
+   "falsificou a própria morte",
+   "guarda um diário que pode derrubar o Príncipe",
+   "é Parente de lobisomens",
+   "sabe onde está um vampiro em torpor",
+   "trai o próprio senhor há anos",
+   "foi exorcizado e algo ficou para trás",
+   "vende segredos aos dois lados",
+   "tem Fé Verdadeira e tem medo dela",
+   "não é quem diz ser: assumiu o nome de um morto",
+   "já foi carniçal e quer voltar a ser"
+  ],
+  "ganchos": [
+   "pede ajuda para sumir da cidade antes do amanhecer",
+   "precisa que alguém recupere uma carta comprometedora",
+   "quer vingança contra quem arruinou sua família",
+   "oferece informação em troca de proteção",
+   "está sendo seguido e não sabe por quem",
+   "desafia um personagem a provar sua coragem",
+   "procura um parente desaparecido",
+   "precisa de testemunhas para um acordo perigoso",
+   "quer aprender algo que só um personagem sabe",
+   "tem um mapa que leva a um lugar que não deveria existir",
+   "pede para guardar um objeto por uma noite",
+   "quer apresentar o grupo a alguém poderoso",
+   "jura ter visto um morto andando",
+   "oferece um refúgio, com uma condição",
+   "precisa de um mensageiro discreto",
+   "acusa um personagem de algo que ele não fez"
+  ]
+ }
+}

@@ -1,0 +1,487 @@
+@if (erro()) {
+  <div class="page"><p class="card card-red">{{ erro() }}</p></div>
+} @else if (!f()) {
+  <div class="page"><div class="empty">Ficha não encontrada. <a routerLink="/criar">Começar outra</a></div></div>
+} @else if (!linha()) {
+  <div class="page"><p class="muted">Carregando regras…</p></div>
+} @else {
+  @let ficha = f()!;
+  @let l = linha()!;
+  <div class="criar">
+    <nav class="passos" aria-label="Passos da criação">
+      <a routerLink="/fichas" class="voltar small"><app-icon name="voltar" [size]="16" />Minhas fichas</a>
+      @for (p of passos(); track p; let i = $index) {
+        <button type="button" class="passo-btn" [class.atual]="i === indice()" [attr.aria-current]="i === indice() ? 'step' : null" (click)="irPara(i)">
+          <span class="bolinha" [class.feito]="i < indice()">
+            @if (i < indice()) { <app-icon name="ok" [size]="14" [stroke]="3" /> } @else { {{ i + 1 }} }
+          </span>
+          {{ nomesPasso[p] }}
+        </button>
+      }
+    </nav>
+
+    <section class="corpo">
+      <header class="col" style="gap: 10px">
+        <div class="row">
+          <span class="grow small" style="font-weight: 600">{{ ficha.nome || 'Nova ficha' }} · {{ l.nome }}</span>
+          <span class="small muted">{{ indice() + 1 }} de {{ passos().length }}</span>
+        </div>
+        <div class="steps-bar" aria-hidden="true">
+          @for (p of passos(); track p; let i = $index) { <span [class.on]="i <= indice()"></span> }
+        </div>
+        <h1>{{ nomesPasso[passo()] }}</h1>
+      </header>
+
+      @switch (passo()) {
+        <!-- ================= CONCEITO ================= -->
+        @case ('conceito') {
+          <div class="col">
+            <label class="field">Nome do personagem
+              <input class="input" [ngModel]="ficha.nome" (ngModelChange)="campo('nome', $event)" placeholder="Ex.: Dante Morales" />
+            </label>
+            <div class="grid-2">
+              <label class="field">Jogador
+                <input class="input" [ngModel]="ficha.jogador" (ngModelChange)="campo('jogador', $event)" />
+              </label>
+              <label class="field">Crônica
+                <input class="input" [ngModel]="ficha.cronica" (ngModelChange)="campo('cronica', $event)" />
+              </label>
+            </div>
+            <label class="field">Conceito
+              <input class="input" [ngModel]="ficha.conceito" (ngModelChange)="campo('conceito', $event)" placeholder="Quem o personagem era / é" list="conceitos" />
+              <datalist id="conceitos">
+                @for (c of l.conceitos; track c) { <option [value]="c"></option> }
+              </datalist>
+            </label>
+            <div class="grid-2">
+              <label class="field">Natureza
+                <select class="select" [ngModel]="ficha.natureza" (ngModelChange)="campo('natureza', $event)">
+                  <option value="">Escolha…</option>
+                  @for (a of l.arquetipos; track a.id) { <option [value]="a.id">{{ a.nome }}</option> }
+                </select>
+              </label>
+              <label class="field">Comportamento
+                <select class="select" [ngModel]="ficha.comportamento" (ngModelChange)="campo('comportamento', $event)">
+                  <option value="">Escolha…</option>
+                  @for (a of l.arquetipos; track a.id) { <option [value]="a.id">{{ a.nome }}</option> }
+                </select>
+              </label>
+            </div>
+            @for (a of l.arquetipos; track a.id) {
+              @if (a.id === ficha.natureza) {
+                <div class="card-plain small">
+                  <strong>{{ a.nome }}</strong>
+                  <span style="color: var(--text-3)">{{ a.desc }}</span>
+                  <span class="gold">Recupera Força de Vontade: {{ a.recuperarFV }}</span>
+                </div>
+              }
+            }
+            @if (l.tipo === 'vampiro') {
+              <div class="grid-2">
+                <label class="field">Senhor
+                  <input class="input" [ngModel]="ficha.senhor ?? ''" (ngModelChange)="campo('senhor', $event)" />
+                </label>
+                <label class="field">Refúgio
+                  <input class="input" [ngModel]="ficha.refugio ?? ''" (ngModelChange)="campo('refugio', $event)" />
+                </label>
+              </div>
+            }
+            <details class="card-plain small">
+              <summary style="cursor: pointer; font-weight: 600">Como o livro descreve a criação</summary>
+              <ol style="margin: 0; padding-left: 18px; color: var(--text-3)">
+                @for (p of l.criacao.passos; track $index) { <li>{{ p }}</li> }
+              </ol>
+            </details>
+          </div>
+        }
+
+        <!-- ================= CLÃ ================= -->
+        @case ('cla') {
+          <button type="button" class="btn btn-gold" style="justify-content: flex-start" (click)="quizAberto.set(!quizAberto())">
+            <app-icon name="ajuda" />Não sei qual escolher — me ajuda
+          </button>
+          @if (quizAberto()) {
+            <div class="card card-gold">
+              <span class="small" style="font-weight: 600">Como seu personagem resolve problemas?</span>
+              <div class="seg">
+                @for (o of ['Físicos', 'Sociais', 'Mentais']; track o) {
+                  <button type="button" [attr.aria-pressed]="quizPostura() === o" (click)="quizPostura.set($any(o))">{{ o === 'Físicos' ? 'Força' : o === 'Sociais' ? 'Lábia' : 'Estudo' }}</button>
+                }
+              </div>
+              <span class="small" style="font-weight: 600">De que lado ele está?</span>
+              <div class="chips">
+                @for (s of seitas(); track s) {
+                  <button type="button" class="chip" [attr.aria-pressed]="quizSeita() === s" (click)="quizSeita.set(quizSeita() === s ? '' : s)">{{ s }}</button>
+                }
+              </div>
+              @if (sugestoes().length) {
+                <span class="small">Sugestões: <strong>{{ sugestoes().map(c => c.nome).join(', ') }}</strong></span>
+              }
+            </div>
+          }
+          <div class="grid-auto">
+            @for (c of l.clas ?? []; track c.id) {
+              <button type="button" class="card cla" [class.card-selected]="ficha.cla === c.id" [attr.aria-pressed]="ficha.cla === c.id" (click)="escolherCla(c)">
+                <span class="spread">
+                  <span class="serif" style="font-size: 24px; font-weight: 700">{{ c.nome }}</span>
+                  @if (ficha.cla === c.id) { <span class="marcado"><app-icon name="ok" [size]="16" [stroke]="3" /></span> }
+                </span>
+                <span class="small" style="color: var(--text-3)">{{ c.apelido ? '“' + c.apelido + '” · ' : '' }}{{ c.seita }}</span>
+                <span class="chips">
+                  @for (d of c.disciplinas; track d) { <span class="tag">{{ nomeDisciplina(d) }}</span> }
+                </span>
+                <span class="small" style="color: var(--text-2)"><strong>Fraqueza:</strong> {{ c.fraqueza }}</span>
+                @if (c.dica) { <span class="small muted">Dica: {{ c.dica }}</span> }
+              </button>
+            }
+          </div>
+        }
+
+        <!-- ================= GAROU ================= -->
+        @case ('garou') {
+          <section class="col">
+            <h2>Raça</h2>
+            <div class="grid-auto">
+              @for (r of l.racas ?? []; track r.id) {
+                <button type="button" class="card" [class.card-selected]="ficha.raca === r.id" [attr.aria-pressed]="ficha.raca === r.id" (click)="escolherRaca(r.id)" style="text-align: left">
+                  <span class="serif" style="font-size: 22px; font-weight: 700">{{ r.nome }}</span>
+                  <span class="small" style="color: var(--text-3)">{{ r.desc }}</span>
+                  <span class="small gold">Gnose inicial {{ r.gnose }}</span>
+                </button>
+              }
+            </div>
+          </section>
+          <section class="col">
+            <h2>Augúrio</h2>
+            <div class="grid-auto">
+              @for (a of l.auspicios ?? []; track a.id) {
+                <button type="button" class="card" [class.card-selected]="ficha.auspicio === a.id" [attr.aria-pressed]="ficha.auspicio === a.id" (click)="escolherAuspicio(a.id)" style="text-align: left">
+                  <span class="serif" style="font-size: 22px; font-weight: 700">{{ a.nome }}</span>
+                  <span class="small muted">{{ a.lua }}</span>
+                  <span class="small" style="color: var(--text-3)">{{ a.desc }}</span>
+                  <span class="small gold">Fúria inicial {{ a.furia }}</span>
+                </button>
+              }
+            </div>
+          </section>
+          <section class="col">
+            <h2>Tribo</h2>
+            <div class="grid-auto">
+              @for (t of l.tribos ?? []; track t.id) {
+                <button type="button" class="card" [class.card-selected]="ficha.tribo === t.id" [attr.aria-pressed]="ficha.tribo === t.id" (click)="escolherTribo(t.id)" style="text-align: left">
+                  <span class="serif" style="font-size: 22px; font-weight: 700">{{ t.nome }}</span>
+                  <span class="small muted">Totem: {{ t.totem }} · Força de Vontade {{ t.forcaVontade }}</span>
+                  <span class="small" style="color: var(--text-3)">{{ t.desc }}</span>
+                  @if (t.restricoes) { <span class="small" style="color: var(--text-2)"><strong>Restrições:</strong> {{ t.restricoes }}</span> }
+                  @if (t.fraqueza) { <span class="small" style="color: var(--text-2)"><strong>Fraqueza:</strong> {{ t.fraqueza }}</span> }
+                </button>
+              }
+            </div>
+          </section>
+        }
+
+        <!-- ================= ORGANIZAÇÃO ================= -->
+        @case ('organizacao') {
+          <div class="grid-2">
+            <label class="field">Motivo (por que caça)
+              <select class="select" [ngModel]="ficha.motivo ?? ''" (ngModelChange)="campo('motivo', $event)">
+                <option value="">Escolha…</option>
+                @for (m of l.motivos ?? []; track m) { <option [value]="m">{{ m }}</option> }
+              </select>
+            </label>
+            <label class="field">Método (como caça)
+              <select class="select" [ngModel]="ficha.metodo ?? ''" (ngModelChange)="campo('metodo', $event)">
+                <option value="">Escolha…</option>
+                @for (m of l.metodos ?? []; track m) { <option [value]="m">{{ m }}</option> }
+              </select>
+            </label>
+          </div>
+          <div class="grid-auto">
+            <button type="button" class="card" [class.card-selected]="!ficha.organizacao" (click)="campo('organizacao', undefined)" style="text-align: left">
+              <span class="serif" style="font-size: 22px; font-weight: 700">Independente</span>
+              <span class="small" style="color: var(--text-3)">Caça por conta própria, sem organização.</span>
+            </button>
+            @for (o of l.organizacoes ?? []; track o.id) {
+              <button type="button" class="card" [class.card-selected]="ficha.organizacao === o.id" [attr.aria-pressed]="ficha.organizacao === o.id" (click)="campo('organizacao', o.id)" style="text-align: left">
+                <span class="serif" style="font-size: 22px; font-weight: 700">{{ o.nome }}</span>
+                <span class="small" style="color: var(--text-3)">{{ o.desc }}</span>
+                @if (o.antecedentes) { <span class="small muted">Antecedentes: {{ o.antecedentes }}</span> }
+              </button>
+            }
+          </div>
+        }
+
+        <!-- ================= ATRIBUTOS ================= -->
+        @case ('atributos') {
+          <p class="small muted">Escolha a prioridade de cada grupo ({{ l.criacao.atributos.join(', ') }} pontos). O primeiro ponto já vem grátis.</p>
+          <div class="panels">
+            @for (g of gruposAtr; track g.id) {
+              @let conta = contaAtr(g.id);
+              <section class="card-plain">
+                <div class="row">
+                  <h2 class="grow" style="font-size: 22px">{{ g.nome }}</h2>
+                  @if (conta.total - conta.gasto === 0) { <span class="tiny green" style="font-weight: 700">Completo</span> }
+                  @else { <span class="tiny gold" style="font-weight: 700">Restam {{ conta.total - conta.gasto }}</span> }
+                </div>
+                <div class="seg seg-red" role="group" [attr.aria-label]="'Prioridade de ' + g.nome">
+                  @for (p of prioridades; track p; let i = $index) {
+                    <button type="button" [attr.aria-pressed]="prioridadeDe(ficha.prioridadeAtributos, g.id) === i" (click)="setPrioridadeAtr(g.id, i)">{{ l.criacao.atributos[i] }}</button>
+                  }
+                </div>
+                @for (a of l.atributos[g.id]; track a.id) {
+                  <div class="traco">
+                    <span class="grow">{{ a.nome }}<span class="tiny muted traco-desc">{{ a.desc }}</span></span>
+                    <app-dots [value]="base('atr:' + a.id)" [min]="minAtr(a.id)" [label]="a.nome" [readonly]="minAtr(a.id) === 0 && a.id === 'aparencia'" (change)="setAtributo(g.id, a.id, $event)" />
+                  </div>
+                }
+              </section>
+            }
+          </div>
+        }
+
+        <!-- ================= HABILIDADES ================= -->
+        @case ('habilidades') {
+          <p class="small muted">Prioridades {{ l.criacao.habilidades.join(', ') }}. Máximo {{ l.criacao.maxHabilidade }} por Habilidade agora; acima disso só com pontos de bônus.</p>
+          <div class="panels">
+            @for (g of gruposHab; track g.id) {
+              @let conta = contaHab(g.id);
+              <section class="card-plain">
+                <div class="row">
+                  <h2 class="grow" style="font-size: 22px">{{ g.nome }}</h2>
+                  @if (conta.total - conta.gasto === 0) { <span class="tiny green" style="font-weight: 700">Completo</span> }
+                  @else { <span class="tiny gold" style="font-weight: 700">Restam {{ conta.total - conta.gasto }}</span> }
+                </div>
+                <div class="seg seg-red" role="group" [attr.aria-label]="'Prioridade de ' + g.nome">
+                  @for (p of prioridades; track p; let i = $index) {
+                    <button type="button" [attr.aria-pressed]="prioridadeDe(ficha.prioridadeHabilidades, g.id) === i" (click)="setPrioridadeHab(g.id, i)">{{ l.criacao.habilidades[i] }}</button>
+                  }
+                </div>
+                @for (h of l.habilidades[g.id]; track h.id) {
+                  <div class="traco">
+                    <span class="grow">{{ h.nome }}<span class="tiny muted traco-desc">{{ h.desc }}</span></span>
+                    <app-dots [value]="base('hab:' + h.id)" [label]="h.nome" (change)="setHabilidade(g.id, h.id, $event)" />
+                  </div>
+                }
+              </section>
+            }
+          </div>
+        }
+
+        <!-- ================= VANTAGENS ================= -->
+        @case ('vantagens') {
+          <div class="panels">
+            @if (l.tipo === 'vampiro') {
+              @let cd = contaDis();
+              <section class="card-plain">
+                <div class="spread"><h2 style="font-size: 22px">Disciplinas</h2><span class="tiny gold" style="font-weight: 700">Restam {{ cd.total - cd.gasto }}</span></div>
+                <span class="tiny muted">{{ ehCaitiff(cla()) ? 'Caitiff escolhe qualquer Disciplina.' : 'Só as Disciplinas do seu clã.' }}</span>
+                @for (d of disciplinasPermitidas(); track d.id) {
+                  <div class="traco">
+                    <span class="grow">{{ d.nome }}<span class="tiny muted traco-desc">{{ d.desc }}</span></span>
+                    <app-dots [value]="base('dis:' + d.id)" [label]="d.nome" (change)="setSoma('dis:', d.id, $event, cd.total, cd.gasto, 'Disciplinas')" />
+                  </div>
+                } @empty { <span class="small muted">Escolha um clã primeiro.</span> }
+              </section>
+            }
+            @if (l.tipo === 'lobisomem') {
+              <section class="card-plain">
+                <div class="spread"><h2 style="font-size: 22px">Dons iniciais</h2><span class="tiny gold" style="font-weight: 700">{{ contaDons().gasto }} de 3</span></div>
+                <span class="tiny muted">Um Dom de nível 1 da raça, um do augúrio e um da tribo.</span>
+                @for (slot of ['raca', 'auspicio', 'tribo']; track slot) {
+                  <label class="field">{{ slot === 'raca' ? 'Da raça' : slot === 'auspicio' ? 'Do augúrio' : 'Da tribo' }}
+                    <select class="select" [ngModel]="$any(ficha.donsIniciais)?.[slot] ?? ''" (ngModelChange)="escolherDomInicial($any(slot), $event)">
+                      <option value="">Escolha…</option>
+                      @for (d of donsDoGrupo($any(slot)); track d.id) { <option [value]="d.id">{{ d.nome }}</option> }
+                    </select>
+                  </label>
+                  @for (d of donsDoGrupo($any(slot)); track d.id) {
+                    @if ($any(ficha.donsIniciais)?.[slot] === d.id) { <span class="tiny" style="color: var(--text-3)">{{ d.sistema }}</span> }
+                  }
+                }
+              </section>
+            }
+            @let ca = contaAnt();
+            <section class="card-plain">
+              <div class="spread"><h2 style="font-size: 22px">Antecedentes</h2><span class="tiny gold" style="font-weight: 700">Restam {{ ca.total - ca.gasto }}</span></div>
+              @if (l.tipo === 'lobisomem' && tribo()?.restricoes) { <span class="tiny muted">Tribo: {{ tribo()!.restricoes }}</span> }
+              @for (a of l.antecedentes; track a.id) {
+                <div class="traco">
+                  <span class="grow">{{ a.nome }}<span class="tiny muted traco-desc">{{ a.desc }}</span></span>
+                  <app-dots [value]="base('ant:' + a.id)" [label]="a.nome" (change)="setSoma('ant:', a.id, $event, ca.total, ca.gasto, 'Antecedentes')" />
+                </div>
+              }
+            </section>
+            @if (l.tipo !== 'lobisomem') {
+              @let cv = contaVir();
+              <section class="card-plain">
+                <div class="spread"><h2 style="font-size: 22px">Virtudes</h2><span class="tiny gold" style="font-weight: 700">Restam {{ cv.total - cv.gasto }}</span></div>
+                @if ((l.trilhas ?? []).length > 1) {
+                  <label class="field">{{ l.epoca === 'medieval' ? 'Estrada' : 'Humanidade ou Trilha' }}
+                    <select class="select" [ngModel]="ficha.trilha ?? l.trilhas![0].id" (ngModelChange)="escolherTrilha($event)">
+                      @for (t of l.trilhas ?? []; track t.id) { <option [value]="t.id">{{ t.nome }}</option> }
+                    </select>
+                  </label>
+                }
+                @for (vn of virtudes(); track vn) {
+                  <div class="traco">
+                    <span class="grow">{{ vn }}</span>
+                    <app-dots [value]="base(virKey(vn))" [min]="1" [label]="vn" (change)="setVirtude(vn, $event)" />
+                  </div>
+                }
+                <hr class="divider" />
+                <div class="spread small"><span>{{ nomeTrilha() }}</span><strong>{{ derivado('trilha') }}</strong></div>
+                <div class="spread small"><span>Força de Vontade</span><strong>{{ derivado('fv') }}</strong></div>
+                <span class="tiny muted">Calculados pelas Virtudes. Dá para subir com pontos de bônus.</span>
+              </section>
+            }
+          </div>
+        }
+
+        <!-- ================= NUMINA ================= -->
+        @case ('numina') {
+          <p class="lead">A mesa usa os dois sistemas. Cada poder mostra de onde vem. Numina só se compra com pontos de bônus.</p>
+          <div class="seg" role="group" aria-label="Fonte">
+            <button type="button" [attr.aria-pressed]="filtroNumina() === 'todas'" (click)="filtroNumina.set('todas')">Os dois</button>
+            <button type="button" [attr.aria-pressed]="filtroNumina() === 'livro'" (click)="filtroNumina.set('livro')">Livro</button>
+            <button type="button" [attr.aria-pressed]="filtroNumina() === 'mesa'" (click)="filtroNumina.set('mesa')">Documento da mesa</button>
+          </div>
+          @for (r of l.regrasNumina ?? []; track $index) { <span class="tag tag-gold" style="white-space: normal">{{ r }}</span> }
+          <span class="small muted">Classes do documento da mesa em uso: {{ classesMesa().length }} de 2. Custo das Numina da mesa: {{ config.regras().numinaMesaBonus }} por nível (muda em Ajustes).</span>
+          <div class="grid-auto">
+            @for (n of numinas(); track n.id) {
+              <article class="card" [class.card-selected]="bonusDe('num:' + n.id) > 0">
+                <div class="spread">
+                  <span class="tag" [class.tag-gray]="n.fonte === 'mesa'">{{ n.fonte === 'mesa' ? 'DOCUMENTO DA MESA' : 'LIVRO' + (n.pagina ? ' · p. ' + n.pagina : '') }}</span>
+                  <span class="tiny muted">{{ n.classe }}</span>
+                </div>
+                <h3>{{ n.nome }}</h3>
+                <span class="small" style="color: var(--text-3)">{{ n.rolagem }}{{ n.custo ? ' · ' + n.custo : '' }}</span>
+                <span class="tiny muted">{{ n.desc }}</span>
+                <div class="spread">
+                  <app-dots [value]="bonusDe('num:' + n.id)" [label]="n.nome" (change)="setNumina(n, $event)" />
+                  <span class="tiny gold">{{ custoNumina(n) }} bônus/nível</span>
+                </div>
+              </article>
+            }
+          </div>
+        }
+
+        <!-- ================= QUALIDADES ================= -->
+        @case ('qualidades') {
+          @if (!l.qualidades.length) {
+            <div class="empty">Este livro não traz Qualidades e Defeitos. Pode seguir.</div>
+          } @else {
+            <div class="spread small">
+              <span>Qualidades: <strong class="red">−{{ somaQualidades().qualidades }}</strong> bônus</span>
+              <span>Defeitos: <strong class="green">+{{ Math.min(somaQualidades().defeitos, l.criacao.maxDefeitos ?? 7) }}</strong> bônus (máx. {{ l.criacao.maxDefeitos ?? 7 }})</span>
+            </div>
+            <div class="seg" role="group" aria-label="Filtro">
+              <button type="button" [attr.aria-pressed]="filtroQualidade() === 'todas'" (click)="filtroQualidade.set('todas')">Todas</button>
+              <button type="button" [attr.aria-pressed]="filtroQualidade() === 'qualidades'" (click)="filtroQualidade.set('qualidades')">Qualidades</button>
+              <button type="button" [attr.aria-pressed]="filtroQualidade() === 'defeitos'" (click)="filtroQualidade.set('defeitos')">Defeitos</button>
+            </div>
+            <div class="grid-auto">
+              @for (q of qualidades(); track q.id) {
+                <label class="card" [class.card-selected]="temQualidade(q)" style="cursor: pointer">
+                  <span class="row">
+                    <input type="checkbox" [checked]="temQualidade(q)" (change)="alternarQualidade(q)" style="width: 18px; height: 18px; accent-color: var(--red-2)" />
+                    <strong class="grow">{{ q.nome }}</strong>
+                    <span class="tag" [class.tag-gold]="q.defeito">{{ q.defeito ? '+' : '−' }}{{ custoTexto(q) }}</span>
+                  </span>
+                  <span class="tiny muted">{{ q.categoria }}{{ q.pagina ? ' · p. ' + q.pagina : '' }}</span>
+                  <span class="small" style="color: var(--text-3)">{{ q.desc }}</span>
+                </label>
+              }
+            </div>
+          }
+        }
+
+        <!-- ================= BÔNUS ================= -->
+        @case ('bonus') {
+          <div class="card-plain">
+            <div class="spread"><strong>Pontos de bônus</strong><strong class="red" style="font-size: 22px">{{ bonus().total - bonus().gasto }} <span class="small muted">de {{ bonus().total }}</span></strong></div>
+            <div class="progress" aria-hidden="true"><span [style.width.%]="bonus().total ? Math.min(100, (bonus().gasto / bonus().total) * 100) : 0"></span></div>
+            <span class="tiny muted">Os pontos dourados nas bolinhas vieram do bônus. Custos por ponto: {{ custosTexto() }}</span>
+          </div>
+          @for (g of gruposBonus(); track g.nome) {
+            <details class="card-plain" [open]="g.nome === 'Atributos'">
+              <summary class="spread" style="cursor: pointer"><h2 style="font-size: 22px">{{ g.nome }}</h2><span class="tiny gold">{{ custoBonus(g.itens[0]?.chave ?? '') }} por ponto</span></summary>
+              @for (it of g.itens; track it.chave) {
+                <div class="traco">
+                  <span class="grow">{{ it.nome }}</span>
+                  <span class="tiny muted" style="min-width: 54px; text-align: right">{{ v(it.chave) }}@if (bonusDe(it.chave)) { <span class="gold"> (+{{ bonusDe(it.chave) }})</span> }</span>
+                  <button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Tirar bônus de ' + it.nome" [disabled]="!bonusDe(it.chave)" (click)="menosBonus(it.chave)"><app-icon name="menos" [size]="16" /></button>
+                  <button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Comprar 1 ponto de ' + it.nome" (click)="maisBonus(it.chave)"><app-icon name="mais" [size]="16" /></button>
+                </div>
+              }
+            </details>
+          }
+          @if (donsExtras().length || l.tipo === 'lobisomem') {
+            <details class="card-plain">
+              <summary class="spread" style="cursor: pointer"><h2 style="font-size: 22px">Dons extras</h2><span class="tiny gold">{{ custoBonus('dom:x') }} cada</span></summary>
+              @for (d of donsExtras(); track d.id) {
+                <label class="check"><input type="checkbox" [checked]="bonusDe('dom:' + d.id) > 0" (change)="alternarDomBonus(d)" />{{ d.nome }} <span class="tiny muted">{{ d.sistema }}</span></label>
+              }
+            </details>
+          }
+        }
+
+        <!-- ================= REVISÃO ================= -->
+        @case ('revisao') {
+          <div class="col">
+            @for (c of checks(); track c.texto) {
+              <span class="small" [class.green]="c.ok" [class.gold]="!c.ok">{{ c.ok ? '✓' : '!' }} {{ c.texto }}</span>
+            }
+          </div>
+          @if (!tudoOk()) {
+            <p class="small muted">Você pode concluir mesmo com avisos (o narrador pode ter liberado algo), mas confira antes.</p>
+          }
+          <button type="button" class="btn btn-primary btn-big" (click)="concluir()">Concluir ficha e abrir na mesa</button>
+        }
+      }
+
+      @if (aviso()) {
+        <p class="card card-red small" role="status">{{ aviso() }}</p>
+      }
+
+      <footer class="rodape no-print">
+        <button type="button" class="btn btn-big" [disabled]="indice() === 0" (click)="irPara(indice() - 1)">Voltar</button>
+        @if (indice() < passos().length - 1) {
+          <button type="button" class="btn btn-primary btn-big grow" (click)="irPara(indice() + 1)">Continuar para {{ nomesPasso[passos()[indice() + 1]] }}<app-icon name="seguir" [size]="18" /></button>
+        }
+      </footer>
+    </section>
+
+    <aside class="previa" aria-label="Prévia da ficha">
+      <h2>Prévia ao vivo</h2>
+      <div class="papel">
+        <strong class="serif" style="font-size: 22px">{{ ficha.nome || 'Sem nome' }}</strong>
+        <span class="tiny" style="color: #5e524c">
+          {{ l.nome }}{{ cla() ? ' · ' + cla()!.nome : '' }}{{ raca() ? ' · ' + raca()!.nome : '' }}{{ auspicio() ? ' · ' + auspicio()!.nome : '' }}{{ tribo() ? ' · ' + tribo()!.nome : '' }}{{ organizacao() ? ' · ' + organizacao()!.nome : '' }}
+        </span>
+        <div class="grid-3 tiny">
+          @for (g of gruposAtr; track g.id) {
+            <span class="col" style="gap: 1px"><strong>{{ g.nome }}</strong>
+              @for (a of l.atributos[g.id]; track a.id) { <span>{{ a.nome.slice(0, 3) }} {{ v('atr:' + a.id) }}</span> }
+            </span>
+          }
+        </div>
+        @if (l.tipo !== 'lobisomem') {
+          <span class="tiny"><strong>{{ nomeTrilha() }}</strong> {{ v('trilha') }} · <strong>Força de Vontade</strong> {{ v('fv') }}</span>
+        } @else {
+          <span class="tiny"><strong>Fúria</strong> {{ v('furia') }} · <strong>Gnose</strong> {{ v('gnose') }} · <strong>FV</strong> {{ v('fv') }}</span>
+        }
+      </div>
+      <div class="card-plain">
+        <div class="spread"><strong>Pontos de bônus</strong><strong class="red">{{ bonus().total - bonus().gasto }} <span class="tiny muted">de {{ bonus().total }}</span></strong></div>
+        <div class="progress" aria-hidden="true"><span [style.width.%]="bonus().total ? Math.min(100, (bonus().gasto / bonus().total) * 100) : 0"></span></div>
+      </div>
+      <div class="card-plain">
+        <strong>Checagem das regras</strong>
+        @for (c of checks(); track c.texto) {
+          <span class="tiny" [class.green]="c.ok" [class.gold]="!c.ok">{{ c.ok ? '✓' : '!' }} {{ c.texto }}</span>
+        }
+      </div>
+    </aside>
+  </div>
+}

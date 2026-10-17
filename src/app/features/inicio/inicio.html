@@ -1,0 +1,71 @@
+<div class="page">
+  <header class="col" style="gap: 4px">
+    <span class="eyebrow">Mundo das Trevas</span>
+    <h1>Grimório das Trevas</h1>
+  </header>
+
+  <form class="search" role="search" (submit)="$event.preventDefault(); buscar()">
+    <app-icon name="busca" />
+    <input type="search" name="q" aria-label="Buscar nas regras dos livros" placeholder="Buscar nos livros: frenesi, Rapidez, Crinos…" [ngModel]="busca()" (ngModelChange)="busca.set($event)" />
+  </form>
+
+  <section class="col" style="gap: 6px">
+    <span class="tiny muted">Livros ativos (filtram busca, criação e geradores)</span>
+    <div class="chips">
+      @for (l of linhas; track l.id) {
+        <button type="button" class="chip" [attr.aria-pressed]="config.ativo(l.id)" (click)="config.alternarLivro(l.id)">{{ l.curto }}</button>
+      }
+    </div>
+  </section>
+
+  <section class="acoes" aria-label="Atalhos">
+    <a routerLink="/criar" class="acao principal"><app-icon name="criar" [size]="26" /><strong>Nova ficha</strong><span class="small">Passo a passo guiado</span></a>
+    <a routerLink="/npc" class="acao"><app-icon name="npc" [size]="26" /><strong>NPC rápido</strong><span class="small muted">Ficha em 1 toque</span></a>
+    <a routerLink="/rolador" class="acao"><app-icon name="dados" [size]="26" /><strong>Rolar dados</strong><span class="small muted">Parada de d10</span></a>
+    <a routerLink="/regras" class="acao"><app-icon name="regras" [size]="26" /><strong>Regras</strong><span class="small muted">Busca e glossário</span></a>
+    <a routerLink="/geradores" class="acao"><app-icon name="livro" [size]="26" /><strong>Geradores</strong><span class="small muted">Nomes, refúgios, cenas</span></a>
+    <a routerLink="/bestiario" class="acao"><app-icon name="besta" [size]="26" /><strong>Bestiário</strong><span class="small muted">Criaturas prontas</span></a>
+    <a routerLink="/notas" class="acao"><app-icon name="notas" [size]="26" /><strong>Anotações</strong><span class="small muted">Sessões, NPCs, pistas</span></a>
+    <a routerLink="/ajustes" class="acao"><app-icon name="ajustes" [size]="26" /><strong>Regras da casa</strong><span class="small muted">XP do narrador e backup</span></a>
+  </section>
+
+  <div class="panels">
+    <section class="col">
+      <div class="spread">
+        <h2>Minhas fichas</h2>
+        <a routerLink="/fichas" class="small" style="font-weight: 600; text-decoration: none">Ver todas</a>
+      </div>
+      @for (f of fichas(); track f.id) {
+        <a class="ficha-link" [routerLink]="f.criacaoConcluida ? ['/ficha', f.id] : ['/criar', f.id]">
+          <span class="sigla" [class.lob]="f.linha === 'lob' || f.linha === 'lidt'" [class.cac]="f.linha === 'cac'">{{ (f.nome || '?').charAt(0).toUpperCase() }}</span>
+          <span class="col grow" style="gap: 2px">
+            <strong>{{ f.nome || 'Sem nome' }}</strong>
+            <span class="small muted">{{ resumo(f) }}</span>
+          </span>
+          @if (!f.criacaoConcluida) { <span class="tag tag-gold">Rascunho</span> }
+          <app-icon name="seguir" [size]="18" />
+        </a>
+      } @empty {
+        <div class="empty">Nenhuma ficha ainda. <a routerLink="/criar">Criar a primeira</a></div>
+      }
+    </section>
+
+    <section class="col">
+      <div class="spread">
+        <h2>Últimas anotações</h2>
+        <a routerLink="/notas" class="small" style="font-weight: 600; text-decoration: none">Ver todas</a>
+      </div>
+      @for (n of notas(); track n.id) {
+        <a class="ficha-link" [routerLink]="['/notas', n.id]">
+          <span class="col grow" style="gap: 2px">
+            <strong>{{ n.titulo || 'Sem título' }}</strong>
+            <span class="small muted">{{ quando(n.atualizadaEm) }}</span>
+          </span>
+          <app-icon name="seguir" [size]="18" />
+        </a>
+      } @empty {
+        <div class="empty">Suas notas de sessão, NPCs e pistas aparecem aqui.</div>
+      }
+    </section>
+  </div>
+</div>

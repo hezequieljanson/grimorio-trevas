@@ -1,0 +1,66 @@
+<div class="page">
+  <h1>Ajustes</h1>
+  @if (msg()) { <p class="card card-gold small" role="status">{{ msg() }}</p> }
+
+  <div class="panels">
+    <section class="card-plain">
+      <h2>Livros ativos</h2>
+      <p class="small muted">Os livros desmarcados somem da busca de regras, do glossário, do bestiário e da criação.</p>
+      @for (l of linhas; track l.id) {
+        <label class="check"><input type="checkbox" [checked]="config.ativo(l.id)" (change)="config.alternarLivro(l.id)" />{{ l.nome }}</label>
+      }
+    </section>
+
+    <section class="card-plain">
+      <h2>Backup</h2>
+      <p class="small muted">Tudo fica salvo só neste aparelho. Exporte um arquivo para guardar ou levar para outro celular ou computador.</p>
+      <div class="row-wrap">
+        <button type="button" class="btn btn-primary" (click)="exportarTudo()"><app-icon name="baixar" [size]="18" />Exportar fichas e notas</button>
+        <button type="button" class="btn" (click)="importarTudo()"><app-icon name="subir" [size]="18" />Importar backup</button>
+      </div>
+    </section>
+  </div>
+
+  <section class="card-plain">
+    <div class="spread" style="flex-wrap: wrap">
+      <h2>Regras da casa: tabela de XP</h2>
+      <span class="small muted">{{ config.regras().origem }}</span>
+    </div>
+    <p class="small muted">O narrador monta a tabela uma vez, exporta o arquivo e cada jogador importa. A evolução das fichas usa estes custos. Valor 0 = o narrador decide caso a caso.</p>
+    <div class="row-wrap">
+      <button type="button" class="btn btn-sm" (click)="importarRegras()"><app-icon name="subir" [size]="16" />Importar do narrador</button>
+      <button type="button" class="btn btn-sm" (click)="exportarRegras()"><app-icon name="baixar" [size]="16" />Exportar</button>
+      <button type="button" class="btn btn-sm" (click)="restaurar()">Voltar às tabelas dos livros</button>
+    </div>
+    <div class="chips-scroll" role="group" aria-label="Livro da tabela">
+      @for (l of linhas; track l.id) {
+        <button type="button" class="chip" [attr.aria-pressed]="linhaXp() === l.id" (click)="linhaXp.set(l.id)">{{ l.curto }}</button>
+      }
+    </div>
+    <div class="col" style="gap: 0">
+      @for (x of tabela(); track x.chave; let i = $index) {
+        <div class="row" style="min-height: 52px; border-bottom: 1px solid var(--line); flex-wrap: wrap">
+          @if (x.chave.startsWith('casa-')) {
+            <input class="input grow" style="min-height: 38px" [attr.aria-label]="'Nome da regra ' + (i + 1)" [ngModel]="x.nome" (ngModelChange)="mudar(i, 'nome', $event)" />
+          } @else {
+            <span class="grow small">{{ x.nome }}</span>
+          }
+          <select class="select" style="width: auto; min-height: 38px; font-size: 14px" [attr.aria-label]="'Modo de ' + x.nome" [ngModel]="x.modo" (ngModelChange)="mudar(i, 'modo', $event)">
+            <option value="x">nível ×</option>
+            <option value="fixo">fixo</option>
+          </select>
+          <input type="number" class="num" min="0" [attr.aria-label]="'Custo de ' + x.nome" [ngModel]="x.valor" (ngModelChange)="mudar(i, 'valor', $event)" />
+          @if (x.chave.startsWith('casa-')) {
+            <button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Remover ' + x.nome" (click)="remover(i)"><app-icon name="lixo" [size]="16" /></button>
+          }
+        </div>
+      }
+    </div>
+    <button type="button" class="btn btn-sm" style="align-self: flex-start; border-style: dashed" (click)="adicionar()"><app-icon name="mais" [size]="16" />Adicionar regra da casa</button>
+    <hr class="divider" />
+    <div class="row" style="flex-wrap: wrap">
+      <span class="grow small">Numina do documento da mesa: pontos de bônus por nível na criação</span>
+      <input type="number" class="num" min="0" aria-label="Custo em bônus da Numina da mesa" [ngModel]="config.regras().numinaMesaBonus" (ngModelChange)="mudarNumina($event)" />
+    </div>
+  </section>
+</div>

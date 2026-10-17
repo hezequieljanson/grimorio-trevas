@@ -1,0 +1,64 @@
+<div class="page page-wide">
+  <div class="spread" style="align-items: center">
+    <h1>Anotações</h1>
+    <button type="button" class="btn btn-primary" (click)="nova()"><app-icon name="mais" [size]="18" />Nova</button>
+  </div>
+  <div class="layout">
+    <section class="lista" [class.esconder-celular]="!!atual()">
+      <form class="search" role="search" (submit)="$event.preventDefault()">
+        <app-icon name="busca" />
+        <input type="search" name="q" aria-label="Buscar nas anotações" placeholder="Buscar nas suas notas" [ngModel]="q()" (ngModelChange)="q.set($event)" />
+      </form>
+      <div class="chips-scroll" role="group" aria-label="Tipo de nota">
+        <button type="button" class="chip" [attr.aria-pressed]="filtro() === 'todas'" (click)="filtro.set('todas')">Todas</button>
+        @for (t of tipos; track t.id) {
+          <button type="button" class="chip" [attr.aria-pressed]="filtro() === t.id" (click)="filtro.set(t.id)">{{ t.nome }}</button>
+        }
+      </div>
+      @if (fichas.fichas().length) {
+        <label class="field">Personagem
+          <select class="select" [ngModel]="fichaFiltro()" (ngModelChange)="fichaFiltro.set($event)">
+            <option value="">Todos</option>
+            @for (f of fichas.fichas(); track f.id) { <option [value]="f.id">{{ f.nome || 'Sem nome' }}</option> }
+          </select>
+        </label>
+      }
+      @for (n of lista(); track n.id) {
+        <a class="nota-link" [class.atual]="n.id === atual()?.id" [routerLink]="['/notas', n.id]">
+          <span class="spread"><span class="tag" [class]="'tag ' + tipo(n.tipo).classe">{{ tipo(n.tipo).nome.toUpperCase() }}</span><span class="tiny muted">{{ quando(n.atualizadaEm) }}</span></span>
+          <strong class="serif" style="font-size: 20px">{{ n.titulo || 'Sem título' }}</strong>
+          @if (n.texto) { <span class="small" style="color: var(--text-3); white-space: pre-line">{{ trecho(n) }}</span> }
+          @if (nomeFicha(n.fichaId)) { <span class="tiny muted">Ficha: {{ nomeFicha(n.fichaId) }}</span> }
+        </a>
+      } @empty {
+        <div class="empty">Nenhuma anotação. Toque em “Nova” para começar.</div>
+      }
+      <p class="tiny muted">Salvas neste aparelho. Backup em <a routerLink="/ajustes">Ajustes</a>.</p>
+    </section>
+
+    @if (atual(); as n) {
+      <article class="editor">
+        <a routerLink="/notas" class="btn btn-sm so-celular" style="align-self: flex-start"><app-icon name="voltar" [size]="16" />Todas as notas</a>
+        <div class="row-wrap">
+          <select class="select" style="width: auto" aria-label="Tipo da nota" [ngModel]="n.tipo" (ngModelChange)="editar('tipo', $event)">
+            @for (t of tipos; track t.id) { <option [value]="t.id">{{ t.nome }}</option> }
+          </select>
+          <select class="select" style="width: auto" aria-label="Ficha ligada" [ngModel]="n.fichaId ?? ''" (ngModelChange)="editar('fichaId', $event || null)">
+            <option value="">Sem ficha</option>
+            @for (f of fichas.fichas(); track f.id) { <option [value]="f.id">Ficha: {{ f.nome || 'Sem nome' }}</option> }
+          </select>
+          <span class="grow"></span>
+          <span class="tiny green">Salvo</span>
+          <button type="button" class="btn btn-sm" (click)="apagar()"><app-icon name="lixo" [size]="16" />Apagar</button>
+        </div>
+        <input class="titulo" aria-label="Título" placeholder="Título" [ngModel]="n.titulo" (ngModelChange)="editar('titulo', $event)" />
+        <textarea class="textarea" style="min-height: 55dvh; font-size: 16px" aria-label="Texto da nota" placeholder="O que aconteceu, quem apareceu, o que fazer depois…" [ngModel]="n.texto" (ngModelChange)="editar('texto', $event)"></textarea>
+      </article>
+    } @else {
+      <div class="editor esconder-celular"><div class="empty">Escolha uma anotação ou crie uma nova.</div></div>
+    }
+  </div>
+</div>
+@if (!atual()) {
+  <button type="button" class="fab" aria-label="Nova anotação" (click)="nova()"><app-icon name="mais" [size]="26" [stroke]="2.4" /></button>
+}

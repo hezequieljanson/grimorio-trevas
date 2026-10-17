@@ -1,0 +1,8500 @@
+[
+ {
+  "id": "vtm-parada-dificuldade",
+  "linha": "vtm",
+  "titulo": "Parada de dados e dificuldade",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 190,
+  "resumo": [
+   "Todo teste usa dados de dez faces. A parada costuma ser Atributo + Habilidade; nunca se somam mais de duas Características. Traços de escala 10 (Humanidade, Força de Vontade) são rolados sozinhos.",
+   "Cada dado com resultado igual ou maior que a dificuldade conta um sucesso. A dificuldade vai de 2 a 10 e o padrão é 6. Um único sucesso já basta para a maioria das ações; mais sucessos significam um resultado melhor."
+  ],
+  "tabela": [
+   [
+    "Dificuldade",
+    "Descrição"
+   ],
+   [
+    "3",
+    "Fácil"
+   ],
+   [
+    "4",
+    "Rotineiro"
+   ],
+   [
+    "5",
+    "Equilibrado"
+   ],
+   [
+    "6",
+    "Médio (padrão)"
+   ],
+   [
+    "7",
+    "Desafiador"
+   ],
+   [
+    "8",
+    "Difícil"
+   ],
+   [
+    "9",
+    "Extremamente difícil"
+   ]
+  ],
+  "tags": [
+   "dados",
+   "parada",
+   "dificuldade",
+   "teste",
+   "rolagem",
+   "d10",
+   "sucesso"
+  ]
+ },
+ {
+  "id": "vtm-margem-sucesso",
+  "linha": "vtm",
+  "titulo": "Margem de sucesso",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 191,
+  "resumo": [
+   "O número de sucessos indica a qualidade do resultado. O Narrador usa essa escala para descrever o quanto a ação deu certo."
+  ],
+  "tabela": [
+   [
+    "Sucessos",
+    "Resultado"
+   ],
+   [
+    "1",
+    "Mínimo"
+   ],
+   [
+    "2",
+    "Moderado"
+   ],
+   [
+    "3",
+    "Total"
+   ],
+   [
+    "4",
+    "Excepcional"
+   ],
+   [
+    "5+",
+    "Fenomenal"
+   ]
+  ],
+  "tags": [
+   "margem",
+   "sucessos",
+   "grau de sucesso",
+   "resultado"
+  ]
+ },
+ {
+  "id": "vtm-falha-critica",
+  "linha": "vtm",
+  "titulo": "Falha e falha crítica (regra do 1)",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 191,
+  "resumo": [
+   "Cada dado que mostra 1 anula um sucesso. Se não sobrar nenhum sucesso, o teste falhou.",
+   "É falha crítica quando o teste não teve nenhum sucesso e saiu pelo menos um 1. Se havia sucessos e todos foram cancelados pelos 1, é só falha simples. A falha crítica traz uma consequência ruim além do fracasso.",
+   "Regra opcional: o Narrador pode perdoar a primeira falha crítica da sessão. Testes de dano e de absorção nunca resultam em falha crítica."
+  ],
+  "tags": [
+   "falha crítica",
+   "botch",
+   "regra do um",
+   "falha",
+   "desastre",
+   "1"
+  ]
+ },
+ {
+  "id": "vtm-sucesso-automatico",
+  "linha": "vtm",
+  "titulo": "Sucesso automático",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 192,
+  "resumo": [
+   "Se a parada for igual ou maior que a dificuldade numa tarefa rotineira, fora de combate e sem pressão, o Narrador pode dar um sucesso sem rolar.",
+   "Gastar 1 ponto de Força de Vontade garante 1 sucesso automático que não pode ser cancelado por 1. Só um ponto por turno pode ser gasto assim."
+  ],
+  "tags": [
+   "sucesso automático",
+   "força de vontade",
+   "gastar fv",
+   "sem rolar"
+  ]
+ },
+ {
+  "id": "vtm-tentar-novamente",
+  "linha": "vtm",
+  "titulo": "Tentar de novo",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 192,
+  "resumo": [
+   "Depois de uma falha, o personagem pode tentar outra vez, mas o Narrador costuma aumentar a dificuldade em +1 a cada nova tentativa, refletindo a frustração."
+  ],
+  "tags": [
+   "tentar novamente",
+   "repetir teste",
+   "nova tentativa"
+  ]
+ },
+ {
+  "id": "vtm-tempo",
+  "linha": "vtm",
+  "titulo": "Unidades de tempo",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 189,
+  "resumo": [
+   "Turno: o tempo de uma ação curta (de 3 segundos a 3 minutos). Cena: um trecho contínuo num mesmo lugar. Capítulo: em geral uma sessão de jogo. História: um enredo completo. Crônica: a série de histórias ligadas.",
+   "O Narrador pode acelerar o tempo quando nada importante acontece (tempo acelerado)."
+  ],
+  "tags": [
+   "tempo",
+   "turno",
+   "cena",
+   "capítulo",
+   "história",
+   "crônica"
+  ]
+ },
+ {
+  "id": "vtm-atos-reflexos",
+  "linha": "vtm",
+  "titulo": "Atos reflexos",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 190,
+  "resumo": [
+   "Algumas coisas não contam como ação e não reduzem a parada: gastar sangue, absorver dano, fazer testes de Virtude e ativar Rapidez."
+  ],
+  "tags": [
+   "ato reflexo",
+   "ação livre",
+   "reflexo"
+  ]
+ },
+ {
+  "id": "vtm-acoes-multiplas",
+  "linha": "vtm",
+  "titulo": "Ações múltiplas",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 193,
+  "resumo": [
+   "Quem quer fazer mais de uma ação no turno declara todas. A primeira ação perde tantos dados quanto o total de ações; cada ação seguinte perde um dado a mais, cumulativo.",
+   "Rapidez dá ações extras sem essa penalidade."
+  ],
+  "tags": [
+   "ações múltiplas",
+   "várias ações",
+   "dividir parada",
+   "penalidade"
+  ]
+ },
+ {
+  "id": "vtm-acao-prolongada",
+  "linha": "vtm",
+  "titulo": "Ação prolongada",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 193,
+  "resumo": [
+   "Tarefas longas pedem que se acumule um total de sucessos ao longo de vários testes (um por turno, hora etc.).",
+   "Uma falha crítica no meio do caminho pode anular tudo o que já foi acumulado."
+  ],
+  "tags": [
+   "ação prolongada",
+   "acumular sucessos",
+   "extended",
+   "tarefa longa"
+  ]
+ },
+ {
+  "id": "vtm-acao-resistida",
+  "linha": "vtm",
+  "titulo": "Ação resistida",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 193,
+  "resumo": [
+   "Quando dois personagens se opõem, ambos rolam. Os sucessos de quem resiste cancelam os de quem age; vence quem tiver sobra.",
+   "Uma ação pode ser resistida e prolongada: a cada rodada só a diferença de sucessos conta, e vence quem chegar primeiro ao total."
+  ],
+  "tags": [
+   "ação resistida",
+   "teste oposto",
+   "disputa",
+   "resisted"
+  ]
+ },
+ {
+  "id": "vtm-trabalho-equipe",
+  "linha": "vtm",
+  "titulo": "Trabalho de equipe",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 194,
+  "resumo": [
+   "Dois ou mais personagens podem somar esforços: cada um rola sua parada separadamente e os sucessos se somam. As Características não se somam numa parada só.",
+   "A falha crítica de um participante pode atrapalhar o grupo inteiro."
+  ],
+  "tags": [
+   "trabalho de equipe",
+   "teamwork",
+   "ajudar",
+   "cooperação",
+   "somar sucessos"
+  ]
+ },
+ {
+  "id": "vtm-regra-ouro",
+  "linha": "vtm",
+  "titulo": "A Regra de Ouro",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 197,
+  "resumo": [
+   "As regras servem à história. O Narrador pode mudar ou ignorar qualquer regra que atrapalhe a diversão do grupo."
+  ],
+  "tags": [
+   "regra de ouro",
+   "narrador",
+   "regras opcionais"
+  ]
+ },
+ {
+  "id": "vtm-especializacao",
+  "linha": "vtm",
+  "titulo": "Especializações",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 110,
+  "resumo": [
+   "Um Atributo ou Habilidade com 4 ou mais pontos pode ter uma especialização. Ao rolar dentro dela, cada 10 conta como sucesso e é rolado de novo, podendo gerar mais sucessos.",
+   "Expressão, Ofícios, Performance, Acadêmicos e Ciência pedem uma especialização mesmo com menos de 4 pontos."
+  ],
+  "tags": [
+   "especialização",
+   "especialidade",
+   "rolar 10 de novo",
+   "reroll"
+  ]
+ },
+ {
+  "id": "vtm-habilidade-sem-pontos",
+  "linha": "vtm",
+  "titulo": "Usar Habilidade sem pontos",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 114,
+  "resumo": [
+   "Talento sem pontos: rola só o Atributo, sem penalidade. Perícia sem pontos: rola o Atributo com dificuldade +1. Conhecimento sem pontos: normalmente não pode ser tentado."
+  ],
+  "tags": [
+   "habilidade",
+   "sem pontos",
+   "talento",
+   "perícia",
+   "conhecimento",
+   "unskilled"
+  ]
+ },
+ {
+  "id": "vtm-combate-turno",
+  "linha": "vtm",
+  "titulo": "Turno de combate e iniciativa",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 207,
+  "resumo": [
+   "Cada turno de combate tem três etapas: iniciativa, ataque e resolução.",
+   "Iniciativa = 1d10 + Destreza + Raciocínio, menos penalidades de ferimento. As ações são declaradas da menor para a maior iniciativa e executadas da maior para a menor, de modo que o mais rápido reage ao que os outros anunciaram."
+  ],
+  "tags": [
+   "combate",
+   "iniciativa",
+   "turno",
+   "ordem",
+   "declarar ação"
+  ]
+ },
+ {
+  "id": "vtm-ataque",
+  "linha": "vtm",
+  "titulo": "Paradas de ataque",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 208,
+  "resumo": [
+   "Desarmado: Destreza + Briga. Armas brancas: Destreza + Armas Brancas. Armas de fogo: Destreza + Armas de Fogo. Arremesso: Destreza + Esportes. A dificuldade padrão é 6, ajustada pela arma e pela situação.",
+   "Cada sucesso no ataque além do primeiro acrescenta um dado à parada de dano."
+  ],
+  "tags": [
+   "ataque",
+   "acertar",
+   "briga",
+   "armas brancas",
+   "armas de fogo",
+   "arremesso"
+  ]
+ },
+ {
+  "id": "vtm-tipos-dano",
+  "linha": "vtm",
+  "titulo": "Tipos de dano: contusão, letal e agravado",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 210,
+  "resumo": [
+   "Contusão (socos, pancadas): vampiros e mortais absorvem com Vigor; no vampiro, o que sobra de contusão é dividido por 2, arredondando para baixo.",
+   "Letal (lâminas, balas): mortais não absorvem; vampiros absorvem com Vigor + Fortitude. Balas contra vampiros contam como contusão, salvo tiro na cabeça (dificuldade 8).",
+   "Agravado (fogo, sol, garras e presas sobrenaturais): só Fortitude absorve. Na ficha, marque \"/\" para dano comum e \"X\" para agravado."
+  ],
+  "tags": [
+   "dano",
+   "contusão",
+   "letal",
+   "agravado",
+   "bashing",
+   "lethal",
+   "aggravated",
+   "tipos de dano"
+  ]
+ },
+ {
+  "id": "vtm-dano-absorcao",
+  "linha": "vtm",
+  "titulo": "Rolagem de dano e absorção",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 211,
+  "resumo": [
+   "O dano é uma parada própria (força + arma, ou o dano da arma de fogo) rolada contra dificuldade 6; cada sucesso causa um nível de vitalidade. A parada mínima é 1 dado.",
+   "A absorção é um ato reflexo: Vigor (mais Fortitude e armadura, quando cabem) contra dificuldade 6; cada sucesso anula um nível. Dano e absorção não sofrem falha crítica."
+  ],
+  "tags": [
+   "absorção",
+   "soak",
+   "dano",
+   "vigor",
+   "fortitude",
+   "resistir dano"
+  ]
+ },
+ {
+  "id": "vtm-manobras-proximo",
+  "linha": "vtm",
+  "titulo": "Manobras de combate corpo a corpo",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 214,
+  "resumo": [
+   "Tabela das manobras básicas. (A) = agravado; (D) = derruba; (R) = reduz os sucessos do atacante; (S) = mantém o efeito nos turnos seguintes. Reconstruída do texto, confira no livro."
+  ],
+  "tabela": [
+   [
+    "Manobra",
+    "Teste",
+    "Precisão",
+    "Dif.",
+    "Dano"
+   ],
+   [
+    "Morder",
+    "Des + Briga",
+    "+1",
+    "normal",
+    "For +1 (A)"
+   ],
+   [
+    "Bloquear",
+    "Des + Briga",
+    "especial",
+    "normal",
+    "(R)"
+   ],
+   [
+    "Garra",
+    "Des + Briga",
+    "normal",
+    "normal",
+    "For +1 (A)"
+   ],
+   [
+    "Chave",
+    "For + Briga",
+    "normal",
+    "normal",
+    "For (S)"
+   ],
+   [
+    "Desarmar",
+    "Des + Armas Brancas",
+    "normal",
+    "+1",
+    "especial"
+   ],
+   [
+    "Esquiva",
+    "Des + Esquiva",
+    "especial",
+    "normal",
+    "(R)"
+   ],
+   [
+    "Agarrar",
+    "For + Briga",
+    "normal",
+    "normal",
+    "— (S)"
+   ],
+   [
+    "Chutar",
+    "Des + Briga",
+    "normal",
+    "+1",
+    "For +1"
+   ],
+   [
+    "Aparar",
+    "Des + Armas Brancas",
+    "especial",
+    "normal",
+    "(R)"
+   ],
+   [
+    "Soco",
+    "Des + Briga",
+    "normal",
+    "normal",
+    "For"
+   ],
+   [
+    "Rasteira",
+    "Des + Briga/Armas Brancas",
+    "normal",
+    "+1",
+    "For (D)"
+   ],
+   [
+    "Encontrão",
+    "For + Briga",
+    "normal",
+    "+1",
+    "For +1 (D)"
+   ],
+   [
+    "Golpe com arma",
+    "Des + Armas Brancas",
+    "normal",
+    "normal",
+    "Arma"
+   ]
+  ],
+  "tags": [
+   "manobras",
+   "soco",
+   "chute",
+   "agarrar",
+   "morder",
+   "garra",
+   "esquiva",
+   "aparar",
+   "bloquear",
+   "desarmar",
+   "rasteira",
+   "encontrão"
+  ]
+ },
+ {
+  "id": "vtm-manobras-distancia",
+  "linha": "vtm",
+  "titulo": "Manobras de combate à distância",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 215,
+  "resumo": [
+   "Armas automáticas permitem rajadas e disparos contínuos, trocando precisão por volume de fogo. Duas armas contam como ações múltiplas, com +1 de dificuldade para a mão inábil.",
+   "Atirar até o dobro do alcance da arma é longa distância (dificuldade 8)."
+  ],
+  "tabela": [
+   [
+    "Manobra",
+    "Precisão",
+    "Dif."
+   ],
+   [
+    "Disparos automáticos",
+    "+10",
+    "+2"
+   ],
+   [
+    "Efeito mangueira",
+    "+10",
+    "+2"
+   ],
+   [
+    "Rajada de três tiros",
+    "+2",
+    "+1"
+   ],
+   [
+    "Tiros múltiplos",
+    "especial",
+    "—"
+   ],
+   [
+    "Duas armas",
+    "especial",
+    "+1 mão inábil"
+   ]
+  ],
+  "tags": [
+   "tiro",
+   "rajada",
+   "automático",
+   "duas armas",
+   "mangueira",
+   "alcance"
+  ]
+ },
+ {
+  "id": "vtm-armas-brancas",
+  "linha": "vtm",
+  "titulo": "Tabela de armas brancas",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 215,
+  "resumo": [
+   "Dano somado à Força. Ocultabilidade: B bolso, C casaco, I impermeável, N não dá para esconder.",
+   "A estaca cravada no coração (dificuldade 9 e 3 sucessos de dano) paralisa o vampiro até ser retirada."
+  ],
+  "tabela": [
+   [
+    "Arma",
+    "Dano",
+    "Tipo",
+    "Ocult."
+   ],
+   [
+    "Cassetete",
+    "For +1",
+    "Contusão",
+    "B"
+   ],
+   [
+    "Porrete",
+    "For +2",
+    "Contusão",
+    "I"
+   ],
+   [
+    "Faca",
+    "For +1",
+    "Letal",
+    "C"
+   ],
+   [
+    "Espada",
+    "For +2",
+    "Letal",
+    "I"
+   ],
+   [
+    "Machado",
+    "For +3",
+    "Letal",
+    "N"
+   ],
+   [
+    "Estaca",
+    "For +1",
+    "Letal",
+    "I"
+   ]
+  ],
+  "tags": [
+   "armas brancas",
+   "faca",
+   "espada",
+   "machado",
+   "estaca",
+   "porrete",
+   "cassetete"
+  ]
+ },
+ {
+  "id": "vtm-armas-fogo",
+  "linha": "vtm",
+  "titulo": "Tabela de armas de fogo",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 215,
+  "resumo": [
+   "CdT = cadência de tiro por turno. Pente: capacidade (+1 na câmara). A besta leva 5 turnos para recarregar."
+  ],
+  "tabela": [
+   [
+    "Arma",
+    "Dano",
+    "Alcance (m)",
+    "CdT",
+    "Pente",
+    "Ocult."
+   ],
+   [
+    "Revólver leve",
+    "4",
+    "12",
+    "3",
+    "6",
+    "B"
+   ],
+   [
+    "Revólver pesado",
+    "6",
+    "35",
+    "2",
+    "6",
+    "C"
+   ],
+   [
+    "Pistola leve",
+    "4",
+    "20",
+    "4",
+    "17+1",
+    "B"
+   ],
+   [
+    "Pistola pesada",
+    "5",
+    "30",
+    "3",
+    "7+1",
+    "C"
+   ],
+   [
+    "Fuzil",
+    "8",
+    "200",
+    "1",
+    "5+1",
+    "N"
+   ],
+   [
+    "Submetralhadora pequena",
+    "4",
+    "25",
+    "3",
+    "30+1",
+    "C"
+   ],
+   [
+    "Submetralhadora grande",
+    "4",
+    "50",
+    "3",
+    "32+1",
+    "I"
+   ],
+   [
+    "Fuzil de assalto",
+    "7",
+    "150",
+    "3",
+    "42+1",
+    "N"
+   ],
+   [
+    "Espingarda",
+    "8",
+    "20",
+    "1",
+    "5+1",
+    "I"
+   ],
+   [
+    "Espingarda semiautomática",
+    "8",
+    "20",
+    "3",
+    "8+1",
+    "I"
+   ],
+   [
+    "Besta",
+    "5",
+    "20",
+    "1",
+    "1",
+    "I"
+   ]
+  ],
+  "tags": [
+   "armas de fogo",
+   "revólver",
+   "pistola",
+   "fuzil",
+   "espingarda",
+   "submetralhadora",
+   "besta",
+   "tiro"
+  ]
+ },
+ {
+  "id": "vtm-armaduras",
+  "linha": "vtm",
+  "titulo": "Armaduras",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 215,
+  "resumo": [
+   "A armadura soma dados à absorção, mas atrapalha a Destreza. Não protege contra fogo nem sol. Um ataque que cause pelo menos o dobro do valor da armadura a destrói."
+  ],
+  "tabela": [
+   [
+    "Classe",
+    "Armadura",
+    "Absorção",
+    "Penalidade"
+   ],
+   [
+    "1",
+    "Roupa reforçada",
+    "1",
+    "0"
+   ],
+   [
+    "2",
+    "Colete blindado",
+    "2",
+    "1"
+   ],
+   [
+    "3",
+    "Colete de Kevlar",
+    "3",
+    "1"
+   ],
+   [
+    "4",
+    "Colete à prova de balas",
+    "4",
+    "2"
+   ],
+   [
+    "5",
+    "Armadura completa",
+    "5",
+    "3"
+   ]
+  ],
+  "tags": [
+   "armadura",
+   "colete",
+   "kevlar",
+   "proteção",
+   "absorção"
+  ]
+ },
+ {
+  "id": "vtm-complicacoes-combate",
+  "linha": "vtm",
+  "titulo": "Complicações de combate",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 209,
+  "resumo": [
+   "Abortar a ação declarada para se defender exige um teste de Força de Vontade (dif. 6) ou o gasto de 1 ponto. Emboscada: Destreza + Furtividade contra Percepção + Prontidão da vítima.",
+   "Atacar às cegas: +2 de dificuldade. Atacar pelo flanco dá +1 dado e pela retaguarda +2. É possível andar metade da corrida e ainda agir."
+  ],
+  "tags": [
+   "emboscada",
+   "abortar",
+   "flanco",
+   "retaguarda",
+   "às cegas",
+   "surpresa",
+   "defesa"
+  ]
+ },
+ {
+  "id": "vtm-movimento",
+  "linha": "vtm",
+  "titulo": "Movimento",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 207,
+  "resumo": [
+   "Por turno: andar 7 m; marchar 12 m + Destreza; correr 20 m + 3 × Destreza. Ferimentos reduzem o deslocamento (ver Vitalidade)."
+  ],
+  "tags": [
+   "movimento",
+   "correr",
+   "deslocamento",
+   "velocidade",
+   "andar"
+  ]
+ },
+ {
+  "id": "vtm-vitalidade",
+  "linha": "vtm",
+  "titulo": "Vitalidade e penalidades de ferimento",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 216,
+  "resumo": [
+   "O personagem tem sete níveis de vitalidade antes de cair. Cada nível marcado traz uma penalidade em dados e limita o movimento. As penalidades não afetam atos reflexos, e gastar 1 FV ignora a penalidade por um turno.",
+   "Incapacitado que sofre mais dano comum entra em torpor; se o dano for agravado, encontra a Morte Final."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Penalidade",
+    "Movimento"
+   ],
+   [
+    "Escoriado",
+    "0",
+    "normal"
+   ],
+   [
+    "Machucado",
+    "−1",
+    "normal"
+   ],
+   [
+    "Ferido",
+    "−1",
+    "metade da corrida"
+   ],
+   [
+    "Ferido Gravemente",
+    "−2",
+    "anda, não corre; não move e ataca"
+   ],
+   [
+    "Espancado",
+    "−2",
+    "manca (3 m/turno)"
+   ],
+   [
+    "Aleijado",
+    "−5",
+    "rasteja (1 m/turno)"
+   ],
+   [
+    "Incapacitado",
+    "—",
+    "imóvel"
+   ],
+   [
+    "Torpor",
+    "—",
+    "sono semelhante à morte"
+   ],
+   [
+    "Morte Final",
+    "—",
+    "destruído"
+   ]
+  ],
+  "tags": [
+   "vitalidade",
+   "ferimentos",
+   "saúde",
+   "health",
+   "penalidade",
+   "machucado",
+   "incapacitado"
+  ]
+ },
+ {
+  "id": "vtm-cura-vampiro",
+  "linha": "vtm",
+  "titulo": "Cura vampírica",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 217,
+  "resumo": [
+   "Gastar 1 ponto de sangue cura 1 nível de contusão ou letal; o limite por turno é o de gasto de sangue da geração.",
+   "Dano agravado é mais lento: cada nível exige um dia de descanso e 5 pontos de sangue. Curar níveis extras no mesmo dia custa mais 5 pontos de sangue e 1 FV por nível."
+  ],
+  "tags": [
+   "cura",
+   "curar",
+   "regenerar",
+   "sangue",
+   "agravado",
+   "recuperação"
+  ]
+ },
+ {
+  "id": "vtm-figurantes",
+  "linha": "vtm",
+  "titulo": "Vitalidade simplificada para figurantes",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 216,
+  "resumo": [
+   "Regra opcional para capangas sem importância: só quatro estados — Machucado (−1), Mutilado (−3), Incapacitado e Morto."
+  ],
+  "tags": [
+   "figurantes",
+   "capangas",
+   "npc",
+   "extras",
+   "vitalidade simplificada"
+  ]
+ },
+ {
+  "id": "vtm-torpor",
+  "linha": "vtm",
+  "titulo": "Torpor",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 218,
+  "resumo": [
+   "O vampiro cai em torpor quando passa de Incapacitado com dano comum ou fica sem sangue. Pode também entrar nele por vontade própria.",
+   "A duração mínima depende da Humanidade (ou Trilha). Depois desse prazo, gasta 1 ponto de sangue e faz o teste para despertar."
+  ],
+  "tabela": [
+   [
+    "Humanidade",
+    "Duração"
+   ],
+   [
+    "10",
+    "1 dia"
+   ],
+   [
+    "9",
+    "3 dias"
+   ],
+   [
+    "8",
+    "1 semana"
+   ],
+   [
+    "7",
+    "2 semanas"
+   ],
+   [
+    "6",
+    "1 mês"
+   ],
+   [
+    "5",
+    "1 ano"
+   ],
+   [
+    "4",
+    "1 década"
+   ],
+   [
+    "3",
+    "5 décadas"
+   ],
+   [
+    "2",
+    "1 século"
+   ],
+   [
+    "1",
+    "5 séculos"
+   ],
+   [
+    "0",
+    "1 milênio ou mais"
+   ]
+  ],
+  "tags": [
+   "torpor",
+   "sono",
+   "humanidade",
+   "despertar"
+  ]
+ },
+ {
+  "id": "vtm-morte-final",
+  "linha": "vtm",
+  "titulo": "Morte Final",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 218,
+  "resumo": [
+   "O vampiro é destruído quando sofre dano agravado estando Incapacitado ou quando todo o seu corpo é consumido (fogo, sol, decapitação, a critério do Narrador)."
+  ],
+  "tags": [
+   "morte final",
+   "destruição",
+   "morrer",
+   "final death"
+  ]
+ },
+ {
+  "id": "vtm-estaca",
+  "linha": "vtm",
+  "titulo": "Estaca no coração",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 215,
+  "resumo": [
+   "Uma estaca de madeira cravada no coração paralisa o vampiro, que fica consciente mas incapaz de agir até ser retirada. Exige acertar o coração (dificuldade 9) e causar pelo menos 3 níveis de dano."
+  ],
+  "tags": [
+   "estaca",
+   "paralisia",
+   "coração",
+   "madeira",
+   "stake"
+  ]
+ },
+ {
+  "id": "vtm-pontos-sangue",
+  "linha": "vtm",
+  "titulo": "Pontos de sangue",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 137,
+  "resumo": [
+   "Cada ponto equivale a cerca de um décimo do sangue de um adulto. O vampiro gasta 1 ponto todas as noites ao despertar.",
+   "Usos: curar ferimentos; somar +1 a um Atributo Físico por ponto durante uma cena; fingir ser humano (corar, respirar) pagando 8 − Humanidade pontos; ativar Disciplinas; criar carniçais e laços.",
+   "O máximo de pontos e o gasto por turno dependem da geração. Na criação, os pontos iniciais são 1d10."
+  ],
+  "tags": [
+   "sangue",
+   "vitae",
+   "blood pool",
+   "reserva de sangue",
+   "gastar sangue",
+   "fome"
+  ]
+ },
+ {
+  "id": "vtm-aumentar-atributos",
+  "linha": "vtm",
+  "titulo": "Aumentar Atributos Físicos com sangue",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 138,
+  "resumo": [
+   "Cada ponto de sangue gasto dá +1 num Atributo Físico pela cena, até o limite de gasto por turno da geração.",
+   "Pode-se passar 1 ponto acima do máximo da geração livremente; além disso, cada ponto extra dura só 3 turnos após parar de gastar. O teto absoluto é 10."
+  ],
+  "tags": [
+   "força",
+   "destreza",
+   "vigor",
+   "atributo físico",
+   "sangue",
+   "aumentar"
+  ]
+ },
+ {
+  "id": "vtm-alimentacao",
+  "linha": "vtm",
+  "titulo": "Alimentação e o Beijo",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 138,
+  "resumo": [
+   "O vampiro bebe até 3 pontos de sangue por turno. Tirar cerca de 20% do sangue não prejudica muito a vítima; tirar metade exige hospitalização.",
+   "O Beijo causa êxtase. Mortais com Força de Vontade muito alta podem resistir; vampiros resistem com Autocontrole (dificuldade 8)."
+  ],
+  "tags": [
+   "alimentação",
+   "beijo",
+   "beber sangue",
+   "fonte",
+   "vítima",
+   "caçar"
+  ]
+ },
+ {
+  "id": "vtm-caca",
+  "linha": "vtm",
+  "titulo": "Caçada",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 200,
+  "resumo": [
+   "Encontrar uma vítima pede um teste de Percepção (mais a pontuação de Rebanho) por hora de busca. A dificuldade varia com o bairro."
+  ],
+  "tabela": [
+   [
+    "Local",
+    "Dificuldade"
+   ],
+   [
+    "Bairro miserável",
+    "4"
+   ],
+   [
+    "Classe baixa / boêmio",
+    "5"
+   ],
+   [
+    "Centro",
+    "6"
+   ],
+   [
+    "Área industrial",
+    "6"
+   ],
+   [
+    "Subúrbio",
+    "7"
+   ],
+   [
+    "Área muito policiada",
+    "8"
+   ]
+  ],
+  "tags": [
+   "caça",
+   "caçada",
+   "hunting",
+   "rebanho",
+   "fonte",
+   "alimentar"
+  ]
+ },
+ {
+  "id": "vtm-fontes-sangue",
+  "linha": "vtm",
+  "titulo": "Sangue por fonte",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 138,
+  "resumo": [
+   "Quantos pontos de sangue cada tipo de criatura fornece. Valores reconstruídos do texto; sangue de anciões pode valer mais por ponto."
+  ],
+  "tabela": [
+   [
+    "Fonte",
+    "Pontos"
+   ],
+   [
+    "Vampiro",
+    "10 ou mais"
+   ],
+   [
+    "Lobisomem",
+    "25"
+   ],
+   [
+    "Humano adulto",
+    "10"
+   ],
+   [
+    "Criança",
+    "5"
+   ],
+   [
+    "Vaca",
+    "5"
+   ],
+   [
+    "Cachorro",
+    "2"
+   ],
+   [
+    "Gato",
+    "1"
+   ],
+   [
+    "Bolsa de sangue",
+    "1"
+   ],
+   [
+    "Rato",
+    "½"
+   ],
+   [
+    "Morcego / pássaro",
+    "¼"
+   ]
+  ],
+  "tags": [
+   "fonte",
+   "sangue animal",
+   "bolsa de sangue",
+   "lobisomem",
+   "vegetariano"
+  ]
+ },
+ {
+  "id": "vtm-geracao",
+  "linha": "vtm",
+  "titulo": "Tabela de Geração",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 139,
+  "resumo": [
+   "A geração mede a distância até Caim. Quanto menor, mais sangue o vampiro guarda, mais gasta por turno e mais alto pode ter suas Características.",
+   "Sem pontos no Antecedente Geração, o personagem é da 13ª geração. Valores da 3ª geração são desconhecidos."
+  ],
+  "tabela": [
+   [
+    "Geração",
+    "Máx. Característica",
+    "Máx. sangue",
+    "Sangue/turno"
+   ],
+   [
+    "4ª",
+    "9",
+    "50",
+    "10"
+   ],
+   [
+    "5ª",
+    "8",
+    "40",
+    "8"
+   ],
+   [
+    "6ª",
+    "7",
+    "30",
+    "6"
+   ],
+   [
+    "7ª",
+    "6",
+    "20",
+    "4"
+   ],
+   [
+    "8ª",
+    "5",
+    "15",
+    "3"
+   ],
+   [
+    "9ª",
+    "5",
+    "14",
+    "2"
+   ],
+   [
+    "10ª",
+    "5",
+    "13",
+    "1"
+   ],
+   [
+    "11ª",
+    "5",
+    "12",
+    "1"
+   ],
+   [
+    "12ª",
+    "5",
+    "11",
+    "1"
+   ],
+   [
+    "13ª",
+    "5",
+    "10",
+    "1"
+   ]
+  ],
+  "tags": [
+   "geração",
+   "caim",
+   "sangue máximo",
+   "limite de traço",
+   "antecedente geração"
+  ]
+ },
+ {
+  "id": "vtm-laco-sangue",
+  "linha": "vtm",
+  "titulo": "Laço de sangue",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 219,
+  "resumo": [
+   "Quem bebe o sangue de um mesmo vampiro em três ocasiões, em noites diferentes, fica preso a ele por um laço de sangue: sente devoção intensa e tem dificuldade de agir contra o regente.",
+   "Cada gole é um passo do laço. Só se pode estar plenamente ligado a um regente por vez. O laço enfraquece com o tempo se não for renovado."
+  ],
+  "tags": [
+   "laço de sangue",
+   "blood bond",
+   "regente",
+   "escravo",
+   "vínculo",
+   "três goles"
+  ]
+ },
+ {
+  "id": "vtm-carnical",
+  "linha": "vtm",
+  "titulo": "Carniçais",
+  "capitulo": "Cap. 9 – Antagonistas",
+  "pagina": 273,
+  "resumo": [
+   "Carniçal é um mortal (ou animal) que bebe vitae sem ser drenado. Ganha um pouco de Potência, envelhece mais devagar e pode usar o sangue para se curar, mas depende de doses regulares.",
+   "Quase sempre está sob laço de sangue com o dominador. Sem vitae por muito tempo, volta a ser mortal e a idade cobra o atraso."
+  ],
+  "tags": [
+   "carniçal",
+   "ghoul",
+   "servo",
+   "lacaio",
+   "dominador",
+   "vitae"
+  ]
+ },
+ {
+  "id": "vtm-diablerie",
+  "linha": "vtm",
+  "titulo": "Diablerie",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 224,
+  "resumo": [
+   "Diablerie é beber o sangue de outro vampiro até consumir sua alma. O diablerista que mata alguém de geração menor que a sua desce uma geração.",
+   "É crime grave na Camarilla e deixa veios escuros na aura por um tempo. Diablerizar costuma exigir teste de degeneração e pode trazer traços da vítima."
+  ],
+  "tags": [
+   "diablerie",
+   "amarante",
+   "canibalismo",
+   "geração",
+   "alma",
+   "beber vampiro"
+  ]
+ },
+ {
+  "id": "vtm-humanidade",
+  "linha": "vtm",
+  "titulo": "Humanidade",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 133,
+  "resumo": [
+   "Humanidade mede o quanto o vampiro ainda se prende à moral humana. Começa como Consciência + Autocontrole.",
+   "Ela define o custo para parecer humano (8 − Humanidade em sangue), a duração do torpor, a dificuldade de acordar de dia e o máximo de dados que se usa durante o dia. A zero, a Besta assume e o personagem sai de jogo."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Descrição"
+   ],
+   [
+    "10",
+    "Santo"
+   ],
+   [
+    "9",
+    "Compassivo"
+   ],
+   [
+    "8",
+    "Atencioso"
+   ],
+   [
+    "7",
+    "Normal"
+   ],
+   [
+    "6",
+    "Reservado"
+   ],
+   [
+    "5",
+    "Distante"
+   ],
+   [
+    "4",
+    "Insensível"
+   ],
+   [
+    "3",
+    "Frio"
+   ],
+   [
+    "2",
+    "Bestial"
+   ],
+   [
+    "1",
+    "Horroroso"
+   ]
+  ],
+  "tags": [
+   "humanidade",
+   "moral",
+   "besta",
+   "humanitas"
+  ]
+ },
+ {
+  "id": "vtm-degeneracao",
+  "linha": "vtm",
+  "titulo": "Degeneração e Hierarquia de Pecados",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 221,
+  "resumo": [
+   "Quando comete um ato igual ou pior que o pecado do seu nível atual de Humanidade, o personagem testa Consciência (ou Convicção), dificuldade 8. Não se pode gastar FV para sucesso automático.",
+   "Um sucesso mantém a Humanidade. Falha: perde 1 ponto. Falha crítica: perde 1 de Humanidade, 1 de Consciência e ganha uma Perturbação."
+  ],
+  "tabela": [
+   [
+    "Humanidade",
+    "Pecado mínimo que exige teste"
+   ],
+   [
+    "10",
+    "Pensamentos egoístas"
+   ],
+   [
+    "9",
+    "Pequenos atos de egoísmo"
+   ],
+   [
+    "8",
+    "Ferir outros, mesmo sem querer"
+   ],
+   [
+    "7",
+    "Furto e roubo"
+   ],
+   [
+    "6",
+    "Violação acidental (secar a vítima por fome)"
+   ],
+   [
+    "5",
+    "Dano intencional à propriedade"
+   ],
+   [
+    "4",
+    "Violação por descontrole (matar em frenesi)"
+   ],
+   [
+    "3",
+    "Violação premeditada (assassinato deliberado)"
+   ],
+   [
+    "2",
+    "Violação negligente (matar sem pensar)"
+   ],
+   [
+    "1",
+    "Os atos mais hediondos"
+   ]
+  ],
+  "tags": [
+   "degeneração",
+   "pecado",
+   "hierarquia de pecados",
+   "consciência",
+   "perder humanidade",
+   "moral"
+  ]
+ },
+ {
+  "id": "vtm-perturbacoes",
+  "linha": "vtm",
+  "titulo": "Perturbações",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 222,
+  "resumo": [
+   "Perturbações são distúrbios mentais que surgem de traumas, falhas críticas em degeneração ou frenesi. Malkavianos começam com pelo menos uma permanente.",
+   "Gastar Força de Vontade pode conter uma Perturbação por um tempo (exceto a do Malkaviano, que não é curada). Exemplos do livro: Obsessão/Compulsão, Múltiplas Personalidades, Esquizofrenia, Paranoia, Megalomania, Bulimia, Animismo Sanguinário, Histeria, Psicose Maníaco-Depressiva, Fuga."
+  ],
+  "tags": [
+   "perturbação",
+   "loucura",
+   "derangement",
+   "insanidade",
+   "malkaviano",
+   "paranoia"
+  ]
+ },
+ {
+  "id": "vtm-frenesi",
+  "linha": "vtm",
+  "titulo": "Frenesi",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 228,
+  "resumo": [
+   "Quando a Besta é provocada, o personagem testa Autocontrole (ou Instinto) contra a dificuldade da provocação. Para resistir de todo precisa acumular 5 sucessos; cada sucesso abaixo disso segura um turno. Falha = frenesi; falha crítica = frenesi até o Narrador encerrar, com risco de Perturbação.",
+   "Em frenesi o vampiro ignora penalidades de ferimento, fica mais resistente a Dominação e imune ao Rötschreck. Gastar 1 FV controla uma ação por turno. A parada de Autocontrole nunca passa do sangue atual."
+  ],
+  "tabela": [
+   [
+    "Provocação",
+    "Dif."
+   ],
+   [
+    "Cheiro de sangue (faminto)",
+    "3"
+   ],
+   [
+    "Ver sangue (faminto)",
+    "4"
+   ],
+   [
+    "Ser maltratado",
+    "4"
+   ],
+   [
+    "Vida ameaçada",
+    "4"
+   ],
+   [
+    "Humilhado",
+    "4"
+   ],
+   [
+    "Provocação física",
+    "6"
+   ],
+   [
+    "Gosto de sangue (faminto)",
+    "6"
+   ],
+   [
+    "Ente querido ameaçado",
+    "7"
+   ],
+   [
+    "Humilhação ofensiva",
+    "8"
+   ]
+  ],
+  "tags": [
+   "frenesi",
+   "besta",
+   "raiva",
+   "fúria",
+   "autocontrole",
+   "frenzy",
+   "perder controle"
+  ]
+ },
+ {
+  "id": "vtm-rotschreck",
+  "linha": "vtm",
+  "titulo": "Rötschreck (medo vermelho)",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 229,
+  "resumo": [
+   "Diante de fogo ou sol, o vampiro testa Coragem; precisa de 5 sucessos para manter o controle por completo. Falhar faz o personagem fugir em pânico, atacando o que estiver no caminho."
+  ],
+  "tabela": [
+   [
+    "Provocação",
+    "Dif."
+   ],
+   [
+    "Acender um cigarro",
+    "3"
+   ],
+   [
+    "Tocha",
+    "5"
+   ],
+   [
+    "Fogueira",
+    "6"
+   ],
+   [
+    "Luz solar obscurecida",
+    "7"
+   ],
+   [
+    "Ser queimado",
+    "7"
+   ],
+   [
+    "Luz solar direta",
+    "8"
+   ],
+   [
+    "Preso num prédio em chamas",
+    "9"
+   ]
+  ],
+  "tags": [
+   "rötschreck",
+   "rotschreck",
+   "medo",
+   "fogo",
+   "sol",
+   "pânico",
+   "coragem",
+   "medo vermelho"
+  ]
+ },
+ {
+  "id": "vtm-fogo",
+  "linha": "vtm",
+  "titulo": "Fogo",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 227,
+  "resumo": [
+   "Fogo causa dano agravado a cada turno de exposição. Só Fortitude absorve, e a armadura não ajuda. A intensidade define a dificuldade da absorção; o tamanho define quantos níveis por turno."
+  ],
+  "tabela": [
+   [
+    "Calor",
+    "Dif. absorção"
+   ],
+   [
+    "Vela",
+    "3"
+   ],
+   [
+    "Tocha",
+    "5"
+   ],
+   [
+    "Bico de Bunsen",
+    "7"
+   ],
+   [
+    "Fogo elétrico",
+    "8"
+   ],
+   [
+    "Fogo químico",
+    "9"
+   ],
+   [
+    "Metal fundido",
+    "10"
+   ],
+   [
+    "Tamanho",
+    "Níveis/turno"
+   ],
+   [
+    "Tocha (parte do corpo)",
+    "1"
+   ],
+   [
+    "Fogueira (metade do corpo)",
+    "2"
+   ],
+   [
+    "Incêndio (corpo todo)",
+    "3"
+   ]
+  ],
+  "tags": [
+   "fogo",
+   "chamas",
+   "queimar",
+   "incêndio",
+   "agravado"
+  ]
+ },
+ {
+  "id": "vtm-luz-sol",
+  "linha": "vtm",
+  "titulo": "Luz do sol",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 232,
+  "resumo": [
+   "O sol causa dano agravado por turno, absorvível só com Fortitude. Quanto mais forte a luz, maior a dificuldade; quanto mais pele exposta, mais níveis por turno. Roupas grossas ajudam pouco."
+  ],
+  "tabela": [
+   [
+    "Intensidade",
+    "Dif. absorção"
+   ],
+   [
+    "Luz fraca, crepúsculo, cortina fechada",
+    "3"
+   ],
+   [
+    "Totalmente coberto",
+    "5"
+   ],
+   [
+    "Luz indireta pela janela",
+    "7"
+   ],
+   [
+    "Dia nublado, raio direto, reflexo",
+    "9"
+   ],
+   [
+    "Sol direto em céu aberto",
+    "10"
+   ],
+   [
+    "Exposição",
+    "Níveis/turno"
+   ],
+   [
+    "Pequena parte",
+    "1"
+   ],
+   [
+    "Grande parte",
+    "2"
+   ],
+   [
+    "Mais da metade do corpo",
+    "3"
+   ]
+  ],
+  "tags": [
+   "sol",
+   "luz do sol",
+   "dia",
+   "queimadura",
+   "agravado",
+   "sunlight"
+  ]
+ },
+ {
+  "id": "vtm-despertar-dia",
+  "linha": "vtm",
+  "titulo": "Despertar durante o dia",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 205,
+  "resumo": [
+   "Um vampiro que precisa acordar de dia testa Percepção, e depois a Humanidade, contra dificuldade 8. Enquanto o sol estiver no céu, nenhuma parada pode ter mais dados que a Humanidade."
+  ],
+  "tags": [
+   "despertar",
+   "dia",
+   "acordar",
+   "sono diurno",
+   "humanidade"
+  ]
+ },
+ {
+  "id": "vtm-golconda",
+  "linha": "vtm",
+  "titulo": "Golconda",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 230,
+  "resumo": [
+   "Golconda é o estado lendário em que o vampiro equilibra a Besta e o Homem. Quem a alcança deixa de temer o frenesi e reduz a fome; é mais mito do que caminho conhecido.",
+   "Chegar lá exige uma longa busca, provações e Humanidade alta. O livro trata o tema como gancho de crônica, não como regra fechada."
+  ],
+  "tags": [
+   "golconda",
+   "salvação",
+   "equilíbrio",
+   "besta",
+   "suspiro",
+   "redenção"
+  ]
+ },
+ {
+  "id": "vtm-fe-verdadeira",
+  "linha": "vtm",
+  "titulo": "Fé Verdadeira",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 229,
+  "resumo": [
+   "Alguns mortais têm uma ligação real com o divino. Quem tem Fé Verdadeira pode repelir vampiros apresentando o símbolo da fé; o vampiro precisa vencer um teste de Força de Vontade para se aproximar.",
+   "O contato com o símbolo pode queimar. Para personagens, é Qualidade cara e exige Humanidade muito alta."
+  ],
+  "tags": [
+   "fé",
+   "fé verdadeira",
+   "crucifixo",
+   "repelir",
+   "santo",
+   "igreja"
+  ]
+ },
+ {
+  "id": "vtm-perigos-diversos",
+  "linha": "vtm",
+  "titulo": "Quedas, doenças, eletrocução, venenos e temperatura",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 226,
+  "resumo": [
+   "Quedas causam dano de contusão proporcional à altura. Eletricidade causa dano letal por turno de contato.",
+   "Vampiros ignoram quase todas as doenças e venenos, mas podem carregar doenças no sangue e sentir os efeitos de drogas presentes no sangue da vítima. Frio e calor extremos raramente os ameaçam, salvo fogo."
+  ],
+  "tags": [
+   "queda",
+   "eletricidade",
+   "choque",
+   "veneno",
+   "droga",
+   "doença",
+   "temperatura",
+   "frio"
+  ]
+ },
+ {
+  "id": "vtm-acoes-fisicas",
+  "linha": "vtm",
+  "titulo": "Ações físicas comuns",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 200,
+  "resumo": [
+   "Escalar: Destreza + Esportes. Erguer/quebrar: Força. Esgueirar-se: Destreza + Furtividade. Nadar: Vigor + Esportes. Arremessar e saltar: Destreza ou Força + Esportes.",
+   "Perseguição: Destreza + Esportes ou Condução. Seguir alguém: Destreza + Furtividade ou Condução. Invasão: Destreza ou Percepção + Segurança."
+  ],
+  "tags": [
+   "escalar",
+   "nadar",
+   "saltar",
+   "perseguição",
+   "furtividade",
+   "arrombar",
+   "invasão"
+  ]
+ },
+ {
+  "id": "vtm-acoes-mentais",
+  "linha": "vtm",
+  "titulo": "Ações mentais comuns",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 203,
+  "resumo": [
+   "Rastrear: Percepção + Sobrevivência. Investigar: Percepção + Investigação. Invadir sistemas: Inteligência ou Raciocínio + Computador. Reparos: Destreza ou Percepção + Ofícios."
+  ],
+  "tags": [
+   "investigação",
+   "rastrear",
+   "hacker",
+   "computador",
+   "reparos",
+   "pesquisa"
+  ]
+ },
+ {
+  "id": "vtm-acoes-sociais",
+  "linha": "vtm",
+  "titulo": "Ações sociais comuns",
+  "capitulo": "Cap. 6 – Sistemas e Dramas",
+  "pagina": 204,
+  "resumo": [
+   "Credibilidade: Manipulação ou Percepção + Lábia. Interrogatório: Manipulação + Empatia ou Intimidação. Intimidação: Força ou Manipulação + Intimidação. Oratória: Carisma + Liderança. Atuação: Carisma + Performance.",
+   "Sedução em três etapas: Aparência + Lábia (contra Raciocínio + 3), Raciocínio + Lábia (contra Inteligência + 3) e Carisma + Empatia (contra Percepção + 3)."
+  ],
+  "tags": [
+   "social",
+   "sedução",
+   "interrogatório",
+   "intimidação",
+   "mentir",
+   "oratória",
+   "lábia"
+  ]
+ },
+ {
+  "id": "vtm-forca-vontade",
+  "linha": "vtm",
+  "titulo": "Força de Vontade",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 135,
+  "resumo": [
+   "A Força de Vontade tem nível permanente e pontos temporários, que nunca passam do permanente. Gasta-se para sucesso automático, para ignorar penalidades, conter impulsos e resistir a poderes mentais.",
+   "Recupera-se por completo no fim de cada história, além de pontos ao cumprir a Natureza ou por feitos marcantes. Opcionalmente, 1 ponto ao despertar cada noite. O permanente só sobe com XP."
+  ],
+  "tags": [
+   "força de vontade",
+   "willpower",
+   "fv",
+   "recuperar",
+   "gastar"
+  ]
+ },
+ {
+  "id": "vtm-virtudes",
+  "linha": "vtm",
+  "titulo": "Virtudes",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 131,
+  "resumo": [
+   "Consciência: noção de certo e errado; usada na degeneração. Autocontrole: domínio da Besta; usado contra frenesi. Coragem: enfrentar o medo; usada no Rötschreck e define a Força de Vontade inicial.",
+   "Seguidores de Trilhas trocam Consciência por Convicção e Autocontrole por Instinto. Com Instinto, o personagem entra em frenesi a menos que escolha resistir quando a dificuldade é menor que seu Instinto."
+  ],
+  "tags": [
+   "virtudes",
+   "consciência",
+   "autocontrole",
+   "coragem",
+   "convicção",
+   "instinto"
+  ]
+ },
+ {
+  "id": "vtm-natureza",
+  "linha": "vtm",
+  "titulo": "Natureza e Comportamento",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 105,
+  "resumo": [
+   "A Natureza é o eu verdadeiro e diz como o personagem recupera Força de Vontade: ao agir de acordo com ela, ganha 1 ponto (a critério do Narrador).",
+   "O Comportamento é a máscara mostrada ao mundo e não tem efeito em regras. Ambos vêm da lista de 30 arquétipos."
+  ],
+  "tags": [
+   "natureza",
+   "comportamento",
+   "arquétipo",
+   "personalidade",
+   "recuperar fv"
+  ]
+ },
+ {
+  "id": "vtm-criacao",
+  "linha": "vtm",
+  "titulo": "Criação de personagem — resumo",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 103,
+  "resumo": [
+   "Passo 1: conceito, clã, Natureza e Comportamento. Passo 2: Atributos 7/5/3 (todos começam em 1; Nosferatu têm Aparência 0). Passo 3: Habilidades 13/9/5, nenhuma acima de 3.",
+   "Passo 4: 3 pontos de Disciplinas do clã, 5 de Antecedentes e 7 de Virtudes (cada Virtude começa em 1). Passo 5: Humanidade = Consciência + Autocontrole; Força de Vontade = Coragem; sangue inicial = 1d10; 15 pontos de bônus.",
+   "Todos começam como neófitos com no máximo 25 anos de não-vida e 0 de XP. Sem Antecedente Geração, o personagem é da 13ª."
+  ],
+  "tabela": [
+   [
+    "Etapa",
+    "Pontos"
+   ],
+   [
+    "Atributos",
+    "7 / 5 / 3"
+   ],
+   [
+    "Habilidades",
+    "13 / 9 / 5 (máx. 3)"
+   ],
+   [
+    "Disciplinas",
+    "3 (do clã)"
+   ],
+   [
+    "Antecedentes",
+    "5"
+   ],
+   [
+    "Virtudes",
+    "7"
+   ],
+   [
+    "Pontos de bônus",
+    "15"
+   ]
+  ],
+  "tags": [
+   "criação",
+   "ficha",
+   "novo personagem",
+   "7/5/3",
+   "13/9/5",
+   "passo a passo"
+  ]
+ },
+ {
+  "id": "vtm-pontos-bonus",
+  "linha": "vtm",
+  "titulo": "Custo dos pontos de bônus",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 104,
+  "resumo": [
+   "Os 15 pontos de bônus são gastos no fim da criação. Disciplinas compradas com bônus podem ser de fora do clã. Defeitos dão até 7 pontos extras."
+  ],
+  "tabela": [
+   [
+    "Característica",
+    "Custo por ponto"
+   ],
+   [
+    "Atributo",
+    "5"
+   ],
+   [
+    "Habilidade",
+    "2"
+   ],
+   [
+    "Disciplina",
+    "7"
+   ],
+   [
+    "Antecedente",
+    "1"
+   ],
+   [
+    "Virtude",
+    "2"
+   ],
+   [
+    "Humanidade / Trilha",
+    "1"
+   ],
+   [
+    "Força de Vontade",
+    "1"
+   ]
+  ],
+  "tags": [
+   "pontos de bônus",
+   "freebies",
+   "bônus",
+   "custo"
+  ]
+ },
+ {
+  "id": "vtm-xp-custos",
+  "linha": "vtm",
+  "titulo": "Custos de experiência",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 143,
+  "resumo": [
+   "Cada Característica só sobe 1 ponto por história. Antecedentes não se compram com XP. Habilidades e Disciplinas novas exigem professor ou estudo."
+  ],
+  "tabela": [
+   [
+    "Característica",
+    "Custo"
+   ],
+   [
+    "Nova Habilidade",
+    "3"
+   ],
+   [
+    "Nova Trilha (Taumaturgia/Necromancia)",
+    "7"
+   ],
+   [
+    "Nova Disciplina",
+    "10"
+   ],
+   [
+    "Atributo",
+    "atual × 4"
+   ],
+   [
+    "Habilidade",
+    "atual × 2"
+   ],
+   [
+    "Disciplina do clã",
+    "atual × 5"
+   ],
+   [
+    "Outras Disciplinas",
+    "atual × 7"
+   ],
+   [
+    "Disciplina (Caitiff)",
+    "atual × 6"
+   ],
+   [
+    "Trilha secundária",
+    "atual × 4"
+   ],
+   [
+    "Virtude",
+    "atual × 2"
+   ],
+   [
+    "Humanidade / Trilha",
+    "atual × 2"
+   ],
+   [
+    "Força de Vontade",
+    "atual"
+   ]
+  ],
+  "tags": [
+   "experiência",
+   "xp",
+   "evolução",
+   "custo",
+   "subir nível"
+  ]
+ },
+ {
+  "id": "vtm-xp-ganho",
+  "linha": "vtm",
+  "titulo": "Ganho de experiência",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 142,
+  "resumo": [
+   "Por sessão o Narrador dá de 1 a 5 pontos: um automático, um por aprender algo, até dois por boa interpretação e um por heroísmo.",
+   "No fim de uma história, pontos extras por sucesso, por enfrentar perigo e por sabedoria demonstrada."
+  ],
+  "tags": [
+   "experiência",
+   "xp",
+   "ganhar xp",
+   "recompensa"
+  ]
+ },
+ {
+  "id": "vtm-qualidades-defeitos",
+  "linha": "vtm",
+  "titulo": "Qualidades e Defeitos",
+  "capitulo": "Apêndice",
+  "pagina": 295,
+  "resumo": [
+   "Qualidades são vantagens compradas com pontos de bônus; Defeitos são desvantagens que dão pontos extras, no máximo 7. Só podem ser escolhidos na criação.",
+   "Estão divididos em Físicos, Mentais, Sociais e Sobrenaturais. Exemplos: Sono Leve, Memória Eidética, Fé Verdadeira (7, exige Humanidade 9+), Caçado, 14ª Geração."
+  ],
+  "tags": [
+   "qualidades",
+   "defeitos",
+   "merits",
+   "flaws",
+   "vantagens",
+   "desvantagens"
+  ]
+ },
+ {
+  "id": "vtm-trilhas",
+  "linha": "vtm",
+  "titulo": "Trilhas da Sabedoria",
+  "capitulo": "Apêndice",
+  "pagina": 286,
+  "resumo": [
+   "Trilhas são códigos morais inumanos que substituem a Humanidade, usados sobretudo pelo Sabá. Cada uma tem sua Hierarquia de Pecados e usa outras Virtudes.",
+   "Na criação: FV inicial mínima 5 e Trilha máxima 5. Para o mundo mortal, o seguidor conta como Humanidade 3 (ou o valor da Trilha, se menor). Abandonar a Humanidade exige Humanidade baixa, mentor e provação."
+  ],
+  "tabela": [
+   [
+    "Trilha",
+    "Apelido",
+    "Seguidores",
+    "Virtudes"
+   ],
+   [
+    "Sangue",
+    "Dervixe",
+    "Assamitas",
+    "Convicção + Autocontrole"
+   ],
+   [
+    "Ossos",
+    "Coveiros",
+    "Giovanni",
+    "Convicção + Autocontrole"
+   ],
+   [
+    "Noite",
+    "Niilistas",
+    "Lasombra",
+    "Convicção + Instinto"
+   ],
+   [
+    "Metamorfose",
+    "Metamorfistas",
+    "Tzimisce",
+    "Convicção + Instinto"
+   ],
+   [
+    "Paradoxo",
+    "Shilmulo",
+    "Ravnos",
+    "Convicção + Autocontrole"
+   ],
+   [
+    "Typhon",
+    "Teofídeos",
+    "Setitas",
+    "Convicção + Autocontrole"
+   ]
+  ],
+  "tags": [
+   "trilhas",
+   "trilha",
+   "sabá",
+   "paths",
+   "iluminação",
+   "moral inumana"
+  ]
+ },
+ {
+  "id": "vtm-clas",
+  "linha": "vtm",
+  "titulo": "Clãs e fraquezas",
+  "capitulo": "Cap. 2 – Clãs e Seitas",
+  "pagina": 62,
+  "resumo": [
+   "Cada clã herda três Disciplinas e uma fraqueza. Sete clãs pertencem à Camarilla, dois lideram o Sabá e quatro são independentes. Caitiff não têm clã."
+  ],
+  "tabela": [
+   [
+    "Clã",
+    "Disciplinas",
+    "Fraqueza (resumo)"
+   ],
+   [
+    "Brujah",
+    "Rapidez, Potência, Presença",
+    "+2 na dif. para resistir ao frenesi"
+   ],
+   [
+    "Gangrel",
+    "Animalismo, Fortitude, Metamorfose",
+    "Traço animal a cada frenesi"
+   ],
+   [
+    "Malkavianos",
+    "Auspícios, Demência, Ofuscação",
+    "Perturbação permanente"
+   ],
+   [
+    "Nosferatu",
+    "Animalismo, Ofuscação, Potência",
+    "Aparência 0"
+   ],
+   [
+    "Toreador",
+    "Auspícios, Rapidez, Presença",
+    "Fascínio pela beleza"
+   ],
+   [
+    "Tremere",
+    "Auspícios, Dominação, Taumaturgia",
+    "Um passo do laço com os anciões"
+   ],
+   [
+    "Ventrue",
+    "Dominação, Fortitude, Presença",
+    "Só bebem um tipo de sangue"
+   ],
+   [
+    "Lasombra",
+    "Dominação, Tenebrosidade, Potência",
+    "Sem reflexo; sol fere mais"
+   ],
+   [
+    "Tzimisce",
+    "Animalismo, Auspícios, Vicissitude",
+    "Dormir com terra natal"
+   ],
+   [
+    "Assamitas",
+    "Rapidez, Ofuscação, Quietus",
+    "Vício em vitae de vampiro"
+   ],
+   [
+    "Seguidores de Set",
+    "Ofuscação, Presença, Serpentis",
+    "Sensíveis à luz"
+   ],
+   [
+    "Giovanni",
+    "Dominação, Necromancia, Potência",
+    "Beijo causa o dobro de dano"
+   ],
+   [
+    "Ravnos",
+    "Animalismo, Quimerismo, Fortitude",
+    "Vício de trapaça"
+   ]
+  ],
+  "tags": [
+   "clãs",
+   "fraqueza",
+   "maldição do clã",
+   "brujah",
+   "ventrue",
+   "toreador",
+   "nosferatu",
+   "tremere",
+   "gangrel",
+   "malkaviano"
+  ]
+ },
+ {
+  "id": "vtm-disciplinas-fisicas",
+  "linha": "vtm",
+  "titulo": "Rapidez, Potência e Fortitude",
+  "capitulo": "Cap. 4 – Disciplinas",
+  "pagina": 150,
+  "resumo": [
+   "Rapidez: gastar 1 ponto de sangue dá ações físicas extras iguais ao nível, sem penalidade de ações múltiplas.",
+   "Potência: cada nível soma um sucesso automático a testes de Força e ao dano corpo a corpo.",
+   "Fortitude: soma ao Vigor para absorver contusão e letal e permite absorver dano agravado (fogo, sol, garras)."
+  ],
+  "tags": [
+   "rapidez",
+   "celeridade",
+   "potência",
+   "fortitude",
+   "disciplinas físicas",
+   "ações extras"
+  ]
+ },
+ {
+  "id": "vtm-taumaturgia",
+  "linha": "vtm",
+  "titulo": "Taumaturgia: trilhas e rituais",
+  "capitulo": "Cap. 4 – Disciplinas",
+  "pagina": 177,
+  "resumo": [
+   "Para usar um poder de trilha: 1 ponto de sangue e teste de Força de Vontade com dificuldade = nível + 3. Falha crítica custa 1 ponto permanente de FV.",
+   "A trilha primária sobe junto com a Disciplina; as secundárias só podem ser compradas com a primária em 2+ e nunca a ultrapassam. Rituais: Inteligência + Ocultismo, dificuldade 3 + nível; o taumaturgo ganha um ritual de nível 1 ao aprender a Disciplina."
+  ],
+  "tags": [
+   "taumaturgia",
+   "tremere",
+   "magia do sangue",
+   "rituais",
+   "trilha do sangue"
+  ]
+ },
+ {
+  "id": "vtm-necromancia",
+  "linha": "vtm",
+  "titulo": "Necromancia",
+  "capitulo": "Cap. 4 – Disciplinas",
+  "pagina": 160,
+  "resumo": [
+   "A Necromancia dos Giovanni lida com fantasmas e cadáveres. A primeira linha é a do Sepulcro; depois vêm Ossos ou Cinzas.",
+   "Rituais necromânticos usam Inteligência + Ocultismo, dificuldade 3 + nível."
+  ],
+  "tags": [
+   "necromancia",
+   "giovanni",
+   "fantasmas",
+   "mortos",
+   "sepulcro"
+  ]
+ },
+ {
+  "id": "vtm-antecedentes",
+  "linha": "vtm",
+  "titulo": "Antecedentes principais",
+  "capitulo": "Cap. 3 – Personagens",
+  "pagina": 124,
+  "resumo": [
+   "Antecedentes medem recursos externos ao personagem. Não sobem com XP, só pela história.",
+   "Rebanho dá mortais fáceis de beber (1 = 3 fontes até 5 = 60) e soma à caçada. Status é a posição entre os Membros e não vale fora da seita. Recursos e Influência medem dinheiro e poder entre mortais."
+  ],
+  "tags": [
+   "antecedentes",
+   "rebanho",
+   "status",
+   "recursos",
+   "influência",
+   "mentor",
+   "lacaios",
+   "aliados",
+   "contatos",
+   "fama"
+  ]
+ },
+ {
+  "id": "vtm-tradicoes",
+  "linha": "vtm",
+  "titulo": "As Seis Tradições",
+  "capitulo": "Cap. 1 – O Mundo das Trevas",
+  "pagina": 37,
+  "resumo": [
+   "As leis que Caim teria dado à sua prole. A Camarilla as defende; o Sabá as ignora em boa parte.",
+   "Lextalionis é o código de punição que acompanha as Tradições; a Caçada de Sangue é a sentença de morte contra um infrator."
+  ],
+  "tabela": [
+   [
+    "Tradição",
+    "Em resumo"
+   ],
+   [
+    "1. A Máscara",
+    "Não revele sua natureza aos mortais."
+   ],
+   [
+    "2. O Domínio",
+    "Respeite o território de quem o governa."
+   ],
+   [
+    "3. A Progênie",
+    "Só crie outro vampiro com permissão do ancião."
+   ],
+   [
+    "4. A Responsabilidade",
+    "Você responde pelos atos da sua cria."
+   ],
+   [
+    "5. A Hospitalidade",
+    "Apresente-se ao senhor do domínio onde chegar."
+   ],
+   [
+    "6. A Destruição",
+    "Só o ancião pode destruir outro vampiro."
+   ]
+  ],
+  "tags": [
+   "tradições",
+   "leis",
+   "máscara",
+   "domínio",
+   "progênie",
+   "lextalionis",
+   "caçada de sangue"
+  ]
+ },
+ {
+  "id": "vtm-seitas",
+  "linha": "vtm",
+  "titulo": "Seitas: Camarilla, Sabá, Anarquistas e Inconnu",
+  "capitulo": "Cap. 1 – O Mundo das Trevas",
+  "pagina": 42,
+  "resumo": [
+   "Camarilla: a maior seita, que defende a Máscara e as Tradições; governa cidades por meio de príncipes e reúne-se no Elísio.",
+   "Sabá: rejeita a humanidade, se organiza em bandos e despreza a Máscara como covardia. Anarquistas: rebeldes contra o poder dos anciões dentro do território da Camarilla. Inconnu: anciões que se afastaram da Jyhad."
+  ],
+  "tags": [
+   "seita",
+   "camarilla",
+   "sabá",
+   "anarquistas",
+   "inconnu",
+   "elísio",
+   "política"
+  ]
+ },
+ {
+  "id": "vtm-cargos",
+  "linha": "vtm",
+  "titulo": "Príncipe e cargos da cidade",
+  "capitulo": "Cap. 1 – O Mundo das Trevas",
+  "pagina": 34,
+  "resumo": [
+   "O Príncipe governa a cidade, aplica as Tradições e controla a criação de novos vampiros. A Primigênie é o conselho de anciões, em geral um por clã.",
+   "Outros cargos comuns: Senescal (braço direito), Xerife (força policial), Harpia (fofoca e reputação), Guardião do Elísio, Flagelo (caça a intrusos). Acima das cidades estão Justicares e seus Arcontes."
+  ],
+  "tags": [
+   "príncipe",
+   "primigênie",
+   "xerife",
+   "harpia",
+   "senescal",
+   "justicar",
+   "arconte",
+   "cargos"
+  ]
+ },
+ {
+  "id": "vtm-circulos",
+  "linha": "vtm",
+  "titulo": "Círculos (coteries)",
+  "capitulo": "Cap. 1 – O Mundo das Trevas",
+  "pagina": 45,
+  "resumo": [
+   "Círculo é o grupo de vampiros que se apoia mutuamente, como os personagens. O livro sugere tipos: de gangue, anarquistas, de clã, de guerra, diplomáticos, criminosos, artísticos, de pesquisa, empresariais, de espionagem e sociais."
+  ],
+  "tags": [
+   "círculo",
+   "coterie",
+   "grupo",
+   "bando",
+   "tipo de grupo"
+  ]
+ },
+ {
+  "id": "vtm-caim",
+  "linha": "vtm",
+  "titulo": "Caim, a Primeira Cidade e as gerações",
+  "capitulo": "Cap. 1 – O Mundo das Trevas",
+  "pagina": 49,
+  "resumo": [
+   "Segundo o mito, Caim foi amaldiçoado após matar Abel e tornou-se o primeiro vampiro. Ele criou a Segunda Geração, que criou a Terceira — os Antediluvianos, fundadores dos treze clãs.",
+   "Matusaléns são anciões de quarta e quinta geração que vivem escondidos. O Livro de Nod reúne fragmentos dessas lendas."
+  ],
+  "tags": [
+   "caim",
+   "mitologia",
+   "antediluviano",
+   "matusalém",
+   "livro de nod",
+   "primeira cidade",
+   "enoque"
+  ]
+ },
+ {
+  "id": "vtm-gehenna",
+  "linha": "vtm",
+  "titulo": "Gehenna e a Jyhad",
+  "capitulo": "Cap. 1 – O Mundo das Trevas",
+  "pagina": 53,
+  "resumo": [
+   "Gehenna é o fim profetizado, quando os Antediluvianos despertarão para devorar sua prole. Alguns cultos aguardam esse dia.",
+   "A Jyhad é a guerra secreta entre gerações: anciões usam os jovens como peças num jogo de séculos."
+  ],
+  "tags": [
+   "gehenna",
+   "jyhad",
+   "apocalipse",
+   "profecia",
+   "antediluvianos",
+   "fim do mundo"
+  ]
+ },
+ {
+  "id": "vtm-outros-sobrenaturais",
+  "linha": "vtm",
+  "titulo": "Outros seres do Mundo das Trevas",
+  "capitulo": "Cap. 9 – Antagonistas",
+  "pagina": 275,
+  "resumo": [
+   "Lobisomens (Lupinos) são os inimigos naturais: fortes, rápidos e com garras que causam dano agravado. Magos dobram a realidade; fadas e aparições vivem em mundos próprios.",
+   "Caçadores de bruxas, a Inquisição e agentes do governo são as ameaças mortais. O capítulo traz fichas resumidas para todos."
+  ],
+  "tags": [
+   "lobisomem",
+   "lupino",
+   "mago",
+   "fada",
+   "aparição",
+   "fantasma",
+   "inquisição",
+   "caçador"
+  ]
+ },
+ {
+  "id": "vtm-bestiario",
+  "linha": "vtm",
+  "titulo": "Bestiário",
+  "capitulo": "Apêndice",
+  "pagina": 303,
+  "resumo": [
+   "Fichas de animais comuns para Animalismo, Metamorfose ou encontros: jacaré, morcego, gato, urso, felino grande, cachorro, cavalo, ave grande, porco/javali, rato, lobo, além de bandos e enxames."
+  ],
+  "tags": [
+   "animais",
+   "bestiário",
+   "lobo",
+   "rato",
+   "morcego",
+   "enxame"
+  ]
+ },
+ {
+  "id": "vdta-dados",
+  "linha": "vdta",
+  "titulo": "Dados, dificuldade e sucesso automático (Idade das Trevas)",
+  "capitulo": "Cap. 6 – Regras",
+  "pagina": 176,
+  "resumo": [
+   "As regras de dados são as mesmas de Vampiro: d10, dificuldade padrão 6, cada 1 cancela um sucesso e falha crítica quando não sobra sucesso e há algum 1.",
+   "Diferença importante: se a parada for maior ou igual à dificuldade, o sucesso é automático (mínimo) fora de combate. Gastar 1 FV também garante 1 sucesso, um por turno."
+  ],
+  "tabela": [
+   [
+    "Dif.",
+    "Descrição"
+   ],
+   [
+    "3",
+    "Fácil"
+   ],
+   [
+    "4",
+    "Rotineiro"
+   ],
+   [
+    "5",
+    "Equilibrado"
+   ],
+   [
+    "6",
+    "Médio"
+   ],
+   [
+    "7",
+    "Desafiador"
+   ],
+   [
+    "8",
+    "Difícil"
+   ],
+   [
+    "9",
+    "Extremamente difícil"
+   ]
+  ],
+  "tags": [
+   "dados",
+   "dificuldade",
+   "sucesso automático",
+   "falha crítica",
+   "regra do um"
+  ]
+ },
+ {
+  "id": "vdta-acoes",
+  "linha": "vdta",
+  "titulo": "Ações prolongadas, resistidas e em equipe",
+  "capitulo": "Cap. 6 – Regras",
+  "pagina": 179,
+  "resumo": [
+   "Ações prolongadas acumulam sucessos ao longo de vários testes; resistidas cancelam os sucessos do oponente; em equipe, cada um rola e os sucessos se somam.",
+   "Repetir uma ação depois de falhar dá +1 de dificuldade."
+  ],
+  "tags": [
+   "ação prolongada",
+   "ação resistida",
+   "trabalho em equipe",
+   "tentar de novo"
+  ]
+ },
+ {
+  "id": "vdta-criacao",
+  "linha": "vdta",
+  "titulo": "Criação de personagem (1197)",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 99,
+  "resumo": [
+   "Conceito, clã, Natureza, Comportamento e Caminho. Atributos 7/5/3; Habilidades 13/9/5 (máximo 3); 4 pontos de Disciplinas do clã; 5 de Antecedentes; 7 de Virtudes, que dependem do Caminho.",
+   "Força de Vontade = Coragem; nível de Caminho = soma das duas Virtudes do Caminho; sangue inicial 1d10; 15 pontos de bônus. Nenhuma Característica pode chegar a 6 na criação.",
+   "Não importa a data do Abraço: o personagem teve no máximo 50 anos de atividade como vampiro. Geração padrão: 12ª."
+  ],
+  "tabela": [
+   [
+    "Etapa",
+    "Pontos"
+   ],
+   [
+    "Atributos",
+    "7 / 5 / 3"
+   ],
+   [
+    "Habilidades",
+    "13 / 9 / 5 (máx. 3)"
+   ],
+   [
+    "Disciplinas",
+    "4 (do clã)"
+   ],
+   [
+    "Antecedentes",
+    "5"
+   ],
+   [
+    "Virtudes",
+    "7"
+   ],
+   [
+    "Pontos de bônus",
+    "15"
+   ]
+  ],
+  "tags": [
+   "criação",
+   "ficha",
+   "1197",
+   "idade das trevas",
+   "novo personagem"
+  ]
+ },
+ {
+  "id": "vdta-pontos-bonus",
+  "linha": "vdta",
+  "titulo": "Custo dos pontos de bônus",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 103,
+  "resumo": [
+   "Disciplinas compradas com bônus podem ser de qualquer clã. Subir Coragem com bônus também sobe a Força de Vontade; o Caminho é calculado antes e comprado à parte. Defeitos dão até 7 pontos extras (máximo de 22 no total)."
+  ],
+  "tabela": [
+   [
+    "Característica",
+    "Custo"
+   ],
+   [
+    "Atributo",
+    "5"
+   ],
+   [
+    "Habilidade",
+    "2"
+   ],
+   [
+    "Antecedente",
+    "1"
+   ],
+   [
+    "Força de Vontade",
+    "1"
+   ],
+   [
+    "Disciplina",
+    "7"
+   ],
+   [
+    "Virtude",
+    "2"
+   ],
+   [
+    "Caminho",
+    "1"
+   ]
+  ],
+  "tags": [
+   "pontos de bônus",
+   "freebies",
+   "custo"
+  ]
+ },
+ {
+  "id": "vdta-caminhos",
+  "linha": "vdta",
+  "titulo": "Caminhos (Estradas)",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 113,
+  "resumo": [
+   "Na Idade das Trevas, a moral do vampiro é um Caminho, e não só a Humanidade. O Caminho decide quais Virtudes o personagem tem: Consciência ou Convicção, Autocontrole ou Instinto, e sempre Coragem.",
+   "O nível de Caminho limita paradas de Empatia, ações de dia e testes contra frenesi; também afeta a aparência bestial e o torpor. A zero, o personagem vira monstro do Narrador."
+  ],
+  "tabela": [
+   [
+    "Caminho",
+    "Nome latino",
+    "Virtudes"
+   ],
+   [
+    "Besta",
+    "Via Bestiae",
+    "Convicção + Instinto"
+   ],
+   [
+    "Cavaleiro",
+    "Via Equitum",
+    "Consciência + Autocontrole"
+   ],
+   [
+    "Diabo",
+    "Via Diabolis",
+    "Convicção + Instinto"
+   ],
+   [
+    "Humanidade",
+    "Via Humanitatis",
+    "Consciência + Autocontrole"
+   ],
+   [
+    "Paradoxo",
+    "Via Paradocis",
+    "Convicção + Autocontrole"
+   ],
+   [
+    "Paraíso",
+    "Via Caeli",
+    "Consciência + Autocontrole"
+   ],
+   [
+    "Sangue",
+    "Via Sanguinius",
+    "Convicção + Autocontrole"
+   ],
+   [
+    "Tífon",
+    "Via Typhonis",
+    "Convicção + Instinto"
+   ]
+  ],
+  "tags": [
+   "caminho",
+   "estrada",
+   "via",
+   "roads",
+   "moral",
+   "virtudes"
+  ]
+ },
+ {
+  "id": "vdta-hier-humanidade",
+  "linha": "vdta",
+  "titulo": "Hierarquia de Pecados — Caminho da Humanidade",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 133,
+  "resumo": [
+   "Lista dos pecados que exigem teste de Consciência para quem segue o Caminho da Humanidade. O teste é pedido quando o personagem comete um ato igual ou pior que o do seu nível atual."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Pecado"
+   ],
+   [
+    "10",
+    "Má ação acidental"
+   ],
+   [
+    "9",
+    "Má ação proposital"
+   ],
+   [
+    "8",
+    "Ferir alguém de propósito"
+   ],
+   [
+    "7",
+    "Furto e roubo"
+   ],
+   [
+    "6",
+    "Assassinato impensado"
+   ],
+   [
+    "5",
+    "Destruição por capricho"
+   ],
+   [
+    "4",
+    "Causar males deliberadamente"
+   ],
+   [
+    "3",
+    "Sadismo e perversão"
+   ],
+   [
+    "2",
+    "Assassinato premeditado"
+   ],
+   [
+    "1",
+    "Os atos mais hediondos e dementes"
+   ]
+  ],
+  "tags": [
+   "hierarquia de pecados",
+   "caminho",
+   "estrada",
+   "via",
+   "degeneração",
+   "humanidade"
+  ]
+ },
+ {
+  "id": "vdta-hier-besta",
+  "linha": "vdta",
+  "titulo": "Hierarquia de Pecados — Caminho da Besta",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 133,
+  "resumo": [
+   "Lista dos pecados que exigem teste de Convicção para quem segue o Caminho da Besta. O teste é pedido quando o personagem comete um ato igual ou pior que o do seu nível atual."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Pecado"
+   ],
+   [
+    "10",
+    "Atacar inimigo claramente superior"
+   ],
+   [
+    "9",
+    "Não desafiar líder claramente fraco"
+   ],
+   [
+    "8",
+    "Matar por motivo que não seja sobreviver"
+   ],
+   [
+    "7",
+    "Evitar a natureza e os animais selvagens"
+   ],
+   [
+    "6",
+    "Tortura desnecessária"
+   ],
+   [
+    "5",
+    "Sacrificar-se por quem não é dos seus"
+   ],
+   [
+    "4",
+    "Recusar-se a matar quando é preciso para sobreviver"
+   ],
+   [
+    "3",
+    "Não defender o território"
+   ],
+   [
+    "2",
+    "Ter piedade de inimigo terrível"
+   ],
+   [
+    "1",
+    "Abster-se de comer estando com fome"
+   ]
+  ],
+  "tags": [
+   "hierarquia de pecados",
+   "caminho",
+   "estrada",
+   "via",
+   "degeneração",
+   "besta",
+   "gangrel"
+  ]
+ },
+ {
+  "id": "vdta-hier-cavaleiro",
+  "linha": "vdta",
+  "titulo": "Hierarquia de Pecados — Caminho do Cavaleiro",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 133,
+  "resumo": [
+   "Lista dos pecados que exigem teste de Consciência para quem segue o Caminho do Cavaleiro. O teste é pedido quando o personagem comete um ato igual ou pior que o do seu nível atual."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Pecado"
+   ],
+   [
+    "10",
+    "Não ajudar mortal necessitado"
+   ],
+   [
+    "9",
+    "Desrespeitar um companheiro"
+   ],
+   [
+    "8",
+    "Pôr interesse pessoal acima do dever"
+   ],
+   [
+    "7",
+    "Quebrar a palavra com membro do clã ou companheiro"
+   ],
+   [
+    "6",
+    "Abandonar clã ou companheiros em necessidade"
+   ],
+   [
+    "5",
+    "Atacar oponente desarmado"
+   ],
+   [
+    "4",
+    "Negar hospitalidade a outro Cainita"
+   ],
+   [
+    "3",
+    "Desrespeitar um superior"
+   ],
+   [
+    "2",
+    "Quebrar a palavra com senhor ou príncipe"
+   ],
+   [
+    "1",
+    "Quebrar juramento sagrado"
+   ]
+  ],
+  "tags": [
+   "hierarquia de pecados",
+   "caminho",
+   "estrada",
+   "via",
+   "degeneração",
+   "cavaleiro",
+   "honra"
+  ]
+ },
+ {
+  "id": "vdta-hier-sangue",
+  "linha": "vdta",
+  "titulo": "Hierarquia de Pecados — Caminho do Sangue",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 134,
+  "resumo": [
+   "Lista dos pecados que exigem teste de Convicção para quem segue o Caminho do Sangue. O teste é pedido quando o personagem comete um ato igual ou pior que o do seu nível atual."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Pecado"
+   ],
+   [
+    "10",
+    "Quebrar palavra de honra com membro do clã"
+   ],
+   [
+    "9",
+    "Não ajudar ou vingar membro do clã; revelar segredos"
+   ],
+   [
+    "8",
+    "Interesse pessoal acima do dever"
+   ],
+   [
+    "7",
+    "Não matar vampiro de fora do clã quando necessário"
+   ],
+   [
+    "6",
+    "Não buscar sangue ou saber diante de perigo pequeno"
+   ],
+   [
+    "5",
+    "Quebrar palavra de honra com mortal"
+   ],
+   [
+    "4",
+    "Desrespeitar líderes do clã; ignorar os ensinamentos de Haqim"
+   ],
+   [
+    "3",
+    "Não buscar sangue vampírico diante de perigo moderado"
+   ],
+   [
+    "2",
+    "Sucumbir ao frenesi"
+   ],
+   [
+    "1",
+    "Recusar a chance de sangue de geração menor"
+   ]
+  ],
+  "tags": [
+   "hierarquia de pecados",
+   "caminho",
+   "estrada",
+   "via",
+   "degeneração",
+   "sangue",
+   "assamita"
+  ]
+ },
+ {
+  "id": "vdta-hier-diabo",
+  "linha": "vdta",
+  "titulo": "Hierarquia de Pecados — Caminho do Diabo",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 134,
+  "resumo": [
+   "Lista dos pecados que exigem teste de Convicção para quem segue o Caminho do Diabo. O teste é pedido quando o personagem comete um ato igual ou pior que o do seu nível atual."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Pecado"
+   ],
+   [
+    "10",
+    "Recusar-se a criar novos vampiros"
+   ],
+   [
+    "9",
+    "Não buscar novos prazeres"
+   ],
+   [
+    "8",
+    "Não apreciar um frenesi"
+   ],
+   [
+    "7",
+    "Não ferir outros pelo próprio prazer"
+   ],
+   [
+    "6",
+    "Recusar matar humanos quando convém"
+   ],
+   [
+    "5",
+    "Recusar crueldades de seu interesse"
+   ],
+   [
+    "4",
+    "Recusar-se a tentar os virtuosos"
+   ],
+   [
+    "3",
+    "Rejeitar ganho material"
+   ],
+   [
+    "2",
+    "Agir com altruísmo"
+   ],
+   [
+    "1",
+    "Ajudar servos da virtude ou de Deus"
+   ]
+  ],
+  "tags": [
+   "hierarquia de pecados",
+   "caminho",
+   "estrada",
+   "via",
+   "degeneração",
+   "diabo",
+   "infernal"
+  ]
+ },
+ {
+  "id": "vdta-hier-paraiso",
+  "linha": "vdta",
+  "titulo": "Hierarquia de Pecados — Caminho do Paraíso",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 134,
+  "resumo": [
+   "Lista dos pecados que exigem teste de Consciência para quem segue o Caminho do Paraíso. O teste é pedido quando o personagem comete um ato igual ou pior que o do seu nível atual."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Pecado"
+   ],
+   [
+    "10",
+    "Desrespeitar a Igreja"
+   ],
+   [
+    "9",
+    "Calar-se diante da corrupção e do pecado"
+   ],
+   [
+    "8",
+    "Agir por orgulho, avareza ou gula de sangue"
+   ],
+   [
+    "7",
+    "Furto, roubo ou vandalismo proposital"
+   ],
+   [
+    "6",
+    "Fazer mal a crentes e virtuosos"
+   ],
+   [
+    "5",
+    "Beber de inocente sem permissão"
+   ],
+   [
+    "4",
+    "Blasfêmia ou heresia"
+   ],
+   [
+    "3",
+    "Deixar pecado grave impune"
+   ],
+   [
+    "2",
+    "Matar inocente sem razão"
+   ],
+   [
+    "1",
+    "Ajudar demônio, infernalista ou servo do mal"
+   ]
+  ],
+  "tags": [
+   "hierarquia de pecados",
+   "caminho",
+   "estrada",
+   "via",
+   "degeneração",
+   "paraíso",
+   "igreja",
+   "deus"
+  ]
+ },
+ {
+  "id": "vdta-hier-paradoxo",
+  "linha": "vdta",
+  "titulo": "Hierarquia de Pecados — Caminho do Paradoxo",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 134,
+  "resumo": [
+   "Lista dos pecados que exigem teste de Convicção para quem segue o Caminho do Paradoxo. O teste é pedido quando o personagem comete um ato igual ou pior que o do seu nível atual."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Pecado"
+   ],
+   [
+    "10",
+    "Recusar diablerie em ancião de outro clã"
+   ],
+   [
+    "9",
+    "Não guiar um ser estagnado à luz ou à destruição"
+   ],
+   [
+    "8",
+    "Preocupar-se com mortais"
+   ],
+   [
+    "7",
+    "Não obter itens ou saberes que afetem a realidade"
+   ],
+   [
+    "6",
+    "Não enganar quando há chance"
+   ],
+   [
+    "5",
+    "Ser pego redistribuindo posses"
+   ],
+   [
+    "4",
+    "Recusar-se a destruir objeto de poder"
+   ],
+   [
+    "3",
+    "Apoiar a estrutura de poder Cainita"
+   ],
+   [
+    "2",
+    "Evitar a mudança"
+   ],
+   [
+    "1",
+    "Induzir ao tédio"
+   ]
+  ],
+  "tags": [
+   "hierarquia de pecados",
+   "caminho",
+   "estrada",
+   "via",
+   "degeneração",
+   "paradoxo",
+   "ravnos"
+  ]
+ },
+ {
+  "id": "vdta-hier-tifon",
+  "linha": "vdta",
+  "titulo": "Hierarquia de Pecados — Caminho de Tífon",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 134,
+  "resumo": [
+   "Lista dos pecados que exigem teste de Convicção para quem segue o Caminho de Tífon. O teste é pedido quando o personagem comete um ato igual ou pior que o do seu nível atual."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Pecado"
+   ],
+   [
+    "10",
+    "Manter pureza, autocontrole ou valor próprio"
+   ],
+   [
+    "9",
+    "Resistir às próprias fraquezas"
+   ],
+   [
+    "8",
+    "Não destruir vampiro em Golconda"
+   ],
+   [
+    "7",
+    "Destruir inimigo por piedade ou conveniência"
+   ],
+   [
+    "6",
+    "Não perturbar a ordem social a favor dos Setitas"
+   ],
+   [
+    "5",
+    "Não trocar fé por cinismo"
+   ],
+   [
+    "4",
+    "Não explorar fraquezas alheias"
+   ],
+   [
+    "3",
+    "Deixar o afeto por um mortal impedir sua corrupção"
+   ],
+   [
+    "2",
+    "Recusar-se a corromper um vampiro"
+   ],
+   [
+    "1",
+    "Não tentar despertar Set na primeira chance"
+   ]
+  ],
+  "tags": [
+   "hierarquia de pecados",
+   "caminho",
+   "estrada",
+   "via",
+   "degeneração",
+   "tífon",
+   "setita",
+   "set"
+  ]
+ },
+ {
+  "id": "vdta-degeneracao",
+  "linha": "vdta",
+  "titulo": "Degeneração e troca de Caminho",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 134,
+  "resumo": [
+   "Ao cometer um pecado do seu nível ou pior, testa-se Consciência ou Convicção (dificuldade 6 em geral). Um sucesso basta. Na falha, perde 1 ponto da Virtude e 1 de Caminho; a falha crítica ainda traz uma Perturbação.",
+   "Trocar de Caminho exige acordo do Narrador: o novo nível é recalculado como na criação e se perdem os pontos de bônus e XP investidos. A Virtude nova começa em 1 e não sobe por 3 sessões."
+  ],
+  "tags": [
+   "degeneração",
+   "trocar caminho",
+   "perder caminho",
+   "consciência",
+   "convicção"
+  ]
+ },
+ {
+  "id": "vdta-virtudes",
+  "linha": "vdta",
+  "titulo": "Graus das Virtudes",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 131,
+  "resumo": [
+   "Cada Virtude tem nomes para seus níveis. Convicção e Instinto daqui não são exatamente as Virtudes do Sabá moderno."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Consciência / Convicção",
+    "Autocontrole / Instinto",
+    "Coragem"
+   ],
+   [
+    "1",
+    "Puro / Estável",
+    "Calmo / Rudimentar",
+    "Audaz"
+   ],
+   [
+    "2",
+    "Moral / Seguro",
+    "Impassível / Intuitivo",
+    "Intrépido"
+   ],
+   [
+    "3",
+    "Justo / Determinado",
+    "Disciplinado / Animalesco",
+    "Equilibrado"
+   ],
+   [
+    "4",
+    "Caridoso / Comprometido",
+    "Empedernido / Visceral",
+    "Notável"
+   ],
+   [
+    "5",
+    "Arrependido / Dedicado",
+    "Controle absoluto / Primitivo",
+    "Valoroso"
+   ]
+  ],
+  "tags": [
+   "virtudes",
+   "consciência",
+   "convicção",
+   "autocontrole",
+   "instinto",
+   "coragem"
+  ]
+ },
+ {
+  "id": "vdta-geracao",
+  "linha": "vdta",
+  "titulo": "Tabela de Gerações (1197)",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 137,
+  "resumo": [
+   "A geração padrão é a 12ª. O Antecedente Geração vai de 11ª (1 ponto) a 7ª (5 pontos). O nível 6 numa Característica só sai com XP."
+  ],
+  "tabela": [
+   [
+    "Geração",
+    "Máx. Característica",
+    "Pontos de sangue",
+    "Por turno"
+   ],
+   [
+    "4ª",
+    "9",
+    "50",
+    "10"
+   ],
+   [
+    "5ª",
+    "8",
+    "40",
+    "8"
+   ],
+   [
+    "6ª",
+    "7",
+    "30",
+    "6"
+   ],
+   [
+    "7ª",
+    "6",
+    "20",
+    "5"
+   ],
+   [
+    "8ª",
+    "5",
+    "15",
+    "3"
+   ],
+   [
+    "9ª",
+    "5",
+    "14",
+    "2"
+   ],
+   [
+    "10ª",
+    "5",
+    "13",
+    "1"
+   ],
+   [
+    "11ª",
+    "5",
+    "12",
+    "1"
+   ],
+   [
+    "12ª",
+    "5",
+    "11",
+    "1"
+   ],
+   [
+    "13ª",
+    "5",
+    "10",
+    "1"
+   ]
+  ],
+  "tags": [
+   "geração",
+   "sangue máximo",
+   "antecedente geração"
+  ]
+ },
+ {
+  "id": "vdta-sangue",
+  "linha": "vdta",
+  "titulo": "Pontos de sangue e fontes",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 136,
+  "resumo": [
+   "Gasta-se 1 ponto por noite. Um ponto cura 1 nível de dano normal por turno, ou soma +1 a um Atributo Físico pela cena. Bebe-se até 3 pontos por turno.",
+   "Testes de Autocontrole ou Instinto nunca usam mais dados que o sangue atual nem que o nível de Caminho."
+  ],
+  "tabela": [
+   [
+    "Fonte",
+    "Pontos"
+   ],
+   [
+    "Vampiro",
+    "10–50"
+   ],
+   [
+    "Lupino",
+    "25"
+   ],
+   [
+    "Humano",
+    "10"
+   ],
+   [
+    "Vaca",
+    "6"
+   ],
+   [
+    "Criança",
+    "5"
+   ],
+   [
+    "Cão",
+    "4"
+   ],
+   [
+    "Ovelha",
+    "4"
+   ],
+   [
+    "Porco",
+    "4"
+   ],
+   [
+    "Gato",
+    "3"
+   ],
+   [
+    "Rato",
+    "½"
+   ],
+   [
+    "Pássaro",
+    "¼"
+   ]
+  ],
+  "tags": [
+   "sangue",
+   "fontes",
+   "alimentação",
+   "vitae",
+   "animal"
+  ]
+ },
+ {
+  "id": "vdta-forca-vontade",
+  "linha": "vdta",
+  "titulo": "Força de Vontade",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 135,
+  "resumo": [
+   "Serve para sucesso automático, resistir a impulsos e conter Perturbações. Recupera-se toda no fim da história, de 1 a 3 pontos pela Natureza ou feitos, e opcionalmente 1 por noite.",
+   "Falha crítica num teste de Força de Vontade faz perder um ponto permanente."
+  ],
+  "tags": [
+   "força de vontade",
+   "willpower",
+   "fv"
+  ]
+ },
+ {
+  "id": "vdta-combate",
+  "linha": "vdta",
+  "titulo": "Combate em três estágios",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 187,
+  "resumo": [
+   "Iniciativa: Raciocínio + Prontidão, dificuldade 4; quem tem mais sucessos age primeiro e declara por último.",
+   "Ataque: Destreza + Briga, Armas Brancas ou Arqueirismo, com a dificuldade da arma. Esquiva: Destreza + Esquiva (dif. 6, +1 por oponente extra); cada sucesso cancela um do atacante.",
+   "Resolução: rola-se o dano da arma (dif. 6). Em Briga e Armas Brancas os sucessos extras do ataque não somam ao dano (exceto Potência)."
+  ],
+  "tags": [
+   "combate",
+   "iniciativa",
+   "ataque",
+   "esquiva",
+   "dano",
+   "medieval"
+  ]
+ },
+ {
+  "id": "vdta-dano",
+  "linha": "vdta",
+  "titulo": "Dano normal e agravado",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 189,
+  "resumo": [
+   "Não há divisão entre contusão e letal: o dano é normal ou agravado. Agravado vem de sol, fogo e presas e garras de vampiros e lobisomens.",
+   "Absorção: Vigor (+ Fortitude + armadura), dificuldade 6. Mortais só absorvem com armadura. Agravado cura 1 nível por dia com 5 pontos de sangue, ou mais rápido com 5 PS + 1 FV por nível extra."
+  ],
+  "tags": [
+   "dano",
+   "agravado",
+   "absorção",
+   "normal",
+   "cura"
+  ]
+ },
+ {
+  "id": "vdta-armas-brancas",
+  "linha": "vdta",
+  "titulo": "Armas brancas medievais",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 190,
+  "resumo": [
+   "Ocultabilidade: B bolso, T túnica, M manto, N não se esconde."
+  ],
+  "tabela": [
+   [
+    "Arma",
+    "Dif.",
+    "Dano",
+    "Ocult.",
+    "For. mín."
+   ],
+   [
+    "Faca",
+    "5",
+    "F+1",
+    "B",
+    "1"
+   ],
+   [
+    "Adaga",
+    "4",
+    "F+1",
+    "T",
+    "1"
+   ],
+   [
+    "Espada de lâmina larga",
+    "6",
+    "F+4",
+    "M",
+    "2"
+   ],
+   [
+    "Espada de mão-e-meia",
+    "6",
+    "F+5",
+    "M",
+    "4"
+   ],
+   [
+    "Espada longa",
+    "5",
+    "F+6",
+    "N",
+    "1"
+   ],
+   [
+    "Bastão",
+    "4",
+    "F+1 a +3",
+    "N",
+    "2"
+   ],
+   [
+    "Lança (uma mão)",
+    "7",
+    "F+1",
+    "N",
+    "1"
+   ],
+   [
+    "Lança (duas mãos)",
+    "6",
+    "F+3",
+    "N",
+    "2"
+   ],
+   [
+    "Lança de justa (a galope)",
+    "8",
+    "F+6",
+    "N",
+    "1"
+   ],
+   [
+    "Forcado",
+    "6",
+    "F+1",
+    "N",
+    "3"
+   ],
+   [
+    "Machado de mão",
+    "7",
+    "F+5",
+    "M",
+    "3"
+   ],
+   [
+    "Machado de batalha",
+    "7",
+    "F+6",
+    "N",
+    "3"
+   ],
+   [
+    "Acha",
+    "7",
+    "F+6",
+    "N",
+    "1"
+   ],
+   [
+    "Maça",
+    "6",
+    "F+4",
+    "T",
+    "1"
+   ],
+   [
+    "Mangual",
+    "7",
+    "F+6",
+    "M",
+    "1"
+   ]
+  ],
+  "tags": [
+   "armas",
+   "espada",
+   "machado",
+   "lança",
+   "maça",
+   "mangual",
+   "adaga",
+   "medieval"
+  ]
+ },
+ {
+  "id": "vdta-armas-distancia",
+  "linha": "vdta",
+  "titulo": "Armas de longo alcance medievais",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 191,
+  "resumo": [
+   "Ataque com Destreza + Arqueirismo (arcos e bestas) ou Destreza + Esportes (arremesso). No arremesso, a dificuldade é a distância em metros dividida pela Força."
+  ],
+  "tabela": [
+   [
+    "Arma",
+    "Dano",
+    "Cadência",
+    "Ocult.",
+    "Força",
+    "Alcance"
+   ],
+   [
+    "Arco curto",
+    "2",
+    "1/2",
+    "T",
+    "2",
+    "60 m"
+   ],
+   [
+    "Arco longo",
+    "4",
+    "1/2",
+    "N",
+    "4",
+    "120 m"
+   ],
+   [
+    "Besta",
+    "3",
+    "1/4",
+    "N",
+    "2",
+    "90 m"
+   ],
+   [
+    "Lança arremessada",
+    "F+2",
+    "—",
+    "N",
+    "2",
+    "—"
+   ],
+   [
+    "Faca arremessada",
+    "F",
+    "—",
+    "N",
+    "2",
+    "10 m"
+   ],
+   [
+    "Pedras",
+    "F−1",
+    "—",
+    "B",
+    "2",
+    "10 m"
+   ],
+   [
+    "Machadinha (dif. +1)",
+    "F+1",
+    "—",
+    "T",
+    "2",
+    "12 m"
+   ]
+  ],
+  "tags": [
+   "arco",
+   "besta",
+   "arremesso",
+   "flecha",
+   "machadinha"
+  ]
+ },
+ {
+  "id": "vdta-armaduras",
+  "linha": "vdta",
+  "titulo": "Armaduras e escudos",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 193,
+  "resumo": [
+   "A armadura soma dados à absorção, mas pesa na Destreza e às vezes na Percepção.",
+   "Escudo de infantaria: +1 na dificuldade do atacante com Armas Brancas. Escudo de cavalaria: +2 a pé e +3 montado, só do lado esquerdo."
+  ],
+  "tabela": [
+   [
+    "Armadura",
+    "Proteção",
+    "Destreza",
+    "Percepção",
+    "For. mín."
+   ],
+   [
+    "Leve",
+    "1",
+    "—",
+    "—",
+    "1"
+   ],
+   [
+    "Composta",
+    "2",
+    "−1",
+    "—",
+    "1"
+   ],
+   [
+    "Pesada",
+    "3",
+    "−1",
+    "−1",
+    "2"
+   ],
+   [
+    "De cavaleiro",
+    "4",
+    "−2",
+    "−2",
+    "3"
+   ]
+  ],
+  "tags": [
+   "armadura",
+   "escudo",
+   "cota de malha",
+   "proteção",
+   "cavaleiro"
+  ]
+ },
+ {
+  "id": "vdta-manobras",
+  "linha": "vdta",
+  "titulo": "Manobras de briga",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 193,
+  "resumo": [
+   "Garra exige Metamorfose. Morder e Garra causam dano agravado."
+  ],
+  "tabela": [
+   [
+    "Manobra",
+    "Iniciativa",
+    "Teste",
+    "Precisão",
+    "Dano"
+   ],
+   [
+    "Agarrar",
+    "−1",
+    "For + Briga",
+    "0",
+    "Força"
+   ],
+   [
+    "Encontrão",
+    "0",
+    "For + Briga",
+    "+1",
+    "especial"
+   ],
+   [
+    "Bloquear",
+    "—",
+    "Des + Briga",
+    "—",
+    "0"
+   ],
+   [
+    "Chutar",
+    "0",
+    "Des + Briga",
+    "−1",
+    "F+1"
+   ],
+   [
+    "Socar",
+    "0",
+    "Des + Briga",
+    "0",
+    "F"
+   ],
+   [
+    "Morder",
+    "−2",
+    "Des + Briga",
+    "+2",
+    "F+1 (agravado)"
+   ],
+   [
+    "Garra",
+    "0",
+    "Des + Briga",
+    "0",
+    "F+2 (agravado)"
+   ]
+  ],
+  "tags": [
+   "manobras",
+   "agarrar",
+   "morder",
+   "soco",
+   "chute",
+   "encontrão",
+   "garra"
+  ]
+ },
+ {
+  "id": "vdta-estaca",
+  "linha": "vdta",
+  "titulo": "Estaca no coração",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 200,
+  "resumo": [
+   "Cravar a estaca exige 5 sucessos no ataque (com arco, 3 níveis de dano e +2 de dificuldade). O vampiro fica paralisado e perde 1 ponto de sangue por dia."
+  ],
+  "tags": [
+   "estaca",
+   "coração",
+   "paralisia",
+   "madeira"
+  ]
+ },
+ {
+  "id": "vdta-fogo-sol",
+  "linha": "vdta",
+  "titulo": "Fogo, sol e quedas",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 199,
+  "resumo": [
+   "Só quem tem Fortitude absorve fogo e sol, usando Vigor + Fortitude. O sol vai de dificuldade 3 (indireto, crepúsculo) a 10 (direto), causando 1 a 3 níveis conforme a exposição.",
+   "Queda: absorve-se com Vigor, dificuldade 8."
+  ],
+  "tabela": [
+   [
+    "Fogo",
+    "Dif. absorção"
+   ],
+   [
+    "Vela",
+    "3"
+   ],
+   [
+    "Tocha",
+    "5"
+   ],
+   [
+    "Fogueira de execução",
+    "7"
+   ],
+   [
+    "Metal incandescente",
+    "9"
+   ],
+   [
+    "Metal derretido",
+    "10"
+   ],
+   [
+    "Tamanho",
+    "Níveis/turno"
+   ],
+   [
+    "Tocha",
+    "1"
+   ],
+   [
+    "Fogueira",
+    "2"
+   ],
+   [
+    "Inferno de chamas",
+    "3"
+   ]
+  ],
+  "tags": [
+   "fogo",
+   "sol",
+   "queda",
+   "agravado",
+   "fortitude"
+  ]
+ },
+ {
+  "id": "vdta-torpor",
+  "linha": "vdta",
+  "titulo": "Torpor e despertar de dia",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 201,
+  "resumo": [
+   "O torpor vem abaixo de Incapacitado e sem sangue; o personagem perde 1 ponto de Atributo Físico. A duração segue o nível de Caminho (10 = 1 dia … 0 = um milênio).",
+   "Para acordar de dia: Percepção + Auspícios, dif. 8; depois testes com o nível de Caminho (dif. 8) — cada sucesso dá um turno acordado, e 5 sucessos o mantêm desperto."
+  ],
+  "tags": [
+   "torpor",
+   "despertar",
+   "dia",
+   "sono",
+   "caminho"
+  ]
+ },
+ {
+  "id": "vdta-frenesi",
+  "linha": "vdta",
+  "titulo": "Frenesi",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 202,
+  "resumo": [
+   "Teste de Autocontrole ou Instinto como ação prolongada: são precisos 5 sucessos para vencer. Os dados ficam limitados ao sangue atual. Com fome significa 3 pontos de sangue ou menos.",
+   "Em frenesi o personagem ignora penalidades de ferimento até o valor do Vigor; dura uma cena."
+  ],
+  "tabela": [
+   [
+    "Provocação",
+    "Dif."
+   ],
+   [
+    "Cheiro de sangue (com fome)",
+    "3"
+   ],
+   [
+    "Ver sangue (com fome)",
+    "4"
+   ],
+   [
+    "Vida ameaçada",
+    "4"
+   ],
+   [
+    "Humilhado",
+    "4"
+   ],
+   [
+    "Maltratado",
+    "4"
+   ],
+   [
+    "Provocado à fúria",
+    "5"
+   ],
+   [
+    "Gosto de sangue (com fome)",
+    "5"
+   ],
+   [
+    "Regente ameaçado",
+    "6"
+   ],
+   [
+    "Humilhação ostensiva",
+    "7"
+   ]
+  ],
+  "tags": [
+   "frenesi",
+   "besta",
+   "raiva",
+   "fome",
+   "autocontrole",
+   "instinto"
+  ]
+ },
+ {
+  "id": "vdta-rotschreck",
+  "linha": "vdta",
+  "titulo": "Rötschreck",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 202,
+  "resumo": [
+   "Teste de Coragem diante de fogo ou sol. A falha crítica traz uma Perturbação."
+  ],
+  "tabela": [
+   [
+    "Provocação",
+    "Dif."
+   ],
+   [
+    "Tocha próxima",
+    "6"
+   ],
+   [
+    "Sol obscurecido",
+    "7"
+   ],
+   [
+    "Fogueira",
+    "7"
+   ],
+   [
+    "Sol direto",
+    "8"
+   ],
+   [
+    "Ser queimado",
+    "8"
+   ],
+   [
+    "Preso num local em chamas",
+    "9"
+   ]
+  ],
+  "tags": [
+   "rötschreck",
+   "medo",
+   "fogo",
+   "sol",
+   "coragem"
+  ]
+ },
+ {
+  "id": "vdta-perturbacoes",
+  "linha": "vdta",
+  "titulo": "Perturbações",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 203,
+  "resumo": [
+   "Exemplos do livro: Múltipla Personalidade, Fantasia, Regressão, Perfeição, Supercompensação, Obsessão, Paranoia, Amnésia, Melancolia e Delírios de Grandeza. Força de Vontade pode contê-las por algum tempo."
+  ],
+  "tags": [
+   "perturbação",
+   "loucura",
+   "insanidade",
+   "derangement"
+  ]
+ },
+ {
+  "id": "vdta-voto-sangue",
+  "linha": "vdta",
+  "titulo": "Voto de Sangue",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 205,
+  "resumo": [
+   "Três goles do mesmo vampiro, em noites diferentes, criam o Voto: quem bebe é o Escravo, quem deu é o Regente. Só se serve a um Regente por vez.",
+   "O Regente pode Dominar o Escravo sem contato visual, e o Escravo tem +2 de dificuldade para resistir. Todo vampiro já bebeu uma vez do senhor no Abraço."
+  ],
+  "tags": [
+   "voto de sangue",
+   "laço de sangue",
+   "regente",
+   "escravo",
+   "blood bond"
+  ]
+ },
+ {
+  "id": "vdta-rapidez",
+  "linha": "vdta",
+  "titulo": "Rapidez na Idade das Trevas",
+  "capitulo": "Cap. 5 – Disciplinas",
+  "pagina": 146,
+  "resumo": [
+   "Cada ponto de Rapidez usado dá uma ação extra com parada completa, mas custa 1 ponto de sangue por ponto usado no turno, fora do limite de gasto da geração.",
+   "Disciplinas de nível 6 em diante existem para vampiros de 7ª geração ou menor."
+  ],
+  "tags": [
+   "rapidez",
+   "celeridade",
+   "ações extras",
+   "disciplina avançada"
+  ]
+ },
+ {
+  "id": "vdta-taumaturgia",
+  "linha": "vdta",
+  "titulo": "Taumaturgia medieval",
+  "capitulo": "Cap. 5 – Disciplinas",
+  "pagina": 164,
+  "resumo": [
+   "Ao aprender, ganha-se 1 ponto numa trilha e um ritual de nível 1. Poder de trilha: 1 ponto de sangue + Força de Vontade, dificuldade nível + 3.",
+   "Rituais: Inteligência + Ocultismo, dificuldade 4 + nível, pelo menos 5 minutos por nível. Trilhas: Rego Vitae, Creo Ignem, Rego Motus, Rego Tempestas, Rego Aquam e Rego Elementum."
+  ],
+  "tags": [
+   "taumaturgia",
+   "tremere",
+   "rego vitae",
+   "creo ignem",
+   "rituais",
+   "magia"
+  ]
+ },
+ {
+  "id": "vdta-fe-verdadeira",
+  "linha": "vdta",
+  "titulo": "Fé Verdadeira medieval",
+  "capitulo": "Cap. 9 – Antagonistas",
+  "pagina": 236,
+  "resumo": [
+   "A Fé é muito mais comum e forte em 1197. Com Fé 1, o crente repele vampiros num teste de Fé contra a FV do vampiro.",
+   "Relíquias têm poder de 1 a 5 e o solo sagrado também protege. O livro é inconsistente na escala (1–5 no texto, 10 círculos na ficha)."
+  ],
+  "tags": [
+   "fé",
+   "fé verdadeira",
+   "relíquia",
+   "igreja",
+   "solo sagrado",
+   "inquisição"
+  ]
+ },
+ {
+  "id": "vdta-xp",
+  "linha": "vdta",
+  "titulo": "Custos de experiência (Idade das Trevas)",
+  "capitulo": "Cap. 7 – Sistemas",
+  "pagina": 197,
+  "resumo": [
+   "As duas tabelas do livro discordam em Virtude e Força de Vontade; abaixo, a do capítulo 7, com a variante entre parênteses. Antecedentes não sobem com XP; o Caminho só sobe após boas ações aprovadas pelo Narrador."
+  ],
+  "tabela": [
+   [
+    "Característica",
+    "Custo"
+   ],
+   [
+    "Atributo",
+    "atual × 4"
+   ],
+   [
+    "Habilidade nova",
+    "3"
+   ],
+   [
+    "Habilidade",
+    "atual × 2"
+   ],
+   [
+    "Virtude",
+    "atual × 3"
+   ],
+   [
+    "Caminho",
+    "atual × 2"
+   ],
+   [
+    "Disciplina nova",
+    "10"
+   ],
+   [
+    "Disciplina do clã",
+    "atual × 5"
+   ],
+   [
+    "Outra Disciplina",
+    "atual × 7"
+   ],
+   [
+    "Força de Vontade",
+    "atual × 2 (p.103: atual)"
+   ],
+   [
+    "Trilha taumatúrgica nova",
+    "7"
+   ],
+   [
+    "Trilha primária",
+    "atual × 4"
+   ],
+   [
+    "Trilha secundária",
+    "atual × 5"
+   ]
+  ],
+  "tags": [
+   "experiência",
+   "xp",
+   "custo"
+  ]
+ },
+ {
+  "id": "vdta-tradicoes",
+  "linha": "vdta",
+  "titulo": "As Seis Tradições (versão medieval)",
+  "capitulo": "Cap. 2 – Cenário",
+  "pagina": 38,
+  "resumo": [
+   "Em 1197 as Tradições têm outra ordem e redação: o Legado vem primeiro e o Silêncio do Sangue (a Máscara) é a sexta."
+  ],
+  "tabela": [
+   [
+    "Ordem",
+    "Tradição"
+   ],
+   [
+    "1",
+    "O Legado"
+   ],
+   [
+    "2",
+    "A Destruição"
+   ],
+   [
+    "3",
+    "A Progênie"
+   ],
+   [
+    "4",
+    "A Responsabilidade"
+   ],
+   [
+    "5",
+    "O Domínio"
+   ],
+   [
+    "6",
+    "O Silêncio do Sangue"
+   ]
+  ],
+  "tags": [
+   "tradições",
+   "leis",
+   "silêncio do sangue",
+   "legado",
+   "máscara"
+  ]
+ },
+ {
+  "id": "vdta-seitas",
+  "linha": "vdta",
+  "titulo": "Seitas da Idade das Trevas",
+  "capitulo": "Cap. 2 – Cenário",
+  "pagina": 40,
+  "resumo": [
+   "Não existem Camarilla nem Sabá. Há o Inconnu, os Furiosos (jovens contra anciões), a Ordem das Cinzas Amargas, os Autarcas (sem príncipe), os Prometeanos (sonham com nova Cartago) e a Manus Nigrum.",
+   "O poder real está nos príncipes, nos domínios feudais de vampiros e nos laços de vassalagem entre senhores e crias."
+  ],
+  "tags": [
+   "seitas",
+   "inconnu",
+   "furiosos",
+   "autarcas",
+   "prometeanos",
+   "manus nigrum",
+   "cinzas amargas"
+  ]
+ },
+ {
+  "id": "vdta-principe-dominio",
+  "linha": "vdta",
+  "titulo": "O Príncipe e o Domínio",
+  "capitulo": "Cap. 2 – Cenário",
+  "pagina": 37,
+  "resumo": [
+   "O Príncipe reina sobre uma cidade e concede domínios menores a vassalos. A sociedade se ordena por idade: Caitiff, Crianças da Noite, Neófitos, Ancillae e Anciões.",
+   "Lextalionis e as Caçadas de Sangue punem quem quebra as Tradições."
+  ],
+  "tags": [
+   "príncipe",
+   "domínio",
+   "feudo",
+   "vassalo",
+   "ancilla",
+   "neófito",
+   "caçada de sangue"
+  ]
+ },
+ {
+  "id": "vdta-geografia",
+  "linha": "vdta",
+  "titulo": "A Europa de 1197",
+  "capitulo": "Cap. 2 – Cenário",
+  "pagina": 49,
+  "resumo": [
+   "O Sacro Império está em guerra civil entre Oto de Brunswick e Filipe da Suábia. Ricardo Coração de Leão reina na Inglaterra e Filipe II na França. Constantinopla está sob Aleixo III.",
+   "Há ainda Hungria, Polônia, o reino de Jerusalém (sediado em Chipre), Escócia, principados russos, Bulgária, reinos ibéricos, Irlanda dividida, Dinamarca e a Lituânia pagã. O Papa governa de Roma."
+  ],
+  "tags": [
+   "geografia",
+   "1197",
+   "europa",
+   "cruzadas",
+   "reinos",
+   "cenário",
+   "idade média"
+  ]
+ },
+ {
+  "id": "vdta-mundo-mortal",
+  "linha": "vdta",
+  "titulo": "Sociedade mortal, peste e crenças",
+  "capitulo": "Cap. 2 – Cenário",
+  "pagina": 44,
+  "resumo": [
+   "A vida medieval é rural e hierárquica: nobres, clero e camponeses. A Igreja domina a vida espiritual, a peste e a fome assombram as aldeias e o povo acredita em demônios, bruxas e lobisomens.",
+   "Caçadores mortais e a Igreja são ameaças reais, por isso o Silêncio do Sangue importa tanto."
+  ],
+  "tags": [
+   "sociedade",
+   "camponeses",
+   "clero",
+   "peste",
+   "superstição",
+   "nobreza"
+  ]
+ },
+ {
+  "id": "vdta-heresia",
+  "linha": "vdta",
+  "titulo": "Heresia Cainita",
+  "capitulo": "Cap. 2 – Cenário",
+  "pagina": 47,
+  "resumo": [
+   "Uma igreja secreta que trata Caim como figura sagrada e os vampiros como escolhidos. Tem membros infiltrados até no clero; um sinal de reconhecimento é o anel de prata com a referência a Gênesis 4:15."
+  ],
+  "tags": [
+   "heresia cainita",
+   "culto",
+   "igreja",
+   "caim",
+   "hereges"
+  ]
+ },
+ {
+  "id": "vdta-clas",
+  "linha": "vdta",
+  "titulo": "Clãs e fraquezas (1197)",
+  "capitulo": "Cap. 3 – Os Clãs",
+  "pagina": 54,
+  "resumo": [
+   "Os Capadócios ocupam o lugar dos Giovanni. Vários clãs têm fraquezas diferentes das modernas. Baali ficam só para o Narrador."
+  ],
+  "tabela": [
+   [
+    "Clã",
+    "Alcunha",
+    "Disciplinas",
+    "Fraqueza (resumo)"
+   ],
+   [
+    "Assamitas",
+    "Sarracenos",
+    "Rapidez, Ofuscação, Quietus",
+    "Dízimo de 20% do sangue; parecem diabolistas"
+   ],
+   [
+    "Brujah",
+    "Fanáticos",
+    "Rapidez, Potência, Presença",
+    "+2 no frenesi"
+   ],
+   [
+    "Capadócios",
+    "Ladrões de sepulturas",
+    "Auspícios, Fortitude, Mortis",
+    "Palidez: +1 dif. Social"
+   ],
+   [
+    "Seguidores de Set",
+    "Serpentes",
+    "Ofuscação, Presença, Serpentis",
+    "Dano solar dobrado"
+   ],
+   [
+    "Gangrel",
+    "Animais",
+    "Animalismo, Fortitude, Metamorfose",
+    "Traço animal a cada frenesi"
+   ],
+   [
+    "Lasombra",
+    "Magistrados",
+    "Dominação, Tenebrosidade, Potência",
+    "Sem reflexo"
+   ],
+   [
+    "Malkavianos",
+    "Loucos",
+    "Auspícios, Demência, Ofuscação",
+    "Perturbação permanente"
+   ],
+   [
+    "Nosferatu",
+    "Leprosos",
+    "Animalismo, Ofuscação, Potência",
+    "Aparência 0"
+   ],
+   [
+    "Ravnos",
+    "Charlatães",
+    "Animalismo, Quimerismo, Fortitude",
+    "Vício de trapaça (FV dif. 6)"
+   ],
+   [
+    "Toreador",
+    "Artesãos",
+    "Auspícios, Rapidez, Presença",
+    "Paralisados pela beleza"
+   ],
+   [
+    "Tremere",
+    "Usurpadores",
+    "Auspícios, Dominação, Taumaturgia",
+    "Beberam 2× dos sete anciões"
+   ],
+   [
+    "Tzimisce",
+    "Demônios",
+    "Animalismo, Auspícios, Vicissitude",
+    "Dormir com terra natal"
+   ],
+   [
+    "Ventrue",
+    "Patrícios",
+    "Dominação, Fortitude, Presença",
+    "Presa exclusiva"
+   ]
+  ],
+  "tags": [
+   "clãs",
+   "fraqueza",
+   "capadócios",
+   "assamitas",
+   "tremere",
+   "setitas"
+  ]
+ },
+ {
+  "id": "vdta-antecedentes",
+  "linha": "vdta",
+  "titulo": "Antecedentes medievais",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 128,
+  "resumo": [
+   "Só nove Antecedentes: Aliados, Contatos, Geração, Influência, Lacaios, Mentor, Rebanho, Recursos e Status. Não há Fama nem Refúgio.",
+   "Recursos vão de escassos (1) a extremamente rico, com castelo e vilas (5). Influência vai de alguma voz na cidade (1) até sugestões que chegam ao rei (5)."
+  ],
+  "tags": [
+   "antecedentes",
+   "recursos",
+   "influência",
+   "status",
+   "rebanho",
+   "medieval"
+  ]
+ },
+ {
+  "id": "vdta-habilidades",
+  "linha": "vdta",
+  "titulo": "Habilidades medievais",
+  "capitulo": "Cap. 4 – Personagens",
+  "pagina": 120,
+  "resumo": [
+   "Talentos trocam Expressão e Manha por Representação e Crime. Perícias incluem Arqueirismo, Artesanato, Herborismo, Música e Cavalgar. Conhecimentos incluem Instrução (latim, leitura, teologia), Sabedoria Popular e Senescalia (administrar terras e casas).",
+   "Não há armas de fogo, Computador, Condução ou Finanças. Sem pontos num Conhecimento, não se pode tentar o teste."
+  ],
+  "tags": [
+   "habilidades",
+   "instrução",
+   "senescalia",
+   "arqueirismo",
+   "cavalgar",
+   "herborismo",
+   "crime"
+  ]
+ },
+ {
+  "id": "vdta-mortais",
+  "linha": "vdta",
+  "titulo": "Personagens mortais",
+  "capitulo": "Fichas",
+  "pagina": 287,
+  "resumo": [
+   "A ficha de mortal usa Atributos 6/4/3, Habilidades 11/7/4, Antecedentes 5, Virtudes 7 e 21 pontos de bônus. Tem espaço para Númina, Fé e Humanidade.",
+   "As penalidades de vitalidade dessa ficha são mais duras: Machucado −1, Ferido −2, Ferido Gravemente −3, Espancado −4, Aleijado −5."
+  ],
+  "tags": [
+   "mortal",
+   "humano",
+   "carniçal",
+   "caçador",
+   "ficha de mortal"
+  ]
+ },
+ {
+  "id": "vdta-qualidades",
+  "linha": "vdta",
+  "titulo": "Qualidades e Defeitos (1197)",
+  "capitulo": "Apêndice",
+  "pagina": 272,
+  "resumo": [
+   "Qualidades só com pontos de bônus, só na criação; Defeitos dão até 7 pontos (máximo de 22 de bônus). As categorias medievais incluem Aptidões, Percepção, Ligações com Membros, Mentais, Sociedade Mortal, Físicas, Personalidade e Sobrenaturais.",
+   "Exemplos próprios da época: Ordem Eclesiástica, Nobreza, Rede de Espiões, Leproso, Afinidade com as Fadas, Perseguido por Demônios."
+  ],
+  "tags": [
+   "qualidades",
+   "defeitos",
+   "merits",
+   "flaws",
+   "nobreza",
+   "ordem eclesiástica"
+  ]
+ },
+ {
+  "id": "vdta-equipamento",
+  "linha": "vdta",
+  "titulo": "Lista de equipamento por Recursos",
+  "capitulo": "Apêndice",
+  "pagina": 283,
+  "resumo": [
+   "Cada item indica o nível de Recursos necessário. Exemplos: lança e estaca baratas; espada exige Recursos 3, espada longa 4; armadura de cavaleiro exige 5; um bom cavalo exige 4; água benta e livro iluminado, 4."
+  ],
+  "tags": [
+   "equipamento",
+   "recursos",
+   "cavalo",
+   "inventário",
+   "preço"
+  ]
+ },
+ {
+  "id": "lob-dados",
+  "linha": "lob",
+  "titulo": "Dados, dificuldade e falha crítica",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 171,
+  "resumo": [
+   "Parada de d10 = Atributo + Habilidade, nunca mais de duas Características. Fúria, Gnose e Força de Vontade são roladas sozinhas. Dificuldade de 2 a 10, padrão 6.",
+   "Cada 1 cancela um sucesso; sem sucesso e com algum 1, é falha crítica. Uma parada igual ou maior que a dificuldade numa tarefa rotineira pode dar sucesso automático. Gastar 1 FV = 1 sucesso, uma vez por turno."
+  ],
+  "tabela": [
+   [
+    "Dif.",
+    "Descrição"
+   ],
+   [
+    "3",
+    "Fácil"
+   ],
+   [
+    "4",
+    "Rotineiro"
+   ],
+   [
+    "5",
+    "Equilibrado"
+   ],
+   [
+    "6",
+    "Médio"
+   ],
+   [
+    "7",
+    "Desafiador"
+   ],
+   [
+    "8",
+    "Difícil"
+   ],
+   [
+    "9",
+    "Extremamente difícil"
+   ],
+   [
+    "10",
+    "Quase impossível"
+   ]
+  ],
+  "tags": [
+   "dados",
+   "parada",
+   "dificuldade",
+   "falha crítica",
+   "sucesso automático",
+   "botch"
+  ]
+ },
+ {
+  "id": "lob-acoes",
+  "linha": "lob",
+  "titulo": "Ações múltiplas, prolongadas, resistidas e em equipe",
+  "capitulo": "Cap. 5 – Regras",
+  "pagina": 173,
+  "resumo": [
+   "Ações múltiplas: a primeira perde tantos dados quanto o número de ações, e cada seguinte perde um a mais. Fúria dá ações extras sem essa penalidade.",
+   "Ação prolongada acumula sucessos (falha crítica zera). Ação resistida cancela sucessos do oponente. Em equipe, cada um rola e os sucessos se somam. Novas tentativas: +1 de dificuldade cumulativo (opcional)."
+  ],
+  "tags": [
+   "ações múltiplas",
+   "ação prolongada",
+   "ação resistida",
+   "trabalho de equipe",
+   "teamwork"
+  ]
+ },
+ {
+  "id": "lob-atos-reflexos",
+  "linha": "lob",
+  "titulo": "Atos reflexos e ações automáticas",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 196,
+  "resumo": [
+   "Não gastam ação: usar Fúria, absorver dano, testes de FV, regenerar e voltar à forma racial. Ceder a vez permite agir depois e interromper alguém mais lento.",
+   "Contam como ação: mover-se (andar 7 m, marchar 12 + Destreza, correr 20 + 3 × Destreza), levantar, preparar arma. Crinos ganha +2 m sobre quatro patas; Hispo corre 1,5× e Lupino 2× a velocidade humana."
+  ],
+  "tags": [
+   "ato reflexo",
+   "movimento",
+   "velocidade",
+   "correr",
+   "ceder a vez"
+  ]
+ },
+ {
+  "id": "lob-criacao",
+  "linha": "lob",
+  "titulo": "Criação de personagem Garou",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 96,
+  "resumo": [
+   "Conceito, raça, augúrio e tribo. Atributos 7/5/3; Habilidades 13/9/5 (máximo 3); 5 Antecedentes (com restrições da tribo); 3 Dons de nível 1 — um da raça, um do augúrio, um da tribo.",
+   "A Fúria vem do augúrio, a Gnose da raça e a Força de Vontade da tribo. O Renome inicial vem do augúrio; todos começam no Posto 1 (cliath). Depois, 15 pontos de bônus."
+  ],
+  "tabela": [
+   [
+    "Etapa",
+    "Pontos"
+   ],
+   [
+    "Atributos",
+    "7 / 5 / 3"
+   ],
+   [
+    "Habilidades",
+    "13 / 9 / 5 (máx. 3)"
+   ],
+   [
+    "Antecedentes",
+    "5"
+   ],
+   [
+    "Dons",
+    "3 de nível 1"
+   ],
+   [
+    "Pontos de bônus",
+    "15"
+   ]
+  ],
+  "tags": [
+   "criação",
+   "ficha",
+   "novo personagem",
+   "raça",
+   "augúrio",
+   "tribo"
+  ]
+ },
+ {
+  "id": "lob-pontos-bonus",
+  "linha": "lob",
+  "titulo": "Custo dos pontos de bônus",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 102,
+  "resumo": [
+   "Dons comprados com bônus também precisam ser de nível 1."
+  ],
+  "tabela": [
+   [
+    "Característica",
+    "Custo"
+   ],
+   [
+    "Atributo",
+    "5"
+   ],
+   [
+    "Habilidade",
+    "2"
+   ],
+   [
+    "Antecedente",
+    "1"
+   ],
+   [
+    "Dom (nível 1)",
+    "7"
+   ],
+   [
+    "Fúria",
+    "1"
+   ],
+   [
+    "Gnose",
+    "2"
+   ],
+   [
+    "Força de Vontade",
+    "1"
+   ]
+  ],
+  "tags": [
+   "pontos de bônus",
+   "freebies",
+   "custo"
+  ]
+ },
+ {
+  "id": "lob-racas",
+  "linha": "lob",
+  "titulo": "Raças: hominídeo, impuro e lupino",
+  "capitulo": "Cap. 2 – Os Garou",
+  "pagina": 59,
+  "resumo": [
+   "A raça vem da forma da mãe: humana gera hominídeo, loba gera lupino, e dois Garou geram um impuro — estéril, nascido em Crinos e com uma deformidade obrigatória.",
+   "Lupinos não podem comprar algumas Perícias e Conhecimentos humanos na criação (Ofícios, Condução, Etiqueta, Armas de Fogo, Computador, Direito, Linguística, Política, Ciência)."
+  ],
+  "tabela": [
+   [
+    "Raça",
+    "Gnose inicial",
+    "Dons iniciais"
+   ],
+   [
+    "Hominídeo",
+    "1",
+    "Mestre do Fogo, Persuasão, Simular Odor de Homem"
+   ],
+   [
+    "Impuro",
+    "3",
+    "Criar Elemento, Raiva Primordial, Sentir a Wyrm"
+   ],
+   [
+    "Lupino",
+    "5",
+    "Salto da Lebre, Sentidos Aguçados, Sentir a Caça"
+   ]
+  ],
+  "tags": [
+   "raça",
+   "hominídeo",
+   "impuro",
+   "metis",
+   "lupino",
+   "gnose inicial"
+  ]
+ },
+ {
+  "id": "lob-deformidades",
+  "linha": "lob",
+  "titulo": "Deformidades de impuro",
+  "capitulo": "Cap. 2 – Os Garou",
+  "pagina": 60,
+  "resumo": [
+   "Todo impuro escolhe uma deformidade na criação. Exemplos: Albino (+2 em Percepção à luz do dia), Alopécico (+1 em testes Sociais), Corcunda, Cornos, Couro Duro (Aparência máx. 1, +1 dado de absorção), Doença Debilitante (+2 em Vigor), Sem Cauda, Sem Olfato, Sistema Imunológico Fraco (sem o nível Escoriado), Cego, Convulsões, Acessos de Loucura."
+  ],
+  "tags": [
+   "deformidade",
+   "impuro",
+   "metis",
+   "defeito"
+  ]
+ },
+ {
+  "id": "lob-augurios",
+  "linha": "lob",
+  "titulo": "Augúrios",
+  "capitulo": "Cap. 2 – Os Garou",
+  "pagina": 62,
+  "resumo": [
+   "A lua sob a qual o Garou nasceu define seu papel, a Fúria inicial e o Renome inicial. Trocar de augúrio exige o Ritual de Renúncia e recomeçar no Posto 1."
+  ],
+  "tabela": [
+   [
+    "Augúrio",
+    "Lua",
+    "Papel",
+    "Fúria",
+    "Renome inicial"
+   ],
+   [
+    "Ragabash",
+    "Nova",
+    "Trapaceiro",
+    "1",
+    "3 em qualquer combinação"
+   ],
+   [
+    "Theurge",
+    "Crescente",
+    "Vidente",
+    "2",
+    "Sabedoria 3"
+   ],
+   [
+    "Philodox",
+    "Meia-lua",
+    "Mediador",
+    "3",
+    "Honra 3"
+   ],
+   [
+    "Galliard",
+    "Gibosa",
+    "Contador de histórias",
+    "4",
+    "Glória 2, Sabedoria 1"
+   ],
+   [
+    "Ahroun",
+    "Cheia",
+    "Guerreiro",
+    "5",
+    "Glória 2, Honra 1"
+   ]
+  ],
+  "tags": [
+   "augúrio",
+   "lua",
+   "ragabash",
+   "theurge",
+   "philodox",
+   "galliard",
+   "ahroun",
+   "fúria inicial"
+  ]
+ },
+ {
+  "id": "lob-tribos",
+  "linha": "lob",
+  "titulo": "Tribos",
+  "capitulo": "Cap. 2 – Os Garou",
+  "pagina": 68,
+  "resumo": [
+   "A tribo é a família espiritual sob um totem. Ela define a Força de Vontade inicial, as restrições de Antecedentes e os Dons iniciais."
+  ],
+  "tabela": [
+   [
+    "Tribo",
+    "Totem",
+    "FV",
+    "Restrição"
+   ],
+   [
+    "Andarilhos do Asfalto",
+    "Barata",
+    "3",
+    "Sem Ancestrais, Mentor, Raça Pura"
+   ],
+   [
+    "Crias de Fenris",
+    "Fenris",
+    "3",
+    "Sem Contatos"
+   ],
+   [
+    "Fianna",
+    "Cervo",
+    "3",
+    "Nenhuma"
+   ],
+   [
+    "Filhos de Gaia",
+    "Unicórnio",
+    "4",
+    "Nenhuma"
+   ],
+   [
+    "Fúrias Negras",
+    "Pégaso",
+    "3",
+    "Nenhuma"
+   ],
+   [
+    "Garras Vermelhas",
+    "Grifo",
+    "3",
+    "Sem Aliados, Contatos, Recursos"
+   ],
+   [
+    "Peregrinos Silenciosos",
+    "Coruja",
+    "3",
+    "Sem Ancestrais, Recursos"
+   ],
+   [
+    "Presas de Prata",
+    "Falcão",
+    "3",
+    "Raça Pura 3+ obrigatória"
+   ],
+   [
+    "Roedores de Ossos",
+    "Rato",
+    "4",
+    "Sem Ancestrais, Raça Pura, Recursos"
+   ],
+   [
+    "Senhores das Sombras",
+    "Avô Trovão",
+    "3",
+    "Sem Aliados, Mentor"
+   ],
+   [
+    "Uktena",
+    "Uktena",
+    "3",
+    "Nenhuma"
+   ],
+   [
+    "Wendigo",
+    "Wendigo",
+    "4",
+    "Sem Contatos, Recursos"
+   ],
+   [
+    "Portadores da Luz Interior",
+    "Quimera",
+    "5",
+    "Sem Fetiche, Recursos"
+   ]
+  ],
+  "tags": [
+   "tribo",
+   "totem",
+   "fianna",
+   "fenris",
+   "presas de prata",
+   "garras vermelhas",
+   "uktena",
+   "wendigo",
+   "andarilhos"
+  ]
+ },
+ {
+  "id": "lob-renome",
+  "linha": "lob",
+  "titulo": "Renome: Glória, Honra e Sabedoria",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 124,
+  "resumo": [
+   "Renome é a reputação entre os Garou, em três categorias que não se trocam. Prêmios entram como pontos temporários; com 10 temporários numa categoria, o Ritual de Conquista converte em 1 permanente.",
+   "Glória premia bravura e força; Honra premia respeito à Litania e justiça; Sabedoria premia prudência, conhecimento e bons conselhos. Faltar com eles tira Renome."
+  ],
+  "tags": [
+   "renome",
+   "glória",
+   "honra",
+   "sabedoria",
+   "reputação",
+   "renown"
+  ]
+ },
+ {
+  "id": "lob-premios-renome",
+  "linha": "lob",
+  "titulo": "Exemplos de prêmios de Renome",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 183,
+  "resumo": [
+   "Prêmios típicos vão de 1 a 7 pontos; 8 a 10 só para feitos lendários. Em combate, avalia-se a ameaça do grupo inimigo como um todo, e toda a matilha recebe o prêmio."
+  ],
+  "tabela": [
+   [
+    "Feito",
+    "Renome"
+   ],
+   [
+    "Bravura quase letal / desafio justo",
+    "Glória +1"
+   ],
+   [
+    "Derrotar ameaça mediana",
+    "Glória +3"
+   ],
+   [
+    "Morrer defendendo o caern",
+    "Glória +5"
+   ],
+   [
+    "Covardia que mata outro Garou",
+    "Glória −5"
+   ],
+   [
+    "Proteger humano indefeso",
+    "Honra +2"
+   ],
+   [
+    "Mediar disputa com justiça / proteger o Véu",
+    "Honra +3"
+   ],
+   [
+    "Rasgar o Véu",
+    "Honra −5"
+   ],
+   [
+    "Aprender ritual / criar amuleto",
+    "Sabedoria +1"
+   ],
+   [
+    "Provar que algo é da Wyrm",
+    "Sabedoria +3"
+   ],
+   [
+    "Descobrir caern perdido",
+    "Sabedoria +7"
+   ],
+   [
+    "Sucumbir ao frenesi",
+    "Sabedoria −1"
+   ]
+  ],
+  "tags": [
+   "renome",
+   "prêmio",
+   "glória",
+   "honra",
+   "sabedoria",
+   "recompensa"
+  ]
+ },
+ {
+  "id": "lob-posto",
+  "linha": "lob",
+  "titulo": "Posto e promoção",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 185,
+  "resumo": [
+   "Para subir de Posto é preciso ter o Renome permanente exigido pelo augúrio e vencer um desafio proposto por um Garou de posto igual ou superior. Só se pode desafiar quem está um posto acima.",
+   "Posto também limita os Dons: só se aprende Dom de nível igual ou menor que o Posto. A partir do Posto 3, o Garou é conhecido em toda a Nação. Ragabash contam o total, em qualquer combinação."
+  ],
+  "tabela": [
+   [
+    "Posto",
+    "Ragabash (total)",
+    "Theurge G/H/S",
+    "Philodox G/H/S",
+    "Galliard G/H/S",
+    "Ahroun G/H/S"
+   ],
+   [
+    "1 Cliath",
+    "3",
+    "0/0/3",
+    "0/3/0",
+    "2/0/1",
+    "2/1/0"
+   ],
+   [
+    "2 Fostern",
+    "7",
+    "1/0/5",
+    "1/4/1",
+    "4/0/2",
+    "4/1/1"
+   ],
+   [
+    "3 Adren",
+    "13",
+    "2/1/7",
+    "2/6/2",
+    "4/2/4",
+    "6/3/1"
+   ],
+   [
+    "4 Athro",
+    "19",
+    "4/2/9",
+    "3/8/4",
+    "7/2/6",
+    "9/5/2"
+   ],
+   [
+    "5 Ancião",
+    "25",
+    "4/9/10",
+    "4/10/9",
+    "9/5/9",
+    "10/9/4"
+   ]
+  ],
+  "tags": [
+   "posto",
+   "rank",
+   "promoção",
+   "cliath",
+   "fostern",
+   "adren",
+   "athro",
+   "ancião",
+   "desafio"
+  ]
+ },
+ {
+  "id": "lob-posto-frenesi",
+  "linha": "lob",
+  "titulo": "Posto e controle do frenesi",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 125,
+  "resumo": [
+   "Garou de posto alto aprendem a dominar a Fúria."
+  ],
+  "tabela": [
+   [
+    "Posto",
+    "Efeito"
+   ],
+   [
+    "0–2",
+    "—"
+   ],
+   [
+    "3",
+    "+1 na dificuldade do frenesi"
+   ],
+   [
+    "4",
+    "+2 na dificuldade"
+   ],
+   [
+    "5",
+    "+2 e precisa de 5+ sucessos para entrar em frenesi"
+   ],
+   [
+    "6",
+    "+2 e precisa de 6+ sucessos"
+   ]
+  ],
+  "tags": [
+   "posto",
+   "frenesi",
+   "autocontrole"
+  ]
+ },
+ {
+  "id": "lob-furia",
+  "linha": "lob",
+  "titulo": "Fúria: usos",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 125,
+  "resumo": [
+   "Fúria tem nível permanente e pontos temporários. Gasta-se no início do turno: cada ponto dá uma ação extra (no máximo metade da Fúria permanente por turno); 1 ponto muda para qualquer forma na hora; 1 ponto ignora atordoamento ou a dor por um turno.",
+   "Permanecer ativo: além de Incapacitado, teste de Fúria (dif. 8) recupera 1 nível por sucesso, uma vez por cena, com risco de frenesi e de Cicatriz de Batalha.",
+   "Fúria acima da FV tira 1 dado por ponto em interações sociais. Sem Fúria e sem FV, o Garou perde o lobo: fica preso à forma racial até recuperar FV. Fúria e Gnose não se usam no mesmo turno."
+  ],
+  "tags": [
+   "fúria",
+   "rage",
+   "ações extras",
+   "atordoamento",
+   "permanecer ativo",
+   "besta interior",
+   "perder o lobo"
+  ]
+ },
+ {
+  "id": "lob-recuperar-furia",
+  "linha": "lob",
+  "titulo": "Recuperar Fúria",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 126,
+  "resumo": [
+   "Ao ver a lua pela primeira vez na noite, recupera pontos pela fase; se for a fase do próprio augúrio, recupera tudo. Também se recupera 1 ponto por humilhação, por falha crítica importante ou no início de um confronto tenso.",
+   "No início de uma nova história cada jogador rola 1 dado para definir a Fúria atual (pode passar do permanente)."
+  ],
+  "tabela": [
+   [
+    "Lua",
+    "Fúria recuperada"
+   ],
+   [
+    "Nova",
+    "1"
+   ],
+   [
+    "Minguante",
+    "2"
+   ],
+   [
+    "Meia-lua / crescente",
+    "3"
+   ],
+   [
+    "Cheia",
+    "4"
+   ],
+   [
+    "Lua do próprio augúrio",
+    "toda"
+   ]
+  ],
+  "tags": [
+   "fúria",
+   "recuperar",
+   "lua",
+   "fase da lua"
+  ]
+ },
+ {
+  "id": "lob-gnose",
+  "linha": "lob",
+  "titulo": "Gnose",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 127,
+  "resumo": [
+   "Gnose é a ligação espiritual com Gaia. Os pontos temporários nunca passam do permanente. Ela ativa Dons e fetiches e é testada para percorrer atalhos para a Umbra.",
+   "Cada objeto de prata carregado reduz a Gnose efetiva em 1 até um dia após largá-lo (hominídeos na forma racial ignoram)."
+  ],
+  "tags": [
+   "gnose",
+   "gnosis",
+   "espírito",
+   "prata",
+   "dons",
+   "fetiches"
+  ]
+ },
+ {
+  "id": "lob-recuperar-gnose",
+  "linha": "lob",
+  "titulo": "Recuperar Gnose",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 128,
+  "resumo": [
+   "Meditação: pelo menos uma hora, Raciocínio + Enigmas (dif. 8), no máximo 1 ponto por hora e uma vez por dia; repetir na mesma semana sobe a dificuldade.",
+   "Uma Caçada Sagrada a um Engling devolve toda a Gnose. Também se recupera barganhando com espíritos e, entre histórias, com Carisma + Enigmas."
+  ],
+  "tags": [
+   "gnose",
+   "recuperar",
+   "meditação",
+   "caçada sagrada",
+   "engling"
+  ]
+ },
+ {
+  "id": "lob-forca-vontade",
+  "linha": "lob",
+  "titulo": "Força de Vontade (Garou)",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 128,
+  "resumo": [
+   "Gaste para sucesso automático (não em dano nem em testes de Dons), para resistir a impulsos ou para evitar um frenesi.",
+   "Recupera-se toda no fim da história, por vitórias pessoais e por cumprir os deveres do augúrio; opcionalmente 1 por dia ao acordar. Falha crítica num teste de FV custa 1 ponto permanente."
+  ],
+  "tags": [
+   "força de vontade",
+   "willpower",
+   "fv"
+  ]
+ },
+ {
+  "id": "lob-regeneracao",
+  "linha": "lob",
+  "titulo": "Regeneração",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 188,
+  "resumo": [
+   "O Garou regenera 1 nível de contusão ou letal por turno. Em situação estressante (combate), precisa de um teste de Vigor dif. 8 a cada turno; a falha impede a cura naquele turno e a falha crítica até que descanse.",
+   "Hominídeos e lupinos na forma natural regeneram devagar, como humanos; impuros regeneram em qualquer forma. Dano agravado cura 1 nível por dia de descanso em forma diferente da natural."
+  ],
+  "tags": [
+   "regeneração",
+   "cura",
+   "curar",
+   "regenerar",
+   "garou",
+   "vigor",
+   "agravado"
+  ]
+ },
+ {
+  "id": "lob-vitalidade",
+  "linha": "lob",
+  "titulo": "Vitalidade, tipos de dano e cair",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 186,
+  "resumo": [
+   "Sete níveis: Escoriado 0, Machucado −1, Ferido −1, Ferido Gravemente −2, Espancado −2, Aleijado −5, Incapacitado. Contusão marca \"/\", letal \"X\" e agravado \"*\" (garras e presas Garou, fogo, ácido, serra, prata).",
+   "Passar de Incapacitado por contusão deixa inconsciente; por letal, volta à forma racial e cai; por agravado, morre — salvo uso de Fúria. Garou absorvem os três tipos com Vigor."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Penalidade",
+    "Movimento"
+   ],
+   [
+    "Escoriado",
+    "0",
+    "normal"
+   ],
+   [
+    "Machucado",
+    "−1",
+    "normal"
+   ],
+   [
+    "Ferido",
+    "−1",
+    "metade da corrida"
+   ],
+   [
+    "Ferido Gravemente",
+    "−2",
+    "não corre"
+   ],
+   [
+    "Espancado",
+    "−2",
+    "manca 3 m/turno"
+   ],
+   [
+    "Aleijado",
+    "−5",
+    "arrasta 1 m/turno"
+   ],
+   [
+    "Incapacitado",
+    "—",
+    "imóvel"
+   ]
+  ],
+  "tags": [
+   "vitalidade",
+   "ferimentos",
+   "dano",
+   "contusão",
+   "letal",
+   "agravado",
+   "morte"
+  ]
+ },
+ {
+  "id": "lob-ferimentos-humanos",
+  "linha": "lob",
+  "titulo": "Ferimentos e cura de humanos",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 187,
+  "resumo": [
+   "Humanos só absorvem contusão. A cura de letal é lenta e cada nível precisa sarar antes do próximo; letal sem tratamento piora um nível por dia."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Contusão",
+    "Letal"
+   ],
+   [
+    "Escoriado",
+    "1 hora",
+    "1 dia"
+   ],
+   [
+    "Machucado",
+    "1 hora",
+    "3 dias"
+   ],
+   [
+    "Ferido",
+    "1 hora",
+    "1 semana"
+   ],
+   [
+    "Ferido Gravemente",
+    "1 hora",
+    "1 mês"
+   ],
+   [
+    "Espancado",
+    "3 horas",
+    "2 meses"
+   ],
+   [
+    "Aleijado",
+    "6 horas",
+    "3 meses"
+   ],
+   [
+    "Incapacitado",
+    "12 horas",
+    "5 meses"
+   ]
+  ],
+  "tags": [
+   "humano",
+   "mortal",
+   "cura",
+   "hospital",
+   "recuperação"
+  ]
+ },
+ {
+  "id": "lob-prata",
+  "linha": "lob",
+  "titulo": "Prata",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 189,
+  "resumo": [
+   "Prata causa 1 nível agravado por turno de contato. Arma de prata que acerta causa sempre pelo menos 1 nível. Garou só absorvem prata na forma racial (dif. 6); impuros nunca.",
+   "Carregar prata reduz a Gnose efetiva: 1 ponto por cinco balas, 1 por klaive, 2 por grã-klaive. Hominídeos e lupinos na própria forma racial não sofrem o dano especial."
+  ],
+  "tags": [
+   "prata",
+   "silver",
+   "klaive",
+   "balas de prata",
+   "agravado",
+   "fraqueza"
+  ]
+ },
+ {
+  "id": "lob-cicatrizes",
+  "linha": "lob",
+  "titulo": "Cicatrizes de Batalha",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 189,
+  "resumo": [
+   "Ferimentos graves podem deixar marcas permanentes, que também rendem Glória temporária (entre parênteses)."
+  ],
+  "tabela": [
+   [
+    "Cicatriz",
+    "Efeito"
+   ],
+   [
+    "Superficial (1)",
+    "só aparência"
+   ],
+   [
+    "Danos à Aparência (2)",
+    "−1 Aparência com humanos"
+   ],
+   [
+    "Queixo Quebrado (1)",
+    "+2 dif. fala, +1 dif. mordida"
+   ],
+   [
+    "Olho Perdido (2)",
+    "+3 dif. profundidade, +2 em Percepção visual"
+   ],
+   [
+    "Pulmão Arruinado (1)",
+    "fôlego pela metade"
+   ],
+   [
+    "Dedos Perdidos (2)",
+    "+3 dif. Destreza com a mão"
+   ],
+   [
+    "Membro Mutilado (3)",
+    "metade da velocidade"
+   ],
+   [
+    "Dano à Espinha (2)",
+    "−1 Destreza, −2 iniciativa"
+   ],
+   [
+    "Dano Cerebral (2)",
+    "−1 Atributo Mental"
+   ]
+  ],
+  "tags": [
+   "cicatriz",
+   "cicatrizes de batalha",
+   "ferimento permanente",
+   "glória"
+  ]
+ },
+ {
+  "id": "lob-frenesi",
+  "linha": "lob",
+  "titulo": "Frenesi e a lua",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 190,
+  "resumo": [
+   "Situações de tensão pedem um teste de Fúria. Com 4 ou mais sucessos o Garou entra em frenesi; pode gastar 1 FV para evitar, perdendo o resto das ações do turno. Com 6 ou mais, é frenesi sob a Influência da Wyrm, impossível de evitar.",
+   "Gatilhos: humilhação, emoção forte, fome extrema, confinamento, provocação, muita prata por perto, ser ferido ou ver um companheiro ferido. A lua muda a dificuldade; −1 na lua do próprio augúrio ou em Crinos (não cumulativos)."
+  ],
+  "tabela": [
+   [
+    "Lua",
+    "Dif. do teste de Fúria"
+   ],
+   [
+    "Nova",
+    "8"
+   ],
+   [
+    "Crescente",
+    "7"
+   ],
+   [
+    "Meia-lua",
+    "6"
+   ],
+   [
+    "Gibosa",
+    "5"
+   ],
+   [
+    "Cheia",
+    "4"
+   ]
+  ],
+  "tags": [
+   "frenesi",
+   "fúria",
+   "raiva",
+   "lua",
+   "besta",
+   "frenzy"
+  ]
+ },
+ {
+  "id": "lob-tipos-frenesi",
+  "linha": "lob",
+  "titulo": "Frenesi selvagem e frenesi da raposa",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 190,
+  "resumo": [
+   "No frenesi selvagem o Garou assume Crinos ou Hispo e ataca. Se a Gnose permanente for maior que a Fúria, poupa a matilha; se não, ataca o que se mexer. Não se lembra e costuma desmaiar no fim.",
+   "No frenesi da raposa ele foge apavorado em Lupino. Em qualquer frenesi: só morder, garras ou correr; sem Dons, manobras ou táticas; ignora ferimentos. Para sair, teste de FV com dificuldade = Fúria, a cada turno após o fim da causa."
+  ],
+  "tags": [
+   "frenesi",
+   "frenesi selvagem",
+   "frenesi da raposa",
+   "fuga",
+   "crinos"
+  ]
+ },
+ {
+  "id": "lob-influencia-wyrm",
+  "linha": "lob",
+  "titulo": "Sob a Influência da Wyrm",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 191,
+  "resumo": [
+   "Com 6+ sucessos num teste de Fúria, o frenesi não pode ser evitado. Depois de derrubar alguém, o Garou testa Raciocínio (dif. 7); numa falha crítica comete uma atrocidade conforme a raça, manchando sua alma."
+  ],
+  "tags": [
+   "wyrm",
+   "thrall",
+   "frenesi",
+   "atrocidade",
+   "corrupção"
+  ]
+ },
+ {
+  "id": "lob-maldicao",
+  "linha": "lob",
+  "titulo": "A Maldição",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 191,
+  "resumo": [
+   "Humanos e animais sentem o predador no Garou. Se a Fúria dele for maior que a Força de Vontade de um humano, este evita contato e fica pouco à vontade, o que atrapalha a vida social e a sedução."
+  ],
+  "tags": [
+   "maldição",
+   "curse",
+   "social",
+   "humanos",
+   "fúria"
+  ]
+ },
+ {
+  "id": "lob-delirio",
+  "linha": "lob",
+  "titulo": "Delírio",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 192,
+  "resumo": [
+   "Humanos que veem um Garou em Crinos sofrem o Delírio: reagem conforme sua Força de Vontade e, quase sempre, esquecem ou racionalizam o que viram. Parentes são imunes.",
+   "Opcional: Raciocínio + Ocultismo (dif. 9), cada sucesso sobe um nível na tabela. Fotos e provas não causam Delírio, mas costumam ser tomadas por farsa."
+  ],
+  "tabela": [
+   [
+    "FV",
+    "% da população",
+    "Lembra?",
+    "Reação"
+   ],
+   [
+    "1",
+    "10%",
+    "não",
+    "Medo catatônico"
+   ],
+   [
+    "2",
+    "20%",
+    "não",
+    "Pânico"
+   ],
+   [
+    "3",
+    "18%",
+    "não",
+    "Descrença"
+   ],
+   [
+    "4",
+    "15%",
+    "não",
+    "Selvageria"
+   ],
+   [
+    "5",
+    "13%",
+    "não",
+    "Terror"
+   ],
+   [
+    "6",
+    "10%",
+    "não",
+    "Conciliação"
+   ],
+   [
+    "7",
+    "7%",
+    "racionaliza",
+    "Medo controlado"
+   ],
+   [
+    "8",
+    "5%",
+    "racionaliza",
+    "Curiosidade"
+   ],
+   [
+    "9",
+    "1,5%",
+    "sim",
+    "Sede de sangue"
+   ],
+   [
+    "10",
+    "0,5%",
+    "sim",
+    "Sem reação"
+   ]
+  ],
+  "tags": [
+   "delírio",
+   "delirium",
+   "véu",
+   "humanos",
+   "crinos",
+   "medo",
+   "esquecer"
+  ]
+ },
+ {
+  "id": "lob-formas",
+  "linha": "lob",
+  "titulo": "As cinco formas",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 203,
+  "resumo": [
+   "Modificadores pela ficha do livro (o texto tem divergências na Manipulação). Crinos provoca o Delírio e fala só uma ou duas palavras humanas; Hispo e Lupino não têm mãos; Lupino tem −2 de dificuldade em Percepção e corre o dobro."
+  ],
+  "tabela": [
+   [
+    "Forma",
+    "Modificadores",
+    "Dif."
+   ],
+   [
+    "Hominídeo",
+    "nenhum",
+    "6"
+   ],
+   [
+    "Glabro",
+    "For +2, Vig +2, Man −1, Apa −1",
+    "7"
+   ],
+   [
+    "Crinos",
+    "For +4, Des +1, Vig +3, Man −3, Apa 0",
+    "6"
+   ],
+   [
+    "Hispo",
+    "For +3, Des +2, Vig +3, Man −3",
+    "7"
+   ],
+   [
+    "Lupino",
+    "For +1, Des +2, Vig +2, Man −3",
+    "6"
+   ]
+  ],
+  "tags": [
+   "formas",
+   "hominídeo",
+   "glabro",
+   "crinos",
+   "hispo",
+   "lupino",
+   "transformação",
+   "shapeshifting"
+  ]
+ },
+ {
+  "id": "lob-mudar-forma",
+  "linha": "lob",
+  "titulo": "Mudar de forma",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 203,
+  "resumo": [
+   "Teste de Vigor + Instinto Primitivo com a dificuldade da forma de destino: 1 sucesso para começar e mais 1 por forma intermediária (de Hominídeo a Crinos, 3 sucessos). Voltar à forma racial é automático.",
+   "Gastar 1 ponto de Fúria muda para qualquer forma na hora. As roupas rasgam, salvo itens dedicados pelo Ritual de Dedicação do Talismã."
+  ],
+  "tags": [
+   "mudar de forma",
+   "transformação",
+   "instinto primitivo",
+   "fúria",
+   "forma racial"
+  ]
+ },
+ {
+  "id": "lob-combate",
+  "linha": "lob",
+  "titulo": "Turno de combate",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 195,
+  "resumo": [
+   "Iniciativa = 1d10 + Destreza + Raciocínio. As ações são declaradas da menor para a maior iniciativa (o mais rápido declara por último), e os gastos de Fúria são anunciados aqui. Depois, tudo se resolve em ordem de iniciativa.",
+   "Ataques: Des + Armas de Fogo, Des + Esportes (arremesso), Des + Armas Brancas, Des + Briga. Cada sucesso além do primeiro soma 1 dado ao dano; dano não tem falha crítica."
+  ],
+  "tags": [
+   "combate",
+   "iniciativa",
+   "ataque",
+   "turno",
+   "dano"
+  ]
+ },
+ {
+  "id": "lob-furia-combate",
+  "linha": "lob",
+  "titulo": "Fúria em combate",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 205,
+  "resumo": [
+   "Cada ponto de Fúria dá uma ação extra, declarada no começo do turno, até metade da Fúria permanente. As ações extras acontecem depois que todos agiram uma vez e não podem dividir a parada.",
+   "O total de ações não deve passar da menor entre Destreza e Raciocínio; se passar, todas as ações têm +3 de dificuldade (em frenesi, vale só a Destreza)."
+  ],
+  "tags": [
+   "fúria",
+   "ações extras",
+   "combate",
+   "limite de ações"
+  ]
+ },
+ {
+  "id": "lob-defesas",
+  "linha": "lob",
+  "titulo": "Defesas e absorção",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 205,
+  "resumo": [
+   "Esquiva (Des + Esquiva), Bloqueio (Des + Briga, inútil contra tiros) e Aparar (Des + Armas Brancas) cancelam sucessos do atacante. Pode-se abortar a ação declarada para se defender.",
+   "Absorção: humanos só contusão. Garou absorvem letal e agravado com Vigor, dificuldade 6; prata só na forma racial."
+  ],
+  "tags": [
+   "esquiva",
+   "bloquear",
+   "aparar",
+   "absorção",
+   "soak",
+   "defesa"
+  ]
+ },
+ {
+  "id": "lob-complicacoes",
+  "linha": "lob",
+  "titulo": "Complicações e combate à distância",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 206,
+  "resumo": [
+   "Às cegas: +2 de dificuldade. Mudar a ação: +1. Alvo imobilizado é mais fácil de acertar. Quem sofre num turno mais níveis que seu Vigor fica atordoado e perde o turno seguinte.",
+   "À distância: mirar soma até Percepção em dados; modo automático dá +10 dados e +2 de dificuldade; rajada curta +3 dados, +1 dif.; cobertura de +1 a +3; alcance curto (menos de 2 m) dif. 4, dobro do alcance dif. 8."
+  ],
+  "tags": [
+   "complicações",
+   "atordoamento",
+   "mirar",
+   "cobertura",
+   "rajada",
+   "alcance",
+   "às cegas"
+  ]
+ },
+ {
+  "id": "lob-armas-fogo",
+  "linha": "lob",
+  "titulo": "Armas de alcance",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 207,
+  "resumo": [
+   "Todo dano de armas de fogo e arcos é letal. Dissimulação: B bolso, C casaco, I impermeável, N não dá."
+  ],
+  "tabela": [
+   [
+    "Arma",
+    "Dano",
+    "Alcance",
+    "CdT",
+    "Pente",
+    "Dissim."
+   ],
+   [
+    "Revólver pequeno",
+    "4",
+    "12",
+    "3",
+    "6",
+    "B"
+   ],
+   [
+    "Revólver grosso",
+    "6",
+    "35",
+    "2",
+    "6",
+    "C"
+   ],
+   [
+    "Pistola pequena",
+    "4",
+    "20",
+    "4",
+    "17+1",
+    "B"
+   ],
+   [
+    "Pistola grossa",
+    "5",
+    "30",
+    "3",
+    "7+1",
+    "C"
+   ],
+   [
+    "Fuzil",
+    "8",
+    "200",
+    "1",
+    "5+1",
+    "N"
+   ],
+   [
+    "Submetralhadora pequena",
+    "5",
+    "25",
+    "3",
+    "30+1",
+    "C"
+   ],
+   [
+    "Submetralhadora grande",
+    "4",
+    "50",
+    "3",
+    "30+1",
+    "I"
+   ],
+   [
+    "Fuzil de assalto",
+    "7",
+    "150",
+    "3",
+    "42+1",
+    "N"
+   ],
+   [
+    "Espingarda",
+    "8",
+    "20",
+    "1",
+    "5+1",
+    "I"
+   ],
+   [
+    "Espingarda semiautomática",
+    "8",
+    "20",
+    "3",
+    "8+1",
+    "I"
+   ],
+   [
+    "Arco curto",
+    "4",
+    "60",
+    "1",
+    "1",
+    "N"
+   ],
+   [
+    "Arco longo",
+    "5",
+    "120",
+    "1",
+    "1",
+    "N"
+   ],
+   [
+    "Besta",
+    "5",
+    "90",
+    "1",
+    "1",
+    "I"
+   ]
+  ],
+  "tags": [
+   "armas de fogo",
+   "pistola",
+   "revólver",
+   "fuzil",
+   "espingarda",
+   "arco",
+   "besta"
+  ]
+ },
+ {
+  "id": "lob-armas-brancas",
+  "linha": "lob",
+  "titulo": "Armas brancas e klaives",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 210,
+  "resumo": [
+   "Klaives e grã-klaives são de prata: o dano não é absorvível por Garou fora da forma racial. Arma mais curta perde 1 dado contra arma longa."
+  ],
+  "tabela": [
+   [
+    "Arma",
+    "Dif.",
+    "Dano",
+    "Dissim."
+   ],
+   [
+    "Cassetete",
+    "4",
+    "For (C)",
+    "B"
+   ],
+   [
+    "Corrente",
+    "5",
+    "For (C)",
+    "C"
+   ],
+   [
+    "Bastão",
+    "6",
+    "For+1 (C)",
+    "N"
+   ],
+   [
+    "Clava",
+    "6",
+    "For+2 (L)",
+    "N"
+   ],
+   [
+    "Faca",
+    "4",
+    "For (L)",
+    "B"
+   ],
+   [
+    "Porrete",
+    "5",
+    "For+1 (C)",
+    "I"
+   ],
+   [
+    "Espada",
+    "6",
+    "For+2 (L)",
+    "I"
+   ],
+   [
+    "Machado",
+    "7",
+    "For+3 (L)",
+    "N"
+   ],
+   [
+    "Arma de haste",
+    "7",
+    "For+3 (L)",
+    "N"
+   ],
+   [
+    "Klaive",
+    "6",
+    "For+2 (A)",
+    "C"
+   ],
+   [
+    "Grã-klaive",
+    "7",
+    "For+3 (A)",
+    "I"
+   ]
+  ],
+  "tags": [
+   "armas brancas",
+   "klaive",
+   "grã-klaive",
+   "espada",
+   "faca",
+   "machado",
+   "prata"
+  ]
+ },
+ {
+  "id": "lob-arremesso",
+  "linha": "lob",
+  "titulo": "Armas de arremesso",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 208,
+  "resumo": [
+   "Teste de Destreza + Esportes. Arma não balanceada para arremesso: +1 de dificuldade."
+  ],
+  "tabela": [
+   [
+    "Arma",
+    "Dif.",
+    "Dano"
+   ],
+   [
+    "Faca",
+    "6",
+    "For (L)"
+   ],
+   [
+    "Shuriken",
+    "7",
+    "3 (L)"
+   ],
+   [
+    "Pedra",
+    "5",
+    "For (C)"
+   ],
+   [
+    "Lança",
+    "6",
+    "For+1 (L)"
+   ]
+  ],
+  "tags": [
+   "arremesso",
+   "faca",
+   "lança",
+   "pedra",
+   "shuriken"
+  ]
+ },
+ {
+  "id": "lob-manobras",
+  "linha": "lob",
+  "titulo": "Manobras de combate próximo",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 208,
+  "resumo": [
+   "Mordida e garras causam dano agravado. Ataque pela retaguarda: −2 de dificuldade; pelo flanco: −1."
+  ],
+  "tabela": [
+   [
+    "Manobra",
+    "Formas",
+    "Teste",
+    "Dif.",
+    "Dano"
+   ],
+   [
+    "Mordida",
+    "Crinos–Lupino",
+    "Des + Briga",
+    "5",
+    "For+1 (A)"
+   ],
+   [
+    "Garras",
+    "Crinos–Hispo",
+    "Des + Briga",
+    "6",
+    "For+1 (A)"
+   ],
+   [
+    "Encontrão",
+    "qualquer",
+    "Des + Briga",
+    "7",
+    "For (C)"
+   ],
+   [
+    "Engalfinhamento",
+    "Hominídeo–Crinos",
+    "For + Briga",
+    "6",
+    "For ou nenhum"
+   ],
+   [
+    "Chute",
+    "Hominídeo–Crinos",
+    "Des + Briga",
+    "7",
+    "For+1 (C)"
+   ],
+   [
+    "Soco",
+    "Hominídeo–Crinos",
+    "Des + Briga",
+    "6",
+    "For (C)"
+   ],
+   [
+    "Rasteira",
+    "todas",
+    "Des + Briga",
+    "8",
+    "derruba"
+   ],
+   [
+    "Desarmar",
+    "Hominídeo–Crinos",
+    "Des + Armas Brancas",
+    "arma +1",
+    "especial"
+   ]
+  ],
+  "tags": [
+   "manobras",
+   "mordida",
+   "garras",
+   "encontrão",
+   "engalfinhamento",
+   "chute",
+   "soco",
+   "rasteira",
+   "desarmar"
+  ]
+ },
+ {
+  "id": "lob-manobras-especiais",
+  "linha": "lob",
+  "titulo": "Manobras especiais",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 210,
+  "resumo": [
+   "Precisam ser aprendidas; cada personagem começa com uma."
+  ],
+  "tabela": [
+   [
+    "Manobra",
+    "Teste",
+    "Dif.",
+    "Efeito"
+   ],
+   [
+    "Ação Evasiva",
+    "Rac + Esquiva",
+    "6",
+    "cancela sucessos do ataque"
+   ],
+   [
+    "Incapacitar",
+    "Des + Briga",
+    "8",
+    "corta tendões: metade do movimento"
+   ],
+   [
+    "Mandíbula de Ferro",
+    "Des + Briga",
+    "6",
+    "prende após mordida"
+   ],
+   [
+    "Salto Dilacerante",
+    "Des + Esportes e Des + Briga",
+    "8",
+    "For+1 agravado; 2 ações"
+   ],
+   [
+    "Escárnio",
+    "Man + Expressão/Intimidação",
+    "Rac + 4 do alvo",
+    "−1 dado por 2 sucessos"
+   ]
+  ],
+  "tags": [
+   "manobras especiais",
+   "mandíbula de ferro",
+   "salto dilacerante",
+   "escárnio",
+   "ação evasiva",
+   "incapacitar"
+  ]
+ },
+ {
+  "id": "lob-taticas-matilha",
+  "linha": "lob",
+  "titulo": "Táticas de matilha",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 212,
+  "resumo": [
+   "A matilha pode conhecer tantas táticas quanto a menor Gnose entre seus membros. Criar uma tática original vale Glória ou Sabedoria.",
+   "Exemplos: Arrancar Pelos (abre a defesa de uma área), Cerco (empurrar a presa de um Garou ao outro), Ataque Feroz (derrubar e morder em grupo) e Osso da Sorte (dois puxam membros opostos)."
+  ],
+  "tags": [
+   "táticas de matilha",
+   "matilha",
+   "pack",
+   "cerco",
+   "trabalho em equipe"
+  ]
+ },
+ {
+  "id": "lob-protecao",
+  "linha": "lob",
+  "titulo": "Proteção (armaduras)",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 206,
+  "resumo": [
+   "Os dados de proteção absorvem dano letal; Kevlar ajuda até contra prata."
+  ],
+  "tabela": [
+   [
+    "Proteção",
+    "Nível",
+    "Penalidade Des"
+   ],
+   [
+    "Roupas reforçadas",
+    "1",
+    "0"
+   ],
+   [
+    "Colete blindado",
+    "2",
+    "1"
+   ],
+   [
+    "Colete de Kevlar",
+    "3",
+    "1"
+   ],
+   [
+    "Casaco balístico",
+    "4",
+    "2"
+   ],
+   [
+    "Tropa de choque",
+    "5",
+    "3"
+   ]
+  ],
+  "tags": [
+   "armadura",
+   "proteção",
+   "colete",
+   "kevlar"
+  ]
+ },
+ {
+  "id": "lob-perigos",
+  "linha": "lob",
+  "titulo": "Quedas, fogo e asfixia",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 188,
+  "resumo": [
+   "Queda: 1 nível de contusão absorvível a cada 3 m; acima de 30 m, 10 níveis letais. Fogo é sempre agravado, mas Garou absorvem com Vigor (vela 3, tocha 5, Bunsen 7, químico 9, metal derretido 10; 1 a 3 níveis por turno conforme o tamanho).",
+   "Asfixia: o Garou aguenta de 30 s (Vigor 1) a 30 min (Vigor 8); em combate, 2 × Vigor turnos. Depois, 1 nível letal por turno até respirar. Doenças e venenos comuns pouco afetam; toxinas da Wyrm, sim."
+  ],
+  "tags": [
+   "queda",
+   "fogo",
+   "asfixia",
+   "afogamento",
+   "veneno",
+   "radiação"
+  ]
+ },
+ {
+  "id": "lob-forca",
+  "linha": "lob",
+  "titulo": "Demonstrações de força",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 197,
+  "resumo": [
+   "Até o limite da Força não é preciso teste. Para ir além, teste de Força de Vontade (dif. 9): cada sucesso sobe uma linha, até 5."
+  ],
+  "tabela": [
+   [
+    "Força",
+    "Feito"
+   ],
+   [
+    "1",
+    "Amassar uma lata (20 kg)"
+   ],
+   [
+    "3",
+    "Arrombar porta de madeira (125 kg)"
+   ],
+   [
+    "5",
+    "Arrombar porta corta-fogo (325 kg)"
+   ],
+   [
+    "7",
+    "Virar carro pequeno (450 kg)"
+   ],
+   [
+    "9",
+    "Atravessar parede de cimento (600 kg)"
+   ],
+   [
+    "11",
+    "Atravessar chapa de metal (1.000 kg)"
+   ],
+   [
+    "13",
+    "Arremessar carro (2.000 kg)"
+   ],
+   [
+    "15",
+    "Arremessar caminhão (3.000 kg)"
+   ]
+  ],
+  "tags": [
+   "força",
+   "erguer",
+   "quebrar",
+   "arremessar",
+   "carga"
+  ]
+ },
+ {
+  "id": "lob-saltos",
+  "linha": "lob",
+  "titulo": "Saltos por forma",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 197,
+  "resumo": [
+   "Salto vertical: teste de Força; horizontal: Força + Esportes com corrida. Dificuldade 3, sem sucesso parcial. O Dom Salto da Lebre dobra a distância."
+  ],
+  "tabela": [
+   [
+    "Forma",
+    "Vertical/suc.",
+    "Horizontal/suc."
+   ],
+   [
+    "Hominídeo",
+    "0,6 m",
+    "1,2 m"
+   ],
+   [
+    "Glabro",
+    "0,9 m",
+    "1,2 m"
+   ],
+   [
+    "Crinos",
+    "1,2 m",
+    "1,5 m"
+   ],
+   [
+    "Hispo",
+    "1,5 m",
+    "1,8 m"
+   ],
+   [
+    "Lupino",
+    "1,2 m",
+    "2,1 m"
+   ]
+  ],
+  "tags": [
+   "salto",
+   "pular",
+   "formas",
+   "esportes"
+  ]
+ },
+ {
+  "id": "lob-tarefas",
+  "linha": "lob",
+  "titulo": "Tarefas físicas, sociais e mentais",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 196,
+  "resumo": [
+   "Escalar: Des + Esportes, 1,5 m por sucesso. Perseguição: o perseguidor acumula sucessos contra os do perseguido. Rastrear: Percepção + Instinto Primitivo (dif. 7). Caçar: Percepção + Instinto Primitivo ou Sobrevivência, prolongado.",
+   "Defrontação (encarar): Carisma + Intimidação ou Fúria contra a FV do oponente; quem perde cede 1 Glória temporária. Sedução, interrogatório, oratória, charadas e falsificação também têm sistemas próprios."
+  ],
+  "tags": [
+   "escalar",
+   "perseguição",
+   "rastrear",
+   "caçada",
+   "defrontação",
+   "charada",
+   "sedução",
+   "interrogatório"
+  ]
+ },
+ {
+  "id": "lob-umbra",
+  "linha": "lob",
+  "titulo": "Umbra e Película",
+  "capitulo": "Cap. 7 – A Umbra",
+  "pagina": 225,
+  "resumo": [
+   "A Umbra é o mundo espiritual; a Película é a barreira entre ela e o mundo físico. A Penumbra é a camada mais próxima, um reflexo cinzento da Terra.",
+   "A força da Película varia com o lugar: alta onde a Weaver domina, baixa em áreas selvagens e caerns."
+  ],
+  "tabela": [
+   [
+    "Local",
+    "Película"
+   ],
+   [
+    "Laboratório científico",
+    "9"
+   ],
+   [
+    "Centro da cidade",
+    "8"
+   ],
+   [
+    "Maioria dos lugares",
+    "7"
+   ],
+   [
+    "Área rural",
+    "6"
+   ],
+   [
+    "Imensidão selvagem",
+    "5"
+   ],
+   [
+    "Caern ativo",
+    "4"
+   ],
+   [
+    "Caern poderoso",
+    "3"
+   ],
+   [
+    "Os maiores caerns",
+    "2"
+   ]
+  ],
+  "tags": [
+   "umbra",
+   "película",
+   "gauntlet",
+   "penumbra",
+   "mundo espiritual"
+  ]
+ },
+ {
+  "id": "lob-atalhos",
+  "linha": "lob",
+  "titulo": "Percorrer atalhos (entrar na Umbra)",
+  "capitulo": "Cap. 7 – A Umbra",
+  "pagina": 227,
+  "resumo": [
+   "Teste de Gnose contra a Película do lugar. Na falha, cada nova tentativa no mesmo local tem +2 de dificuldade; falha crítica pode prender o Garou na Teia ou largá-lo noutro lugar sem memória. Não se pode usar Fúria no mesmo turno.",
+   "Uma superfície refletora (espelho, água parada, prata polida) dá −1 de dificuldade. A matilha pode deixar o de maior Gnose rolar por todos."
+  ],
+  "tabela": [
+   [
+    "Sucessos",
+    "Tempo de travessia"
+   ],
+   [
+    "0",
+    "falha; espere 1 hora"
+   ],
+   [
+    "1",
+    "5 minutos"
+   ],
+   [
+    "2",
+    "30 segundos"
+   ],
+   [
+    "3+",
+    "instantâneo"
+   ]
+  ],
+  "tags": [
+   "atalhos",
+   "stepping sideways",
+   "percorrer atalhos",
+   "umbra",
+   "gnose",
+   "película",
+   "espelho"
+  ]
+ },
+ {
+  "id": "lob-espiar",
+  "linha": "lob",
+  "titulo": "Espiar através da Película",
+  "capitulo": "Cap. 7 – A Umbra",
+  "pagina": 233,
+  "resumo": [
+   "Da Umbra para a Terra: Gnose contra a Película. Da Terra para a Umbra: Gnose contra Película + 3 (máximo 10). Enquanto espia, o Garou fica alheio ao próprio entorno."
+  ],
+  "tags": [
+   "espiar",
+   "peek",
+   "película",
+   "umbra",
+   "ver espíritos"
+  ]
+ },
+ {
+  "id": "lob-caerns",
+  "linha": "lob",
+  "titulo": "Caerns",
+  "capitulo": "Cap. 7 – A Umbra",
+  "pagina": 226,
+  "resumo": [
+   "Caerns são lugares sagrados onde a Película é fina. O nível define a Película local e o alcance das pontes da lua. Cada caern tem um tipo que concede um poder (Cura, Fúria, Gnose, Sabedoria, Wyld etc.)."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Película",
+    "Ponte da lua"
+   ],
+   [
+    "1",
+    "4",
+    "1.500 km"
+   ],
+   [
+    "2",
+    "4",
+    "3.000 km"
+   ],
+   [
+    "3",
+    "3",
+    "5.000 km"
+   ],
+   [
+    "4",
+    "3",
+    "9.500 km"
+   ],
+   [
+    "5",
+    "2",
+    "15.000 km"
+   ]
+  ],
+  "tags": [
+   "caern",
+   "lugar sagrado",
+   "ponte da lua",
+   "seita",
+   "totem do caern"
+  ]
+ },
+ {
+  "id": "lob-reinos",
+  "linha": "lob",
+  "titulo": "Reinos e viagem umbral",
+  "capitulo": "Cap. 7 – A Umbra",
+  "pagina": 228,
+  "resumo": [
+   "Além da Penumbra estão os Reinos Próximos: Campo de Batalha, Pangeia, Érebo, Fluxo, Cicatriz, Malfeas, Reino Etéreo, Toca dos Lobos, entre outros. Trilhas da Lua, guardadas por Lunos, ligam os lugares.",
+   "Ficar mais de um mês lunar na Umbra causa o Desligamento: o Garou vira espírito aos poucos. Quem se recusa a entrar na Umbra perde a capacidade de recuperar Gnose."
+  ],
+  "tags": [
+   "reinos",
+   "umbra profunda",
+   "pangeia",
+   "malfeas",
+   "trilha da lua",
+   "desligamento"
+  ]
+ },
+ {
+  "id": "lob-espiritos",
+  "linha": "lob",
+  "titulo": "Características dos espíritos",
+  "capitulo": "Cap. 7 – A Umbra",
+  "pagina": 236,
+  "resumo": [
+   "Espíritos não têm Atributos: usam Força de Vontade para ações físicas e resistência, Fúria para dano (é também a dificuldade para um Garou feri-los) e Gnose para ações sociais e mentais. A Essência (Fúria + Gnose + FV) substitui a vitalidade.",
+   "Com Essência 0 o espírito entra em Modorra e reaparece depois. Hierarquia: Gaia, a Tríade, Celestinos, Incarnae, Jagglings e Gafflings. Entender espíritos exige o Dom Comunicação com Espíritos."
+  ],
+  "tags": [
+   "espíritos",
+   "essência",
+   "gaffling",
+   "jaggling",
+   "incarna",
+   "celestino",
+   "modorra"
+  ]
+ },
+ {
+  "id": "lob-encantos",
+  "linha": "lob",
+  "titulo": "Encantos dos espíritos",
+  "capitulo": "Cap. 7 – A Umbra",
+  "pagina": 237,
+  "resumo": [
+   "Comuns: Materializar (Gnose ≥ Película), Reformar, Sentido de Orientação. Especiais: Rajada, Armadura, Curar, Criar Vento, Abrir Ponte da Lua, Levitação etc.",
+   "Os Malditos possuem humanos (criando fomori), corrompem e incitam o frenesi. Espíritos da Weaver petrificam e solidificam a realidade; os da Wyld desorientam."
+  ],
+  "tags": [
+   "encantos",
+   "charms",
+   "possessão",
+   "materializar",
+   "malditos",
+   "weaver",
+   "wyld"
+  ]
+ },
+ {
+  "id": "lob-fetiches",
+  "linha": "lob",
+  "titulo": "Fetiches",
+  "capitulo": "Cap. 7 – A Umbra",
+  "pagina": 240,
+  "resumo": [
+   "Fetiche é um objeto com um espírito preso dentro. Para usá-lo é preciso harmonizar-se: teste de Gnose contra a Gnose do fetiche (1 sucesso). Para ativar: o mesmo teste, ou gastar 1 Gnose.",
+   "O Antecedente Fetiche define o nível dos itens iniciais. Fetiches com teste de ativação não podem ser usados no mesmo turno que a Fúria."
+  ],
+  "tags": [
+   "fetiche",
+   "fetish",
+   "item mágico",
+   "klaive",
+   "harmonizar",
+   "gnose"
+  ]
+ },
+ {
+  "id": "lob-amuletos",
+  "linha": "lob",
+  "titulo": "Amuletos (talens)",
+  "capitulo": "Cap. 7 – A Umbra",
+  "pagina": 241,
+  "resumo": [
+   "Amuletos são itens de uso único. Basta um teste de Gnose para ativar, sem harmonização, e qualquer um com Gnose pode usá-los. São criados com o Ritual de Compromisso."
+  ],
+  "tags": [
+   "amuleto",
+   "talen",
+   "uso único",
+   "item"
+  ]
+ },
+ {
+  "id": "lob-dons",
+  "linha": "lob",
+  "titulo": "Dons: regras gerais",
+  "capitulo": "Cap. 4 – Dons e Rituais",
+  "pagina": 132,
+  "resumo": [
+   "Dons são ensinados por espíritos e vão do nível 1 ao 5. Para aprender é preciso XP e Posto igual ou maior que o nível. Dons de outra raça, augúrio ou tribo são possíveis, mas mais caros.",
+   "Um Garou pode ensinar outro, levando cerca de um mês lunar e custando 1 XP a mais. Dons aprendidos não se esquecem."
+  ],
+  "tags": [
+   "dons",
+   "gifts",
+   "aprender dom",
+   "espírito professor",
+   "posto"
+  ]
+ },
+ {
+  "id": "lob-rituais",
+  "linha": "lob",
+  "titulo": "Rituais",
+  "capitulo": "Cap. 4 – Dons e Rituais",
+  "pagina": 155,
+  "resumo": [
+   "Rituais levam pelo menos 10 minutos por nível. Cada cinco Garou além do mínimo reduzem a dificuldade em 1. Não se compram com XP: vêm do Antecedente Ritos ou da história.",
+   "Aprender: Rituais ≥ nível, uma semana de estudo por nível e teste de Inteligência + Rituais (dif. 10 − Inteligência). Celebrar um ritual não aprendido é bem mais difícil e caro em Gnose."
+  ],
+  "tabela": [
+   [
+    "Tipo",
+    "Teste",
+    "Dif."
+   ],
+   [
+    "de Caern",
+    "varia (máx. Gnose)",
+    "7"
+   ],
+   [
+    "de Morte",
+    "Car + Rituais",
+    "8 − Posto"
+   ],
+   [
+    "de Pacto",
+    "Car + Rituais",
+    "7"
+   ],
+   [
+    "de Punição",
+    "Car + Rituais",
+    "7"
+   ],
+   [
+    "de Renome",
+    "Car + Rituais",
+    "6"
+   ],
+   [
+    "Místicos",
+    "Rac + Rituais",
+    "7"
+   ],
+   [
+    "Periódicos",
+    "Vig + Rituais",
+    "8 − nível do caern"
+   ],
+   [
+    "Pequenos",
+    "nenhum",
+    "—"
+   ]
+  ],
+  "tags": [
+   "rituais",
+   "ritos",
+   "rites",
+   "caern",
+   "punição",
+   "passagem"
+  ]
+ },
+ {
+  "id": "lob-ritual-passagem",
+  "linha": "lob",
+  "titulo": "Ritual de Passagem e Ritual de Conquista",
+  "capitulo": "Cap. 4 – Dons e Rituais",
+  "pagina": 162,
+  "resumo": [
+   "O Ritual de Passagem é a primeira demanda após a Primeira Mudança; só depois dele o filhote ganha Posto 1, Dons e lugar na tribo.",
+   "O Ritual de Conquista converte 10 pontos de Renome temporário numa categoria em 1 permanente (dif. 4, ou 6 se contestado)."
+  ],
+  "tags": [
+   "ritual de passagem",
+   "rito de passagem",
+   "ritual de conquista",
+   "renome",
+   "filhote",
+   "primeira mudança"
+  ]
+ },
+ {
+  "id": "lob-punicoes",
+  "linha": "lob",
+  "titulo": "Rituais de punição",
+  "capitulo": "Cap. 4 – Dons e Rituais",
+  "pagina": 160,
+  "resumo": [
+   "A Nação pune quem quebra a Litania com ritos que tiram Renome: Ostracismo, Voz do Chacal, Pedra de Escárnio, Ritual Satírico (perde um posto) e A Caçada (morte). O pior, Os Dentes Vingativos de Gaia, é reservado a traidores ligados à Wyrm."
+  ],
+  "tags": [
+   "punição",
+   "ostracismo",
+   "voz do chacal",
+   "litania",
+   "crime",
+   "ronin"
+  ]
+ },
+ {
+  "id": "lob-antecedentes",
+  "linha": "lob",
+  "titulo": "Antecedentes Garou",
+  "capitulo": "Cap. 3 – Personagem e Características",
+  "pagina": 120,
+  "resumo": [
+   "Aliados, Ancestrais, Contatos, Fetiche, Mentor, Parentes, Raça Pura, Recursos, Ritos e Totem. Só Totem sobe com XP.",
+   "Ancestrais: uma vez por sessão, teste (dif. 8) para ganhar dados emprestados numa Habilidade. Raça Pura: +1 dado por ponto em testes sociais com Garou. Parentes são imunes ao Delírio."
+  ],
+  "tags": [
+   "antecedentes",
+   "ancestrais",
+   "raça pura",
+   "parentes",
+   "fetiche",
+   "ritos",
+   "totem",
+   "mentor"
+  ]
+ },
+ {
+  "id": "lob-totem",
+  "linha": "lob",
+  "titulo": "Totem da matilha",
+  "capitulo": "Apêndice – Aliados e Munição",
+  "pagina": 293,
+  "resumo": [
+   "O Antecedente Totem é a soma dos pontos dos membros. Cada totem tem um custo e concede vantagens à matilha, além de um Dogma — restrição de comportamento. Quebrar o Dogma suspende os benefícios até o Ritual de Contrição.",
+   "Exemplos: Falcão (Liderança e Honra), Urso (Medicina e Força), Coruja (furtividade e Sabedoria), Raposa (astúcia), Fenris (+1 Atributo Físico e Glória)."
+  ],
+  "tags": [
+   "totem",
+   "matilha",
+   "pack",
+   "dogma",
+   "espírito guardião"
+  ]
+ },
+ {
+  "id": "lob-xp",
+  "linha": "lob",
+  "titulo": "Custos de experiência (Garou)",
+  "capitulo": "Cap. 6 – Sistemas e Dramatizações",
+  "pagina": 181,
+  "resumo": [
+   "Cada Característica só sobe 1 ponto por história. Antecedentes não sobem com XP, exceto Totem (3 XP por ponto, pagos por qualquer membro). O aprendizado de Dons precisa de um espírito professor na história.",
+   "XP por sessão: 1 a 5 (automático, aprendizado, atuação, conceito, heroísmo); por história, +1 a 3."
+  ],
+  "tabela": [
+   [
+    "Característica",
+    "Custo"
+   ],
+   [
+    "Atributo",
+    "atual × 4"
+   ],
+   [
+    "Habilidade",
+    "atual × 2"
+   ],
+   [
+    "Nova Habilidade",
+    "3"
+   ],
+   [
+    "Dom",
+    "nível × 3"
+   ],
+   [
+    "Dom de outro grupo",
+    "nível × 5"
+   ],
+   [
+    "Fúria",
+    "atual"
+   ],
+   [
+    "Gnose",
+    "atual × 2"
+   ],
+   [
+    "Força de Vontade",
+    "atual"
+   ],
+   [
+    "Totem",
+    "3 por ponto"
+   ]
+  ],
+  "tags": [
+   "experiência",
+   "xp",
+   "custo",
+   "evolução"
+  ]
+ },
+ {
+  "id": "lob-litania",
+  "linha": "lob",
+  "titulo": "A Litania",
+  "capitulo": "Cap. 1 – Um Mundo de Trevas",
+  "pagina": 37,
+  "resumo": [
+   "As leis da Nação Garou, guardadas sobretudo pelos Philodox. Quebrá-las leva a rituais de punição."
+  ],
+  "tabela": [
+   [
+    "Preceito (resumo)"
+   ],
+   [
+    "Não te acasalarás com outro Garou."
+   ],
+   [
+    "Combate a Wyrm onde ela estiver."
+   ],
+   [
+    "Respeita o território alheio."
+   ],
+   [
+    "Aceita uma rendição honrosa."
+   ],
+   [
+    "Submete-te aos de posto mais alto."
+   ],
+   [
+    "O primeiro quinhão da caça é do de posto mais alto."
+   ],
+   [
+    "Não comerás carne humana."
+   ],
+   [
+    "Respeita os inferiores: todos são de Gaia."
+   ],
+   [
+    "Não erguerás o Véu."
+   ],
+   [
+    "Não serás um fardo para teu povo."
+   ],
+   [
+    "Não desafiarás o líder em tempo de guerra."
+   ],
+   [
+    "Em tempo de paz, o líder pode ser desafiado."
+   ],
+   [
+    "Nada farás que exponha um caern à violação."
+   ]
+  ],
+  "tags": [
+   "litania",
+   "leis",
+   "garou",
+   "crime",
+   "véu",
+   "honra"
+  ]
+ },
+ {
+  "id": "lob-triade",
+  "linha": "lob",
+  "titulo": "Gaia e a Tríade: Wyld, Weaver e Wyrm",
+  "capitulo": "Cap. 1 – Um Mundo de Trevas",
+  "pagina": 34,
+  "resumo": [
+   "A Wyld é a criação e a mudança; a Weaver é a ordem e o padrão; a Wyrm deveria ser o equilíbrio e a decadência, mas enlouqueceu e tornou-se corrupção. Os Garou são os guerreiros de Gaia contra a Wyrm.",
+   "A Wyrm age no mundo por meio da Pentex, dos fomori e dos Dançarinos da Espiral Negra; a Weaver em excesso sufoca o espírito nas cidades."
+  ],
+  "tags": [
+   "wyrm",
+   "weaver",
+   "wyld",
+   "gaia",
+   "tríade",
+   "pentex",
+   "cosmologia"
+  ]
+ },
+ {
+  "id": "lob-sociedade",
+  "linha": "lob",
+  "titulo": "Matilha, seita e assembleias",
+  "capitulo": "Cap. 1 – Um Mundo de Trevas",
+  "pagina": 41,
+  "resumo": [
+   "A matilha é o grupo de Garou unidos por um totem, com um alfa. Várias matilhas formam uma seita, que guarda um caern. As assembleias reúnem a seita na lua cheia para julgar, celebrar e decidir."
+  ],
+  "tags": [
+   "matilha",
+   "seita",
+   "assembleia",
+   "alfa",
+   "caern",
+   "sociedade garou"
+  ]
+ },
+ {
+  "id": "lob-fomori",
+  "linha": "lob",
+  "titulo": "Fomori",
+  "capitulo": "Cap. 9 – Antagonistas",
+  "pagina": 275,
+  "resumo": [
+   "Fomori são humanos ou animais possuídos por Malditos, cheios de mutações. Cada um costuma ter de 2 a 3 poderes, como Couro Blindado, Garras e Presas, Força Sobrenatural, Regeneração ou Imunidade ao Delírio."
+  ],
+  "tags": [
+   "fomori",
+   "fomor",
+   "wyrm",
+   "mutante",
+   "antagonista",
+   "possuído"
+  ]
+ },
+ {
+  "id": "lob-dancarinos",
+  "linha": "lob",
+  "titulo": "Dançarinos da Espiral Negra",
+  "capitulo": "Cap. 9 – Antagonistas",
+  "pagina": 272,
+  "resumo": [
+   "Garou caídos para a Wyrm, antigos Uivadores Brancos. Vivem em Colmeias, têm muitos impuros e Dons próprios (Cabeça de Rato, Couro da Wyrm, Baba de Fúria, Avatar da Wyrm). Sentir a Wyrm os detecta, a menos que disfarcem a mácula."
+  ],
+  "tags": [
+   "dançarinos da espiral negra",
+   "black spiral",
+   "wyrm",
+   "traidores",
+   "colmeia"
+  ]
+ },
+ {
+  "id": "lob-outros-sobrenaturais",
+  "linha": "lob",
+  "titulo": "Vampiros, magos e caçadores",
+  "capitulo": "Cap. 9 – Antagonistas",
+  "pagina": 278,
+  "resumo": [
+   "Vampiros sofrem dano agravado de garras Garou e do sol; curam com sangue e recebem metade da contusão. Magos dobram a realidade, mas efeitos óbvios cobram preço. Inspirados (caçadores) usam Convicção para ignorar o Delírio e inibir Dons.",
+   "Agências humanas como a Mão do Morto caçam Garou com prata, imunes ao Delírio."
+  ],
+  "tags": [
+   "vampiro",
+   "mago",
+   "caçador",
+   "inspirados",
+   "mão do morto",
+   "sanguessuga"
+  ]
+ },
+ {
+  "id": "lidt-suplemento",
+  "linha": "lidt",
+  "titulo": "Como usar este suplemento",
+  "capitulo": "Introdução",
+  "pagina": 10,
+  "resumo": [
+   "Lobisomem: A Idade das Trevas não repete as regras básicas. Dados, combate, regeneração, frenesi, Delírio, Posto e custos de XP seguem o módulo básico de Lobisomem: O Apocalipse; aqui ficam só as mudanças da época e a tabela de criação."
+  ],
+  "tags": [
+   "suplemento",
+   "regras básicas",
+   "idade das trevas",
+   "medieval"
+  ]
+ },
+ {
+  "id": "lidt-criacao",
+  "linha": "lidt",
+  "titulo": "Criação de personagem medieval",
+  "capitulo": "Cap. 3 – Guerreiros da Longa Noite",
+  "pagina": 122,
+  "resumo": [
+   "Conceito, raça, augúrio, tribo, Natureza e Comportamento. Atributos 7/5/3; Habilidades 13/9/5 (máximo 3); 5 Antecedentes; 3 Dons de nível 1 (raça, augúrio, tribo); Renome pelo augúrio; Posto 1; 15 pontos de bônus.",
+   "Fúria vem do augúrio, Gnose da raça e Força de Vontade da tribo. Conceitos sugeridos: mercenário, apóstolo peregrino, lobo da grande floresta, nobre orgulhoso, camponês rebelde, bailio, mercador, erudito, amigo das fadas, lobo do mar."
+  ],
+  "tabela": [
+   [
+    "Característica",
+    "Custo de bônus"
+   ],
+   [
+    "Atributo",
+    "5"
+   ],
+   [
+    "Habilidade",
+    "2"
+   ],
+   [
+    "Antecedente",
+    "1"
+   ],
+   [
+    "Dom (nível 1)",
+    "7"
+   ],
+   [
+    "Fúria",
+    "1"
+   ],
+   [
+    "Gnose",
+    "2"
+   ],
+   [
+    "Força de Vontade",
+    "1"
+   ]
+  ],
+  "tags": [
+   "criação",
+   "ficha",
+   "medieval",
+   "garou",
+   "conceito"
+  ]
+ },
+ {
+  "id": "lidt-racas",
+  "linha": "lidt",
+  "titulo": "Raças na Idade das Trevas",
+  "capitulo": "Cap. 3 – Guerreiros da Longa Noite",
+  "pagina": 96,
+  "resumo": [
+   "Impuros são raros e têm +1 de dificuldade em todos os testes Sociais com outros Garou, além da deformidade.",
+   "Lupinos não podem gastar os pontos iniciais de Habilidade em Arqueirismo, Artesanato, Cavalgar, Instrução, Etiqueta, Direito, Linguística, Medicina, Política e Ciência; só com bônus."
+  ],
+  "tabela": [
+   [
+    "Raça",
+    "Gnose",
+    "Dons iniciais"
+   ],
+   [
+    "Hominídeo",
+    "1",
+    "Persuasão, Simular Odor de Homem"
+   ],
+   [
+    "Impuro",
+    "3",
+    "Criar Elemento, Sentir a Wyrm"
+   ],
+   [
+    "Lupino",
+    "5",
+    "Sentidos Aguçados, Sentir a Presa"
+   ]
+  ],
+  "tags": [
+   "raça",
+   "impuro",
+   "lupino",
+   "hominídeo",
+   "restrições"
+  ]
+ },
+ {
+  "id": "lidt-tribos",
+  "linha": "lidt",
+  "titulo": "As dez tribos de 1197",
+  "capitulo": "Cap. 2 – As Dez Tribos",
+  "pagina": 60,
+  "resumo": [
+   "Nesta época não existem Andarilhos do Asfalto (aqui são os Sentinelas dos Homens), Wendigo, Uktena, Croatan nem Portadores da Luz Interior."
+  ],
+  "tabela": [
+   [
+    "Tribo",
+    "FV",
+    "Restrição de Antecedentes"
+   ],
+   [
+    "Fúrias Negras",
+    "3",
+    "Nenhuma"
+   ],
+   [
+    "Roedores de Ossos",
+    "4",
+    "Sem Raça Pura e Recursos"
+   ],
+   [
+    "Filhos de Gaia",
+    "4",
+    "Nenhuma"
+   ],
+   [
+    "Fianna",
+    "3",
+    "Nenhuma"
+   ],
+   [
+    "Crias de Fenris",
+    "3",
+    "Sem Contatos"
+   ],
+   [
+    "Garras Vermelhas",
+    "3",
+    "Sem Aliados, Contatos e Recursos"
+   ],
+   [
+    "Senhores das Sombras",
+    "3",
+    "Sem Aliados e Mentor"
+   ],
+   [
+    "Peregrinos Silenciosos",
+    "3",
+    "Sem Vidas Passadas e Recursos"
+   ],
+   [
+    "Presas de Prata",
+    "4",
+    "Raça Pura 3+ obrigatória"
+   ],
+   [
+    "Sentinelas dos Homens",
+    "3",
+    "Sem Mentor e Raça Pura"
+   ]
+  ],
+  "tags": [
+   "tribos",
+   "sentinelas",
+   "fenrir",
+   "fianna",
+   "presas de prata",
+   "medieval"
+  ]
+ },
+ {
+  "id": "lidt-fraquezas",
+  "linha": "lidt",
+  "titulo": "Fraquezas tribais (opcional)",
+  "capitulo": "Apêndice",
+  "pagina": 175,
+  "resumo": [
+   "Regra opcional que dá a cada tribo uma fraqueza, à maneira dos clãs vampíricos."
+  ],
+  "tabela": [
+   [
+    "Tribo",
+    "Fraqueza",
+    "Efeito"
+   ],
+   [
+    "Fúrias Negras",
+    "Raiva",
+    "−1 na dif. de frenesi provocado por homens"
+   ],
+   [
+    "Roedores de Ossos",
+    "Desprezados",
+    "+1 dif. Social com outras tribos"
+   ],
+   [
+    "Filhos de Gaia",
+    "Véu Fraco",
+    "observadores +5 na tabela de Delírio"
+   ],
+   [
+    "Fenrir",
+    "Intolerância",
+    "odeiam algo à escolha"
+   ],
+   [
+    "Fianna",
+    "Exaltação",
+    "+1 dif. em testes de FV"
+   ],
+   [
+    "Garras Vermelhas",
+    "Marca da Besta",
+    "+2 dif. Social com humanos"
+   ],
+   [
+    "Senhores das Sombras",
+    "Males do Fracasso",
+    "−1 Renome temporário a cada fracasso"
+   ],
+   [
+    "Peregrinos Silenciosos",
+    "Assombrados",
+    "falha crítica em atalho atrai fantasma"
+   ],
+   [
+    "Presas de Prata",
+    "Arrogância",
+    "testam frenesi se a autoridade é questionada"
+   ],
+   [
+    "Sentinelas",
+    "Conhecidos pelos Vampiros",
+    "chance mensal de atrair um vampiro"
+   ]
+  ],
+  "tags": [
+   "fraqueza",
+   "tribo",
+   "defeito tribal",
+   "opcional"
+  ]
+ },
+ {
+  "id": "lidt-habilidades",
+  "linha": "lidt",
+  "titulo": "Habilidades medievais (Garou)",
+  "capitulo": "Cap. 3 – Guerreiros da Longa Noite",
+  "pagina": 96,
+  "resumo": [
+   "Entram Crime, Arqueirismo, Artesanato (útil para fetiches) e Cavalgar (+2 de dificuldade para Garou); saem armas de fogo, Condução e Computador. Instrução é citada para alfabetização.",
+   "Linguística: cada ponto dobra o número de línguas extras. Habilidades secundárias sugeridas: Previsão do Tempo, Mendicância, Ferraria, Fabricação de Flechas, Navegação, Herborismo."
+  ],
+  "tags": [
+   "habilidades",
+   "crime",
+   "arqueirismo",
+   "cavalgar",
+   "linguística",
+   "instrução"
+  ]
+ },
+ {
+  "id": "lidt-recursos",
+  "linha": "lidt",
+  "titulo": "Recursos e Nobreza",
+  "capitulo": "Cap. 3 – Guerreiros da Longa Noite",
+  "pagina": 99,
+  "resumo": [
+   "Recursos foram redefinidos para a época. A nova Qualidade Nobreza (1 a 5) torna o personagem senhor de terras; com Recursos 2+ e mais 2 pontos, é dono das terras da seita. Roedores de Ossos não podem ter Nobreza."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Recursos"
+   ],
+   [
+    "1",
+    "Pouco acima de servo: roupas simples, armadura leve, pá ou lança"
+   ],
+   [
+    "2",
+    "Sem privações: arco, adaga, animais, carroça"
+   ],
+   [
+    "3",
+    "Confortável: casa, ofício, besta ou espada, mula"
+   ],
+   [
+    "4",
+    "Rico: cavalo, aldeia, servos"
+   ],
+   [
+    "5",
+    "Nobre abastado: castelo, armadura de cavaleiro, barco mercante"
+   ]
+  ],
+  "tags": [
+   "recursos",
+   "nobreza",
+   "riqueza",
+   "terras",
+   "antecedentes"
+  ]
+ },
+ {
+  "id": "lidt-qualidades",
+  "linha": "lidt",
+  "titulo": "Qualidades e Defeitos medievais",
+  "capitulo": "Cap. 3 – Guerreiros da Longa Noite",
+  "pagina": 100,
+  "resumo": [
+   "O livro recomenda várias do Guia dos Jogadores (Código de Honra, Selvageria, Mentalidade da Matilha, Marca do Predador, Sinal do Lobo, Idade do Lobo) e cria três: Sentidos Aguçados (1), Nobreza (1–5) e Aliado Vampírico (4)."
+  ],
+  "tags": [
+   "qualidades",
+   "defeitos",
+   "merits",
+   "flaws",
+   "nobreza"
+  ]
+ },
+ {
+  "id": "lidt-delirio",
+  "linha": "lidt",
+  "titulo": "Delírio na Idade das Trevas",
+  "capitulo": "Cap. 1 – As Regiões Selvagens",
+  "pagina": 20,
+  "resumo": [
+   "Como o povo medieval acredita em lobisomens, o Delírio é mais fraco. Em geral não se dá bônus na tabela, e o resultado \"descrença\" vira selvageria ou terror."
+  ],
+  "tags": [
+   "delírio",
+   "véu",
+   "medieval",
+   "superstição"
+  ]
+ },
+ {
+  "id": "lidt-dons",
+  "linha": "lidt",
+  "titulo": "Dons trocados e novos",
+  "capitulo": "Cap. 3 – Guerreiros da Longa Noite",
+  "pagina": 101,
+  "resumo": [
+   "Alguns Dons do básico são trocados: o hominídeo ganha Linguagem do Mundo; o lupino, Sentir a Presa; o Ragabash, Correr na Neve e Mentira de Reynard; o Galliard, Chamado de Vingança; o Ahroun, Dom da Salamandra (4 dados para absorver fogo).",
+   "Cada tribo tem Dons próprios da época, como Pele de Homem e Flecha de Ártemis (Fúrias), Vestindo a Pele do Urso e Ferro-Não-Pode-Morder (Fenrir), Bênção do Ferreiro e Comandar as Chamas (Sentinelas)."
+  ],
+  "tags": [
+   "dons",
+   "gifts",
+   "medieval",
+   "novos dons"
+  ]
+ },
+ {
+  "id": "lidt-rituais",
+  "linha": "lidt",
+  "titulo": "Mudanças nos rituais e rituais novos",
+  "capitulo": "Cap. 3 – Guerreiros da Longa Noite",
+  "pagina": 111,
+  "resumo": [
+   "Rituais Místicos têm −1 de dificuldade, pois a Película é mais fraca. Rituais de Punição podem ser usados contra humanos. Rituais de Caern não podem ter parada maior que a Gnose do mestre."
+  ],
+  "tabela": [
+   [
+    "Ritual",
+    "Tipo",
+    "Nível",
+    "Efeito"
+   ],
+   [
+    "Despertar a Força de Gaia",
+    "Pacto",
+    "3",
+    "estrutura de madeira ou pedra fica mais resistente"
+   ],
+   [
+    "Ritual das Regiões Selvagens",
+    "Pacto",
+    "4",
+    "liga a área ao caern por um ano"
+   ],
+   [
+    "Ritual da Tempestade",
+    "Caern",
+    "4",
+    "invoca tempestade"
+   ],
+   [
+    "Ritual de Sangue",
+    "Místico",
+    "2",
+    "duelo ritual"
+   ],
+   [
+    "Maldição do Lobo",
+    "Punição",
+    "5",
+    "o alvo vira Crinos nas luas cheias"
+   ]
+  ],
+  "tags": [
+   "rituais",
+   "ritos",
+   "película",
+   "maldição do lobo"
+  ]
+ },
+ {
+  "id": "lidt-fetiches",
+  "linha": "lidt",
+  "titulo": "Fetiches e amuletos medievais",
+  "capitulo": "Cap. 3 – Guerreiros da Longa Noite",
+  "pagina": 115,
+  "resumo": [
+   "Exemplos por nível: Cobertor do Urso (1), Pena das Águas (2), Cinturão dos Gigantes (3, +3 Força), Manto de Névoas Tecidas (3, +3 Furtividade), Coroa de Ferro (4), Lâmina de Gelo (5), Presa de Leão (5).",
+   "Amuletos: Pó de Alicórnio, Pedra do Bebedor de Sangue, Comida Feérica, Comedor de Carne, Escama da Salamandra."
+  ],
+  "tags": [
+   "fetiche",
+   "amuleto",
+   "talen",
+   "item",
+   "medieval"
+  ]
+ },
+ {
+  "id": "lidt-armas",
+  "linha": "lidt",
+  "titulo": "Armas medievais (Garou)",
+  "capitulo": "Apêndice",
+  "pagina": 168,
+  "resumo": [
+   "Ocultabilidade: A algibeira, T túnica, M manto, N não se esconde. Debulhador e mangual têm falhas críticas sempre graves."
+  ],
+  "tabela": [
+   [
+    "Arma",
+    "Dif.",
+    "Dano",
+    "Força mín."
+   ],
+   [
+    "Espada de lâmina larga",
+    "6",
+    "F+4",
+    "2"
+   ],
+   [
+    "Cimitarra",
+    "6",
+    "F+4",
+    "2"
+   ],
+   [
+    "Espada de mão-e-meia",
+    "6",
+    "F+5",
+    "3"
+   ],
+   [
+    "Espada longa",
+    "5",
+    "F+6",
+    "4"
+   ],
+   [
+    "Faca",
+    "5",
+    "F+1",
+    "1"
+   ],
+   [
+    "Adaga",
+    "4",
+    "F+1",
+    "1"
+   ],
+   [
+    "Lança (duas mãos)",
+    "6",
+    "F+3",
+    "1"
+   ],
+   [
+    "Machado de batalha",
+    "7",
+    "F+6",
+    "3"
+   ],
+   [
+    "Maça",
+    "6",
+    "F+4",
+    "1"
+   ],
+   [
+    "Mangual",
+    "7",
+    "F+6",
+    "3"
+   ],
+   [
+    "Arco curto",
+    "8",
+    "3",
+    "2"
+   ],
+   [
+    "Arco longo",
+    "8",
+    "5",
+    "3"
+   ],
+   [
+    "Arco Garou",
+    "8",
+    "6",
+    "4"
+   ],
+   [
+    "Besta",
+    "7",
+    "4",
+    "2"
+   ]
+  ],
+  "tags": [
+   "armas",
+   "espada",
+   "machado",
+   "lança",
+   "arco",
+   "besta",
+   "arco garou",
+   "medieval"
+  ]
+ },
+ {
+  "id": "lidt-armaduras",
+  "linha": "lidt",
+  "titulo": "Armaduras, escudos e mudar de forma",
+  "capitulo": "Apêndice",
+  "pagina": 170,
+  "resumo": [
+   "A proteção vale até contra dano agravado; contra prata, só a proteção conta, sem o Vigor. Mudar para Glabro ou Crinos dentro da armadura causa dano. Usar armadura pode custar Glória.",
+   "Escudo de infantaria: +1 na dificuldade dos ataques do oponente; de cavalaria: +2."
+  ],
+  "tabela": [
+   [
+    "Armadura",
+    "Proteção",
+    "Destreza",
+    "Percepção",
+    "Força mín.",
+    "Dano em Glabro",
+    "Dano em Crinos"
+   ],
+   [
+    "Leve",
+    "1",
+    "—",
+    "—",
+    "1",
+    "0",
+    "0"
+   ],
+   [
+    "Composta",
+    "2",
+    "−1",
+    "—",
+    "1",
+    "1",
+    "2"
+   ],
+   [
+    "Pesada",
+    "3",
+    "−1",
+    "−1",
+    "2",
+    "3",
+    "6"
+   ],
+   [
+    "Cavaleiro",
+    "4",
+    "−2",
+    "−2",
+    "3",
+    "4",
+    "8"
+   ]
+  ],
+  "tags": [
+   "armadura",
+   "escudo",
+   "proteção",
+   "crinos",
+   "glabro"
+  ]
+ },
+ {
+  "id": "lidt-cavalos",
+  "linha": "lidt",
+  "titulo": "Cavalos e combate montado",
+  "capitulo": "Apêndice",
+  "pagina": 165,
+  "resumo": [
+   "Garou têm +2 de dificuldade em Cavalgar e em Empatia com Animais com cavalos. Acalmar um cavalo é um teste prolongado de Carisma + Empatia com Animais (dif. 8, 10 sucessos), impossível se a Fúria for maior que a FV.",
+   "Montado, a parada de Armas Brancas e Briga fica limitada ao nível de Cavalgar. Nenhum cavalo aguenta um Crinos."
+  ],
+  "tags": [
+   "cavalo",
+   "montaria",
+   "cavalgar",
+   "combate montado",
+   "justa"
+  ]
+ },
+ {
+  "id": "lidt-guerra",
+  "linha": "lidt",
+  "titulo": "Guerra, cercos e fogo grego",
+  "capitulo": "Apêndice",
+  "pagina": 171,
+  "resumo": [
+   "O apêndice traz regras para batalhas e cercos medievais. Fogo grego causa dano agravado (absorção dif. 6). Empalar um vampiro exige 5+ sucessos e 3 níveis de dano após a absorção."
+  ],
+  "tags": [
+   "guerra",
+   "cerco",
+   "batalha",
+   "fogo grego",
+   "estaca"
+  ]
+ },
+ {
+  "id": "lidt-cenario",
+  "linha": "lidt",
+  "titulo": "A Nação Garou em 1197",
+  "capitulo": "Cap. 1 – As Regiões Selvagens",
+  "pagina": 16,
+  "resumo": [
+   "A Europa ainda tem grandes florestas, e os caerns são mais numerosos. As Ilhas Britânicas são terra dos Fianna e das Crias de Fenris; a Europa Oriental, dos Senhores das Sombras e dos Presas de Prata; a Terra Santa vive as Cruzadas.",
+   "Parentes servem como vassalos e famílias aliadas. A Umbra está mais próxima, e a Wyrm se esconde em pântanos, minas e cortes corruptas."
+  ],
+  "tags": [
+   "cenário",
+   "europa",
+   "medieval",
+   "caern",
+   "parentes",
+   "ilhas britânicas"
+  ]
+ },
+ {
+  "id": "cac-criacao",
+  "linha": "cac",
+  "titulo": "Criação do caçador",
+  "capitulo": "Cap. 4 – Vivendo a Caçada",
+  "pagina": 59,
+  "resumo": [
+   "Conceito, Motivação e Método; Natureza e Comportamento são opcionais. Atributos 6/4/3 e Habilidades 11/7/4 (todo Atributo começa em 1). Antecedentes 5 e Virtudes 7.",
+   "Força de Vontade = Coragem; Humanidade = Consciência + Autocontrole. 21 pontos de bônus para Qualidades, Defeitos, Númina e outras Características. Máximo de 7 pontos em Qualidades e 7 em Defeitos."
+  ],
+  "tabela": [
+   [
+    "Etapa",
+    "Pontos"
+   ],
+   [
+    "Atributos",
+    "6 / 4 / 3"
+   ],
+   [
+    "Habilidades",
+    "11 / 7 / 4"
+   ],
+   [
+    "Antecedentes",
+    "5"
+   ],
+   [
+    "Virtudes",
+    "7"
+   ],
+   [
+    "Pontos de bônus",
+    "21 (Atributo 5, Habilidade 2, Antecedente 1)"
+   ]
+  ],
+  "tags": [
+   "criação",
+   "caçador",
+   "mortal",
+   "6/4/3",
+   "11/7/4",
+   "ficha"
+  ]
+ },
+ {
+  "id": "cac-diferencas",
+  "linha": "cac",
+  "titulo": "Caçador × vampiro na ficha",
+  "capitulo": "Cap. 4 – Vivendo a Caçada",
+  "pagina": 60,
+  "resumo": [
+   "O caçador não tem Disciplinas nem pontos de sangue; tem uma trilha de Fé (10 bolinhas) e um bloco de Númina. No cabeçalho anota Residência (pode ter mais de uma), Motivação e Método.",
+   "Habilidades próprias da ficha: Representação, Música, Reparos, Burocracia. A Habilidade Disfarce também é apresentada."
+  ],
+  "tags": [
+   "ficha",
+   "caçador",
+   "residência",
+   "fé",
+   "habilidades"
+  ]
+ },
+ {
+  "id": "cac-motivos",
+  "linha": "cac",
+  "titulo": "Motivos",
+  "capitulo": "Cap. 2 – A Caçada",
+  "pagina": 22,
+  "resumo": [
+   "Por que o personagem caça: Vingança, Ódio, Dever, Controle, Poder, Curiosidade, Diversão ou Insanidade. Podem se combinar.",
+   "Combinações naturais: Dever com método Religioso; Curiosidade com Científico, Investigativo ou Místico; Controle e Poder com Manipulativo; Vingança e Ódio com Armamento Pesado."
+  ],
+  "tags": [
+   "motivo",
+   "motivação",
+   "vingança",
+   "dever",
+   "ódio",
+   "curiosidade"
+  ]
+ },
+ {
+  "id": "cac-metodos",
+  "linha": "cac",
+  "titulo": "Métodos",
+  "capitulo": "Cap. 2 – A Caçada",
+  "pagina": 23,
+  "resumo": [
+   "Como o personagem caça: Científico, Religioso, Místico, Investigativo, Manipulativo, Armamento Pesado ou \"do Perdedor\" (descuido estúpido, bom para coadjuvantes que morrem cedo)."
+  ],
+  "tags": [
+   "método",
+   "científico",
+   "religioso",
+   "místico",
+   "investigativo",
+   "armamento pesado"
+  ]
+ },
+ {
+  "id": "cac-organizacoes",
+  "linha": "cac",
+  "titulo": "Organizações de caçadores",
+  "capitulo": "Cap. 3 – Os Caçadores",
+  "pagina": 38,
+  "resumo": [
+   "Grupos que caçam vampiros, com Antecedentes típicos. Os Filhos de Osíris são vampiros e os Young Bloods são carniçais."
+  ],
+  "tabela": [
+   [
+    "Organização",
+    "Natureza",
+    "Método",
+    "Antecedentes típicos"
+   ],
+   [
+    "FBI – Investigações Especiais",
+    "Federal (EUA)",
+    "Investigativo + Armamento",
+    "Aliados 5, Influência 4"
+   ],
+   [
+    "ASN",
+    "Contraespionagem",
+    "Manipulativo",
+    "Aliados 5, Influência 5"
+   ],
+   [
+    "CCD",
+    "Saúde pública",
+    "Científico",
+    "Contatos 3, Influência 3"
+   ],
+   [
+    "Arcano",
+    "Eruditos ocultistas",
+    "Científico, Místico",
+    "Recursos 1, Aliados 2"
+   ],
+   [
+    "Inquisição",
+    "Ordem católica",
+    "Religioso + Armamento",
+    "Teologia, História"
+   ],
+   [
+    "Filhos de Osíris",
+    "Vampiros",
+    "Místico",
+    "Status"
+   ],
+   [
+    "Young Bloods",
+    "Gangue de carniçais",
+    "Armamento Pesado",
+    "Condução, Potência"
+   ]
+  ],
+  "tags": [
+   "organização",
+   "fbi",
+   "asn",
+   "arcano",
+   "inquisição",
+   "sociedade de leopoldo",
+   "filhos de osíris",
+   "young bloods"
+  ]
+ },
+ {
+  "id": "cac-qualidades",
+  "linha": "cac",
+  "titulo": "Qualidades e Defeitos de caçador",
+  "capitulo": "Cap. 4 – Vivendo a Caçada",
+  "pagina": 61,
+  "resumo": [
+   "Valem as do Guia dos Jogadores, menos as exclusivas de vampiros. Algumas próprias de caçadores estão abaixo."
+  ],
+  "tabela": [
+   [
+    "Nome",
+    "Custo",
+    "Efeito"
+   ],
+   [
+    "Pele Grossa",
+    "Q 2",
+    "Dificulta a mordida"
+   ],
+   [
+    "Sangue Venenoso",
+    "Q 3",
+    "Cada ponto bebido fere o vampiro"
+   ],
+   [
+    "Semelhança com Membros",
+    "Q 2",
+    "Passa por vampiro"
+   ],
+   [
+    "Aura Pálida",
+    "Q 2",
+    "Engana leitura de aura"
+   ],
+   [
+    "Invisível",
+    "Q 4",
+    "Para Membros, Ofuscação 1"
+   ],
+   [
+    "Visão Clara",
+    "Q 3",
+    "Enxerga através de Ofuscação"
+   ],
+   [
+    "Punho de Deus",
+    "Q 7",
+    "Golpes agravados em vampiros (Humanidade 7+)"
+   ],
+   [
+    "Carniçal",
+    "Q 5",
+    "Sangue e Potência 1; depende de vitae"
+   ],
+   [
+    "Hemofílico",
+    "D 3",
+    "Não para de sangrar"
+   ],
+   [
+    "Sangue Potente",
+    "D 3",
+    "Vampiros o desejam"
+   ],
+   [
+    "Viciado em Vitae",
+    "D 3",
+    "Depende do sangue vampírico"
+   ],
+   [
+    "A Besta Interior",
+    "D 5",
+    "Entra em frenesi como vampiro"
+   ]
+  ],
+  "tags": [
+   "qualidades",
+   "defeitos",
+   "punho de deus",
+   "visão clara",
+   "sangue venenoso",
+   "carniçal"
+  ]
+ },
+ {
+  "id": "cac-numina",
+  "linha": "cac",
+  "titulo": "Númina: regras gerais (1ª edição)",
+  "capitulo": "Cap. 4 – Vivendo a Caçada",
+  "pagina": 62,
+  "resumo": [
+   "Mortais não compram Disciplinas; usam Númina: Habilidades Psíquicas, Taumaturgia de caçador e Fé. Na criação, Númina só se compra com pontos de bônus; depois, só com permissão do Narrador e motivo na história."
+  ],
+  "tags": [
+   "númina",
+   "numina",
+   "poderes mortais",
+   "psíquico",
+   "taumaturgia",
+   "fé"
+  ]
+ },
+ {
+  "id": "cac-psiquicos",
+  "linha": "cac",
+  "titulo": "Habilidades Psíquicas",
+  "capitulo": "Cap. 4 – Vivendo a Caçada",
+  "pagina": 62,
+  "resumo": [
+   "Custo: 7 pontos de bônus por nível (14 por nível para um segundo poder); XP = nível atual × 3. Precisam ser compradas na criação."
+  ],
+  "tabela": [
+   [
+    "Poder",
+    "Teste",
+    "Resumo dos níveis"
+   ],
+   [
+    "Telepatia",
+    "Int + Empatia contra FV do alvo",
+    "1 emoções … 3 memórias recentes … 5 várias mentes e segredos"
+   ],
+   [
+    "Psicocinese",
+    "Rac + Esportes, dif. 8",
+    "1 objetos leves … 3 sala ao lado … 5 tudo à vista"
+   ],
+   [
+    "Clarividência",
+    "Per + Prontidão, dif. 8",
+    "1 a própria casa … 3 o estado … 5 o mundo inteiro"
+   ]
+  ],
+  "tags": [
+   "psíquico",
+   "telepatia",
+   "telecinese",
+   "psicocinese",
+   "clarividência",
+   "poderes mentais"
+  ]
+ },
+ {
+  "id": "cac-taumaturgia",
+  "linha": "cac",
+  "titulo": "Taumaturgia de caçador",
+  "capitulo": "Cap. 4 – Vivendo a Caçada",
+  "pagina": 64,
+  "resumo": [
+   "Quatro habilidades: Invocação de Feitiço (obrigatória), Duração, Extensão e Ritual. Custam 2 pontos de bônus por nível; XP = nível × 2.",
+   "Invocar: Invocação + nível do feitiço contra dificuldade nível + 4; efeito instantâneo, ao redor do invocador. Para alongar ou ampliar, novos testes de Duração ou Extensão. Feitiços exigem Atributo Mental ≥ nível; Vontade Fraca impede."
+  ],
+  "tabela": [
+   [
+    "Sucessos",
+    "Duração",
+    "Extensão"
+   ],
+   [
+    "1",
+    "2 turnos",
+    "raio de 3 m"
+   ],
+   [
+    "2",
+    "1 cena",
+    "linha de visão"
+   ],
+   [
+    "3",
+    "24 horas",
+    "raio de 30 m"
+   ],
+   [
+    "4",
+    "1 semana",
+    "raio de 1,5 km"
+   ],
+   [
+    "5",
+    "1 mês",
+    "a cidade"
+   ]
+  ],
+  "tags": [
+   "taumaturgia",
+   "feitiço",
+   "magia",
+   "invocação",
+   "duração",
+   "extensão",
+   "ritual"
+  ]
+ },
+ {
+  "id": "cac-feiticos",
+  "linha": "cac",
+  "titulo": "Lista de feitiços",
+  "capitulo": "Cap. 4 – Vivendo a Caçada",
+  "pagina": 65,
+  "resumo": [
+   "Cada feitiço está ligado a um Atributo Mental e vai do nível 1 ao 5."
+  ],
+  "tabela": [
+   [
+    "Nível",
+    "Percepção",
+    "Inteligência",
+    "Raciocínio"
+   ],
+   [
+    "1",
+    "Faro para Vampiros",
+    "Dom da Psiquê",
+    "Trazer ao Corpo"
+   ],
+   [
+    "2",
+    "Fuga aos Olhos dos Mortos-Vivos",
+    "Retorno da Luz",
+    "Luz do Espírito Verdadeiro"
+   ],
+   [
+    "3",
+    "Vozes dos Mortos",
+    "Confissão",
+    "Alma da Árvore"
+   ],
+   [
+    "4",
+    "Manto das Sombras",
+    "Proteção da Mente",
+    "Escudo do Pensador"
+   ],
+   [
+    "5",
+    "Visão Verdadeira",
+    "Coração do Mal",
+    "Lampejo"
+   ]
+  ],
+  "tags": [
+   "feitiços",
+   "faro para vampiros",
+   "visão verdadeira",
+   "confissão",
+   "lampejo",
+   "alma da árvore"
+  ]
+ },
+ {
+  "id": "cac-fe",
+  "linha": "cac",
+  "titulo": "Fé (1ª edição)",
+  "capitulo": "Cap. 4 – Vivendo a Caçada",
+  "pagina": 66,
+  "resumo": [
+   "A Fé vai de 1 a 10. Para repelir, o caçador testa Fé contra a FV do vampiro; cada sucesso é um passo que o vampiro recua. Encostar o símbolo causa dano igual aos sucessos; com 5 sucessos o vampiro foge ou entra em frenesi.",
+   "Água benta causa dano agravado pela Fé de quem a usa. Solo sagrado soma sua própria reserva de Fé. A Fé cresce só pela interpretação e cai com incoerência; duas falhas críticas seguidas custam 1 ponto (crise de fé)."
+  ],
+  "tags": [
+   "fé",
+   "repelir",
+   "água benta",
+   "solo sagrado",
+   "crucifixo",
+   "crise de fé"
+  ]
+ },
+ {
+  "id": "cac-milagres",
+  "linha": "cac",
+  "titulo": "Milagres",
+  "capitulo": "Cap. 4 – Vivendo a Caçada",
+  "pagina": 66,
+  "resumo": [
+   "Milagres são controlados pelo Narrador, nunca egoístas, em geral um por história. Fé acima de 5 é rara e indica ligação real com o divino."
+  ],
+  "tabela": [
+   [
+    "Fé",
+    "Exemplos"
+   ],
+   [
+    "6",
+    "Limpa a mácula de uma área"
+   ],
+   [
+    "7",
+    "Faz um monstro sentir culpa; abençoa um ícone para ferir"
+   ],
+   [
+    "8",
+    "Converte a Natureza de alguém"
+   ],
+   [
+    "9",
+    "Exorciza demônios; dá paz a fantasmas"
+   ],
+   [
+    "10",
+    "Ignora uma fonte de dano; desfaz o Abraço de quem deseja"
+   ]
+  ],
+  "tags": [
+   "milagre",
+   "fé",
+   "divino",
+   "exorcismo"
+  ]
+ },
+ {
+  "id": "cac-equipamento",
+  "linha": "cac",
+  "titulo": "Equipamento de caça",
+  "capitulo": "Apêndice 2",
+  "pagina": 86,
+  "resumo": [
+   "Estacas de madeira paralisam com 3 sucessos e 3 níveis no coração. O cartucho Sopro de Dragão lança chamas (agravado). Maçaricos e lança-chamas improvisados também funcionam, com riscos.",
+   "Itens especiais: Espada do Cruzado (relíquia, dano agravado com Fé), Óleo de São Jorge, Cristal de Kaiphurr, Globo de Ulain, Olho da Ampulheta, Garra do Garou, lança-estacas, protetor de pescoço de titânio."
+  ],
+  "tags": [
+   "equipamento",
+   "armas",
+   "estaca",
+   "lança-chamas",
+   "sopro de dragão",
+   "relíquia",
+   "espada do cruzado"
+  ]
+ },
+ {
+  "id": "cac-lanca-estacas",
+  "linha": "cac",
+  "titulo": "Lança-estacas e estacas",
+  "capitulo": "Apêndice 2",
+  "pagina": 87,
+  "resumo": [
+   "O lança-estacas é uma escopeta adaptada que dispara estacas (dificuldade 8, alcance 15 m, 1 tiro). Contra vampiros, o objetivo é derrubar com armas pesadas e cravar a estaca no coração."
+  ],
+  "tabela": [
+   [
+    "Arma",
+    "Dif.",
+    "Dano",
+    "CdT",
+    "Carga",
+    "Ocult.",
+    "Alcance"
+   ],
+   [
+    "Lança-estacas",
+    "8",
+    "como estaca",
+    "1",
+    "1",
+    "N",
+    "15 m"
+   ]
+  ],
+  "tags": [
+   "lança-estacas",
+   "estaca",
+   "arma",
+   "paralisar vampiro"
+  ]
+ },
+ {
+  "id": "cac-numina-casa",
+  "linha": "cac",
+  "titulo": "Numina da mesa: Classes e limites",
+  "capitulo": "Documento da mesa (Numina)",
+  "pagina": null,
+  "resumo": [
+   "Regra caseira no estilo V20 com três Classes: Magia de Superstição, Fenômeno Psíquico e Fé Verdadeira. Cada personagem tem no máximo 2 Classes, nunca as três.",
+   "Compra-se com pontos de bônus na criação e depois com XP. Ser Abraçado apaga toda Numina, exceto a Fé Verdadeira. O documento não traz custos; combine com o Narrador."
+  ],
+  "tags": [
+   "numina",
+   "classes",
+   "magia de superstição",
+   "fenômeno psíquico",
+   "fé verdadeira",
+   "regra caseira"
+  ]
+ },
+ {
+  "id": "cac-supersticao",
+  "linha": "cac",
+  "titulo": "Magia de Superstição",
+  "capitulo": "Documento da mesa (Numina)",
+  "pagina": null,
+  "resumo": [
+   "O praticante precisa crer nas superstições; cínicos têm dificuldade maior. Os efeitos são sutis e passam por coincidência, muitas vezes com componentes estranhos.",
+   "Caminhos: Maldições (Manipulação + Intimidação, dif. 7, 1 FV), Adivinhações (Percepção + Ocultismo, dif. 7) e Cura (Manipulação + Medicina, dif. 7). A Teurgia é a versão cristã da Inquisição, com Via Geniorum e Via Necromantiae."
+  ],
+  "tags": [
+   "superstição",
+   "maldição",
+   "adivinhação",
+   "cura",
+   "teurgia",
+   "bruxaria"
+  ]
+ },
+ {
+  "id": "cac-maldicoes",
+  "linha": "cac",
+  "titulo": "Caminho das Maldições",
+  "capitulo": "Documento da mesa (Numina)",
+  "pagina": null,
+  "resumo": [
+   "O nível dá a força da maldição; os sucessos dão a duração. Uma falha crítica faz a maldição voltar contra o praticante. Amaldiçoar demais corrói a Humanidade."
+  ],
+  "tabela": [
+   [
+    "Nível / sucessos",
+    "Efeito",
+    "Duração"
+   ],
+   [
+    "1",
+    "+1 dif. em rolagens apropriadas",
+    "próxima ação"
+   ],
+   [
+    "2",
+    "+2 dif. (pequenos ferimentos)",
+    "uma cena"
+   ],
+   [
+    "3",
+    "+3 dif. (acidentes graves)",
+    "um dia"
+   ],
+   [
+    "4",
+    "+3 dif. e −1 dado",
+    "uma semana"
+   ],
+   [
+    "5",
+    "+4 dif. e −2 dados",
+    "um mês"
+   ]
+  ],
+  "tags": [
+   "maldição",
+   "praga",
+   "azar",
+   "curse"
+  ]
+ },
+ {
+  "id": "cac-psiquicos-casa",
+  "linha": "cac",
+  "titulo": "Fenômenos Psíquicos (mesa)",
+  "capitulo": "Documento da mesa (Numina)",
+  "pagina": null,
+  "resumo": [
+   "Caminhos: Projeção Astral, Cyberquinese, Psicometria, Piroquinese, Telecinese, Psi Animal e Anti-Psi. Dependem de treino e equilíbrio mental; excessos podem gerar Defeitos.",
+   "Telecinese ergue de 0,5 kg (nível 1) a 500 kg (nível 5). Piroquinese cria fogo de vela a inferno, com dano agravado de 1 a 3 por turno. Anti-Psi anula outros psíquicos ao redor e impede ter outra Numina psíquica."
+  ],
+  "tags": [
+   "psíquico",
+   "telecinese",
+   "piroquinese",
+   "psicometria",
+   "projeção astral",
+   "cyberquinese",
+   "anti-psi"
+  ]
+ },
+ {
+  "id": "cac-fe-casa",
+  "linha": "cac",
+  "titulo": "Fé Verdadeira (mesa, 1 a 5)",
+  "capitulo": "Documento da mesa (Numina)",
+  "pagina": null,
+  "resumo": [
+   "Exige a Qualidade Fé Verdadeira (nível 1). Dá +1 FV por nível e proteção divina: 1 FV e teste de Fé (dif. 7) reduzem os sucessos de poderes que afetem diretamente o personagem.",
+   "Nível 1 repele criaturas (1 FV + Fé contra a FV delas). Nível 2 sente vampiros por perto. Nível 3 imune a ilusões e controle mental. Nível 4 imune a Presença e não pode virar carniçal. Nível 5: a reza provoca Rötschreck. Violar a fé pede teste de Consciência (dif. 9)."
+  ],
+  "tags": [
+   "fé verdadeira",
+   "repelir",
+   "proteção divina",
+   "milagre",
+   "imunidade"
+  ]
+ }
+]

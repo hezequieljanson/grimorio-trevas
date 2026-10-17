@@ -1,0 +1,73 @@
+<div class="page page-wide">
+  <div class="spread" style="align-items: center">
+    <h1>Bestiário</h1>
+    <a routerLink="/npc" class="btn btn-sm">NPC rápido</a>
+  </div>
+  <div class="layout">
+    <section class="lista" [class.esconder-celular]="!!atualId()">
+      <form class="search" role="search" (submit)="$event.preventDefault()">
+        <app-icon name="busca" />
+        <input type="search" name="q" aria-label="Buscar criatura" placeholder="Buscar criatura ou poder" [ngModel]="q()" (ngModelChange)="buscar($event)" />
+      </form>
+      <div class="chips-scroll" role="group" aria-label="Categoria">
+        @for (c of categorias(); track c) {
+          <button type="button" class="chip" [attr.aria-pressed]="categoria() === c" (click)="filtrar(c)">{{ c }}</button>
+        }
+      </div>
+      @if (erro()) { <p class="card card-red">{{ erro() }}</p> }
+      <div class="col" style="gap: 0">
+        @for (c of lista(); track c.id) {
+          <button type="button" class="list-link" [class.atual]="c.id === atual()?.id" (click)="abrir(c)">
+            <span class="col grow" style="gap: 2px"><strong>{{ c.nome }}</strong><span class="tiny muted">{{ c.categoria }} · {{ nomeLinha(c.linha, true) }}{{ c.pagina ? ' · p. ' + c.pagina : '' }}</span></span>
+            <app-icon name="seguir" [size]="18" />
+          </button>
+        } @empty {
+          @if (criaturas().length) { <div class="empty">Nada encontrado.</div> }
+        }
+      </div>
+    </section>
+
+    @if (atual(); as c) {
+      <article class="detalhe">
+        <button type="button" class="btn btn-sm so-celular" style="align-self: flex-start" (click)="atualId.set(null)"><app-icon name="voltar" [size]="16" />Lista</button>
+        <div class="spread" style="flex-wrap: wrap">
+          <h2 style="font-size: 40px">{{ c.nome }}</h2>
+          <span class="small muted">{{ nomeLinha(c.linha) }}{{ c.pagina ? ' · p. ' + c.pagina : '' }}</span>
+        </div>
+        <p class="lead">{{ c.desc }}</p>
+        @if (c.atributos) {
+          <div class="grid-auto" style="grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))">
+            @for (a of chaves(c.atributos); track a.k) { <div class="tile spread"><span class="small muted">{{ a.k }}</span><strong>{{ a.v }}</strong></div> }
+          </div>
+        }
+        @if (c.tracos) {
+          <div class="chips">
+            @for (t of chaves(c.tracos); track t.k) { <span class="tag tag-gold">{{ t.k }} {{ t.v }}</span> }
+          </div>
+        }
+        @if (c.habilidades) { <p class="small" style="color: var(--text-2)"><strong style="color: var(--text)">Habilidades:</strong> {{ c.habilidades }}</p> }
+        @if (c.poderes.length) {
+          <h3>{{ c.escolherPoderes ? 'Monte o seu: escolha ' + c.escolherPoderes + ' poderes' : 'Poderes' }}</h3>
+          <div class="grid-auto">
+            @for (p of c.poderes; track p.nome) {
+              @if (c.escolherPoderes) {
+                <label class="poder" [class.on]="escolhidos().has(p.nome)" style="cursor: pointer">
+                  <input type="checkbox" [checked]="escolhidos().has(p.nome)" (change)="alternar(p.nome)" style="width: 18px; height: 18px; margin-top: 2px; accent-color: var(--red-2)" />
+                  <span class="col" style="gap: 2px"><strong class="small">{{ p.nome }}</strong><span class="tiny" style="color: var(--text-3)">{{ p.desc }}</span></span>
+                </label>
+              } @else {
+                <div class="poder"><span class="col" style="gap: 2px"><strong class="small">{{ p.nome }}</strong><span class="tiny" style="color: var(--text-3)">{{ p.desc }}</span></span></div>
+              }
+            }
+          </div>
+        }
+        <div class="row-wrap">
+          <button type="button" class="btn btn-primary" (click)="salvar()"><app-icon name="notas" [size]="18" />Salvar em anotações{{ c.escolherPoderes ? ' (com os poderes marcados)' : '' }}</button>
+          <a routerLink="/rolador" [queryParams]="{ criatura: c.id }" class="btn"><app-icon name="dados" [size]="18" />Rolar para {{ c.nome }}</a>
+        </div>
+      </article>
+    } @else {
+      <div class="detalhe esconder-celular"><div class="empty">Escolha uma criatura na lista.</div></div>
+    }
+  </div>
+</div>

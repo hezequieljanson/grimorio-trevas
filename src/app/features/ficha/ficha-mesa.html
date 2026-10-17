@@ -1,0 +1,359 @@
+@if (!f()) {
+  <div class="page"><div class="empty">Ficha não encontrada. <a routerLink="/fichas">Minhas fichas</a></div></div>
+} @else if (!linha()) {
+  <div class="page"><p class="muted">Carregando…</p></div>
+} @else {
+  @let ficha = f()!;
+  @let l = linha()!;
+  <div class="page page-wide">
+    <header class="row" style="align-items: flex-start">
+      <div class="col grow" style="gap: 2px">
+        <h1>{{ ficha.nome || 'Sem nome' }}</h1>
+        <span class="small muted">{{ subtitulo() }}</span>
+      </div>
+      <a class="btn btn-sm" routerLink="/rolador" [queryParams]="{ ficha: ficha.id }"><app-icon name="dados" [size]="16" />Rolador</a>
+      <a class="btn btn-sm" [routerLink]="['/ficha', ficha.id, 'imprimir']"><app-icon name="baixar" [size]="16" />PDF</a>
+    </header>
+
+    <div class="seg" role="tablist" aria-label="Seções da ficha">
+      @for (a of [['mesa', 'Mesa'], ['ficha', 'Ficha'], ['poderes', 'Poderes'], ['evoluir', 'XP'], ['notas', 'Notas']]; track a[0]) {
+        <button type="button" role="tab" [attr.aria-selected]="aba() === a[0]" [attr.aria-pressed]="aba() === a[0]" (click)="aba.set($any(a[0]))">{{ a[1] }}</button>
+      }
+    </div>
+
+    @if (aviso()) { <p class="card card-red small" role="status">{{ aviso() }}</p> }
+
+    @switch (aba()) {
+      <!-- ================= MESA ================= -->
+      @case ('mesa') {
+        <div class="panels">
+          <div class="col">
+            <section class="card-plain">
+              <div class="spread"><h2 style="font-size: 20px">Vitalidade</h2><span class="small" [class.red]="(penalidade() ?? -9) < -1 || penalidade() === null">{{ nivel() }}{{ penalidade() ? ' · ' + penalidade() + ' dados' : '' }}</span></div>
+              <div class="vida">
+                @for (c of caixas(); track $index) {
+                  <span class="caixa" [class.cheia]="!!c.dano" [title]="c.nome"><span>{{ simbolo(c.dano) || (c.pen === null ? '†' : c.pen) }}</span></span>
+                }
+              </div>
+              <div class="row-wrap">
+                <button type="button" class="btn btn-sm" (click)="ferir('c')">+ Contusão</button>
+                <button type="button" class="btn btn-sm" (click)="ferir('l')">+ Letal</button>
+                <button type="button" class="btn btn-sm" (click)="ferir('a')">+ Agravado</button>
+                <button type="button" class="btn btn-sm btn-gold" (click)="curar()" [disabled]="!ficha.estado.dano.length">Curar 1</button>
+              </div>
+            </section>
+
+            <div class="grid-2">
+              @if (l.tipo === 'vampiro') {
+                <section class="card-plain">
+                  <h2 style="font-size: 18px">Sangue</h2>
+                  <div class="contador">
+                    <button type="button" class="btn btn-icon" aria-label="Gastar sangue" (click)="ajustar('sangue', -1)"><app-icon name="menos" /></button>
+                    <span class="valor red">{{ ficha.estado.sangue }}<span class="small muted">/{{ sangueMax().max }}</span></span>
+                    <button type="button" class="btn btn-icon" aria-label="Recuperar sangue" (click)="ajustar('sangue', 1)"><app-icon name="mais" /></button>
+                  </div>
+                  <span class="tiny muted">Até {{ sangueMax().porTurno }} por turno</span>
+                </section>
+              }
+              @if (l.tipo === 'lobisomem') {
+                <section class="card-plain">
+                  <h2 style="font-size: 18px">Fúria</h2>
+                  <div class="contador">
+                    <button type="button" class="btn btn-icon" aria-label="Gastar Fúria" (click)="ajustar('furia', -1)"><app-icon name="menos" /></button>
+                    <span class="valor red">{{ ficha.estado.furia }}<span class="small muted">/{{ v('furia') }}</span></span>
+                    <button type="button" class="btn btn-icon" aria-label="Recuperar Fúria" (click)="ajustar('furia', 1)"><app-icon name="mais" /></button>
+                  </div>
+                </section>
+                <section class="card-plain">
+                  <h2 style="font-size: 18px">Gnose</h2>
+                  <div class="contador">
+                    <button type="button" class="btn btn-icon" aria-label="Gastar Gnose" (click)="ajustar('gnose', -1)"><app-icon name="menos" /></button>
+                    <span class="valor" style="color: var(--blue)">{{ ficha.estado.gnose }}<span class="small muted">/{{ v('gnose') }}</span></span>
+                    <button type="button" class="btn btn-icon" aria-label="Recuperar Gnose" (click)="ajustar('gnose', 1)"><app-icon name="mais" /></button>
+                  </div>
+                </section>
+              }
+              <section class="card-plain">
+                <h2 style="font-size: 18px">Força de Vontade</h2>
+                <div class="contador">
+                  <button type="button" class="btn btn-icon" aria-label="Gastar Força de Vontade" (click)="ajustar('fv', -1)"><app-icon name="menos" /></button>
+                  <span class="valor gold">{{ ficha.estado.fv }}<span class="small muted">/{{ v('fv') }}</span></span>
+                  <button type="button" class="btn btn-icon" aria-label="Recuperar Força de Vontade" (click)="ajustar('fv', 1)"><app-icon name="mais" /></button>
+                </div>
+              </section>
+            </div>
+
+            @if (l.formas?.length) {
+              <section class="card-plain">
+                <div class="spread"><h2 style="font-size: 20px">Forma</h2>@if (formaAtual()) { <span class="tiny muted">mudar para cá: dif. {{ formaAtual()!.dificuldade }} ou 1 Fúria</span> }</div>
+                <div class="seg seg-red" role="group" aria-label="Forma atual">
+                  @for (fo of l.formas!; track fo.id) {
+                    <button type="button" [attr.aria-pressed]="ficha.estado.forma === fo.id" (click)="mudarForma(fo.id)">{{ fo.nome }}</button>
+                  }
+                </div>
+                <div class="grid-3">
+                  @for (a of atributosForma(); track a.nome) {
+                    <span class="tile spread"><span class="small muted">{{ a.curto }}</span><span><strong>{{ a.valor }}</strong>@if (a.delta) { <span class="tiny" [class.green]="a.delta > 0" [class.red]="a.delta < 0"> {{ a.delta > 0 ? '+' : '' }}{{ a.delta }}</span> }</span></span>
+                  }
+                </div>
+                @if (formaAtual()) {
+                  <ul class="small" style="padding-left: 18px; color: var(--text-2)">
+                    @for (n of formaAtual()!.notas; track $index) { <li>{{ n }}</li> }
+                  </ul>
+                }
+                @if (furia(); as fu) {
+                  <hr class="divider" />
+                  <div class="spread"><strong>Lua</strong><span class="small">Teste de Fúria: <strong class="red">dif. {{ fu.dif }}</strong></span></div>
+                  <div class="seg" role="group" aria-label="Fase da lua">
+                    @for (lu of l.luas!; track lu.nome; let i = $index) {
+                      <button type="button" [attr.aria-pressed]="ficha.estado.lua === i" (click)="mudarLua(i)">{{ lu.nome }}</button>
+                    }
+                  </div>
+                  <span class="tiny muted">{{ fu.nota }}</span>
+                }
+              </section>
+            }
+          </div>
+
+          <div class="col">
+            <section class="card-plain">
+              <div class="spread"><h2 style="font-size: 20px">Rolagens</h2>
+                <div class="row">
+                  <button type="button" class="btn btn-icon btn-sm" aria-label="Diminuir dificuldade" (click)="dificuldade.set(Math.max(2, dificuldade() - 1))"><app-icon name="menos" [size]="16" /></button>
+                  <span class="small" style="min-width: 48px; text-align: center; font-weight: 600">Dif. {{ dificuldade() }}</span>
+                  <button type="button" class="btn btn-icon btn-sm" aria-label="Aumentar dificuldade" (click)="dificuldade.set(Math.min(10, dificuldade() + 1))"><app-icon name="mais" [size]="16" /></button>
+                </div>
+              </div>
+              <label class="check"><input type="checkbox" [checked]="usarFv()" (change)="usarFv.set(!usarFv())" />Gastar 1 Força de Vontade (+1 sucesso)</label>
+              @for (r of rolagens(); track r.id) {
+                <div class="row">
+                  <button type="button" class="rolagem grow" (click)="rolarPronta(r)">
+                    <span class="col" style="gap: 1px"><strong>{{ r.nome }}</strong><span class="tiny muted">{{ formula(r.tracos) }} · dif. {{ r.dificuldade }}</span></span>
+                    <span class="red" style="font-weight: 700">{{ parada(r.tracos) }}d</span>
+                  </button>
+                  @if (r.salva) { <button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Apagar ' + r.nome" (click)="apagarRolagem(r.id)"><app-icon name="lixo" [size]="16" /></button> }
+                </div>
+              }
+              @if (montando()) {
+                <div class="card card-gold">
+                  <div class="grid-2">
+                    <label class="field">Traço 1
+                      <select class="select" [ngModel]="novoA()" (ngModelChange)="novoA.set($event)">
+                        <option value="">—</option>
+                        @for (o of opcoesTraco(); track o.chave) { <option [value]="o.chave">{{ o.nome }} ({{ v(o.chave) }})</option> }
+                      </select>
+                    </label>
+                    <label class="field">Traço 2
+                      <select class="select" [ngModel]="novoB()" (ngModelChange)="novoB.set($event)">
+                        <option value="">—</option>
+                        @for (o of opcoesTraco(); track o.chave) { <option [value]="o.chave">{{ o.nome }} ({{ v(o.chave) }})</option> }
+                      </select>
+                    </label>
+                  </div>
+                  <label class="field">Nome (opcional)
+                    <input class="input" [ngModel]="novoNome()" (ngModelChange)="novoNome.set($event)" placeholder="Ex.: Ataque com faca" />
+                  </label>
+                  <div class="row-wrap">
+                    <button type="button" class="btn btn-primary btn-sm" (click)="rolarLivre()">Rolar {{ parada([novoA(), novoB()].filter(x => !!x)) }} dados</button>
+                    <button type="button" class="btn btn-sm" (click)="salvarRolagem()">Salvar rolagem (dif. {{ dificuldade() }})</button>
+                    <button type="button" class="btn btn-sm" (click)="montando.set(false)">Fechar</button>
+                  </div>
+                </div>
+              } @else {
+                <button type="button" class="btn btn-sm" (click)="montando.set(true)"><app-icon name="mais" [size]="16" />Montar rolagem</button>
+              }
+              @if (penalidade()) { <span class="tiny gold">Penalidade de ferimento já aplicada: {{ penalidade() }} dados.</span> }
+            </section>
+          </div>
+
+          <div class="col">
+            <app-resultado [r]="resultado()" [rotulo]="rotulo()" />
+            @if (historico().length) {
+              <section class="col" style="gap: 2px">
+                <span class="eyebrow">Histórico</span>
+                @for (h of historico(); track $index) {
+                  <div class="spread small" style="padding: 6px 0; border-bottom: 1px solid var(--line)"><span style="color: var(--text-3)">{{ h.rotulo }}</span><strong>{{ h.texto }}</strong></div>
+                }
+              </section>
+            }
+          </div>
+        </div>
+      }
+
+      <!-- ================= FICHA ================= -->
+      @case ('ficha') {
+        <div class="panels">
+          <section class="card-plain">
+            <h2>Atributos</h2>
+            @for (g of [['Físicos', l.atributos.fisicos], ['Sociais', l.atributos.sociais], ['Mentais', l.atributos.mentais]]; track g[0]) {
+              <span class="eyebrow">{{ g[0] }}</span>
+              @for (a of $any(g[1]); track a.id) {
+                <div class="traco"><span class="grow">{{ a.nome }}</span><app-dots class="compact" [value]="v('atr:' + a.id)" [extra]="(ficha.bonus['atr:' + a.id] ?? 0) + (ficha.xpComprado['atr:' + a.id] ?? 0)" [readonly]="true" [label]="a.nome" /></div>
+              }
+            }
+          </section>
+          <section class="card-plain">
+            <h2>Habilidades</h2>
+            @for (g of habilidadesComPontos(); track g.nome) {
+              <span class="eyebrow">{{ g.nome }}</span>
+              @for (h of g.itens; track h.nome) {
+                <div class="traco"><span class="grow">{{ h.nome }}</span><app-dots class="compact" [value]="h.valor" [readonly]="true" [label]="h.nome" /></div>
+              } @empty { <span class="tiny muted">Nenhuma</span> }
+            }
+          </section>
+          <section class="card-plain">
+            <h2>Vantagens</h2>
+            <span class="eyebrow">Antecedentes</span>
+            @for (a of antecedentes(); track a.nome) {
+              <div class="traco"><span class="grow">{{ a.nome }}</span><app-dots class="compact" [value]="a.valor" [readonly]="true" [label]="a.nome" /></div>
+            } @empty { <span class="tiny muted">Nenhum</span> }
+            @if (l.tipo !== 'lobisomem') {
+              <span class="eyebrow">Virtudes</span>
+              @for (vn of virtudes(); track vn) {
+                <div class="traco"><span class="grow">{{ vn }}</span><app-dots class="compact" [value]="v(virKey(vn))" [readonly]="true" [label]="vn" /></div>
+              }
+              <div class="traco"><span class="grow"><strong>{{ trilhaNome() }}</strong></span><app-dots class="compact" [value]="v('trilha')" [max]="10" [readonly]="true" [label]="trilhaNome()" /></div>
+              @if (trilha()?.pecados?.length) {
+                <details class="small"><summary style="cursor: pointer">Hierarquia de pecados</summary>
+                  <ol reversed style="padding-left: 22px; color: var(--text-3)">
+                    @for (p of trilha()!.pecados; track $index) { <li [class.red]="10 - $index > v('trilha')">{{ p }}</li> }
+                  </ol>
+                </details>
+              }
+            }
+            @if (qualidades().length) {
+              <span class="eyebrow">Qualidades e Defeitos</span>
+              @for (q of qualidades(); track q.id) { <span class="small">{{ q.nome }} <span class="tiny muted">({{ q.defeito ? 'defeito' : 'qualidade' }})</span></span> }
+            }
+          </section>
+          @if (l.tipo === 'lobisomem') {
+            <section class="card-plain">
+              <div class="spread"><h2>Renome</h2><span class="small">Posto {{ ficha.posto }} {{ nomePosto() }}</span></div>
+              @for (r of [['gloria', 'gloriaT', 'Glória'], ['honra', 'honraT', 'Honra'], ['sabedoria', 'sabedoriaT', 'Sabedoria']]; track r[0]) {
+                <div class="col" style="gap: 4px">
+                  <strong class="small">{{ r[2] }}</strong>
+                  <div class="spread small">
+                    <span>Permanente</span>
+                    <span class="row"><button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Menos ' + r[2]" (click)="ajustarRenome($any(r[0]), -1)"><app-icon name="menos" [size]="14" /></button><strong>{{ $any(ficha.renome)[r[0]] }}</strong><button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Mais ' + r[2]" (click)="ajustarRenome($any(r[0]), 1)"><app-icon name="mais" [size]="14" /></button></span>
+                  </div>
+                  <div class="spread small">
+                    <span>Temporário</span>
+                    <span class="row"><button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Menos ' + r[2] + ' temporária'" (click)="ajustarRenome($any(r[1]), -1)"><app-icon name="menos" [size]="14" /></button><strong>{{ $any(ficha.renome)[r[1]] }}</strong><button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Mais ' + r[2] + ' temporária'" (click)="ajustarRenome($any(r[1]), 1)"><app-icon name="mais" [size]="14" /></button></span>
+                  </div>
+                  @if ($any(ficha.renome)[r[1]] >= 10) { <span class="tiny gold">10 temporários: hora do Ritual de Conquista (+1 permanente).</span> }
+                </div>
+              }
+              @if (proximoPosto(); as pp) {
+                <span class="small" [class.green]="pp.pronto">Para {{ pp.nome }}: {{ pp.texto }}</span>
+              }
+              <div class="row"><button type="button" class="btn btn-sm" (click)="mudarPosto(-1)">Posto −</button><button type="button" class="btn btn-sm" (click)="mudarPosto(1)">Posto +</button></div>
+            </section>
+          }
+        </div>
+      }
+
+      <!-- ================= PODERES ================= -->
+      @case ('poderes') {
+        <div class="grid-auto">
+          @for (d of disciplinas(); track d.id) {
+            <article class="card">
+              <div class="spread"><h2 style="font-size: 22px">{{ d.nome }}</h2><app-dots class="compact" [value]="v('dis:' + d.id)" [readonly]="true" [label]="d.nome" /></div>
+              <span class="small muted">{{ d.desc }}</span>
+              @for (n of d.niveis; track n.nivel) {
+                <div class="poder" [class.tenho]="n.nivel <= v('dis:' + d.id)">
+                  <button type="button" class="poder-titulo" (click)="alternar(d.id + n.nivel)" [attr.aria-expanded]="!!abertos()[d.id + n.nivel]">
+                    <span class="nivel">{{ n.nivel }}</span><strong class="grow">{{ n.nome }}</strong><app-icon name="baixo" [size]="16" />
+                  </button>
+                  @if (abertos()[d.id + n.nivel]) { <p class="small" style="color: var(--text-3); padding: 0 0 8px 34px">{{ n.sistema }}</p> }
+                </div>
+              }
+              @if (d.pagina) { <span class="tiny muted">Livro p. {{ d.pagina }}</span> }
+            </article>
+          }
+          @for (d of dons(); track d.id) {
+            <article class="card">
+              <div class="spread"><h2 style="font-size: 22px">{{ d.nome }}</h2><span class="tag">Nível {{ d.nivel }}</span></div>
+              <p class="small" style="color: var(--text-3)">{{ d.sistema }}</p>
+              @if (d.desc) { <p class="tiny muted">{{ d.desc }}</p> }
+              @if (d.pagina) { <span class="tiny muted">Livro p. {{ d.pagina }}</span> }
+            </article>
+          }
+          @for (n of numinas(); track n.id) {
+            <article class="card">
+              <div class="spread"><span class="tag" [class.tag-gray]="n.fonte === 'mesa'">{{ n.fonte === 'mesa' ? 'DOCUMENTO DA MESA' : 'LIVRO' }}</span><app-dots class="compact" [value]="v('num:' + n.id)" [readonly]="true" [label]="n.nome" /></div>
+              <h2 style="font-size: 22px">{{ n.nome }}</h2>
+              <span class="small muted">{{ n.classe }} · {{ n.rolagem }}{{ n.custo ? ' · ' + n.custo : '' }}</span>
+              @for (nv of n.niveis; track nv.nivel) {
+                <div class="poder" [class.tenho]="nv.nivel <= v('num:' + n.id)">
+                  <button type="button" class="poder-titulo" (click)="alternar(n.id + nv.nivel)" [attr.aria-expanded]="!!abertos()[n.id + nv.nivel]">
+                    <span class="nivel">{{ nv.nivel }}</span><strong class="grow">{{ nv.nome }}</strong><app-icon name="baixo" [size]="16" />
+                  </button>
+                  @if (abertos()[n.id + nv.nivel]) { <p class="small" style="color: var(--text-3); padding: 0 0 8px 34px">{{ nv.sistema }}</p> }
+                </div>
+              }
+            </article>
+          }
+          @if (!disciplinas().length && !dons().length && !numinas().length) {
+            <div class="empty">Este personagem não tem poderes sobrenaturais.</div>
+          }
+        </div>
+      }
+
+      <!-- ================= EVOLUIR ================= -->
+      @case ('evoluir') {
+        <div class="panels">
+          <section class="card-plain">
+            <div class="spread"><h2>Experiência</h2><strong class="gold" style="font-size: 24px">{{ xpLivre() }} XP <span class="small muted">livres</span></strong></div>
+            <span class="small muted">Total recebido: {{ ficha.xp.total }}. Custos pela tabela da mesa (<a routerLink="/ajustes">Ajustes › Regras da casa</a>).</span>
+            <div class="row">
+              <input type="number" class="num" aria-label="XP recebido na sessão" [ngModel]="xpNovo()" (ngModelChange)="xpNovo.set($event)" />
+              <button type="button" class="btn btn-primary btn-sm" (click)="ganharXp()">Adicionar XP</button>
+            </div>
+            @if (ficha.xp.log.length) {
+              <span class="eyebrow">Histórico</span>
+              @for (r of ficha.xp.log; track $index) {
+                <div class="spread small" style="border-bottom: 1px solid var(--line); padding: 6px 0">
+                  <span>{{ r.item }} {{ r.de }}→{{ r.para }} <span class="tiny muted">{{ dataCurta(r.data) }}</span></span>
+                  <span class="row"><strong>{{ r.custo }} XP</strong><button type="button" class="btn btn-sm" (click)="desfazer($index)">Desfazer</button></span>
+                </div>
+              }
+            }
+          </section>
+          @for (g of evoluiveis(); track g.nome) {
+            <details class="card-plain" [open]="g.nome === 'Atributos'">
+              <summary style="cursor: pointer"><h2 style="font-size: 20px; display: inline">{{ g.nome }}</h2></summary>
+              @for (it of g.itens; track it.chave) {
+                <div class="traco">
+                  <span class="grow">{{ it.nome }} <span class="tiny muted">{{ it.atual }}</span></span>
+                  <span class="tiny muted">{{ it.custo == null ? 'narrador' : it.custo + ' XP' }}</span>
+                  <button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Subir ' + it.nome + ' (' + it.regra + ')'" [title]="it.regra" (click)="evoluir(it.chave, it.nome, it.custo)"><app-icon name="mais" [size]="16" /></button>
+                </div>
+              }
+            </details>
+          }
+          @if (donsParaAprender().length) {
+            <details class="card-plain">
+              <summary style="cursor: pointer"><h2 style="font-size: 20px; display: inline">Aprender Dons</h2></summary>
+              <span class="tiny muted">Dons até o nível do seu Posto, da sua raça, augúrio e tribo. Aprender um Dom precisa de um espírito professor na história.</span>
+              @for (x of donsParaAprender(); track x.d.id) {
+                <div class="traco">
+                  <span class="grow">{{ x.d.nome }} <span class="tiny muted">nível {{ x.d.nivel }}</span></span>
+                  <span class="tiny muted">{{ x.custo == null ? 'narrador' : x.custo + ' XP' }}</span>
+                  <button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Aprender ' + x.d.nome" (click)="evoluir('dom:' + x.d.id, x.d.nome, x.custo)"><app-icon name="mais" [size]="16" /></button>
+                </div>
+              }
+            </details>
+          }
+        </div>
+      }
+
+      <!-- ================= NOTAS ================= -->
+      @case ('notas') {
+        <label class="field">Anotações desta ficha (salvas automaticamente)
+          <textarea class="textarea" style="min-height: 320px" [ngModel]="ficha.anotacoes" (ngModelChange)="salvarAnotacoes($event)" placeholder="Histórico, aparência, aliados, segredos…"></textarea>
+        </label>
+        <a routerLink="/notas" class="btn btn-sm" style="align-self: flex-start"><app-icon name="notas" [size]="16" />Abrir as anotações gerais</a>
+      }
+    }
+  </div>
+}

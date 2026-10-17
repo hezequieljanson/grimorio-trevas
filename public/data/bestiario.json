@@ -1,0 +1,2281 @@
+[
+  {
+    "id": "fomor",
+    "nome": "Fomor",
+    "categoria": "Wyrm",
+    "linha": "lob",
+    "pagina": 275,
+    "desc": "Humano (ou animal) possuído e fundido a um Maldito da Wyrm: deformado, canibal, às vezes infiltrado na sociedade. Monte-o escolhendo poderes.",
+    "atributos": {
+      "Força": "3+",
+      "Destreza": "2+",
+      "Vigor": "3+",
+      "Carisma": "1+",
+      "Manipulação": "1+",
+      "Aparência": "0 (geralmente)",
+      "Percepção": 2,
+      "Inteligência": "1+",
+      "Raciocínio": "1+"
+    },
+    "habilidades": "Briga 1–3, Esquiva 1, Armas de Fogo 1, Armas Brancas 1–2, Furtividade 1, Sobrevivência 2, Ocultismo 1",
+    "tracos": {
+      "Absorção": "Maioria absorve letal como contusão; alguns absorvem agravado dif. 8"
+    },
+    "escolherPoderes": "2–3",
+    "poderes": [
+      {
+        "nome": "Couro Blindado",
+        "desc": "+3 dados de absorção; absorve agravado com dif. 6."
+      },
+      {
+        "nome": "Dom",
+        "desc": "Um Dom de nível 1 ou 2 de Ahroun, hominídeos ou Dançarinos; usa FV onde o Dom pede Fúria ou Gnose."
+      },
+      {
+        "nome": "Força Sobrenatural",
+        "desc": "+4 em Força."
+      },
+      {
+        "nome": "Garras e Presas",
+        "desc": "Pode usar garra e mordida: Força +1, dano agravado."
+      },
+      {
+        "nome": "Imunidade ao Delírio",
+        "desc": "Resistentes somam +5 FV contra o Delírio; os imunes não o sofrem."
+      },
+      {
+        "nome": "Membros Adicionais",
+        "desc": "+3 dados para engalfinhar; alguns atacam à distância."
+      },
+      {
+        "nome": "Mutação Bestial",
+        "desc": "+2 em cada Atributo Físico; Aparência 0."
+      },
+      {
+        "nome": "Odor da Tríade",
+        "desc": "Sentir a Wyrm contra ele tem dif. 10; disfarça-se de criatura da Weaver ou da Wyld."
+      },
+      {
+        "nome": "Olhos da Wyrm",
+        "desc": "Quem o encara testa FV dif. 8 ou fica paralisado por (5 − Raciocínio) turnos, mínimo 1."
+      },
+      {
+        "nome": "Regeneração",
+        "desc": "Regenera letal e contusão como um Garou e agravado a 1 nível por dia; come muito e morre de câncer em poucos anos."
+      },
+      {
+        "nome": "Selvageria",
+        "desc": "Tem 5 pontos de Fúria e os usa como um Garou, sujeito a frenesi e à Maldição."
+      },
+      {
+        "nome": "Sentidos Alterados",
+        "desc": "1 FV: vê através da Película, enxerga a forma Crinos de metamorfos e reconhece servos da Wyrm."
+      },
+      {
+        "nome": "Toque Fúngico",
+        "desc": "A vítima testa Vigor dif. 7 ou perde 1 ponto por dia em Atributos Físicos e Aparência. 1 FV cobre o fomor de muco (−2 dados a quem ataca de perto)."
+      },
+      {
+        "nome": "Tumores Venenosos",
+        "desc": "Quem o fere com lâmina ou garra absorve 3 dados de dano letal; mordê-lo causa 5 dados."
+      },
+      {
+        "nome": "Voz da Wyrm",
+        "desc": "Recita a Litania Negra: ouvintes testam FV dif. 8 ou perdem metade da Gnose; lamber causa 2 dados agravados não absorvíveis."
+      }
+    ]
+  },
+  {
+    "id": "dancarino-espiral-negra",
+    "nome": "Dançarino da Espiral Negra",
+    "categoria": "Wyrm",
+    "linha": "lob",
+    "pagina": 272,
+    "desc": "Garou caídos (antigos Uivadores Brancos) que servem à Wyrm em Colmeias subterrâneas; muitos são impuros. Crinos com cabeça de hiena e pelo branco ou esverdeado.",
+    "habilidades": "Como um Garou; também aprendem Dons de raça e augúrio",
+    "tracos": {
+      "Fúria": "Como Garou",
+      "Gnose": "Como Garou",
+      "Totem": "Curiango"
+    },
+    "poderes": [
+      {
+        "nome": "Cabeça de Rato (1)",
+        "desc": "Teste de Gnose: espreme-se por qualquer abertura maior que 2 cm."
+      },
+      {
+        "nome": "Garras Tóxicas (1)",
+        "desc": "1 Fúria e 1 turno: garras com +1 dado de dano que deixam mácula pela cena."
+      },
+      {
+        "nome": "Sentir a Wyrm (1)",
+        "desc": "Como o Dom dos impuros."
+      },
+      {
+        "nome": "Aterrorizar (2)",
+        "desc": "Carisma + Intimidação contra a FV do alvo: fica mais fácil intimidá-lo e mais difícil para ele acertar o Dançarino."
+      },
+      {
+        "nome": "Couro da Wyrm (2)",
+        "desc": "1 Fúria, Vigor + Sobrevivência: +1 dado de absorção por sucesso na cena, mas deixa rastro fácil."
+      },
+      {
+        "nome": "Orelhas de Morcego (2)",
+        "desc": "Sonar: age na escuridão total sem penalidade."
+      },
+      {
+        "nome": "Patágios (2)",
+        "desc": "Membranas para planar a cerca de 40 km/h (Destreza + Esportes para manter altitude)."
+      },
+      {
+        "nome": "Baba de Fúria (3)",
+        "desc": "Quem é mordido testa Vigor dif. 8 ou entra em frenesi sob a Influência da Wyrm."
+      },
+      {
+        "nome": "Cicatrizes Ardentes (3)",
+        "desc": "Agarrando a vítima, 2 Fúria + Raciocínio + Instinto Primitivo: cada sucesso causa 1 agravado não absorvível."
+      },
+      {
+        "nome": "Doppelgänger (4)",
+        "desc": "Assume a aparência exata de outra pessoa (como o Dom dos Andarilhos do Asfalto)."
+      },
+      {
+        "nome": "Injetar Veneno (4)",
+        "desc": "Após mordida com dano, Gnose contra Vigor: cada sucesso inibe a regeneração por 1 hora (em humanos, −1 nos Atributos Físicos)."
+      },
+      {
+        "nome": "Avatar da Wyrm (5)",
+        "desc": "1 Gnose + 1 Fúria: Crinos automático, +1 nos Atributos Físicos, nível extra de vitalidade e garras não absorvíveis por uma cena."
+      },
+      {
+        "nome": "Chamas Tóxicas (5)",
+        "desc": "Jato à distância: a vítima resiste com Vigor dif. 8 ou sofre mutação; o excedente vira dano agravado."
+      },
+      {
+        "nome": "Disfarçar a Mácula (5)",
+        "desc": "2 Gnose, Aparência + Lábia dif. 8: esconde a mácula de sentidos e Dons por uma cena."
+      }
+    ]
+  },
+  {
+    "id": "rastejante-nexus",
+    "nome": "Rastejante Nexus",
+    "categoria": "Wyrm",
+    "linha": "lob",
+    "pagina": 284,
+    "desc": "Maldito poderoso de pura entropia que distorce a realidade à sua volta. Vê-lo exige FV para não entrar no frenesi da raposa.",
+    "tracos": {
+      "Força de Vontade": 6,
+      "Fúria": 10,
+      "Gnose": 10,
+      "Essência": 26
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Sentido de Orientação, Materializar (12 níveis de vitalidade), Reformar."
+      },
+      {
+        "nome": "Distorcer a Realidade",
+        "desc": "FV dif. 7: 1, 3 ou 5 sucessos geram efeitos menores, drásticos ou espetaculares; raios entrópicos de 3 ou 6 dados agravados."
+      }
+    ]
+  },
+  {
+    "id": "psicomaquia",
+    "nome": "Psicomaquia",
+    "categoria": "Wyrm",
+    "linha": "lob",
+    "pagina": 285,
+    "desc": "Maldito do assassinato que possui pessoas e as leva a matar; fica mais forte a cada morte que provoca.",
+    "tracos": {
+      "Força de Vontade": 7,
+      "Fúria": 10,
+      "Gnose": 8,
+      "Essência": 25,
+      "Especial": "+1 Essência por morte causada pelo hospedeiro"
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Sentido de Orientação, Corrupção, Materializar, Possessão."
+      }
+    ]
+  },
+  {
+    "id": "esguio",
+    "nome": "Esguio",
+    "categoria": "Wyrm",
+    "linha": "lob",
+    "pagina": 285,
+    "desc": "Maldito que incita fúria e possui hospedeiros; em 48 horas o possuído se transforma num Esguio.",
+    "tracos": {
+      "Força de Vontade": 6,
+      "Fúria": 10,
+      "Gnose": 4,
+      "Essência": 20
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Incitar o Frenesi, Possessão."
+      }
+    ]
+  },
+  {
+    "id": "vetor-de-estase",
+    "nome": "Vetor de Estase",
+    "categoria": "Weaver e Wyld",
+    "linha": "lob",
+    "pagina": 282,
+    "desc": "Espírito da Weaver que congela tudo em ordem rígida, anulando poderes e mudanças.",
+    "tracos": {
+      "Força de Vontade": 10,
+      "Fúria": 6,
+      "Gnose": 10,
+      "Essência": 26
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Sentido de Orientação, Petrificar, Materializar, Solidificar a Realidade."
+      },
+      {
+        "nome": "Estase",
+        "desc": "Anula poderes (FV contra FV do alvo); Gnose dif. 8 força formas naturais num raio de 10 m e eleva a Película até 10."
+      }
+    ]
+  },
+  {
+    "id": "aranha-do-padrao",
+    "nome": "Aranha do Padrão",
+    "categoria": "Weaver e Wyld",
+    "linha": "lob",
+    "pagina": 283,
+    "desc": "Espírito operário da Weaver que tece e conserta a Teia, solidificando a realidade.",
+    "tracos": {
+      "Força de Vontade": 6,
+      "Fúria": 4,
+      "Gnose": 6,
+      "Essência": 16
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Petrificar, Solidificar a Realidade."
+      }
+    ]
+  },
+  {
+    "id": "aranha-cacadora",
+    "nome": "Aranha Caçadora",
+    "categoria": "Weaver e Wyld",
+    "linha": "lob",
+    "pagina": 283,
+    "desc": "Guerreira da Weaver que caça intrusos em bandos de 2, 3, 5 ou 7.",
+    "tracos": {
+      "Força de Vontade": 8,
+      "Fúria": 10,
+      "Gnose": 6,
+      "Essência": 24
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Rajada (raios), Materializar, Solidificar a Realidade, Rastrear."
+      }
+    ]
+  },
+  {
+    "id": "vortice",
+    "nome": "Vórtice",
+    "categoria": "Weaver e Wyld",
+    "linha": "lob",
+    "pagina": 283,
+    "desc": "Turbilhão da Wyld, caos puro em movimento; seus ataques são sempre agravados e não absorvíveis.",
+    "tracos": {
+      "Força de Vontade": 8,
+      "Fúria": 8,
+      "Gnose": 10,
+      "Essência": 26
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Sentido de Orientação, Romper a Realidade, Desorientar, Materializar, Reformar, Metamorfose."
+      }
+    ]
+  },
+  {
+    "id": "wyldling-inferior",
+    "nome": "Wyldling Inferior",
+    "categoria": "Weaver e Wyld",
+    "linha": "lob",
+    "pagina": 283,
+    "desc": "Pequeno espírito da Wyld, mutável e imprevisível.",
+    "tracos": {
+      "Força de Vontade": 4,
+      "Fúria": 7,
+      "Gnose": 6,
+      "Essência": 40
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Sentido de Orientação, Romper a Realidade, Materializar, Metamorfose."
+      }
+    ]
+  },
+  {
+    "id": "cacador-cacada-selvagem",
+    "nome": "O Caçador (Caçada Selvagem)",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 298,
+    "desc": "Líder espectral da Caçada Selvagem, que persegue sua presa sem descanso.",
+    "tracos": {
+      "Força de Vontade": 10,
+      "Fúria": 10,
+      "Gnose": 5,
+      "Essência": 40
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Armadura, Materializar, Rastrear."
+      }
+    ]
+  },
+  {
+    "id": "caes-cacada-selvagem",
+    "nome": "Cães de Caça (Caçada Selvagem)",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 298,
+    "desc": "Matilha de 9 a 27 cães espirituais que acompanha o Caçador.",
+    "tracos": {
+      "Força de Vontade": 6,
+      "Fúria": 7,
+      "Gnose": 2,
+      "Essência": 18
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Materializar, Rastrear."
+      }
+    ]
+  },
+  {
+    "id": "corvos-tempestade",
+    "nome": "Corvos da Tempestade",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 298,
+    "desc": "Bando de espíritos-corvo que cavalga os ventos.",
+    "tracos": {
+      "Força de Vontade": 9,
+      "Fúria": 7,
+      "Gnose": 6,
+      "Essência": 22
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Criar Vento, Rastrear."
+      }
+    ]
+  },
+  {
+    "id": "espirito-cervo",
+    "nome": "Espírito de Cervo",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 299,
+    "desc": "Natura animal do cervo, tímida e veloz.",
+    "tracos": {
+      "Força de Vontade": 4,
+      "Fúria": 4,
+      "Gnose": 6,
+      "Essência": 14
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Nenhum além dos comuns (Sentido de Orientação, Reformar)."
+      }
+    ]
+  },
+  {
+    "id": "espirito-falcao",
+    "nome": "Espírito de Falcão",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 299,
+    "desc": "Natura animal do falcão, orgulhosa e de olhar aguçado.",
+    "tracos": {
+      "Força de Vontade": 10,
+      "Fúria": 6,
+      "Gnose": 5,
+      "Essência": 21
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Vôo Ligeiro."
+      }
+    ]
+  },
+  {
+    "id": "espirito-serpente",
+    "nome": "Espírito de Serpente",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 299,
+    "desc": "Natura animal da serpente, paciente e hipnótica.",
+    "tracos": {
+      "Força de Vontade": 5,
+      "Fúria": 6,
+      "Gnose": 8,
+      "Essência": 19
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Olhar Paralisante."
+      }
+    ]
+  },
+  {
+    "id": "filhos-das-clareiras",
+    "nome": "Filhos das Clareiras",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 299,
+    "desc": "Espíritos de árvores; a Essência varia com a idade (20 numa árvore nova, 35 num carvalho, 50+ numa sequoia).",
+    "tracos": {
+      "Força de Vontade": 7,
+      "Fúria": 3,
+      "Gnose": 8,
+      "Essência": "variável (20 a 50+)"
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Purificar os Domínios Sombrios, Sentir o Reino."
+      }
+    ]
+  },
+  {
+    "id": "lunos",
+    "nome": "Lunos",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 299,
+    "desc": "Espíritos da lua que guardam as Trilhas da Lua; mais fortes na lua cheia.",
+    "tracos": {
+      "Força de Vontade": 8,
+      "Fúria": "4 (8 na lua cheia)",
+      "Gnose": 7,
+      "Essência": "19–23"
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Abrir Ponte da Lua."
+      }
+    ]
+  },
+  {
+    "id": "avatar-wendigo",
+    "nome": "Avatar de Wendigo",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 299,
+    "desc": "Espírito canibal do frio, invocado pelo Dom Invocar o Espírito Canibal.",
+    "tracos": {
+      "Força de Vontade": 7,
+      "Fúria": 10,
+      "Gnose": 5,
+      "Essência": 32
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Rajada (gelo), Criar Vento, Congelar, Materializar, Rastrear."
+      }
+    ]
+  },
+  {
+    "id": "espirito-ancestral",
+    "nome": "Espírito Ancestral",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 299,
+    "desc": "Garou falecido que aconselha seus descendentes.",
+    "tracos": {
+      "Força de Vontade": 6,
+      "Fúria": 8,
+      "Gnose": 7,
+      "Essência": 21
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Ligados aos Dons de tribo, augúrio ou raça que tinha em vida."
+      }
+    ]
+  },
+  {
+    "id": "elemental-terra",
+    "nome": "Elemental da Terra",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 299,
+    "desc": "Espírito da pedra e do solo, lento e resistente.",
+    "tracos": {
+      "Força de Vontade": 10,
+      "Fúria": 4,
+      "Gnose": 5,
+      "Essência": 20
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Armadura, Materializar, Umbramoto."
+      }
+    ]
+  },
+  {
+    "id": "elemental-fogo",
+    "nome": "Elemental do Fogo",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 300,
+    "desc": "Espírito das chamas, violento e faminto.",
+    "tracos": {
+      "Força de Vontade": 5,
+      "Fúria": 10,
+      "Gnose": 5,
+      "Essência": 20
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Rajada (chamas), Criar Chamas."
+      }
+    ]
+  },
+  {
+    "id": "elemental-agua",
+    "nome": "Elemental da Água",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 300,
+    "desc": "Espírito das águas, que purifica e cura.",
+    "tracos": {
+      "Força de Vontade": 6,
+      "Fúria": 4,
+      "Gnose": 10,
+      "Essência": 20
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Purificar os Domínios Sombrios, Inundação, Curar."
+      }
+    ]
+  },
+  {
+    "id": "elemental-ar",
+    "nome": "Elemental do Ar",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 300,
+    "desc": "Espírito dos ventos, leve e inconstante.",
+    "tracos": {
+      "Força de Vontade": 3,
+      "Fúria": 8,
+      "Gnose": 7,
+      "Essência": 18
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Criar Vento, Levitação."
+      }
+    ]
+  },
+  {
+    "id": "elemental-vidro",
+    "nome": "Elemental do Vidro",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 300,
+    "desc": "Espírito urbano do vidro, cortante e frágil.",
+    "tracos": {
+      "Força de Vontade": 4,
+      "Fúria": 7,
+      "Gnose": 7,
+      "Essência": 18
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Rajada (estilhaços), Materializar, Estilhaçar Vidro."
+      }
+    ]
+  },
+  {
+    "id": "elemental-eletricidade",
+    "nome": "Elemental da Eletricidade",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 300,
+    "desc": "Espírito da energia elétrica que corre pelas cidades.",
+    "tracos": {
+      "Força de Vontade": 6,
+      "Fúria": 7,
+      "Gnose": 5,
+      "Essência": 18
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Rajada (raio), Controle de Sistemas Elétricos, Curto-circuito."
+      }
+    ]
+  },
+  {
+    "id": "chimerlings",
+    "nome": "Chimerlings",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 300,
+    "desc": "Espíritos enigmáticos dos sonhos e ilusões.",
+    "tracos": {
+      "Força de Vontade": 3,
+      "Fúria": 5,
+      "Gnose": 10,
+      "Essência": 18
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Metamorfose."
+      }
+    ]
+  },
+  {
+    "id": "englings",
+    "nome": "Englings",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 300,
+    "desc": "Espíritos feitos de Gnose pura, caçados para recarregá-la.",
+    "tracos": {
+      "Força de Vontade": 5,
+      "Fúria": 1,
+      "Gnose": 10,
+      "Essência": 16
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Nenhum."
+      }
+    ]
+  },
+  {
+    "id": "curiosi",
+    "nome": "Curiosi",
+    "categoria": "Espíritos",
+    "linha": "lob",
+    "pagina": 300,
+    "desc": "Espíritos de enigmas; quem resolve o seu (Percepção + Enigmas dif. 9) ganha 1 Gnose e 1 FV temporária por sucesso.",
+    "tracos": {
+      "Força de Vontade": 5,
+      "Fúria": 3,
+      "Gnose": 9,
+      "Essência": 17
+    },
+    "poderes": [
+      {
+        "nome": "Encantos",
+        "desc": "Iluminar."
+      }
+    ]
+  },
+  {
+    "id": "vampiro-jovem-lob",
+    "nome": "Vampiro Jovem",
+    "categoria": "Vampiros",
+    "linha": "lob",
+    "pagina": 279,
+    "desc": "Vampiro neófito visto pelos Garou: usa sangue para ficar mais forte e se curar, e sofre agravado de garras, fogo e sol.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 2,
+      "Vigor": 2,
+      "Carisma": 3,
+      "Manipulação": 4,
+      "Aparência": 3,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 2, Esportes 2, Briga 1, Computador 2, Esquiva 3, Armas de Fogo 2, Intimidação 2, Investigação 3, Liderança 3, Ocultismo 2, Furtividade 2, Lábia 3",
+    "tracos": {
+      "Força de Vontade": 7,
+      "Sangue": "10–15",
+      "Antecedentes": 7
+    },
+    "poderes": [
+      {
+        "nome": "Poderes como Dons",
+        "desc": "Olho de Cobra, Sentidos Aguçados, Persuasão, Resistência à Dor, Fitar."
+      },
+      {
+        "nome": "Sangue",
+        "desc": "1 ponto cura 1 nível letal ou contusivo; também aumenta Atributos Físicos. Recebe só metade do dano contusivo."
+      }
+    ]
+  },
+  {
+    "id": "vampiro-antigo-lob",
+    "nome": "Vampiro Antigo",
+    "categoria": "Vampiros",
+    "linha": "lob",
+    "pagina": 279,
+    "desc": "Ancião vampiro de grande poder social e místico, perigoso até para uma matilha.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 2,
+      "Vigor": 3,
+      "Carisma": 5,
+      "Manipulação": 6,
+      "Aparência": 4,
+      "Percepção": 3,
+      "Inteligência": 5,
+      "Raciocínio": 4
+    },
+    "habilidades": "Prontidão 2, Briga 1, Esquiva 1, Etiqueta 5, Investigação 5, Liderança 4, Linguística 4, Medicina 2, Armas Brancas 3, Ocultismo 5, Política 4, Lábia 4",
+    "tracos": {
+      "Força de Vontade": 10,
+      "Sangue": "20–30",
+      "Antecedentes": 15
+    },
+    "poderes": [
+      {
+        "nome": "Poderes como Dons",
+        "desc": "Olho de Cobra, Blá-blá-blá, Sentidos Aguçados, Bloqueio Mental, Persuasão, Resistência à Dor, Imposição, Fitar, Loucura."
+      }
+    ]
+  },
+  {
+    "id": "xama-uktena",
+    "nome": "Xamã (Parente Uktena)",
+    "categoria": "Sobrenaturais",
+    "linha": "lob",
+    "pagina": 280,
+    "desc": "Mago xamânico ligado aos Uktena, mestre de espíritos e visões.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 2,
+      "Vigor": 3,
+      "Carisma": 3,
+      "Manipulação": 3,
+      "Aparência": 3,
+      "Percepção": 5,
+      "Inteligência": 3,
+      "Raciocínio": 3
+    },
+    "tracos": {
+      "Força de Vontade": 8,
+      "Parada de Magia": 5,
+      "Antecedentes": 10
+    },
+    "poderes": [
+      {
+        "nome": "Esferas",
+        "desc": "Espírito, Adivinhação, Vida."
+      },
+      {
+        "nome": "Magia",
+        "desc": "Teste dif. 5–8: 1 sucesso insignificante, 3 fere ou mata, 5+ incrível. Falha crítica causa 1 agravado por cada 1."
+      }
+    ]
+  },
+  {
+    "id": "corruptor",
+    "nome": "Corruptor",
+    "categoria": "Sobrenaturais",
+    "linha": "lob",
+    "pagina": 281,
+    "desc": "Mago a serviço da Wyrm, cercado de um bando de fomori.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 2,
+      "Vigor": 4,
+      "Carisma": 5,
+      "Manipulação": 5,
+      "Aparência": 2,
+      "Percepção": 3,
+      "Inteligência": 4,
+      "Raciocínio": 3
+    },
+    "tracos": {
+      "Força de Vontade": 6,
+      "Parada de Magia": 6,
+      "Antecedentes": 10
+    },
+    "poderes": [
+      {
+        "nome": "Esferas",
+        "desc": "Adivinhação, Entropia, Espírito."
+      },
+      {
+        "nome": "Séquito",
+        "desc": "Comanda um bando de fomori."
+      }
+    ]
+  },
+  {
+    "id": "reencarnado",
+    "nome": "Reencarnado (Cadáver Ambulante)",
+    "categoria": "Sobrenaturais",
+    "linha": "lob",
+    "pagina": 281,
+    "desc": "Morto que volta movido por Páthos para cumprir algo inacabado; quase impossível de parar.",
+    "atributos": {
+      "Força": 5,
+      "Destreza": 3,
+      "Vigor": 4,
+      "Carisma": 2,
+      "Manipulação": 2,
+      "Aparência": 2,
+      "Percepção": 2,
+      "Inteligência": 3,
+      "Raciocínio": 4
+    },
+    "tracos": {
+      "Força de Vontade": 8,
+      "Páthos": 10,
+      "Vitalidade": "10 níveis, sem penalidades"
+    },
+    "poderes": [
+      {
+        "nome": "Força morta",
+        "desc": "+3 sucessos automáticos em Força; socos causam dano letal."
+      },
+      {
+        "nome": "Fúria morta",
+        "desc": "1 FV dá 3 ações extras num turno."
+      },
+      {
+        "nome": "Corpo morto",
+        "desc": "+3 dados de absorção, inclusive contra agravado; 1 Páthos recupera 1 nível."
+      }
+    ]
+  },
+  {
+    "id": "inspirado",
+    "nome": "Inspirado (caçador)",
+    "categoria": "Caçadores",
+    "linha": "lob",
+    "pagina": 285,
+    "desc": "Mortal comum tocado por uma força superior para caçar monstros; tem 2–3 poderes e a Característica Convicção.",
+    "tracos": {
+      "Convicção": "3–5 (até 10)"
+    },
+    "escolherPoderes": "2–3",
+    "poderes": [
+      {
+        "nome": "Resistir",
+        "desc": "1 ponto de Convicção ignora Delírio, ilusões e poderes mentais."
+      },
+      {
+        "nome": "Inibir poderes",
+        "desc": "FV resistida: cada sucesso deixa o alvo sem Dons ou Encantos por um turno (ainda muda de forma)."
+      },
+      {
+        "nome": "Arma em chamas",
+        "desc": "A arma causa dano agravado e +1 dado."
+      },
+      {
+        "nome": "Marcar e rastrear",
+        "desc": "FV contra a FV do alvo: rastreia-o por 1 dia por sucesso."
+      }
+    ]
+  },
+  {
+    "id": "agente-governo-lob",
+    "nome": "Agente do Governo",
+    "categoria": "Humanos",
+    "linha": "lob",
+    "pagina": 286,
+    "desc": "Agente federal (FBI, DAS ou similar) treinado e bem equipado, mas mortal.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 3,
+      "Vigor": 2,
+      "Carisma": 3,
+      "Manipulação": 3,
+      "Aparência": 2,
+      "Percepção": 4,
+      "Inteligência": 4,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 2, Esportes 1, Briga 1, Computador 1, Esquiva 1, Condução 2, Expressão 1, Armas de Fogo 2, Intimidação 2, Investigação 3, Direito 3, Liderança 2, Furtividade 2, Lábia 1, Ciência 1",
+    "tracos": {
+      "Força de Vontade": 6,
+      "Antecedentes": 7
+    },
+    "poderes": [
+      {
+        "nome": "Recursos do Estado",
+        "desc": "Acesso a equipe, bancos de dados e reforços."
+      }
+    ]
+  },
+  {
+    "id": "soldado-ciborgue",
+    "nome": "Soldado Ciborgue",
+    "categoria": "Humanos",
+    "linha": "lob",
+    "pagina": 286,
+    "desc": "Soldado modificado pela CyberSolutions, com armas e armadura embutidas.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 3,
+      "Vigor": 4,
+      "Carisma": 2,
+      "Manipulação": 2,
+      "Aparência": 2,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 2, Esportes 2, Briga 3, Esquiva 3, Armas de Fogo 4, Armas Brancas 3",
+    "tracos": {
+      "Força de Vontade": 3,
+      "Antecedentes": 3
+    },
+    "poderes": [
+      {
+        "nome": "Armadura",
+        "desc": "+3 dados de absorção."
+      },
+      {
+        "nome": "Garras ou lâminas",
+        "desc": "Força +1 ou +2."
+      },
+      {
+        "nome": "Força aumentada",
+        "desc": "+2 em Força."
+      },
+      {
+        "nome": "Reflexos",
+        "desc": "2 ações por turno."
+      },
+      {
+        "nome": "Sentidos Cibernéticos e fuzil embutido",
+        "desc": "Sentidos ampliados e arma de fogo no braço."
+      }
+    ]
+  },
+  {
+    "id": "mao-do-morto",
+    "nome": "A Mão do Morto",
+    "categoria": "Caçadores",
+    "linha": "lob",
+    "pagina": 287,
+    "desc": "Esquadrão humano especializado em matar lobisomens (insígnia de ases e oitos, 108). Líder Damon Moore; membros Boetcher, Markham, Hearst, Farnsworth e Williams.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 3,
+      "Vigor": 3,
+      "Carisma": 2,
+      "Manipulação": 2,
+      "Aparência": 2,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 2
+    },
+    "habilidades": "Prontidão 2, Esportes 3, Briga 2, Esquiva 3, Condução 2, Armas de Fogo 3, Liderança 1, Armas Brancas 2, Furtividade 2, Segurança 2, Sobrevivência 2",
+    "tracos": {
+      "Força de Vontade": 6
+    },
+    "poderes": [
+      {
+        "nome": "Imunes ao Delírio",
+        "desc": "Não sofrem o Delírio diante da forma Crinos."
+      },
+      {
+        "nome": "Arsenal de prata",
+        "desc": "Fuzis de assalto com balas de prata, facas de prata, granadas de fragmentação de prata, colete, rádios e spray de pimenta."
+      },
+      {
+        "nome": "Granada biológica",
+        "desc": "Ebola modificado que, nos Garou, inibe a regeneração por (6 − Vigor) horas."
+      },
+      {
+        "nome": "Especialistas",
+        "desc": "Moore: Armas de Fogo e Armas Brancas 4; Boetcher: pilotagem; Markham: FV 8; Hearst: Medicina 3; Farnsworth: Armas Pesadas 4; Williams: Demolições 3."
+      }
+    ]
+  },
+  {
+    "id": "inquisidor-vtm",
+    "nome": "Inquisidor",
+    "categoria": "Caçadores",
+    "linha": "vtm",
+    "pagina": 271,
+    "desc": "Caçador da Sociedade de Leopoldo; pode ser santo ou tão cruel quanto os monstros que caça. Alguns têm Fé Verdadeira 1.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 3,
+      "Vigor": 3,
+      "Carisma": 4,
+      "Manipulação": 3,
+      "Aparência": 2,
+      "Percepção": 3,
+      "Inteligência": 3,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 2, Briga 2, Esquiva 2, Condução 1, Expressão 2, Liderança 3, Armas Brancas (bengala-espada) 3, Ocultismo 3, Furtividade 2, Teologia 3",
+    "tracos": {
+      "Humanidade": "5–10",
+      "Força de Vontade": 9
+    },
+    "poderes": [
+      {
+        "nome": "Equipamento",
+        "desc": "Bengala-espada, rosários, crucifixo, estacas, Bíblia, maçarico."
+      },
+      {
+        "nome": "Fé Verdadeira (alguns)",
+        "desc": "Nível 1, geralmente com Humanidade 9+."
+      }
+    ]
+  },
+  {
+    "id": "agente-governo-vtm",
+    "nome": "Agente do Governo",
+    "categoria": "Humanos",
+    "linha": "vtm",
+    "pagina": 274,
+    "desc": "Agente de terno preto e distintivo que investiga a Máscara por dentro do Estado.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 2,
+      "Vigor": 3,
+      "Carisma": 2,
+      "Manipulação": 3,
+      "Aparência": 2,
+      "Percepção": 3,
+      "Inteligência": 3,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 3, Esportes 2, Briga 3, Computador 1, Esquiva 3, Condução 3, Armas de Fogo 3, Investigação 4, Armas Brancas 2, Ocultismo 1, Política 2, Furtividade 2",
+    "tracos": {
+      "Humanidade": "6–8",
+      "Força de Vontade": 7
+    },
+    "poderes": [
+      {
+        "nome": "Equipamento",
+        "desc": "Pistola pesada, distintivo e identidade, equipamento eletrônico de vigilância."
+      }
+    ]
+  },
+  {
+    "id": "erudito-arcano",
+    "nome": "Erudito do Arcano",
+    "categoria": "Caçadores",
+    "linha": "vtm",
+    "pagina": 274,
+    "desc": "Estudioso da sociedade secreta Arcano, que pesquisa o sobrenatural mais do que o combate.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 2,
+      "Vigor": 2,
+      "Carisma": 2,
+      "Manipulação": 2,
+      "Aparência": 2,
+      "Percepção": 4,
+      "Inteligência": 4,
+      "Raciocínio": 3
+    },
+    "habilidades": "Acadêmicos 4+, Computador 3, Esquiva 1, Condução 1, Etiqueta 2, Expressão 2, Investigação 3, Linguística 2+, Armas Brancas 1, Ocultismo 4, Ciência 3",
+    "tracos": {
+      "Humanidade": 8,
+      "Força de Vontade": 7
+    },
+    "poderes": [
+      {
+        "nome": "Equipamento",
+        "desc": "Laptop, biblioteca completa, carro, coleção de parafernália ocultista, conta bancária gorda."
+      }
+    ]
+  },
+  {
+    "id": "chefao-bandido",
+    "nome": "Chefão / Bandido",
+    "categoria": "Humanos",
+    "linha": "vtm",
+    "pagina": 275,
+    "desc": "Criminoso forte e instruído do submundo; bandidos comuns são mais fracos e chefões da máfia mais espertos.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 3,
+      "Vigor": 3,
+      "Carisma": 3,
+      "Manipulação": 4,
+      "Aparência": 1,
+      "Percepção": 2,
+      "Inteligência": 2,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 2, Esportes 1, Briga 3, Esquiva 2, Condução 2, Finanças 2, Armas de Fogo 3+, Armas Brancas 2, Segurança 3, Furtividade 2, Manha 3+, Lábia 2",
+    "tracos": {
+      "Humanidade": "6 (em geral menos)",
+      "Força de Vontade": 6
+    },
+    "poderes": [
+      {
+        "nome": "Equipamento",
+        "desc": "Submetralhadora, colete à prova de balas, carro, faca, arquivos das operações."
+      }
+    ]
+  },
+  {
+    "id": "servo-de-confianca",
+    "nome": "Servo de Confiança (carniçal)",
+    "categoria": "Vampiros",
+    "linha": "vtm",
+    "pagina": 276,
+    "desc": "Carniçal culto e elegante que cuida dos negócios e da casa de seu regente.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 3,
+      "Vigor": 2,
+      "Carisma": 3,
+      "Manipulação": 3,
+      "Aparência": 4,
+      "Percepção": 3,
+      "Inteligência": 3,
+      "Raciocínio": 3
+    },
+    "habilidades": "Acadêmicos 2, Prontidão 2, Computador 1, Ofícios 2, Esquiva 2, Condução 2, Empatia 3, Etiqueta 4, Finanças 2, Armas de Fogo 2, Liderança 2, Linguística 2, Medicina 2, Armas Brancas 2, Ocultismo 1, Lábia 3",
+    "tracos": {
+      "Humanidade": 7,
+      "Força de Vontade": 4
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Potência 1, talvez outra Disciplina em nível 1."
+      },
+      {
+        "nome": "Carniçal",
+        "desc": "Usa vitae para curar e aumentar Atributos Físicos, absorve letal enquanto tiver vitae e não envelhece; resiste ao frenesi com dificuldade 2 menor."
+      }
+    ]
+  },
+  {
+    "id": "guarda-costas-carnical",
+    "nome": "Guarda-costas Carniçal",
+    "categoria": "Vampiros",
+    "linha": "vtm",
+    "pagina": 276,
+    "desc": "Carniçal treinado para proteger seu regente durante o dia e a noite.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 4,
+      "Vigor": 4,
+      "Carisma": 2,
+      "Manipulação": 2,
+      "Aparência": 2,
+      "Percepção": 4,
+      "Inteligência": 2,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 4, Esportes 2, Briga 4, Esquiva 3, Condução 2, Armas de Fogo 4, Intimidação 3, Investigação 2, Medicina 1, Armas Brancas 3, Ocultismo 1, Furtividade 3, Manha 2",
+    "tracos": {
+      "Humanidade": 5,
+      "Força de Vontade": 5
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Fortitude 1, Potência 1, talvez outra Disciplina em nível 1."
+      }
+    ]
+  },
+  {
+    "id": "lobisomem-adolescente",
+    "nome": "Lobisomem Adolescente",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 278,
+    "desc": "Lupino jovem visto pelos vampiros: rápido, forte e cheio de raiva. O sangue lupino é potente mas torna o vampiro irritadiço e propenso ao frenesi.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 3,
+      "Vigor": 3,
+      "Carisma": 2,
+      "Manipulação": 2,
+      "Aparência": 2,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 3, Empatia com Animais 2, Esportes 2, Briga 3, Ofícios 2, Esquiva 2, Armas de Fogo 2, Intimidação 3, Investigação 2, Liderança 1, Linguística 1, Armas Brancas 2, Ocultismo 1, Furtividade 3, Sobrevivência 3",
+    "tracos": {
+      "Humanidade": 7,
+      "Força de Vontade": 5,
+      "Gnose": 4
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Rapidez 3, Potência 1, Metamorfose 4."
+      }
+    ]
+  },
+  {
+    "id": "lupino-veterano",
+    "nome": "Lupino Veterano",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 278,
+    "desc": "Lobisomem experiente em combate contra vampiros.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 4,
+      "Vigor": 4,
+      "Carisma": 3,
+      "Manipulação": 2,
+      "Aparência": 3,
+      "Percepção": 4,
+      "Inteligência": 3,
+      "Raciocínio": 4
+    },
+    "habilidades": "Prontidão 3, Empatia com Animais 3, Esportes 2, Briga 4, Ofícios 2, Esquiva 2, Expressão 1, Armas de Fogo 2, Intimidação 3, Investigação 2, Liderança 1, Linguística 1, Medicina 1, Armas Brancas 3, Ocultismo 3, Furtividade 3, Sobrevivência 4",
+    "tracos": {
+      "Humanidade": 6,
+      "Força de Vontade": 7,
+      "Gnose": 6
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Rapidez 4, Potência 2, Metamorfose 4."
+      }
+    ]
+  },
+  {
+    "id": "metamorfo-anciao",
+    "nome": "Metamorfo Ancião",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 278,
+    "desc": "Líder lupino de linhagem pura; enfrentá-lo é quase sempre fatal.",
+    "atributos": {
+      "Força": 5,
+      "Destreza": 4,
+      "Vigor": 5,
+      "Carisma": 5,
+      "Manipulação": 3,
+      "Aparência": 3,
+      "Percepção": 5,
+      "Inteligência": 3,
+      "Raciocínio": 4
+    },
+    "habilidades": "Prontidão 4, Empatia com Animais 4, Esportes 4, Briga 5, Ofícios 2, Esquiva 4, Expressão 3, Armas de Fogo 2, Intimidação 4, Investigação 2, Liderança 4, Linguística 1, Medicina 1, Armas Brancas 5, Ocultismo 4, Furtividade 4, Sobrevivência 5",
+    "tracos": {
+      "Humanidade": 5,
+      "Força de Vontade": 9,
+      "Gnose": 8
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Rapidez 5, Dominação 2, Fortitude 2, Ofuscação 3, Potência 3, Metamorfose 4 e outra Disciplina 4."
+      }
+    ]
+  },
+  {
+    "id": "praticante-jovem",
+    "nome": "Praticante Jovem (mago)",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 280,
+    "desc": "Mago iniciante. Magos são mortais, sofrem Paradoxo com magia óbvia e perdem os poderes se Abraçados.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 3,
+      "Vigor": 3,
+      "Carisma": 3,
+      "Manipulação": 4,
+      "Aparência": 3,
+      "Percepção": 2,
+      "Inteligência": 4,
+      "Raciocínio": 4
+    },
+    "habilidades": "Acadêmicos 2, Prontidão 3, Esportes 2, Briga 2, Esquiva 2, Condução 2, Empatia 2, Armas de Fogo 3, Intimidação 2, Armas Brancas 2, Ocultismo 4, Manha 3, Lábia 3",
+    "tracos": {
+      "Sangue": 10,
+      "Força de Vontade": 5
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Auspícios 2, Dominação 2, Presença 1, Metamorfose 1, Taumaturgia 3 (uma ou duas linhas)."
+      },
+      {
+        "nome": "Paradoxo",
+        "desc": "Um 1 em magia muito óbvia faz tudo dar horrivelmente errado."
+      }
+    ]
+  },
+  {
+    "id": "alto-mago",
+    "nome": "Alto Mago",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 280,
+    "desc": "Mago veterano e poderoso, guardado em seu santuário e cercado de livros e rituais.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 2,
+      "Vigor": 2,
+      "Carisma": 3,
+      "Manipulação": 5,
+      "Aparência": 2,
+      "Percepção": 4,
+      "Inteligência": 4,
+      "Raciocínio": 4
+    },
+    "habilidades": "Acadêmicos 5, Prontidão 3, Esquiva 2, Condução 1, Empatia 4, Etiqueta 3, Finanças 2, Armas de Fogo 1, Intimidação 4, Investigação 3, Liderança 2, Linguística 4, Medicina 2, Ocultismo 5, Lábia 3",
+    "tracos": {
+      "Sangue": 12,
+      "Força de Vontade": 9
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Auspícios 4, Quimerismo 3, Dominação 2, Fortitude 2, Ofuscação 4, Presença 3, Taumaturgia 5 (várias linhas e rituais)."
+      }
+    ]
+  },
+  {
+    "id": "abominacao-tecnologica",
+    "nome": "Abominação Tecnológica",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 280,
+    "desc": "Tecnomago blindado de óculos espelhados e sedã preto; seu sangue é venenoso para vampiros.",
+    "atributos": {
+      "Força": 5,
+      "Destreza": 4,
+      "Vigor": 5,
+      "Carisma": 2,
+      "Manipulação": 2,
+      "Aparência": 2,
+      "Percepção": 4,
+      "Inteligência": 3,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 3, Esportes 3, Briga 3, Computador 4, Ofícios (mecânica) 4, Condução 3, Armas de Fogo 4, Intimidação 4, Investigação 4, Direito 2, Armas Brancas 3, Ocultismo 4, Ciência 3, Segurança 5, Furtividade 2, Manha 2",
+    "tracos": {
+      "Sangue": "10 (venenoso: 1 agravado por ponto bebido)",
+      "Força de Vontade": 8
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Auspícios 2, Dominação 2, Fortitude 4, Potência 3, Presença 3."
+      },
+      {
+        "nome": "Equipamento",
+        "desc": "Armas automáticas, blindagem, minicomputador, comunicadores, sedã blindado."
+      }
+    ]
+  },
+  {
+    "id": "pooka-vtm",
+    "nome": "Pooka",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 281,
+    "desc": "Fada trapaceira de traços animais que adora provocar e atormentar.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 5,
+      "Vigor": 2,
+      "Carisma": 4,
+      "Manipulação": 5,
+      "Aparência": 2,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 2
+    },
+    "habilidades": "Prontidão 3, Empatia com Animais 2, Briga 3, Esquiva 5, Performance 3, Ocultismo 2, Segurança 2, Furtividade 5, Lábia 4",
+    "tracos": {
+      "Sangue": 10,
+      "Força de Vontade": 6,
+      "Glamour": 6
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Animalismo 2, Auspícios 2, Quimerismo 3, Rapidez 2, Ofuscação 4, Metamorfose 4."
+      }
+    ]
+  },
+  {
+    "id": "guerreiro-manjaleu",
+    "nome": "Guerreiro Manjaléu",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 281,
+    "desc": "Fada bestial (redcap) que adora carnificina e molha o gorro no sangue das vítimas.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 4,
+      "Vigor": 4,
+      "Carisma": 1,
+      "Manipulação": 3,
+      "Aparência": 1,
+      "Percepção": 3,
+      "Inteligência": 3,
+      "Raciocínio": 4
+    },
+    "habilidades": "Prontidão 3, Esportes 3, Briga 4, Esquiva 2, Intimidação 4, Armas Brancas 4, Manha 3, Segurança 2, Furtividade 2",
+    "tracos": {
+      "Sangue": 10,
+      "Força de Vontade": 5,
+      "Glamour": 5
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Rapidez 3, Fortitude 2, Ofuscação 3, Potência 2."
+      }
+    ]
+  },
+  {
+    "id": "encantadora-sidhe",
+    "nome": "Encantadora Sidhe",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 281,
+    "desc": "Nobre feérica de beleza estonteante, capaz de tecer ilusões que paralisam de medo ou espanto.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 4,
+      "Vigor": 3,
+      "Carisma": 4,
+      "Manipulação": 4,
+      "Aparência": 7,
+      "Percepção": 3,
+      "Inteligência": 3,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 2, Esportes 2, Esquiva 2, Empatia 3, Etiqueta 4, Expressão 4, Intimidação 3, Liderança 4, Ocultismo 4, Performance 4, Lábia 2",
+    "tracos": {
+      "Sangue": 15,
+      "Força de Vontade": 7,
+      "Glamour": 10
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Rapidez 1, Quimerismo 5, Dominação 4, Ofuscação 4, Presença 5."
+      }
+    ]
+  },
+  {
+    "id": "recem-falecido",
+    "nome": "Recém-falecido (aparição)",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 282,
+    "desc": "Fantasma novo, petulante e ainda preso ao mundo dos vivos. Valores após a barra valem nos Reinos Sombrios.",
+    "atributos": {
+      "Força": "0/2",
+      "Destreza": 3,
+      "Vigor": 3,
+      "Carisma": 2,
+      "Manipulação": 3,
+      "Aparência": 2,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 3
+    },
+    "habilidades": "Acadêmicos 1, Prontidão 3, Briga 1, Burocracia 2, Computador 2, Esquiva 2, Empatia 3, Intimidação 2, Investigação 1, Direito 2, Armas Brancas 1, Ocultismo 2, Política 1, Furtividade 1, Manha 1, Lábia 2",
+    "tracos": {
+      "Força de Vontade": 5,
+      "Paixão": 5
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Auspícios 1, Quimerismo 1, Demência 2, Dominação 1, Vicissitude 1."
+      },
+      {
+        "nome": "Aparição",
+        "desc": "Invisível e incorpórea; alimenta-se de emoções e age melhor em lugares de sofrimento."
+      }
+    ]
+  },
+  {
+    "id": "espectro",
+    "nome": "Espectro",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 283,
+    "desc": "Fantasma consumido pelo ódio que vive para causar dor; outros três respondem quando um pede ajuda.",
+    "atributos": {
+      "Força": "0/3",
+      "Destreza": 3,
+      "Vigor": 5,
+      "Carisma": 2,
+      "Manipulação": 3,
+      "Aparência": 1,
+      "Percepção": 2,
+      "Inteligência": 4,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 3, Briga 4, Esquiva 4, Intimidação 3, Armas Brancas 3, Ocultismo 2, Furtividade 2, Manha 3, Lábia 3",
+    "tracos": {
+      "Força de Vontade": 7,
+      "Paixão": 9
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Auspícios 2, Quimerismo 4, Demência 4, Ofuscação 2, Tenebrosidade 3, Presença 2, Metamorfose 2, Vicissitude 4."
+      }
+    ]
+  },
+  {
+    "id": "alma-antiga",
+    "nome": "Alma Antiga",
+    "categoria": "Sobrenaturais",
+    "linha": "vtm",
+    "pagina": 283,
+    "desc": "Aparição morta há séculos, rara e entre as mais temidas.",
+    "atributos": {
+      "Força": "0/4",
+      "Destreza": 5,
+      "Vigor": 5,
+      "Carisma": 3,
+      "Manipulação": 4,
+      "Aparência": 1,
+      "Percepção": 5,
+      "Inteligência": 3,
+      "Raciocínio": 3
+    },
+    "habilidades": "Acadêmicos 2, Prontidão 3, Briga 2, Burocracia 4, Computador 3, Esquiva 3, Empatia 3, Intimidação 3, Investigação 1, Direito 2, Linguística 1, Armas Brancas 2, Ocultismo 2, Política 1, Furtividade 3, Manha 1, Lábia 1",
+    "tracos": {
+      "Força de Vontade": 9,
+      "Paixão": 10
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Auspícios 2, Quimerismo 1, Demência 4, Dominação 3, Presença 2, Taumaturgia 3 (Sedução das Chamas 3, Movimento da Mente 3), Vicissitude 3."
+      }
+    ]
+  },
+  {
+    "id": "lobisomem-jovem-vdta",
+    "nome": "Lobisomem Jovem",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 248,
+    "desc": "Garou medieval novo, que confia em dentes e garras.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 3,
+      "Vigor": 4,
+      "Carisma": 2,
+      "Manipulação": 2,
+      "Aparência": 2,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 4
+    },
+    "habilidades": "Esportes 3, Briga 3, Esquiva 2, Intimidação 3, Empatia com Animais 2, Sobrevivência 3, Ocultismo 1",
+    "tracos": {
+      "Sangue": 10,
+      "Força de Vontade": 3
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Animalismo 2, Auspícios 2, Rapidez 3, Fortitude 2, Potência 2."
+      }
+    ]
+  },
+  {
+    "id": "lobisomem-forte",
+    "nome": "Lobisomem Forte",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 248,
+    "desc": "Garou experiente que carrega um fetiche ou uma klaive de prata.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 3,
+      "Vigor": 5,
+      "Carisma": 2,
+      "Manipulação": 3,
+      "Aparência": 2,
+      "Percepção": 5,
+      "Inteligência": 3,
+      "Raciocínio": 4
+    },
+    "habilidades": "Esportes 4, Briga 4, Esquiva 3, Intimidação 4, Empatia com Animais 3, Liderança 2, Armas Brancas 3, Sobrevivência 4, Ocultismo 2",
+    "tracos": {
+      "Sangue": 12,
+      "Força de Vontade": 5
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Animalismo 3, Auspícios 3, Rapidez 4, Fortitude 3, Potência 3."
+      },
+      {
+        "nome": "Fetiche",
+        "desc": "Objeto que simula uma Disciplina ou poder à escolha do Narrador."
+      }
+    ]
+  },
+  {
+    "id": "lobisomem-anciao-vdta",
+    "nome": "Lobisomem Ancião",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 248,
+    "desc": "Garou veterano com vários fetiches poderosos.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 5,
+      "Vigor": 5,
+      "Carisma": 3,
+      "Manipulação": 3,
+      "Aparência": 2,
+      "Percepção": 5,
+      "Inteligência": 4,
+      "Raciocínio": 4
+    },
+    "habilidades": "Esportes 5, Briga 5, Esquiva 4, Intimidação 5, Empatia com Animais 4, Liderança 4, Armas Brancas 4, Sobrevivência 5, Ocultismo 4",
+    "tracos": {
+      "Sangue": 15,
+      "Força de Vontade": 7
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Auspícios 4, Rapidez 5, Fortitude 5, Potência 5."
+      },
+      {
+        "nome": "Fetiches",
+        "desc": "Vários fetiches mágicos poderosos."
+      }
+    ]
+  },
+  {
+    "id": "feiticeiro-inferior",
+    "nome": "Feiticeiro Inferior",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 254,
+    "desc": "Mago medieval modesto, com ervas, uma pequena biblioteca e um familiar.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 3,
+      "Vigor": 2,
+      "Carisma": 3,
+      "Manipulação": 4,
+      "Aparência": 3,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 4
+    },
+    "habilidades": "Prontidão 3, Briga 1, Esquiva 2, Lábia 3, Artesanato 2, Herborismo 2, Armas Brancas 2, Instrução 3, Linguística 3, Medicina 2, Ocultismo 3",
+    "tracos": {
+      "Sangue": 4,
+      "Força de Vontade": 4
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Distribua 5 níveis conforme o estilo de magia."
+      }
+    ]
+  },
+  {
+    "id": "magico-talentoso",
+    "nome": "Mágico Talentoso",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 254,
+    "desc": "Mago medieval capaz, com santuário ou laboratório e alguns itens mágicos.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 4,
+      "Vigor": 3,
+      "Carisma": 4,
+      "Manipulação": 3,
+      "Aparência": 2,
+      "Percepção": 4,
+      "Inteligência": 4,
+      "Raciocínio": 4
+    },
+    "habilidades": "Prontidão 3, Briga 1, Esquiva 2, Empatia 3, Intimidação 3, Lábia 3, Artesanato 3, Etiqueta 2, Herborismo 4, Armas Brancas 2, Cavalgar 3, Instrução 4, Investigação 2, Direito 1, Linguística 3, Medicina 3, Ocultismo 4, Política 1",
+    "tracos": {
+      "Sangue": 5,
+      "Força de Vontade": 7
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Distribua 10 níveis conforme o estilo de magia."
+      },
+      {
+        "nome": "Itens mágicos",
+        "desc": "De um a três (bola de cristal, varinha...)."
+      }
+    ]
+  },
+  {
+    "id": "arquimago",
+    "nome": "Arquimago",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 254,
+    "desc": "Mestre da magia com torre ou castelo, exército de seguidores e aliados poderosos.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 4,
+      "Vigor": 4,
+      "Carisma": 3,
+      "Manipulação": 5,
+      "Aparência": 3,
+      "Percepção": 4,
+      "Inteligência": 5,
+      "Raciocínio": 4
+    },
+    "habilidades": "Prontidão 4, Esquiva 2, Empatia 4, Intimidação 4, Liderança 2, Lábia 4, Empatia com Animais 2, Artesanato 2, Etiqueta 2, Herborismo 4, Armas Brancas 1, Cavalgar 2, Instrução 5, Investigação 4, Direito 1, Linguística 4, Medicina 4, Ocultismo 5, Política 3",
+    "tracos": {
+      "Sangue": 6,
+      "Força de Vontade": 9
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Distribua 15 níveis conforme o estilo de magia."
+      }
+    ]
+  },
+  {
+    "id": "lemure",
+    "nome": "Lêmure (aparição)",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 258,
+    "desc": "Fantasma jovem, morto há menos de um século, ainda muito preso ao mundo dos vivos.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 3,
+      "Vigor": 2,
+      "Carisma": 3,
+      "Manipulação": 4,
+      "Aparência": 3,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 4
+    },
+    "habilidades": "Prontidão 3, Briga 1, Esquiva 2, Empatia 3, Intimidação 2, Lábia 2, Empatia com Animais 1, Arqueirismo 1, Artesanato 1, Armas Brancas 1, Furtividade 1, Instrução 1, Burocracia 2, Investigação 1, Direito 2, Ocultismo 2, Política 1",
+    "tracos": {
+      "Força de Vontade": 8
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas sugeridas",
+        "desc": "Dominação 1, Quimerismo 1, Auspícios 1, Vicissitude 1."
+      }
+    ]
+  },
+  {
+    "id": "descarnado",
+    "nome": "Descarnado (aparição)",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 258,
+    "desc": "Fantasma experiente, mais paciente e perigoso, com laços já enfraquecidos com os vivos.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 4,
+      "Vigor": 3,
+      "Carisma": 4,
+      "Manipulação": 3,
+      "Aparência": 3,
+      "Percepção": 4,
+      "Inteligência": 4,
+      "Raciocínio": 4
+    },
+    "habilidades": "Prontidão 3, Briga 2, Esquiva 3, Empatia 3, Intimidação 3, Lábia 3, Empatia com Animais 1, Arqueirismo 2, Artesanato 1, Armas Brancas 2, Furtividade 3, Instrução 2, Burocracia 4, Investigação 1, Direito 2, Linguística 1, Ocultismo 2, Política 1",
+    "tracos": {
+      "Força de Vontade": 9
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas sugeridas",
+        "desc": "Auspícios 2, Quimerismo 1, Dominação 2, Presença 1, Vicissitude 3."
+      }
+    ]
+  },
+  {
+    "id": "nobre-sidhe-vdta",
+    "nome": "Nobre Sidhe",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 262,
+    "desc": "Fada nobre, arrogante e insolente, que despacha quem lhe falta com o respeito. Beber sangue de fada vale em dobro, mas tem efeitos colaterais.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 5,
+      "Vigor": 3,
+      "Carisma": 4,
+      "Manipulação": 3,
+      "Aparência": 6,
+      "Percepção": 5,
+      "Inteligência": 2,
+      "Raciocínio": 4
+    },
+    "habilidades": "Arqueirismo 6, Esportes 2, Etiqueta 4, Esquiva 3, Armas Brancas 5, Intimidação 4, Liderança 3, Música 4, Ocultismo 3, Cavalgar 4",
+    "tracos": {
+      "Sangue": 15,
+      "Força de Vontade": 8
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Auspícios 3, Rapidez 3, Quimerismo 3, Ofuscação 4."
+      }
+    ]
+  },
+  {
+    "id": "trapaceiro-pooka",
+    "nome": "Trapaceiro Pooka",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 262,
+    "desc": "Fada brincalhona e pouco maldosa; adora virar cavalo e disparar com o cavaleiro até um lago ou abismo.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 5,
+      "Vigor": 2,
+      "Carisma": 2,
+      "Manipulação": 5,
+      "Aparência": 4,
+      "Percepção": 3,
+      "Inteligência": 2,
+      "Raciocínio": 4
+    },
+    "habilidades": "Representação 3, Prontidão 3, Briga 3, Esquiva 5, Música 4, Crime 3, Ocultismo 2, Furtividade 5, Lábia 4",
+    "tracos": {
+      "Sangue": 10,
+      "Força de Vontade": 6
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Animalismo 2, Auspícios 2, Quimerismo 3, Rapidez 2, Ofuscação 4, Metamorfose 4."
+      },
+      {
+        "nome": "Mudança de Forma",
+        "desc": "Vira instantaneamente qualquer criatura entre um passarinho e um cavalo."
+      }
+    ]
+  },
+  {
+    "id": "duende",
+    "nome": "Duende",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 262,
+    "desc": "Fada doméstica miúda que faz tarefas em segredo em troca de leite e pão; ofende-se fácil com presentes ou agradecimentos.",
+    "atributos": {
+      "Força": 1,
+      "Destreza": 5,
+      "Vigor": 4,
+      "Carisma": 2,
+      "Manipulação": 2,
+      "Aparência": 1,
+      "Percepção": 4,
+      "Inteligência": 3,
+      "Raciocínio": 4
+    },
+    "habilidades": "Artesanato 5, Esquiva 5, Música 2, Crime 4, Ocultismo 2, Furtividade 6",
+    "tracos": {
+      "Sangue": 10,
+      "Força de Vontade": 4
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Animalismo 1, Rapidez 4, Fortitude 3, Ofuscação 4."
+      }
+    ]
+  },
+  {
+    "id": "cao-demoniaco",
+    "nome": "Cão Demoníaco",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 267,
+    "desc": "Cão possuído por um espírito infernal, enorme e negro, de olhos em chamas; nenhum humano o controla de verdade.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 3,
+      "Vigor": 5,
+      "Carisma": 1,
+      "Manipulação": 4,
+      "Aparência": 1,
+      "Percepção": 5,
+      "Inteligência": 2,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 4, Briga 3, Esquiva 2, Intimidação 3, Furtividade 3, Ocultismo 2",
+    "tracos": {
+      "Sangue": 3,
+      "Força de Vontade": 4,
+      "Vitalidade": "OK, OK, −1, −1, −3, −5, Incapacitado"
+    },
+    "poderes": [
+      {
+        "nome": "Ataque",
+        "desc": "Mordida 5 dados + Potência; garra 4 dados + Potência."
+      },
+      {
+        "nome": "Disciplinas",
+        "desc": "Auspícios 2, Rapidez 1, Fortitude 3, Potência 1."
+      }
+    ]
+  },
+  {
+    "id": "duplo",
+    "nome": "Duplo",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 268,
+    "desc": "Sósia demoníaco que assume o lugar da vítima, comete crimes e desaparece, arruinando sua reputação e sanidade.",
+    "atributos": {
+      "Todos": "Iguais aos da vítima copiada"
+    },
+    "habilidades": "Representação 4, Prontidão 3, Esportes 2, Briga 3, Esquiva 3, Empatia 4, Lábia 5, Etiqueta 3, Armas Brancas 2, Furtividade 4, Sobrevivência 3; Conhecimentos iguais aos da vítima",
+    "tracos": {
+      "Sangue": 10,
+      "Força de Vontade": "Igual à da vítima"
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas",
+        "desc": "Auspícios 5, Rapidez 3, Ofuscação 4, Presença 1."
+      },
+      {
+        "nome": "Memórias falsas",
+        "desc": "Implanta lembranças na vítima por Telepatia, fazendo-a duvidar de si."
+      }
+    ]
+  },
+  {
+    "id": "diabrete",
+    "nome": "Diabrete",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 268,
+    "desc": "Familiar demoníaco que muda de forma (gato preto, bode, corvo); dizer seu nome em voz alta pode expulsá-lo.",
+    "atributos": {
+      "Força": 2,
+      "Destreza": 4,
+      "Vigor": 2,
+      "Carisma": 3,
+      "Manipulação": 4,
+      "Aparência": 2,
+      "Percepção": 4,
+      "Inteligência": 3,
+      "Raciocínio": 3
+    },
+    "habilidades": "Prontidão 3, Esportes 3, Briga 2, Esquiva 5, Empatia 3, Lábia 3, Empatia com Animais 2, Etiqueta 3, Furtividade 6, Sobrevivência 2, Instrução 3, Investigação 2, Linguística 3, Ocultismo 4",
+    "tracos": {
+      "Sangue": 4,
+      "Força de Vontade": 5,
+      "Vitalidade": "OK, OK, −1, −3, −5, Incapacitado"
+    },
+    "poderes": [
+      {
+        "nome": "Ataque",
+        "desc": "Garra ou mordida 4 dados agravados."
+      },
+      {
+        "nome": "Disciplinas",
+        "desc": "Animalismo 1, Auspícios 2, Fortitude 3, Ofuscação 4, Metamorfose 4, Vicissitude 1."
+      }
+    ]
+  },
+  {
+    "id": "incubo-sucubo",
+    "nome": "Íncubo / Súcubo",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 268,
+    "desc": "Hospedeiro infernal sedutor que se sustenta da força vital das vítimas; ameaçado, vira um ser horrendo com garras.",
+    "atributos": {
+      "Força": 3,
+      "Destreza": 3,
+      "Vigor": 3,
+      "Carisma": 6,
+      "Manipulação": 6,
+      "Aparência": 7,
+      "Percepção": 3,
+      "Inteligência": 3,
+      "Raciocínio": 4
+    },
+    "habilidades": "Representação 3, Prontidão 3, Esportes 2, Briga 3, Esquiva 4, Empatia 5, Intimidação 4, Lábia 4, Etiqueta 4, Armas Brancas 2, Música 2, Cavalgar 1, Furtividade 2, Linguística 2, Ocultismo 3",
+    "tracos": {
+      "Sangue": 10,
+      "Força de Vontade": 5,
+      "Vitalidade": "OK, OK, −1, −1, −1, −3, −5, Incapacitado"
+    },
+    "poderes": [
+      {
+        "nome": "Ataque",
+        "desc": "Garras 5 dados agravados."
+      },
+      {
+        "nome": "Disciplinas",
+        "desc": "Auspícios 2, Dominação 4, Fortitude 1, Ofuscação 3, Presença 5, Metamorfose 2."
+      }
+    ]
+  },
+  {
+    "id": "servidor-guerreiro",
+    "nome": "Servidor Guerreiro (demônio)",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 269,
+    "desc": "Infantaria do Inferno: brutal, de muitos membros e bocas, costuma se disfarçar de fera ou guerreiro.",
+    "atributos": {
+      "Força": 7,
+      "Destreza": 5,
+      "Vigor": 8,
+      "Carisma": 2,
+      "Manipulação": 6,
+      "Aparência": 0,
+      "Percepção": 6,
+      "Inteligência": 4,
+      "Raciocínio": 5
+    },
+    "habilidades": "Prontidão 3, Esportes 3, Briga 5, Esquiva 3, Intimidação 5, Lábia 3, Armas Brancas 5, Furtividade 2, Instrução 2, Ocultismo 5",
+    "tracos": {
+      "Sangue": 15,
+      "Força de Vontade": 8,
+      "Vitalidade": "12 níveis até Dispersado"
+    },
+    "poderes": [
+      {
+        "nome": "Ataque",
+        "desc": "Garra 9 dados + Potência; mordida 8 dados + Potência."
+      },
+      {
+        "nome": "Disciplinas",
+        "desc": "Auspícios 2, Rapidez 3, Daimoinon 3, Dominação 3, Fortitude 4, Tenebrosidade 2, Potência 2, Presença 3, Metamorfose 2."
+      }
+    ]
+  },
+  {
+    "id": "sedutor",
+    "nome": "Sedutor (demônio)",
+    "categoria": "Sobrenaturais",
+    "linha": "vdta",
+    "pagina": 269,
+    "desc": "Demônio belíssimo e vaidoso que corrompe com amizade e encanto em vez de lutar; atacá-lo é suicídio.",
+    "atributos": {
+      "Força": 4,
+      "Destreza": 5,
+      "Vigor": 6,
+      "Carisma": 8,
+      "Manipulação": 10,
+      "Aparência": 10,
+      "Percepção": 6,
+      "Inteligência": 7,
+      "Raciocínio": 7
+    },
+    "habilidades": "Representação 6, Esportes 4, Briga 4, Esquiva 5, Empatia 8, Intimidação 8, Liderança 4, Lábia 10, Etiqueta 10, Armas Brancas 5, Cavalgar 3, Furtividade 4, Instrução 5, Burocracia 6, Linguística 5, Ocultismo 6",
+    "tracos": {
+      "Sangue": 25,
+      "Força de Vontade": 10,
+      "Vitalidade": "11 níveis até Dispersado"
+    },
+    "poderes": [
+      {
+        "nome": "Ataque",
+        "desc": "Laceração ou mordida 7 dados + Potência."
+      },
+      {
+        "nome": "Disciplinas",
+        "desc": "Auspícios 4, Rapidez 3, Quimerismo 5, Demência 2, Daimoinon 5, Dominação 5, Fortitude 5, Ofuscação 5, Tenebrosidade 3, Potência 2, Presença 5, Serpentis 2."
+      }
+    ]
+  },
+  {
+    "id": "caiaphas-smith",
+    "nome": "Caiaphas Smith",
+    "categoria": "Caçadores",
+    "linha": "cac",
+    "pagina": 75,
+    "desc": "Caçador puritano nascido em 1815 na Nova Inglaterra, ainda vivo de forma inexplicável. Caça por dever e ódio.",
+    "tracos": {
+      "Natureza": "Fanático",
+      "Comportamento": "Fanático",
+      "Motivo": "Dever / Ódio",
+      "Método": "Religioso / Armamento Pesado"
+    },
+    "poderes": [
+      {
+        "nome": "Longevidade",
+        "desc": "Mortal que viveu muito além do normal; traços exatos a conferir no PDF."
+      }
+    ]
+  },
+  {
+    "id": "deborah-keller",
+    "nome": "Deborah Rose Keller",
+    "categoria": "Caçadores",
+    "linha": "cac",
+    "pagina": 75,
+    "desc": "Dona de casa que virou caçadora para proteger a família e se vingar.",
+    "tracos": {
+      "Natureza": "Mártir",
+      "Comportamento": "Samaritano",
+      "Motivo": "Dever / Vingança",
+      "Método": "Investigativo"
+    },
+    "poderes": [
+      {
+        "nome": "Persistência",
+        "desc": "Investiga com paciência e conhece bem a vizinhança; traços a conferir no PDF."
+      }
+    ]
+  },
+  {
+    "id": "dennis-quincy",
+    "nome": "Dennis Quincy, o Incrível Danny",
+    "categoria": "Caçadores",
+    "linha": "cac",
+    "pagina": 75,
+    "desc": "Mágico de palco cético que desmascara o sobrenatural e acabou achando o real.",
+    "tracos": {
+      "Comportamento": "Diretor",
+      "Motivo": "Curiosidade",
+      "Método": "Científico"
+    },
+    "poderes": [
+      {
+        "nome": "Truques de palco",
+        "desc": "Ilusionismo, prestidigitação e olho treinado para fraudes."
+      }
+    ]
+  },
+  {
+    "id": "walker-grimes",
+    "nome": "Walker Grimes",
+    "categoria": "Caçadores",
+    "linha": "cac",
+    "pagina": 75,
+    "desc": "Vampiro Caitiff que caça outros vampiros por vingança, manipulando quem estiver por perto.",
+    "tracos": {
+      "Natureza": "Valentão",
+      "Comportamento": "Galante",
+      "Geração": "13ª (leitura incerta)",
+      "Motivo": "Vingança",
+      "Método": "Manipulativo"
+    },
+    "poderes": [
+      {
+        "nome": "Vampiro",
+        "desc": "Tem as capacidades de um Membro jovem; Disciplinas a conferir no PDF."
+      }
+    ]
+  },
+  {
+    "id": "arctos",
+    "nome": "Arctos (Christopher Barrow)",
+    "categoria": "Caçadores",
+    "linha": "cac",
+    "pagina": 75,
+    "desc": "Mago que caça vampiros para controlar, estudar e ganhar poder.",
+    "tracos": {
+      "Natureza": "Autocrata",
+      "Comportamento": "Conformista",
+      "Motivo": "Controle / Curiosidade / Poder",
+      "Método": "Místico / Manipulativo"
+    },
+    "poderes": [
+      {
+        "nome": "Magia",
+        "desc": "Usa magia de mago; poderes a conferir no PDF."
+      }
+    ]
+  },
+  {
+    "id": "kanglor",
+    "nome": "Kanglor (Tom Barker)",
+    "categoria": "Caçadores",
+    "linha": "cac",
+    "pagina": 75,
+    "desc": "Lupino que caça vampiros movido por vingança e ódio.",
+    "tracos": {
+      "Natureza": "Valentão",
+      "Comportamento": "Valentão",
+      "Motivo": "Vingança / Ódio",
+      "Método": "Armamento Pesado / Místico"
+    },
+    "poderes": [
+      {
+        "nome": "Lobisomem",
+        "desc": "Muda de forma, regenera e causa dano agravado com garras e presas."
+      }
+    ]
+  },
+  {
+    "id": "young-blood",
+    "nome": "Motoqueiro Young Blood",
+    "categoria": "Caçadores",
+    "linha": "cac",
+    "pagina": 55,
+    "desc": "Carniçal de uma gangue de motoqueiros de Los Angeles que caça vampiros para beber vitae; os Membros sabem quem eles são.",
+    "habilidades": "Condução 4 (motos), Briga, Armas Brancas (faca), Ocultismo 2, Reparos",
+    "tracos": {
+      "Defeito": "Caçado por Membros (5)"
+    },
+    "poderes": [
+      {
+        "nome": "Disciplinas equivalentes",
+        "desc": "Potência (carniçal)."
+      },
+      {
+        "nome": "Vício em vitae",
+        "desc": "Caça por diversão e para manter o estoque de sangue vampírico."
+      }
+    ]
+  }
+]

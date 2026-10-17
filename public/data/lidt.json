@@ -1,0 +1,3358 @@
+{
+ "id": "lidt",
+ "nome": "Lobisomem: A Idade das Trevas",
+ "livro": "Lobisomem: A Idade das Trevas (suplemento; regras gerais do módulo básico de Lobisomem: O Apocalipse, 3ª ed.)",
+ "tipo": "lobisomem",
+ "epoca": "medieval",
+ "criacao": {
+  "atributos": [
+   7,
+   5,
+   3
+  ],
+  "habilidades": [
+   13,
+   9,
+   5
+  ],
+  "antecedentes": 5,
+  "maxHabilidade": 3,
+  "bonus": 15,
+  "custosBonus": {
+   "atributo": 5,
+   "habilidade": 2,
+   "antecedente": 1,
+   "dom": 7,
+   "furia": 1,
+   "gnose": 2,
+   "forcaVontade": 1
+  },
+  "passos": [
+   "Conceito: escolha um conceito, a raça, o augúrio e a tribo.",
+   "Atributos: distribua 7/5/3 entre Físicos, Sociais e Mentais (todos começam em 1).",
+   "Habilidades: distribua 13/9/5 entre Talentos, Perícias e Conhecimentos (máx. 3 cada).",
+   "Vantagens: 5 pontos de Antecedentes (respeitando a tribo), 3 Dons de Nível 1 (um da raça, um do augúrio, um da tribo), Renome pelo augúrio, Posto 1.",
+   "Fúria pelo augúrio, Gnose pela raça, Força de Vontade pela tribo.",
+   "15 pontos de bônus; anote a fraqueza da tribo se o Narrador usar a regra opcional."
+  ],
+  "pagina": 122
+ },
+ "atributos": {
+  "fisicos": [
+   {
+    "id": "forca",
+    "nome": "Força",
+    "desc": "Potência física bruta: erguer, empurrar, golpear. (Básico p. 107)"
+   },
+   {
+    "id": "destreza",
+    "nome": "Destreza",
+    "desc": "Agilidade, coordenação e precisão de movimentos. (Básico p. 107)"
+   },
+   {
+    "id": "vigor",
+    "nome": "Vigor",
+    "desc": "Resistência, fôlego e capacidade de suportar dano. (Básico p. 107)"
+   }
+  ],
+  "sociais": [
+   {
+    "id": "carisma",
+    "nome": "Carisma",
+    "desc": "Presença e capacidade de atrair e inspirar os outros. (Básico p. 108)"
+   },
+   {
+    "id": "manipulacao",
+    "nome": "Manipulação",
+    "desc": "Habilidade de convencer e levar os outros a fazer o que você quer. (Básico p. 108)"
+   },
+   {
+    "id": "aparencia",
+    "nome": "Aparência",
+    "desc": "Beleza e impressão visual que você causa. (Básico p. 109)"
+   }
+  ],
+  "mentais": [
+   {
+    "id": "percepcao",
+    "nome": "Percepção",
+    "desc": "Atenção ao ambiente e aos detalhes. (Básico p. 109)"
+   },
+   {
+    "id": "inteligencia",
+    "nome": "Inteligência",
+    "desc": "Memória, raciocínio lógico e conhecimento. (Básico p. 110)"
+   },
+   {
+    "id": "raciocinio",
+    "nome": "Raciocínio",
+    "desc": "Rapidez de pensamento e reação sob pressão. (Básico p. 110)"
+   }
+  ]
+ },
+ "habilidades": {
+  "talentos": [
+   {
+    "id": "prontidao",
+    "nome": "Prontidão",
+    "desc": "Notar perigos e coisas fora do lugar."
+   },
+   {
+    "id": "esportes",
+    "nome": "Esportes",
+    "desc": "Correr, saltar, nadar, escalar e arremessar; inclui a caça."
+   },
+   {
+    "id": "briga",
+    "nome": "Briga",
+    "desc": "Luta desarmada, inclusive garras e mordidas."
+   },
+   {
+    "id": "esquiva",
+    "nome": "Esquiva",
+    "desc": "Sair do caminho de golpes e flechas."
+   },
+   {
+    "id": "empatia",
+    "nome": "Empatia",
+    "desc": "Entender emoções e intenções alheias."
+   },
+   {
+    "id": "interpretacao",
+    "nome": "Interpretação",
+    "desc": "Comunicar ideias e emoções pela fala ou pela arte (equivale a Expressão)."
+   },
+   {
+    "id": "intimidacao",
+    "nome": "Intimidação",
+    "desc": "Assustar e impor-se pela ameaça."
+   },
+   {
+    "id": "instinto-primitivo",
+    "nome": "Instinto Primitivo",
+    "desc": "Ligação com a fera interior; usado para mudar de forma e rastrear."
+   },
+   {
+    "id": "crime",
+    "nome": "Crime",
+    "desc": "Furtos, falsificação, venenos e fechaduras; dificuldade típica 8.",
+    "pagina": 96
+   },
+   {
+    "id": "labia",
+    "nome": "Lábia",
+    "desc": "Enrolar, mentir e convencer na conversa."
+   }
+  ],
+  "pericias": [
+   {
+    "id": "empatia-com-animais",
+    "nome": "Empatia com Animais",
+    "desc": "Lidar com animais; Garou têm +2 dif. com cavalos."
+   },
+   {
+    "id": "arqueirismo",
+    "nome": "Arqueirismo",
+    "desc": "Usar arco ou besta.",
+    "pagina": 97
+   },
+   {
+    "id": "artesanato",
+    "nome": "Artesanato",
+    "desc": "Fabricar objetos; útil para criar fetiches.",
+    "pagina": 97
+   },
+   {
+    "id": "protocolo",
+    "nome": "Protocolo",
+    "desc": "Etiqueta das cortes e da hierarquia feudal."
+   },
+   {
+    "id": "lideranca",
+    "nome": "Liderança",
+    "desc": "Comandar e inspirar grupos."
+   },
+   {
+    "id": "armas-brancas",
+    "nome": "Armas Brancas",
+    "desc": "Combate com espadas, machados, lanças e afins."
+   },
+   {
+    "id": "atuacao",
+    "nome": "Atuação",
+    "desc": "Cantar, tocar, recitar e atuar diante de plateias."
+   },
+   {
+    "id": "cavalgar",
+    "nome": "Cavalgar",
+    "desc": "Montar e lutar a cavalo; Garou têm +2 de dificuldade.",
+    "pagina": 97
+   },
+   {
+    "id": "furtividade",
+    "nome": "Furtividade",
+    "desc": "Mover-se sem ser visto nem ouvido."
+   },
+   {
+    "id": "sobrevivencia",
+    "nome": "Sobrevivência",
+    "desc": "Viver na natureza: abrigo, comida e orientação."
+   }
+  ],
+  "conhecimentos": [
+   {
+    "id": "academicos",
+    "nome": "Acadêmicos",
+    "desc": "Letras, história e filosofia; alfabetizar-se exige ao menos 1 ponto (o texto chama de Instrução).",
+    "pagina": 98
+   },
+   {
+    "id": "enigmas",
+    "nome": "Enigmas",
+    "desc": "Resolver charadas e mistérios; muito valorizado pelos Garou."
+   },
+   {
+    "id": "investigacao",
+    "nome": "Investigação",
+    "desc": "Encontrar pistas e reconstruir fatos."
+   },
+   {
+    "id": "direito",
+    "nome": "Direito",
+    "desc": "Leis feudais, canônicas e costumes locais."
+   },
+   {
+    "id": "linguistica",
+    "nome": "Linguística",
+    "desc": "Idiomas extras: cada ponto dobra o número de línguas (1, 2, 4...).",
+    "pagina": 99
+   },
+   {
+    "id": "medicina",
+    "nome": "Medicina",
+    "desc": "Ervas, sangrias e tratamento de ferimentos."
+   },
+   {
+    "id": "ocultismo",
+    "nome": "Ocultismo",
+    "desc": "Saber sobre o sobrenatural, a Umbra e a Wyrm."
+   },
+   {
+    "id": "politica",
+    "nome": "Política",
+    "desc": "Intrigas de nobres, Igreja e cidades."
+   },
+   {
+    "id": "rituais",
+    "nome": "Rituais",
+    "desc": "Conhecimento dos ritos Garou; limita os rituais que você conhece."
+   },
+   {
+    "id": "ciencia",
+    "nome": "Ciência",
+    "desc": "Filosofia natural, alquimia e saber prático da época."
+   }
+  ]
+ },
+ "antecedentes": [
+  {
+   "id": "aliados",
+   "nome": "Aliados",
+   "desc": "Humanos que ajudam você: camponeses, clérigos, nobres. Funciona como no básico (p. 120).",
+   "pagina": 123
+  },
+  {
+   "id": "contatos",
+   "nome": "Contatos",
+   "desc": "Fontes de informação nas aldeias, cortes e estradas (Básico p. 121).",
+   "pagina": 123
+  },
+  {
+   "id": "fetiche",
+   "nome": "Fetiche",
+   "desc": "Objeto com um espírito preso; a pontuação soma os níveis (Básico p. 121).",
+   "pagina": 123
+  },
+  {
+   "id": "parentes",
+   "nome": "Parentes",
+   "desc": "Humanos ou lobos com sangue Garou, imunes ao Delírio (Básico p. 122).",
+   "pagina": 123
+  },
+  {
+   "id": "mentor",
+   "nome": "Mentor",
+   "desc": "Um Garou mais velho que o orienta (Básico p. 121).",
+   "pagina": 123
+  },
+  {
+   "id": "vidas-passadas",
+   "nome": "Vidas Passadas",
+   "desc": "Contato com os ancestrais; equivale a Ancestrais do básico (p. 120).",
+   "pagina": 123
+  },
+  {
+   "id": "raca-pura",
+   "nome": "Raça Pura",
+   "desc": "Linhagem famosa: +1 dado por ponto em testes Sociais com Garou (Básico p. 122).",
+   "pagina": 123
+  },
+  {
+   "id": "recursos",
+   "nome": "Recursos",
+   "desc": "Riqueza medieval: de pouco acima de servo (1) a nobre com castelo (5).",
+   "pagina": 99
+  },
+  {
+   "id": "rituais",
+   "nome": "Rituais",
+   "desc": "Rituais conhecidos no início; equivale a Ritos do básico (p. 123).",
+   "pagina": 123
+  },
+  {
+   "id": "totem",
+   "nome": "Totem",
+   "desc": "Pontos da matilha para o totem; único Antecedente que sobe com XP (Básico p. 123).",
+   "pagina": 123
+  }
+ ],
+ "arquetipos": [
+  {
+   "id": "autocrata",
+   "nome": "Autocrata",
+   "desc": "Acredita que a estabilidade exige ordem e quer impô-la.",
+   "pagina": 109,
+   "recuperarFV": "Ao liderar um grupo e realizar uma tarefa significativa."
+  },
+  {
+   "id": "barbaro",
+   "nome": "Bárbaro",
+   "desc": "Despreza a civilização e valoriza a honra e a força.",
+   "pagina": 110,
+   "recuperarFV": "Quando você ou seu código de honra triunfam claramente sobre algo \"civilizado\"."
+  },
+  {
+   "id": "celebrante",
+   "nome": "Celebrante",
+   "desc": "Vive de uma paixão que não consegue esconder.",
+   "pagina": 110,
+   "recuperarFV": "Ao celebrar sua paixão ou converter alguém a ela."
+  },
+  {
+   "id": "comediante",
+   "nome": "Comediante",
+   "desc": "Transforma a tristeza em piada.",
+   "pagina": 111,
+   "recuperarFV": "Ao levantar o ânimo dos outros com humor, escapando da própria dor."
+  },
+  {
+   "id": "crianca",
+   "nome": "Criança",
+   "desc": "Jovem ou imaturo, quer que cuidem dele.",
+   "pagina": 110,
+   "recuperarFV": "Quando alguém cuida de você ou ao ter grande sucesso apesar do jeito infantil."
+  },
+  {
+   "id": "defensor",
+   "nome": "Defensor",
+   "desc": "Acha que os fortes devem proteger os fracos (ou um patrono).",
+   "pagina": 110,
+   "recuperarFV": "Ao defender com sucesso seu protegido ou patrono de uma ameaça."
+  },
+  {
+   "id": "fanatico",
+   "nome": "Fanático",
+   "desc": "É consumido por uma causa.",
+   "pagina": 110,
+   "recuperarFV": "Ao promover a causa ou se sacrificar por ela."
+  },
+  {
+   "id": "galante",
+   "nome": "Galante",
+   "desc": "Vive com estilo, elegância e romance.",
+   "pagina": 110,
+   "recuperarFV": "Ao obter uma grande vitória com estilo ou ouvir suas façanhas recontadas."
+  },
+  {
+   "id": "inovador",
+   "nome": "Inovador",
+   "desc": "Sempre procura uma maneira melhor de fazer as coisas.",
+   "pagina": 111,
+   "recuperarFV": "Quando consegue criar um jeito novo de fazer algo."
+  },
+  {
+   "id": "juiz",
+   "nome": "Juiz",
+   "desc": "Busca justiça e a verdade para todos.",
+   "pagina": 111,
+   "recuperarFV": "Ao desvendar a verdade ou fazer partes rivais aceitarem seu julgamento."
+  },
+  {
+   "id": "malandro",
+   "nome": "Malandro",
+   "desc": "Só pensa em si e ignora as regras.",
+   "pagina": 113,
+   "recuperarFV": "Quando o egoísmo lhe traz lucro, sobretudo sem riscos."
+  },
+  {
+   "id": "monstro",
+   "nome": "Monstro",
+   "desc": "Crê que Deus o fez um monstro e aceita o papel.",
+   "pagina": 112,
+   "recuperarFV": "Ao cometer atos malignos que se encaixam no papel que escolheu."
+  },
+  {
+   "id": "penitente",
+   "nome": "Penitente",
+   "desc": "Sabe que pecou e busca o perdão.",
+   "pagina": 112,
+   "recuperarFV": "Ao remediar os pecados recentes de forma proporcional ao crime."
+  },
+  {
+   "id": "rebelde",
+   "nome": "Rebelde",
+   "desc": "Cansado de ordens, desafia a autoridade.",
+   "pagina": 113,
+   "recuperarFV": "Ao causar dano à ordem que despreza."
+  },
+  {
+   "id": "samaritano",
+   "nome": "Samaritano",
+   "desc": "Quer aliviar o sofrimento alheio com amor.",
+   "pagina": 110,
+   "recuperarFV": "Ao ajudar alguém em necessidade ou se sacrificar pelo bem de outro."
+  },
+  {
+   "id": "sobrevivente",
+   "nome": "Sobrevivente",
+   "desc": "Sempre dá um jeito de sobreviver.",
+   "pagina": 113,
+   "recuperarFV": "Ao superar uma situação difícil pela própria esperteza ou ensinar alguém a fazê-lo."
+  },
+  {
+   "id": "solitario",
+   "nome": "Solitário",
+   "desc": "Nunca se encaixou e prefere agir só.",
+   "pagina": 111,
+   "recuperarFV": "Ao realizar sozinho algo importante."
+  },
+  {
+   "id": "tirano",
+   "nome": "Tirano",
+   "desc": "Só ele faz as coisas direito; quer tudo do seu jeito.",
+   "pagina": 113,
+   "recuperarFV": "Ao ter sucesso por obstinação, eficiência e atenção aos detalhes."
+  }
+ ],
+ "qualidades": [
+  {
+   "id": "sentidos-agucados",
+   "nome": "Sentidos Aguçados",
+   "desc": "−2 de dificuldade em Percepção com um sentido; pode ser comprada para sentidos diferentes.",
+   "pagina": 100,
+   "custo": [
+    1
+   ],
+   "categoria": "Física",
+   "defeito": false
+  },
+  {
+   "id": "nobreza",
+   "nome": "Nobreza",
+   "desc": "Título de nobreza; com Recursos 2+ e mais 2 pontos, é dono das terras da seita. Proibida a Roedores de Ossos.",
+   "pagina": 100,
+   "custo": [
+    1,
+    5
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "aliado-vampirico",
+   "nome": "Aliado Vampírico",
+   "desc": "Um vampiro que, por algum motivo, ajuda o Garou.",
+   "pagina": 100,
+   "custo": [
+    4
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": false
+  }
+ ],
+ "xp": [
+  {
+   "nome": "Atributo",
+   "modo": "x",
+   "valor": 4
+  },
+  {
+   "nome": "Habilidade",
+   "modo": "x",
+   "valor": 2
+  },
+  {
+   "nome": "Nova Habilidade",
+   "modo": "novo",
+   "valor": 3
+  },
+  {
+   "nome": "Dom da própria raça, augúrio ou tribo (nível do Dom ×)",
+   "modo": "x",
+   "valor": 3
+  },
+  {
+   "nome": "Dom de outra raça, augúrio ou tribo (nível do Dom ×)",
+   "modo": "x",
+   "valor": 5
+  },
+  {
+   "nome": "Fúria",
+   "modo": "x",
+   "valor": 1
+  },
+  {
+   "nome": "Gnose",
+   "modo": "x",
+   "valor": 2
+  },
+  {
+   "nome": "Força de Vontade",
+   "modo": "x",
+   "valor": 1
+  },
+  {
+   "nome": "Totem (por ponto; único Antecedente comprável com XP)",
+   "modo": "fixo",
+   "valor": 3
+  }
+ ],
+ "vitalidade": [
+  {
+   "nome": "Escoriado",
+   "penalidade": 0
+  },
+  {
+   "nome": "Machucado",
+   "penalidade": -1
+  },
+  {
+   "nome": "Ferido",
+   "penalidade": -1
+  },
+  {
+   "nome": "Ferido Gravemente",
+   "penalidade": -2
+  },
+  {
+   "nome": "Espancado",
+   "penalidade": -2
+  },
+  {
+   "nome": "Aleijado",
+   "penalidade": -5
+  },
+  {
+   "nome": "Incapacitado",
+   "penalidade": null
+  }
+ ],
+ "conceitos": [
+  "Mercenário",
+  "Apóstolo Peregrino",
+  "Lobo da Grande Floresta",
+  "Nobre Orgulhoso",
+  "Camponês Rebelde",
+  "Bailio",
+  "Mercador",
+  "Erudito",
+  "Amigo das Fadas",
+  "Protetor das Florestas",
+  "Lobo do Mar",
+  "Administrador"
+ ],
+ "racas": [
+  {
+   "id": "hominideo",
+   "nome": "Hominídeo",
+   "desc": "Nascido de mãe humana, num mundo que ainda teme e caça lobos. Seus Dons quase não mudaram.",
+   "pagina": 96,
+   "gnose": 1,
+   "donsIniciais": [
+    "persuasao",
+    "simular-odor-de-homem",
+    "mestre-do-fogo"
+   ],
+   "restricoes": "A tabela de criação lista só Persuasão e Simular Odor de Homem como iniciais."
+  },
+  {
+   "id": "impuro",
+   "nome": "Impuro",
+   "desc": "Filho proibido de dois Garou; raro e desprezado. Nasce em Crinos, é estéril e traz uma deformidade (lista no básico, p. 60–61).",
+   "pagina": 96,
+   "gnose": 3,
+   "donsIniciais": [
+    "criar-elemento",
+    "sentir-a-wyrm",
+    "raiva-primordial"
+   ],
+   "restricoes": "+1 de dificuldade em todos os testes Sociais com outros Garou. A tabela de criação lista só Criar Elemento e Sentir a Wyrm."
+  },
+  {
+   "id": "lupino",
+   "nome": "Lupino",
+   "desc": "Nascido lobo nas grandes florestas medievais; instintivo e estranho às coisas dos homens.",
+   "pagina": 96,
+   "gnose": 5,
+   "donsIniciais": [
+    "sentidos-agucados",
+    "sentir-a-caca"
+   ],
+   "restricoes": "Na criação, não pode pôr pontos iniciais (só bônus) em Arqueirismo, Artesanato, Cavalgar, Acadêmicos/Instrução, Protocolo, Direito, Linguística, Medicina, Política e Ciência."
+  }
+ ],
+ "auspicios": [
+  {
+   "id": "ragabash",
+   "nome": "Ragabash",
+   "desc": "O trapaceiro: questiona tradições, espiona e sabota; mantém os outros Garou honestos. (Básico p. 63)",
+   "pagina": 123,
+   "lua": "Lua Nova",
+   "furia": 1,
+   "renome": {
+    "gloria": 0,
+    "honra": 0,
+    "sabedoria": 0,
+    "total": 3
+   },
+   "donsIniciais": [
+    "embacamento-da-propria-forma",
+    "simular-o-cheiro-de-agua-corrente",
+    "correr-na-neve"
+   ]
+  },
+  {
+   "id": "theurge",
+   "nome": "Theurge",
+   "desc": "O vidente: mestre de rituais e mediador com os espíritos. (Básico p. 64)",
+   "pagina": 123,
+   "lua": "Lua Crescente",
+   "furia": 2,
+   "renome": {
+    "gloria": 0,
+    "honra": 0,
+    "sabedoria": 3
+   },
+   "donsIniciais": [
+    "toque-da-mae",
+    "sentir-a-wyrm",
+    "comunicacao-com-espiritos"
+   ]
+  },
+  {
+   "id": "philodox",
+   "nome": "Philodox",
+   "desc": "O juiz: guarda a Litania e resolve disputas. (Básico p. 65)",
+   "pagina": 123,
+   "lua": "Meia-lua",
+   "furia": 3,
+   "renome": {
+    "gloria": 0,
+    "honra": 3,
+    "sabedoria": 0
+   },
+   "donsIniciais": [
+    "resistencia-a-dor",
+    "faro-para-a-forma-verdadeira",
+    "verdade-de-gaia"
+   ]
+  },
+  {
+   "id": "galliard",
+   "nome": "Galliard",
+   "desc": "O dançarino da lua: guarda a história, conta as lendas e inspira a matilha. (Básico p. 66)",
+   "pagina": 123,
+   "lua": "Lua Gibosa",
+   "furia": 4,
+   "renome": {
+    "gloria": 2,
+    "honra": 0,
+    "sabedoria": 1
+   },
+   "donsIniciais": [
+    "comunicacao-com-animais",
+    "chamado-da-wyld",
+    "comunicacao-telepatica"
+   ]
+  },
+  {
+   "id": "ahroun",
+   "nome": "Ahroun",
+   "desc": "O guerreiro: linha de frente contra a Wyrm e líder em tempo de guerra. (Básico p. 67)",
+   "pagina": 123,
+   "lua": "Lua Cheia",
+   "furia": 5,
+   "renome": {
+    "gloria": 2,
+    "honra": 1,
+    "sabedoria": 0
+   },
+   "donsIniciais": [
+    "garras-afiadas",
+    "inspiracao",
+    "toque-da-queda"
+   ]
+  }
+ ],
+ "tribos": [
+  {
+   "id": "furias-negras",
+   "nome": "Fúrias Negras",
+   "desc": "Guerreiras da Wyld e protetoras das mulheres, perseguidas pela Igreja como bruxas.",
+   "pagina": 62,
+   "totem": "Pégaso",
+   "forcaVontade": 3,
+   "restricoes": "Sem restrições.",
+   "donsIniciais": [
+    "sentidos-agucados",
+    "pele-de-homem",
+    "sentir-a-wyrm"
+   ],
+   "fraqueza": "Raiva: −1 de dificuldade nos testes de frenesi provocados por homens."
+  },
+  {
+   "id": "roedores-de-ossos",
+   "nome": "Roedores de Ossos",
+   "desc": "Os mais pobres dos Garou, vivendo entre mendigos, leprosos e famintos das cidades.",
+   "pagina": 64,
+   "totem": "Rato",
+   "forcaVontade": 4,
+   "restricoes": "Não podem ter Raça Pura nem Recursos.",
+   "donsIniciais": [
+    "culinaria",
+    "simular-cheiro-de-mel-doce",
+    "restos-da-despensa"
+   ],
+   "fraqueza": "Desprezados: +1 de dificuldade em testes Sociais com outras tribos."
+  },
+  {
+   "id": "filhos-de-gaia",
+   "nome": "Filhos de Gaia",
+   "desc": "Pacificadores e curandeiros que tentam unir a Nação Garou em tempos de cruzadas.",
+   "pagina": 68,
+   "totem": "Unicórnio",
+   "forcaVontade": 4,
+   "restricoes": "Sem restrições.",
+   "donsIniciais": [
+    "bencao-de-eva",
+    "toque-da-mae",
+    "resistencia-a-dor"
+   ],
+   "fraqueza": "Véu Fraco: quem os vê ganha +5 na tabela de Delírio."
+  },
+  {
+   "id": "fianna",
+   "nome": "Fianna",
+   "desc": "Bardos celtas das Ilhas Britânicas, ligados às fadas, às canções e às velhas tradições.",
+   "pagina": 74,
+   "totem": "Cervo",
+   "forcaVontade": 3,
+   "restricoes": "Sem restrições.",
+   "donsIniciais": [
+    "luz-das-fadas",
+    "persuasao",
+    "resistencia-a-toxinas"
+   ],
+   "fraqueza": "Exaltação: +1 de dificuldade nos testes de Força de Vontade."
+  },
+  {
+   "id": "crias-de-fenris",
+   "nome": "Crias de Fenris (Fenrir)",
+   "desc": "Guerreiros nórdicos e germânicos que vivem pela glória da batalha; nas Ilhas Britânicas são chamados Crias de Fenris.",
+   "pagina": 71,
+   "totem": "Fenris",
+   "forcaVontade": 3,
+   "restricoes": "Não podem ter Contatos.",
+   "donsIniciais": [
+    "garras-afiadas",
+    "resistencia-a-dor",
+    "correr-na-neve"
+   ],
+   "fraqueza": "Intolerância: odeiam algo à escolha (covardia, avareza, fraqueza...)."
+  },
+  {
+   "id": "garras-vermelhas",
+   "nome": "Garras Vermelhas",
+   "desc": "Lobos que veem a expansão humana como a maior ameaça a Gaia.",
+   "pagina": 77,
+   "totem": "Grifo",
+   "forcaVontade": 3,
+   "restricoes": "Não podem ter Aliados, Contatos nem Recursos.",
+   "donsIniciais": [
+    "comunicacao-com-animais",
+    "grito-da-presa",
+    "simular-o-cheiro-de-agua-corrente"
+   ],
+   "fraqueza": "Marca da Besta: +2 de dificuldade em testes Sociais com humanos."
+  },
+  {
+   "id": "senhores-das-sombras",
+   "nome": "Senhores das Sombras",
+   "desc": "Senhores do Leste Europeu, mestres da intriga, em guerra fria com os Presas de Prata.",
+   "pagina": 80,
+   "totem": "Avô Trovão",
+   "forcaVontade": 3,
+   "restricoes": "Não podem ter Aliados nem Mentor.",
+   "donsIniciais": [
+    "aura-de-confianca",
+    "fraquezas-fatais",
+    "resistencia-a-toxinas"
+   ],
+   "fraqueza": "Males do Fracasso: perdem 1 de Renome temporário a cada fracasso."
+  },
+  {
+   "id": "peregrinos-silenciosos",
+   "nome": "Peregrinos Silenciosos",
+   "desc": "Andarilhos e mensageiros sem pátria, assombrados e inimigos dos vampiros.",
+   "pagina": 83,
+   "totem": "Coruja",
+   "forcaVontade": 3,
+   "restricoes": "Não podem ter Vidas Passadas nem Recursos.",
+   "donsIniciais": [
+    "orientacao-do-ceu",
+    "sentir-a-wyrm",
+    "velocidade-do-pensamento"
+   ],
+   "fraqueza": "Assombrados: uma falha crítica ao percorrer atalhos atrai um fantasma."
+  },
+  {
+   "id": "presas-de-prata",
+   "nome": "Presas de Prata",
+   "desc": "Reis da Nação Garou, divididos em Casas nobres, entre a glória e a loucura.",
+   "pagina": 86,
+   "totem": "Falcão",
+   "forcaVontade": 4,
+   "restricoes": "Devem pôr ao menos 3 pontos em Raça Pura.",
+   "donsIniciais": [
+    "olhos-do-falcao",
+    "chama-tremulante",
+    "sentir-a-wyrm"
+   ],
+   "fraqueza": "Arrogância de Senhores: testam frenesi quando sua autoridade é questionada."
+  },
+  {
+   "id": "sentinelas",
+   "nome": "Sentinelas (dos Homens)",
+   "desc": "Futuros Andarilhos do Asfalto: Garou das cidades que apostam no saber e no progresso humano.",
+   "pagina": 89,
+   "totem": "Não indicado no suplemento (os Andarilhos do Asfalto, seus herdeiros, seguem a Barata)",
+   "forcaVontade": 3,
+   "restricoes": "Não podem ter Mentor nem Raça Pura.",
+   "donsIniciais": [
+    "ordem-do-artesao",
+    "persuasao",
+    "bencao-do-ferreiro"
+   ],
+   "fraqueza": "Conhecidos pelos Vampiros: cada mês com 10+ dias numa cidade, teste secreto de Raciocínio + Furtividade; falha atrai um vampiro."
+  }
+ ],
+ "dons": [
+  {
+   "id": "abrir-objetos",
+   "nome": "Abrir Objetos",
+   "desc": "Abre fechaduras e lacres; raro nesta época (costuma ser trocado por Correr na Neve). Sistema do básico (p. 137).",
+   "nivel": 1,
+   "grupos": [
+    "ragabash"
+   ],
+   "sistema": "Teste de Gnose (dif. = Película local).",
+   "pagina": 102
+  },
+  {
+   "id": "aura-de-confianca",
+   "nome": "Aura de Confiança",
+   "desc": "Esconde as próprias fraquezas. (Básico p. 152)",
+   "nivel": 1,
+   "grupos": [
+    "senhores-das-sombras"
+   ],
+   "sistema": "Carisma + Lábia (dif. 7); impede ler sua aura ou achar seus defeitos; uma cena."
+  },
+  {
+   "id": "bencao-de-eva",
+   "nome": "Bênção de Eva",
+   "desc": "Protege mãe e bebê no parto.",
+   "nivel": 1,
+   "grupos": [
+    "filhos-de-gaia"
+   ],
+   "sistema": "Mãos sobre o ventre e 1 Gnose por criança; por uma semana, +1 Vigor contra parto e doenças.",
+   "pagina": 105
+  },
+  {
+   "id": "bencao-do-ferreiro",
+   "nome": "Bênção do Ferreiro",
+   "desc": "Restaura ferramentas quebradas ou gastas.",
+   "nivel": 1,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "1 Gnose + Inteligência + Artesanato (dif. 6); mais sucessos, melhor o estado.",
+   "pagina": 110
+  },
+  {
+   "id": "chama-tremulante",
+   "nome": "Chama Tremulante",
+   "desc": "Envolve-se em luz prateada. (Básico p. 150)",
+   "nivel": 1,
+   "grupos": [
+    "presas-de-prata"
+   ],
+   "sistema": "1 FV; +1 dif. a ataques desarmados contra ele e −1 a ataques à distância."
+  },
+  {
+   "id": "chamado-da-wyld",
+   "nome": "Chamado da Wyld",
+   "desc": "Uivo que anima aliados e distrai inimigos. (Básico p. 140)",
+   "nivel": 1,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "Vigor + Empatia; a cada 2 sucessos, quem participa ganha +1 dado; servos da Wyrm se distraem."
+  },
+  {
+   "id": "comunicacao-telepatica",
+   "nome": "Comunicação Mental (Comunicação Telepática)",
+   "desc": "Liga mentes para conversa silenciosa. (Básico p. 141)",
+   "nivel": 1,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "1 FV por ser racional + Manipulação + Expressão (dif. = FV de quem resiste)."
+  },
+  {
+   "id": "comunicacao-com-animais",
+   "nome": "Comunicação com Animais",
+   "desc": "Conversa com animais. (Básico p. 141)",
+   "nivel": 1,
+   "grupos": [
+    "galliard",
+    "garras-vermelhas"
+   ],
+   "sistema": "Carisma + Empatia c/ Animais."
+  },
+  {
+   "id": "comunicacao-com-espiritos",
+   "nome": "Comunicação com Espíritos",
+   "desc": "Fala e entende a língua dos espíritos. (Básico p. 138)",
+   "nivel": 1,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "Permanente, sem teste."
+  },
+  {
+   "id": "correr-na-neve",
+   "nome": "Correr na Neve",
+   "desc": "Corre sobre neve e gelo sem afundar nem deixar pegadas.",
+   "nivel": 1,
+   "grupos": [
+    "ragabash",
+    "crias-de-fenris"
+   ],
+   "sistema": "1 Gnose; dura um dia.",
+   "pagina": 102
+  },
+  {
+   "id": "criar-elemento",
+   "nome": "Criar Elemento",
+   "desc": "Faz surgir um pouco de terra, ar, fogo ou água. (Básico p. 134)",
+   "nivel": 1,
+   "grupos": [
+    "impuro"
+   ],
+   "sistema": "1 Gnose + teste de Gnose; ~30 cm³ por sucesso (máx. 50 kg) até 20 m; fogo causa 1 nível por sucesso (máx. 3)."
+  },
+  {
+   "id": "culinaria",
+   "nome": "Culinária",
+   "desc": "Transforma restos em comida. (Básico p. 151)",
+   "nivel": 1,
+   "grupos": [
+    "roedores-de-ossos"
+   ],
+   "sistema": "Raciocínio + Sobrevivência (dif. 6 a 10 conforme o material)."
+  },
+  {
+   "id": "embacamento-da-propria-forma",
+   "nome": "Embaçamento da Própria Forma",
+   "desc": "Fica difícil de ser notado. (Básico p. 137)",
+   "nivel": 1,
+   "grupos": [
+    "ragabash"
+   ],
+   "sistema": "Manipulação + Furtividade (dif. 8); cada sucesso dá +1 dif. à Percepção de quem o procura."
+  },
+  {
+   "id": "faro-para-a-forma-verdadeira",
+   "nome": "Faro para a Forma Verdadeira",
+   "desc": "Fareja a verdadeira natureza de alguém. (Básico p. 139)",
+   "nivel": 1,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "Garou são reconhecidos na hora; outros: Percepção + Instinto Primitivo (2 a 4 sucessos)."
+  },
+  {
+   "id": "fraquezas-fatais",
+   "nome": "Fraqueza Fatal",
+   "desc": "Descobre os pontos fracos do alvo. (Básico p. 152)",
+   "nivel": 1,
+   "grupos": [
+    "senhores-das-sombras"
+   ],
+   "sistema": "1 turno; Percepção + Empatia (dif. = Raciocínio + Lábia do alvo); +1 dado de dano contra ele.",
+   "pagina": 108
+  },
+  {
+   "id": "garras-afiadas",
+   "nome": "Garras Afiadas",
+   "desc": "Afia as garras antes da luta. (Básico p. 142)",
+   "nivel": 1,
+   "grupos": [
+    "ahroun",
+    "crias-de-fenris"
+   ],
+   "sistema": "1 Fúria e 1 turno afiando; +1 dado de dano com garras pela cena."
+  },
+  {
+   "id": "grito-da-presa",
+   "nome": "Grito da Presa",
+   "desc": "Imita com perfeição gritos de animais ou de pessoas.",
+   "nivel": 1,
+   "grupos": [
+    "garras-vermelhas"
+   ],
+   "sistema": "Raciocínio + Expressão (dif. 5 animal simples a 9 voz específica).",
+   "pagina": 107
+  },
+  {
+   "id": "inspiracao",
+   "nome": "Inspiração",
+   "desc": "Fortalece o ânimo dos companheiros. (Básico p. 142)",
+   "nivel": 1,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "1 Gnose; aliados (não ele) ganham 1 sucesso automático em testes de FV na cena."
+  },
+  {
+   "id": "luz-das-fadas",
+   "nome": "Luz Feérica",
+   "desc": "Chama de luz mágica que flutua e se move por ordem do Fianna. O texto do Dom diz Nível Dois, mas a tabela de criação o dá como inicial.",
+   "nivel": 1,
+   "grupos": [
+    "fianna"
+   ],
+   "sistema": "Raciocínio + Enigmas (dif. 6); move-se 10 m/turno; 1 turno por sucesso ou 1 Gnose para a cena.",
+   "pagina": 105
+  },
+  {
+   "id": "mestre-do-fogo",
+   "nome": "Mestre do Fogo",
+   "desc": "Vence o medo ancestral do fogo e sofre menos com as chamas. (Básico p. 133)",
+   "nivel": 1,
+   "grupos": [
+    "hominideo"
+   ],
+   "sistema": "1 Gnose: dano de fogo vira contusão por uma cena."
+  },
+  {
+   "id": "toque-da-queda",
+   "nome": "O Toque da Decadência (Toque da Queda)",
+   "desc": "Derruba o oponente com um toque. (Básico p. 142)",
+   "nivel": 1,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "Destreza + Medicina (dif. = Vigor + Esportes do alvo); 1 sucesso derruba."
+  },
+  {
+   "id": "olhos-do-falcao",
+   "nome": "Olhos do Falcão",
+   "desc": "Visão precisa a grandes distâncias.",
+   "nivel": 1,
+   "grupos": [
+    "presas-de-prata"
+   ],
+   "sistema": "1 Gnose; uma cena; −1 dif. em Percepção, Prontidão e Arqueirismo ligados à visão.",
+   "pagina": 109
+  },
+  {
+   "id": "ordem-do-artesao",
+   "nome": "Ordem do Artesão",
+   "desc": "Opera máquinas simples falando com seus espíritos.",
+   "nivel": 1,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "1 FV + Manipulação + Artesanato (dif. 7); controle por uma cena.",
+   "pagina": 110
+  },
+  {
+   "id": "orientacao-do-ceu",
+   "nome": "Orientação do Céu",
+   "desc": "Sob o céu noturno, nunca se perde.",
+   "nivel": 1,
+   "grupos": [
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "Sem teste; senso perfeito de direção e distância enquanto estiver sob o céu noturno.",
+   "pagina": 109
+  },
+  {
+   "id": "pele-de-homem",
+   "nome": "Pele de Homem",
+   "desc": "A Fúria passa por homem aos olhos dos outros.",
+   "nivel": 1,
+   "grupos": [
+    "furias-negras"
+   ],
+   "sistema": "Carisma + Lábia (dif. 7); ilusão dura uma cena ou até mudar de forma; contato íntimo a revela.",
+   "pagina": 103
+  },
+  {
+   "id": "persuasao",
+   "nome": "Persuasão",
+   "desc": "Torna o Garou mais convincente. (Básico p. 133)",
+   "nivel": 1,
+   "grupos": [
+    "hominideo",
+    "fianna",
+    "sentinelas"
+   ],
+   "sistema": "Carisma + Lábia; com sucesso, −1 dif. nos testes Sociais pelo resto da cena."
+  },
+  {
+   "id": "raiva-primordial",
+   "nome": "Raiva Primordial",
+   "desc": "Transforma dor em Fúria. (Básico p. 135)",
+   "nivel": 1,
+   "grupos": [
+    "impuro"
+   ],
+   "sistema": "Sacrifica 1 nível de vitalidade (cura como agravado) e ganha 2 Fúria; 1×/cena."
+  },
+  {
+   "id": "resistencia-a-toxinas",
+   "nome": "Resistência a Toxinas",
+   "desc": "Resiste a venenos. (Básico p. 146)",
+   "nivel": 1,
+   "grupos": [
+    "fianna",
+    "senhores-das-sombras"
+   ],
+   "sistema": "Vigor + Sobrevivência; anula venenos comuns e dá +3 dados contra toxinas da Wyrm; uma cena."
+  },
+  {
+   "id": "resistencia-a-dor",
+   "nome": "Resistência à Dor",
+   "desc": "Ignora a dor dos ferimentos. (Básico p. 139)",
+   "nivel": 1,
+   "grupos": [
+    "philodox",
+    "filhos-de-gaia",
+    "crias-de-fenris"
+   ],
+   "sistema": "1 FV; ignora penalidades de ferimento pela cena."
+  },
+  {
+   "id": "restos-da-despensa",
+   "nome": "Restos da Despensa",
+   "desc": "Fareja a melhor fonte de comida em excesso por perto.",
+   "nivel": 1,
+   "grupos": [
+    "roedores-de-ossos"
+   ],
+   "sistema": "Percepção + Instinto Primitivo (dif. 7) e 1 FV; sucessos dão distância e quantidade.",
+   "pagina": 104
+  },
+  {
+   "id": "sentidos-agucados",
+   "nome": "Sentidos Aguçados",
+   "desc": "Aguça todos os sentidos. (Básico p. 136)",
+   "nivel": 1,
+   "grupos": [
+    "lupino",
+    "furias-negras"
+   ],
+   "sistema": "1 Gnose, uma cena; −2 dif. em Percepção (−3 nas formas lupinas) e +1 dado em Instinto Primitivo."
+  },
+  {
+   "id": "sentir-a-caca",
+   "nome": "Sentir a Presa (Sentir a Caça)",
+   "desc": "Localiza misticamente presas suficientes para a matilha. Substitui o Salto da Lebre/Canguru nesta época.",
+   "nivel": 1,
+   "grupos": [
+    "lupino"
+   ],
+   "sistema": "Percepção + Instinto Primitivo (dif. 7); raio de 80 km; leva à fonte mais próxima.",
+   "pagina": 102
+  },
+  {
+   "id": "sentir-a-wyrm",
+   "nome": "Sentir a Wyrm",
+   "desc": "Percebe a mácula da Wyrm por perto. (Básico p. 135)",
+   "nivel": 1,
+   "grupos": [
+    "impuro",
+    "theurge",
+    "furias-negras",
+    "peregrinos-silenciosos",
+    "presas-de-prata"
+   ],
+   "sistema": "Percepção + Ocultismo (dif. 6 a 8 conforme intensidade e distância)."
+  },
+  {
+   "id": "simular-cheiro-de-mel-doce",
+   "nome": "Simular Cheiro de Mel Doce",
+   "desc": "Dom tradicional dos Roedores de Ossos.",
+   "nivel": 1,
+   "grupos": [
+    "roedores-de-ossos"
+   ],
+   "sistema": "O livro só diz \"como o Dom padrão\" (de outro suplemento); consulte o Narrador.",
+   "pagina": 104
+  },
+  {
+   "id": "simular-odor-de-homem",
+   "nome": "Simular Odor de Homem",
+   "desc": "Exala cheiro humano: animais domésticos o aceitam, selvagens se afastam. (Básico p. 133)",
+   "nivel": 1,
+   "grupos": [
+    "hominideo"
+   ],
+   "sistema": "Sem teste; animais selvagens a 6 m perdem 1 dado e tendem a fugir."
+  },
+  {
+   "id": "simular-o-cheiro-de-agua-corrente",
+   "nome": "Simular Odor de Água Corrente",
+   "desc": "Apaga o próprio rastro de cheiro. (Básico p. 138)",
+   "nivel": 1,
+   "grupos": [
+    "ragabash",
+    "garras-vermelhas"
+   ],
+   "sistema": "Permanente; +2 dif. para rastreá-lo."
+  },
+  {
+   "id": "toque-da-mae",
+   "nome": "Toque da Mãe",
+   "desc": "Cura ferimentos com as mãos. (Básico p. 138)",
+   "nivel": 1,
+   "grupos": [
+    "theurge",
+    "filhos-de-gaia"
+   ],
+   "sistema": "1 Gnose + Inteligência + Medicina (dif. = Fúria do ferido, ou 6); 1 nível por sucesso, até agravado; não cura a si mesmo."
+  },
+  {
+   "id": "velocidade-do-pensamento",
+   "nome": "Velocidade do Pensamento",
+   "desc": "Corre o dobro do normal. (Básico p. 150)",
+   "nivel": 1,
+   "grupos": [
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "1 Gnose; velocidade de corrida dobrada até o fim da cena."
+  },
+  {
+   "id": "verdade-de-gaia",
+   "nome": "Verdade de Gaia",
+   "desc": "Percebe mentiras. (Básico p. 140)",
+   "nivel": 1,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "Inteligência + Empatia (dif. = Manipulação + Lábia do alvo)."
+  },
+  {
+   "id": "acalmar",
+   "nome": "Acalmar",
+   "desc": "Acalma a raiva alheia. (Básico p. 147)",
+   "nivel": 2,
+   "grupos": [
+    "filhos-de-gaia"
+   ],
+   "sistema": "1 Gnose + Carisma + Empatia (dif. = FV do alvo); tira 1 Fúria por sucesso."
+  },
+  {
+   "id": "apagar-chamas",
+   "nome": "Apagar Chamas",
+   "desc": "Extingue o fogo ao redor.",
+   "nivel": 2,
+   "grupos": [
+    "garras-vermelhas"
+   ],
+   "sistema": "FV (dif. 6; 8 se alimentado por óleo); apaga fogo num raio de 2 m por sucesso.",
+   "pagina": 107
+  },
+  {
+   "id": "armadura-de-luna",
+   "nome": "Armadura de Luna",
+   "desc": "Luna protege o corpo, até contra prata. (Básico p. 147)",
+   "nivel": 2,
+   "grupos": [
+    "senhores-das-sombras",
+    "presas-de-prata"
+   ],
+   "sistema": "1 Gnose + Vigor + Sobrevivência (dif. 7); +1 dado de absorção por sucesso na cena."
+  },
+  {
+   "id": "cavar",
+   "nome": "Cavar",
+   "desc": "Abre túneis com rapidez. (Básico p. 135)",
+   "nivel": 2,
+   "grupos": [
+    "impuro"
+   ],
+   "sistema": "Força + Esportes (dif. 4 terra a 9 rocha); 1 m por turno por sucesso; em Crinos, Hispo ou Lupino."
+  },
+  {
+   "id": "chamado-da-wyrm",
+   "nome": "Chamado da Wyrm",
+   "desc": "Atrai uma criatura da Wyrm. (Básico p. 141)",
+   "nivel": 2,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "Manipulação + Performance contra FV da criatura (ambos dif. 7)."
+  },
+  {
+   "id": "chamado-do-dever",
+   "nome": "Chamado do Dever",
+   "desc": "Obriga um espírito a cumprir seu dever. (Básico p. 140)",
+   "nivel": 2,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "Carisma + Liderança (dif. = FV do espírito); 2 Gnose chamam todos os espíritos gaianos em 1,5 km."
+  },
+  {
+   "id": "comandar-espiritos",
+   "nome": "Comandar Espíritos",
+   "desc": "Dá ordens a espíritos. (Básico p. 139)",
+   "nivel": 2,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "1 FV + Carisma + Liderança (dif. = Gnose do espírito); cada ordem custa +1 FV."
+  },
+  {
+   "id": "comunicacao-onirica",
+   "nome": "Comunicação Onírica",
+   "desc": "Entra no sonho de alguém. (Básico p. 141)",
+   "nivel": 2,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "Raciocínio + Empatia (dif. 8); se o sonhador acordar, perde 1 Gnose."
+  },
+  {
+   "id": "determinacao",
+   "nome": "Determinação",
+   "desc": "Renova a própria determinação. (Básico p. 140)",
+   "nivel": 2,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "Vigor + Rituais (dif. 7), 1×/cena; cada 2 sucessos recuperam 1 FV."
+  },
+  {
+   "id": "distracoes",
+   "nome": "Distrações",
+   "desc": "Desconcentra o alvo. (Básico p. 141)",
+   "nivel": 2,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "Raciocínio + Performance (dif. = FV do alvo); −1 dado ao alvo no turno seguinte por sucesso."
+  },
+  {
+   "id": "dom-da-salamandra",
+   "nome": "Dom da Salamandra",
+   "desc": "Fica quase imune ao fogo.",
+   "nivel": 2,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "1 Fúria; +4 dados para absorver dano de fogo ou calor por uma cena; imune a fumaça.",
+   "pagina": 103
+  },
+  {
+   "id": "dom-do-sal",
+   "nome": "Dom do Sal",
+   "desc": "Conserva comida fresca.",
+   "nivel": 2,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "1 Gnose por 10 kg + Inteligência + Herborismo (dif. 6); um mês por sucesso.",
+   "pagina": 111
+  },
+  {
+   "id": "espirito-da-batalha",
+   "nome": "Espírito da Batalha",
+   "desc": "Reage antes de todos em combate. (Básico p. 142)",
+   "nivel": 2,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "Permanente: +10 na iniciativa; 1 Gnose dá mais +10 (sem Fúria no turno)."
+  },
+  {
+   "id": "fitar",
+   "nome": "Fitar",
+   "desc": "Um olhar ameaçador põe a vítima para correr. (Básico p. 134)",
+   "nivel": 2,
+   "grupos": [
+    "hominideo"
+   ],
+   "sistema": "Carisma + Intimidação (dif. 5 + Posto do alvo); foge 1 turno por sucesso (5+ = a cena); Garou só deixam de atacar."
+  },
+  {
+   "id": "gerar-ignorancia",
+   "nome": "Gerar Ignorância",
+   "desc": "Fica invisível enquanto estiver imóvel. (Básico p. 138)",
+   "nivel": 2,
+   "grupos": [
+    "ragabash",
+    "roedores-de-ossos"
+   ],
+   "sistema": "Destreza + Furtividade (dif. 7); sucessos subtraem da Percepção + Prontidão de quem procura."
+  },
+  {
+   "id": "induzir-esquecimento",
+   "nome": "Induzir Esquecimento",
+   "desc": "A vítima esquece algo que lhe foi roubado. (Básico p. 138)",
+   "nivel": 2,
+   "grupos": [
+    "ragabash"
+   ],
+   "sistema": "Raciocínio + Furtividade (dif. = Inteligência + Manha da vítima); precisa de 3 sucessos."
+  },
+  {
+   "id": "linguagem-do-mundo",
+   "nome": "Linguagem do Mundo",
+   "desc": "Fala qualquer língua humana que encontrar (sem escrever), com sotaque.",
+   "nivel": 2,
+   "grupos": [
+    "hominideo",
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "Inteligência + Linguística (dif. 7); dura até o fim da cena.",
+   "pagina": 101
+  },
+  {
+   "id": "maldicao-de-eolo",
+   "nome": "Maldição de Éolo",
+   "desc": "Invoca neblina densa. (Básico p. 148)",
+   "nivel": 2,
+   "grupos": [
+    "furias-negras"
+   ],
+   "sistema": "Gnose (dif. 4 perto do mar a 9 no deserto); visão alheia pela metade."
+  },
+  {
+   "id": "maldicao-do-odio",
+   "nome": "Maldição do Ódio",
+   "desc": "Despeja ódio que abala o oponente. (Básico p. 135)",
+   "nivel": 2,
+   "grupos": [
+    "impuro"
+   ],
+   "sistema": "1 Gnose + Manipulação + Expressão (dif. = FV do alvo); ele perde 2 FV e 2 Fúria."
+  },
+  {
+   "id": "medo-verdadeiro",
+   "nome": "Medo Verdadeiro",
+   "desc": "Aterroriza o oponente. (Básico p. 142)",
+   "nivel": 2,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "Força + Intimidação (dif. = FV do alvo); ele não ataca por 1 turno por sucesso."
+  },
+  {
+   "id": "nome-do-espirito",
+   "nome": "Nome do Espírito",
+   "desc": "Descobre o tipo e o poder de um espírito. (Básico p. 139)",
+   "nivel": 2,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "1 FV + Percepção + Ocultismo (dif. 8); revela tipo e Fúria, Gnose e FV aproximadas."
+  },
+  {
+   "id": "ocultar-o-predador",
+   "nome": "Ocultar o Predador",
+   "desc": "Animais domésticos o tratam como humano comum.",
+   "nivel": 2,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "Carisma + Empatia c/ Animais; até o fim da cena; não funciona com lobos.",
+   "pagina": 111
+  },
+  {
+   "id": "aplauso-trovejante",
+   "nome": "Palma de Trovão (Aplauso Trovejante)",
+   "desc": "Palmas que atordoam. (Básico p. 152)",
+   "nivel": 2,
+   "grupos": [
+    "senhores-das-sombras"
+   ],
+   "sistema": "1 Gnose; todos em 3 m testam FV (dif. 8) ou ficam atordoados 1 turno.",
+   "pagina": 108
+  },
+  {
+   "id": "pasmo",
+   "nome": "Pasmo",
+   "desc": "Dom tradicional dos Presas de Prata.",
+   "nivel": 2,
+   "grupos": [
+    "presas-de-prata"
+   ],
+   "sistema": "O livro só diz \"como o Dom padrão\" (de outro suplemento); consulte o Narrador.",
+   "pagina": 109
+  },
+  {
+   "id": "rei-dos-animais",
+   "nome": "Rei dos Animais",
+   "desc": "Comanda um animal. (Básico p. 140)",
+   "nivel": 2,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "Carisma + Empatia c/ Animais (dif. 3 a 10 conforme o vínculo); um animal em 30 m."
+  },
+  {
+   "id": "resistencia-de-mensageiro",
+   "nome": "Resistência de Mensageiro",
+   "desc": "Corre dias sem parar. (Básico p. 150)",
+   "nivel": 2,
+   "grupos": [
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "1 Gnose; 3 dias correndo sem descanso nem comida, depois dorme 3 dias."
+  },
+  {
+   "id": "rugido-do-predador",
+   "nome": "Rugido do Predador",
+   "desc": "Rugido que abala os inimigos. (Básico p. 145)",
+   "nivel": 2,
+   "grupos": [
+    "crias-de-fenris"
+   ],
+   "sistema": "Carisma + Intimidação (dif. = Raciocínio + 3); −1 dado ao alvo no turno seguinte por sucesso."
+  },
+  {
+   "id": "semblante-da-peste",
+   "nome": "Semblante da Peste",
+   "desc": "Ilusão de estar desfigurado por uma doença terrível.",
+   "nivel": 2,
+   "grupos": [
+    "roedores-de-ossos"
+   ],
+   "sistema": "Manipulação + Medicina; uma cena; mortais testam FV (dif. 8, sobrenaturais 6) ou recuam.",
+   "pagina": 104
+  },
+  {
+   "id": "senso-do-sobrenatural",
+   "nome": "Senso do Sobrenatural",
+   "desc": "Sente presenças sobrenaturais. (Básico p. 137)",
+   "nivel": 2,
+   "grupos": [
+    "lupino"
+   ],
+   "sistema": "Percepção + Enigmas; revela presença, força aproximada e tipo."
+  },
+  {
+   "id": "sentir-a-presa",
+   "nome": "Sentir a Presa",
+   "desc": "Segue uma presa conhecida até encontrá-la. (Básico p. 138)",
+   "nivel": 2,
+   "grupos": [
+    "ragabash",
+    "furias-negras",
+    "garras-vermelhas"
+   ],
+   "sistema": "Sem teste; alvo escondido: Percepção + Enigmas contra Raciocínio + Furtividade."
+  },
+  {
+   "id": "toque-da-avo",
+   "nome": "Toque da Avó",
+   "desc": "Como Toque da Mãe, mas cura também a si mesmo.",
+   "nivel": 2,
+   "grupos": [
+    "filhos-de-gaia"
+   ],
+   "sistema": "1 Gnose + Inteligência + Medicina (dif. = Fúria do ferido, ou 6); 1 nível por sucesso.",
+   "pagina": 105
+  },
+  {
+   "id": "trago-do-guerreiro",
+   "nome": "Trago do Guerreiro",
+   "desc": "Mistura o próprio sangue à bebida e cria um elixir de fúria.",
+   "nivel": 2,
+   "grupos": [
+    "fianna"
+   ],
+   "sistema": "1 Gnose (+1 por dia extra); quem bebe entra em frenesi com +1 Força e +1 Vigor.",
+   "pagina": 106
+  },
+  {
+   "id": "uivo-da-banshee",
+   "nome": "Uivo do Banshee",
+   "desc": "Uivo lúgubre que espanta até mortos-vivos.",
+   "nivel": 2,
+   "grupos": [
+    "fianna"
+   ],
+   "sistema": "1 Gnose + Carisma + Intimidação (dif. 6); ouvintes testam FV (dif. 8 inimigos, 6 amigos) ou fogem 1 turno por sucesso.",
+   "pagina": 106
+  },
+  {
+   "id": "vestindo-a-pele-do-urso",
+   "nome": "Vestindo a Pele do Urso",
+   "desc": "Nunca foge de medo numa batalha.",
+   "nivel": 2,
+   "grupos": [
+    "crias-de-fenris"
+   ],
+   "sistema": "Sem teste; só entra em frenesi selvagem (nunca da raposa) e pode testar FV contra qualquer efeito de medo.",
+   "pagina": 105
+  },
+  {
+   "id": "visao-olfativa",
+   "nome": "Visão Olfativa",
+   "desc": "\"Enxerga\" pelo faro. (Básico p. 137)",
+   "nivel": 2,
+   "grupos": [
+    "lupino"
+   ],
+   "sistema": "Percepção + Instinto Primitivo (dif. do Narrador)."
+  },
+  {
+   "id": "visoes",
+   "nome": "Visões",
+   "desc": "Recebe e interpreta visões proféticas. (Básico p. 139)",
+   "nivel": 2,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "Raciocínio + Ocultismo (dif. 7)."
+  },
+  {
+   "id": "abrir-ponte-da-lua",
+   "nome": "Abrir Ponte da Lua",
+   "desc": "Abre uma ponte da lua sem precisar do ritual. (Básico p. 138)",
+   "nivel": 3,
+   "grupos": [
+    "ragabash"
+   ],
+   "sistema": "1 Gnose; ponte de até 1.500 km."
+  },
+  {
+   "id": "adaptacao",
+   "nome": "Adaptação",
+   "desc": "Resiste a qualquer ambiente. (Básico p. 150)",
+   "nivel": 3,
+   "grupos": [
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "1 Gnose + Vigor + Sobrevivência (dif. 7); imune a venenos, doenças e clima por 1 hora por sucesso."
+  },
+  {
+   "id": "agonia-visceral",
+   "nome": "Agonia Visceral",
+   "desc": "Garras que causam dor terrível. (Básico p. 148)",
+   "nivel": 3,
+   "grupos": [
+    "furias-negras"
+   ],
+   "sistema": "1 Fúria antes de atacar; as penalidades de ferimento do alvo dobram."
+  },
+  {
+   "id": "arrepio-de-desespero",
+   "nome": "Arrepio de Desespero",
+   "desc": "Dom tradicional dos Senhores das Sombras.",
+   "nivel": 3,
+   "grupos": [
+    "senhores-das-sombras"
+   ],
+   "sistema": "O livro só diz \"como o Dom padrão\" (de outro suplemento); consulte o Narrador.",
+   "pagina": 108
+  },
+  {
+   "id": "cancao-da-furia",
+   "nome": "Canção da Fúria",
+   "desc": "Desperta a fúria cega no alvo. (Básico p. 141)",
+   "nivel": 3,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "Manipulação + Liderança (dif. = FV do alvo); frenesi por 1 turno por sucesso."
+  },
+  {
+   "id": "chamando-a-ferrugem",
+   "nome": "Chamando a Ferrugem",
+   "desc": "Assobio que enferruja e destrói ferro próximo.",
+   "nivel": 3,
+   "grupos": [
+    "roedores-de-ossos"
+   ],
+   "sistema": "1 Gnose + Raciocínio + Artesanato; cada sucesso inutiliza um objeto de ferro ao alcance da voz.",
+   "pagina": 104
+  },
+  {
+   "id": "chamas-de-hestia",
+   "nome": "Chamas de Héstia",
+   "desc": "Chamas brancas que purificam, curam e ferem a Wyrm.",
+   "nivel": 3,
+   "grupos": [
+    "furias-negras"
+   ],
+   "sistema": "1 Gnose + Gnose (dif. 8); cada sucesso purifica comida, cura 1 nível de doença/veneno ou causa 1 agravado a um Maldito.",
+   "pagina": 103
+  },
+  {
+   "id": "comunicacao-mental",
+   "nome": "Comunicação Mental",
+   "desc": "Conversa telepática à distância. (Básico p. 135)",
+   "nivel": 3,
+   "grupos": [
+    "impuro"
+   ],
+   "sistema": "1 FV + Carisma + Empatia (dif. 8); até 15 km por sucesso, por uma cena."
+  },
+  {
+   "id": "coracao-da-furia",
+   "nome": "Coração da Fúria",
+   "desc": "Controla a própria fúria. (Básico p. 142)",
+   "nivel": 3,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "Teste de FV (dif. = Fúria permanente); cada 2 sucessos dão +1 dif. ao frenesi na cena."
+  },
+  {
+   "id": "descobrir-calcanhar-de-aquiles",
+   "nome": "Descobrir Calcanhar-de-aquiles",
+   "desc": "Acha o ponto fraco do oponente. (Básico p. 140)",
+   "nivel": 3,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "Percepção + Briga (dif. 8); +1 dado no ataque ou dano por sucesso contra ele; 1×/cena."
+  },
+  {
+   "id": "dom-do-gamba",
+   "nome": "Dom do Gambá",
+   "desc": "Dom tradicional dos Roedores de Ossos.",
+   "nivel": 3,
+   "grupos": [
+    "roedores-de-ossos"
+   ],
+   "sistema": "O livro só diz \"como o Dom padrão\" (de outro suplemento); consulte o Narrador.",
+   "pagina": 105
+  },
+  {
+   "id": "espirito-amigo",
+   "nome": "Espírito Amigo",
+   "desc": "Conquista a simpatia dos espíritos. (Básico p. 147)",
+   "nivel": 3,
+   "grupos": [
+    "filhos-de-gaia"
+   ],
+   "sistema": "Carisma + Empatia (dif. 7); +1 dado por sucesso ao lidar com espíritos; uma cena."
+  },
+  {
+   "id": "exorcismo",
+   "nome": "Exorcismo",
+   "desc": "Expulsa espíritos de lugares, pessoas ou fetiches. (Básico p. 139)",
+   "nivel": 3,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "3 turnos; Manipulação + Intimidação (dif. = FV do espírito)."
+  },
+  {
+   "id": "garras-de-prata",
+   "nome": "Garras de Prata",
+   "desc": "As garras viram prata. (Básico p. 142)",
+   "nivel": 3,
+   "grupos": [
+    "ahroun",
+    "presas-de-prata"
+   ],
+   "sistema": "Gnose (dif. 7); garras agravadas que Garou não absorvem; ganha 1 Fúria por turno."
+  },
+  {
+   "id": "inquietacao",
+   "nome": "Inquietação",
+   "desc": "Deixa o alvo agitado e sem sossego. (Básico p. 134)",
+   "nivel": 3,
+   "grupos": [
+    "hominideo"
+   ],
+   "sistema": "Manipulação + Empatia (dif. = FV do alvo); ele não recupera Fúria pela cena."
+  },
+  {
+   "id": "ira-de-gaia",
+   "nome": "Ira de Gaia",
+   "desc": "Faz servos da Wyrm fugirem. (Básico p. 151)",
+   "nivel": 3,
+   "grupos": [
+    "presas-de-prata"
+   ],
+   "sistema": "1 Gnose + Carisma + Intimidação; lacaios da Wyrm testam FV (dif. 7) ou fogem."
+  },
+  {
+   "id": "lanca-de-lleu",
+   "nome": "Lança de Lleu",
+   "desc": "Arremesso de lança com força e precisão sobrenaturais.",
+   "nivel": 3,
+   "grupos": [
+    "fianna"
+   ],
+   "sistema": "1 turno + FV (dif. 8); cada Gnose gasta dá +2 dados ao acerto, ao dano ou ao alcance.",
+   "pagina": 107
+  },
+  {
+   "id": "linguas",
+   "nome": "Línguas",
+   "desc": "Fala e lê qualquer língua humana.",
+   "nivel": 3,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "1 FV + Inteligência + Linguística (dif. 4 comum a 8 antiga); sucessos definem a fluência.",
+   "pagina": 111
+  },
+  {
+   "id": "maldicao-do-corvo",
+   "nome": "Maldição do Corvo",
+   "desc": "Amaldiçoa o alvo para atrair projéteis.",
+   "nivel": 3,
+   "grupos": [
+    "senhores-das-sombras"
+   ],
+   "sistema": "Toque + 1 Gnose + Manipulação + Arqueirismo; dura de 1 hora a até ser quebrada; −2 dif. para acertá-lo com projéteis.",
+   "pagina": 108
+  },
+  {
+   "id": "mentira-de-reynard",
+   "nome": "Mentira de Reynard",
+   "desc": "Faz qualquer um acreditar na mentira mais absurda.",
+   "nivel": 3,
+   "grupos": [
+    "ragabash"
+   ],
+   "sistema": "Raciocínio + Lábia (dif. = Raciocínio + Lábia do alvo); 2 sucessos enganam um, 3 vários; vale até o fim da cena.",
+   "pagina": 102
+  },
+  {
+   "id": "mestre-de-armas",
+   "nome": "Mestre de Armas",
+   "desc": "Usa qualquer arma como se treinasse desde criança.",
+   "nivel": 3,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "Automático; ataque usa Destreza + Armas Brancas/Arqueirismo ou a Gnose, o maior; dif. máx. 8.",
+   "pagina": 111
+  },
+  {
+   "id": "nome-do-espirito-lupino",
+   "nome": "Nome do Espírito",
+   "desc": "Descobre o tipo e o poder de um espírito. (Básico p. 137)",
+   "nivel": 3,
+   "grupos": [
+    "lupino"
+   ],
+   "sistema": "1 FV + Percepção + Ocultismo (dif. 8); revela tipo e Fúria, Gnose e FV aproximadas."
+  },
+  {
+   "id": "o-grande-salto",
+   "nome": "O Grande Salto",
+   "desc": "Saltos de dezenas de metros. (Básico p. 150)",
+   "nivel": 3,
+   "grupos": [
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "1 FV + Força + Esportes; 30 m por sucesso."
+  },
+  {
+   "id": "olho-de-cobra",
+   "nome": "Olho de Cobra",
+   "desc": "Hipnotiza o alvo e o faz se aproximar. (Básico p. 141)",
+   "nivel": 3,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "Aparência + Enigmas (dif. = FV do alvo); 3 sucessos trazem o alvo até o Garou."
+  },
+  {
+   "id": "olhos-de-gato",
+   "nome": "Olhos de Gato",
+   "desc": "Enxerga mesmo na escuridão total. (Básico p. 135)",
+   "nivel": 3,
+   "grupos": [
+    "impuro"
+   ],
+   "sistema": "Permanente, sem custo nem teste."
+  },
+  {
+   "id": "parente-fada",
+   "nome": "Parente Feérico",
+   "desc": "Chama as fadas da área em auxílio. (Básico p. 146)",
+   "nivel": 3,
+   "grupos": [
+    "fianna"
+   ],
+   "sistema": "1 Gnose ou mais + Manipulação + Ocultismo (dif. 8).",
+   "pagina": 106
+  },
+  {
+   "id": "pasmar",
+   "nome": "Pasmar",
+   "desc": "Deixa o alvo calmo e parado. (Básico p. 147)",
+   "nivel": 3,
+   "grupos": [
+    "filhos-de-gaia"
+   ],
+   "sistema": "Carisma + Empatia (dif. 4 a 9 conforme o alvo); ele fica quieto pela cena."
+  },
+  {
+   "id": "percepcao-do-invisivel",
+   "nome": "Percepção do Invisível",
+   "desc": "Enxerga a Umbra a partir do mundo físico. (Básico p. 139)",
+   "nivel": 3,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "Teste de Gnose (dif. = Película), automático se Gnose ≥ Película; uma cena."
+  },
+  {
+   "id": "poder-de-thor",
+   "nome": "Poder de Thor",
+   "desc": "Força dobrada por alguns instantes. (Básico p. 145)",
+   "nivel": 3,
+   "grupos": [
+    "crias-de-fenris"
+   ],
+   "sistema": "1 Gnose + 1 Fúria + FV (dif. 8); Força dobrada 1 turno por sucesso, depois exaustão."
+  },
+  {
+   "id": "pes-de-gato",
+   "nome": "Pés de Gato",
+   "desc": "Equilíbrio perfeito e quedas sem dano. (Básico p. 137)",
+   "nivel": 3,
+   "grupos": [
+    "lupino"
+   ],
+   "sistema": "Permanente; ignora quedas de até 30 m; −2 dif. em encontrões e engalfinhamentos."
+  },
+  {
+   "id": "quebrar-as-correntes-dos-homens",
+   "nome": "Quebrar as Correntes dos Homens",
+   "desc": "Uivo que deixa animais domésticos selvagens por uma noite.",
+   "nivel": 3,
+   "grupos": [
+    "garras-vermelhas"
+   ],
+   "sistema": "1 Gnose + Manipulação + Instinto Primitivo; de um estábulo (1 sucesso) a uma cidade (6+).",
+   "pagina": 107
+  },
+  {
+   "id": "remodelar-objeto",
+   "nome": "Remodelar Objeto",
+   "desc": "Molda material natural, como madeira ou osso, em objetos úteis. (Básico p. 134)",
+   "nivel": 3,
+   "grupos": [
+    "hominideo"
+   ],
+   "sistema": "1 Gnose + Manipulação + Ofícios (dif. 5–8); dura de 5 min a permanente conforme sucessos; +1 Gnose faz arma agravada na cena."
+  },
+  {
+   "id": "sabedoria-das-antigas-tradicoes",
+   "nome": "Sabedoria das Antigas Tradições",
+   "desc": "Consulta a memória dos ancestrais. (Básico p. 140)",
+   "nivel": 3,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "Teste de Gnose (dif. 9, −1 por ponto de Ancestrais)."
+  },
+  {
+   "id": "sangue-venenoso",
+   "nome": "Sangue Venenoso",
+   "desc": "O sangue corrói quem o toca. (Básico p. 145)",
+   "nivel": 3,
+   "grupos": [
+    "crias-de-fenris"
+   ],
+   "sistema": "1 Fúria + Vigor + Medicina (dif. 7); 1 dado agravado por sucesso a quem tocar."
+  },
+  {
+   "id": "terreno-irrastreavel",
+   "nome": "Terreno Irrastreável",
+   "desc": "Confunde trilhas e sinais da mata. (Básico p. 149)",
+   "nivel": 3,
+   "grupos": [
+    "garras-vermelhas"
+   ],
+   "sistema": "1 Gnose + Inteligência + Instinto Primitivo; raio de 3 km por sucesso, 4 horas."
+  },
+  {
+   "id": "debilitar-o-corpo",
+   "nome": "Abalo Corporal (Debilitar o Corpo)",
+   "desc": "Dor que enfraquece o corpo inteiro. (Básico p. 149)",
+   "nivel": 4,
+   "grupos": [
+    "furias-negras"
+   ],
+   "sistema": "1 Gnose + Força + Medicina (dif. = Vigor + 3); −1 dado em todas as paradas por sucesso; uma cena.",
+   "pagina": 103
+  },
+  {
+   "id": "andarilho-da-ponte",
+   "nome": "Andarilho da Ponte",
+   "desc": "Abre uma pequena ponte da lua. (Básico p. 141)",
+   "nivel": 4,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "1 Gnose; distância máx. em km = Gnose; 1 Gnose permanente a mantém até a lua cheia."
+  },
+  {
+   "id": "areia-movedica",
+   "nome": "Areia Movediça",
+   "desc": "Transforma o chão em atoleiro. (Básico p. 149)",
+   "nivel": 4,
+   "grupos": [
+    "garras-vermelhas"
+   ],
+   "sistema": "1 Gnose + Manipulação + Instinto Primitivo (dif. 7); raio de 3 m por sucesso."
+  },
+  {
+   "id": "aticando-a-fornalha-da-furia",
+   "nome": "Atiçando a Fornalha da Fúria",
+   "desc": "Cada ferida alimenta a Fúria. (Básico p. 142)",
+   "nivel": 4,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "Ganha 1 Fúria sempre que sofre dano, sem teste de frenesi por isso."
+  },
+  {
+   "id": "avalanche",
+   "nome": "Avalanche",
+   "desc": "Dom tradicional dos Garras Vermelhas.",
+   "nivel": 4,
+   "grupos": [
+    "garras-vermelhas"
+   ],
+   "sistema": "O livro só diz \"como o Dom padrão\" (de outro suplemento); consulte o Narrador.",
+   "pagina": 108
+  },
+  {
+   "id": "bencao-de-luna",
+   "nome": "Bênção de Luna",
+   "desc": "Sob a lua, a prata perde força contra ele. (Básico p. 138)",
+   "nivel": 4,
+   "grupos": [
+    "ragabash"
+   ],
+   "sistema": "Com a lua visível, prata causa dano letal ou contusão, não agravado."
+  },
+  {
+   "id": "captura-a-distancia",
+   "nome": "Captura à Distância",
+   "desc": "Leva objetos ou pessoas consigo para a Umbra. (Básico p. 139)",
+   "nivel": 4,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "1 a 3 FV conforme o tamanho + Gnose (mín. 3 sucessos); quem não quer resiste com FV."
+  },
+  {
+   "id": "casulo",
+   "nome": "Casulo",
+   "desc": "Envolve-se num casulo protetor. (Básico p. 134)",
+   "nivel": 4,
+   "grupos": [
+    "hominideo"
+   ],
+   "sistema": "1 Gnose; fica imóvel e quase imune a ataques por uma cena."
+  },
+  {
+   "id": "defesa-contra-espiritos",
+   "nome": "Defesa Contra Espíritos",
+   "desc": "Enfraquece espíritos ao redor. (Básico p. 134)",
+   "nivel": 4,
+   "grupos": [
+    "hominideo"
+   ],
+   "sistema": "1 Gnose + Manipulação + Rituais (dif. 7); espíritos em 30 m perdem 1 dado por sucesso na cena."
+  },
+  {
+   "id": "definhar-membro",
+   "nome": "Definhar Membro",
+   "desc": "Atrofia um membro da vítima. (Básico p. 136)",
+   "nivel": 4,
+   "grupos": [
+    "impuro",
+    "roedores-de-ossos"
+   ],
+   "sistema": "1 Gnose + FV (dif. = Vigor da vítima + 4); membro inútil; quem regenera se recupera após a cena."
+  },
+  {
+   "id": "dom-do-porco-espinho",
+   "nome": "Dom do Porco-espinho",
+   "desc": "Faz brotar espinhos pelo corpo. (Básico p. 136)",
+   "nivel": 4,
+   "grupos": [
+    "impuro"
+   ],
+   "sistema": "1 Gnose; quem o agarra ou golpeia sem arma sofre dano agravado (Força +1) na cena."
+  },
+  {
+   "id": "doppelganger",
+   "nome": "Doppelgänger",
+   "desc": "Copia a aparência exata de outra pessoa. (Básico p. 144)",
+   "nivel": 4,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "1 Gnose + Carisma + Performance (dif. 8); 1 dia por sucesso."
+  },
+  {
+   "id": "drenagem-espiritual",
+   "nome": "Drenagem Espiritual",
+   "desc": "Suga a Essência de um espírito. (Básico p. 139)",
+   "nivel": 4,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "Gnose resistido; o espírito perde 1 Essência por sucesso; cada 2 dão +1 FV temporária."
+  },
+  {
+   "id": "espasmo-ardente",
+   "nome": "Espasmo Ardente",
+   "desc": "Em frenesi, o corpo irradia calor que incendeia o que toca.",
+   "nivel": 4,
+   "grupos": [
+    "fianna"
+   ],
+   "sistema": "1 Fúria; entra em frenesi e os golpes causam +2 níveis agravados de fogo.",
+   "pagina": 107
+  },
+  {
+   "id": "faro-para-grandes-distancias",
+   "nome": "Faro para Grandes Distâncias",
+   "desc": "Percebe pelos sentidos um lugar distante. (Básico p. 140)",
+   "nivel": 4,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "Percepção + Enigmas (dif. 8; na Umbra, 8 ou a Película)."
+  },
+  {
+   "id": "feridas-abertas",
+   "nome": "Feridas Abertas",
+   "desc": "Ferimentos que sangram sem parar. (Básico p. 152)",
+   "nivel": 4,
+   "grupos": [
+    "senhores-das-sombras"
+   ],
+   "sistema": "1 Gnose + Força + Medicina (dif. 7); o próximo ferimento sangra 1 nível letal por turno."
+  },
+  {
+   "id": "ferro-nao-pode-morder",
+   "nome": "Ferro-Não-Pode-Morder",
+   "desc": "Runa que torna a pele invulnerável a ferro e aço.",
+   "nivel": 4,
+   "grupos": [
+    "crias-de-fenris"
+   ],
+   "sistema": "1 Gnose + 1 Fúria; imune a armas de ferro ou aço por uma cena.",
+   "pagina": 105
+  },
+  {
+   "id": "fragilizar-corpos",
+   "nome": "Fragilizar Corpos",
+   "desc": "Rouba força física do oponente. (Básico p. 138)",
+   "nivel": 4,
+   "grupos": [
+    "ragabash"
+   ],
+   "sistema": "1 Gnose + Gnose resistido; cada sucesso tira 1 ponto de Atributo Físico de forma permanente."
+  },
+  {
+   "id": "garras-ferroes",
+   "nome": "Garras-ferrões",
+   "desc": "Dispara as garras como dardos. (Básico p. 149)",
+   "nivel": 4,
+   "grupos": [
+    "furias-negras"
+   ],
+   "sistema": "1 Fúria + Destreza + Briga (alcance médio 20 m); dano de garra."
+  },
+  {
+   "id": "golpe-doloroso",
+   "nome": "Golpe Doloroso",
+   "desc": "Golpe tão brutal que desanima quem assiste.",
+   "nivel": 4,
+   "grupos": [
+    "senhores-das-sombras"
+   ],
+   "sistema": "1 Gnose; +2 dados de dano; com 3+ níveis, testemunhas perdem 1 dado contra ele na cena.",
+   "pagina": 109
+  },
+  {
+   "id": "harmonia",
+   "nome": "Harmonia",
+   "desc": "Ouve dos espíritos locais o que se passa na área. (Básico p. 144)",
+   "nivel": 4,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "1 Gnose + Percepção + Manha (cidade) ou Sobrevivência (natureza)."
+  },
+  {
+   "id": "imposicao",
+   "nome": "Imposição",
+   "desc": "Força o oponente a se submeter. (Básico p. 140)",
+   "nivel": 4,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "Disputa de FV; vence com 3 sucessos a mais."
+  },
+  {
+   "id": "infestar",
+   "nome": "Infestar",
+   "desc": "Infesta um lugar de pragas. (Básico p. 152)",
+   "nivel": 4,
+   "grupos": [
+    "roedores-de-ossos"
+   ],
+   "sistema": "1 Gnose + Manipulação + Empatia c/ Animais (dif. 7); 5 sucessos tornam o local inabitável."
+  },
+  {
+   "id": "interromper-o-fluxo-sanguineo",
+   "nome": "Interromper o Fluxo Sanguíneo",
+   "desc": "Trava o sangue nas veias de um vampiro.",
+   "nivel": 4,
+   "grupos": [
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "1 Gnose + Manipulação + Medicina (dif. = FV do alvo); cada sucesso impede gastar sangue por um turno.",
+   "pagina": 109
+  },
+  {
+   "id": "maestria",
+   "nome": "Maestria",
+   "desc": "Dá ordens a outro Garou. (Básico p. 151)",
+   "nivel": 4,
+   "grupos": [
+    "presas-de-prata"
+   ],
+   "sistema": "Carisma + Liderança (dif. = Raciocínio + 3 do alvo); obedece 1 turno por sucesso."
+  },
+  {
+   "id": "mordida-de-ferro",
+   "nome": "Mordida de Ferro",
+   "desc": "Mandíbulas que não soltam a presa. (Básico p. 142)",
+   "nivel": 4,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "1 Fúria após morder; nos turnos seguintes a mordida tem dif. 3."
+  },
+  {
+   "id": "olho-vermelho",
+   "nome": "Olhos Vermelhos",
+   "desc": "Olhar maligno que debilita. (Básico p. 146)",
+   "nivel": 4,
+   "grupos": [
+    "fianna"
+   ],
+   "sistema": "1 Fúria + 1 Gnose + Percepção + Ocultismo (dif. 8); quem o encara e falha em FV fica como Aleijado.",
+   "pagina": 107
+  },
+  {
+   "id": "roer",
+   "nome": "Roer",
+   "desc": "As mandíbulas roem quase qualquer coisa. (Básico p. 137)",
+   "nivel": 4,
+   "grupos": [
+    "lupino"
+   ],
+   "sistema": "1 FV + Vigor + 4 (dif. 3 madeira a 9 aço grosso); +2 dados de dano na mordida pela cena."
+  },
+  {
+   "id": "semblante-de-anjo",
+   "nome": "Semblante de Anjo",
+   "desc": "Em Crinos, parece um anjo em vez de um monstro.",
+   "nivel": 4,
+   "grupos": [
+    "filhos-de-gaia"
+   ],
+   "sistema": "1 Gnose; uma cena; o Delírio vira êxtase e reverência em vez de medo.",
+   "pagina": 105
+  },
+  {
+   "id": "serenidade",
+   "nome": "Serenidade",
+   "desc": "Dom tradicional dos Filhos de Gaia.",
+   "nivel": 4,
+   "grupos": [
+    "filhos-de-gaia"
+   ],
+   "sistema": "O livro só diz \"como o Dom padrão\" (de outro suplemento); consulte o Narrador.",
+   "pagina": 105
+  },
+  {
+   "id": "teatro-de-sombras",
+   "nome": "Teatro de Sombras",
+   "desc": "Cria ilusões de sombra que contam histórias. (Básico p. 142)",
+   "nivel": 4,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "Manipulação + Performance; 1 turno por Gnose gasta; alvos relutantes exigem 3 sucessos (dif. = FV)."
+  },
+  {
+   "id": "uniao-com-a-terra",
+   "nome": "União com a Terra",
+   "desc": "Enraíza-se e fica inabalável. (Básico p. 145)",
+   "nivel": 4,
+   "grupos": [
+    "crias-de-fenris"
+   ],
+   "sistema": "FV (dif. 8); +1 dado nas paradas Físicas por sucesso; não sai do lugar."
+  },
+  {
+   "id": "velocidade-mais-rapida-que-o-pensamento",
+   "nome": "Velocidade Mais Rápida que o Pensamento",
+   "desc": "Velocidade dez vezes maior. (Básico p. 150)",
+   "nivel": 4,
+   "grupos": [
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "1 Gnose + Vigor + Esportes (dif. 7); até 8 horas; depois precisa comer."
+  },
+  {
+   "id": "vida-animal",
+   "nome": "Vida Animal",
+   "desc": "Fala com todos os animais e os atrai. (Básico p. 137)",
+   "nivel": 4,
+   "grupos": [
+    "lupino"
+   ],
+   "sistema": "1 Gnose + Carisma + Empatia c/ Animais (dif. 7); atrai animais num raio de 15 km por sucesso; uma cena."
+  },
+  {
+   "id": "bloqueio-mental",
+   "nome": "Vontade do Senhor (Bloqueio Mental)",
+   "desc": "Nesta época é visto como resistência aos truques e lisonjas dos outros. Sistema do básico (p. 151).",
+   "nivel": 4,
+   "grupos": [
+    "presas-de-prata"
+   ],
+   "sistema": "Permanente; ataques mentais diretos contra ele têm dif. 10.",
+   "pagina": 109
+  },
+  {
+   "id": "acalmar-o-rebanho",
+   "nome": "Acalmar o Rebanho",
+   "desc": "Dom tradicional dos Sentinelas.",
+   "nivel": 5,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "O livro só diz \"como o Dom padrão\" (de outro suplemento); consulte o Narrador.",
+   "pagina": 111
+  },
+  {
+   "id": "alcancar-a-umbra",
+   "nome": "Alcançar a Umbra",
+   "desc": "Entra e sai da Umbra à vontade. (Básico p. 150)",
+   "nivel": 5,
+   "grupos": [
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "Permanente; percorre atalhos na hora e tem −2 dif. com Reinos."
+  },
+  {
+   "id": "as-mil-formas",
+   "nome": "As Mil Formas",
+   "desc": "Assume a forma de qualquer animal. (Básico p. 138)",
+   "nivel": 5,
+   "grupos": [
+    "ragabash",
+    "furias-negras"
+   ],
+   "sistema": "1 Gnose + Inteligência + Empatia c/ Animais (dif. 5 a 9; mítico 10)."
+  },
+  {
+   "id": "aspecto-divino",
+   "nome": "Aspecto Divino",
+   "desc": "Armadura mística e luz terrível no rosto.",
+   "nivel": 5,
+   "grupos": [
+    "presas-de-prata"
+   ],
+   "sistema": "1 Fúria + 1 Gnose; uma cena; +3 dados de absorção (até prata); quem tenta dominá-lo testa FV (dif. 9); matilha ganha +1 dado.",
+   "pagina": 109
+  },
+  {
+   "id": "assimilacao",
+   "nome": "Assimilação",
+   "desc": "Passa por nativo de qualquer cultura humana. (Básico p. 134)",
+   "nivel": 5,
+   "grupos": [
+    "hominideo"
+   ],
+   "sistema": "Manipulação + Empatia (dif. 5–9); dura uma cena + 1 dia por FV gasta."
+  },
+  {
+   "id": "aura-do-sol",
+   "nome": "Aura do Sol",
+   "desc": "Brilha como o sol. (Básico p. 148)",
+   "nivel": 5,
+   "grupos": [
+    "filhos-de-gaia"
+   ],
+   "sistema": "1 Gnose; +3 dif. para atacá-lo e +2 dados agravados com as mãos; fere vampiros a 6 m."
+  },
+  {
+   "id": "beijo-de-helios",
+   "nome": "Beijo de Hélios",
+   "desc": "Imune ao fogo e golpes em chamas. (Básico p. 142)",
+   "nivel": 5,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "1 Gnose; imune a fogo natural na cena e +2 dados agravados em golpes ardentes."
+  },
+  {
+   "id": "cancao-da-grande-fera",
+   "nome": "Canção da Grande Fera",
+   "desc": "Invoca uma Grande Fera dos tempos antigos. (Básico p. 137)",
+   "nivel": 5,
+   "grupos": [
+    "lupino"
+   ],
+   "sistema": "1 Gnose + Carisma + Instinto Primitivo (dif. 8)."
+  },
+  {
+   "id": "chamado-de-vinganca",
+   "nome": "Chamado de Vingança",
+   "desc": "Uivo que convoca os Garou contra um grande ofensor de Gaia.",
+   "nivel": 5,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "Vigor + Atuação (dif. 7); ouvido a 30 km por sucesso; quem caça ganha +3 FV, o alvo perde 2 FV por uma semana.",
+   "pagina": 102
+  },
+  {
+   "id": "chamado-para-a-cacada",
+   "nome": "Chamado para a Caçada",
+   "desc": "Invoca o Caçador e sua matilha espiritual. (Básico p. 146)",
+   "nivel": 5,
+   "grupos": [
+    "fianna"
+   ],
+   "sistema": "1×/mês, 1 hora de canto; 1 Gnose + Carisma + Ocultismo (dif. 8)."
+  },
+  {
+   "id": "comandar-as-chamas",
+   "nome": "Comandar as Chamas",
+   "desc": "Controla para onde o fogo vai.",
+   "nivel": 5,
+   "grupos": [
+    "sentinelas"
+   ],
+   "sistema": "1 Gnose + FV (dif. 7); raio do braço (1 sucesso) a uma cidade (6+); exige concentração.",
+   "pagina": 111
+  },
+  {
+   "id": "dom-do-spriggan",
+   "nome": "Dom do Spriggan",
+   "desc": "Cresce até três vezes ou encolhe. (Básico p. 146)",
+   "nivel": 5,
+   "grupos": [
+    "fianna"
+   ],
+   "sistema": "1 Gnose + Vigor + Instinto Primitivo (dif. 8); 1 hora por sucesso."
+  },
+  {
+   "id": "dom-do-totem",
+   "nome": "Dom do Totem",
+   "desc": "Pede um favor direto ao totem da tribo. (Básico p. 136)",
+   "nivel": 5,
+   "grupos": [
+    "impuro"
+   ],
+   "sistema": "1 Gnose + Carisma + Rituais (dif. 7); efeito conforme o totem."
+  },
+  {
+   "id": "dom-dos-elementos",
+   "nome": "Dom dos Elementos",
+   "desc": "Controla um elemento natural. (Básico p. 137)",
+   "nivel": 5,
+   "grupos": [
+    "lupino"
+   ],
+   "sistema": "1 Gnose + Carisma + Ocultismo (dif. 7); ~5×5 m por sucesso, por uma cena."
+  },
+  {
+   "id": "flecha-de-artemis",
+   "nome": "Flecha de Ártemis",
+   "desc": "Uma flecha carregada com a luz de Luna.",
+   "nivel": 5,
+   "grupos": [
+    "furias-negras"
+   ],
+   "sistema": "1 Gnose e 1 turno mirando; Destreza + Arqueirismo com 3 sucessos automáticos e −2 dif.; 10 dados agravados.",
+   "pagina": 103
+  },
+  {
+   "id": "horda-do-valhala",
+   "nome": "Horda do Valhalla",
+   "desc": "Chama lobos espirituais para lutar. (Básico p. 145)",
+   "nivel": 5,
+   "grupos": [
+    "crias-de-fenris"
+   ],
+   "sistema": "Gasta Fúria e/ou Gnose + Carisma + Empatia c/ Animais; um lobo por ponto, uma cena.",
+   "pagina": 105
+  },
+  {
+   "id": "lobotomia-animal",
+   "nome": "Lobotomia Animal",
+   "desc": "Destrói o intelecto da vítima. (Básico p. 139)",
+   "nivel": 5,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "Raciocínio + Empatia (dif. = FV do alvo + 3); 2 Gnose por ponto de Inteligência tirado."
+  },
+  {
+   "id": "loucura",
+   "nome": "Loucura",
+   "desc": "Lança a vítima na insanidade. (Básico p. 136)",
+   "nivel": 5,
+   "grupos": [
+    "impuro"
+   ],
+   "sistema": "1 Gnose + Manipulação + Intimidação (dif. = FV da vítima); loucura por dias = sucessos."
+  },
+  {
+   "id": "madeira-viva",
+   "nome": "Madeira Viva",
+   "desc": "Anima árvores para lutar. (Básico p. 148)",
+   "nivel": 5,
+   "grupos": [
+    "filhos-de-gaia"
+   ],
+   "sistema": "1 Gnose + Carisma + Sobrevivência (dif. 8); uma árvore por sucesso."
+  },
+  {
+   "id": "maldicao-de-dionisio",
+   "nome": "Maldição de Dionísio",
+   "desc": "Dom tradicional dos Garras Vermelhas.",
+   "nivel": 5,
+   "grupos": [
+    "garras-vermelhas"
+   ],
+   "sistema": "O livro só diz \"como o Dom padrão\" (de outro suplemento); consulte o Narrador.",
+   "pagina": 108
+  },
+  {
+   "id": "materializacao-de-sonhos",
+   "nome": "Materialização de Sonhos",
+   "desc": "Dá forma real a criações do sonho. (Básico p. 142)",
+   "nivel": 5,
+   "grupos": [
+    "galliard"
+   ],
+   "sistema": "Inteligência + Performance prolongado (dif. 8); 1 Gnose por cena (ou por turno em combate)."
+  },
+  {
+   "id": "mesmerizar",
+   "nome": "Mesmerizar",
+   "desc": "Impõe uma ordem que vira obrigação. (Básico p. 140)",
+   "nivel": 5,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "1 Gnose + Manipulação + Liderança (dif. = FV do alvo; grupo: a maior FV)."
+  },
+  {
+   "id": "modelagem-de-espirito",
+   "nome": "Modelagem de Espírito",
+   "desc": "Reformula a natureza de um espírito. (Básico p. 139)",
+   "nivel": 5,
+   "grupos": [
+    "theurge"
+   ],
+   "sistema": "Gnose resistido (dif. 6 Características, 8 disposição, 10 tipo)."
+  },
+  {
+   "id": "mordida-de-fenris",
+   "nome": "Mordida de Fenris",
+   "desc": "Mordida que mutila. (Básico p. 145)",
+   "nivel": 5,
+   "grupos": [
+    "crias-de-fenris"
+   ],
+   "sistema": "1 Fúria + Força + Medicina (dif. = Vigor + 3); inutiliza o membro; 5+ sucessos o decepam."
+  },
+  {
+   "id": "obediencia",
+   "nome": "Obediência",
+   "desc": "Exige obediência de quem está perto. (Básico p. 152)",
+   "nivel": 5,
+   "grupos": [
+    "senhores-das-sombras"
+   ],
+   "sistema": "1 Gnose + Carisma + Liderança (dif. 8); os outros testam FV (dif. 8)."
+  },
+  {
+   "id": "parede-de-granito",
+   "nome": "Parede de Granito",
+   "desc": "Ergue um muro de pedra. (Básico p. 140)",
+   "nivel": 5,
+   "grupos": [
+    "philodox"
+   ],
+   "sistema": "1 Gnose; muro de 3×2×1 m que exige 15 níveis de dano; uma cena."
+  },
+  {
+   "id": "portal-da-lua",
+   "nome": "Portal da Lua",
+   "desc": "Teleporta-se por longas distâncias. (Básico p. 150)",
+   "nivel": 5,
+   "grupos": [
+    "peregrinos-silenciosos"
+   ],
+   "sistema": "1 Gnose por 150 km + Inteligência + Prontidão."
+  },
+  {
+   "id": "romper-o-veu",
+   "nome": "Romper o Véu",
+   "desc": "Livra um humano do Delírio. (Básico p. 134)",
+   "nivel": 5,
+   "grupos": [
+    "hominideo"
+   ],
+   "sistema": "1 Gnose + Carisma + Empatia; o alvo fica imune ao Delírio pela cena."
+  },
+  {
+   "id": "roubar-poderes",
+   "nome": "Roubar Poderes",
+   "desc": "Toma emprestado um poder do alvo. (Básico p. 138)",
+   "nivel": 5,
+   "grupos": [
+    "ragabash"
+   ],
+   "sistema": "Raciocínio + Furtividade (dif. = FV do alvo), 3 sucessos; usa o poder 1 turno por Gnose gasta."
+  },
+  {
+   "id": "sobrevivente",
+   "nome": "Sobrevivente",
+   "desc": "Dispensa comida, água e sono. (Básico p. 152)",
+   "nivel": 5,
+   "grupos": [
+    "roedores-de-ossos"
+   ],
+   "sistema": "1 Gnose + Vigor + Sobrevivência (dif. 7); 1 dia por sucesso; imune a doenças e venenos naturais."
+  },
+  {
+   "id": "matilha-de-sombras",
+   "nome": "Sombra (Matilha de Sombras)",
+   "desc": "O livro só lista \"Sombra\" como Dom padrão; presume-se que seja a Matilha de Sombras do básico. Sistema do básico (p. 152).",
+   "nivel": 5,
+   "grupos": [
+    "senhores-das-sombras"
+   ],
+   "sistema": "Gnose (dif. 8) + Gnose variável; uma sombra por ponto, por uma cena.",
+   "pagina": 109
+  },
+  {
+   "id": "turba",
+   "nome": "Turba",
+   "desc": "Incita uma revolta popular. (Básico p. 152)",
+   "nivel": 5,
+   "grupos": [
+    "roedores-de-ossos"
+   ],
+   "sistema": "1 Gnose + Raciocínio + Lábia (dif. 8); de um prédio (1) a uma cidade (5)."
+  },
+  {
+   "id": "vingador-de-luna",
+   "nome": "Vingador de Luna",
+   "desc": "O corpo vira prata viva. (Básico p. 151)",
+   "nivel": 5,
+   "grupos": [
+    "presas-de-prata"
+   ],
+   "sistema": "1 turno + 1 Gnose; imune a prata, ataques agravados, +2 Vigor; uma cena."
+  },
+  {
+   "id": "vinganca-de-gaia",
+   "nome": "Vingança de Gaia",
+   "desc": "A própria terra ataca os invasores. (Básico p. 149)",
+   "nivel": 5,
+   "grupos": [
+    "garras-vermelhas"
+   ],
+   "sistema": "1 Gnose + 1 Fúria + Carisma + Instinto Primitivo (dif. = Película)."
+  },
+  {
+   "id": "vontade-inabalavel",
+   "nome": "Vontade Inabalável",
+   "desc": "Enche os aliados de coragem. (Básico p. 143)",
+   "nivel": 5,
+   "grupos": [
+    "ahroun"
+   ],
+   "sistema": "1 FV + Carisma + Liderança (dif. 8); +1 FV por sucesso a aliados em 30 m; 1×/cena."
+  }
+ ],
+ "formas": [
+  {
+   "id": "hominideo",
+   "nome": "Hominídeo",
+   "mod": {},
+   "dificuldade": 6,
+   "notas": [
+    "Forma humana; a Maldição afasta humanos se a Fúria superar a FV deles.",
+    "Lupinos e impuros nesta forma ainda regeneram e sofrem com a prata.",
+    "Mudar: Vigor + Instinto Primitivo (1 sucesso + 1 por forma intermediária); 1 Fúria muda na hora; voltar à forma racial é automático.",
+    "Penalidades de Manipulação e Aparência podem não valer entre Garou."
+   ]
+  },
+  {
+   "id": "glabro",
+   "nome": "Glabro",
+   "mod": {
+    "forca": 2,
+    "vigor": 2,
+    "manipulacao": -1,
+    "aparencia": -1
+   },
+   "dificuldade": 7,
+   "notas": [
+    "Quase-homem enorme e peludo; fala humana gutural.",
+    "Valores da ficha (p. 181); o texto do básico (p. 203) diz Manipulação −2.",
+    "Mudar: Vigor + Instinto Primitivo (1 sucesso + 1 por forma intermediária); 1 Fúria muda na hora; voltar à forma racial é automático."
+   ]
+  },
+  {
+   "id": "crinos",
+   "nome": "Crinos",
+   "mod": {
+    "forca": 4,
+    "destreza": 1,
+    "vigor": 3,
+    "manipulacao": -3,
+    "aparencia": "zero"
+   },
+   "dificuldade": 6,
+   "notas": [
+    "Homem-lobo de guerra: provoca o Delírio em humanos.",
+    "Fala humana só 1–2 palavras (mais custa 1 FV); fala Garou normal.",
+    "Garras (Força +2 na ficha do suplemento) e mordida (Força +1) causam dano agravado.",
+    "−1 na dificuldade dos testes de Fúria (não soma com a lua do augúrio).",
+    "Mudar: Vigor + Instinto Primitivo (1 sucesso + 1 por forma intermediária); 1 Fúria muda na hora; voltar à forma racial é automático."
+   ]
+  },
+  {
+   "id": "hispo",
+   "nome": "Hispo",
+   "mod": {
+    "forca": 3,
+    "destreza": 2,
+    "vigor": 3,
+    "manipulacao": -3
+   },
+   "dificuldade": 7,
+   "notas": [
+    "Lobo pré-histórico gigante; sem mãos.",
+    "Mordida com +1 dado de dano; −1 dif. em Percepção.",
+    "Fala humana custa 1 FV (1–2 sílabas); corre 1,5× a velocidade humana.",
+    "Mudar: Vigor + Instinto Primitivo (1 sucesso + 1 por forma intermediária); 1 Fúria muda na hora; voltar à forma racial é automático."
+   ]
+  },
+  {
+   "id": "lupino",
+   "nome": "Lupino",
+   "mod": {
+    "forca": 1,
+    "destreza": 2,
+    "vigor": 2,
+    "manipulacao": -3
+   },
+   "dificuldade": 6,
+   "notas": [
+    "Lobo comum; sem mãos.",
+    "−2 dif. em Percepção; corre ao dobro da velocidade humana.",
+    "Mordida agravada (letal se for lupino na própria forma racial).",
+    "Mudar: Vigor + Instinto Primitivo (1 sucesso + 1 por forma intermediária); 1 Fúria muda na hora; voltar à forma racial é automático."
+   ]
+  }
+ ],
+ "rituais": [
+  {
+   "id": "ritual-de-assembleia",
+   "nome": "Ritual de Assembléia",
+   "desc": "Abre a assembleia da seita e une os Garou ao caern. (Básico p. 157)",
+   "nivel": 1,
+   "tipo": "Caern",
+   "sistema": "Ritual de caern (dif. 7; parada limitada pela Gnose). A parada nunca passa da Gnose do mestre."
+  },
+  {
+   "id": "ritual-de-abertura-de-caern",
+   "nome": "Ritual de Abertura de Caern",
+   "desc": "Desperta o poder do caern para quem o invoca. (Básico p. 157)",
+   "nivel": 1,
+   "tipo": "Caern",
+   "sistema": "Dif. 7; cada sucesso dá 1 ponto, nível ou dado ligado ao tipo do caern. A parada nunca passa da Gnose do mestre."
+  },
+  {
+   "id": "a-toca-do-texugo",
+   "nome": "A Toca do Texugo",
+   "desc": "Liga o mestre ao território do caern para perceber o que acontece nele. (Básico p. 157)",
+   "nivel": 4,
+   "tipo": "Caern",
+   "sistema": "Ritual de caern (dif. 7). A parada nunca passa da Gnose do mestre."
+  },
+  {
+   "id": "ritual-de-abertura-de-ponte",
+   "nome": "Ritual de Abertura de Ponte",
+   "desc": "Cria uma ponte da lua permanente entre dois caerns. (Básico p. 157)",
+   "nivel": 4,
+   "tipo": "Caern",
+   "sistema": "Feito nos dois caerns; o alcance depende do nível do caern. A parada nunca passa da Gnose do mestre."
+  },
+  {
+   "id": "ritual-da-ravina-encoberta",
+   "nome": "Ritual da Ravina Encoberta",
+   "desc": "Oculta o caern de quem vem de fora. (Básico p. 158)",
+   "nivel": 4,
+   "tipo": "Caern",
+   "sistema": "Ritual de caern (dif. 7). A parada nunca passa da Gnose do mestre."
+  },
+  {
+   "id": "ritual-de-criacao-de-caern",
+   "nome": "Ritual de Criação de Caern",
+   "desc": "Desperta um novo caern num local sagrado. (Básico p. 158)",
+   "nivel": 5,
+   "tipo": "Caern",
+   "sistema": "Ritual longo, com vários Garou e grande gasto de Gnose. A parada nunca passa da Gnose do mestre."
+  },
+  {
+   "id": "cerimonia-pelos-falecidos",
+   "nome": "Cerimônia pelos Falecidos",
+   "desc": "Honra um Garou morto e ajuda seu espírito a partir. (Básico p. 159)",
+   "nivel": 1,
+   "tipo": "Morte",
+   "sistema": "Carisma + Rituais (dif. 8 − Posto)."
+  },
+  {
+   "id": "ritual-do-lobo-do-inverno",
+   "nome": "Ritual do Lobo do Inverno",
+   "desc": "Despedida do Garou velho ou doente que escolhe morrer com honra. (Básico p. 159)",
+   "nivel": 3,
+   "tipo": "Morte",
+   "sistema": "Carisma + Rituais (dif. 8 − Posto)."
+  },
+  {
+   "id": "ritual-de-purificacao",
+   "nome": "Ritual de Purificação",
+   "desc": "Limpa pessoas, lugares ou objetos da mácula da Wyrm. (Básico p. 159)",
+   "nivel": 1,
+   "tipo": "Pacto",
+   "sistema": "Carisma + Rituais (dif. 7)."
+  },
+  {
+   "id": "ritual-de-contricao",
+   "nome": "Ritual de Contrição",
+   "desc": "Pedido formal de perdão a um espírito ou Garou ofendido. (Básico p. 160)",
+   "nivel": 1,
+   "tipo": "Pacto",
+   "sistema": "Carisma + Rituais (dif. 7)."
+  },
+  {
+   "id": "ritual-de-renuncia",
+   "nome": "Ritual de Renúncia",
+   "desc": "Troca de augúrio (ou de tribo). (Básico p. 160)",
+   "nivel": 2,
+   "tipo": "Pacto",
+   "sistema": "Recomeça no Posto 1; mantém os Dons antigos, mas não aprende novos do augúrio deixado. Teste padrão: Carisma + Rituais (dif. 7)."
+  },
+  {
+   "id": "ritual-de-ostracismo",
+   "nome": "Ritual de Ostracismo",
+   "desc": "Expulsa o culpado do convívio da seita. (Básico p. 160)",
+   "nivel": 2,
+   "tipo": "Punição",
+   "sistema": "Carisma + Rituais (dif. 7); ele perde 1 Glória, 5 Honra e 1 Sabedoria."
+  },
+  {
+   "id": "pedra-de-escarnio",
+   "nome": "Pedra de Escárnio",
+   "desc": "Humilha publicamente o culpado. (Básico p. 160)",
+   "nivel": 2,
+   "tipo": "Punição",
+   "sistema": "Carisma + Rituais (dif. 7); ele perde 8 Honra e 2 Sabedoria até se redimir."
+  },
+  {
+   "id": "voz-do-chacal",
+   "nome": "Voz do Chacal",
+   "desc": "Marca o culpado como \"chacal\". (Básico p. 161)",
+   "nivel": 2,
+   "tipo": "Punição",
+   "sistema": "−2 dados em testes Sociais; ele perde 2 Glória e 5 Honra."
+  },
+  {
+   "id": "a-cacada",
+   "nome": "A Caçada",
+   "desc": "O criminoso capital é caçado e morto pela matilha. (Básico p. 161)",
+   "nivel": 3,
+   "tipo": "Punição",
+   "sistema": "Pode ser simulada: Carisma + Rituais (dif. = Posto do condenado + 4)."
+  },
+  {
+   "id": "ritual-satirico",
+   "nome": "Ritual Satírico",
+   "desc": "Canção de escárnio que rebaixa o ofensor. (Básico p. 161)",
+   "nivel": 3,
+   "tipo": "Punição",
+   "sistema": "Dif. = Posto do ofensor + 4; sucesso tira um Posto; falha crítica volta-se contra o mestre."
+  },
+  {
+   "id": "a-laceracao-do-veu",
+   "nome": "A Laceração do Véu",
+   "desc": "Pune um humano: ele vê o Garou e lembra-se de uma noite de perseguição. (Básico p. 162)",
+   "nivel": 4,
+   "tipo": "Punição",
+   "sistema": "Carisma + Rituais (dif. 7); falha crítica dá Delírio ao Garou."
+  },
+  {
+   "id": "os-dentes-vingativos-de-gaia",
+   "nome": "Os Dentes Vingativos de Gaia",
+   "desc": "Condena traidores: tudo de Gaia que os toca vira prata. (Básico p. 162)",
+   "nivel": 5,
+   "tipo": "Punição",
+   "sistema": "Exige ao menos 5 Garou; o alvo não consegue entrar na Umbra."
+  },
+  {
+   "id": "ritual-de-conquista",
+   "nome": "Ritual de Conquista",
+   "desc": "Converte Renome temporário em permanente. (Básico p. 162)",
+   "nivel": 2,
+   "tipo": "Renome",
+   "sistema": "Dif. 4 (6 se contestado); 10 pontos temporários viram 1 permanente."
+  },
+  {
+   "id": "ritual-de-passagem",
+   "nome": "Ritual de Passagem",
+   "desc": "Torna o filhote adulto e membro da tribo. (Básico p. 162)",
+   "nivel": 2,
+   "tipo": "Renome",
+   "sistema": "Exige uma demanda perigosa; dá o Posto 1 e permite aprender Dons."
+  },
+  {
+   "id": "ritual-de-ferimento",
+   "nome": "Ritual de Ferimento",
+   "desc": "Celebra o primeiro ferimento de batalha. (Básico p. 163)",
+   "nivel": 1,
+   "tipo": "Renome",
+   "sistema": "Carisma + Rituais (dif. 6); +2 Glória."
+  },
+  {
+   "id": "batismo-de-fogo",
+   "nome": "Batismo de Fogo",
+   "desc": "Marca espiritualmente um bebê Parente para encontrá-lo depois. (Básico p. 163)",
+   "nivel": 1,
+   "tipo": "Místico",
+   "sistema": "Carisma + Rituais; 1 sucesso, à noite, sob a lua de nascimento. Na Idade das Trevas: −1 dif. (Película mais fraca)."
+  },
+  {
+   "id": "ritual-de-compromisso",
+   "nome": "Ritual de Compromisso",
+   "desc": "Prende um espírito como servo ou num amuleto. (Básico p. 163)",
+   "nivel": 1,
+   "tipo": "Místico",
+   "sistema": "Gnose investida reduz a do espírito; depois FV (dif. = Gnose ajustada); sucessos = semanas de serviço. Na Idade das Trevas: −1 dif. (Película mais fraca)."
+  },
+  {
+   "id": "ritual-da-pedra-cacadora",
+   "nome": "Ritual da Pedra Caçadora",
+   "desc": "Dá a localização aproximada de alguém ou algo pelo nome. (Básico p. 163)",
+   "nivel": 1,
+   "tipo": "Místico",
+   "sistema": "Raciocínio + Rituais (dif. 7; −1 com um pedaço do alvo). Na Idade das Trevas: −1 dif. (Película mais fraca)."
+  },
+  {
+   "id": "ritual-de-dedicacao-do-talisma",
+   "nome": "Ritual de Dedicação do Talismã",
+   "desc": "Vincula objetos ao corpo: mudam de forma com ele e o acompanham à Umbra. (Básico p. 164)",
+   "nivel": 1,
+   "tipo": "Místico",
+   "sistema": "1 Gnose por objeto; número de objetos até a Gnose. Na Idade das Trevas: −1 dif. (Película mais fraca)."
+  },
+  {
+   "id": "ritual-de-iniciacao",
+   "nome": "Ritual de Iniciação",
+   "desc": "Prepara o Garou para viajar à Umbra Profunda. (Básico p. 164)",
+   "nivel": 2,
+   "tipo": "Místico",
+   "sistema": "Feito num Ádito; uma trança no pulso o protege na jornada. Na Idade das Trevas: −1 dif. (Película mais fraca)."
+  },
+  {
+   "id": "ritual-para-despertar-espiritos",
+   "nome": "Ritual para Despertar Espíritos",
+   "desc": "Desperta o espírito adormecido de um objeto ou planta. (Básico p. 164)",
+   "nivel": 2,
+   "tipo": "Místico",
+   "sistema": "Dif. = Fúria do espírito; não dá controle sobre ele. Na Idade das Trevas: −1 dif. (Película mais fraca)."
+  },
+  {
+   "id": "ritual-de-conjuracao",
+   "nome": "Ritual de Conjuração",
+   "desc": "Invoca um espírito. (Básico p. 164)",
+   "nivel": 2,
+   "tipo": "Místico",
+   "sistema": "Teste de Gnose (dif. 4 Gaffling a 10 Avatar de Celestino; −1 por hora); mais sucessos = espírito mais amistoso. Na Idade das Trevas: −1 dif. (Película mais fraca)."
+  },
+  {
+   "id": "ritual-de-fetiche",
+   "nome": "Ritual de Fetiche",
+   "desc": "Prende um espírito num objeto para criar um fetiche. (Básico p. 165)",
+   "nivel": 3,
+   "tipo": "Místico",
+   "sistema": "Raciocínio + Rituais (dif. 10; −2 por Gnose permanente investida). Na Idade das Trevas: −1 dif. (Película mais fraca)."
+  },
+  {
+   "id": "ritual-de-totem",
+   "nome": "Ritual de Totem",
+   "desc": "Vincula o totem à matilha. (Básico p. 165)",
+   "nivel": 3,
+   "tipo": "Místico",
+   "sistema": "Exige o Antecedente Totem; Raciocínio + Rituais (dif. 7). Na Idade das Trevas: −1 dif. (Película mais fraca)."
+  },
+  {
+   "id": "ritual-dos-ventos-frios",
+   "nome": "Ritual dos Ventos Frios",
+   "desc": "Celebração da noite mais longa do ano, saudando Hélios. (Básico p. 165)",
+   "nivel": 2,
+   "tipo": "Periódico",
+   "sistema": "Vigor + Rituais (dif. 8 − nível do caern)."
+  },
+  {
+   "id": "ritual-do-novo-despertar",
+   "nome": "Ritual do Novo Despertar",
+   "desc": "Rito do equinócio da primavera com uma demanda na Umbra. (Básico p. 165)",
+   "nivel": 2,
+   "tipo": "Periódico",
+   "sistema": "Vigor + Rituais (dif. 8 − nível do caern)."
+  },
+  {
+   "id": "a-grande-cacada",
+   "nome": "A Grande Caçada",
+   "desc": "No solstício de verão, a seita caça uma criatura indicada por Gaia. (Básico p. 166)",
+   "nivel": 2,
+   "tipo": "Periódico",
+   "sistema": "Sucesso dá +3 Glória a cada um; fracasso tira 2 Glória e dificulta os rituais da seita."
+  },
+  {
+   "id": "a-longa-vigilia",
+   "nome": "A Longa Vigília",
+   "desc": "No equinócio de outono, os feitos do ano são narrados e os troféus queimados. (Básico p. 166)",
+   "nivel": 2,
+   "tipo": "Periódico",
+   "sistema": "Vigor + Rituais (dif. 8 − nível do caern)."
+  },
+  {
+   "id": "halito-de-gaia",
+   "nome": "Hálito de Gaia",
+   "desc": "Saudação diária a Gaia. (Básico p. 166)",
+   "nivel": 0,
+   "tipo": "Pequeno",
+   "sistema": "Feito todo dia por um ciclo lunar: −2 dif. em testes de cura ou detecção."
+  },
+  {
+   "id": "oracao-da-cacada",
+   "nome": "Oração da Caçada",
+   "desc": "Prece antes de cada caçada. (Básico p. 166)",
+   "nivel": 0,
+   "tipo": "Pequeno",
+   "sistema": "Por 3 meses lunares, com talismã: +1 dado para rastrear."
+  },
+  {
+   "id": "oracao-pela-presa",
+   "nome": "Oração pela Presa",
+   "desc": "Agradece ao espírito do animal abatido. (Básico p. 167)",
+   "nivel": 0,
+   "tipo": "Pequeno",
+   "sistema": "Por um ciclo lunar: −1 dif. ao lidar com espíritos da natureza."
+  },
+  {
+   "id": "ritmos-osseos",
+   "nome": "Ritmos Ósseos",
+   "desc": "Batidas com baquetas em honra do totem. (Básico p. 167)",
+   "nivel": 0,
+   "tipo": "Pequeno",
+   "sistema": "3×/dia por 3 dias: +1 dado em um teste na Umbra."
+  },
+  {
+   "id": "saudacao-a-lua",
+   "nome": "Saudação à Lua",
+   "desc": "Uivo noturno para Luna. (Básico p. 167)",
+   "nivel": 0,
+   "tipo": "Pequeno",
+   "sistema": "Toda noite de uma fase: +1 dado em testes Sociais com Garou daquele augúrio."
+  },
+  {
+   "id": "saudacao-ao-sol",
+   "nome": "Saudação ao Sol",
+   "desc": "Louvor diário a Hélios. (Básico p. 167)",
+   "nivel": 0,
+   "tipo": "Pequeno",
+   "sistema": "9 dias seguidos e depois diário: +1 dado para pressentir criaturas da Wyrm."
+  },
+  {
+   "id": "despertar-a-forca-de-gaia",
+   "nome": "Despertar a Força de Gaia",
+   "desc": "Fortalece muros e portões de madeira ou pedra.",
+   "pagina": 112,
+   "nivel": 3,
+   "tipo": "Pacto",
+   "sistema": "Carisma + Rituais (dif. 7, menor com um pedaço do mesmo material); +3 dif. para danificar até a próxima lua cheia."
+  },
+  {
+   "id": "ritual-das-regioes-selvagens",
+   "nome": "Ritual das Regiões Selvagens",
+   "desc": "Os espíritos da terra hostilizam os humanos que invadem a área.",
+   "pagina": 113,
+   "nivel": 4,
+   "tipo": "Pacto",
+   "sistema": "Três noites no local; dura um ano; −1 dif. com caern num raio de 8 km."
+  },
+  {
+   "id": "ritual-da-tempestade",
+   "nome": "Ritual da Tempestade",
+   "desc": "Invoca tempestades contra os inimigos da seita.",
+   "pagina": 113,
+   "nivel": 4,
+   "tipo": "Caern",
+   "sistema": "Carisma + Rituais (dif. = 10 − nível do caern) e 1 Gnose; 1, 3 ou 5+ sucessos dão tempestades cada vez maiores."
+  },
+  {
+   "id": "ritual-de-sangue",
+   "nome": "Ritual de Sangue",
+   "desc": "Rito de duelo selado com sangue.",
+   "pagina": 114,
+   "nivel": 2,
+   "tipo": "Místico",
+   "sistema": "Raciocínio + Rituais (dif. 6)."
+  },
+  {
+   "id": "maldicao-do-lobo",
+   "nome": "Maldição do Lobo",
+   "desc": "Amaldiçoa um humano a virar fera nas luas cheias.",
+   "pagina": 114,
+   "nivel": 5,
+   "tipo": "Punição",
+   "sistema": "Carisma + Rituais (dif. = FV do alvo); sucessos = noites de lua cheia em que vira Crinos."
+  }
+ ],
+ "postos": [
+  {
+   "posto": 1,
+   "nome": "Cliath",
+   "exigido": {
+    "ragabash": {
+     "total": 3
+    },
+    "theurge": {
+     "gloria": 0,
+     "honra": 0,
+     "sabedoria": 3
+    },
+    "philodox": {
+     "gloria": 0,
+     "honra": 3,
+     "sabedoria": 0
+    },
+    "galliard": {
+     "gloria": 2,
+     "honra": 0,
+     "sabedoria": 1
+    },
+    "ahroun": {
+     "gloria": 2,
+     "honra": 1,
+     "sabedoria": 0
+    }
+   }
+  },
+  {
+   "posto": 2,
+   "nome": "Fostern",
+   "exigido": {
+    "ragabash": {
+     "total": 7
+    },
+    "theurge": {
+     "gloria": 1,
+     "honra": 0,
+     "sabedoria": 5
+    },
+    "philodox": {
+     "gloria": 1,
+     "honra": 4,
+     "sabedoria": 1
+    },
+    "galliard": {
+     "gloria": 4,
+     "honra": 0,
+     "sabedoria": 2
+    },
+    "ahroun": {
+     "gloria": 4,
+     "honra": 1,
+     "sabedoria": 1
+    }
+   }
+  },
+  {
+   "posto": 3,
+   "nome": "Adren",
+   "exigido": {
+    "ragabash": {
+     "total": 13
+    },
+    "theurge": {
+     "gloria": 2,
+     "honra": 1,
+     "sabedoria": 7
+    },
+    "philodox": {
+     "gloria": 2,
+     "honra": 6,
+     "sabedoria": 2
+    },
+    "galliard": {
+     "gloria": 4,
+     "honra": 2,
+     "sabedoria": 4
+    },
+    "ahroun": {
+     "gloria": 6,
+     "honra": 3,
+     "sabedoria": 1
+    }
+   }
+  },
+  {
+   "posto": 4,
+   "nome": "Athro",
+   "exigido": {
+    "ragabash": {
+     "total": 19
+    },
+    "theurge": {
+     "gloria": 4,
+     "honra": 2,
+     "sabedoria": 9
+    },
+    "philodox": {
+     "gloria": 3,
+     "honra": 8,
+     "sabedoria": 4
+    },
+    "galliard": {
+     "gloria": 7,
+     "honra": 2,
+     "sabedoria": 6
+    },
+    "ahroun": {
+     "gloria": 9,
+     "honra": 5,
+     "sabedoria": 2
+    }
+   }
+  },
+  {
+   "posto": 5,
+   "nome": "Ancião",
+   "exigido": {
+    "ragabash": {
+     "total": 25
+    },
+    "theurge": {
+     "gloria": 4,
+     "honra": 9,
+     "sabedoria": 10
+    },
+    "philodox": {
+     "gloria": 4,
+     "honra": 10,
+     "sabedoria": 9
+    },
+    "galliard": {
+     "gloria": 9,
+     "honra": 5,
+     "sabedoria": 9
+    },
+    "ahroun": {
+     "gloria": 10,
+     "honra": 9,
+     "sabedoria": 4
+    }
+   }
+  }
+ ],
+ "luas": [
+  {
+   "nome": "Nova",
+   "dificuldade": 8
+  },
+  {
+   "nome": "Crescente",
+   "dificuldade": 7
+  },
+  {
+   "nome": "Meia-lua",
+   "dificuldade": 6
+  },
+  {
+   "nome": "Gibosa",
+   "dificuldade": 5
+  },
+  {
+   "nome": "Cheia",
+   "dificuldade": 4
+  }
+ ]
+}

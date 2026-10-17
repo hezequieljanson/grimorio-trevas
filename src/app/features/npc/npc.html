@@ -1,0 +1,73 @@
+<div class="page">
+  <div class="spread" style="align-items: center">
+    <h1>NPC rápido</h1>
+    <span class="row-wrap">
+      <a routerLink="/geradores" class="btn btn-sm">Geradores</a>
+      <a routerLink="/bestiario" class="btn btn-sm">Bestiário</a>
+      <a routerLink="/rolador" class="btn btn-sm">Rolador</a>
+    </span>
+  </div>
+
+  <div class="panels">
+    <div class="col">
+      <div class="chips" role="group" aria-label="Tipo de NPC">
+        @for (t of tipos; track t.id) {
+          <button type="button" class="chip" [attr.aria-pressed]="tipo() === t.id" (click)="escolherTipo(t.id)">{{ t.nome }}</button>
+        }
+      </div>
+      <div class="seg" role="group" aria-label="Nível de poder">
+        @for (p of poderes; track p.id) {
+          <button type="button" [attr.aria-pressed]="poder() === p.id" (click)="poder.set(p.id); gerar()">{{ p.nome }}</button>
+        }
+      </div>
+      @if (tipo() !== 'cacador') {
+        <div class="seg" role="group" aria-label="Época">
+          <button type="button" [attr.aria-pressed]="epoca() === 'moderno'" (click)="epoca.set('moderno'); gerar()">Noites modernas</button>
+          <button type="button" [attr.aria-pressed]="epoca() === 'medieval'" (click)="epoca.set('medieval'); gerar()">Idade das Trevas</button>
+        </div>
+      }
+      @if (avisoLivro()) { <span class="tiny muted">{{ avisoLivro() }}</span> }
+      @if (erro()) { <p class="card card-red small">{{ erro() }}</p> }
+    </div>
+
+    @if (npc(); as n) {
+      <article class="card">
+        <div class="row" style="align-items: flex-start">
+          <div class="col grow" style="gap: 3px">
+            <h2 style="font-size: 30px">{{ n.nome }}</h2>
+            <span class="small" style="color: var(--text-3)">{{ n.grupo }} · {{ poderes.find(p => p.id === poder())?.nome }}</span>
+          </div>
+          @if (tipo() !== 'mortal') {
+            <button type="button" class="btn btn-icon" [class.btn-gold]="travado()" [attr.aria-pressed]="travado()" [attr.aria-label]="travado() ? 'Destravar clã, tribo ou organização' : 'Travar clã, tribo ou organização ao gerar de novo'" (click)="travado.set(!travado())">
+              <app-icon [name]="travado() ? 'cadeado' : 'aberto'" />
+            </button>
+          }
+        </div>
+        <div class="grid-2">
+          <div class="tile col" style="gap: 2px"><span class="eyebrow" style="font-size: 11px">Natureza</span><strong class="small">{{ n.natureza }}</strong></div>
+          <div class="tile col" style="gap: 2px"><span class="eyebrow" style="font-size: 11px">Comportamento</span><strong class="small">{{ n.comportamento }}</strong></div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px">
+          @for (p of n.paradas; track p.k) {
+            <div class="col" style="align-items: center; gap: 2px; padding: 8px 4px; border-radius: 10px; border: 1px solid var(--line-2)">
+              <strong class="red" style="font-size: 22px">{{ p.v }}</strong><span class="tiny muted">{{ p.k }}</span>
+            </div>
+          }
+        </div>
+        <div class="grid-3 tiny">
+          @for (a of n.atributos; track a.nome) { <span class="tile spread"><span class="muted">{{ a.nome }}</span><strong>{{ a.valor }}</strong></span> }
+        </div>
+        <div class="chips">
+          @for (p of n.poderes; track p) { <span class="tag">{{ p }}</span> }
+        </div>
+        <p class="small"><strong class="gold">Jeito:</strong> {{ n.jeito }}</p>
+        <p class="small"><strong class="gold">Segredo:</strong> {{ n.segredo }}</p>
+        <p class="small"><strong class="gold">Gancho:</strong> {{ n.gancho }}</p>
+        <div class="row">
+          <button type="button" class="btn btn-primary btn-big grow" (click)="gerar()"><app-icon name="npc" />Gerar outro</button>
+          <button type="button" class="btn btn-big" (click)="salvarEmNotas()"><app-icon name="notas" />Salvar em notas</button>
+        </div>
+      </article>
+    }
+  </div>
+</div>

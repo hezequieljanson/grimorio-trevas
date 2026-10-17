@@ -1,0 +1,32 @@
+<a class="pular sr-only" href="#conteudo">Pular para o conteúdo</a>
+<div class="shell" [class.sem-menu]="semMenu()">
+  @if (!semMenu()) {
+    <aside class="lateral no-print">
+      <a routerLink="/" class="marca">
+        <span class="eyebrow">Mundo das Trevas</span>
+        <span class="serif marca-nome">Grimório das Trevas</span>
+      </a>
+      <nav aria-label="Navegação principal" class="lateral-nav">
+        @for (m of menuLateral; track m.rota) {
+          <a [routerLink]="m.rota" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: !!m.exato }" ariaCurrentWhenActive="page">
+            <app-icon [name]="m.icone" />{{ m.nome }}
+          </a>
+        }
+      </nav>
+    </aside>
+  }
+
+  <main id="conteudo" class="conteudo">
+    <router-outlet />
+  </main>
+
+  @if (!semMenu()) {
+    <nav aria-label="Navegação principal" class="inferior no-print">
+      <a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page"><app-icon name="inicio" [size]="22" />Início</a>
+      <a routerLink="/fichas" routerLinkActive="ativo" ariaCurrentWhenActive="page"><app-icon name="fichas" [size]="22" />Fichas</a>
+      <a routerLink="/notas" routerLinkActive="ativo" ariaCurrentWhenActive="page"><app-icon name="notas" [size]="22" />Notas</a>
+      <a routerLink="/npc" [class.ativo]="narrarAtivo()"><app-icon name="npc" [size]="22" />Narrar</a>
+      <a routerLink="/regras" [class.ativo]="regrasAtivo()"><app-icon name="regras" [size]="22" />Regras</a>
+    </nav>
+  }
+</div>

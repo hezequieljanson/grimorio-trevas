@@ -1,0 +1,86 @@
+<div class="page page-wide">
+  <div class="spread" style="align-items: center">
+    <h1>Regras</h1>
+    <a routerLink="/glossario" class="btn btn-sm"><app-icon name="ajuda" [size]="16" />Glossário</a>
+  </div>
+
+  <div class="layout">
+    <section class="lista" [class.esconder-celular]="!!id()">
+      <form class="search" role="search" (submit)="$event.preventDefault()">
+        <app-icon name="busca" />
+        <input type="search" name="q" aria-label="Buscar regra" placeholder="frenesi, prata, Delírio, XP…" [ngModel]="q()" (ngModelChange)="buscar($event)" />
+        @if (q()) { <button type="button" class="btn btn-icon btn-sm" aria-label="Limpar busca" (click)="buscar('')"><app-icon name="fechar" [size]="16" /></button> }
+      </form>
+      <div class="chips-scroll" role="group" aria-label="Filtrar por livro">
+        <button type="button" class="chip" [attr.aria-pressed]="filtro() === 'todos'" (click)="filtro.set('todos')">Todos ({{ contagem().todos ?? 0 }})</button>
+        @for (l of linhas; track l.id) {
+          @if (config.ativo(l.id)) {
+            <button type="button" class="chip" [attr.aria-pressed]="filtro() === l.id" (click)="filtro.set(l.id)">{{ l.curto }} ({{ contagem()[l.id] ?? 0 }})</button>
+          }
+        }
+      </div>
+      @if (erro()) { <p class="card card-red">{{ erro() }}</p> }
+      <div class="col" style="gap: 0">
+        @for (r of resultados(); track r.id) {
+          <button type="button" class="list-link" [class.atual]="r.id === atual()?.id" (click)="abrir(r)">
+            <span class="col grow" style="gap: 2px">
+              <strong>{{ r.titulo }}</strong>
+              <span class="tiny muted">{{ nomeLinha(r.linha, true) }} · {{ r.capitulo }}{{ r.pagina ? ' · p. ' + r.pagina : '' }}</span>
+              @if (q()) { <span class="tiny" style="color: var(--text-3)">{{ trecho(r) }}</span> }
+            </span>
+            <app-icon name="seguir" [size]="18" />
+          </button>
+        } @empty {
+          @if (regras().length) { <div class="empty">Nada encontrado. Tente outra palavra ou ative mais livros no Início.</div> }
+        }
+      </div>
+    </section>
+
+    @if (atual(); as r) {
+      <article class="detalhe">
+        <button type="button" class="btn btn-sm so-celular" (click)="voltar()"><app-icon name="voltar" [size]="16" />Resultados</button>
+        <div class="spread" style="flex-wrap: wrap">
+          <h2 style="font-size: 36px">{{ r.titulo }}</h2>
+          <span class="small muted">{{ nomeLinha(r.linha) }} · {{ r.capitulo }}{{ r.pagina ? ' · p. ' + r.pagina : '' }}</span>
+        </div>
+        @for (p of r.resumo; track $index) {
+          <p class="texto"><app-texto-glossario [texto]="p" [termos]="termosAtivos()" (escolher)="termoAberto.set($event)" /></p>
+        }
+        @if (termoAberto(); as t) {
+          <div class="card card-gold" role="note">
+            <div class="spread"><strong class="serif gold" style="font-size: 20px">{{ t.termo }}</strong>
+              <button type="button" class="btn btn-icon btn-sm" aria-label="Fechar" (click)="termoAberto.set(null)"><app-icon name="fechar" [size]="14" /></button>
+            </div>
+            <span class="small">{{ t.def }}</span>
+            <span class="tiny muted">Glossário · {{ nomeLinha(t.linha, true) }}{{ t.pagina ? ' · p. ' + t.pagina : '' }}</span>
+          </div>
+        }
+        @if (r.tabela?.length) {
+          <div class="tabela-box">
+            <table>
+              <thead><tr>@for (c of r.tabela![0]; track $index) { <th>{{ c }}</th> }</tr></thead>
+              <tbody>
+                @for (linha of r.tabela!.slice(1); track $index) {
+                  <tr>@for (c of linha; track $index) { <td>{{ c }}</td> }</tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        }
+        <p class="tiny muted">Resumo com palavras do site. Para o texto completo, consulte o livro na página indicada.</p>
+        @if (relacionadas().length) {
+          <div class="col" style="gap: 6px">
+            <span class="eyebrow">Relacionadas</span>
+            <div class="chips">
+              @for (x of relacionadas(); track x.id) { <button type="button" class="chip" (click)="abrir(x)">{{ x.titulo }}</button> }
+            </div>
+          </div>
+        }
+      </article>
+    } @else {
+      <div class="detalhe esconder-celular">
+        <div class="empty">Escolha uma regra na lista para ler o resumo aqui.</div>
+      </div>
+    }
+  </div>
+</div>

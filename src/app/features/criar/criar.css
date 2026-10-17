@@ -1,0 +1,31 @@
+.criar { display: flex; flex-wrap: wrap; align-items: flex-start; }
+.passos { display: none; }
+.corpo { flex: 999 1 520px; min-width: 0; padding: 20px 16px 24px; display: flex; flex-direction: column; gap: 16px; }
+.previa { flex: 1 1 300px; min-width: 0; padding: 0 16px 24px; display: flex; flex-direction: column; gap: 14px; }
+
+.traco { display: flex; align-items: center; gap: 8px; min-height: 44px; border-bottom: 1px solid var(--line); }
+.traco:last-child { border-bottom: 0; }
+.traco-desc { display: none; }
+.cla { text-align: left; cursor: pointer; }
+.marcado { width: 28px; height: 28px; border-radius: 50%; background: var(--red-2); color: #fff; display: flex; align-items: center; justify-content: center; }
+
+.rodape { display: flex; gap: 10px; position: sticky; bottom: calc(76px + env(safe-area-inset-bottom)); padding: 12px 0; background: linear-gradient(to top, var(--bg) 70%, transparent); }
+
+.papel { background: var(--paper); color: var(--ink); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+
+.voltar { display: flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 10px; color: var(--text-2); text-decoration: none; margin-bottom: 8px; }
+.passo-btn { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 12px; border: 0; background: transparent; color: var(--muted); font-size: 14px; text-align: left; }
+.passo-btn.atual { background: #2a1519; color: var(--red-soft); font-weight: 700; }
+.bolinha { width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--line-3); display: inline-flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
+.passo-btn.atual .bolinha { background: var(--red); border-color: var(--red); color: var(--on-red); }
+.bolinha.feito { background: #1f3a26; border-color: #1f3a26; color: var(--green); }
+
+@media (min-width: 900px) {
+  .rodape { bottom: 0; }
+  .traco-desc { display: block; }
+  .corpo { padding: 28px 32px; border-right: 1px solid var(--line); }
+  .previa { padding: 28px 22px; position: sticky; top: 0; max-width: 380px; }
+}
+@media (min-width: 1200px) {
+  .passos { display: flex; flex-direction: column; gap: 2px; flex: 0 0 230px; padding: 24px 14px; position: sticky; top: 0; border-right: 1px solid var(--line); }
+}
