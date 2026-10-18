@@ -12,6 +12,12 @@
     </section>
 
     <section class="card-plain">
+      <h2>Dados 3D</h2>
+      <p class="small muted">Os dados caem na tela com física antes de mostrar o resultado. Precisa de internet na primeira vez para baixar os gráficos.</p>
+      <label class="check"><input type="checkbox" [checked]="d3.ativo()" (change)="d3.alternar()" />Usar dados 3D no rolador e na ficha</label>
+    </section>
+
+    <section class="card-plain">
       <h2>Backup</h2>
       <p class="small muted">Tudo fica salvo só neste aparelho. Exporte um arquivo para guardar ou levar para outro celular ou computador.</p>
       <div class="row-wrap">

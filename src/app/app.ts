@@ -48,6 +48,7 @@ export class App {
     { rota: '/rolador', nome: 'Rolador', icone: 'dados' },
     { rota: '/npc', nome: 'NPC rápido', icone: 'npc' },
     { rota: '/geradores', nome: 'Geradores', icone: 'livro' },
+    { rota: '/mapas', nome: 'Mapas', icone: 'mapa' },
     { rota: '/bestiario', nome: 'Bestiário', icone: 'besta' },
     { rota: '/regras', nome: 'Regras', icone: 'regras' },
     { rota: '/biblioteca', nome: 'Biblioteca de poderes', icone: 'poder' },
@@ -56,7 +57,7 @@ export class App {
   ];
 
   /** "Narrar" no celular fica ativo em qualquer ferramenta do narrador. */
-  protected readonly narrarAtivo = computed(() => /^\/(npc|geradores|bestiario|rolador)/.test(this.url()));
+  protected readonly narrarAtivo = computed(() => /^\/(npc|geradores|mapas|bestiario|rolador)/.test(this.url()));
   /** Ctrl+K (ou Cmd+K) abre a busca de qualquer tela. */
   protected atalho(e: KeyboardEvent): void {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {

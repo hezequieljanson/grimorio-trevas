@@ -2,7 +2,8 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, input, si
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { ConfigService } from '../../core/config.service';
-import { Resultado, rolar } from '../../core/dados';
+import { Resultado, avaliar } from '../../core/dados';
+import { Dados3dService } from '../../core/dados3d';
 import { DataService } from '../../core/data.service';
 import {
   Ficha,
@@ -56,6 +57,7 @@ export class FichaMesa {
   private readonly data = inject(DataService);
   private readonly fichas = inject(FichasService);
   private readonly config = inject(ConfigService);
+  private readonly d3 = inject(Dados3dService);
 
   protected readonly linha = signal<Linha | null>(null);
   protected readonly f = computed(() => this.fichas.fichas().find((x) => x.id === this.id()));
@@ -272,7 +274,7 @@ export class FichaMesa {
     this.executar(`${this.formula(tracos)} · dif. ${this.dificuldade()}`, this.parada(tracos), this.dificuldade());
   }
 
-  private executar(rotulo: string, n: number, dif: number): void {
+  private async executar(rotulo: string, n: number, dif: number): Promise<void> {
     const fv = this.usarFv();
     if (fv) {
       if ((this.f()?.estado.fv ?? 0) <= 0) {
@@ -283,7 +285,7 @@ export class FichaMesa {
     }
     const anterior = this.resultado();
     if (anterior) this.historico.update((h) => [{ rotulo: this.rotulo(), texto: anterior.texto }, ...h].slice(0, 8));
-    this.resultado.set(rolar(n, dif, fv));
+    this.resultado.set(avaliar(await this.d3.rolar(n), dif, fv));
     this.rotulo.set(rotulo);
     this.usarFv.set(false);
   }

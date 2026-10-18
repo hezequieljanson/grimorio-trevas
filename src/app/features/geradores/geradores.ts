@@ -25,7 +25,7 @@ function sorteio(n: number): number {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page">
-      <div class="spread" style="align-items: center"><h1>Geradores</h1><a routerLink="/npc" class="btn btn-sm">NPC completo</a></div>
+      <div class="spread" style="align-items: center"><h1>Geradores</h1><span class="row-wrap"><a routerLink="/mapas" class="btn btn-sm">Mapas</a><a routerLink="/npc" class="btn btn-sm">NPC completo</a></span></div>
       <div class="panels">
         <div class="col">
           <div class="seg" role="group" aria-label="Época">
@@ -37,6 +37,7 @@ function sorteio(n: number): number {
               <button type="button" class="tipo" [class.on]="tipo() === t.id" [attr.aria-pressed]="tipo() === t.id" (click)="tipo.set(t.id); gerar()">{{ t.nome }}<span class="tiny">{{ t.desc }}</span></button>
             }
             <a routerLink="/npc" class="tipo">NPC<span class="tiny">ficha completa</span></a>
+            <a routerLink="/mapas" class="tipo">Mapa<span class="tiny">Watabou</span></a>
           </div>
         </div>
         <div class="col">

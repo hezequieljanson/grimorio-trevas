@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { map } from 'rxjs';
 import { Alvo, RolagemAlvo, alvoDeCriatura, alvoDeFicha } from '../../core/alvo';
-import { Resultado, avaliar, classeDado, rolar } from '../../core/dados';
+import { Resultado, avaliar, classeDado } from '../../core/dados';
+import { Dados3dService } from '../../core/dados3d';
 import { DataService } from '../../core/data.service';
 import { FichasService } from '../../core/fichas.service';
 import { Criatura } from '../../core/models';
@@ -123,6 +124,7 @@ interface Salva {
           <div class="card-plain" style="gap: 2px">
             <label class="check"><input type="checkbox" [checked]="fv()" (change)="fv.set(!fv())" /><span class="col" style="gap: 0">Gastar Força de Vontade<span class="tiny muted">+1 sucesso automático, 1 vez por turno</span></span></label>
             <label class="check"><input type="checkbox" [checked]="prolongada()" (change)="alternarProlongada()" /><span class="col" style="gap: 0">Ação prolongada<span class="tiny muted">Soma os sucessos de vários turnos até a meta</span></span></label>
+            <label class="check"><input type="checkbox" [checked]="d3.ativo()" (change)="d3.alternar()" /><span class="col" style="gap: 0">Dados 3D na tela<span class="tiny muted">Os dados caem na tela com física; o resultado é o que cair</span></span></label>
             <label class="check"><input type="checkbox" [checked]="secreta()" (change)="secreta.set(!secreta())" /><span class="col" style="gap: 0">Rolagem secreta<span class="tiny muted">O resultado fica escondido até você tocar</span></span></label>
           </div>
           @if (prolongada()) {
@@ -286,6 +288,7 @@ export class Rolador {
   protected rotuloBase = '';
 
   protected readonly temResultado = computed(() => !!this.resultado());
+  protected readonly d3 = inject(Dados3dService);
 
   // Dados físicos: a pessoa digita o que saiu e o site conta os sucessos
   protected readonly fisicos = signal<number[]>([]);
@@ -327,10 +330,10 @@ export class Rolador {
     this.rotuloBase = s.nome;
   }
 
-  protected rolarAgora(): void {
+  protected async rolarAgora(): Promise<void> {
     const anterior = this.resultado();
     if (anterior) this.historico.update((h) => [{ rotulo: this.rotulo(), texto: anterior.texto }, ...h].slice(0, 10));
-    const r = rolar(this.dados(), this.dif(), this.fv());
+    const r = avaliar(await this.d3.rolar(this.dados()), this.dif(), this.fv());
     this.resultado.set(r);
     this.rotulo.set(`${this.rotuloBase || 'Rolagem'} · ${this.dados()} dados · dif. ${this.dif()}`);
     if (this.prolongada()) this.acumulado.set(r.critica ? 0 : Math.min(this.meta(), this.acumulado() + r.sucessos));

@@ -12,6 +12,7 @@ export const routes: Routes = [
   { path: 'rolador', loadComponent: () => import('./features/rolador/rolador').then((m) => m.Rolador), title: 'Rolador' },
   { path: 'npc', loadComponent: () => import('./features/npc/npc').then((m) => m.Npc), title: 'NPC rápido' },
   { path: 'geradores', loadComponent: () => import('./features/geradores/geradores').then((m) => m.GeradoresPage), title: 'Geradores' },
+  { path: 'mapas', loadComponent: () => import('./features/mapas/mapas').then((m) => m.Mapas), title: 'Mapas' },
   { path: 'bestiario', loadComponent: () => import('./features/bestiario/bestiario').then((m) => m.Bestiario), title: 'Bestiário' },
   { path: 'regras', loadComponent: () => import('./features/regras/regras').then((m) => m.Regras), title: 'Regras' },
   { path: 'regras/:id', loadComponent: () => import('./features/regras/regras').then((m) => m.Regras), title: 'Regras' },

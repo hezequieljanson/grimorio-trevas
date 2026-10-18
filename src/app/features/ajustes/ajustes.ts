@@ -9,6 +9,7 @@ import { Nota, NotasService } from '../../core/notas.service';
 import { FichaRecebida, GrupoService } from '../../core/grupo.service';
 import { abrirJson, baixarJson } from '../../core/storage';
 import { Icon } from '../../shared/icon';
+import { Dados3dService } from '../../core/dados3d';
 
 interface Backup {
   tipo: 'grimorio-backup';
@@ -27,6 +28,7 @@ interface Backup {
 })
 export class Ajustes {
   protected readonly config = inject(ConfigService);
+  protected readonly d3 = inject(Dados3dService);
   private readonly fichas = inject(FichasService);
   private readonly notas = inject(NotasService);
   private readonly grupo = inject(GrupoService);
