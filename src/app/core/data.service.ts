@@ -1,6 +1,11 @@
 import { Injectable, signal } from '@angular/core';
 import { Criatura, Geradores, Linha, LinhaId, Regra, Termo } from './models';
 
+export interface IndicePaginas {
+  livros: Record<string, { nome: string; paginas: number }>;
+  termos: Record<string, Record<string, number[]>>;
+}
+
 export const LINHAS: { id: LinhaId; nome: string; curto: string }[] = [
   { id: 'vtm', nome: 'Vampiro: A Máscara', curto: 'A Máscara' },
   { id: 'vdta', nome: 'Vampiro: A Idade das Trevas', curto: 'Idade das Trevas' },
@@ -54,6 +59,11 @@ export class DataService {
 
   bestiario(): Promise<Criatura[]> {
     return this.carregar<Criatura[]>('bestiario');
+  }
+
+  /** Índice remissivo: palavra (sem acento) -> páginas de cada livro com texto. */
+  indice(): Promise<IndicePaginas> {
+    return this.carregar<IndicePaginas>('indice');
   }
 
   geradores(): Promise<Geradores> {

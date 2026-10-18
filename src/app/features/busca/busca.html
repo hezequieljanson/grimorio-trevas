@@ -1,0 +1,78 @@
+<div class="page">
+  <h1>Buscar em tudo</h1>
+  <form class="search" role="search" (submit)="$event.preventDefault()">
+    <app-icon name="busca" />
+    <input type="search" name="q" aria-label="Buscar em todos os livros" placeholder="Golconda, prata, Rapidez, Caern, Inquisição…" [ngModel]="q()" (ngModelChange)="buscar($event)" autofocus />
+    @if (q()) { <button type="button" class="btn btn-icon btn-sm" aria-label="Limpar busca" (click)="buscar('')"><app-icon name="fechar" [size]="16" /></button> }
+  </form>
+
+  @if (!q().trim()) {
+    <div class="card-plain small" style="color: var(--text-3)">
+      <span>Uma busca só para tudo: regras, glossário, poderes, rituais, Qualidades e Defeitos, bestiário, clãs, tribos, organizações, Trilhas, antecedentes, arquétipos e habilidades.</span>
+      <span>No fim aparece também <strong>em que páginas</strong> a palavra está no texto dos livros, para você abrir no seu PDF.</span>
+      <span class="tiny muted">No computador: Ctrl+K abre esta busca de qualquer tela.</span>
+    </div>
+  } @else {
+    <span class="small muted">
+      @if (carregando()) { Carregando… } @else { {{ total() }} resultado(s) nos resumos do site }
+    </span>
+
+    <div class="chips">
+      @for (g of grupos(); track g.nome) {
+        <a class="chip" [href]="'#' + g.nome" (click)="$event.preventDefault(); irPara(g.nome)">{{ g.nome }} ({{ g.itens.length }})</a>
+      }
+      @if (paginas().length) { <a class="chip" href="#paginas" style="border-color: var(--gold-line); color: var(--gold)" (click)="$event.preventDefault(); irPara('paginas')">No texto dos livros</a> }
+    </div>
+
+    @for (g of grupos(); track g.nome) {
+      <section class="grupo" [id]="g.nome">
+        <h2 style="font-size: 22px; margin-bottom: 4px">{{ g.nome }} <span class="small muted">({{ g.itens.length }})</span></h2>
+        @for (a of limitar(g); track a.chave) {
+          @if (a.link) {
+            <a class="achado" [routerLink]="a.link" [queryParams]="a.query ?? {}">
+              <span class="col grow" style="gap: 2px">
+                <strong>@for (p of partes(a.titulo); track $index) { @if (p.m) { <mark>{{ p.t }}</mark> } @else { {{ p.t }} } }</strong>
+                <span class="tiny muted">{{ a.sub }} · {{ nomeLinha(a.linha, true) }}{{ a.pagina ? ' · p. ' + a.pagina : '' }}</span>
+                @if (a.detalhe) { <span class="small" style="color: var(--text-3)">@for (p of partes(a.detalhe); track $index) { @if (p.m) { <mark>{{ p.t }}</mark> } @else { {{ p.t }} } }</span> }
+              </span>
+              <app-icon name="seguir" [size]="18" />
+            </a>
+          } @else {
+            <button type="button" class="achado" (click)="alternar(a.chave)" [attr.aria-expanded]="!!abertos()[a.chave]">
+              <span class="col grow" style="gap: 2px">
+                <strong>@for (p of partes(a.titulo); track $index) { @if (p.m) { <mark>{{ p.t }}</mark> } @else { {{ p.t }} } }</strong>
+                <span class="tiny muted">{{ a.sub }} · {{ nomeLinha(a.linha, true) }}{{ a.pagina ? ' · p. ' + a.pagina : '' }}</span>
+                @if (abertos()[a.chave] && a.detalhe) { <span class="small" style="color: var(--text-2); line-height: 1.5">{{ a.detalhe }}</span> }
+              </span>
+              <app-icon name="baixo" [size]="18" />
+            </button>
+          }
+        }
+        @if (!todosGrupo()[g.nome] && g.itens.length > 5) {
+          <button type="button" class="btn btn-sm" style="align-self: flex-start; margin-top: 6px" (click)="verTodos(g.nome)">Ver todos os {{ g.itens.length }}</button>
+        }
+      </section>
+    }
+
+    <section class="card card-gold" id="paginas">
+      <h2 style="font-size: 22px">Onde está no livro</h2>
+      <span class="small" style="color: var(--text-2)">Páginas em que {{ q().trim().split(' ').length > 1 ? 'todas as palavras aparecem' : 'a palavra aparece' }} no texto dos livros. Abra o seu PDF nessa página.</span>
+      @if (!indice()) {
+        <span class="small muted">Carregando o índice de páginas…</span>
+      } @else {
+        @for (l of paginas(); track l.id) {
+          <div class="col" style="gap: 6px">
+            <strong class="small">{{ l.nome }} <span class="muted">({{ l.paginas.length }} {{ l.paginas.length === 1 ? 'página' : 'páginas' }})</span></strong>
+            <div class="paginas">
+              @for (p of l.paginas.slice(0, 60); track p) { <span class="pg">{{ p }}</span> }
+              @if (l.paginas.length > 60) { <span class="pg">+{{ l.paginas.length - 60 }}</span> }
+            </div>
+          </div>
+        } @empty {
+          <span class="small muted">Não aparece no texto de A Máscara, Idade das Trevas nem no documento de Numina.</span>
+        }
+        <span class="tiny muted">Lobisomem e Caçadores Caçados são PDFs escaneados, sem texto: para eles valem as páginas dos resultados acima. Palavras muito curtas (2 letras) não entram no índice.</span>
+      }
+    </section>
+  }
+</div>

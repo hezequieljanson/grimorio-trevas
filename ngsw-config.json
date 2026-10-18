@@ -32,7 +32,18 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
-          "/data/*.json"
+          "/data/*.json",
+          "!/data/indice.json"
+        ]
+      }
+    },
+    {
+      "name": "indice-de-paginas",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/data/indice.json"
         ]
       }
     }

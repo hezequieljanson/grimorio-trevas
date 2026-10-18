@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   { path: '', loadComponent: () => import('./features/inicio/inicio').then((m) => m.Inicio), title: 'Grimório das Trevas' },
+  { path: 'busca', loadComponent: () => import('./features/busca/busca').then((m) => m.Busca), title: 'Buscar em tudo' },
   { path: 'fichas', loadComponent: () => import('./features/fichas/fichas').then((m) => m.Fichas), title: 'Minhas fichas' },
   { path: 'criar', loadComponent: () => import('./features/criar/escolher-linha').then((m) => m.EscolherLinha), title: 'Nova ficha' },
   { path: 'criar/:id', loadComponent: () => import('./features/criar/criar').then((m) => m.Criar), title: 'Nova ficha' },

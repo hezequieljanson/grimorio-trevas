@@ -6,7 +6,7 @@
 
   <form class="search" role="search" (submit)="$event.preventDefault(); buscar()">
     <app-icon name="busca" />
-    <input type="search" name="q" aria-label="Buscar nas regras dos livros" placeholder="Buscar nos livros: frenesi, Rapidez, Crinos…" [ngModel]="busca()" (ngModelChange)="busca.set($event)" />
+    <input type="search" name="q" aria-label="Buscar em tudo" placeholder="Buscar em tudo: frenesi, Rapidez, Crinos…" [ngModel]="busca()" (ngModelChange)="busca.set($event)" />
   </form>
 
   <section class="col" style="gap: 6px">

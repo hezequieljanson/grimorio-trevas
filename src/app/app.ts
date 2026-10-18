@@ -15,6 +15,7 @@ interface ItemMenu {
   selector: 'app-root',
   imports: [RouterOutlet, RouterLink, RouterLinkActive, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { '(document:keydown)': 'atalho($event)' },
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
@@ -40,6 +41,7 @@ export class App {
 
   protected readonly menuLateral: ItemMenu[] = [
     { rota: '/', nome: 'Início', icone: 'inicio', exato: true },
+    { rota: '/busca', nome: 'Buscar em tudo', icone: 'busca' },
     { rota: '/fichas', nome: 'Minhas fichas', icone: 'fichas' },
     { rota: '/criar', nome: 'Criar ficha', icone: 'criar' },
     { rota: '/notas', nome: 'Anotações', icone: 'notas' },
@@ -55,5 +57,13 @@ export class App {
 
   /** "Narrar" no celular fica ativo em qualquer ferramenta do narrador. */
   protected readonly narrarAtivo = computed(() => /^\/(npc|geradores|bestiario|rolador)/.test(this.url()));
-  protected readonly regrasAtivo = computed(() => /^\/(regras|glossario|biblioteca)/.test(this.url()));
+  /** Ctrl+K (ou Cmd+K) abre a busca de qualquer tela. */
+  protected atalho(e: KeyboardEvent): void {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      this.router.navigate(['/busca']);
+    }
+  }
+
+  protected readonly regrasAtivo = computed(() => /^\/(regras|glossario|biblioteca|busca)/.test(this.url()));
 }

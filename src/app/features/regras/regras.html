@@ -2,6 +2,7 @@
   <div class="spread" style="align-items: center">
     <h1>Regras</h1>
     <span class="row-wrap">
+      <a routerLink="/busca" [queryParams]="q() ? { q: q() } : {}" class="btn btn-sm"><app-icon name="busca" [size]="16" />Buscar em tudo</a>
       <a routerLink="/biblioteca" class="btn btn-sm"><app-icon name="poder" [size]="16" />Poderes</a>
       <a routerLink="/glossario" class="btn btn-sm"><app-icon name="ajuda" [size]="16" />Glossário</a>
     </span>

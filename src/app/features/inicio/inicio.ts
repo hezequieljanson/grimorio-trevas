@@ -45,6 +45,6 @@ export class Inicio {
 
   protected buscar(): void {
     const q = this.busca().trim();
-    this.router.navigate(['/regras'], { queryParams: q ? { q } : {} });
+    this.router.navigate(['/busca'], { queryParams: q ? { q } : {} });
   }
 }

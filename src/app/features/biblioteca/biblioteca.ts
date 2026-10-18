@@ -73,7 +73,9 @@ export class Biblioteca {
   protected readonly atualChave = signal<string | null>(null);
 
   constructor() {
-    const aba = inject(ActivatedRoute).snapshot.queryParamMap.get('aba') as Aba | null;
+    const params = inject(ActivatedRoute).snapshot.queryParamMap;
+    const aba = params.get('aba') as Aba | null;
+    if (params.get('q')) this.q.set(params.get('q')!);
     if (aba && ABAS.some((a) => a.id === aba)) this.aba.set(aba);
     this.data
       .todasLinhas()
