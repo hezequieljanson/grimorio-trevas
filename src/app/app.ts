@@ -48,11 +48,12 @@ export class App {
     { rota: '/geradores', nome: 'Geradores', icone: 'livro' },
     { rota: '/bestiario', nome: 'Bestiário', icone: 'besta' },
     { rota: '/regras', nome: 'Regras', icone: 'regras' },
+    { rota: '/biblioteca', nome: 'Biblioteca de poderes', icone: 'poder' },
     { rota: '/glossario', nome: 'Glossário', icone: 'ajuda' },
     { rota: '/ajustes', nome: 'Ajustes', icone: 'ajustes' },
   ];
 
   /** "Narrar" no celular fica ativo em qualquer ferramenta do narrador. */
   protected readonly narrarAtivo = computed(() => /^\/(npc|geradores|bestiario|rolador)/.test(this.url()));
-  protected readonly regrasAtivo = computed(() => /^\/(regras|glossario)/.test(this.url()));
+  protected readonly regrasAtivo = computed(() => /^\/(regras|glossario|biblioteca)/.test(this.url()));
 }

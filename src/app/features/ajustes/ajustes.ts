@@ -6,6 +6,7 @@ import { Ficha } from '../../core/ficha';
 import { FichasService } from '../../core/fichas.service';
 import { LinhaId } from '../../core/models';
 import { Nota, NotasService } from '../../core/notas.service';
+import { FichaRecebida, GrupoService } from '../../core/grupo.service';
 import { abrirJson, baixarJson } from '../../core/storage';
 import { Icon } from '../../shared/icon';
 
@@ -15,6 +16,7 @@ interface Backup {
   fichas: Ficha[];
   notas: Nota[];
   regras: RegrasCasa;
+  grupo?: FichaRecebida[];
 }
 
 @Component({
@@ -27,6 +29,7 @@ export class Ajustes {
   protected readonly config = inject(ConfigService);
   private readonly fichas = inject(FichasService);
   private readonly notas = inject(NotasService);
+  private readonly grupo = inject(GrupoService);
   protected readonly linhas = LINHAS;
   protected readonly linhaXp = signal<LinhaId>('vtm');
   protected readonly msg = signal('');
@@ -83,7 +86,7 @@ export class Ajustes {
   }
 
   protected exportarTudo(): void {
-    const b: Backup = { tipo: 'grimorio-backup', versao: 1, fichas: this.fichas.fichas(), notas: this.notas.notas(), regras: this.config.regras() };
+    const b: Backup = { tipo: 'grimorio-backup', versao: 1, fichas: this.fichas.fichas(), notas: this.notas.notas(), regras: this.config.regras(), grupo: this.grupo.lista() };
     baixarJson(`grimorio-backup-${new Date().toISOString().slice(0, 10)}.json`, b);
   }
 
@@ -95,6 +98,7 @@ export class Ajustes {
       this.fichas.importar(b.fichas ?? []);
       this.notas.importar(b.notas ?? []);
       if (b.regras) this.config.importarRegras(b.regras);
+      for (const r of b.grupo ?? []) if (r?.ficha?.id) this.grupo.receber({ tipo: 'grimorio-ficha', versao: 1, enviadaEm: r.recebidaEm, ficha: r.ficha });
       this.msg.set('Backup importado.');
     } catch {
       this.msg.set('Esse arquivo não parece ser um backup do Grimório.');

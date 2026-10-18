@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { map } from 'rxjs';
 import { Alvo, RolagemAlvo, alvoDeCriatura, alvoDeFicha } from '../../core/alvo';
-import { Resultado, rolar } from '../../core/dados';
+import { Resultado, avaliar, classeDado, rolar } from '../../core/dados';
 import { DataService } from '../../core/data.service';
 import { FichasService } from '../../core/fichas.service';
 import { Criatura } from '../../core/models';
@@ -136,6 +136,27 @@ interface Salva {
             </div>
           }
           <button type="button" class="btn btn-primary btn-big" (click)="rolarAgora()">Rolar {{ dados() }} dados</button>
+          <section class="card-plain">
+            <div class="spread"><h2 style="font-size: 20px">Rolei dados de verdade</h2>
+              @if (fisicos().length) { <button type="button" class="btn btn-sm" (click)="fisicos.set([])">Limpar</button> }
+            </div>
+            <span class="tiny muted">Toque no número que saiu em cada dado. O site conta os sucessos com a dificuldade {{ dif() }}.</span>
+            <div class="teclado" role="group" aria-label="Resultado de cada dado">
+              @for (n of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; track n) {
+                <button type="button" class="tecla-dado" [attr.aria-label]="'Saiu ' + n" (click)="addFisico(n)">{{ n }}</button>
+              }
+            </div>
+            @if (fisicos().length) {
+              <div class="dice" aria-label="Dados lançados">
+                @for (d of fisicos(); track $index) {
+                  <button type="button" [class]="classe(d)" style="border-style: solid; cursor: pointer" [attr.aria-label]="'Tirar o dado ' + d" (click)="tirarFisico($index)">{{ d }}</button>
+                }
+              </div>
+              <div class="spread"><span class="small">{{ fisicos().length }} dados · dif. {{ dif() }}{{ fv() ? ' · com Força de Vontade' : '' }}</span>
+                <strong [style.color]="corFisico()" style="font-size: 18px">{{ resultadoFisico()?.texto }}</strong></div>
+              <button type="button" class="btn btn-sm" style="align-self: flex-start" (click)="registrarFisico()">Guardar no histórico</button>
+            }
+          </section>
           <div class="row">
             <input class="input grow" aria-label="Nome da rolagem para salvar" placeholder="Nome para salvar (ex.: Ataque com faca)" [ngModel]="nome()" (ngModelChange)="nome.set($event)" />
             <button type="button" class="btn" (click)="salvar()"><app-icon name="salvar" [size]="18" />Salvar</button>
@@ -162,7 +183,7 @@ interface Salva {
       </div>
     </div>
   `,
-  styles: `.rolagem { display: flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--bg); color: var(--text); width: 100%; } .rolagem:hover { border-color: var(--line-3); }`,
+  styles: `.teclado { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; } .tecla-dado { min-height: 46px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--bg); color: var(--text); font-weight: 700; font-size: 17px; } .tecla-dado:active { background: var(--red-bg); } .rolagem { display: flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--bg); color: var(--text); width: 100%; } .rolagem:hover { border-color: var(--line-3); }`,
 })
 export class Rolador {
   private readonly rota = inject(ActivatedRoute);
@@ -265,6 +286,35 @@ export class Rolador {
   protected rotuloBase = '';
 
   protected readonly temResultado = computed(() => !!this.resultado());
+
+  // Dados físicos: a pessoa digita o que saiu e o site conta os sucessos
+  protected readonly fisicos = signal<number[]>([]);
+  protected readonly resultadoFisico = computed(() => (this.fisicos().length ? avaliar(this.fisicos(), this.dif(), this.fv()) : null));
+  protected readonly corFisico = computed(() => {
+    const r = this.resultadoFisico();
+    if (!r) return '';
+    return r.critica ? 'var(--gold)' : r.sucessos > 0 ? 'var(--red-soft)' : 'var(--muted)';
+  });
+
+  protected addFisico(n: number): void {
+    if (this.fisicos().length < 30) this.fisicos.update((l) => [...l, n]);
+  }
+
+  protected tirarFisico(i: number): void {
+    this.fisicos.update((l) => l.filter((_, j) => j !== i));
+  }
+
+  protected classe(d: number): string {
+    return classeDado(d, this.dif());
+  }
+
+  protected registrarFisico(): void {
+    const r = this.resultadoFisico();
+    if (!r) return;
+    this.historico.update((h) => [{ rotulo: `Dados físicos · ${r.dados.length} dados · dif. ${this.dif()}`, texto: r.texto }, ...h].slice(0, 10));
+    this.fisicos.set([]);
+    this.fv.set(false);
+  }
 
   protected alternarProlongada(): void {
     this.prolongada.set(!this.prolongada());

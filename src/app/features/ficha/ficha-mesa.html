@@ -11,6 +11,7 @@
         <h1>{{ ficha.nome || 'Sem nome' }}</h1>
         <span class="small muted">{{ subtitulo() }}</span>
       </div>
+      <button type="button" class="btn btn-sm" (click)="enviar()"><app-icon name="subir" [size]="16" />Enviar</button>
       <a class="btn btn-sm" routerLink="/rolador" [queryParams]="{ ficha: ficha.id }"><app-icon name="dados" [size]="16" />Rolador</a>
       <a class="btn btn-sm" [routerLink]="['/ficha', ficha.id, 'imprimir']"><app-icon name="baixar" [size]="16" />PDF</a>
     </header>

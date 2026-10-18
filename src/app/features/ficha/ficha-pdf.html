@@ -1,14 +1,23 @@
 <div class="barra no-print">
-  <a class="btn btn-sm" [routerLink]="['/ficha', id()]"><app-icon name="voltar" [size]="16" />Voltar à ficha</a>
-  <span class="grow small muted">No celular: Compartilhar/Imprimir › Salvar como PDF.</span>
+  @if (grupo()) {
+    <a class="btn btn-sm" routerLink="/fichas"><app-icon name="voltar" [size]="16" />Fichas</a>
+    <span class="grow small muted">Ficha de outro jogador, só para consulta.</span>
+  } @else {
+    <a class="btn btn-sm" [routerLink]="['/ficha', id()]"><app-icon name="voltar" [size]="16" />Voltar à ficha</a>
+    <span class="grow small muted">No celular: Compartilhar/Imprimir › Salvar como PDF.</span>
+  }
   <button type="button" class="btn btn-primary" (click)="imprimir()"><app-icon name="baixar" [size]="18" />Salvar PDF</button>
 </div>
 
+@if (!f()) {
+  <div class="page"><div class="empty">Ficha não encontrada.</div></div>
+}
 @if (f() && linha()) {
   @let ficha = f()!;
   @let l = linha()!;
   @let g = garou();
-  <article class="folha" [class.garou]="!!g">
+  @let c = cacador();
+  <article class="folha" [class.garou]="!!g" [class.cacador]="!!c">
     @if (g) {
       <header class="topo topo-garou">
         <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#5e4a1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16.5 7.5A6 6 0 1 0 16.5 16.5A7.5 7.5 0 0 1 16.5 7.5z"></path></svg>
@@ -17,6 +26,15 @@
           <h1>{{ l.nome }}</h1>
         </div>
         <div class="posto"><span class="marca">Posto</span><strong>{{ g.posto.n }}</strong><span>{{ g.posto.nome }}</span></div>
+      </header>
+    } @else if (c) {
+      <header class="topo topo-garou">
+        <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2f4a5e" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 1v6M12 17v6M1 12h6M17 12h6"></path></svg>
+        <div class="titulo-centro">
+          <span class="marca">Grimório das Trevas</span>
+          <h1>Caçador</h1>
+        </div>
+        <div class="posto org"><span class="marca">Organização</span><span>{{ c.organizacao }}</span></div>
       </header>
     } @else {
       <header class="topo">
@@ -122,8 +140,55 @@
           }
         </div>
       </section>
+    } @else if (c) {
+      <!-- ===== Caçador ===== -->
+      <section>
+        <h2>Vantagens</h2>
+        <div class="tres">
+          <div class="coluna">
+            <h3>Antecedentes</h3>
+            @for (a of c.antecedentes; track $index) {
+              <div class="linha"><span class="nome">{{ a.nome }}</span><span class="pontilhado"></span><span class="bolas">@for (b of bolas(a.n); track $index) { <span class="bola" [class.on]="b"></span> }</span></div>
+            }
+          </div>
+          <div class="coluna">
+            <h3>Numina</h3>
+            @for (n of c.numina; track $index) {
+              <div class="linha"><span class="nome">{{ n.nome }}</span><span class="pontilhado"></span><span class="bolas">@for (b of bolas(n.n); track $index) { <span class="bola" [class.on]="b"></span> }</span>@if (n.fonte) { <span class="fonte">{{ n.fonte }}</span> }</div>
+            }
+          </div>
+          <div class="coluna">
+            <h3>Virtudes</h3>
+            @for (v of c.virtudes; track v.nome) {
+              <div class="linha"><span class="nome">{{ v.nome }}</span><span class="pontilhado"></span><span class="bolas">@for (b of bolas(v.n); track $index) { <span class="bola" [class.on]="b"></span> }</span></div>
+            }
+          </div>
+        </div>
+      </section>
+
+      <div class="rodape-garou">
+        <div class="coluna centro">
+          <h3 class="grande">{{ trilha() }}</h3>
+          <span class="bolas">@for (b of bolas(v('trilha'), 10); track $index) { <span class="bola g" [class.on]="b"></span> }</span>
+          <h3 class="grande">Força de Vontade</h3>
+          <span class="bolas">@for (b of bolas(v('fv'), 10); track $index) { <span class="bola g" [class.on]="b"></span> }</span>
+          <span class="bolas">@for (b of bolas(ficha.estado.fv, 10); track $index) { <span class="quadrado" [class.temp]="b"></span> }</span>
+        </div>
+        <div class="coluna">
+          <h3 class="grande centro-txt">Equipamento e armas</h3>
+          @for (i of [1, 2, 3, 4, 5, 6]; track i) { <div class="linha vazia"></div> }
+          @if (qualidades()) { <span class="nota" style="margin-top: 4px">Qualidades e Defeitos: {{ qualidades() }}</span> }
+        </div>
+        <div class="coluna">
+          <h3 class="grande centro-txt">Vitalidade</h3>
+          @for (nv of l.vitalidade; track nv.nome; let i = $index) {
+            <div class="linha"><span class="nome">{{ nv.nome }}</span><span class="pen">{{ nv.penalidade === null || nv.penalidade === 0 ? '' : nv.penalidade }}</span><span class="quadrado" [class.ferido]="i < ficha.estado.dano.length"></span></div>
+          }
+        </div>
+      </div>
+      <p class="nota" style="text-align: left">Numina: <strong>livro</strong> = Caçadores Caçados · <strong>mesa</strong> = documento da mesa (no máximo 2 Classes).</p>
     } @else {
-      <!-- ===== Vampiro e Caçador ===== -->
+      <!-- ===== Vampiro ===== -->
       <section>
         <h2>Vantagens</h2>
         <div class="tres">

@@ -1,2967 +1,2967 @@
 {
-  "id": "vdta",
-  "nome": "Vampiro: A Idade das Trevas",
-  "livro": "Vampiro: A Idade das Trevas — módulo básico (Devir)",
-  "tipo": "vampiro",
-  "epoca": "medieval",
-  "criacao": {
-    "atributos": [
-      7,
-      5,
-      3
-    ],
-    "habilidades": [
-      13,
-      9,
-      5
-    ],
-    "antecedentes": 5,
-    "maxHabilidade": 3,
-    "bonus": 15,
-    "custosBonus": {
-      "atributo": 5,
-      "habilidade": 2,
-      "disciplina": 7,
-      "antecedente": 1,
-      "virtude": 2,
-      "humanidade": 1,
-      "forcaVontade": 1
-    },
-    "maxDefeitos": 7,
-    "passos": [
-      "Conceito: escolha Conceito, Clã, Natureza, Comportamento e Caminho (o Caminho define as Virtudes).",
-      "Atributos: priorize Físicos, Sociais e Mentais e distribua 7/5/3 (todos começam com 1).",
-      "Habilidades: priorize Talentos, Perícias e Conhecimentos e distribua 13/9/5; nenhuma acima de 3 nesta etapa.",
-      "Vantagens: 4 pontos de Disciplinas do clã (Caitiff: quaisquer), 5 de Antecedentes e 7 de Virtudes (cada uma começa com 1).",
-      "Toques finais: Força de Vontade = Coragem; Caminho = soma das duas primeiras Virtudes; Pontos de Sangue iniciais = 1d10.",
-      "Gaste os 15 pontos de bônus (nenhuma Característica pode chegar a 6 na criação).",
-      "Centelha de vida: especializações, equipamento, aparência, prelúdio e detalhes."
-    ],
-    "pagina": 99
+ "id": "vdta",
+ "nome": "Vampiro: A Idade das Trevas",
+ "livro": "Vampiro: A Idade das Trevas — módulo básico (Devir)",
+ "tipo": "vampiro",
+ "epoca": "medieval",
+ "criacao": {
+  "atributos": [
+   7,
+   5,
+   3
+  ],
+  "habilidades": [
+   13,
+   9,
+   5
+  ],
+  "antecedentes": 5,
+  "maxHabilidade": 3,
+  "bonus": 15,
+  "custosBonus": {
+   "atributo": 5,
+   "habilidade": 2,
+   "disciplina": 7,
+   "antecedente": 1,
+   "virtude": 2,
+   "humanidade": 1,
+   "forcaVontade": 1
   },
-  "atributos": {
-    "fisicos": [
-      {
-        "id": "forca",
-        "nome": "Força",
-        "desc": "Potência muscular: dano corpo a corpo, erguer e quebrar coisas.",
-        "pagina": 117
-      },
-      {
-        "id": "destreza",
-        "nome": "Destreza",
-        "desc": "Agilidade, coordenação e reflexos; base dos ataques.",
-        "pagina": 117
-      },
-      {
-        "id": "vigor",
-        "nome": "Vigor",
-        "desc": "Resistência física; usado para absorver dano.",
-        "pagina": 117
-      }
-    ],
-    "sociais": [
-      {
-        "id": "carisma",
-        "nome": "Carisma",
-        "desc": "Charme e capacidade de atrair e influenciar.",
-        "pagina": 117
-      },
-      {
-        "id": "manipulacao",
-        "nome": "Manipulação",
-        "desc": "Levar os outros a fazer o que você quer.",
-        "pagina": 117
-      },
-      {
-        "id": "aparencia",
-        "nome": "Aparência",
-        "desc": "Beleza e primeira impressão (0 para Nosferatu).",
-        "pagina": 118
-      }
-    ],
-    "mentais": [
-      {
-        "id": "percepcao",
-        "nome": "Percepção",
-        "desc": "Atenção ao ambiente e aos detalhes.",
-        "pagina": 119
-      },
-      {
-        "id": "inteligencia",
-        "nome": "Inteligência",
-        "desc": "Raciocínio, memória e compreensão.",
-        "pagina": 119
-      },
-      {
-        "id": "raciocinio",
-        "nome": "Raciocínio",
-        "desc": "Rapidez mental; entra na iniciativa.",
-        "pagina": 119
-      }
-    ]
+  "maxDefeitos": 7,
+  "passos": [
+   "Conceito: escolha Conceito, Clã, Natureza, Comportamento e Caminho (o Caminho define as Virtudes).",
+   "Atributos: priorize Físicos, Sociais e Mentais e distribua 7/5/3 (todos começam com 1).",
+   "Habilidades: priorize Talentos, Perícias e Conhecimentos e distribua 13/9/5; nenhuma acima de 3 nesta etapa.",
+   "Vantagens: 4 pontos de Disciplinas do clã (Caitiff: quaisquer), 5 de Antecedentes e 7 de Virtudes (cada uma começa com 1).",
+   "Toques finais: Força de Vontade = Coragem; Caminho = soma das duas primeiras Virtudes; Pontos de Sangue iniciais = 1d10.",
+   "Gaste os 15 pontos de bônus (nenhuma Característica pode chegar a 6 na criação).",
+   "Centelha de vida: especializações, equipamento, aparência, prelúdio e detalhes."
+  ],
+  "pagina": 99
+ },
+ "atributos": {
+  "fisicos": [
+   {
+    "id": "forca",
+    "nome": "Força",
+    "desc": "Potência muscular: dano corpo a corpo, erguer e quebrar coisas.",
+    "pagina": 117
+   },
+   {
+    "id": "destreza",
+    "nome": "Destreza",
+    "desc": "Agilidade, coordenação e reflexos; base dos ataques.",
+    "pagina": 117
+   },
+   {
+    "id": "vigor",
+    "nome": "Vigor",
+    "desc": "Resistência física; usado para absorver dano.",
+    "pagina": 117
+   }
+  ],
+  "sociais": [
+   {
+    "id": "carisma",
+    "nome": "Carisma",
+    "desc": "Charme e capacidade de atrair e influenciar.",
+    "pagina": 117
+   },
+   {
+    "id": "manipulacao",
+    "nome": "Manipulação",
+    "desc": "Levar os outros a fazer o que você quer.",
+    "pagina": 117
+   },
+   {
+    "id": "aparencia",
+    "nome": "Aparência",
+    "desc": "Beleza e primeira impressão (0 para Nosferatu).",
+    "pagina": 118
+   }
+  ],
+  "mentais": [
+   {
+    "id": "percepcao",
+    "nome": "Percepção",
+    "desc": "Atenção ao ambiente e aos detalhes.",
+    "pagina": 119
+   },
+   {
+    "id": "inteligencia",
+    "nome": "Inteligência",
+    "desc": "Raciocínio, memória e compreensão.",
+    "pagina": 119
+   },
+   {
+    "id": "raciocinio",
+    "nome": "Raciocínio",
+    "desc": "Rapidez mental; entra na iniciativa.",
+    "pagina": 119
+   }
+  ]
+ },
+ "habilidades": {
+  "talentos": [
+   {
+    "id": "representacao",
+    "nome": "Representação",
+    "desc": "Atuar, fingir, contar histórias e entreter uma plateia.",
+    "pagina": 120
+   },
+   {
+    "id": "prontidao",
+    "nome": "Prontidão",
+    "desc": "Atenção ao entorno; evita emboscadas e entra na iniciativa.",
+    "pagina": 120
+   },
+   {
+    "id": "esportes",
+    "nome": "Esportes",
+    "desc": "Correr, saltar, escalar, nadar e arremessar.",
+    "pagina": 120
+   },
+   {
+    "id": "briga",
+    "nome": "Briga",
+    "desc": "Luta desarmada: socos, chutes, agarrões e mordidas.",
+    "pagina": 120
+   },
+   {
+    "id": "esquiva",
+    "nome": "Esquiva",
+    "desc": "Escapar de golpes e projéteis.",
+    "pagina": 120
+   },
+   {
+    "id": "empatia",
+    "nome": "Empatia",
+    "desc": "Perceber emoções e intenções alheias.",
+    "pagina": 121
+   },
+   {
+    "id": "intimidacao",
+    "nome": "Intimidação",
+    "desc": "Amedrontar e impor-se.",
+    "pagina": 121
+   },
+   {
+    "id": "crime",
+    "nome": "Crime",
+    "desc": "O submundo medieval: furtos, contrabando, receptadores e ladrões.",
+    "pagina": 121
+   },
+   {
+    "id": "lideranca",
+    "nome": "Liderança",
+    "desc": "Inspirar e comandar pessoas.",
+    "pagina": 121
+   },
+   {
+    "id": "labia",
+    "nome": "Lábia",
+    "desc": "Enganar, blefar e persuadir com conversa.",
+    "pagina": 122
+   }
+  ],
+  "pericias": [
+   {
+    "id": "empatia-com-animais",
+    "nome": "Empatia com Animais",
+    "desc": "Lidar com animais, acalmá-los e treiná-los.",
+    "pagina": 122
+   },
+   {
+    "id": "arqueirismo",
+    "nome": "Arqueirismo",
+    "desc": "Uso de arcos e bestas.",
+    "pagina": 123
+   },
+   {
+    "id": "artesanato",
+    "nome": "Artesanato",
+    "desc": "Ofícios manuais como ferraria, carpintaria ou alfaiataria.",
+    "pagina": 123
+   },
+   {
+    "id": "etiqueta",
+    "nome": "Etiqueta",
+    "desc": "Comportamento adequado em cortes, mosteiros e na sociedade Cainita.",
+    "pagina": 123
+   },
+   {
+    "id": "herborismo",
+    "nome": "Herborismo",
+    "desc": "Conhecer ervas e preparar remédios, venenos e unguentos.",
+    "pagina": 123
+   },
+   {
+    "id": "armas-brancas",
+    "nome": "Armas Brancas",
+    "desc": "Combate com espadas, machados, lanças e afins.",
+    "pagina": 123
+   },
+   {
+    "id": "musica",
+    "nome": "Música",
+    "desc": "Tocar instrumentos, cantar e compor.",
+    "pagina": 124
+   },
+   {
+    "id": "cavalgar",
+    "nome": "Cavalgar",
+    "desc": "Montar e controlar cavalos, inclusive em combate.",
+    "pagina": 124
+   },
+   {
+    "id": "furtividade",
+    "nome": "Furtividade",
+    "desc": "Mover-se sem ser visto nem ouvido.",
+    "pagina": 125
+   },
+   {
+    "id": "sobrevivencia",
+    "nome": "Sobrevivência",
+    "desc": "Viver nos ermos, orientar-se e rastrear.",
+    "pagina": 125
+   }
+  ],
+  "conhecimentos": [
+   {
+    "id": "instrucao",
+    "nome": "Instrução",
+    "desc": "Ler, escrever e latim, com noções de teologia e filosofia.",
+    "pagina": 125
+   },
+   {
+    "id": "sabedoria-popular",
+    "nome": "Sabedoria Popular",
+    "desc": "Lendas, superstições e costumes do povo.",
+    "pagina": 125
+   },
+   {
+    "id": "investigacao",
+    "nome": "Investigação",
+    "desc": "Achar pistas e deduzir o que aconteceu.",
+    "pagina": 126
+   },
+   {
+    "id": "direito",
+    "nome": "Direito",
+    "desc": "Leis seculares e canônicas e seus tribunais.",
+    "pagina": 126
+   },
+   {
+    "id": "linguistica",
+    "nome": "Lingüística",
+    "desc": "Idiomas extras além da língua materna.",
+    "pagina": 126
+   },
+   {
+    "id": "medicina",
+    "nome": "Medicina",
+    "desc": "Tratar ferimentos e doenças pelo saber da época.",
+    "pagina": 126
+   },
+   {
+    "id": "ocultismo",
+    "nome": "Ocultismo",
+    "desc": "Saber sobre magia, demônios e o sobrenatural.",
+    "pagina": 127
+   },
+   {
+    "id": "politica",
+    "nome": "Política",
+    "desc": "Intrigas da nobreza e da Igreja.",
+    "pagina": 127
+   },
+   {
+    "id": "ciencia",
+    "nome": "Ciência",
+    "desc": "Saberes naturais da época, como alquimia e astronomia.",
+    "pagina": 127
+   },
+   {
+    "id": "senescalia",
+    "nome": "Senescalia",
+    "desc": "Administrar propriedades, casas e abadias.",
+    "pagina": 128
+   }
+  ]
+ },
+ "antecedentes": [
+  {
+   "id": "aliados",
+   "nome": "Aliados",
+   "desc": "Mortais que ajudam você; nos níveis altos, alguns são muito influentes.",
+   "pagina": 128
   },
-  "habilidades": {
-    "talentos": [
-      {
-        "id": "representacao",
-        "nome": "Representação",
-        "desc": "Atuar, fingir, contar histórias e entreter uma plateia.",
-        "pagina": 120
-      },
-      {
-        "id": "prontidao",
-        "nome": "Prontidão",
-        "desc": "Atenção ao entorno; evita emboscadas e entra na iniciativa.",
-        "pagina": 120
-      },
-      {
-        "id": "esportes",
-        "nome": "Esportes",
-        "desc": "Correr, saltar, escalar, nadar e arremessar.",
-        "pagina": 120
-      },
-      {
-        "id": "briga",
-        "nome": "Briga",
-        "desc": "Luta desarmada: socos, chutes, agarrões e mordidas.",
-        "pagina": 120
-      },
-      {
-        "id": "esquiva",
-        "nome": "Esquiva",
-        "desc": "Escapar de golpes e projéteis.",
-        "pagina": 120
-      },
-      {
-        "id": "empatia",
-        "nome": "Empatia",
-        "desc": "Perceber emoções e intenções alheias.",
-        "pagina": 121
-      },
-      {
-        "id": "intimidacao",
-        "nome": "Intimidação",
-        "desc": "Amedrontar e impor-se.",
-        "pagina": 121
-      },
-      {
-        "id": "crime",
-        "nome": "Crime",
-        "desc": "O submundo medieval: furtos, contrabando, receptadores e ladrões.",
-        "pagina": 121
-      },
-      {
-        "id": "lideranca",
-        "nome": "Liderança",
-        "desc": "Inspirar e comandar pessoas.",
-        "pagina": 121
-      },
-      {
-        "id": "labia",
-        "nome": "Lábia",
-        "desc": "Enganar, blefar e persuadir com conversa.",
-        "pagina": 122
-      }
-    ],
-    "pericias": [
-      {
-        "id": "empatia-com-animais",
-        "nome": "Empatia com Animais",
-        "desc": "Lidar com animais, acalmá-los e treiná-los.",
-        "pagina": 122
-      },
-      {
-        "id": "arqueirismo",
-        "nome": "Arqueirismo",
-        "desc": "Uso de arcos e bestas.",
-        "pagina": 123
-      },
-      {
-        "id": "artesanato",
-        "nome": "Artesanato",
-        "desc": "Ofícios manuais como ferraria, carpintaria ou alfaiataria.",
-        "pagina": 123
-      },
-      {
-        "id": "etiqueta",
-        "nome": "Etiqueta",
-        "desc": "Comportamento adequado em cortes, mosteiros e na sociedade Cainita.",
-        "pagina": 123
-      },
-      {
-        "id": "herborismo",
-        "nome": "Herborismo",
-        "desc": "Conhecer ervas e preparar remédios, venenos e unguentos.",
-        "pagina": 123
-      },
-      {
-        "id": "armas-brancas",
-        "nome": "Armas Brancas",
-        "desc": "Combate com espadas, machados, lanças e afins.",
-        "pagina": 123
-      },
-      {
-        "id": "musica",
-        "nome": "Música",
-        "desc": "Tocar instrumentos, cantar e compor.",
-        "pagina": 124
-      },
-      {
-        "id": "cavalgar",
-        "nome": "Cavalgar",
-        "desc": "Montar e controlar cavalos, inclusive em combate.",
-        "pagina": 124
-      },
-      {
-        "id": "furtividade",
-        "nome": "Furtividade",
-        "desc": "Mover-se sem ser visto nem ouvido.",
-        "pagina": 125
-      },
-      {
-        "id": "sobrevivencia",
-        "nome": "Sobrevivência",
-        "desc": "Viver nos ermos, orientar-se e rastrear.",
-        "pagina": 125
-      }
-    ],
-    "conhecimentos": [
-      {
-        "id": "instrucao",
-        "nome": "Instrução",
-        "desc": "Ler, escrever e latim, com noções de teologia e filosofia.",
-        "pagina": 125
-      },
-      {
-        "id": "sabedoria-popular",
-        "nome": "Sabedoria Popular",
-        "desc": "Lendas, superstições e costumes do povo.",
-        "pagina": 125
-      },
-      {
-        "id": "investigacao",
-        "nome": "Investigação",
-        "desc": "Achar pistas e deduzir o que aconteceu.",
-        "pagina": 126
-      },
-      {
-        "id": "direito",
-        "nome": "Direito",
-        "desc": "Leis seculares e canônicas e seus tribunais.",
-        "pagina": 126
-      },
-      {
-        "id": "linguistica",
-        "nome": "Lingüística",
-        "desc": "Idiomas extras além da língua materna.",
-        "pagina": 126
-      },
-      {
-        "id": "medicina",
-        "nome": "Medicina",
-        "desc": "Tratar ferimentos e doenças pelo saber da época.",
-        "pagina": 126
-      },
-      {
-        "id": "ocultismo",
-        "nome": "Ocultismo",
-        "desc": "Saber sobre magia, demônios e o sobrenatural.",
-        "pagina": 127
-      },
-      {
-        "id": "politica",
-        "nome": "Política",
-        "desc": "Intrigas da nobreza e da Igreja.",
-        "pagina": 127
-      },
-      {
-        "id": "ciencia",
-        "nome": "Ciência",
-        "desc": "Saberes naturais da época, como alquimia e astronomia.",
-        "pagina": 127
-      },
-      {
-        "id": "senescalia",
-        "nome": "Senescalia",
-        "desc": "Administrar propriedades, casas e abadias.",
-        "pagina": 128
-      }
-    ]
+  {
+   "id": "contatos",
+   "nome": "Contatos",
+   "desc": "Rede de informantes; contatos menores com teste (dif. 7).",
+   "pagina": 128
   },
-  "antecedentes": [
+  {
+   "id": "geracao",
+   "nome": "Geração",
+   "desc": "Cada ponto baixa a geração a partir da 12ª (5 pontos = 7ª).",
+   "pagina": 129
+  },
+  {
+   "id": "influencia",
+   "nome": "Influência",
+   "desc": "Poder sobre a sociedade mortal, da cidade até a corte do rei.",
+   "pagina": 129
+  },
+  {
+   "id": "lacaios",
+   "nome": "Lacaios",
+   "desc": "Servos leais; carniçais contam com Potência 1.",
+   "pagina": 130
+  },
+  {
+   "id": "mentor",
+   "nome": "Mentor",
+   "desc": "Cainita mais velho que aconselha e protege você.",
+   "pagina": 129
+  },
+  {
+   "id": "rebanho",
+   "nome": "Rebanho",
+   "desc": "Mortais dos quais você se alimenta com segurança; soma dados à caçada.",
+   "pagina": 129
+  },
+  {
+   "id": "recursos",
+   "nome": "Recursos",
+   "desc": "Riqueza, de escassa a castelos e vilas.",
+   "pagina": 129
+  },
+  {
+   "id": "status",
+   "nome": "Status",
+   "desc": "Posição na sociedade Cainita, de neófito conhecido a príncipe.",
+   "pagina": 130
+  }
+ ],
+ "arquetipos": [
+  {
+   "id": "autocrata",
+   "nome": "Autocrata",
+   "desc": "Acredita que a estabilidade exige ordem e quer impô-la.",
+   "pagina": 109,
+   "recuperarFV": "Ao liderar um grupo e realizar uma tarefa significativa."
+  },
+  {
+   "id": "barbaro",
+   "nome": "Bárbaro",
+   "desc": "Despreza a civilização e valoriza a honra e a força.",
+   "pagina": 110,
+   "recuperarFV": "Quando você ou seu código de honra triunfam claramente sobre algo \"civilizado\"."
+  },
+  {
+   "id": "celebrante",
+   "nome": "Celebrante",
+   "desc": "Vive de uma paixão que não consegue esconder.",
+   "pagina": 110,
+   "recuperarFV": "Ao celebrar sua paixão ou converter alguém a ela."
+  },
+  {
+   "id": "comediante",
+   "nome": "Comediante",
+   "desc": "Transforma a tristeza em piada.",
+   "pagina": 111,
+   "recuperarFV": "Ao levantar o ânimo dos outros com humor, escapando da própria dor."
+  },
+  {
+   "id": "crianca",
+   "nome": "Criança",
+   "desc": "Jovem ou imaturo, quer que cuidem dele.",
+   "pagina": 110,
+   "recuperarFV": "Quando alguém cuida de você ou ao ter grande sucesso apesar do jeito infantil."
+  },
+  {
+   "id": "defensor",
+   "nome": "Defensor",
+   "desc": "Acha que os fortes devem proteger os fracos (ou um patrono).",
+   "pagina": 110,
+   "recuperarFV": "Ao defender com sucesso seu protegido ou patrono de uma ameaça."
+  },
+  {
+   "id": "fanatico",
+   "nome": "Fanático",
+   "desc": "É consumido por uma causa.",
+   "pagina": 110,
+   "recuperarFV": "Ao promover a causa ou se sacrificar por ela."
+  },
+  {
+   "id": "galante",
+   "nome": "Galante",
+   "desc": "Vive com estilo, elegância e romance.",
+   "pagina": 110,
+   "recuperarFV": "Ao obter uma grande vitória com estilo ou ouvir suas façanhas recontadas."
+  },
+  {
+   "id": "inovador",
+   "nome": "Inovador",
+   "desc": "Sempre procura uma maneira melhor de fazer as coisas.",
+   "pagina": 111,
+   "recuperarFV": "Quando consegue criar um jeito novo de fazer algo."
+  },
+  {
+   "id": "juiz",
+   "nome": "Juiz",
+   "desc": "Busca justiça e a verdade para todos.",
+   "pagina": 111,
+   "recuperarFV": "Ao desvendar a verdade ou fazer partes rivais aceitarem seu julgamento."
+  },
+  {
+   "id": "malandro",
+   "nome": "Malandro",
+   "desc": "Só pensa em si e ignora as regras.",
+   "pagina": 113,
+   "recuperarFV": "Quando o egoísmo lhe traz lucro, sobretudo sem riscos."
+  },
+  {
+   "id": "monstro",
+   "nome": "Monstro",
+   "desc": "Crê que Deus o fez um monstro e aceita o papel.",
+   "pagina": 112,
+   "recuperarFV": "Ao cometer atos malignos que se encaixam no papel que escolheu."
+  },
+  {
+   "id": "penitente",
+   "nome": "Penitente",
+   "desc": "Sabe que pecou e busca o perdão.",
+   "pagina": 112,
+   "recuperarFV": "Ao remediar os pecados recentes de forma proporcional ao crime."
+  },
+  {
+   "id": "rebelde",
+   "nome": "Rebelde",
+   "desc": "Cansado de ordens, desafia a autoridade.",
+   "pagina": 113,
+   "recuperarFV": "Ao causar dano à ordem que despreza."
+  },
+  {
+   "id": "samaritano",
+   "nome": "Samaritano",
+   "desc": "Quer aliviar o sofrimento alheio com amor.",
+   "pagina": 110,
+   "recuperarFV": "Ao ajudar alguém em necessidade ou se sacrificar pelo bem de outro."
+  },
+  {
+   "id": "sobrevivente",
+   "nome": "Sobrevivente",
+   "desc": "Sempre dá um jeito de sobreviver.",
+   "pagina": 113,
+   "recuperarFV": "Ao superar uma situação difícil pela própria esperteza ou ensinar alguém a fazê-lo."
+  },
+  {
+   "id": "solitario",
+   "nome": "Solitário",
+   "desc": "Nunca se encaixou e prefere agir só.",
+   "pagina": 111,
+   "recuperarFV": "Ao realizar sozinho algo importante."
+  },
+  {
+   "id": "tirano",
+   "nome": "Tirano",
+   "desc": "Só ele faz as coisas direito; quer tudo do seu jeito.",
+   "pagina": 113,
+   "recuperarFV": "Ao ter sucesso por obstinação, eficiência e atenção aos detalhes."
+  }
+ ],
+ "qualidades": [
+  {
+   "id": "ambidestro",
+   "nome": "Ambidestro",
+   "desc": "Usa as duas mãos sem penalidade. (Aptidões)",
+   "pagina": 272,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "ingerir-comida",
+   "nome": "Ingerir Comida",
+   "desc": "Consegue comer como um vivo, mas precisa expelir depois. (Aptidões)",
+   "pagina": 272,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "linguista-nato",
+   "nome": "Lingüista Nato",
+   "desc": "Aprende línguas com grande facilidade. (Aptidões)",
+   "pagina": 272,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "aprendiz-rapido",
+   "nome": "Aprendiz Rápido",
+   "desc": "Ganha 1 XP extra por história. (Aptidões)",
+   "pagina": 272,
+   "custo": [
+    5
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "faz-tudo",
+   "nome": "Faz-Tudo",
+   "desc": "Pode tentar qualquer Habilidade sem penalidade por não tê-la. (Aptidões)",
+   "pagina": 272,
+   "custo": [
+    5
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "inepto",
+   "nome": "Inepto",
+   "desc": "Perde 5 pontos de Talentos na criação. (Aptidões)",
+   "pagina": 272,
+   "custo": [
+    5
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "ignorante",
+   "nome": "Ignorante",
+   "desc": "Perde 5 pontos de Conhecimentos na criação. (Aptidões)",
+   "pagina": 272,
+   "custo": [
+    5
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "inabil",
+   "nome": "Inábil",
+   "desc": "Perde 5 pontos de Perícias na criação. (Aptidões)",
+   "pagina": 272,
+   "custo": [
+    5
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "sentidos-agucados",
+   "nome": "Sentidos Aguçados",
+   "desc": "Um sentido apurado: dificuldade menor nos testes ligados a ele. (Percepção)",
+   "pagina": 272,
+   "custo": [
+    1
+   ],
+   "categoria": "Física",
+   "defeito": false
+  },
+  {
+   "id": "acromatopsia",
+   "nome": "Acromatopsia",
+   "desc": "Enxerga apenas em tons de cinza. (Percepção)",
+   "pagina": 272,
+   "custo": [
+    1
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "deficiencia-auditiva",
+   "nome": "Deficiência Auditiva",
+   "desc": "Ouve mal: dificuldade maior em testes de audição. (Percepção)",
+   "pagina": 272,
+   "custo": [
+    1
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "deficiencia-visual",
+   "nome": "Deficiência Visual",
+   "desc": "Enxerga mal: dificuldade maior em testes de visão. (Percepção)",
+   "pagina": 272,
+   "custo": [
+    2
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "caolho",
+   "nome": "Caolho",
+   "desc": "Sem um olho; prejudica percepção de profundidade e ataques à distância. (Percepção)",
+   "pagina": 272,
+   "custo": [
+    2
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "surdez",
+   "nome": "Surdez",
+   "desc": "Não ouve nada. (Percepção)",
+   "pagina": 273,
+   "custo": [
+    4
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "cegueira",
+   "nome": "Cegueira",
+   "desc": "Não enxerga. (Percepção)",
+   "pagina": 272,
+   "custo": [
+    6
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "divida",
+   "nome": "Dívida",
+   "desc": "Um Cainita lhe deve um favor, maior conforme o custo. (Ligações)",
+   "pagina": 273,
+   "custo": [
+    1,
+    3
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "presente-especial",
+   "nome": "Presente Especial",
+   "desc": "Recebeu de outro Cainita um presente valioso ou mágico. (Ligações)",
+   "pagina": 273,
+   "custo": [
+    1,
+    3
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "boa-reputacao",
+   "nome": "Boa Reputação",
+   "desc": "É bem visto pelos Cainitas da região. (Ligações)",
+   "pagina": 273,
+   "custo": [
+    2
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "peao",
+   "nome": "Peão",
+   "desc": "Controla secretamente um vampiro de geração mais alta. (Ligações)",
+   "pagina": 273,
+   "custo": [
+    3
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "inimigo",
+   "nome": "Inimigo",
+   "desc": "Alguém quer prejudicá-lo; mais pontos, inimigo mais forte. (Ligações)",
+   "pagina": 273,
+   "custo": [
+    1,
+    5
+   ],
+   "categoria": "Social",
+   "defeito": true
+  },
+  {
+   "id": "senhor-infame",
+   "nome": "Senhor Infame",
+   "desc": "Seu senhor é malvisto e isso recai sobre você. (Ligações)",
+   "pagina": 273,
+   "custo": [
+    1
+   ],
+   "categoria": "Social",
+   "defeito": true
+  },
+  {
+   "id": "ressentimento-do-senhor",
+   "nome": "Ressentimento do Senhor",
+   "desc": "Seu senhor o despreza e atrapalha. (Ligações)",
+   "pagina": 273,
+   "custo": [
+    1
+   ],
+   "categoria": "Social",
+   "defeito": true
+  },
+  {
+   "id": "ma-reputacao",
+   "nome": "Má Reputação",
+   "desc": "Os Cainitas da região o têm em má conta. (Ligações)",
+   "pagina": 274,
+   "custo": [
+    3
+   ],
+   "categoria": "Social",
+   "defeito": true
+  },
+  {
+   "id": "bom-senso",
+   "nome": "Bom Senso",
+   "desc": "O Narrador avisa quando você vai fazer uma tolice.",
+   "pagina": 274,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "concentracao",
+   "nome": "Concentração",
+   "desc": "Imune a penalidades por distração.",
+   "pagina": 274,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "afinidade-celestial",
+   "nome": "Afinidade Celestial",
+   "desc": "Sabe estimar a hora e o nascer e o pôr do sol.",
+   "pagina": 274,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "memoria-eidetica",
+   "nome": "Memória Eidética",
+   "desc": "Lembra de tudo com perfeição.",
+   "pagina": 274,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "sono-leve",
+   "nome": "Sono Leve",
+   "desc": "Acorda com facilidade durante o dia.",
+   "pagina": 274,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "vontade-de-ferro",
+   "nome": "Vontade de Ferro",
+   "desc": "Muito difícil de Dominar ou controlar a mente.",
+   "pagina": 274,
+   "custo": [
+    4
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "autoconfianca",
+   "nome": "Autoconfiança",
+   "desc": "Ao gastar FV num sucesso automático, pode não perder o ponto.",
+   "pagina": 275,
+   "custo": [
+    5
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "sono-pesado",
+   "nome": "Sono Pesado",
+   "desc": "Muito difícil de acordar durante o dia.",
+   "pagina": 275,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "amnesia",
+   "nome": "Amnésia",
+   "desc": "Não se lembra do passado.",
+   "pagina": 275,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "confusao",
+   "nome": "Confusão",
+   "desc": "Fica confuso diante de estímulos fortes; FV supera por um tempo.",
+   "pagina": 275,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "vontade-fraca",
+   "nome": "Vontade Fraca",
+   "desc": "Fácil de Dominar e intimidar.",
+   "pagina": 275,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "distracao",
+   "nome": "Distração",
+   "desc": "Distrai-se facilmente, perdendo dados em situações movimentadas.",
+   "pagina": 274,
+   "custo": [
+    3
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "ordem-eclesiastica",
+   "nome": "Ordem Eclesiástica",
+   "desc": "Mantém uma posição na Igreja, de diácono a cargos mais altos. (Sociedade)",
+   "pagina": 275,
+   "custo": [
+    1,
+    3
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "nobreza",
+   "nome": "Nobreza",
+   "desc": "Tinha título de nobreza e ainda finge estar vivo para usá-lo. (Sociedade)",
+   "pagina": 275,
+   "custo": [
+    1,
+    3
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "mansao",
+   "nome": "Mansão",
+   "desc": "Possui uma grande mansão e seus terrenos. (Sociedade)",
+   "pagina": 275,
+   "custo": [
+    2
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "controle-institucional",
+   "nome": "Controle Institucional",
+   "desc": "Controla uma instituição mortal (guilda, mosteiro, ordem). (Sociedade)",
+   "pagina": 275,
+   "custo": [
+    2,
+    5
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "rede-de-espioes",
+   "nome": "Rede de Espiões",
+   "desc": "Um grupo de mortais coleta informações para você. (Sociedade)",
+   "pagina": 276,
+   "custo": [
+    2
+   ],
+   "categoria": "Social",
+   "defeito": false
+  },
+  {
+   "id": "presumidamente-morto",
+   "nome": "Presumidamente Morto",
+   "desc": "Os habitantes locais acham que você morreu. (Sociedade)",
+   "pagina": 276,
+   "custo": [
+    2
+   ],
+   "categoria": "Social",
+   "defeito": true
+  },
+  {
+   "id": "cidadao-de-segunda-categoria",
+   "nome": "Cidadão de Segunda Categoria",
+   "desc": "Pertence a um grupo marginalizado e é tratado com desprezo. (Sociedade)",
+   "pagina": 276,
+   "custo": [
+    2
+   ],
+   "categoria": "Social",
+   "defeito": true
+  },
+  {
+   "id": "protegido",
+   "nome": "Protegido",
+   "desc": "É devotado a proteger um mortal que sempre se mete em perigo. (Sociedade)",
+   "pagina": 276,
+   "custo": [
+    3
+   ],
+   "categoria": "Social",
+   "defeito": true
+  },
+  {
+   "id": "cacado",
+   "nome": "Caçado",
+   "desc": "Um caçador fanático está atrás de você. (Sociedade)",
+   "pagina": 276,
+   "custo": [
+    4
+   ],
+   "categoria": "Social",
+   "defeito": true
+  },
+  {
+   "id": "articulacoes-ultraflexiveis",
+   "nome": "Articulações Ultraflexíveis",
+   "desc": "−2 de dificuldade em testes de Destreza que envolvem flexibilidade.",
+   "pagina": 277,
+   "custo": [
+    1
+   ],
+   "categoria": "Física",
+   "defeito": false
+  },
+  {
+   "id": "rubor-sanguineo",
+   "nome": "Rubor Sangüíneo",
+   "desc": "Parece vivo e corado (Capadócios não podem comprar).",
+   "pagina": 277,
+   "custo": [
+    2
+   ],
+   "categoria": "Física",
+   "defeito": false
+  },
+  {
+   "id": "coracao-deslocado",
+   "nome": "Coração Deslocado",
+   "desc": "Seu coração não está no lugar comum, dificultando estacas.",
+   "pagina": 277,
+   "custo": [
+    2
+   ],
+   "categoria": "Física",
+   "defeito": false
+  },
+  {
+   "id": "digestao-eficiente",
+   "nome": "Digestão Eficiente",
+   "desc": "Aproveita mais pontos de sangue ao se alimentar.",
+   "pagina": 277,
+   "custo": [
+    3
+   ],
+   "categoria": "Física",
+   "defeito": false
+  },
+  {
+   "id": "corpo-grande",
+   "nome": "Corpo Grande",
+   "desc": "Ganha um nível de vitalidade extra.",
+   "pagina": 277,
+   "custo": [
+    4
+   ],
+   "categoria": "Física",
+   "defeito": false
+  },
+  {
+   "id": "estatura-baixa",
+   "nome": "Estatura Baixa",
+   "desc": "Bem baixo; penalidades em alcance e corrida.",
+   "pagina": 277,
+   "custo": [
+    1
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "sangue-mediocre",
+   "nome": "Sangue Medíocre",
+   "desc": "Você é de 13ª geração.",
+   "pagina": 277,
+   "custo": [
+    1
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "desfigurado",
+   "nome": "Desfigurado",
+   "desc": "Deformidade horrível: Aparência 0.",
+   "pagina": 277,
+   "custo": [
+    2
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "digestao-seletiva",
+   "nome": "Digestão Seletiva",
+   "desc": "Só digere certos tipos de sangue (frio, com emoção forte, de animais...).",
+   "pagina": 277,
+   "custo": [
+    2
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "crianca",
+   "nome": "Criança",
+   "desc": "Foi Abraçado criança e é pouco levado a sério.",
+   "pagina": 277,
+   "custo": [
+    3
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "deformidade",
+   "nome": "Deformidade",
+   "desc": "Defeito físico que atrapalha Destreza e testes Sociais.",
+   "pagina": 277,
+   "custo": [
+    3
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "aleijado",
+   "nome": "Aleijado",
+   "desc": "Pernas danificadas; anda devagar e com dificuldade.",
+   "pagina": 277,
+   "custo": [
+    3
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "leproso",
+   "nome": "Leproso",
+   "desc": "Tem a lepra, que espalha e assusta os mortais.",
+   "pagina": 277,
+   "custo": [
+    3
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "um-braco-so",
+   "nome": "Um Braço Só",
+   "desc": "Falta um braço.",
+   "pagina": 277,
+   "custo": [
+    3
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "ferimento-permanente",
+   "nome": "Ferimento Permanente",
+   "desc": "Começa toda noite ferido, sem poder curar isso.",
+   "pagina": 277,
+   "custo": [
+    3
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "mudo",
+   "nome": "Mudo",
+   "desc": "Não consegue falar.",
+   "pagina": 277,
+   "custo": [
+    4
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "sangue-fraco",
+   "nome": "Sangue Fraco",
+   "desc": "Sangue diluído: Disciplinas e Abraço mais difíceis.",
+   "pagina": 278,
+   "custo": [
+    4
+   ],
+   "categoria": "Física",
+   "defeito": true
+  },
+  {
+   "id": "codigo-de-honra",
+   "nome": "Código de Honra",
+   "desc": "Segue um código pessoal que o fortalece contra tentações. (Personalidade)",
+   "pagina": 278,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "proposito-maior",
+   "nome": "Propósito Maior",
+   "desc": "Um objetivo grandioso que lhe dá força nas situações ligadas a ele. (Personalidade)",
+   "pagina": 278,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "selvageria",
+   "nome": "Selvageria",
+   "desc": "Pode entrar em frenesi por vontade própria, ignorando penalidades de ferimento. (Personalidade)",
+   "pagina": 278,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "natureza-dupla",
+   "nome": "Natureza Dupla",
+   "desc": "Tem duas Naturezas e recupera FV por ambas. (Personalidade)",
+   "pagina": 278,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": false
+  },
+  {
+   "id": "compulsao",
+   "nome": "Compulsão",
+   "desc": "Uma compulsão (limpeza, furto, jogo...) que só FV contém por pouco tempo. (Personalidade)",
+   "pagina": 278,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "intolerancia-odio",
+   "nome": "Intolerância/Ódio",
+   "desc": "Intolerância (+2 de dificuldade com o alvo) ou ódio (teste de frenesi ao vê-lo). (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    1,
+    3
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "pesadelos",
+   "nome": "Pesadelos",
+   "desc": "Pesadelos frequentes que podem tirar dados. (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "fobia",
+   "nome": "Fobia",
+   "desc": "Medo irracional de algo. (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    1,
+    3
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "exclusao-de-presa",
+   "nome": "Exclusão de Presa",
+   "desc": "Recusa-se a beber de um tipo de pessoa. (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "excesso-de-confianca",
+   "nome": "Excesso de Confiança",
+   "desc": "Confia demais em si e sempre culpa os outros pelas falhas. (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    1
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "complexo-de-inferioridade",
+   "nome": "Complexo de Inferioridade",
+   "desc": "Perde dados quando não acredita que vai conseguir. (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "coracao-mole",
+   "nome": "Coração Mole",
+   "desc": "Não suporta ver sofrimento. (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "bairrismo",
+   "nome": "Bairrismo",
+   "desc": "Desconfia de tudo que vem de fora. (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "vinganca",
+   "nome": "Vingança",
+   "desc": "Obcecado em se vingar de alguém. (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "objetivo-condutor",
+   "nome": "Objetivo Condutor",
+   "desc": "Um objetivo pessoal o domina e pode levá-lo a agir contra os próprios interesses. (Personalidade)",
+   "pagina": 279,
+   "custo": [
+    2
+   ],
+   "categoria": "Mental",
+   "defeito": true
+  },
+  {
+   "id": "amor-verdadeiro",
+   "nome": "Amor Verdadeiro",
+   "desc": "Um amor sincero o fortalece contra o mal.",
+   "pagina": 280,
+   "custo": [
+    1
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": false
+  },
+  {
+   "id": "nocao-de-perigo",
+   "nome": "Noção de Perigo",
+   "desc": "Pressente o perigo antes que ele aconteça.",
+   "pagina": 280,
+   "custo": [
+    2
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": false
+  },
+  {
+   "id": "afinidade-com-as-fadas",
+   "nome": "Afinidade com as Fadas",
+   "desc": "Atrai as fadas em vez de assustá-las.",
+   "pagina": 280,
+   "custo": [
+    2
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": false
+  },
+  {
+   "id": "imunidade-ao-voto-de-sangue",
+   "nome": "Imunidade ao Voto de Sangue",
+   "desc": "Nunca fica preso a um Voto de Sangue.",
+   "pagina": 280,
+   "custo": [
+    3
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": false
+  },
+  {
+   "id": "sorte",
+   "nome": "Sorte",
+   "desc": "Pode repetir três testes por história.",
+   "pagina": 280,
+   "custo": [
+    4
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": false
+  },
+  {
+   "id": "fe-verdadeira",
+   "nome": "Fé Verdadeira",
+   "desc": "Fé real capaz de repelir criaturas sobrenaturais.",
+   "pagina": 280,
+   "custo": [
+    7
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": false
+  },
+  {
+   "id": "macula-do-apodrecimento",
+   "nome": "Mácula do Apodrecimento",
+   "desc": "Plantas murcham ao seu redor e morrem ao seu toque.",
+   "pagina": 281,
+   "custo": [
+    1
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": true
+  },
+  {
+   "id": "perseguido-por-demonios",
+   "nome": "Perseguido por Demônios",
+   "desc": "Um demônio se interessa por você e tenta corrompê-lo.",
+   "pagina": 281,
+   "custo": [
+    1,
+    4
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": true
+  },
+  {
+   "id": "repulsa-ao-alho",
+   "nome": "Repulsa ao Alho",
+   "desc": "O alho o afasta e enfraquece.",
+   "pagina": 281,
+   "custo": [
+    2
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": true
+  },
+  {
+   "id": "assombrado",
+   "nome": "Assombrado",
+   "desc": "Um fantasma o persegue.",
+   "pagina": 281,
+   "custo": [
+    3
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": true
+  },
+  {
+   "id": "futuro-negro",
+   "nome": "Futuro Negro",
+   "desc": "Condenado a um destino terrível, com visões dele.",
+   "pagina": 281,
+   "custo": [
+    5
+   ],
+   "categoria": "Sobrenatural",
+   "defeito": true
+  }
+ ],
+ "xp": [
+  {
+   "nome": "Nova Habilidade",
+   "modo": "novo",
+   "valor": 3
+  },
+  {
+   "nome": "Nova Disciplina",
+   "modo": "novo",
+   "valor": 10
+  },
+  {
+   "nome": "Nova Trilha Taumatúrgica",
+   "modo": "novo",
+   "valor": 7
+  },
+  {
+   "nome": "Atributo",
+   "modo": "x",
+   "valor": 4
+  },
+  {
+   "nome": "Habilidade",
+   "modo": "x",
+   "valor": 2
+  },
+  {
+   "nome": "Disciplina do clã",
+   "modo": "x",
+   "valor": 5
+  },
+  {
+   "nome": "Outra Disciplina",
+   "modo": "x",
+   "valor": 7
+  },
+  {
+   "nome": "Trilha primária",
+   "modo": "x",
+   "valor": 4
+  },
+  {
+   "nome": "Trilha secundária",
+   "modo": "x",
+   "valor": 5
+  },
+  {
+   "nome": "Virtude",
+   "modo": "x",
+   "valor": 3
+  },
+  {
+   "nome": "Caminho",
+   "modo": "x",
+   "valor": 2
+  },
+  {
+   "nome": "Força de Vontade",
+   "modo": "x",
+   "valor": 2
+  }
+ ],
+ "vitalidade": [
+  {
+   "nome": "Escoriado",
+   "penalidade": 0
+  },
+  {
+   "nome": "Machucado",
+   "penalidade": -1
+  },
+  {
+   "nome": "Ferido",
+   "penalidade": -1
+  },
+  {
+   "nome": "Ferido Gravemente",
+   "penalidade": -2
+  },
+  {
+   "nome": "Espancado",
+   "penalidade": -2
+  },
+  {
+   "nome": "Aleijado",
+   "penalidade": -5
+  },
+  {
+   "nome": "Incapacitado",
+   "penalidade": null
+  }
+ ],
+ "conceitos": [
+  "Artesão (ferreiro, alfaiate, escultor, armeiro)",
+  "Artista (pintor, músico, recitador, mestre de armas)",
+  "Camponês (criado, fazendeiro, pastor, cavalariço, servo)",
+  "Cavaleiro (escudeiro, cavaleiro errante, cortesão, cavaleiro pobre)",
+  "Clérigo (monge, sacerdote, bispo, freira, místico)",
+  "Despossuído (refugiado, judeu, mouro, estrangeiro, nobre deserdado)",
+  "Errante (vagabundo, ladrão, bardo, exilado)",
+  "Erudito (estudante, escrivão, médico, alquimista, teólogo)",
+  "Estrangeiro (bárbaro, viajante, muçulmano, espião, nômade)",
+  "Herege (pagão, cristão não ortodoxo, bruxa, ocultista, feiticeiro)",
+  "Jovem (fugido, criança, aprendiz, herdeiro, moleque)",
+  "Lacaio (caçador, senescal, xerife, torturador, dama de companhia, mordomo)",
+  "Mendigo (aleijado, escravo fugitivo, devedor, veterano)",
+  "Mercador (estalajadeiro, vendedor ambulante, treinador de animais)",
+  "Nobre (barão, herdeiro real, cruzado, bastardo, libertino)",
+  "Ordinário (bêbado, agiota, jogador, briguento, clérigo excomungado)",
+  "Peregrino (cruzado, penitente, monge louco, palmeirim)",
+  "Soldado (homem de armas, mercenário, guarda, assassino)"
+ ],
+ "clas": [
+  {
+   "id": "assamitas",
+   "nome": "Assamitas",
+   "desc": "Guerreiros e assassinos da fortaleza de Alamut.",
+   "pagina": 54,
+   "apelido": "Sarracenos",
+   "seita": "Independentes (Alamut)",
+   "disciplinas": [
+    "rapidez",
+    "ofuscacao",
+    "quietus"
+   ],
+   "fraqueza": "Entregam 20% do sangue que obtêm aos senhores; rituais e Auspícios que detectam diablerie sempre os acusam.",
+   "dica": "Físicos primeiro; quase todos seguem o Caminho do Sangue."
+  },
+  {
+   "id": "brujah",
+   "nome": "Brujah",
+   "desc": "Idealistas apaixonados que sonham com a Cartago perdida.",
+   "pagina": 56,
+   "apelido": "Fanáticos",
+   "seita": "Sem seita fixa",
+   "disciplinas": [
+    "rapidez",
+    "potencia",
+    "presenca"
+   ],
+   "fraqueza": "+2 na dificuldade dos testes para resistir ao frenesi.",
+   "dica": "Caminhos da Humanidade ou do Paraíso são comuns."
+  },
+  {
+   "id": "capadocios",
+   "nome": "Capadócios",
+   "desc": "Estudiosos da morte, muitos ligados à Igreja.",
+   "pagina": 58,
+   "apelido": "Ladrões de Sepulturas",
+   "seita": "Sem seita fixa",
+   "disciplinas": [
+    "auspicios",
+    "fortitude",
+    "mortis"
+   ],
+   "fraqueza": "Pele pálida e fria de cadáver: +1 de dificuldade em todos os testes Sociais; não podem comprar Rubor Sangüíneo.",
+   "dica": "Mentais e Conhecimentos; muitos clérigos no Caminho do Paraíso."
+  },
+  {
+   "id": "seguidores-de-set",
+   "nome": "Seguidores de Set",
+   "desc": "Corruptores que servem ao deus Set.",
+   "pagina": 60,
+   "apelido": "Serpentes",
+   "seita": "Culto de Set",
+   "disciplinas": [
+    "ofuscacao",
+    "presenca",
+    "serpentis"
+   ],
+   "fraqueza": "Extremamente sensíveis ao sol: os dados de dano solar são dobrados.",
+   "dica": "Sociais e Mentais; Caminho de Tífon."
+  },
+  {
+   "id": "gangrel",
+   "nome": "Gangrel",
+   "desc": "Andarilhos selvagens das florestas e estradas.",
+   "pagina": 62,
+   "apelido": "Animais",
+   "seita": "Sem seita fixa",
+   "disciplinas": [
+    "animalismo",
+    "fortitude",
+    "metamorfose"
+   ],
+   "fraqueza": "Cada frenesi deixa um traço animal; a cada cinco, perdem 1 ponto de um Atributo Social.",
+   "dica": "Físicos e Sobrevivência; Caminho da Besta."
+  },
+  {
+   "id": "lasombra",
+   "nome": "Lasombra",
+   "desc": "Senhores das sombras infiltrados na Igreja e na nobreza.",
+   "pagina": 64,
+   "apelido": "Magistrados",
+   "seita": "Sem seita fixa",
+   "disciplinas": [
+    "dominacao",
+    "tenebrosidade",
+    "potencia"
+   ],
+   "fraqueza": "Não aparecem em espelhos nem em qualquer superfície reflexiva.",
+   "dica": "Sociais e Mentais; muitos no Caminho do Paraíso."
+  },
+  {
+   "id": "malkavianos",
+   "nome": "Malkavianos",
+   "desc": "Profetas e loucos de visão perturbadora.",
+   "pagina": 66,
+   "apelido": "Loucos",
+   "seita": "Sem seita fixa",
+   "disciplinas": [
+    "auspicios",
+    "demencia",
+    "ofuscacao"
+   ],
+   "fraqueza": "Começam com pelo menos uma Perturbação permanente, que a Força de Vontade não supera.",
+   "dica": "Escolha a Perturbação na criação; qualquer Caminho."
+  },
+  {
+   "id": "nosferatu",
+   "nome": "Nosferatu",
+   "desc": "Deformados que vivem escondidos e colecionam segredos.",
+   "pagina": 68,
+   "apelido": "Leprosos",
+   "seita": "Sem seita fixa",
+   "disciplinas": [
+    "animalismo",
+    "ofuscacao",
+    "potencia"
+   ],
+   "fraqueza": "Aparência 0 permanente; testes Sociais que envolvem Aparência falham automaticamente.",
+   "dica": "Mentais e Furtividade; Caminho do Paraíso ou da Besta."
+  },
+  {
+   "id": "ravnos",
+   "nome": "Ravnos",
+   "desc": "Viajantes e trapaceiros mestres da ilusão.",
+   "pagina": 70,
+   "apelido": "Charlatães",
+   "seita": "Sem seita fixa",
+   "disciplinas": [
+    "animalismo",
+    "quimerismo",
+    "fortitude"
+   ],
+   "fraqueza": "Têm um vício de trapaça; diante da oportunidade, Força de Vontade (dif. 6) para resistir.",
+   "dica": "Sociais e Talentos; Caminho do Paradoxo."
+  },
+  {
+   "id": "toreador",
+   "nome": "Toreador",
+   "desc": "Artistas e cortesãos apaixonados pela beleza.",
+   "pagina": 72,
+   "apelido": "Artesãos",
+   "seita": "Sem seita fixa",
+   "disciplinas": [
+    "auspicios",
+    "rapidez",
+    "presenca"
+   ],
+   "fraqueza": "Ficam paralisados diante da beleza por minutos ou horas; só um teste de Força de Vontade quebra o encanto.",
+   "dica": "Sociais e Artesanato/Música; Caminho da Humanidade."
+  },
+  {
+   "id": "tremere",
+   "nome": "Tremere",
+   "desc": "Magos que se tornaram vampiros e estão em guerra com os Tzimisce.",
+   "pagina": 74,
+   "apelido": "Usurpadores",
+   "seita": "Sem seita fixa (clã recente)",
+   "disciplinas": [
+    "auspicios",
+    "dominacao",
+    "taumaturgia"
+   ],
+   "fraqueza": "Beberam duas vezes do sangue dos sete anciões: estão a um passo do Voto de Sangue com o clã.",
+   "dica": "Mentais e Ocultismo; Caminho da Humanidade."
+  },
+  {
+   "id": "tzimisce",
+   "nome": "Tzimisce",
+   "desc": "Senhores feudais do Leste que moldam a carne.",
+   "pagina": 76,
+   "apelido": "Demônios",
+   "seita": "Sem seita fixa (voivodas do Leste)",
+   "disciplinas": [
+    "animalismo",
+    "auspicios",
+    "vicissitude"
+   ],
+   "fraqueza": "Devem dormir sobre duas mãos cheias de terra natal; sem isso, as paradas caem pela metade a cada 24 h.",
+   "dica": "Mentais e Conhecimentos; Caminho da Besta ou outros."
+  },
+  {
+   "id": "ventrue",
+   "nome": "Ventrue",
+   "desc": "Nobres e governantes que se veem como líderes naturais dos Cainitas.",
+   "pagina": 78,
+   "apelido": "Patrícios",
+   "seita": "Sem seita fixa (nobreza Cainita)",
+   "disciplinas": [
+    "dominacao",
+    "fortitude",
+    "presenca"
+   ],
+   "fraqueza": "Só se alimentam de um tipo de presa escolhido na criação (sacerdotes, virgens, ingleses...).",
+   "dica": "Sociais; Status, Recursos e Influência."
+  },
+  {
+   "id": "caitiff",
+   "nome": "Caitiff",
+   "desc": "Vampiros de clã desconhecido; muito raros nesta época.",
+   "pagina": 93,
+   "apelido": "Sem Clã",
+   "seita": "—",
+   "disciplinas": [],
+   "fraqueza": "Sem fraqueza de clã, mas rejeitados e desonrados pelos outros Cainitas.",
+   "dica": "Os 4 pontos de Disciplina podem ir para quaisquer Disciplinas."
+  }
+ ],
+ "disciplinas": [
+  {
+   "id": "animalismo",
+   "nome": "Animalismo",
+   "desc": "Afinidade com os animais e domínio sobre a Besta.",
+   "pagina": 141,
+   "niveis": [
     {
-      "id": "aliados",
-      "nome": "Aliados",
-      "desc": "Mortais que ajudam você; nos níveis altos, alguns são muito influentes.",
-      "pagina": 128
+     "nivel": 1,
+     "nome": "Linguagem Feral",
+     "sistema": "Fala com animais sem teste; para pedir favores, Manipulação + Empatia com Animais (dif. 6)."
     },
     {
-      "id": "contatos",
-      "nome": "Contatos",
-      "desc": "Rede de informantes; contatos menores com teste (dif. 7).",
-      "pagina": 128
+     "nivel": 2,
+     "nome": "Chamado de Noé",
+     "sistema": "Carisma + Sobrevivência (dif. 6): chama animais de um tipo que estejam ao alcance."
     },
     {
-      "id": "geracao",
-      "nome": "Geração",
-      "desc": "Cada ponto baixa a geração a partir da 12ª (5 pontos = 7ª).",
-      "pagina": 129
+     "nivel": 3,
+     "nome": "Intimidar a Besta",
+     "sistema": "Manipulação + Intimidação (ou Empatia para acalmar), dif. 7, prolongado: subjuga a Besta do alvo."
     },
     {
-      "id": "influencia",
-      "nome": "Influência",
-      "desc": "Poder sobre a sociedade mortal, da cidade até a corte do rei.",
-      "pagina": 129
+     "nivel": 4,
+     "nome": "Cavalgar a Mente Selvagem",
+     "sistema": "Carisma + Empatia com Animais (dif. 8) olhando nos olhos: possui o animal."
     },
     {
-      "id": "lacaios",
-      "nome": "Lacaios",
-      "desc": "Servos leais; carniçais contam com Potência 1.",
-      "pagina": 130
+     "nivel": 5,
+     "nome": "Expulsando a Besta",
+     "sistema": "Em frenesi ou perto dele, Manipulação + Empatia com Animais (dif. 8): passa a Besta para outro."
     },
     {
-      "id": "mentor",
-      "nome": "Mentor",
-      "desc": "Cainita mais velho que aconselha e protege você.",
-      "pagina": 129
-    },
-    {
-      "id": "rebanho",
-      "nome": "Rebanho",
-      "desc": "Mortais dos quais você se alimenta com segurança; soma dados à caçada.",
-      "pagina": 129
-    },
-    {
-      "id": "recursos",
-      "nome": "Recursos",
-      "desc": "Riqueza, de escassa a castelos e vilas.",
-      "pagina": 129
-    },
-    {
-      "id": "status",
-      "nome": "Status",
-      "desc": "Posição na sociedade Cainita, de neófito conhecido a príncipe.",
-      "pagina": 130
+     "nivel": 6,
+     "nome": "Unidade Acelerada",
+     "sistema": "Nível 6. Percepção + Empatia com Animais (dif. 6): une a mente a um animal; 1 FV por turno extra."
     }
-  ],
-  "arquetipos": [
+   ]
+  },
+  {
+   "id": "auspicios",
+   "nome": "Auspícios",
+   "desc": "Percepção sobrenatural.",
+   "pagina": 143,
+   "niveis": [
     {
-      "id": "autocrata",
-      "nome": "Autocrata",
-      "desc": "Acredita que a estabilidade exige ordem e quer impô-la.",
-      "pagina": 109,
-      "recuperarFV": "Ao liderar um grupo e realizar uma tarefa significativa."
+     "nivel": 1,
+     "nome": "Sentidos Aguçados",
+     "sistema": "Sentidos ampliados; o Narrador pode rolar para revelar ameaças."
     },
     {
-      "id": "barbaro",
-      "nome": "Bárbaro",
-      "desc": "Despreza a civilização e valoriza a honra e a força.",
-      "pagina": 110,
-      "recuperarFV": "Quando você ou seu código de honra triunfam claramente sobre algo \"civilizado\"."
+     "nivel": 2,
+     "nome": "Visão da Alma",
+     "sistema": "Percepção + Empatia (dif. 8): lê as cores da aura do alvo."
     },
     {
-      "id": "celebrante",
-      "nome": "Celebrante",
-      "desc": "Vive de uma paixão que não consegue esconder.",
-      "pagina": 110,
-      "recuperarFV": "Ao celebrar sua paixão ou converter alguém a ela."
+     "nivel": 3,
+     "nome": "Toque do Espírito",
+     "sistema": "Tocando um objeto, Percepção + Empatia: impressões sobre quem o usou."
     },
     {
-      "id": "comediante",
-      "nome": "Comediante",
-      "desc": "Transforma a tristeza em piada.",
-      "pagina": 111,
-      "recuperarFV": "Ao levantar o ânimo dos outros com humor, escapando da própria dor."
+     "nivel": 4,
+     "nome": "Roubar Segredos",
+     "sistema": "Inteligência + Lábia (dif. = FV atual do alvo): um sucesso por informação arrancada da mente."
     },
     {
-      "id": "crianca",
-      "nome": "Criança",
-      "desc": "Jovem ou imaturo, quer que cuidem dele.",
-      "pagina": 110,
-      "recuperarFV": "Quando alguém cuida de você ou ao ter grande sucesso apesar do jeito infantil."
+     "nivel": 5,
+     "nome": "Caminhada da Anima",
+     "sistema": "1 FV + Percepção + Ocultismo (dif. ~7): a alma deixa o corpo e viaja."
     },
     {
-      "id": "defensor",
-      "nome": "Defensor",
-      "desc": "Acha que os fortes devem proteger os fracos (ou um patrono).",
-      "pagina": 110,
-      "recuperarFV": "Ao defender com sucesso seu protegido ou patrono de uma ameaça."
-    },
-    {
-      "id": "fanatico",
-      "nome": "Fanático",
-      "desc": "É consumido por uma causa.",
-      "pagina": 110,
-      "recuperarFV": "Ao promover a causa ou se sacrificar por ela."
-    },
-    {
-      "id": "galante",
-      "nome": "Galante",
-      "desc": "Vive com estilo, elegância e romance.",
-      "pagina": 110,
-      "recuperarFV": "Ao obter uma grande vitória com estilo ou ouvir suas façanhas recontadas."
-    },
-    {
-      "id": "inovador",
-      "nome": "Inovador",
-      "desc": "Sempre procura uma maneira melhor de fazer as coisas.",
-      "pagina": 111,
-      "recuperarFV": "Quando consegue criar um jeito novo de fazer algo."
-    },
-    {
-      "id": "juiz",
-      "nome": "Juiz",
-      "desc": "Busca justiça e a verdade para todos.",
-      "pagina": 111,
-      "recuperarFV": "Ao desvendar a verdade ou fazer partes rivais aceitarem seu julgamento."
-    },
-    {
-      "id": "malandro",
-      "nome": "Malandro",
-      "desc": "Só pensa em si e ignora as regras.",
-      "pagina": 113,
-      "recuperarFV": "Quando o egoísmo lhe traz lucro, sobretudo sem riscos."
-    },
-    {
-      "id": "monstro",
-      "nome": "Monstro",
-      "desc": "Crê que Deus o fez um monstro e aceita o papel.",
-      "pagina": 112,
-      "recuperarFV": "Ao cometer atos malignos que se encaixam no papel que escolheu."
-    },
-    {
-      "id": "penitente",
-      "nome": "Penitente",
-      "desc": "Sabe que pecou e busca o perdão.",
-      "pagina": 112,
-      "recuperarFV": "Ao remediar os pecados recentes de forma proporcional ao crime."
-    },
-    {
-      "id": "rebelde",
-      "nome": "Rebelde",
-      "desc": "Cansado de ordens, desafia a autoridade.",
-      "pagina": 113,
-      "recuperarFV": "Ao causar dano à ordem que despreza."
-    },
-    {
-      "id": "samaritano",
-      "nome": "Samaritano",
-      "desc": "Quer aliviar o sofrimento alheio com amor.",
-      "pagina": 110,
-      "recuperarFV": "Ao ajudar alguém em necessidade ou se sacrificar pelo bem de outro."
-    },
-    {
-      "id": "sobrevivente",
-      "nome": "Sobrevivente",
-      "desc": "Sempre dá um jeito de sobreviver.",
-      "pagina": 113,
-      "recuperarFV": "Ao superar uma situação difícil pela própria esperteza ou ensinar alguém a fazê-lo."
-    },
-    {
-      "id": "solitario",
-      "nome": "Solitário",
-      "desc": "Nunca se encaixou e prefere agir só.",
-      "pagina": 111,
-      "recuperarFV": "Ao realizar sozinho algo importante."
-    },
-    {
-      "id": "tirano",
-      "nome": "Tirano",
-      "desc": "Só ele faz as coisas direito; quer tudo do seu jeito.",
-      "pagina": 113,
-      "recuperarFV": "Ao ter sucesso por obstinação, eficiência e atenção aos detalhes."
+     "nivel": 6,
+     "nome": "Visão Longínqua",
+     "sistema": "Nível 6. Percepção + Empatia (dif. 6): localiza e espia um alvo à distância."
     }
-  ],
-  "qualidades": [
+   ]
+  },
+  {
+   "id": "quimerismo",
+   "nome": "Quimerismo",
+   "desc": "Ilusões dos Ravnos.",
+   "pagina": 146,
+   "niveis": [
     {
-      "id": "ambidestro",
-      "nome": "Ambidestro",
-      "desc": "Usa as duas mãos sem penalidade. (Aptidões)",
-      "pagina": 272,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": false
+     "nivel": 1,
+     "nome": "Ignis Fatuus",
+     "sistema": "1 FV: ilusão estática que afeta um sentido."
     },
     {
-      "id": "ingerir-comida",
-      "nome": "Ingerir Comida",
-      "desc": "Consegue comer como um vivo, mas precisa expelir depois. (Aptidões)",
-      "pagina": 272,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": false
+     "nivel": 2,
+     "nome": "Fata Morgana",
+     "sistema": "2 FV: ilusão estática que afeta todos os sentidos."
     },
     {
-      "id": "linguista-nato",
-      "nome": "Lingüista Nato",
-      "desc": "Aprende línguas com grande facilidade. (Aptidões)",
-      "pagina": 272,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": false
+     "nivel": 3,
+     "nome": "Aparição",
+     "sistema": "1 sangue: faz a ilusão se mover enquanto há concentração."
     },
     {
-      "id": "aprendiz-rapido",
-      "nome": "Aprendiz Rápido",
-      "desc": "Ganha 1 XP extra por história. (Aptidões)",
-      "pagina": 272,
-      "custo": [
-        5
-      ],
-      "categoria": "Mental",
-      "defeito": false
+     "nivel": 4,
+     "nome": "Permanência",
+     "sistema": "1 sangue: a ilusão dura até ser dissolvida."
     },
     {
-      "id": "faz-tudo",
-      "nome": "Faz-Tudo",
-      "desc": "Pode tentar qualquer Habilidade sem penalidade por não tê-la. (Aptidões)",
-      "pagina": 272,
-      "custo": [
-        5
-      ],
-      "categoria": "Mental",
-      "defeito": false
+     "nivel": 5,
+     "nome": "Cruel Realidade",
+     "sistema": "2 FV; para ferir, Manipulação + Lábia contra o alvo: a ilusão causa dano real."
     },
     {
-      "id": "inepto",
-      "nome": "Inepto",
-      "desc": "Perde 5 pontos de Talentos na criação. (Aptidões)",
-      "pagina": 272,
-      "custo": [
-        5
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "ignorante",
-      "nome": "Ignorante",
-      "desc": "Perde 5 pontos de Conhecimentos na criação. (Aptidões)",
-      "pagina": 272,
-      "custo": [
-        5
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "inabil",
-      "nome": "Inábil",
-      "desc": "Perde 5 pontos de Perícias na criação. (Aptidões)",
-      "pagina": 272,
-      "custo": [
-        5
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "sentidos-agucados",
-      "nome": "Sentidos Aguçados",
-      "desc": "Um sentido apurado: dificuldade menor nos testes ligados a ele. (Percepção)",
-      "pagina": 272,
-      "custo": [
-        1
-      ],
-      "categoria": "Física",
-      "defeito": false
-    },
-    {
-      "id": "acromatopsia",
-      "nome": "Acromatopsia",
-      "desc": "Enxerga apenas em tons de cinza. (Percepção)",
-      "pagina": 272,
-      "custo": [
-        1
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "deficiencia-auditiva",
-      "nome": "Deficiência Auditiva",
-      "desc": "Ouve mal: dificuldade maior em testes de audição. (Percepção)",
-      "pagina": 272,
-      "custo": [
-        1
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "deficiencia-visual",
-      "nome": "Deficiência Visual",
-      "desc": "Enxerga mal: dificuldade maior em testes de visão. (Percepção)",
-      "pagina": 272,
-      "custo": [
-        2
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "caolho",
-      "nome": "Caolho",
-      "desc": "Sem um olho; prejudica percepção de profundidade e ataques à distância. (Percepção)",
-      "pagina": 272,
-      "custo": [
-        2
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "surdez",
-      "nome": "Surdez",
-      "desc": "Não ouve nada. (Percepção)",
-      "pagina": 273,
-      "custo": [
-        4
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "cegueira",
-      "nome": "Cegueira",
-      "desc": "Não enxerga. (Percepção)",
-      "pagina": 272,
-      "custo": [
-        6
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "divida",
-      "nome": "Dívida",
-      "desc": "Um Cainita lhe deve um favor, maior conforme o custo. (Ligações)",
-      "pagina": 273,
-      "custo": [
-        1,
-        3
-      ],
-      "categoria": "Social",
-      "defeito": false
-    },
-    {
-      "id": "presente-especial",
-      "nome": "Presente Especial",
-      "desc": "Recebeu de outro Cainita um presente valioso ou mágico. (Ligações)",
-      "pagina": 273,
-      "custo": [
-        1,
-        3
-      ],
-      "categoria": "Social",
-      "defeito": false
-    },
-    {
-      "id": "boa-reputacao",
-      "nome": "Boa Reputação",
-      "desc": "É bem visto pelos Cainitas da região. (Ligações)",
-      "pagina": 273,
-      "custo": [
-        2
-      ],
-      "categoria": "Social",
-      "defeito": false
-    },
-    {
-      "id": "peao",
-      "nome": "Peão",
-      "desc": "Controla secretamente um vampiro de geração mais alta. (Ligações)",
-      "pagina": 273,
-      "custo": [
-        3
-      ],
-      "categoria": "Social",
-      "defeito": false
-    },
-    {
-      "id": "inimigo",
-      "nome": "Inimigo",
-      "desc": "Alguém quer prejudicá-lo; mais pontos, inimigo mais forte. (Ligações)",
-      "pagina": 273,
-      "custo": [
-        1,
-        5
-      ],
-      "categoria": "Social",
-      "defeito": true
-    },
-    {
-      "id": "senhor-infame",
-      "nome": "Senhor Infame",
-      "desc": "Seu senhor é malvisto e isso recai sobre você. (Ligações)",
-      "pagina": 273,
-      "custo": [
-        1
-      ],
-      "categoria": "Social",
-      "defeito": true
-    },
-    {
-      "id": "ressentimento-do-senhor",
-      "nome": "Ressentimento do Senhor",
-      "desc": "Seu senhor o despreza e atrapalha. (Ligações)",
-      "pagina": 273,
-      "custo": [
-        1
-      ],
-      "categoria": "Social",
-      "defeito": true
-    },
-    {
-      "id": "ma-reputacao",
-      "nome": "Má Reputação",
-      "desc": "Os Cainitas da região o têm em má conta. (Ligações)",
-      "pagina": 274,
-      "custo": [
-        3
-      ],
-      "categoria": "Social",
-      "defeito": true
-    },
-    {
-      "id": "bom-senso",
-      "nome": "Bom Senso",
-      "desc": "O Narrador avisa quando você vai fazer uma tolice.",
-      "pagina": 274,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "concentracao",
-      "nome": "Concentração",
-      "desc": "Imune a penalidades por distração.",
-      "pagina": 274,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "afinidade-celestial",
-      "nome": "Afinidade Celestial",
-      "desc": "Sabe estimar a hora e o nascer e o pôr do sol.",
-      "pagina": 274,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "memoria-eidetica",
-      "nome": "Memória Eidética",
-      "desc": "Lembra de tudo com perfeição.",
-      "pagina": 274,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "sono-leve",
-      "nome": "Sono Leve",
-      "desc": "Acorda com facilidade durante o dia.",
-      "pagina": 274,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "vontade-de-ferro",
-      "nome": "Vontade de Ferro",
-      "desc": "Muito difícil de Dominar ou controlar a mente.",
-      "pagina": 274,
-      "custo": [
-        4
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "autoconfianca",
-      "nome": "Autoconfiança",
-      "desc": "Ao gastar FV num sucesso automático, pode não perder o ponto.",
-      "pagina": 275,
-      "custo": [
-        5
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "sono-pesado",
-      "nome": "Sono Pesado",
-      "desc": "Muito difícil de acordar durante o dia.",
-      "pagina": 275,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "amnesia",
-      "nome": "Amnésia",
-      "desc": "Não se lembra do passado.",
-      "pagina": 275,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "confusao",
-      "nome": "Confusão",
-      "desc": "Fica confuso diante de estímulos fortes; FV supera por um tempo.",
-      "pagina": 275,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "vontade-fraca",
-      "nome": "Vontade Fraca",
-      "desc": "Fácil de Dominar e intimidar.",
-      "pagina": 275,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "distracao",
-      "nome": "Distração",
-      "desc": "Distrai-se facilmente, perdendo dados em situações movimentadas.",
-      "pagina": 274,
-      "custo": [
-        3
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "ordem-eclesiastica",
-      "nome": "Ordem Eclesiástica",
-      "desc": "Mantém uma posição na Igreja, de diácono a cargos mais altos. (Sociedade)",
-      "pagina": 275,
-      "custo": [
-        1,
-        3
-      ],
-      "categoria": "Social",
-      "defeito": false
-    },
-    {
-      "id": "nobreza",
-      "nome": "Nobreza",
-      "desc": "Tinha título de nobreza e ainda finge estar vivo para usá-lo. (Sociedade)",
-      "pagina": 275,
-      "custo": [
-        1,
-        3
-      ],
-      "categoria": "Social",
-      "defeito": false
-    },
-    {
-      "id": "mansao",
-      "nome": "Mansão",
-      "desc": "Possui uma grande mansão e seus terrenos. (Sociedade)",
-      "pagina": 275,
-      "custo": [
-        2
-      ],
-      "categoria": "Social",
-      "defeito": false
-    },
-    {
-      "id": "controle-institucional",
-      "nome": "Controle Institucional",
-      "desc": "Controla uma instituição mortal (guilda, mosteiro, ordem). (Sociedade)",
-      "pagina": 275,
-      "custo": [
-        2,
-        5
-      ],
-      "categoria": "Social",
-      "defeito": false
-    },
-    {
-      "id": "rede-de-espioes",
-      "nome": "Rede de Espiões",
-      "desc": "Um grupo de mortais coleta informações para você. (Sociedade)",
-      "pagina": 276,
-      "custo": [
-        2
-      ],
-      "categoria": "Social",
-      "defeito": false
-    },
-    {
-      "id": "presumidamente-morto",
-      "nome": "Presumidamente Morto",
-      "desc": "Os habitantes locais acham que você morreu. (Sociedade)",
-      "pagina": 276,
-      "custo": [
-        2
-      ],
-      "categoria": "Social",
-      "defeito": true
-    },
-    {
-      "id": "cidadao-de-segunda-categoria",
-      "nome": "Cidadão de Segunda Categoria",
-      "desc": "Pertence a um grupo marginalizado e é tratado com desprezo. (Sociedade)",
-      "pagina": 276,
-      "custo": [
-        2
-      ],
-      "categoria": "Social",
-      "defeito": true
-    },
-    {
-      "id": "protegido",
-      "nome": "Protegido",
-      "desc": "É devotado a proteger um mortal que sempre se mete em perigo. (Sociedade)",
-      "pagina": 276,
-      "custo": [
-        3
-      ],
-      "categoria": "Social",
-      "defeito": true
-    },
-    {
-      "id": "cacado",
-      "nome": "Caçado",
-      "desc": "Um caçador fanático está atrás de você. (Sociedade)",
-      "pagina": 276,
-      "custo": [
-        4
-      ],
-      "categoria": "Social",
-      "defeito": true
-    },
-    {
-      "id": "articulacoes-ultraflexiveis",
-      "nome": "Articulações Ultraflexíveis",
-      "desc": "−2 de dificuldade em testes de Destreza que envolvem flexibilidade.",
-      "pagina": 277,
-      "custo": [
-        1
-      ],
-      "categoria": "Física",
-      "defeito": false
-    },
-    {
-      "id": "rubor-sanguineo",
-      "nome": "Rubor Sangüíneo",
-      "desc": "Parece vivo e corado (Capadócios não podem comprar).",
-      "pagina": 277,
-      "custo": [
-        2
-      ],
-      "categoria": "Física",
-      "defeito": false
-    },
-    {
-      "id": "coracao-deslocado",
-      "nome": "Coração Deslocado",
-      "desc": "Seu coração não está no lugar comum, dificultando estacas.",
-      "pagina": 277,
-      "custo": [
-        2
-      ],
-      "categoria": "Física",
-      "defeito": false
-    },
-    {
-      "id": "digestao-eficiente",
-      "nome": "Digestão Eficiente",
-      "desc": "Aproveita mais pontos de sangue ao se alimentar.",
-      "pagina": 277,
-      "custo": [
-        3
-      ],
-      "categoria": "Física",
-      "defeito": false
-    },
-    {
-      "id": "corpo-grande",
-      "nome": "Corpo Grande",
-      "desc": "Ganha um nível de vitalidade extra.",
-      "pagina": 277,
-      "custo": [
-        4
-      ],
-      "categoria": "Física",
-      "defeito": false
-    },
-    {
-      "id": "estatura-baixa",
-      "nome": "Estatura Baixa",
-      "desc": "Bem baixo; penalidades em alcance e corrida.",
-      "pagina": 277,
-      "custo": [
-        1
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "sangue-mediocre",
-      "nome": "Sangue Medíocre",
-      "desc": "Você é de 13ª geração.",
-      "pagina": 277,
-      "custo": [
-        1
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "desfigurado",
-      "nome": "Desfigurado",
-      "desc": "Deformidade horrível: Aparência 0.",
-      "pagina": 277,
-      "custo": [
-        2
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "digestao-seletiva",
-      "nome": "Digestão Seletiva",
-      "desc": "Só digere certos tipos de sangue (frio, com emoção forte, de animais...).",
-      "pagina": 277,
-      "custo": [
-        2
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "crianca",
-      "nome": "Criança",
-      "desc": "Foi Abraçado criança e é pouco levado a sério.",
-      "pagina": 277,
-      "custo": [
-        3
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "deformidade",
-      "nome": "Deformidade",
-      "desc": "Defeito físico que atrapalha Destreza e testes Sociais.",
-      "pagina": 277,
-      "custo": [
-        3
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "aleijado",
-      "nome": "Aleijado",
-      "desc": "Pernas danificadas; anda devagar e com dificuldade.",
-      "pagina": 277,
-      "custo": [
-        3
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "leproso",
-      "nome": "Leproso",
-      "desc": "Tem a lepra, que espalha e assusta os mortais.",
-      "pagina": 277,
-      "custo": [
-        3
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "um-braco-so",
-      "nome": "Um Braço Só",
-      "desc": "Falta um braço.",
-      "pagina": 277,
-      "custo": [
-        3
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "ferimento-permanente",
-      "nome": "Ferimento Permanente",
-      "desc": "Começa toda noite ferido, sem poder curar isso.",
-      "pagina": 277,
-      "custo": [
-        3
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "mudo",
-      "nome": "Mudo",
-      "desc": "Não consegue falar.",
-      "pagina": 277,
-      "custo": [
-        4
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "sangue-fraco",
-      "nome": "Sangue Fraco",
-      "desc": "Sangue diluído: Disciplinas e Abraço mais difíceis.",
-      "pagina": 278,
-      "custo": [
-        4
-      ],
-      "categoria": "Física",
-      "defeito": true
-    },
-    {
-      "id": "codigo-de-honra",
-      "nome": "Código de Honra",
-      "desc": "Segue um código pessoal que o fortalece contra tentações. (Personalidade)",
-      "pagina": 278,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "proposito-maior",
-      "nome": "Propósito Maior",
-      "desc": "Um objetivo grandioso que lhe dá força nas situações ligadas a ele. (Personalidade)",
-      "pagina": 278,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "selvageria",
-      "nome": "Selvageria",
-      "desc": "Pode entrar em frenesi por vontade própria, ignorando penalidades de ferimento. (Personalidade)",
-      "pagina": 278,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "natureza-dupla",
-      "nome": "Natureza Dupla",
-      "desc": "Tem duas Naturezas e recupera FV por ambas. (Personalidade)",
-      "pagina": 278,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": false
-    },
-    {
-      "id": "compulsao",
-      "nome": "Compulsão",
-      "desc": "Uma compulsão (limpeza, furto, jogo...) que só FV contém por pouco tempo. (Personalidade)",
-      "pagina": 278,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "intolerancia-odio",
-      "nome": "Intolerância/Ódio",
-      "desc": "Intolerância (+2 de dificuldade com o alvo) ou ódio (teste de frenesi ao vê-lo). (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        1,
-        3
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "pesadelos",
-      "nome": "Pesadelos",
-      "desc": "Pesadelos frequentes que podem tirar dados. (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "fobia",
-      "nome": "Fobia",
-      "desc": "Medo irracional de algo. (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        1,
-        3
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "exclusao-de-presa",
-      "nome": "Exclusão de Presa",
-      "desc": "Recusa-se a beber de um tipo de pessoa. (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "excesso-de-confianca",
-      "nome": "Excesso de Confiança",
-      "desc": "Confia demais em si e sempre culpa os outros pelas falhas. (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        1
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "complexo-de-inferioridade",
-      "nome": "Complexo de Inferioridade",
-      "desc": "Perde dados quando não acredita que vai conseguir. (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "coracao-mole",
-      "nome": "Coração Mole",
-      "desc": "Não suporta ver sofrimento. (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "bairrismo",
-      "nome": "Bairrismo",
-      "desc": "Desconfia de tudo que vem de fora. (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "vinganca",
-      "nome": "Vingança",
-      "desc": "Obcecado em se vingar de alguém. (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "objetivo-condutor",
-      "nome": "Objetivo Condutor",
-      "desc": "Um objetivo pessoal o domina e pode levá-lo a agir contra os próprios interesses. (Personalidade)",
-      "pagina": 279,
-      "custo": [
-        2
-      ],
-      "categoria": "Mental",
-      "defeito": true
-    },
-    {
-      "id": "amor-verdadeiro",
-      "nome": "Amor Verdadeiro",
-      "desc": "Um amor sincero o fortalece contra o mal.",
-      "pagina": 280,
-      "custo": [
-        1
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": false
-    },
-    {
-      "id": "nocao-de-perigo",
-      "nome": "Noção de Perigo",
-      "desc": "Pressente o perigo antes que ele aconteça.",
-      "pagina": 280,
-      "custo": [
-        2
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": false
-    },
-    {
-      "id": "afinidade-com-as-fadas",
-      "nome": "Afinidade com as Fadas",
-      "desc": "Atrai as fadas em vez de assustá-las.",
-      "pagina": 280,
-      "custo": [
-        2
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": false
-    },
-    {
-      "id": "imunidade-ao-voto-de-sangue",
-      "nome": "Imunidade ao Voto de Sangue",
-      "desc": "Nunca fica preso a um Voto de Sangue.",
-      "pagina": 280,
-      "custo": [
-        3
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": false
-    },
-    {
-      "id": "sorte",
-      "nome": "Sorte",
-      "desc": "Pode repetir três testes por história.",
-      "pagina": 280,
-      "custo": [
-        4
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": false
-    },
-    {
-      "id": "fe-verdadeira",
-      "nome": "Fé Verdadeira",
-      "desc": "Fé real capaz de repelir criaturas sobrenaturais.",
-      "pagina": 280,
-      "custo": [
-        7
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": false
-    },
-    {
-      "id": "macula-do-apodrecimento",
-      "nome": "Mácula do Apodrecimento",
-      "desc": "Plantas murcham ao seu redor e morrem ao seu toque.",
-      "pagina": 281,
-      "custo": [
-        1
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": true
-    },
-    {
-      "id": "perseguido-por-demonios",
-      "nome": "Perseguido por Demônios",
-      "desc": "Um demônio se interessa por você e tenta corrompê-lo.",
-      "pagina": 281,
-      "custo": [
-        1,
-        4
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": true
-    },
-    {
-      "id": "repulsa-ao-alho",
-      "nome": "Repulsa ao Alho",
-      "desc": "O alho o afasta e enfraquece.",
-      "pagina": 281,
-      "custo": [
-        2
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": true
-    },
-    {
-      "id": "assombrado",
-      "nome": "Assombrado",
-      "desc": "Um fantasma o persegue.",
-      "pagina": 281,
-      "custo": [
-        3
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": true
-    },
-    {
-      "id": "futuro-negro",
-      "nome": "Futuro Negro",
-      "desc": "Condenado a um destino terrível, com visões dele.",
-      "pagina": 281,
-      "custo": [
-        5
-      ],
-      "categoria": "Sobrenatural",
-      "defeito": true
+     "nivel": 6,
+     "nome": "Horror em Massa",
+     "sistema": "Nível 6. Como Cruel Realidade, mas afeta um número de pessoas igual à FV."
     }
-  ],
-  "xp": [
+   ]
+  },
+  {
+   "id": "daimoinon",
+   "nome": "Daimoinon",
+   "desc": "Poder infernal dos Baali; só para o Narrador.",
+   "pagina": 148,
+   "niveis": [
     {
-      "nome": "Nova Habilidade",
-      "modo": "novo",
-      "valor": 3
+     "nivel": 1,
+     "nome": "Sentir o Pecado",
+     "sistema": "Percepção + Empatia (dif. = Autocontrole/Instinto + 4): descobre a maior fraqueza do alvo."
     },
     {
-      "nome": "Nova Disciplina",
-      "modo": "novo",
-      "valor": 10
+     "nivel": 2,
+     "nome": "Temor do Vazio",
+     "sistema": "Raciocínio + Intimidação contra Coragem + 4: o alvo entra em Rötschreck."
     },
     {
-      "nome": "Nova Trilha Taumatúrgica",
-      "modo": "novo",
-      "valor": 7
+     "nivel": 3,
+     "nome": "Chamas do Mundo Inferior",
+     "sistema": "Destreza + Ocultismo: jatos de fogo infernal, 1 dado de dano agravado por ponto de sangue."
     },
     {
-      "nome": "Atributo",
-      "modo": "x",
-      "valor": 4
+     "nivel": 4,
+     "nome": "Psicomaquia",
+     "sistema": "A vítima testa sua Virtude mais baixa (dif. 8) ou entra em frenesi, com Perturbações à tona."
     },
     {
-      "nome": "Habilidade",
-      "modo": "x",
-      "valor": 2
+     "nivel": 5,
+     "nome": "Maldição",
+     "sistema": "Inteligência + Ocultismo (dif. = FV): um Atributo do alvo cai a zero por tempo conforme os sucessos."
     },
     {
-      "nome": "Disciplina do clã",
-      "modo": "x",
-      "valor": 5
-    },
-    {
-      "nome": "Outra Disciplina",
-      "modo": "x",
-      "valor": 7
-    },
-    {
-      "nome": "Trilha primária",
-      "modo": "x",
-      "valor": 4
-    },
-    {
-      "nome": "Trilha secundária",
-      "modo": "x",
-      "valor": 5
-    },
-    {
-      "nome": "Virtude",
-      "modo": "x",
-      "valor": 3
-    },
-    {
-      "nome": "Caminho",
-      "modo": "x",
-      "valor": 2
-    },
-    {
-      "nome": "Força de Vontade",
-      "modo": "x",
-      "valor": 2
+     "nivel": 6,
+     "nome": "Ignorar as Chamas",
+     "sistema": "Nível 6. Torna-se imune ao dano do fogo em si."
     }
-  ],
-  "vitalidade": [
+   ]
+  },
+  {
+   "id": "demencia",
+   "nome": "Demência",
+   "desc": "Loucura transmitida pelos Malkavianos.",
+   "pagina": 148,
+   "niveis": [
     {
-      "nome": "Escoriado",
-      "penalidade": 0
+     "nivel": 1,
+     "nome": "Paixão do Íncubo",
+     "sistema": "Atiça ou apaga emoções intensas no alvo."
     },
     {
-      "nome": "Machucado",
-      "penalidade": -1
+     "nivel": 2,
+     "nome": "Assombrar a Alma",
+     "sistema": "Manipulação + Lábia (dif. = Percepção + Autocontrole/Instinto): visões perturbadoras por noites ou meses."
     },
     {
-      "nome": "Ferido",
-      "penalidade": -1
+     "nivel": 3,
+     "nome": "Visão do Caos",
+     "sistema": "Percepção + Ocultismo (dif. 8–10): enxerga a Natureza verdadeira e padrões ocultos."
     },
     {
-      "nome": "Ferido Gravemente",
-      "penalidade": -2
+     "nivel": 4,
+     "nome": "Confusão",
+     "sistema": "Olhar e falar, Manipulação + Intimidação (dif. = Percepção + Autocontrole/Instinto): deixa o alvo confuso de um turno a um mês."
     },
     {
-      "nome": "Espancado",
-      "penalidade": -2
+     "nivel": 5,
+     "nome": "Loucura Uivante",
+     "sistema": "Manipulação + Intimidação (dif. = FV): loucura total por um turno até um ano."
     },
     {
-      "nome": "Aleijado",
-      "penalidade": -5
-    },
-    {
-      "nome": "Incapacitado",
-      "penalidade": null
+     "nivel": 6,
+     "nome": "Beijo da Lua",
+     "sistema": "Nível 6. Manipulação + Empatia contra a FV: com 2+ sucessos, impõe uma Perturbação permanente."
     }
-  ],
-  "conceitos": [
-    "Artesão (ferreiro, alfaiate, escultor, armeiro)",
-    "Artista (pintor, músico, recitador, mestre de armas)",
-    "Camponês (criado, fazendeiro, pastor, cavalariço, servo)",
-    "Cavaleiro (escudeiro, cavaleiro errante, cortesão, cavaleiro pobre)",
-    "Clérigo (monge, sacerdote, bispo, freira, místico)",
-    "Despossuído (refugiado, judeu, mouro, estrangeiro, nobre deserdado)",
-    "Errante (vagabundo, ladrão, bardo, exilado)",
-    "Erudito (estudante, escrivão, médico, alquimista, teólogo)",
-    "Estrangeiro (bárbaro, viajante, muçulmano, espião, nômade)",
-    "Herege (pagão, cristão não ortodoxo, bruxa, ocultista, feiticeiro)",
-    "Jovem (fugido, criança, aprendiz, herdeiro, moleque)",
-    "Lacaio (caçador, senescal, xerife, torturador, dama de companhia, mordomo)",
-    "Mendigo (aleijado, escravo fugitivo, devedor, veterano)",
-    "Mercador (estalajadeiro, vendedor ambulante, treinador de animais)",
-    "Nobre (barão, herdeiro real, cruzado, bastardo, libertino)",
-    "Ordinário (bêbado, agiota, jogador, briguento, clérigo excomungado)",
-    "Peregrino (cruzado, penitente, monge louco, palmeirim)",
-    "Soldado (homem de armas, mercenário, guarda, assassino)"
-  ],
-  "clas": [
+   ]
+  },
+  {
+   "id": "dominacao",
+   "nome": "Dominação",
+   "desc": "Controle mental pelo olhar e pela voz.",
+   "pagina": 150,
+   "niveis": [
     {
-      "id": "assamitas",
-      "nome": "Assamitas",
-      "desc": "Guerreiros e assassinos da fortaleza de Alamut.",
-      "pagina": 54,
-      "apelido": "Sarracenos",
-      "seita": "Independentes (Alamut)",
-      "disciplinas": [
-        "rapidez",
-        "ofuscacao",
-        "quietus"
-      ],
-      "fraqueza": "Entregam 20% do sangue que obtêm aos senhores; rituais e Auspícios que detectam diablerie sempre os acusam.",
-      "dica": "Físicos primeiro; quase todos seguem o Caminho do Sangue."
+     "nivel": 1,
+     "nome": "Observância da Palavra Falada",
+     "sistema": "Olhar e Manipulação + Intimidação (dif. = FV): ordem de uma palavra."
     },
     {
-      "id": "brujah",
-      "nome": "Brujah",
-      "desc": "Idealistas apaixonados que sonham com a Cartago perdida.",
-      "pagina": 56,
-      "apelido": "Fanáticos",
-      "seita": "Sem seita fixa",
-      "disciplinas": [
-        "rapidez",
-        "potencia",
-        "presenca"
-      ],
-      "fraqueza": "+2 na dificuldade dos testes para resistir ao frenesi.",
-      "dica": "Caminhos da Humanidade ou do Paraíso são comuns."
+     "nivel": 2,
+     "nome": "Murmúrio da Vontade Falsa",
+     "sistema": "Manipulação + Liderança (dif. = FV): implanta uma sugestão complexa."
     },
     {
-      "id": "capadocios",
-      "nome": "Capadócios",
-      "desc": "Estudiosos da morte, muitos ligados à Igreja.",
-      "pagina": 58,
-      "apelido": "Ladrões de Sepulturas",
-      "seita": "Sem seita fixa",
-      "disciplinas": [
-        "auspicios",
-        "fortitude",
-        "mortis"
-      ],
-      "fraqueza": "Pele pálida e fria de cadáver: +1 de dificuldade em todos os testes Sociais; não podem comprar Rubor Sangüíneo.",
-      "dica": "Mentais e Conhecimentos; muitos clérigos no Caminho do Paraíso."
+     "nivel": 3,
+     "nome": "Memória do Dissoluto",
+     "sistema": "Raciocínio + Lábia (dif. = FV): apaga ou altera lembranças."
     },
     {
-      "id": "seguidores-de-set",
-      "nome": "Seguidores de Set",
-      "desc": "Corruptores que servem ao deus Set.",
-      "pagina": 60,
-      "apelido": "Serpentes",
-      "seita": "Culto de Set",
-      "disciplinas": [
-        "ofuscacao",
-        "presenca",
-        "serpentis"
-      ],
-      "fraqueza": "Extremamente sensíveis ao sol: os dados de dano solar são dobrados.",
-      "dica": "Sociais e Mentais; Caminho de Tífon."
+     "nivel": 4,
+     "nome": "Isca dos Sussurros Sutis",
+     "sistema": "Carisma + Liderança (dif. = FV), prolongado: condiciona o alvo à obediência."
     },
     {
-      "id": "gangrel",
-      "nome": "Gangrel",
-      "desc": "Andarilhos selvagens das florestas e estradas.",
-      "pagina": 62,
-      "apelido": "Animais",
-      "seita": "Sem seita fixa",
-      "disciplinas": [
-        "animalismo",
-        "fortitude",
-        "metamorfose"
-      ],
-      "fraqueza": "Cada frenesi deixa um traço animal; a cada cinco, perdem 1 ponto de um Atributo Social.",
-      "dica": "Físicos e Sobrevivência; Caminho da Besta."
+     "nivel": 5,
+     "nome": "Possessão",
+     "sistema": "Carisma + Intimidação (dif. 7) contra a FV do alvo: zerada a FV, o vampiro habita o corpo."
     },
     {
-      "id": "lasombra",
-      "nome": "Lasombra",
-      "desc": "Senhores das sombras infiltrados na Igreja e na nobreza.",
-      "pagina": 64,
-      "apelido": "Magistrados",
-      "seita": "Sem seita fixa",
-      "disciplinas": [
-        "dominacao",
-        "tenebrosidade",
-        "potencia"
-      ],
-      "fraqueza": "Não aparecem em espelhos nem em qualquer superfície reflexiva.",
-      "dica": "Sociais e Mentais; muitos no Caminho do Paraíso."
-    },
-    {
-      "id": "malkavianos",
-      "nome": "Malkavianos",
-      "desc": "Profetas e loucos de visão perturbadora.",
-      "pagina": 66,
-      "apelido": "Loucos",
-      "seita": "Sem seita fixa",
-      "disciplinas": [
-        "auspicios",
-        "demencia",
-        "ofuscacao"
-      ],
-      "fraqueza": "Começam com pelo menos uma Perturbação permanente, que a Força de Vontade não supera.",
-      "dica": "Escolha a Perturbação na criação; qualquer Caminho."
-    },
-    {
-      "id": "nosferatu",
-      "nome": "Nosferatu",
-      "desc": "Deformados que vivem escondidos e colecionam segredos.",
-      "pagina": 68,
-      "apelido": "Leprosos",
-      "seita": "Sem seita fixa",
-      "disciplinas": [
-        "animalismo",
-        "ofuscacao",
-        "potencia"
-      ],
-      "fraqueza": "Aparência 0 permanente; testes Sociais que envolvem Aparência falham automaticamente.",
-      "dica": "Mentais e Furtividade; Caminho do Paraíso ou da Besta."
-    },
-    {
-      "id": "ravnos",
-      "nome": "Ravnos",
-      "desc": "Viajantes e trapaceiros mestres da ilusão.",
-      "pagina": 70,
-      "apelido": "Charlatães",
-      "seita": "Sem seita fixa",
-      "disciplinas": [
-        "animalismo",
-        "quimerismo",
-        "fortitude"
-      ],
-      "fraqueza": "Têm um vício de trapaça; diante da oportunidade, Força de Vontade (dif. 6) para resistir.",
-      "dica": "Sociais e Talentos; Caminho do Paradoxo."
-    },
-    {
-      "id": "toreador",
-      "nome": "Toreador",
-      "desc": "Artistas e cortesãos apaixonados pela beleza.",
-      "pagina": 72,
-      "apelido": "Artesãos",
-      "seita": "Sem seita fixa",
-      "disciplinas": [
-        "auspicios",
-        "rapidez",
-        "presenca"
-      ],
-      "fraqueza": "Ficam paralisados diante da beleza por minutos ou horas; só um teste de Força de Vontade quebra o encanto.",
-      "dica": "Sociais e Artesanato/Música; Caminho da Humanidade."
-    },
-    {
-      "id": "tremere",
-      "nome": "Tremere",
-      "desc": "Magos que se tornaram vampiros e estão em guerra com os Tzimisce.",
-      "pagina": 74,
-      "apelido": "Usurpadores",
-      "seita": "Sem seita fixa (clã recente)",
-      "disciplinas": [
-        "auspicios",
-        "dominacao",
-        "taumaturgia"
-      ],
-      "fraqueza": "Beberam duas vezes do sangue dos sete anciões: estão a um passo do Voto de Sangue com o clã.",
-      "dica": "Mentais e Ocultismo; Caminho da Humanidade."
-    },
-    {
-      "id": "tzimisce",
-      "nome": "Tzimisce",
-      "desc": "Senhores feudais do Leste que moldam a carne.",
-      "pagina": 76,
-      "apelido": "Demônios",
-      "seita": "Sem seita fixa (voivodas do Leste)",
-      "disciplinas": [
-        "animalismo",
-        "auspicios",
-        "vicissitude"
-      ],
-      "fraqueza": "Devem dormir sobre duas mãos cheias de terra natal; sem isso, as paradas caem pela metade a cada 24 h.",
-      "dica": "Mentais e Conhecimentos; Caminho da Besta ou outros."
-    },
-    {
-      "id": "ventrue",
-      "nome": "Ventrue",
-      "desc": "Nobres e governantes que se veem como líderes naturais dos Cainitas.",
-      "pagina": 78,
-      "apelido": "Patrícios",
-      "seita": "Sem seita fixa (nobreza Cainita)",
-      "disciplinas": [
-        "dominacao",
-        "fortitude",
-        "presenca"
-      ],
-      "fraqueza": "Só se alimentam de um tipo de presa escolhido na criação (sacerdotes, virgens, ingleses...).",
-      "dica": "Sociais; Status, Recursos e Influência."
-    },
-    {
-      "id": "caitiff",
-      "nome": "Caitiff",
-      "desc": "Vampiros de clã desconhecido; muito raros nesta época.",
-      "pagina": 93,
-      "apelido": "Sem Clã",
-      "seita": "—",
-      "disciplinas": [],
-      "fraqueza": "Sem fraqueza de clã, mas rejeitados e desonrados pelos outros Cainitas.",
-      "dica": "Os 4 pontos de Disciplina podem ir para quaisquer Disciplinas."
+     "nivel": 6,
+     "nome": "Fidelidade",
+     "sistema": "Nível 6. Carisma + Liderança (dif. = FV): lealdade forçada de um dia a dez anos."
     }
-  ],
-  "disciplinas": [
+   ]
+  },
+  {
+   "id": "fortitude",
+   "nome": "Fortitude",
+   "desc": "Resistência sobrenatural; sem ela não se absorve fogo nem sol.",
+   "pagina": 152,
+   "niveis": [
     {
-      "id": "animalismo",
-      "nome": "Animalismo",
-      "desc": "Afinidade com os animais e domínio sobre a Besta.",
-      "pagina": 141,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Linguagem Feral",
-          "sistema": "Fala com animais sem teste; para pedir favores, Manipulação + Empatia com Animais (dif. 6)."
-        },
-        {
-          "nivel": 2,
-          "nome": "Chamado de Noé",
-          "sistema": "Carisma + Sobrevivência (dif. 6): chama animais de um tipo que estejam ao alcance."
-        },
-        {
-          "nivel": 3,
-          "nome": "Intimidar a Besta",
-          "sistema": "Manipulação + Intimidação (ou Empatia para acalmar), dif. 7, prolongado: subjuga a Besta do alvo."
-        },
-        {
-          "nivel": 4,
-          "nome": "Cavalgar a Mente Selvagem",
-          "sistema": "Carisma + Empatia com Animais (dif. 8) olhando nos olhos: possui o animal."
-        },
-        {
-          "nivel": 5,
-          "nome": "Expulsando a Besta",
-          "sistema": "Em frenesi ou perto dele, Manipulação + Empatia com Animais (dif. 8): passa a Besta para outro."
-        },
-        {
-          "nivel": 6,
-          "nome": "Unidade Acelerada",
-          "sistema": "Nível 6. Percepção + Empatia com Animais (dif. 6): une a mente a um animal; 1 FV por turno extra."
-        }
-      ]
+     "nivel": 1,
+     "nome": "+1 dado de absorção",
+     "sistema": "+1 dado de absorção contra todo tipo de dano, inclusive fogo e sol."
     },
     {
-      "id": "auspicios",
-      "nome": "Auspícios",
-      "desc": "Percepção sobrenatural.",
-      "pagina": 143,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Sentidos Aguçados",
-          "sistema": "Sentidos ampliados; o Narrador pode rolar para revelar ameaças."
-        },
-        {
-          "nivel": 2,
-          "nome": "Visão da Alma",
-          "sistema": "Percepção + Empatia (dif. 8): lê as cores da aura do alvo."
-        },
-        {
-          "nivel": 3,
-          "nome": "Toque do Espírito",
-          "sistema": "Tocando um objeto, Percepção + Empatia: impressões sobre quem o usou."
-        },
-        {
-          "nivel": 4,
-          "nome": "Roubar Segredos",
-          "sistema": "Inteligência + Lábia (dif. = FV atual do alvo): um sucesso por informação arrancada da mente."
-        },
-        {
-          "nivel": 5,
-          "nome": "Caminhada da Anima",
-          "sistema": "1 FV + Percepção + Ocultismo (dif. ~7): a alma deixa o corpo e viaja."
-        },
-        {
-          "nivel": 6,
-          "nome": "Visão Longínqua",
-          "sistema": "Nível 6. Percepção + Empatia (dif. 6): localiza e espia um alvo à distância."
-        }
-      ]
+     "nivel": 2,
+     "nome": "+2 dados de absorção",
+     "sistema": "+2 dados de absorção contra todo tipo de dano."
     },
     {
-      "id": "quimerismo",
-      "nome": "Quimerismo",
-      "desc": "Ilusões dos Ravnos.",
-      "pagina": 146,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Ignis Fatuus",
-          "sistema": "1 FV: ilusão estática que afeta um sentido."
-        },
-        {
-          "nivel": 2,
-          "nome": "Fata Morgana",
-          "sistema": "2 FV: ilusão estática que afeta todos os sentidos."
-        },
-        {
-          "nivel": 3,
-          "nome": "Aparição",
-          "sistema": "1 sangue: faz a ilusão se mover enquanto há concentração."
-        },
-        {
-          "nivel": 4,
-          "nome": "Permanência",
-          "sistema": "1 sangue: a ilusão dura até ser dissolvida."
-        },
-        {
-          "nivel": 5,
-          "nome": "Cruel Realidade",
-          "sistema": "2 FV; para ferir, Manipulação + Lábia contra o alvo: a ilusão causa dano real."
-        },
-        {
-          "nivel": 6,
-          "nome": "Horror em Massa",
-          "sistema": "Nível 6. Como Cruel Realidade, mas afeta um número de pessoas igual à FV."
-        }
-      ]
+     "nivel": 3,
+     "nome": "+3 dados de absorção",
+     "sistema": "+3 dados de absorção contra todo tipo de dano."
     },
     {
-      "id": "daimoinon",
-      "nome": "Daimoinon",
-      "desc": "Poder infernal dos Baali; só para o Narrador.",
-      "pagina": 148,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Sentir o Pecado",
-          "sistema": "Percepção + Empatia (dif. = Autocontrole/Instinto + 4): descobre a maior fraqueza do alvo."
-        },
-        {
-          "nivel": 2,
-          "nome": "Temor do Vazio",
-          "sistema": "Raciocínio + Intimidação contra Coragem + 4: o alvo entra em Rötschreck."
-        },
-        {
-          "nivel": 3,
-          "nome": "Chamas do Mundo Inferior",
-          "sistema": "Destreza + Ocultismo: jatos de fogo infernal, 1 dado de dano agravado por ponto de sangue."
-        },
-        {
-          "nivel": 4,
-          "nome": "Psicomaquia",
-          "sistema": "A vítima testa sua Virtude mais baixa (dif. 8) ou entra em frenesi, com Perturbações à tona."
-        },
-        {
-          "nivel": 5,
-          "nome": "Maldição",
-          "sistema": "Inteligência + Ocultismo (dif. = FV): um Atributo do alvo cai a zero por tempo conforme os sucessos."
-        },
-        {
-          "nivel": 6,
-          "nome": "Ignorar as Chamas",
-          "sistema": "Nível 6. Torna-se imune ao dano do fogo em si."
-        }
-      ]
+     "nivel": 4,
+     "nome": "+4 dados de absorção",
+     "sistema": "+4 dados de absorção contra todo tipo de dano."
     },
     {
-      "id": "demencia",
-      "nome": "Demência",
-      "desc": "Loucura transmitida pelos Malkavianos.",
-      "pagina": 148,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Paixão do Íncubo",
-          "sistema": "Atiça ou apaga emoções intensas no alvo."
-        },
-        {
-          "nivel": 2,
-          "nome": "Assombrar a Alma",
-          "sistema": "Manipulação + Lábia (dif. = Percepção + Autocontrole/Instinto): visões perturbadoras por noites ou meses."
-        },
-        {
-          "nivel": 3,
-          "nome": "Visão do Caos",
-          "sistema": "Percepção + Ocultismo (dif. 8–10): enxerga a Natureza verdadeira e padrões ocultos."
-        },
-        {
-          "nivel": 4,
-          "nome": "Confusão",
-          "sistema": "Olhar e falar, Manipulação + Intimidação (dif. = Percepção + Autocontrole/Instinto): deixa o alvo confuso de um turno a um mês."
-        },
-        {
-          "nivel": 5,
-          "nome": "Loucura Uivante",
-          "sistema": "Manipulação + Intimidação (dif. = FV): loucura total por um turno até um ano."
-        },
-        {
-          "nivel": 6,
-          "nome": "Beijo da Lua",
-          "sistema": "Nível 6. Manipulação + Empatia contra a FV: com 2+ sucessos, impõe uma Perturbação permanente."
-        }
-      ]
-    },
-    {
-      "id": "dominacao",
-      "nome": "Dominação",
-      "desc": "Controle mental pelo olhar e pela voz.",
-      "pagina": 150,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Observância da Palavra Falada",
-          "sistema": "Olhar e Manipulação + Intimidação (dif. = FV): ordem de uma palavra."
-        },
-        {
-          "nivel": 2,
-          "nome": "Murmúrio da Vontade Falsa",
-          "sistema": "Manipulação + Liderança (dif. = FV): implanta uma sugestão complexa."
-        },
-        {
-          "nivel": 3,
-          "nome": "Memória do Dissoluto",
-          "sistema": "Raciocínio + Lábia (dif. = FV): apaga ou altera lembranças."
-        },
-        {
-          "nivel": 4,
-          "nome": "Isca dos Sussurros Sutis",
-          "sistema": "Carisma + Liderança (dif. = FV), prolongado: condiciona o alvo à obediência."
-        },
-        {
-          "nivel": 5,
-          "nome": "Possessão",
-          "sistema": "Carisma + Intimidação (dif. 7) contra a FV do alvo: zerada a FV, o vampiro habita o corpo."
-        },
-        {
-          "nivel": 6,
-          "nome": "Fidelidade",
-          "sistema": "Nível 6. Carisma + Liderança (dif. = FV): lealdade forçada de um dia a dez anos."
-        }
-      ]
-    },
-    {
-      "id": "fortitude",
-      "nome": "Fortitude",
-      "desc": "Resistência sobrenatural; sem ela não se absorve fogo nem sol.",
-      "pagina": 152,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Fortitude 1",
-          "sistema": "+1 dado de absorção contra todo tipo de dano, inclusive fogo e sol."
-        },
-        {
-          "nivel": 2,
-          "nome": "Fortitude 2",
-          "sistema": "+2 dados de absorção contra todo tipo de dano."
-        },
-        {
-          "nivel": 3,
-          "nome": "Fortitude 3",
-          "sistema": "+3 dados de absorção contra todo tipo de dano."
-        },
-        {
-          "nivel": 4,
-          "nome": "Fortitude 4",
-          "sistema": "+4 dados de absorção contra todo tipo de dano."
-        },
-        {
-          "nivel": 5,
-          "nome": "Fortitude 5",
-          "sistema": "+5 dados de absorção contra todo tipo de dano."
-        }
-      ]
-    },
-    {
-      "id": "metamorfose",
-      "nome": "Metamorfose",
-      "desc": "Mudança de forma.",
-      "pagina": 160,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Testemunha das Trevas",
-          "sistema": "Sem teste, leva um turno: enxerga no escuro com olhos brilhantes."
-        },
-        {
-          "nivel": 2,
-          "nome": "Garras da Besta",
-          "sistema": "1 sangue, um turno: garras que causam dano agravado."
-        },
-        {
-          "nivel": 3,
-          "nome": "Enterrado na Terra",
-          "sistema": "1 sangue: funde-se ao solo para descansar protegido."
-        },
-        {
-          "nivel": 4,
-          "nome": "Forma da Besta",
-          "sistema": "1 sangue, três turnos: vira lobo ou morcego."
-        },
-        {
-          "nivel": 5,
-          "nome": "Corpo Espiritual",
-          "sistema": "1 sangue, três turnos: vira névoa."
-        },
-        {
-          "nivel": 6,
-          "nome": "Sono Tranqüilo",
-          "sistema": "Nível 6. 5 sangue ao descansar: dorme em forma de névoa, imune a ataques físicos."
-        }
-      ]
-    },
-    {
-      "id": "mortis",
-      "nome": "Mortis",
-      "desc": "Controle sobre a morte e a decadência (Capadócios).",
-      "pagina": 152,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Máscara da Morte",
-          "sistema": "1 sangue: assume aspecto de cadáver; em outro, toque + Vigor + Medicina (dif. = Vigor + 3)."
-        },
-        {
-          "nivel": 2,
-          "nome": "Murchar",
-          "sistema": "Toque + 1 FV + Manipulação + Medicina (dif. = FV): a vítima sofre os efeitos de velhice extrema."
-        },
-        {
-          "nivel": 3,
-          "nome": "Despertar",
-          "sistema": "2 FV e teste de FV (dif. pelo Caminho): desperta a si ou outro do torpor."
-        },
-        {
-          "nivel": 4,
-          "nome": "Sussurros da Morte",
-          "sistema": "Entra num estado de morte aparente; custa 2 sangue para despertar e não permite ações."
-        },
-        {
-          "nivel": 5,
-          "nome": "Morte Negra",
-          "sistema": "Toque + 2 FV + Vigor + Ocultismo (dif. = FV): um sucesso mata o alvo (ou o põe em torpor)."
-        },
-        {
-          "nivel": 6,
-          "nome": "Vigor Mortis",
-          "sistema": "Nível 6. Alimenta um cadáver com 3 sangue para reanimá-lo como servo."
-        }
-      ]
-    },
-    {
-      "id": "ofuscacao",
-      "nome": "Ofuscação",
-      "desc": "Ocultar-se e disfarçar-se.",
-      "pagina": 154,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Manto das Sombras",
-          "sistema": "Sem teste: imóvel e oculto, só Auspícios alto o encontra."
-        },
-        {
-          "nivel": 2,
-          "nome": "Presença Invisível",
-          "sistema": "Move-se invisível; Raciocínio + Furtividade sobre superfícies que denunciem."
-        },
-        {
-          "nivel": 3,
-          "nome": "Máscara das Mil Faces",
-          "sistema": "Manipulação + Representação (dif. 7): aparenta ser outra pessoa."
-        },
-        {
-          "nivel": 4,
-          "nome": "Desaparecimento do Olho da Mente",
-          "sistema": "Some diante das pessoas, com teste contra quem observa."
-        },
-        {
-          "nivel": 5,
-          "nome": "Cobrindo o Grupo",
-          "sistema": "Oculta uma pessoa extra por ponto de Furtividade, com um teste para todos."
-        },
-        {
-          "nivel": 6,
-          "nome": "Máscara da Alma",
-          "sistema": "Nível 6. Disfarça a aura com uma cor escolhida ao comprar o poder."
-        }
-      ]
-    },
-    {
-      "id": "tenebrosidade",
-      "nome": "Tenebrosidade",
-      "desc": "Controle das sombras (Lasombra).",
-      "pagina": 155,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Jogo de Sombras",
-          "sistema": "Manipula as sombras ao redor para esconder, assustar ou atrapalhar."
-        },
-        {
-          "nivel": 2,
-          "nome": "Noturno",
-          "sistema": "Cria uma área de trevas de 3 m projetável a distância (10 × Percepção + Ocultismo metros)."
-        },
-        {
-          "nivel": 3,
-          "nome": "Braços de Ahriman",
-          "sistema": "Manipulação + Ocultismo (dif. 7): cada sucesso invoca um tentáculo com For e Des = Tenebrosidade."
-        },
-        {
-          "nivel": 4,
-          "nome": "Sombras Noturnas",
-          "sistema": "Raciocínio + Ocultismo (dif. 7): evoca sombras vivas ou cobre a cena de sombras esvoaçantes."
-        },
-        {
-          "nivel": 5,
-          "nome": "Forma Tenebrosa",
-          "sistema": "3 sangue, três turnos: vira sombra, imune a ataques físicos."
-        },
-        {
-          "nivel": 6,
-          "nome": "Caminhar no Abismo",
-          "sistema": "Nível 6. Inteligência + Furtividade (dif. 6): viaja de uma sombra a outra."
-        }
-      ]
-    },
-    {
-      "id": "potencia",
-      "nome": "Potência",
-      "desc": "Força sobrenatural.",
-      "pagina": 157,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Potência 1",
-          "sistema": "1 sucesso automático em testes de Força; em Briga e Armas Brancas, conta no dano."
-        },
-        {
-          "nivel": 2,
-          "nome": "Potência 2",
-          "sistema": "2 sucessos automáticos em Força e no dano corpo a corpo."
-        },
-        {
-          "nivel": 3,
-          "nome": "Potência 3",
-          "sistema": "3 sucessos automáticos em Força e no dano corpo a corpo."
-        },
-        {
-          "nivel": 4,
-          "nome": "Potência 4",
-          "sistema": "4 sucessos automáticos em Força e no dano corpo a corpo."
-        },
-        {
-          "nivel": 5,
-          "nome": "Potência 5",
-          "sistema": "5 sucessos automáticos em Força e no dano corpo a corpo."
-        }
-      ]
-    },
-    {
-      "id": "presenca",
-      "nome": "Presença",
-      "desc": "Atração e domínio emocional.",
-      "pagina": 157,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Fascínio",
-          "sistema": "Carisma + Representação (dif. 7): atrai todos ao redor; resistir custa FV continuamente."
-        },
-        {
-          "nivel": 2,
-          "nome": "Olhar Aterrorizante",
-          "sistema": "Mostra a Besta e apavora o alvo, que foge ou se encolhe."
-        },
-        {
-          "nivel": 3,
-          "nome": "Transe",
-          "sistema": "Aparência + Empatia (dif. = FV): o alvo fica devotado por um período."
-        },
-        {
-          "nivel": 4,
-          "nome": "Convocação",
-          "sistema": "Carisma + Lábia (dif. 5, ou 7 para estranho): chama alguém até você."
-        },
-        {
-          "nivel": 5,
-          "nome": "Majestade",
-          "sistema": "Quem quiser agir contra você testa Coragem (dif. = Carisma + Intimidação)."
-        },
-        {
-          "nivel": 6,
-          "nome": "Paixão",
-          "sistema": "Nível 6. Manipulação + Lábia (dif. = FV): influência imensa sobre as emoções da vítima."
-        }
-      ]
-    },
-    {
-      "id": "quietus",
-      "nome": "Quietus",
-      "desc": "Arte do assassinato dos Assamitas.",
-      "pagina": 161,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Silêncio Mortal",
-          "sistema": "1 sangue: silêncio completo numa pequena área ao redor."
-        },
-        {
-          "nivel": 2,
-          "nome": "Fraqueza",
-          "sistema": "Toque + 1 sangue + FV (dif. = Vigor + Fortitude do alvo): enfraquece a vítima."
-        },
-        {
-          "nivel": 3,
-          "nome": "Doença",
-          "sistema": "Toque + 3 sangue + FV (dif. = FV do alvo): a vítima perde pontos de Atributos Físicos."
-        },
-        {
-          "nivel": 4,
-          "nome": "Agonia de Sangue",
-          "sistema": "Sangue na arma: os golpes causam dano agravado (1 golpe por ponto)."
-        },
-        {
-          "nivel": 5,
-          "nome": "Essência de Sangue",
-          "sistema": "Na diablerie, troca o teste de Força por FV prolongado (dif. 9)."
-        },
-        {
-          "nivel": 6,
-          "nome": "Suor de Sangue",
-          "sistema": "Nível 6. Vendo o alvo, FV (dif. = Vigor + 3): ele perde 1 sangue por sucesso."
-        }
-      ]
-    },
-    {
-      "id": "rapidez",
-      "nome": "Rapidez",
-      "desc": "Velocidade sobrenatural. Custa 1 ponto de sangue por ponto usado no turno, fora do limite por turno.",
-      "pagina": 146,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Rapidez 1",
-          "sistema": "1 sangue: 1 ação extra com parada completa."
-        },
-        {
-          "nivel": 2,
-          "nome": "Rapidez 2",
-          "sistema": "Até 2 ações extras, 1 sangue cada."
-        },
-        {
-          "nivel": 3,
-          "nome": "Rapidez 3",
-          "sistema": "Até 3 ações extras, 1 sangue cada."
-        },
-        {
-          "nivel": 4,
-          "nome": "Rapidez 4",
-          "sistema": "Até 4 ações extras, 1 sangue cada."
-        },
-        {
-          "nivel": 5,
-          "nome": "Rapidez 5",
-          "sistema": "Até 5 ações extras, 1 sangue cada."
-        }
-      ]
-    },
-    {
-      "id": "serpentis",
-      "nome": "Serpentis",
-      "desc": "Poderes reptilianos dos Setitas.",
-      "pagina": 163,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Os Olhos da Serpente",
-          "sistema": "Olhar hipnótico que paralisa mortais."
-        },
-        {
-          "nivel": 2,
-          "nome": "A Língua da Serpente",
-          "sistema": "Língua bifurcada que fere com dano agravado."
-        },
-        {
-          "nivel": 3,
-          "nome": "Pele Betuminosa",
-          "sistema": "Sem teste, um turno: pele escura e escamosa, mais resistente."
-        },
-        {
-          "nivel": 4,
-          "nome": "A Forma da Serpente",
-          "sistema": "1 sangue, três turnos: vira uma serpente enorme."
-        },
-        {
-          "nivel": 5,
-          "nome": "Enganar a Escama de Thoth",
-          "sistema": "Arranca o próprio coração (ou de outro Cainita); quem vê testa Coragem."
-        },
-        {
-          "nivel": 6,
-          "nome": "Hálito do Basilisco",
-          "sistema": "Nível 6. 1 sangue + Destreza + Briga (dif. 6): exala névoa venenosa até 1,8 m."
-        }
-      ]
-    },
-    {
-      "id": "taumaturgia",
-      "nome": "Taumaturgia",
-      "desc": "Magia de sangue dos Tremere. Poder de Trilha: 1 sangue + FV (dif. = nível + 3); falha crítica tira 1 FV permanente. Começa com 1 ponto numa Trilha e 1 Ritual de nível 1.",
-      "pagina": 164,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Um Gosto por Sangue",
-          "sistema": "Provando o sangue, descobre informações como geração e quanto resta."
-        },
-        {
-          "nivel": 2,
-          "nome": "Fúria do Sangue",
-          "sistema": "Tocando o alvo, força-o a gastar sangue contra a vontade."
-        },
-        {
-          "nivel": 3,
-          "nome": "Potência do Sangue",
-          "sistema": "Cada sucesso baixa a geração em 1 ou dura 1 hora."
-        },
-        {
-          "nivel": 4,
-          "nome": "Furto de Vitae",
-          "sistema": "Puxa o sangue de alguém à vista (até 15 m); sucessos = pontos roubados."
-        },
-        {
-          "nivel": 5,
-          "nome": "Caldeirão de Sangue",
-          "sistema": "Ferve o sangue do alvo: cada ponto fervido tira 1 nível de vitalidade."
-        }
-      ],
-      "trilhas": [
-        {
-          "nome": "Rego Vitae",
-          "niveis": [
-            {
-              "nivel": 1,
-              "nome": "Um Gosto por Sangue",
-              "sistema": "Provando o sangue, descobre informações como geração e quanto resta."
-            },
-            {
-              "nivel": 2,
-              "nome": "Fúria do Sangue",
-              "sistema": "Tocando o alvo, força-o a gastar sangue contra a vontade."
-            },
-            {
-              "nivel": 3,
-              "nome": "Potência do Sangue",
-              "sistema": "Cada sucesso baixa a geração em 1 ou dura 1 hora."
-            },
-            {
-              "nivel": 4,
-              "nome": "Furto de Vitae",
-              "sistema": "Puxa o sangue de alguém à vista (até 15 m); sucessos = pontos roubados."
-            },
-            {
-              "nivel": 5,
-              "nome": "Caldeirão de Sangue",
-              "sistema": "Ferve o sangue do alvo: cada ponto fervido tira 1 nível de vitalidade."
-            }
-          ]
-        },
-        {
-          "nome": "Creo Ignem",
-          "niveis": [
-            {
-              "nivel": 1,
-              "nome": "Vela",
-              "sistema": "Cria uma chama pequena na mão ou a distância."
-            },
-            {
-              "nivel": 2,
-              "nome": "Palma em Chamas",
-              "sistema": "Chama do tamanho da mão, mais quente."
-            },
-            {
-              "nivel": 3,
-              "nome": "Fogueira de Acampamento",
-              "sistema": "Fogo maior, que causa mais dano agravado."
-            },
-            {
-              "nivel": 4,
-              "nome": "Fogueira de Execução",
-              "sistema": "Fogo intenso capaz de consumir uma pessoa."
-            },
-            {
-              "nivel": 5,
-              "nome": "Incêndio",
-              "sistema": "Uma explosão de chamas devastadora."
-            }
-          ]
-        },
-        {
-          "nome": "Rego Motus",
-          "niveis": [
-            {
-              "nivel": 1,
-              "nome": "Meio quilo",
-              "sistema": "Move objetos leves com a mente."
-            },
-            {
-              "nivel": 2,
-              "nome": "10 quilos",
-              "sistema": "Move objetos de até 10 kg."
-            },
-            {
-              "nivel": 3,
-              "nome": "100 quilos",
-              "sistema": "Move até 100 kg e levita a si mesmo."
-            },
-            {
-              "nivel": 4,
-              "nome": "200 quilos",
-              "sistema": "Move até 200 kg."
-            },
-            {
-              "nivel": 5,
-              "nome": "Meia tonelada",
-              "sistema": "Move até 500 kg."
-            }
-          ]
-        },
-        {
-          "nome": "Rego Tempestas",
-          "niveis": [
-            {
-              "nivel": 1,
-              "nome": "Neblina",
-              "sistema": "Invoca neblina na região; sucessos aceleram a mudança."
-            },
-            {
-              "nivel": 2,
-              "nome": "Chuva",
-              "sistema": "Provoca chuva."
-            },
-            {
-              "nivel": 3,
-              "nome": "Vento",
-              "sistema": "Ventos fortes que atrapalham movimentos e projéteis."
-            },
-            {
-              "nivel": 4,
-              "nome": "Tempestade",
-              "sistema": "Uma tempestade completa."
-            },
-            {
-              "nivel": 5,
-              "nome": "Raio",
-              "sistema": "Lança um raio que causa 10 dados de dano."
-            }
-          ]
-        },
-        {
-          "nome": "Rego Aquam",
-          "niveis": [
-            {
-              "nivel": 1,
-              "nome": "Olhos do Mar",
-              "sistema": "Vê o que a água refletiu no passado."
-            },
-            {
-              "nivel": 2,
-              "nome": "Jaula de Água",
-              "sistema": "Prende o alvo dentro de uma massa de água."
-            },
-            {
-              "nivel": 3,
-              "nome": "Desidratar",
-              "sistema": "Tira a água do corpo da vítima; ela resiste com Vigor + Sobrevivência (dif. 9)."
-            },
-            {
-              "nivel": 4,
-              "nome": "Parede Fluida",
-              "sistema": "Ergue uma barreira de água que bloqueia até o criador."
-            },
-            {
-              "nivel": 5,
-              "nome": "Transformar Sangue em Água",
-              "sistema": "Cada sucesso transforma 1 ponto de sangue da vítima em água."
-            }
-          ]
-        },
-        {
-          "nome": "Rego Elementum",
-          "niveis": [
-            {
-              "nivel": 1,
-              "nome": "Força Elemental",
-              "sistema": "2 FV: +1 em Força, Destreza e Vigor por turnos iguais aos sucessos."
-            },
-            {
-              "nivel": 2,
-              "nome": "Línguas de Madeira",
-              "sistema": "Conversa com objetos inanimados; sucessos = informação."
-            },
-            {
-              "nivel": 3,
-              "nome": "Animação de Objetos Imóveis",
-              "sistema": "1 FV: faz um objeto à vista ganhar vida e obedecer."
-            },
-            {
-              "nivel": 4,
-              "nome": "Forma Elemental",
-              "sistema": "Transforma-se em um objeto; 3+ sucessos para usar sentidos e Disciplinas."
-            },
-            {
-              "nivel": 5,
-              "nome": "Invocar Elemental",
-              "sistema": "Chama um elemental do seu elemento, que pode ou não obedecer."
-            }
-          ]
-        }
-      ],
-      "rituais": [
-        {
-          "nivel": 1,
-          "nome": "Defesa do Refúgio Sagrado",
-          "sistema": "Protege um refúgio contra a luz do sol."
-        },
-        {
-          "nivel": 1,
-          "nome": "Despertar com o Frescor do Anoitecer",
-          "sistema": "Acorda o feiticeiro ao primeiro sinal de perigo durante o dia."
-        },
-        {
-          "nivel": 1,
-          "nome": "Comunicar-se com o Senhor",
-          "sistema": "Conversa mental com o próprio senhor, à distância."
-        },
-        {
-          "nivel": 1,
-          "nome": "Proteção contra o Mal da Madeira",
-          "sistema": "Um amuleto avisa da aproximação de estacas."
-        },
-        {
-          "nivel": 1,
-          "nome": "Toque do Demônio",
-          "sistema": "Amaldiçoa um mortal com o frio da morte por uma noite."
-        },
-        {
-          "nivel": 2,
-          "nome": "Trilha do Sangue",
-          "sistema": "Três horas e 1 sangue de cada alvo: revela a linhagem de um Cainita."
-        },
-        {
-          "nivel": 2,
-          "nome": "Proteção contra Carniçais",
-          "sistema": "Cria uma marca que fere carniçais que a tocam."
-        },
-        {
-          "nivel": 2,
-          "nome": "Colocar a Máscara de Sombras",
-          "sistema": "O feiticeiro fica sombrio e quase invisível no escuro, assustando mortais."
-        },
-        {
-          "nivel": 2,
-          "nome": "Foco Principal da Infusão de Vitae",
-          "sistema": "Guarda sangue dentro de um objeto para uso posterior."
-        },
-        {
-          "nivel": 3,
-          "nome": "Proteção contra Lupinos",
-          "sistema": "Marca que repele e fere lobisomens."
-        },
-        {
-          "nivel": 3,
-          "nome": "Dardo da Tranqüilidade Tardia",
-          "sistema": "Estaca encantada que avança sozinha até o coração do vampiro atingido."
-        },
-        {
-          "nivel": 3,
-          "nome": "Pele do Toque Ígneo",
-          "sistema": "A pele do feiticeiro queima qualquer Cainita que o toque."
-        },
-        {
-          "nivel": 3,
-          "nome": "Travessia Incorpórea",
-          "sistema": "Torna o feiticeiro incorpóreo por um tempo."
-        },
-        {
-          "nivel": 4,
-          "nome": "Proteção contra Cainitas",
-          "sistema": "Marca que repele e fere vampiros."
-        },
-        {
-          "nivel": 4,
-          "nome": "Amarrando a Besta",
-          "sistema": "Separa temporariamente a Besta de outro Cainita, podendo encerrar um frenesi."
-        },
-        {
-          "nivel": 4,
-          "nome": "Coração de Pedra",
-          "sistema": "O coração vira pedra, imune a estacas, mas o feiticeiro perde emoções."
-        },
-        {
-          "nivel": 5,
-          "nome": "Fuga para um Amigo Verdadeiro",
-          "sistema": "Ao pisar num círculo preparado, o feiticeiro some e reaparece junto a um amigo."
-        },
-        {
-          "nivel": 5,
-          "nome": "Proteção contra Espíritos",
-          "sistema": "Marca que repele espíritos e fantasmas."
-        },
-        {
-          "nivel": 5,
-          "nome": "Contrato de Sangue",
-          "sistema": "Acordo escrito em sangue que obriga as partes a cumpri-lo."
-        }
-      ]
-    },
-    {
-      "id": "vicissitude",
-      "nome": "Vicissitude",
-      "desc": "Moldar carne e osso (Tzimisce). Usa a Habilidade Artesanato Corporal.",
-      "pagina": 172,
-      "niveis": [
-        {
-          "nivel": 1,
-          "nome": "Aspecto Maleável",
-          "sistema": "1 sangue por parte + Inteligência + Artesanato Corporal (dif. 6): muda o próprio corpo."
-        },
-        {
-          "nivel": 2,
-          "nome": "Transmutar a Argila Mortal",
-          "sistema": "Agarrando a vítima, Destreza + Artesanato Corporal (dif. 5–9): molda a carne dela."
-        },
-        {
-          "nivel": 3,
-          "nome": "Dilacerar a Moldura Óssea",
-          "sistema": "Força + Artesanato Corporal: molda ossos; como ataque, cada sucesso causa dano."
-        },
-        {
-          "nivel": 4,
-          "nome": "Despertar a Forma de Zulo",
-          "sistema": "2 sangue: +3 em todos os Atributos Físicos; Sociais caem a zero."
-        },
-        {
-          "nivel": 5,
-          "nome": "Ascendência do Humor Sangüíneo",
-          "sistema": "Transforma partes do corpo em sangue (pernas e tronco valem 2 pontos)."
-        },
-        {
-          "nivel": 6,
-          "nome": "Saqueador Quiróptero",
-          "sistema": "Nível 6. 3 sangue: forma de morcego gigante com garras."
-        }
-      ]
+     "nivel": 5,
+     "nome": "+5 dados de absorção",
+     "sistema": "+5 dados de absorção contra todo tipo de dano."
     }
-  ],
-  "pontosDisciplina": 4,
-  "trilhas": [
+   ]
+  },
+  {
+   "id": "metamorfose",
+   "nome": "Metamorfose",
+   "desc": "Mudança de forma.",
+   "pagina": 160,
+   "niveis": [
     {
-      "id": "humanidade",
-      "nome": "Caminho da Humanidade",
-      "desc": "A luta para manter a humanidade apesar da maldição.",
-      "pagina": 115,
-      "virtudes": [
-        "Consciência",
-        "Autocontrole",
-        "Coragem"
-      ],
-      "pecados": [
-        "Má ação acidental",
-        "Má ação proposital",
-        "Ferimento infligido de propósito",
-        "Furto e roubo",
-        "Assassinato impensado",
-        "Destruição por capricho",
-        "Causar males deliberadamente",
-        "Sadismo e perversão",
-        "Assassinato premeditado",
-        "Apenas os atos mais hediondos e dementes"
-      ],
-      "apelido": "Via Humanitatis"
+     "nivel": 1,
+     "nome": "Testemunha das Trevas",
+     "sistema": "Sem teste, leva um turno: enxerga no escuro com olhos brilhantes."
     },
     {
-      "id": "besta",
-      "nome": "Caminho da Besta",
-      "desc": "Alimentar a Besta para que ela não rompa as correntes.",
-      "pagina": 113,
-      "virtudes": [
-        "Convicção",
-        "Instinto",
-        "Coragem"
-      ],
-      "pecados": [
-        "Atacar um inimigo claramente superior",
-        "Não desafiar um líder claramente fraco",
-        "Matar por motivo que não seja sobrevivência",
-        "Evitar a natureza e os animais selvagens",
-        "Tortura desnecessária",
-        "Sacrificar-se por alguém sem ligação com você",
-        "Recusar-se a matar quando isso importa para sobreviver",
-        "Não defender seu território",
-        "Ter piedade de um inimigo terrível",
-        "Abster-se de se alimentar com fome"
-      ],
-      "apelido": "Via Bestiae"
+     "nivel": 2,
+     "nome": "Garras da Besta",
+     "sistema": "1 sangue, um turno: garras que causam dano agravado."
     },
     {
-      "id": "cavaleiro",
-      "nome": "Caminho do Cavaleiro",
-      "desc": "Tratar os iguais com honra e os superiores com respeito.",
-      "pagina": 114,
-      "virtudes": [
-        "Consciência",
-        "Autocontrole",
-        "Coragem"
-      ],
-      "pecados": [
-        "Não ajudar um mortal em necessidade",
-        "Desrespeitar um companheiro",
-        "Pôr interesses pessoais acima do dever",
-        "Quebrar a palavra com membro do clã ou companheiro",
-        "Não ajudar clã ou companheiros em necessidade",
-        "Atacar oponente desarmado",
-        "Negar hospitalidade a outro Cainita",
-        "Desrespeitar um superior",
-        "Quebrar a palavra com senhor ou príncipe",
-        "Quebrar um juramento sagrado"
-      ],
-      "apelido": "Via Equitum"
+     "nivel": 3,
+     "nome": "Enterrado na Terra",
+     "sistema": "1 sangue: funde-se ao solo para descansar protegido."
     },
     {
-      "id": "diabo",
-      "nome": "Caminho do Diabo",
-      "desc": "Já somos malignos e devemos cumprir o papel; destrutivo para personagens.",
-      "pagina": 114,
-      "virtudes": [
-        "Convicção",
-        "Instinto",
-        "Coragem"
-      ],
-      "pecados": [
-        "Recusar-se a criar novos vampiros",
-        "Não buscar novas formas de prazer",
-        "Não apreciar um frenesi",
-        "Não ferir outros pelo próprio prazer",
-        "Recusar-se a matar humanos quando é do seu interesse",
-        "Recusar atos cruéis de seu interesse",
-        "Recusar-se a tentar os virtuosos",
-        "Rejeitar ganho material",
-        "Agir de forma altruísta",
-        "Ajudar os servos da virtude ou de Deus"
-      ],
-      "apelido": "Via Diabolis"
+     "nivel": 4,
+     "nome": "Forma da Besta",
+     "sistema": "1 sangue, três turnos: vira lobo ou morcego."
     },
     {
-      "id": "paradoxo",
-      "nome": "Caminho do Paradoxo",
-      "desc": "A existência é uma ilusão a ser mudada; ensinado só aos Ravnos.",
-      "pagina": 115,
-      "virtudes": [
-        "Convicção",
-        "Autocontrole",
-        "Coragem"
-      ],
-      "pecados": [
-        "Recusar diablerie em ancião de outro clã",
-        "Recusar-se a guiar um ser \"estagnado\" à luz ou à destruição",
-        "Preocupar-se com mortais",
-        "Não obter itens ou saberes que afetem a realidade",
-        "Não enganar quando há oportunidade",
-        "Ser pego roubando",
-        "Recusar-se a destruir um objeto de poder",
-        "Unir-se à estrutura de poder Cainita ou mantê-la",
-        "Evitar ativamente a mudança",
-        "Induzir ativamente ao tédio"
-      ],
-      "apelido": "Via Paradocis"
+     "nivel": 5,
+     "nome": "Corpo Espiritual",
+     "sistema": "1 sangue, três turnos: vira névoa."
     },
     {
-      "id": "paraiso",
-      "nome": "Caminho do Paraíso",
-      "desc": "Deus fez os vampiros para executar Sua ira sobre os pecadores.",
-      "pagina": 114,
-      "virtudes": [
-        "Consciência",
-        "Autocontrole",
-        "Coragem"
-      ],
-      "pecados": [
-        "Desrespeitar a Igreja",
-        "Não denunciar a corrupção e o pecado",
-        "Agir por orgulho, avareza ou gula",
-        "Furto, roubo ou vandalismo proposital",
-        "Ferir crentes ou virtuosos",
-        "Alimentar-se de um inocente sem permissão",
-        "Atos blasfemos ou heréticos",
-        "Deixar um crime ou pecado sério impune",
-        "Assassinar um inocente sem razão",
-        "Ajudar um demônio, infernalista, Setita ou outro servo do mal"
-      ],
-      "apelido": "Via Caeli"
-    },
-    {
-      "id": "sangue",
-      "nome": "Caminho do Sangue",
-      "desc": "O sangue vampírico dá poder para a vingança; exclusivo dos Assamitas.",
-      "pagina": 114,
-      "virtudes": [
-        "Convicção",
-        "Autocontrole",
-        "Coragem"
-      ],
-      "pecados": [
-        "Quebrar a palavra de honra com membro do clã",
-        "Não ajudar ou vingar membro do clã; revelar segredos do clã",
-        "Pôr interesses pessoais acima do dever",
-        "Não matar um vampiro não Assamita quando necessário",
-        "Não buscar sangue ou conhecimento diante de pequenos perigos",
-        "Quebrar a palavra de honra com um mortal",
-        "Desrespeitar os líderes do clã ou não buscar os ensinamentos de Haqim",
-        "Não buscar sangue ou saber de Caim diante de perigos moderados",
-        "Sucumbir ao frenesi",
-        "Ignorar a chance de obter sangue de geração menor"
-      ],
-      "apelido": "Via Sanguinius"
-    },
-    {
-      "id": "tifon",
-      "nome": "Caminho de Tífon",
-      "desc": "Pecado e corrupção são a chave da compreensão (Setitas).",
-      "pagina": 116,
-      "virtudes": [
-        "Convicção",
-        "Instinto",
-        "Coragem"
-      ],
-      "pecados": [
-        "Manter qualquer senso de autocontrole, pureza ou valor",
-        "Recusar-se a ceder às próprias fraquezas",
-        "Não destruir um vampiro em Golconda",
-        "Destruir um inimigo por conveniência ou piedade, e não de forma \"poética\"",
-        "Não perturbar a ordem social em favor dos Setitas",
-        "Não trocar a fé por cinismo e desespero",
-        "Não explorar as fraquezas alheias",
-        "Deixar o afeto por um mortal superar a necessidade de corrompê-lo",
-        "Recusar-se a corromper um vampiro para os Setitas",
-        "Não tentar despertar Set na primeira oportunidade"
-      ],
-      "apelido": "Via Typhonis"
+     "nivel": 6,
+     "nome": "Sono Tranqüilo",
+     "sistema": "Nível 6. 5 sangue ao descansar: dorme em forma de névoa, imune a ataques físicos."
     }
-  ],
-  "geracoes": [
+   ]
+  },
+  {
+   "id": "mortis",
+   "nome": "Mortis",
+   "desc": "Controle sobre a morte e a decadência (Capadócios).",
+   "pagina": 152,
+   "niveis": [
     {
-      "geracao": 4,
-      "maxTraco": 9,
-      "sangue": 50,
-      "porTurno": 10
+     "nivel": 1,
+     "nome": "Máscara da Morte",
+     "sistema": "1 sangue: assume aspecto de cadáver; em outro, toque + Vigor + Medicina (dif. = Vigor + 3)."
     },
     {
-      "geracao": 5,
-      "maxTraco": 8,
-      "sangue": 40,
-      "porTurno": 8
+     "nivel": 2,
+     "nome": "Murchar",
+     "sistema": "Toque + 1 FV + Manipulação + Medicina (dif. = FV): a vítima sofre os efeitos de velhice extrema."
     },
     {
-      "geracao": 6,
-      "maxTraco": 7,
-      "sangue": 30,
-      "porTurno": 6
+     "nivel": 3,
+     "nome": "Despertar",
+     "sistema": "2 FV e teste de FV (dif. pelo Caminho): desperta a si ou outro do torpor."
     },
     {
-      "geracao": 7,
-      "maxTraco": 6,
-      "sangue": 20,
-      "porTurno": 5
+     "nivel": 4,
+     "nome": "Sussurros da Morte",
+     "sistema": "Entra num estado de morte aparente; custa 2 sangue para despertar e não permite ações."
     },
     {
-      "geracao": 8,
-      "maxTraco": 5,
-      "sangue": 15,
-      "porTurno": 3
+     "nivel": 5,
+     "nome": "Morte Negra",
+     "sistema": "Toque + 2 FV + Vigor + Ocultismo (dif. = FV): um sucesso mata o alvo (ou o põe em torpor)."
     },
     {
-      "geracao": 9,
-      "maxTraco": 5,
-      "sangue": 14,
-      "porTurno": 2
-    },
-    {
-      "geracao": 10,
-      "maxTraco": 5,
-      "sangue": 13,
-      "porTurno": 1
-    },
-    {
-      "geracao": 11,
-      "maxTraco": 5,
-      "sangue": 12,
-      "porTurno": 1
-    },
-    {
-      "geracao": 12,
-      "maxTraco": 5,
-      "sangue": 11,
-      "porTurno": 1
-    },
-    {
-      "geracao": 13,
-      "maxTraco": 5,
-      "sangue": 10,
-      "porTurno": 1
+     "nivel": 6,
+     "nome": "Vigor Mortis",
+     "sistema": "Nível 6. Alimenta um cadáver com 3 sangue para reanimá-lo como servo."
     }
-  ],
-  "geracaoPadrao": 12
+   ]
+  },
+  {
+   "id": "ofuscacao",
+   "nome": "Ofuscação",
+   "desc": "Ocultar-se e disfarçar-se.",
+   "pagina": 154,
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Manto das Sombras",
+     "sistema": "Sem teste: imóvel e oculto, só Auspícios alto o encontra."
+    },
+    {
+     "nivel": 2,
+     "nome": "Presença Invisível",
+     "sistema": "Move-se invisível; Raciocínio + Furtividade sobre superfícies que denunciem."
+    },
+    {
+     "nivel": 3,
+     "nome": "Máscara das Mil Faces",
+     "sistema": "Manipulação + Representação (dif. 7): aparenta ser outra pessoa."
+    },
+    {
+     "nivel": 4,
+     "nome": "Desaparecimento do Olho da Mente",
+     "sistema": "Some diante das pessoas, com teste contra quem observa."
+    },
+    {
+     "nivel": 5,
+     "nome": "Cobrindo o Grupo",
+     "sistema": "Oculta uma pessoa extra por ponto de Furtividade, com um teste para todos."
+    },
+    {
+     "nivel": 6,
+     "nome": "Máscara da Alma",
+     "sistema": "Nível 6. Disfarça a aura com uma cor escolhida ao comprar o poder."
+    }
+   ]
+  },
+  {
+   "id": "tenebrosidade",
+   "nome": "Tenebrosidade",
+   "desc": "Controle das sombras (Lasombra).",
+   "pagina": 155,
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Jogo de Sombras",
+     "sistema": "Manipula as sombras ao redor para esconder, assustar ou atrapalhar."
+    },
+    {
+     "nivel": 2,
+     "nome": "Noturno",
+     "sistema": "Cria uma área de trevas de 3 m projetável a distância (10 × Percepção + Ocultismo metros)."
+    },
+    {
+     "nivel": 3,
+     "nome": "Braços de Ahriman",
+     "sistema": "Manipulação + Ocultismo (dif. 7): cada sucesso invoca um tentáculo com For e Des = Tenebrosidade."
+    },
+    {
+     "nivel": 4,
+     "nome": "Sombras Noturnas",
+     "sistema": "Raciocínio + Ocultismo (dif. 7): evoca sombras vivas ou cobre a cena de sombras esvoaçantes."
+    },
+    {
+     "nivel": 5,
+     "nome": "Forma Tenebrosa",
+     "sistema": "3 sangue, três turnos: vira sombra, imune a ataques físicos."
+    },
+    {
+     "nivel": 6,
+     "nome": "Caminhar no Abismo",
+     "sistema": "Nível 6. Inteligência + Furtividade (dif. 6): viaja de uma sombra a outra."
+    }
+   ]
+  },
+  {
+   "id": "potencia",
+   "nome": "Potência",
+   "desc": "Força sobrenatural.",
+   "pagina": 157,
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "+1 sucesso em Força",
+     "sistema": "1 sucesso automático em testes de Força; em Briga e Armas Brancas, conta no dano."
+    },
+    {
+     "nivel": 2,
+     "nome": "+2 sucessos em Força",
+     "sistema": "2 sucessos automáticos em Força e no dano corpo a corpo."
+    },
+    {
+     "nivel": 3,
+     "nome": "+3 sucessos em Força",
+     "sistema": "3 sucessos automáticos em Força e no dano corpo a corpo."
+    },
+    {
+     "nivel": 4,
+     "nome": "+4 sucessos em Força",
+     "sistema": "4 sucessos automáticos em Força e no dano corpo a corpo."
+    },
+    {
+     "nivel": 5,
+     "nome": "+5 sucessos em Força",
+     "sistema": "5 sucessos automáticos em Força e no dano corpo a corpo."
+    }
+   ]
+  },
+  {
+   "id": "presenca",
+   "nome": "Presença",
+   "desc": "Atração e domínio emocional.",
+   "pagina": 157,
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Fascínio",
+     "sistema": "Carisma + Representação (dif. 7): atrai todos ao redor; resistir custa FV continuamente."
+    },
+    {
+     "nivel": 2,
+     "nome": "Olhar Aterrorizante",
+     "sistema": "Mostra a Besta e apavora o alvo, que foge ou se encolhe."
+    },
+    {
+     "nivel": 3,
+     "nome": "Transe",
+     "sistema": "Aparência + Empatia (dif. = FV): o alvo fica devotado por um período."
+    },
+    {
+     "nivel": 4,
+     "nome": "Convocação",
+     "sistema": "Carisma + Lábia (dif. 5, ou 7 para estranho): chama alguém até você."
+    },
+    {
+     "nivel": 5,
+     "nome": "Majestade",
+     "sistema": "Quem quiser agir contra você testa Coragem (dif. = Carisma + Intimidação)."
+    },
+    {
+     "nivel": 6,
+     "nome": "Paixão",
+     "sistema": "Nível 6. Manipulação + Lábia (dif. = FV): influência imensa sobre as emoções da vítima."
+    }
+   ]
+  },
+  {
+   "id": "quietus",
+   "nome": "Quietus",
+   "desc": "Arte do assassinato dos Assamitas.",
+   "pagina": 161,
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Silêncio Mortal",
+     "sistema": "1 sangue: silêncio completo numa pequena área ao redor."
+    },
+    {
+     "nivel": 2,
+     "nome": "Fraqueza",
+     "sistema": "Toque + 1 sangue + FV (dif. = Vigor + Fortitude do alvo): enfraquece a vítima."
+    },
+    {
+     "nivel": 3,
+     "nome": "Doença",
+     "sistema": "Toque + 3 sangue + FV (dif. = FV do alvo): a vítima perde pontos de Atributos Físicos."
+    },
+    {
+     "nivel": 4,
+     "nome": "Agonia de Sangue",
+     "sistema": "Sangue na arma: os golpes causam dano agravado (1 golpe por ponto)."
+    },
+    {
+     "nivel": 5,
+     "nome": "Essência de Sangue",
+     "sistema": "Na diablerie, troca o teste de Força por FV prolongado (dif. 9)."
+    },
+    {
+     "nivel": 6,
+     "nome": "Suor de Sangue",
+     "sistema": "Nível 6. Vendo o alvo, FV (dif. = Vigor + 3): ele perde 1 sangue por sucesso."
+    }
+   ]
+  },
+  {
+   "id": "rapidez",
+   "nome": "Rapidez",
+   "desc": "Velocidade sobrenatural. Custa 1 ponto de sangue por ponto usado no turno, fora do limite por turno.",
+   "pagina": 146,
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "1 ação extra",
+     "sistema": "1 sangue: 1 ação extra com parada completa."
+    },
+    {
+     "nivel": 2,
+     "nome": "2 ações extras",
+     "sistema": "Até 2 ações extras, 1 sangue cada."
+    },
+    {
+     "nivel": 3,
+     "nome": "3 ações extras",
+     "sistema": "Até 3 ações extras, 1 sangue cada."
+    },
+    {
+     "nivel": 4,
+     "nome": "4 ações extras",
+     "sistema": "Até 4 ações extras, 1 sangue cada."
+    },
+    {
+     "nivel": 5,
+     "nome": "5 ações extras",
+     "sistema": "Até 5 ações extras, 1 sangue cada."
+    }
+   ]
+  },
+  {
+   "id": "serpentis",
+   "nome": "Serpentis",
+   "desc": "Poderes reptilianos dos Setitas.",
+   "pagina": 163,
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Os Olhos da Serpente",
+     "sistema": "Olhar hipnótico que paralisa mortais."
+    },
+    {
+     "nivel": 2,
+     "nome": "A Língua da Serpente",
+     "sistema": "Língua bifurcada que fere com dano agravado."
+    },
+    {
+     "nivel": 3,
+     "nome": "Pele Betuminosa",
+     "sistema": "Sem teste, um turno: pele escura e escamosa, mais resistente."
+    },
+    {
+     "nivel": 4,
+     "nome": "A Forma da Serpente",
+     "sistema": "1 sangue, três turnos: vira uma serpente enorme."
+    },
+    {
+     "nivel": 5,
+     "nome": "Enganar a Escama de Thoth",
+     "sistema": "Arranca o próprio coração (ou de outro Cainita); quem vê testa Coragem."
+    },
+    {
+     "nivel": 6,
+     "nome": "Hálito do Basilisco",
+     "sistema": "Nível 6. 1 sangue + Destreza + Briga (dif. 6): exala névoa venenosa até 1,8 m."
+    }
+   ]
+  },
+  {
+   "id": "taumaturgia",
+   "nome": "Taumaturgia",
+   "desc": "Magia de sangue dos Tremere. Poder de Trilha: 1 sangue + FV (dif. = nível + 3); falha crítica tira 1 FV permanente. Começa com 1 ponto numa Trilha e 1 Ritual de nível 1.",
+   "pagina": 164,
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Um Gosto por Sangue",
+     "sistema": "Provando o sangue, descobre informações como geração e quanto resta."
+    },
+    {
+     "nivel": 2,
+     "nome": "Fúria do Sangue",
+     "sistema": "Tocando o alvo, força-o a gastar sangue contra a vontade."
+    },
+    {
+     "nivel": 3,
+     "nome": "Potência do Sangue",
+     "sistema": "Cada sucesso baixa a geração em 1 ou dura 1 hora."
+    },
+    {
+     "nivel": 4,
+     "nome": "Furto de Vitae",
+     "sistema": "Puxa o sangue de alguém à vista (até 15 m); sucessos = pontos roubados."
+    },
+    {
+     "nivel": 5,
+     "nome": "Caldeirão de Sangue",
+     "sistema": "Ferve o sangue do alvo: cada ponto fervido tira 1 nível de vitalidade."
+    }
+   ],
+   "trilhas": [
+    {
+     "nome": "Rego Vitae",
+     "niveis": [
+      {
+       "nivel": 1,
+       "nome": "Um Gosto por Sangue",
+       "sistema": "Provando o sangue, descobre informações como geração e quanto resta."
+      },
+      {
+       "nivel": 2,
+       "nome": "Fúria do Sangue",
+       "sistema": "Tocando o alvo, força-o a gastar sangue contra a vontade."
+      },
+      {
+       "nivel": 3,
+       "nome": "Potência do Sangue",
+       "sistema": "Cada sucesso baixa a geração em 1 ou dura 1 hora."
+      },
+      {
+       "nivel": 4,
+       "nome": "Furto de Vitae",
+       "sistema": "Puxa o sangue de alguém à vista (até 15 m); sucessos = pontos roubados."
+      },
+      {
+       "nivel": 5,
+       "nome": "Caldeirão de Sangue",
+       "sistema": "Ferve o sangue do alvo: cada ponto fervido tira 1 nível de vitalidade."
+      }
+     ]
+    },
+    {
+     "nome": "Creo Ignem",
+     "niveis": [
+      {
+       "nivel": 1,
+       "nome": "Vela",
+       "sistema": "Cria uma chama pequena na mão ou a distância."
+      },
+      {
+       "nivel": 2,
+       "nome": "Palma em Chamas",
+       "sistema": "Chama do tamanho da mão, mais quente."
+      },
+      {
+       "nivel": 3,
+       "nome": "Fogueira de Acampamento",
+       "sistema": "Fogo maior, que causa mais dano agravado."
+      },
+      {
+       "nivel": 4,
+       "nome": "Fogueira de Execução",
+       "sistema": "Fogo intenso capaz de consumir uma pessoa."
+      },
+      {
+       "nivel": 5,
+       "nome": "Incêndio",
+       "sistema": "Uma explosão de chamas devastadora."
+      }
+     ]
+    },
+    {
+     "nome": "Rego Motus",
+     "niveis": [
+      {
+       "nivel": 1,
+       "nome": "Meio quilo",
+       "sistema": "Move objetos leves com a mente."
+      },
+      {
+       "nivel": 2,
+       "nome": "10 quilos",
+       "sistema": "Move objetos de até 10 kg."
+      },
+      {
+       "nivel": 3,
+       "nome": "100 quilos",
+       "sistema": "Move até 100 kg e levita a si mesmo."
+      },
+      {
+       "nivel": 4,
+       "nome": "200 quilos",
+       "sistema": "Move até 200 kg."
+      },
+      {
+       "nivel": 5,
+       "nome": "Meia tonelada",
+       "sistema": "Move até 500 kg."
+      }
+     ]
+    },
+    {
+     "nome": "Rego Tempestas",
+     "niveis": [
+      {
+       "nivel": 1,
+       "nome": "Neblina",
+       "sistema": "Invoca neblina na região; sucessos aceleram a mudança."
+      },
+      {
+       "nivel": 2,
+       "nome": "Chuva",
+       "sistema": "Provoca chuva."
+      },
+      {
+       "nivel": 3,
+       "nome": "Vento",
+       "sistema": "Ventos fortes que atrapalham movimentos e projéteis."
+      },
+      {
+       "nivel": 4,
+       "nome": "Tempestade",
+       "sistema": "Uma tempestade completa."
+      },
+      {
+       "nivel": 5,
+       "nome": "Raio",
+       "sistema": "Lança um raio que causa 10 dados de dano."
+      }
+     ]
+    },
+    {
+     "nome": "Rego Aquam",
+     "niveis": [
+      {
+       "nivel": 1,
+       "nome": "Olhos do Mar",
+       "sistema": "Vê o que a água refletiu no passado."
+      },
+      {
+       "nivel": 2,
+       "nome": "Jaula de Água",
+       "sistema": "Prende o alvo dentro de uma massa de água."
+      },
+      {
+       "nivel": 3,
+       "nome": "Desidratar",
+       "sistema": "Tira a água do corpo da vítima; ela resiste com Vigor + Sobrevivência (dif. 9)."
+      },
+      {
+       "nivel": 4,
+       "nome": "Parede Fluida",
+       "sistema": "Ergue uma barreira de água que bloqueia até o criador."
+      },
+      {
+       "nivel": 5,
+       "nome": "Transformar Sangue em Água",
+       "sistema": "Cada sucesso transforma 1 ponto de sangue da vítima em água."
+      }
+     ]
+    },
+    {
+     "nome": "Rego Elementum",
+     "niveis": [
+      {
+       "nivel": 1,
+       "nome": "Força Elemental",
+       "sistema": "2 FV: +1 em Força, Destreza e Vigor por turnos iguais aos sucessos."
+      },
+      {
+       "nivel": 2,
+       "nome": "Línguas de Madeira",
+       "sistema": "Conversa com objetos inanimados; sucessos = informação."
+      },
+      {
+       "nivel": 3,
+       "nome": "Animação de Objetos Imóveis",
+       "sistema": "1 FV: faz um objeto à vista ganhar vida e obedecer."
+      },
+      {
+       "nivel": 4,
+       "nome": "Forma Elemental",
+       "sistema": "Transforma-se em um objeto; 3+ sucessos para usar sentidos e Disciplinas."
+      },
+      {
+       "nivel": 5,
+       "nome": "Invocar Elemental",
+       "sistema": "Chama um elemental do seu elemento, que pode ou não obedecer."
+      }
+     ]
+    }
+   ],
+   "rituais": [
+    {
+     "nivel": 1,
+     "nome": "Defesa do Refúgio Sagrado",
+     "sistema": "Protege um refúgio contra a luz do sol."
+    },
+    {
+     "nivel": 1,
+     "nome": "Despertar com o Frescor do Anoitecer",
+     "sistema": "Acorda o feiticeiro ao primeiro sinal de perigo durante o dia."
+    },
+    {
+     "nivel": 1,
+     "nome": "Comunicar-se com o Senhor",
+     "sistema": "Conversa mental com o próprio senhor, à distância."
+    },
+    {
+     "nivel": 1,
+     "nome": "Proteção contra o Mal da Madeira",
+     "sistema": "Um amuleto avisa da aproximação de estacas."
+    },
+    {
+     "nivel": 1,
+     "nome": "Toque do Demônio",
+     "sistema": "Amaldiçoa um mortal com o frio da morte por uma noite."
+    },
+    {
+     "nivel": 2,
+     "nome": "Trilha do Sangue",
+     "sistema": "Três horas e 1 sangue de cada alvo: revela a linhagem de um Cainita."
+    },
+    {
+     "nivel": 2,
+     "nome": "Proteção contra Carniçais",
+     "sistema": "Cria uma marca que fere carniçais que a tocam."
+    },
+    {
+     "nivel": 2,
+     "nome": "Colocar a Máscara de Sombras",
+     "sistema": "O feiticeiro fica sombrio e quase invisível no escuro, assustando mortais."
+    },
+    {
+     "nivel": 2,
+     "nome": "Foco Principal da Infusão de Vitae",
+     "sistema": "Guarda sangue dentro de um objeto para uso posterior."
+    },
+    {
+     "nivel": 3,
+     "nome": "Proteção contra Lupinos",
+     "sistema": "Marca que repele e fere lobisomens."
+    },
+    {
+     "nivel": 3,
+     "nome": "Dardo da Tranqüilidade Tardia",
+     "sistema": "Estaca encantada que avança sozinha até o coração do vampiro atingido."
+    },
+    {
+     "nivel": 3,
+     "nome": "Pele do Toque Ígneo",
+     "sistema": "A pele do feiticeiro queima qualquer Cainita que o toque."
+    },
+    {
+     "nivel": 3,
+     "nome": "Travessia Incorpórea",
+     "sistema": "Torna o feiticeiro incorpóreo por um tempo."
+    },
+    {
+     "nivel": 4,
+     "nome": "Proteção contra Cainitas",
+     "sistema": "Marca que repele e fere vampiros."
+    },
+    {
+     "nivel": 4,
+     "nome": "Amarrando a Besta",
+     "sistema": "Separa temporariamente a Besta de outro Cainita, podendo encerrar um frenesi."
+    },
+    {
+     "nivel": 4,
+     "nome": "Coração de Pedra",
+     "sistema": "O coração vira pedra, imune a estacas, mas o feiticeiro perde emoções."
+    },
+    {
+     "nivel": 5,
+     "nome": "Fuga para um Amigo Verdadeiro",
+     "sistema": "Ao pisar num círculo preparado, o feiticeiro some e reaparece junto a um amigo."
+    },
+    {
+     "nivel": 5,
+     "nome": "Proteção contra Espíritos",
+     "sistema": "Marca que repele espíritos e fantasmas."
+    },
+    {
+     "nivel": 5,
+     "nome": "Contrato de Sangue",
+     "sistema": "Acordo escrito em sangue que obriga as partes a cumpri-lo."
+    }
+   ]
+  },
+  {
+   "id": "vicissitude",
+   "nome": "Vicissitude",
+   "desc": "Moldar carne e osso (Tzimisce). Usa a Habilidade Artesanato Corporal.",
+   "pagina": 172,
+   "niveis": [
+    {
+     "nivel": 1,
+     "nome": "Aspecto Maleável",
+     "sistema": "1 sangue por parte + Inteligência + Artesanato Corporal (dif. 6): muda o próprio corpo."
+    },
+    {
+     "nivel": 2,
+     "nome": "Transmutar a Argila Mortal",
+     "sistema": "Agarrando a vítima, Destreza + Artesanato Corporal (dif. 5–9): molda a carne dela."
+    },
+    {
+     "nivel": 3,
+     "nome": "Dilacerar a Moldura Óssea",
+     "sistema": "Força + Artesanato Corporal: molda ossos; como ataque, cada sucesso causa dano."
+    },
+    {
+     "nivel": 4,
+     "nome": "Despertar a Forma de Zulo",
+     "sistema": "2 sangue: +3 em todos os Atributos Físicos; Sociais caem a zero."
+    },
+    {
+     "nivel": 5,
+     "nome": "Ascendência do Humor Sangüíneo",
+     "sistema": "Transforma partes do corpo em sangue (pernas e tronco valem 2 pontos)."
+    },
+    {
+     "nivel": 6,
+     "nome": "Saqueador Quiróptero",
+     "sistema": "Nível 6. 3 sangue: forma de morcego gigante com garras."
+    }
+   ]
+  }
+ ],
+ "pontosDisciplina": 4,
+ "trilhas": [
+  {
+   "id": "humanidade",
+   "nome": "Caminho da Humanidade",
+   "desc": "A luta para manter a humanidade apesar da maldição.",
+   "pagina": 115,
+   "virtudes": [
+    "Consciência",
+    "Autocontrole",
+    "Coragem"
+   ],
+   "pecados": [
+    "Má ação acidental",
+    "Má ação proposital",
+    "Ferimento infligido de propósito",
+    "Furto e roubo",
+    "Assassinato impensado",
+    "Destruição por capricho",
+    "Causar males deliberadamente",
+    "Sadismo e perversão",
+    "Assassinato premeditado",
+    "Apenas os atos mais hediondos e dementes"
+   ],
+   "apelido": "Via Humanitatis"
+  },
+  {
+   "id": "besta",
+   "nome": "Caminho da Besta",
+   "desc": "Alimentar a Besta para que ela não rompa as correntes.",
+   "pagina": 113,
+   "virtudes": [
+    "Convicção",
+    "Instinto",
+    "Coragem"
+   ],
+   "pecados": [
+    "Atacar um inimigo claramente superior",
+    "Não desafiar um líder claramente fraco",
+    "Matar por motivo que não seja sobrevivência",
+    "Evitar a natureza e os animais selvagens",
+    "Tortura desnecessária",
+    "Sacrificar-se por alguém sem ligação com você",
+    "Recusar-se a matar quando isso importa para sobreviver",
+    "Não defender seu território",
+    "Ter piedade de um inimigo terrível",
+    "Abster-se de se alimentar com fome"
+   ],
+   "apelido": "Via Bestiae"
+  },
+  {
+   "id": "cavaleiro",
+   "nome": "Caminho do Cavaleiro",
+   "desc": "Tratar os iguais com honra e os superiores com respeito.",
+   "pagina": 114,
+   "virtudes": [
+    "Consciência",
+    "Autocontrole",
+    "Coragem"
+   ],
+   "pecados": [
+    "Não ajudar um mortal em necessidade",
+    "Desrespeitar um companheiro",
+    "Pôr interesses pessoais acima do dever",
+    "Quebrar a palavra com membro do clã ou companheiro",
+    "Não ajudar clã ou companheiros em necessidade",
+    "Atacar oponente desarmado",
+    "Negar hospitalidade a outro Cainita",
+    "Desrespeitar um superior",
+    "Quebrar a palavra com senhor ou príncipe",
+    "Quebrar um juramento sagrado"
+   ],
+   "apelido": "Via Equitum"
+  },
+  {
+   "id": "diabo",
+   "nome": "Caminho do Diabo",
+   "desc": "Já somos malignos e devemos cumprir o papel; destrutivo para personagens.",
+   "pagina": 114,
+   "virtudes": [
+    "Convicção",
+    "Instinto",
+    "Coragem"
+   ],
+   "pecados": [
+    "Recusar-se a criar novos vampiros",
+    "Não buscar novas formas de prazer",
+    "Não apreciar um frenesi",
+    "Não ferir outros pelo próprio prazer",
+    "Recusar-se a matar humanos quando é do seu interesse",
+    "Recusar atos cruéis de seu interesse",
+    "Recusar-se a tentar os virtuosos",
+    "Rejeitar ganho material",
+    "Agir de forma altruísta",
+    "Ajudar os servos da virtude ou de Deus"
+   ],
+   "apelido": "Via Diabolis"
+  },
+  {
+   "id": "paradoxo",
+   "nome": "Caminho do Paradoxo",
+   "desc": "A existência é uma ilusão a ser mudada; ensinado só aos Ravnos.",
+   "pagina": 115,
+   "virtudes": [
+    "Convicção",
+    "Autocontrole",
+    "Coragem"
+   ],
+   "pecados": [
+    "Recusar diablerie em ancião de outro clã",
+    "Recusar-se a guiar um ser \"estagnado\" à luz ou à destruição",
+    "Preocupar-se com mortais",
+    "Não obter itens ou saberes que afetem a realidade",
+    "Não enganar quando há oportunidade",
+    "Ser pego roubando",
+    "Recusar-se a destruir um objeto de poder",
+    "Unir-se à estrutura de poder Cainita ou mantê-la",
+    "Evitar ativamente a mudança",
+    "Induzir ativamente ao tédio"
+   ],
+   "apelido": "Via Paradocis"
+  },
+  {
+   "id": "paraiso",
+   "nome": "Caminho do Paraíso",
+   "desc": "Deus fez os vampiros para executar Sua ira sobre os pecadores.",
+   "pagina": 114,
+   "virtudes": [
+    "Consciência",
+    "Autocontrole",
+    "Coragem"
+   ],
+   "pecados": [
+    "Desrespeitar a Igreja",
+    "Não denunciar a corrupção e o pecado",
+    "Agir por orgulho, avareza ou gula",
+    "Furto, roubo ou vandalismo proposital",
+    "Ferir crentes ou virtuosos",
+    "Alimentar-se de um inocente sem permissão",
+    "Atos blasfemos ou heréticos",
+    "Deixar um crime ou pecado sério impune",
+    "Assassinar um inocente sem razão",
+    "Ajudar um demônio, infernalista, Setita ou outro servo do mal"
+   ],
+   "apelido": "Via Caeli"
+  },
+  {
+   "id": "sangue",
+   "nome": "Caminho do Sangue",
+   "desc": "O sangue vampírico dá poder para a vingança; exclusivo dos Assamitas.",
+   "pagina": 114,
+   "virtudes": [
+    "Convicção",
+    "Autocontrole",
+    "Coragem"
+   ],
+   "pecados": [
+    "Quebrar a palavra de honra com membro do clã",
+    "Não ajudar ou vingar membro do clã; revelar segredos do clã",
+    "Pôr interesses pessoais acima do dever",
+    "Não matar um vampiro não Assamita quando necessário",
+    "Não buscar sangue ou conhecimento diante de pequenos perigos",
+    "Quebrar a palavra de honra com um mortal",
+    "Desrespeitar os líderes do clã ou não buscar os ensinamentos de Haqim",
+    "Não buscar sangue ou saber de Caim diante de perigos moderados",
+    "Sucumbir ao frenesi",
+    "Ignorar a chance de obter sangue de geração menor"
+   ],
+   "apelido": "Via Sanguinius"
+  },
+  {
+   "id": "tifon",
+   "nome": "Caminho de Tífon",
+   "desc": "Pecado e corrupção são a chave da compreensão (Setitas).",
+   "pagina": 116,
+   "virtudes": [
+    "Convicção",
+    "Instinto",
+    "Coragem"
+   ],
+   "pecados": [
+    "Manter qualquer senso de autocontrole, pureza ou valor",
+    "Recusar-se a ceder às próprias fraquezas",
+    "Não destruir um vampiro em Golconda",
+    "Destruir um inimigo por conveniência ou piedade, e não de forma \"poética\"",
+    "Não perturbar a ordem social em favor dos Setitas",
+    "Não trocar a fé por cinismo e desespero",
+    "Não explorar as fraquezas alheias",
+    "Deixar o afeto por um mortal superar a necessidade de corrompê-lo",
+    "Recusar-se a corromper um vampiro para os Setitas",
+    "Não tentar despertar Set na primeira oportunidade"
+   ],
+   "apelido": "Via Typhonis"
+  }
+ ],
+ "geracoes": [
+  {
+   "geracao": 4,
+   "maxTraco": 9,
+   "sangue": 50,
+   "porTurno": 10
+  },
+  {
+   "geracao": 5,
+   "maxTraco": 8,
+   "sangue": 40,
+   "porTurno": 8
+  },
+  {
+   "geracao": 6,
+   "maxTraco": 7,
+   "sangue": 30,
+   "porTurno": 6
+  },
+  {
+   "geracao": 7,
+   "maxTraco": 6,
+   "sangue": 20,
+   "porTurno": 5
+  },
+  {
+   "geracao": 8,
+   "maxTraco": 5,
+   "sangue": 15,
+   "porTurno": 3
+  },
+  {
+   "geracao": 9,
+   "maxTraco": 5,
+   "sangue": 14,
+   "porTurno": 2
+  },
+  {
+   "geracao": 10,
+   "maxTraco": 5,
+   "sangue": 13,
+   "porTurno": 1
+  },
+  {
+   "geracao": 11,
+   "maxTraco": 5,
+   "sangue": 12,
+   "porTurno": 1
+  },
+  {
+   "geracao": 12,
+   "maxTraco": 5,
+   "sangue": 11,
+   "porTurno": 1
+  },
+  {
+   "geracao": 13,
+   "maxTraco": 5,
+   "sangue": 10,
+   "porTurno": 1
+  }
+ ],
+ "geracaoPadrao": 12
 }

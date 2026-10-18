@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { DataService } from '../../core/data.service';
 import { Ficha, atributoNaForma, geracaoDe, nomeTrilha, reservaSangue, slug, valor, virtudesDe } from '../../core/ficha';
 import { FichasService } from '../../core/fichas.service';
+import { GrupoService } from '../../core/grupo.service';
 import { Item, Linha } from '../../core/models';
 import { Icon } from '../../shared/icon';
 
@@ -18,10 +19,13 @@ const CURTO: Record<string, string> = { forca: 'For', destreza: 'Des', vigor: 'V
 })
 export class FichaPdf {
   readonly id = input.required<string>();
+  /** Vem da rota /grupo/:id: ficha de outro jogador, só para ler. */
+  readonly grupo = input(false);
+  private readonly grupoSrv = inject(GrupoService);
   private readonly data = inject(DataService);
   private readonly fichas = inject(FichasService);
   protected readonly linha = signal<Linha | null>(null);
-  protected readonly f = computed(() => this.fichas.fichas().find((x) => x.id === this.id()));
+  protected readonly f = computed(() => (this.grupo() ? this.grupoSrv.lista().find((r) => r.ficha.id === this.id())?.ficha : this.fichas.fichas().find((x) => x.id === this.id())));
 
   constructor() {
     effect(() => {
@@ -176,6 +180,25 @@ export class FichaPdf {
       ],
       formas,
       lua: l.luas?.[f.estado.lua],
+    };
+  });
+
+  /** Partes que só existem na ficha de Caçador. */
+  protected readonly cacador = computed(() => {
+    const f = this.f();
+    const l = this.linha();
+    if (!f || !l || l.tipo !== 'cacador') return null;
+    const numina = (l.numina ?? [])
+      .filter((n) => this.v('num:' + n.id) > 0)
+      .map((n) => ({ nome: n.nome, n: this.v('num:' + n.id), fonte: n.fonte === 'mesa' ? 'mesa' : 'livro', classe: n.classe }));
+    while (numina.length < 5) numina.push({ nome: '', n: 0, fonte: '', classe: '' });
+    const antecedentes = l.antecedentes.filter((a) => this.v('ant:' + a.id) > 0).map((a) => ({ nome: a.nome, n: this.v('ant:' + a.id) }));
+    while (antecedentes.length < 5) antecedentes.push({ nome: '', n: 0 });
+    return {
+      organizacao: l.organizacoes?.find((o) => o.id === f.organizacao)?.nome ?? 'Independente',
+      numina,
+      antecedentes,
+      virtudes: virtudesDe(l, f).map((v) => ({ nome: v, n: this.v('vir:' + slug(v)) })),
     };
   });
 

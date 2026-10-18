@@ -486,28 +486,28 @@
    "id": "autista",
    "nome": "Autista",
    "desc": "Arquétipo citado para agentes da ASN; fechado em si, guarda tudo para si.",
-   "recuperarFV": "Ao manter um segredo importante ou resolver algo sem depender de ninguém (a critério do Narrador).",
+   "recuperarFV": "Ao manter um segredo importante ou resolver algo sem depender de ninguém (a critério do Narrador). (Regra sugerida: o livro não detalha; confirme com o narrador.)",
    "pagina": 41
   },
   {
    "id": "cavaleiro",
    "nome": "Cavaleiro",
    "desc": "Arquétipo citado para o CCD e a Inquisição; vive por um código de honra e proteção.",
-   "recuperarFV": "Ao defender alguém ou agir conforme seu código diante de um risco (a critério do Narrador).",
+   "recuperarFV": "Ao defender alguém ou agir conforme seu código diante de um risco (a critério do Narrador). (Regra sugerida: o livro não detalha; confirme com o narrador.)",
    "pagina": 43
   },
   {
    "id": "honesto",
    "nome": "Honesto",
    "desc": "Arquétipo citado para a Inquisição; não mente nem tolera mentiras.",
-   "recuperarFV": "Ao dizer a verdade quando isso lhe custa algo (a critério do Narrador).",
+   "recuperarFV": "Ao dizer a verdade quando isso lhe custa algo (a critério do Narrador). (Regra sugerida: o livro não detalha; confirme com o narrador.)",
    "pagina": 48
   },
   {
    "id": "samaritano",
    "nome": "Samaritano",
    "desc": "Arquétipo citado para o CCD; ajuda quem precisa (equivale ao Filantropo).",
-   "recuperarFV": "Ao ajudar ou proteger alguém.",
+   "recuperarFV": "Ao ajudar ou proteger alguém. (Regra sugerida: o livro não detalha; confirme com o narrador.)",
    "pagina": 43
   }
  ],

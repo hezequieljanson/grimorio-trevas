@@ -69,3 +69,9 @@ h3.grande { font-family: var(--serif); font-size: 16px; text-transform: none; le
   .garou h3.grande { font-size: 14px; margin-top: 2px; }
   .garou .forma-nota { display: none; }
 }
+
+/* ---------- ficha de Caçador ---------- */
+.cacador h2 { color: #2f4a5e; }
+.posto.org { border-color: #2f4a5e; max-width: 170px; text-align: center; font-size: 10px; }
+.cacador .quadrado.temp { background: #2f4a5e; }
+.fonte { margin-left: 4px; font-size: 8px; text-transform: uppercase; letter-spacing: 0.06em; color: #6b5e57; border: 1px solid #b9aea3; border-radius: 3px; padding: 0 3px; }

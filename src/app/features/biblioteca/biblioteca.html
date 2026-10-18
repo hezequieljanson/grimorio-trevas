@@ -1,0 +1,117 @@
+<div class="page page-wide">
+  <div class="spread" style="align-items: center">
+    <h1>Biblioteca de poderes</h1>
+    <a routerLink="/regras" class="btn btn-sm">Regras</a>
+  </div>
+  <p class="small muted">Todos os poderes dos livros ativos, para planejar a evolução ou consultar o poder de um NPC.</p>
+
+  <div class="chips-scroll" role="tablist" aria-label="Tipo de poder">
+    @for (a of abas; track a.id) {
+      <button type="button" role="tab" class="chip" [attr.aria-selected]="aba() === a.id" [attr.aria-pressed]="aba() === a.id" (click)="trocarAba(a.id)">{{ a.nome }}</button>
+    }
+  </div>
+
+  @if (erro()) { <p class="card card-red">{{ erro() }}</p> }
+
+  <div class="layout">
+    <section class="lista" [class.esconder-celular]="!!atualChave()">
+      <form class="search" role="search" (submit)="$event.preventDefault()">
+        <app-icon name="busca" />
+        <input type="search" name="q" aria-label="Buscar poder" placeholder="Buscar pelo nome ou efeito" [ngModel]="q()" (ngModelChange)="q.set($event); mudou()" />
+      </form>
+      <div class="filtros">
+        @if (livrosDaAba().length > 1) {
+          <label class="field">Livro
+            <select class="select" name="livro" [ngModel]="livro()" (ngModelChange)="livro.set($event); filtro1.set(''); mudou()">
+              <option value="">Todos</option>
+              @for (l of livrosDaAba(); track l) { <option [value]="l">{{ nomeLinha(l, true) }}</option> }
+            </select>
+          </label>
+        }
+        @if (opcoes1().length) {
+          <label class="field">{{ rotulo1() }}
+            <select class="select" name="f1" [ngModel]="filtro1()" (ngModelChange)="filtro1.set($event); mudou()">
+              <option value="">Todos</option>
+              @for (o of opcoes1(); track o) { <option [value]="o">{{ o }}</option> }
+            </select>
+          </label>
+        }
+        @if (opcoes2().length) {
+          <label class="field">{{ rotulo2() }}
+            <select class="select" name="f2" [ngModel]="filtro2()" (ngModelChange)="filtro2.set($event); mudou()">
+              <option value="">Todos</option>
+              @for (o of opcoes2(); track o) { <option [value]="o">{{ o }}</option> }
+            </select>
+          </label>
+        }
+      </div>
+      <span class="tiny muted">{{ lista().length }} resultado(s)</span>
+      <div class="col" style="gap: 0">
+        @for (e of lista(); track e.chave) {
+          <button type="button" class="list-link" [class.atual]="e.chave === atual()?.chave" (click)="abrir(e)">
+            <span class="col grow" style="gap: 2px">
+              <strong>{{ e.nome }}</strong>
+              <span class="tiny muted">{{ e.sub }} · {{ nomeLinha(e.linha, true) }}</span>
+            </span>
+            <app-icon name="seguir" [size]="18" />
+          </button>
+        } @empty {
+          @if (linhas().length) { <div class="empty">Nada encontrado. Tente outro filtro ou ative mais livros no Início.</div> }
+        }
+      </div>
+    </section>
+
+    @if (atual(); as e) {
+      <article class="detalhe">
+        <button type="button" class="btn btn-sm so-celular" style="align-self: flex-start" (click)="atualChave.set(null)"><app-icon name="voltar" [size]="16" />Lista</button>
+        <div class="spread" style="flex-wrap: wrap">
+          <h2 style="font-size: 38px">{{ e.nome }}</h2>
+          <span class="small muted">{{ nomeLinha(e.linha) }}{{ e.pagina ? ' · p. ' + e.pagina : '' }}</span>
+        </div>
+        <span class="small" style="color: var(--text-3)">{{ e.sub }}</span>
+        @if (e.desc) { <p class="lead">{{ e.desc }}</p> }
+        @if (e.sistema) {
+          <div class="card-plain"><span class="eyebrow">Sistema</span><span style="color: var(--text-2)">{{ e.sistema }}</span></div>
+        }
+        @if (e.quem?.length && e.aba === 'dons') {
+          <div class="chips">@for (q of e.quem!; track q) { <span class="tag tag-gold">{{ q }}</span> }</div>
+        }
+        @if (e.niveis?.length) {
+          <section>
+            @for (n of e.niveis!; track n.nivel) {
+              <div class="nivel-linha">
+                <span class="bola-nivel">{{ n.nivel }}</span>
+                <span class="col" style="gap: 2px"><strong>{{ n.nome }}</strong><span class="small" style="color: var(--text-3)">{{ n.sistema }}</span></span>
+              </div>
+            }
+          </section>
+        }
+        @for (t of e.trilhas ?? []; track t.nome) {
+          <section class="card-plain">
+            <h3>{{ t.nome }}</h3>
+            @for (n of t.niveis; track n.nivel) {
+              <div class="nivel-linha">
+                <span class="bola-nivel">{{ n.nivel }}</span>
+                <span class="col" style="gap: 2px"><strong>{{ n.nome }}</strong><span class="small" style="color: var(--text-3)">{{ n.sistema }}</span></span>
+              </div>
+            }
+          </section>
+        }
+        @if (e.rituais?.length) {
+          <section class="card-plain">
+            <h3>Rituais</h3>
+            @for (r of e.rituais!; track r.nome) {
+              <div class="nivel-linha">
+                <span class="bola-nivel">{{ r.nivel }}</span>
+                <span class="col" style="gap: 2px"><strong>{{ r.nome }}</strong><span class="small" style="color: var(--text-3)">{{ r.sistema }}</span></span>
+              </div>
+            }
+          </section>
+        }
+        <p class="tiny muted">Resumo com palavras do site. Confira o texto completo no livro, na página indicada.</p>
+      </article>
+    } @else {
+      <div class="detalhe esconder-celular"><div class="empty">Escolha um poder na lista.</div></div>
+    }
+  </div>
+</div>

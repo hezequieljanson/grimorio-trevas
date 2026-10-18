@@ -22,6 +22,7 @@ import {
   virtudesDe,
 } from '../../core/ficha';
 import { FichasService } from '../../core/fichas.service';
+import { enviarFicha } from '../../core/grupo.service';
 import { Linha } from '../../core/models';
 import { novoId } from '../../core/storage';
 import { custoEvolucao, xpGasto } from '../../core/xp';
@@ -468,6 +469,13 @@ export class FichaMesa {
 
   protected salvarAnotacoes(t: string): void {
     this.mut((f) => (f.anotacoes = t));
+  }
+
+  protected async enviar(): Promise<void> {
+    const f = this.f();
+    if (!f) return;
+    const r = await enviarFicha(f);
+    if (r === 'baixada') this.aviso.set('O arquivo da ficha foi baixado. Mande para o narrador pelo WhatsApp ou e-mail; ele abre em Fichas › Receber ficha.');
   }
 
   protected virKey(nome: string): string {
