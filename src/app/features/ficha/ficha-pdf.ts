@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { DataService } from '../../core/data.service';
-import { geracaoDe, nomeTrilha, reservaSangue, slug, valor, virtudesDe } from '../../core/ficha';
+import { Ficha, atributoNaForma, geracaoDe, nomeTrilha, reservaSangue, slug, valor, virtudesDe } from '../../core/ficha';
 import { FichasService } from '../../core/fichas.service';
 import { Item, Linha } from '../../core/models';
 import { Icon } from '../../shared/icon';
+
+const CURTO: Record<string, string> = { forca: 'For', destreza: 'Des', vigor: 'Vig', manipulacao: 'Man', aparencia: 'Apa' };
 
 /** Ficha no visual impresso, em A4. "Salvar PDF" usa a impressão do navegador. */
 @Component({
@@ -43,6 +45,21 @@ export class FichaPdf {
     const l = this.linha();
     if (!f || !l) return [];
     const arq = (id: string) => l.arquetipos.find((a) => a.id === id)?.nome ?? '';
+    if (l.tipo === 'lobisomem') {
+      const tribo = l.tribos?.find((x) => x.id === f.tribo);
+      return [
+        ['Nome', f.nome],
+        ['Raça', l.racas?.find((x) => x.id === f.raca)?.nome ?? ''],
+        ['Natureza', arq(f.natureza)],
+        ['Jogador', f.jogador],
+        ['Augúrio', l.auspicios?.find((x) => x.id === f.auspicio)?.nome ?? ''],
+        ['Comportamento', arq(f.comportamento)],
+        ['Crônica', f.cronica],
+        ['Tribo', tribo?.nome ?? ''],
+        ['Conceito', f.conceito],
+        ['Totem', tribo?.totem ?? ''],
+      ].map(([k, v]) => ({ k, v }));
+    }
     const base = [
       ['Nome', f.nome],
       ['Natureza', arq(f.natureza)],
@@ -53,8 +70,6 @@ export class FichaPdf {
     ];
     if (l.tipo === 'vampiro') {
       base.push(['Clã', l.clas?.find((c) => c.id === f.cla)?.nome ?? ''], ['Geração', `${geracaoDe(f, l)}ª`], ['Senhor', f.senhor ?? ''], ['Refúgio', f.refugio ?? '']);
-    } else if (l.tipo === 'lobisomem') {
-      base.push(['Raça', l.racas?.find((x) => x.id === f.raca)?.nome ?? ''], ['Augúrio', l.auspicios?.find((x) => x.id === f.auspicio)?.nome ?? ''], ['Tribo', l.tribos?.find((x) => x.id === f.tribo)?.nome ?? ''], ['Posto', String(f.posto)]);
     } else {
       base.push(['Organização', l.organizacoes?.find((x) => x.id === f.organizacao)?.nome ?? 'Independente'], ['Motivo', f.motivo ?? ''], ['Método', f.metodo ?? '']);
     }
@@ -118,6 +133,50 @@ export class FichaPdf {
     const f = this.f();
     const l = this.linha();
     return l?.clas?.find((c) => c.id === f?.cla)?.fraqueza ?? l?.tribos?.find((t) => t.id === f?.tribo)?.fraqueza ?? '';
+  });
+
+  /** Partes que só existem na ficha de Garou. */
+  protected readonly garou = computed(() => {
+    const f = this.f();
+    const l = this.linha();
+    if (!f || !l || l.tipo !== 'lobisomem') return null;
+    const grupos: { id?: string; nome?: string }[] = [
+      { id: f.raca, nome: l.racas?.find((x) => x.id === f.raca)?.nome },
+      { id: f.auspicio, nome: l.auspicios?.find((x) => x.id === f.auspicio)?.nome },
+      { id: f.tribo, nome: l.tribos?.find((x) => x.id === f.tribo)?.nome },
+    ];
+    const dons = (l.dons ?? [])
+      .filter((d) => this.v('dom:' + d.id) > 0)
+      .map((d) => ({ nome: `${d.nome} (${d.nivel})`, origem: grupos.find((g) => g.id && d.grupos.includes(g.id))?.nome ?? '' }));
+    while (dons.length < 6) dons.push({ nome: '', origem: '' });
+    const antecedentes = l.antecedentes.filter((a) => this.v('ant:' + a.id) > 0).map((a) => ({ nome: a.nome, n: this.v('ant:' + a.id) }));
+    while (antecedentes.length < 5) antecedentes.push({ nome: '', n: 0 });
+    const r = f.renome;
+    const formas = (l.formas ?? []).map((fo) => {
+      const copia: Ficha = { ...f, estado: { ...f.estado, forma: fo.id } };
+      const attrs = ['forca', 'destreza', 'vigor', 'manipulacao', 'aparencia'].map((id) => {
+        const x = atributoNaForma(copia, l, id);
+        return { k: CURTO[id], v: x.valor, d: x.delta };
+      });
+      return { nome: fo.nome, dif: fo.dificuldade, attrs, nota: fo.notas[0] ?? '' };
+    });
+    return {
+      posto: { n: f.posto, nome: l.postos?.find((p) => p.posto === f.posto)?.nome ?? '' },
+      dons,
+      antecedentes,
+      renome: [
+        { nome: 'Glória', perm: r.gloria, temp: r.gloriaT },
+        { nome: 'Honra', perm: r.honra, temp: r.honraT },
+        { nome: 'Sabedoria', perm: r.sabedoria, temp: r.sabedoriaT },
+      ],
+      recursos: [
+        { nome: 'Fúria', perm: this.v('furia'), atual: f.estado.furia },
+        { nome: 'Gnose', perm: this.v('gnose'), atual: f.estado.gnose },
+        { nome: 'Força de Vontade', perm: this.v('fv'), atual: f.estado.fv },
+      ],
+      formas,
+      lua: l.luas?.[f.estado.lua],
+    };
   });
 
   protected readonly hoje = new Date().toLocaleDateString('pt-BR');

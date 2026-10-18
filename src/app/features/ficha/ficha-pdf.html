@@ -7,11 +7,23 @@
 @if (f() && linha()) {
   @let ficha = f()!;
   @let l = linha()!;
-  <article class="folha">
-    <header class="topo">
-      <span class="marca">Grimório das Trevas</span>
-      <h1>{{ l.nome }}</h1>
-    </header>
+  @let g = garou();
+  <article class="folha" [class.garou]="!!g">
+    @if (g) {
+      <header class="topo topo-garou">
+        <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#5e4a1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16.5 7.5A6 6 0 1 0 16.5 16.5A7.5 7.5 0 0 1 16.5 7.5z"></path></svg>
+        <div class="titulo-centro">
+          <span class="marca">Grimório das Trevas</span>
+          <h1>{{ l.nome }}</h1>
+        </div>
+        <div class="posto"><span class="marca">Posto</span><strong>{{ g.posto.n }}</strong><span>{{ g.posto.nome }}</span></div>
+      </header>
+    } @else {
+      <header class="topo">
+        <span class="marca">Grimório das Trevas</span>
+        <h1>{{ l.nome }}</h1>
+      </header>
+    }
 
     <div class="info">
       @for (i of info(); track i.k) {
@@ -47,60 +59,119 @@
       </div>
     </section>
 
-    <section>
-      <h2>Vantagens</h2>
-      <div class="tres">
-        @for (c of vantagens(); track c.nome) {
+    @if (g) {
+      <!-- ===== Garou ===== -->
+      <section>
+        <h2>Vantagens</h2>
+        <div class="tres">
           <div class="coluna">
-            <h3>{{ c.nome }}</h3>
-            @for (it of c.itens; track it.nome) {
-              <div class="linha"><span class="nome">{{ it.nome }}</span>
-                @if (it.n >= 0) { <span class="pontilhado"></span><span class="bolas">@for (b of bolas(it.n); track $index) { <span class="bola" [class.on]="b"></span> }</span> }
-              </div>
-            } @empty { <div class="linha vazia"></div><div class="linha vazia"></div> }
+            <h3>Antecedentes</h3>
+            @for (a of g.antecedentes; track $index) {
+              <div class="linha"><span class="nome">{{ a.nome }}</span><span class="pontilhado"></span><span class="bolas">@for (b of bolas(a.n); track $index) { <span class="bola" [class.on]="b"></span> }</span></div>
+            }
           </div>
-        }
-      </div>
-    </section>
+          <div class="coluna">
+            <h3>Dons</h3>
+            @for (d of g.dons; track $index) {
+              <div class="linha dom"><span class="nome">{{ d.nome }}</span><span class="origem">{{ d.origem }}</span></div>
+            }
+          </div>
+          <div class="coluna centro">
+            <h3>Renome</h3>
+            @for (r of g.renome; track r.nome) {
+              <span class="renome-nome">{{ r.nome }}</span>
+              <span class="bolas">@for (b of bolas(r.perm, 10); track $index) { <span class="bola" [class.on]="b"></span> }</span>
+              <span class="bolas">@for (b of bolas(r.temp, 10); track $index) { <span class="quadrado peq" [class.temp]="b"></span> }</span>
+            }
+          </div>
+        </div>
+      </section>
 
-    <div class="tres rodape-ficha">
-      <div class="coluna centro">
-        @if (l.tipo !== 'lobisomem') {
+      <div class="rodape-garou">
+        <div class="coluna centro">
+          @for (x of g.recursos; track x.nome) {
+            <h3 class="grande">{{ x.nome }}</h3>
+            <span class="bolas">@for (b of bolas(x.perm, 10); track $index) { <span class="bola g" [class.on]="b"></span> }</span>
+            <span class="bolas">@for (b of bolas(x.atual, 10); track $index) { <span class="quadrado" [class.temp]="b"></span> }</span>
+          }
+        </div>
+        <div class="coluna">
+          <h3 class="grande centro-txt">Fetiches e rituais</h3>
+          @for (i of [1, 2, 3, 4, 5, 6]; track i) { <div class="linha vazia"></div> }
+          @if (qualidades()) { <span class="nota" style="margin-top: 4px">Qualidades e Defeitos: {{ qualidades() }}</span> }
+        </div>
+        <div class="coluna">
+          <h3 class="grande centro-txt">Vitalidade</h3>
+          @for (nv of l.vitalidade; track nv.nome; let i = $index) {
+            <div class="linha"><span class="nome">{{ nv.nome }}</span><span class="pen">{{ nv.penalidade === null || nv.penalidade === 0 ? '' : nv.penalidade }}</span><span class="quadrado" [class.ferido]="i < ficha.estado.dano.length"></span></div>
+          }
+        </div>
+      </div>
+
+      <section>
+        <h2>Formas</h2>
+        <div class="formas">
+          @for (fo of g.formas; track fo.nome) {
+            <div class="forma">
+              <div class="forma-topo"><strong>{{ fo.nome }}</strong><span>dif. {{ fo.dif }}</span></div>
+              @for (a of fo.attrs; track a.k) {
+                <div class="forma-attr"><span>{{ a.k }}</span><strong>{{ a.v }}@if (a.d) { <span class="delta"> ({{ a.d > 0 ? '+' : '−' }}{{ a.d > 0 ? a.d : -a.d }})</span> }</strong></div>
+              }
+              <span class="forma-nota">{{ fo.nota }}</span>
+            </div>
+          }
+        </div>
+      </section>
+    } @else {
+      <!-- ===== Vampiro e Caçador ===== -->
+      <section>
+        <h2>Vantagens</h2>
+        <div class="tres">
+          @for (c of vantagens(); track c.nome) {
+            <div class="coluna">
+              <h3>{{ c.nome }}</h3>
+              @for (it of c.itens; track it.nome) {
+                <div class="linha"><span class="nome">{{ it.nome }}</span>
+                  @if (it.n >= 0) { <span class="pontilhado"></span><span class="bolas">@for (b of bolas(it.n); track $index) { <span class="bola" [class.on]="b"></span> }</span> }
+                </div>
+              } @empty { <div class="linha vazia"></div><div class="linha vazia"></div> }
+            </div>
+          }
+        </div>
+      </section>
+
+      <div class="tres rodape-ficha">
+        <div class="coluna centro">
           <h3 class="grande">{{ trilha() }}</h3>
           <span class="bolas">@for (b of bolas(v('trilha'), 10); track $index) { <span class="bola g" [class.on]="b"></span> }</span>
-        } @else {
-          <h3 class="grande">Fúria</h3>
-          <span class="bolas">@for (b of bolas(v('furia'), 10); track $index) { <span class="bola g" [class.on]="b"></span> }</span>
-          <h3 class="grande">Gnose</h3>
-          <span class="bolas">@for (b of bolas(v('gnose'), 10); track $index) { <span class="bola g" [class.on]="b"></span> }</span>
-        }
-        <h3 class="grande">Força de Vontade</h3>
-        <span class="bolas">@for (b of bolas(v('fv'), 10); track $index) { <span class="bola g" [class.on]="b"></span> }</span>
-        <span class="bolas">@for (b of bolas(0, 10); track $index) { <span class="quadrado"></span> }</span>
+          <h3 class="grande">Força de Vontade</h3>
+          <span class="bolas">@for (b of bolas(v('fv'), 10); track $index) { <span class="bola g" [class.on]="b"></span> }</span>
+          <span class="bolas">@for (b of bolas(ficha.estado.fv, 10); track $index) { <span class="quadrado" [class.temp]="b"></span> }</span>
+        </div>
+        <div class="coluna centro">
+          @if (sangue(); as s) {
+            <h3 class="grande">Pontos de Sangue</h3>
+            <span class="grade">@for (b of bolas(ficha.estado.sangue, 20); track $index) { <span class="quadrado" [class.sangue]="b" [class.fora]="$index >= s.max"></span> }</span>
+            <span class="nota">Máx. {{ s.max }} · {{ s.porTurno }} por turno</span>
+          }
+          @if (qualidades()) { <h3>Qualidades e Defeitos</h3><span class="nota">{{ qualidades() }}</span> }
+          @if (fraqueza()) { <h3>Fraqueza</h3><span class="nota">{{ fraqueza() }}</span> }
+        </div>
+        <div class="coluna">
+          <h3 class="grande centro-txt">Vitalidade</h3>
+          @for (nv of l.vitalidade; track nv.nome; let i = $index) {
+            <div class="linha"><span class="nome">{{ nv.nome }}</span><span class="pen">{{ nv.penalidade === null || nv.penalidade === 0 ? '' : nv.penalidade }}</span><span class="quadrado" [class.ferido]="i < ficha.estado.dano.length"></span></div>
+          }
+        </div>
       </div>
-      <div class="coluna centro">
-        @if (sangue(); as s) {
-          <h3 class="grande">Pontos de Sangue</h3>
-          <span class="grade">@for (b of bolas(ficha.estado.sangue, 20); track $index) { <span class="quadrado" [class.sangue]="b" [class.fora]="$index >= s.max"></span> }</span>
-          <span class="nota">Máx. {{ s.max }} · {{ s.porTurno }} por turno</span>
-        }
-        @if (qualidades()) { <h3>Qualidades e Defeitos</h3><span class="nota">{{ qualidades() }}</span> }
-        @if (fraqueza()) { <h3>Fraqueza</h3><span class="nota">{{ fraqueza() }}</span> }
-      </div>
-      <div class="coluna">
-        <h3 class="grande centro-txt">Vitalidade</h3>
-        @for (nv of l.vitalidade; track nv.nome; let i = $index) {
-          <div class="linha"><span class="nome">{{ nv.nome }}</span><span class="pen">{{ nv.penalidade === null || nv.penalidade === 0 ? '' : nv.penalidade }}</span><span class="quadrado" [class.ferido]="i < ficha.estado.dano.length"></span></div>
-        }
-      </div>
-    </div>
+    }
 
     @if (ficha.anotacoes) {
       <section><h3>Anotações</h3><p class="nota" style="white-space: pre-line">{{ ficha.anotacoes }}</p></section>
     }
 
     <footer class="fim">
-      <span>Gerado no Grimório das Trevas · {{ hoje }}</span>
+      <span>Gerado no Grimório das Trevas · {{ hoje }}@if (g?.lua; as lua) { · Teste de Fúria na lua {{ lua.nome.toLowerCase() }}: dif. {{ lua.dificuldade }} }</span>
       <span>Experiência: {{ ficha.xp.total }}</span>
     </footer>
   </article>
