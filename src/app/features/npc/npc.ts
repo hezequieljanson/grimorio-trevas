@@ -1,219 +1,428 @@
-import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
+import { RolagemAlvo } from '../../core/alvo';
 import { ConfigService } from '../../core/config.service';
 import { DataService } from '../../core/data.service';
-import { Geradores, Linha, LinhaId } from '../../core/models';
+import { Resultado, avaliar } from '../../core/dados';
+import { Dados3dService } from '../../core/dados3d';
+import { FichasService } from '../../core/fichas.service';
+import { Criatura, Geradores, Linha } from '../../core/models';
 import { NotasService } from '../../core/notas.service';
+import {
+  ATITUDES,
+  AtitudeId,
+  NpcGerado,
+  OPCOES_PADRAO,
+  OpcoesNpc,
+  PAPEIS,
+  PARTES,
+  PERFIS,
+  ParteNpc,
+  PerfilId,
+  PoderNpc,
+  TipoNpc,
+  aplicarTravas,
+  gerarDeCriatura,
+  gerarNpc,
+  linhaDoNpc,
+  opcoesComTravas,
+  paradasNpc,
+  poderesDisponiveis,
+  rolagensNpc,
+  seitasDe,
+  subirPoder,
+  textoNpc,
+} from '../../core/npc';
+import { NpcsService, fichaDeNpc } from '../../core/npcs.service';
+import { gravar, ler } from '../../core/storage';
 import { Icon } from '../../shared/icon';
+import { ResultadoView } from '../../shared/resultado';
 
-type Tipo = 'vampiro' | 'carnical' | 'cacador' | 'lobisomem' | 'mortal';
-type Poder = 'capanga' | 'neofito' | 'anciao';
-
-interface NpcGerado {
-  nome: string;
-  linha: string;
-  grupo: string;
-  natureza: string;
-  comportamento: string;
-  atributos: { nome: string; valor: number }[];
-  paradas: { k: string; v: number }[];
-  poderes: string[];
-  jeito: string;
-  segredo: string;
-  gancho: string;
-}
-
-const PONTOS: Record<Poder, [number, number, number]> = { capanga: [5, 3, 2], neofito: [7, 5, 3], anciao: [10, 8, 6] };
-const NIVEIS_DIS: Record<Poder, number[]> = { capanga: [1, 1, 0], neofito: [2, 1, 1], anciao: [4, 3, 3] };
-const HAB: Record<Poder, [number, number]> = { capanga: [1, 2], neofito: [2, 3], anciao: [3, 5] };
-
-function sorteio<T>(lista: T[]): T {
-  return lista[Math.floor(Math.random() * lista.length)];
-}
-function entre(a: number, b: number): number {
-  return a + Math.floor(Math.random() * (b - a + 1));
-}
+const MAX_PODERES = 3;
 
 @Component({
   selector: 'app-npc',
-  imports: [RouterLink, Icon],
+  imports: [RouterLink, FormsModule, Icon, ResultadoView],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './npc.html',
+  styles: `
+    details.card-plain > summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 600; min-height: 32px; }
+    details.card-plain > summary::-webkit-details-marker { display: none; }
+    details.card-plain[open] > summary app-icon { transform: rotate(180deg); }
+    .resumo-escolha { font-weight: 400; font-size: 12px; color: var(--gold); text-align: right; }
+    .perfis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .perfil { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line-2); background: transparent; color: var(--text); text-align: left; font-weight: 600; font-size: 14px; }
+    .perfil span { font-weight: 400; font-size: 11.5px; color: var(--muted); }
+    .perfil[aria-pressed='true'] { border-color: var(--red-2); background: var(--red-bg); }
+    .atr-linha { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px; min-height: 40px; border-bottom: 1px solid var(--line); }
+    .passos { display: flex; gap: 3px; }
+    .passos button { width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--line-2); background: transparent; color: var(--muted); font-size: 12px; font-weight: 700; padding: 0; }
+    .passos button[aria-pressed='true'] { background: var(--red); border-color: var(--red); color: var(--on-red); }
+    .trava { display: inline-flex; align-items: center; gap: 4px; min-height: 30px; padding: 0 9px; border-radius: 15px; border: 1px solid var(--line-2); background: transparent; color: var(--muted); font-size: 12px; font-weight: 600; }
+    .trava[aria-pressed='true'] { border-color: var(--gold); color: var(--gold); background: var(--gold-bg); }
+    .mini { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 12px; border: 1px solid var(--line-2); background: transparent; color: var(--text); text-align: left; width: 100%; }
+    .mini[aria-pressed='true'] { border-color: var(--red-2); background: var(--red-bg); }
+    .rolar-npc { display: flex; flex-direction: column; gap: 1px; padding: 7px 10px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--bg); color: var(--text); text-align: left; font-size: 13px; font-weight: 600; }
+    .rolar-npc span { font-size: 11px; font-weight: 400; color: var(--muted); }
+    .rolagens { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+    .atitude-aliado { background: #16281c; color: #8fd19e; }
+    .atitude-neutro { background: var(--line-2); color: var(--text-2); }
+    .atitude-rival { background: var(--gold-bg); color: var(--gold); }
+    .atitude-inimigo { background: var(--red-bg-2); color: var(--red-soft); }
+    @media (min-width: 900px) { .rolagens { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  `,
 })
 export class Npc {
   private readonly data = inject(DataService);
   private readonly config = inject(ConfigService);
-  private readonly notas = inject(NotasService);
+  private readonly notasSrv = inject(NotasService);
+  private readonly fichas = inject(FichasService);
+  protected readonly salvos = inject(NpcsService);
+  private readonly d3 = inject(Dados3dService);
   private readonly router = inject(Router);
 
-  protected readonly tipo = signal<Tipo>('vampiro');
-  protected readonly poder = signal<Poder>('neofito');
-  protected readonly epoca = signal<'moderno' | 'medieval'>('moderno');
-  protected readonly travado = signal(false);
-  protected readonly npc = signal<NpcGerado | null>(null);
-  protected readonly erro = signal('');
-  private grupoTravado = '';
-
-  protected readonly tipos: { id: Tipo; nome: string }[] = [
+  protected readonly perfis = PERFIS;
+  protected readonly atitudes = ATITUDES;
+  protected readonly partes = PARTES;
+  protected readonly tipos: { id: TipoNpc; nome: string }[] = [
     { id: 'vampiro', nome: 'Vampiro' },
     { id: 'carnical', nome: 'Carniçal' },
     { id: 'cacador', nome: 'Caçador' },
     { id: 'lobisomem', nome: 'Lobisomem' },
     { id: 'mortal', nome: 'Mortal' },
+    { id: 'bestiario', nome: 'Do bestiário' },
   ];
-  protected readonly poderes: { id: Poder; nome: string }[] = [
+  protected readonly niveis: { id: PoderNpc; nome: string }[] = [
     { id: 'capanga', nome: 'Capanga' },
     { id: 'neofito', nome: 'Neófito' },
     { id: 'anciao', nome: 'Ancião' },
   ];
 
-  protected readonly avisoLivro = computed(() => {
-    const id = this.linhaId();
-    return this.config.ativo(id) ? '' : 'Esse livro está desativado no Início, mas o gerador usa mesmo assim.';
-  });
-
-  private linhaId(): LinhaId {
-    const t = this.tipo();
-    const med = this.epoca() === 'medieval';
-    if (t === 'lobisomem') return med ? 'lidt' : 'lob';
-    if (t === 'cacador') return 'cac';
-    return med ? 'vdta' : 'vtm';
-  }
+  protected readonly opcoes = signal<OpcoesNpc>({ ...OPCOES_PADRAO, ...ler<Partial<OpcoesNpc>>('npc-opcoes', {}) });
+  protected readonly linha = signal<Linha | null>(null);
+  private ger: Geradores | null = null;
+  protected readonly criaturas = signal<Criatura[]>([]);
+  protected readonly gerados = signal<NpcGerado[]>([]);
+  protected readonly atualId = signal('');
+  protected readonly travas = signal<Set<ParteNpc>>(new Set());
+  protected readonly avancado = signal(Object.keys(this.opcoes().atributos).length > 0);
+  protected readonly erro = signal('');
+  protected readonly aviso = signal('');
+  protected readonly rolagem = signal<{ rotulo: string; r: Resultado } | null>(null);
+  protected readonly verSalvos = signal(false);
 
   constructor() {
+    effect(() => gravar('npc-opcoes', this.opcoes()));
+    this.data.bestiario().then((b) => this.criaturas.set(b));
     this.gerar();
   }
 
-  protected escolherTipo(t: Tipo): void {
-    this.tipo.set(t);
-    if (t === 'cacador') this.epoca.set('moderno');
-    this.travado.set(false);
-    this.gerar();
+  // ---------- leituras para a tela ----------
+
+  protected readonly atual = computed(() => {
+    const lista = this.gerados();
+    return lista.find((n) => n.id === this.atualId()) ?? lista[0] ?? null;
+  });
+  protected readonly ehSalvo = computed(() => {
+    const n = this.atual();
+    return !!n && this.salvos.npcs().some((x) => x.id === n.id);
+  });
+  protected readonly paradas = computed(() => (this.atual() ? paradasNpc(this.atual()!) : []));
+  protected readonly rolagens = computed(() => (this.atual() ? rolagensNpc(this.atual()!) : []));
+  protected readonly texto = computed(() => (this.atual() ? textoNpc(this.atual()!) : ''));
+
+  protected readonly bestiario = computed(() => this.opcoes().tipo === 'bestiario');
+  protected readonly papeis = computed(() => (PAPEIS[this.opcoes().tipo] ?? []).filter((p) => !p.epoca || p.epoca === this.opcoes().epoca));
+  protected readonly seitas = computed(() => (this.linha() && this.opcoes().tipo === 'vampiro' ? seitasDe(this.linha()!) : []));
+
+  /** Clãs, tribos ou organizações para escolher. */
+  protected readonly grupos = computed(() => {
+    const l = this.linha();
+    const o = this.opcoes();
+    if (!l) return [];
+    if (o.tipo === 'vampiro' || o.tipo === 'carnical') return (l.clas ?? []).filter((c) => c.disciplinas.length && (!o.seita || c.seita.includes(o.seita))).map((c) => ({ id: c.id, nome: c.nome }));
+    if (o.tipo === 'lobisomem') return (l.tribos ?? []).map((t) => ({ id: t.id, nome: t.nome }));
+    if (o.tipo === 'cacador') return (l.organizacoes ?? []).map((t) => ({ id: t.id, nome: t.nome }));
+    return [];
+  });
+  protected readonly rotuloGrupo = computed(() => ({ vampiro: 'Clã', carnical: 'Clã do senhor', lobisomem: 'Tribo', cacador: 'Organização', mortal: '', bestiario: '' })[this.opcoes().tipo]);
+  protected readonly auspicios = computed(() => this.linha()?.auspicios ?? []);
+  protected readonly racas = computed(() => this.linha()?.racas ?? []);
+
+  protected readonly poderesLista = computed(() => (this.linha() ? poderesDisponiveis(this.linha()!, this.opcoes()) : []));
+  protected readonly rotuloPoderes = computed(() => ({ vampiro: 'Disciplinas', carnical: 'Disciplinas', lobisomem: 'Dons', cacador: 'Numina', mortal: '', bestiario: '' })[this.opcoes().tipo]);
+
+  protected readonly gruposAtributos = computed(() => {
+    const l = this.linha();
+    if (!l) return [];
+    return [
+      { nome: 'Físicos', itens: l.atributos.fisicos },
+      { nome: 'Sociais', itens: l.atributos.sociais },
+      { nome: 'Mentais', itens: l.atributos.mentais },
+    ];
+  });
+
+  protected readonly resumoLinhagem = computed(() => {
+    const o = this.opcoes();
+    const nome = this.grupos().find((g) => g.id === o.grupo)?.nome;
+    const partes = [o.seita, nome, this.auspicios().find((a) => a.id === o.auspicio)?.nome, this.racas().find((r) => r.id === o.raca)?.nome].filter(Boolean);
+    return partes.length ? partes.join(' · ') : 'Aleatório';
+  });
+  protected readonly resumoPoderes = computed(() => {
+    const n = this.opcoes().poderes.length;
+    return n ? `${n} fixado(s)` : 'Aleatório';
+  });
+  protected readonly resumoAtributos = computed(() => {
+    const o = this.opcoes();
+    const p = PERFIS.find((x) => x.id === o.perfil)?.nome ?? '';
+    const n = Object.keys(o.atributos).length;
+    return n ? `${p} · ${n} fixo(s)` : p;
+  });
+  protected readonly resumoHistoria = computed(() => {
+    const o = this.opcoes();
+    const papel = this.papeis().find((p) => p.id === o.papel)?.nome;
+    const at = ATITUDES.find((a) => a.id === o.atitude)?.nome;
+    return [papel, at].filter(Boolean).join(' · ') || 'Aleatório';
+  });
+
+  protected readonly avisoLivro = computed(() => {
+    const o = this.opcoes();
+    if (o.tipo === 'bestiario') return '';
+    return this.config.ativo(linhaDoNpc(o)) ? '' : 'Esse livro está desativado no Início, mas o gerador usa mesmo assim.';
+  });
+
+  protected nomeAtitude(id: AtitudeId): string {
+    return ATITUDES.find((a) => a.id === id)?.nome ?? '';
+  }
+  protected nomeNivel(id: PoderNpc): string {
+    return this.niveis.find((n) => n.id === id)?.nome ?? '';
+  }
+  protected bolinhas(n: number): string {
+    return '●'.repeat(Math.max(0, n));
+  }
+  protected poderFixado(chave: string): boolean {
+    return this.opcoes().poderes.includes(chave);
+  }
+  protected travada(p: ParteNpc): boolean {
+    return this.travas().has(p);
   }
 
+  // ---------- mudar escolhas ----------
+
+  private mudar(parcial: Partial<OpcoesNpc>, gerarDeNovo = true): void {
+    this.opcoes.update((o) => ({ ...o, ...parcial }));
+    if (gerarDeNovo) this.gerar();
+  }
+
+  protected escolherTipo(t: TipoNpc): void {
+    const epoca = t === 'cacador' ? 'moderno' : this.opcoes().epoca;
+    this.travas.set(new Set());
+    this.mudar({ tipo: t, epoca, grupo: '', seita: '', auspicio: '', raca: '', poderes: [], papel: '' });
+  }
+  protected escolherEpoca(e: 'moderno' | 'medieval'): void {
+    this.mudar({ epoca: e, grupo: '', seita: '', poderes: [], papel: '' });
+  }
+  protected escolherPoder(p: PoderNpc): void {
+    this.mudar({ poder: p });
+  }
+  protected escolherSeita(s: string): void {
+    this.mudar({ seita: s, grupo: '', poderes: [] });
+  }
+  protected escolherGrupo(id: string): void {
+    // os Dons dependem da tribo; as Disciplinas fixadas continuam valendo
+    const poderes = this.opcoes().tipo === 'lobisomem' ? [] : this.opcoes().poderes;
+    this.mudar({ grupo: id, poderes });
+  }
+  protected escolherAuspicio(id: string): void {
+    this.mudar({ auspicio: id, poderes: [] });
+  }
+  protected escolherRaca(id: string): void {
+    this.mudar({ raca: id, poderes: [] });
+  }
+  protected alternarPoder(chave: string): void {
+    const atual = this.opcoes().poderes;
+    if (atual.includes(chave)) this.mudar({ poderes: atual.filter((x) => x !== chave) });
+    else if (atual.length < MAX_PODERES) this.mudar({ poderes: [...atual, chave] });
+    else this.aviso.set(`Dá para fixar até ${MAX_PODERES} poderes.`);
+  }
+  protected limparPoderes(): void {
+    this.mudar({ poderes: [] });
+  }
+  protected escolherPerfil(p: PerfilId): void {
+    this.mudar({ perfil: p });
+  }
+  protected fixarAtributo(id: string, v: number): void {
+    const atual = { ...this.opcoes().atributos };
+    if (atual[id] === v || v === 0) delete atual[id];
+    else atual[id] = v;
+    this.mudar({ atributos: atual });
+  }
+  protected limparAtributos(): void {
+    this.mudar({ atributos: {} });
+  }
+  protected escolherPapel(id: string): void {
+    const p = this.papeis().find((x) => x.id === id);
+    if (!p || this.opcoes().papel === id) this.mudar({ papel: '' });
+    else this.mudar({ papel: id, perfil: p.perfil, poder: p.poder });
+  }
+  protected escolherAtitude(a: AtitudeId | ''): void {
+    this.mudar({ atitude: a });
+  }
+  protected escolherQuantidade(q: number): void {
+    this.mudar({ quantidade: q });
+  }
+  protected escolherCriatura(id: string): void {
+    this.mudar({ criatura: id });
+  }
+  protected alternarTrava(p: ParteNpc): void {
+    this.travas.update((s) => {
+      const c = new Set(s);
+      if (c.has(p)) c.delete(p);
+      else c.add(p);
+      return c;
+    });
+  }
+  protected limparTudo(): void {
+    this.travas.set(new Set());
+    this.avancado.set(false);
+    this.mudar({ ...OPCOES_PADRAO, tipo: this.opcoes().tipo, epoca: this.opcoes().epoca });
+  }
+
+  // ---------- gerar ----------
+
+  private async preparar(): Promise<{ l: Linha | null; ger: Geradores }> {
+    const o = this.opcoes();
+    const ger = this.ger ?? (this.ger = await this.data.geradores());
+    if (o.tipo === 'bestiario') {
+      if (!this.criaturas().length) this.criaturas.set(await this.data.bestiario());
+      this.linha.set(null);
+      return { l: null, ger };
+    }
+    const l = await this.data.linha(linhaDoNpc(o));
+    this.linha.set(l);
+    return { l, ger };
+  }
+
+  private um(l: Linha | null, ger: Geradores, o: OpcoesNpc, usados: Set<string>): NpcGerado | null {
+    if (o.tipo === 'bestiario') {
+      const lista = this.criaturas();
+      const c = lista.find((x) => x.id === o.criatura) ?? lista[Math.floor(Math.random() * lista.length)];
+      return c ? gerarDeCriatura(c, ger, o, usados) : null;
+    }
+    return l ? gerarNpc(l, ger, o, usados) : null;
+  }
+
+  /** Gera um NPC (ou um grupo) novo com as escolhas atuais. */
   protected async gerar(): Promise<void> {
     try {
-      const [linha, ger] = await Promise.all([this.data.linha(this.linhaId()), this.data.geradores()]);
-      this.npc.set(this.montar(linha, ger));
+      const { l, ger } = await this.preparar();
+      const o = this.opcoes();
+      const usados = new Set<string>();
+      const lista: NpcGerado[] = [];
+      const qtd = Math.max(1, Math.min(6, o.quantidade));
+      if (qtd === 1) {
+        const n = this.um(l, ger, o, usados);
+        if (n) lista.push(n);
+      } else {
+        // o líder é um nível mais forte; o resto segue o mesmo clã, tribo ou organização
+        const lider = this.um(l, ger, { ...o, poder: subirPoder(o.poder) }, usados);
+        if (lider) {
+          lista.push({ ...lider, lider: true });
+          const mesmo: OpcoesNpc = { ...o, grupo: lider.grupoId || o.grupo, criatura: o.tipo === 'bestiario' ? lider.grupoId : o.criatura };
+          for (let i = 1; i < qtd; i++) {
+            const n = this.um(l, ger, mesmo, usados);
+            if (n) lista.push(n);
+          }
+        }
+      }
+      this.gerados.set(lista);
+      this.atualId.set(lista[0]?.id ?? '');
+      this.travas.set(new Set());
+      this.rolagem.set(null);
       this.erro.set('');
+      this.aviso.set('');
     } catch {
       this.erro.set('Não consegui carregar os dados do gerador.');
     }
   }
 
-  private montar(l: Linha, ger: Geradores): NpcGerado {
-    const t = this.tipo();
-    const p = this.poder();
-    const nomes = this.epoca() === 'medieval' ? ger.npc.nomesMedievais : ger.npc.nomesModernos;
-
-    // grupo (clã, tribo, organização)
-    let grupo = '';
-    let poderes: string[] = [];
-    const escolherGrupo = <T extends { id: string; nome: string }>(lista: T[]): T | undefined => {
-      if (this.travado() && this.grupoTravado) {
-        const achado = lista.find((x) => x.id === this.grupoTravado);
-        if (achado) return achado;
-      }
-      const g = lista.length ? sorteio(lista) : undefined;
-      this.grupoTravado = g?.id ?? '';
-      return g;
-    };
-    const nomeDis = (id: string) => l.disciplinas?.find((d) => d.id === id)?.nome ?? id;
-
-    if (t === 'vampiro' || t === 'carnical') {
-      const clas = (l.clas ?? []).filter((c) => c.disciplinas.length);
-      const c = escolherGrupo(clas);
-      if (c) {
-        if (t === 'vampiro') {
-          grupo = c.nome;
-          poderes = c.disciplinas.map((d, i) => ({ d, n: NIVEIS_DIS[p][i] ?? 0 })).filter((x) => x.n > 0).map((x) => `${nomeDis(x.d)} ${'●'.repeat(x.n)}`);
-        } else {
-          grupo = `Carniçal de ${c.nome}`;
-          poderes = [`${nomeDis(sorteio(c.disciplinas))} ●`];
-        }
-      }
-    } else if (t === 'lobisomem') {
-      const tribo = escolherGrupo(l.tribos ?? []);
-      const ausp = l.auspicios?.length ? sorteio(l.auspicios) : undefined;
-      const raca = l.racas?.length ? sorteio(l.racas) : undefined;
-      grupo = [tribo?.nome, ausp?.nome, raca?.nome].filter(Boolean).join(' · ');
-      const nivelMax = p === 'capanga' ? 1 : p === 'neofito' ? 2 : 4;
-      const dons = (l.dons ?? []).filter((d) => d.nivel <= nivelMax && d.grupos.some((g) => g === tribo?.id || g === ausp?.id || g === raca?.id));
-      const qtd = p === 'capanga' ? 2 : p === 'neofito' ? 3 : 5;
-      poderes = [...dons].sort(() => Math.random() - 0.5).slice(0, qtd).map((d) => `${d.nome} (${d.nivel})`);
-      poderes.unshift(`Fúria ${Math.min(10, (ausp?.furia ?? 3) + (p === 'anciao' ? 3 : 0))}`, `Gnose ${Math.min(10, (raca?.gnose ?? 3) + (p === 'anciao' ? 3 : 0))}`);
-    } else if (t === 'cacador') {
-      const org = escolherGrupo(l.organizacoes ?? []);
-      grupo = org?.nome ?? 'Caçador independente';
-      if (p !== 'capanga' && l.numina?.length) {
-        const n = sorteio(l.numina);
-        poderes = [`${n.nome} ${'●'.repeat(p === 'anciao' ? 3 : 1)}`];
-      }
-    } else {
-      const ocupacoes = this.epoca() === 'medieval' ? ger.medieval.nome.b.opcoes : ger.moderno.nome.b.opcoes;
-      grupo = sorteio(ocupacoes.length ? ocupacoes : ['Mortal']);
+  /** Rola de novo só o NPC aberto, mantendo as partes travadas. */
+  protected async rolarDeNovo(): Promise<void> {
+    const atual = this.atual();
+    if (!atual) return;
+    try {
+      const { l, ger } = await this.preparar();
+      const travas = this.travas();
+      let o = opcoesComTravas({ ...this.opcoes(), poder: atual.poder }, atual, travas);
+      if (atual.tipo === 'bestiario') o = { ...o, criatura: atual.grupoId };
+      const usados = new Set(this.gerados().map((n) => n.nome));
+      const novo = this.um(l, ger, o, usados);
+      if (!novo) return;
+      const r = aplicarTravas(novo, atual, travas);
+      this.gerados.update((lista) => lista.map((n) => (n.id === atual.id ? r : n)));
+      if (this.ehSalvo()) this.salvos.salvar(r);
+      this.rolagem.set(null);
+    } catch {
+      this.erro.set('Não consegui carregar os dados do gerador.');
     }
+  }
 
-    // atributos
-    const grupos = [l.atributos.fisicos, l.atributos.sociais, l.atributos.mentais].sort(() => Math.random() - 0.5);
-    const max = p === 'anciao' && t === 'vampiro' ? 6 : 5;
-    const valores = new Map<string, number>();
-    grupos.forEach((g, i) => {
-      for (const a of g) valores.set(a.id, 1);
-      let resto = PONTOS[p][i];
-      let guarda = 0;
-      while (resto > 0 && guarda++ < 100) {
-        const a = sorteio(g);
-        const v = valores.get(a.id)!;
-        if (v < max) {
-          valores.set(a.id, v + 1);
-          resto--;
-        }
-      }
-    });
-    const va = (id: string) => valores.get(id) ?? 2;
-    const [h1, h2] = HAB[p];
-    const briga = entre(h1, h2);
-    const esquiva = entre(h1, h2);
-    const prontidao = entre(h1, h2);
-    const fv = p === 'capanga' ? entre(2, 4) : p === 'neofito' ? entre(4, 6) : entre(7, 9);
+  protected abrir(n: NpcGerado): void {
+    this.atualId.set(n.id);
+    this.rolagem.set(null);
+  }
 
-    const atributos = [...l.atributos.fisicos, ...l.atributos.sociais, ...l.atributos.mentais].map((a) => ({ nome: a.nome.slice(0, 3), valor: va(a.id) }));
-    const arq = l.arquetipos.length ? l.arquetipos : [{ nome: '—' }];
-    return {
-      nome: sorteio(nomes.length ? nomes : ['Sem nome']),
-      linha: l.nome,
-      grupo,
-      natureza: sorteio(arq).nome,
-      comportamento: sorteio(arq).nome,
-      atributos,
-      paradas: [
-        { k: 'Ataque', v: va('destreza') + briga },
-        { k: 'Esquiva', v: va('destreza') + esquiva },
-        { k: 'Percepção', v: va('percepcao') + prontidao },
-        { k: 'F. Vont.', v: fv },
-      ],
-      poderes: poderes.length ? poderes : ['Sem poderes sobrenaturais'],
-      jeito: sorteio(ger.npc.jeitos),
-      segredo: sorteio(ger.npc.segredos),
-      gancho: sorteio(ger.npc.ganchos),
-    };
+  protected abrirSalvo(n: NpcGerado): void {
+    this.gerados.set([n]);
+    this.atualId.set(n.id);
+    this.travas.set(new Set());
+    this.rolagem.set(null);
+    this.verSalvos.set(false);
+    window.scrollTo({ top: 0 });
+  }
+
+  // ---------- ações do NPC ----------
+
+  protected async rolarNpc(r: RolagemAlvo): Promise<void> {
+    const n = this.atual();
+    const valores = await this.d3.rolar(r.dados);
+    this.rolagem.set({ rotulo: `${n?.nome ?? ''} · ${r.nome} (${r.dados} dados, dif. ${r.dificuldade})`, r: avaliar(valores, r.dificuldade) });
+  }
+
+  protected alternarSalvo(): void {
+    const n = this.atual();
+    if (!n) return;
+    if (this.ehSalvo()) this.salvos.remover(n.id);
+    else this.salvos.salvar(n);
+  }
+
+  protected salvarGrupo(): void {
+    for (const n of [...this.gerados()].reverse()) this.salvos.salvar(n);
+    this.aviso.set(`${this.gerados().length} NPCs guardados em NPCs da crônica.`);
   }
 
   protected salvarEmNotas(): void {
-    const n = this.npc();
+    const n = this.atual();
     if (!n) return;
-    const texto = [
-      `${n.grupo} · ${n.linha}`,
-      `Natureza: ${n.natureza} · Comportamento: ${n.comportamento}`,
-      `Atributos: ${n.atributos.map((a) => `${a.nome} ${a.valor}`).join(', ')}`,
-      `Paradas: ${n.paradas.map((p) => `${p.k} ${p.v}`).join(' · ')}`,
-      `Poderes: ${n.poderes.join(', ')}`,
-      `Jeito: ${n.jeito}`,
-      `Segredo: ${n.segredo}`,
-      `Gancho: ${n.gancho}`,
-    ].join('\n');
-    const nota = this.notas.criar({ tipo: 'npc', titulo: n.nome, texto });
+    const nota = this.notasSrv.criar({ tipo: 'npc', titulo: n.nome, texto: this.texto() });
     this.router.navigate(['/notas', nota.id]);
+  }
+
+  protected async virarFicha(): Promise<void> {
+    const n = this.atual();
+    if (!n?.linhaId) return;
+    const l = await this.data.linha(n.linhaId);
+    const f = fichaDeNpc(n, l);
+    this.fichas.adicionar(f);
+    this.router.navigate(['/ficha', f.id]);
+  }
+
+  protected removerSalvo(n: NpcGerado): void {
+    this.salvos.remover(n.id);
+  }
+
+  protected listaHab(n: NpcGerado): string {
+    return n.habilidades.map((h) => `${h.nome} ${h.valor}`).join(', ');
   }
 }

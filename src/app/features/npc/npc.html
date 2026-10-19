@@ -1,74 +1,304 @@
 <div class="page">
-  <div class="spread" style="align-items: center">
+  <div class="spread" style="align-items: center; flex-wrap: wrap">
     <h1>NPC rápido</h1>
     <span class="row-wrap">
+      <button type="button" class="btn btn-sm" [attr.aria-pressed]="verSalvos()" (click)="verSalvos.set(!verSalvos())"><app-icon name="salvar" [size]="16" />NPCs da crônica ({{ salvos.npcs().length }})</button>
       <a routerLink="/geradores" class="btn btn-sm">Geradores</a>
       <a routerLink="/mapas" class="btn btn-sm">Mapas</a>
       <a routerLink="/bestiario" class="btn btn-sm">Bestiário</a>
-      <a routerLink="/rolador" class="btn btn-sm">Rolador</a>
     </span>
   </div>
+
+  @if (verSalvos()) {
+    <section class="card-plain">
+      <h2>NPCs da crônica</h2>
+      @if (!salvos.npcs().length) {
+        <p class="small muted">Nenhum NPC guardado ainda. Gere um e toque em "Guardar".</p>
+      }
+      @for (n of salvos.npcs(); track n.id) {
+        <div class="row" style="border-bottom: 1px solid var(--line); min-height: 54px">
+          <button type="button" class="list-link grow" style="border: 0" (click)="abrirSalvo(n)">
+            <span class="col grow" style="gap: 2px">
+              <strong>{{ n.nome }}</strong>
+              <span class="tiny muted">{{ n.grupo }}{{ n.papel ? ' · ' + n.papel : '' }}{{ n.tipo !== 'bestiario' ? ' · ' + nomeNivel(n.poder) : '' }}</span>
+            </span>
+            <span [class]="'tag atitude-' + n.atitude">{{ nomeAtitude(n.atitude) }}</span>
+          </button>
+          <button type="button" class="btn btn-icon btn-sm" [attr.aria-label]="'Apagar ' + n.nome" (click)="removerSalvo(n)"><app-icon name="lixo" [size]="16" /></button>
+        </div>
+      }
+    </section>
+  }
 
   <div class="panels">
     <div class="col">
       <div class="chips" role="group" aria-label="Tipo de NPC">
         @for (t of tipos; track t.id) {
-          <button type="button" class="chip" [attr.aria-pressed]="tipo() === t.id" (click)="escolherTipo(t.id)">{{ t.nome }}</button>
+          <button type="button" class="chip" [attr.aria-pressed]="opcoes().tipo === t.id" (click)="escolherTipo(t.id)">{{ t.nome }}</button>
         }
       </div>
+      @if (!bestiario()) {
       <div class="seg" role="group" aria-label="Nível de poder">
-        @for (p of poderes; track p.id) {
-          <button type="button" [attr.aria-pressed]="poder() === p.id" (click)="poder.set(p.id); gerar()">{{ p.nome }}</button>
+        @for (p of niveis; track p.id) {
+          <button type="button" [attr.aria-pressed]="opcoes().poder === p.id" (click)="escolherPoder(p.id)">{{ p.nome }}</button>
         }
       </div>
-      @if (tipo() !== 'cacador') {
+      }
+      @if (opcoes().tipo !== 'cacador') {
         <div class="seg" role="group" aria-label="Época">
-          <button type="button" [attr.aria-pressed]="epoca() === 'moderno'" (click)="epoca.set('moderno'); gerar()">Noites modernas</button>
-          <button type="button" [attr.aria-pressed]="epoca() === 'medieval'" (click)="epoca.set('medieval'); gerar()">Idade das Trevas</button>
+          <button type="button" [attr.aria-pressed]="opcoes().epoca === 'moderno'" (click)="escolherEpoca('moderno')">Noites modernas</button>
+          <button type="button" [attr.aria-pressed]="opcoes().epoca === 'medieval'" (click)="escolherEpoca('medieval')">Idade das Trevas</button>
         </div>
       }
+      <div class="row" style="flex-wrap: wrap">
+        <span class="small grow">Quantos de uma vez</span>
+        <div class="passos" role="group" aria-label="Quantidade de NPCs">
+          @for (q of [1, 2, 3, 4, 5, 6]; track q) {
+            <button type="button" [attr.aria-pressed]="opcoes().quantidade === q" (click)="escolherQuantidade(q)">{{ q }}</button>
+          }
+        </div>
+      </div>
+      @if (opcoes().quantidade > 1) { <span class="tiny muted">Grupo: o primeiro é o líder (um nível mais forte) e todos são do mesmo clã, tribo ou organização.</span> }
+
+      <h2 style="font-size: 20px; margin-top: 4px">Escolher antes de rolar</h2>
+      <span class="tiny muted" style="margin-top: -6px">O que ficar em "Aleatório" é sorteado.</span>
+
+      @if (bestiario()) {
+        <section class="card-plain">
+          <label class="col" style="gap: 6px">
+            <span class="small" style="font-weight: 600">Criatura de base</span>
+            <select class="select" name="criatura" [ngModel]="opcoes().criatura" (ngModelChange)="escolherCriatura($event)">
+              <option value="">Aleatória</option>
+              @for (c of criaturas(); track c.id) { <option [value]="c.id">{{ c.nome }} ({{ c.categoria }})</option> }
+            </select>
+          </label>
+          <span class="tiny muted">Pega a criatura do bestiário e varia nome, aparência, valores e, quando o livro manda escolher, quais poderes ela tem.</span>
+        </section>
+      } @else {
+        <!-- Papel e atitude -->
+        <details class="card-plain" open>
+          <summary>Papel e atitude <span class="row" style="gap: 6px"><span class="resumo-escolha">{{ resumoHistoria() }}</span><app-icon name="baixo" [size]="18" /></span></summary>
+          @if (papeis().length) {
+            <span class="tiny muted">O papel já ajusta o perfil e o nível de poder. Dá para mudar depois.</span>
+            <div class="chips" role="group" aria-label="Papel na história">
+              @for (p of papeis(); track p.id) {
+                <button type="button" class="chip" [attr.aria-pressed]="opcoes().papel === p.id" (click)="escolherPapel(p.id)">{{ p.nome }}</button>
+              }
+            </div>
+          }
+          <span class="small" style="font-weight: 600">Com o grupo</span>
+          <div class="chips" role="group" aria-label="Atitude com o grupo">
+            <button type="button" class="chip" [attr.aria-pressed]="opcoes().atitude === ''" (click)="escolherAtitude('')">Aleatória</button>
+            @for (a of atitudes; track a.id) {
+              <button type="button" class="chip" [attr.aria-pressed]="opcoes().atitude === a.id" (click)="escolherAtitude(a.id)">{{ a.nome }}</button>
+            }
+          </div>
+        </details>
+
+        <!-- Linhagem -->
+        @if (rotuloGrupo()) {
+          <details class="card-plain">
+            <summary>{{ rotuloGrupo() }}{{ opcoes().tipo === 'lobisomem' ? ', augúrio e raça' : '' }} <span class="row" style="gap: 6px"><span class="resumo-escolha">{{ resumoLinhagem() }}</span><app-icon name="baixo" [size]="18" /></span></summary>
+            @if (seitas().length > 1) {
+              <div class="chips" role="group" aria-label="Seita">
+                <button type="button" class="chip" [attr.aria-pressed]="opcoes().seita === ''" (click)="escolherSeita('')">Qualquer seita</button>
+                @for (s of seitas(); track s) {
+                  <button type="button" class="chip" [attr.aria-pressed]="opcoes().seita === s" (click)="escolherSeita(s)">{{ s }}</button>
+                }
+              </div>
+            }
+            <div class="chips" role="group" [attr.aria-label]="rotuloGrupo()">
+              <button type="button" class="chip" [attr.aria-pressed]="opcoes().grupo === ''" (click)="escolherGrupo('')">Aleatório</button>
+              @for (g of grupos(); track g.id) {
+                <button type="button" class="chip" [attr.aria-pressed]="opcoes().grupo === g.id" (click)="escolherGrupo(g.id)">{{ g.nome }}</button>
+              }
+            </div>
+            @if (opcoes().tipo === 'lobisomem') {
+              <span class="small" style="font-weight: 600">Augúrio</span>
+              <div class="chips" role="group" aria-label="Augúrio">
+                <button type="button" class="chip" [attr.aria-pressed]="opcoes().auspicio === ''" (click)="escolherAuspicio('')">Aleatório</button>
+                @for (a of auspicios(); track a.id) {
+                  <button type="button" class="chip" [attr.aria-pressed]="opcoes().auspicio === a.id" (click)="escolherAuspicio(a.id)">{{ a.nome }}</button>
+                }
+              </div>
+              <span class="small" style="font-weight: 600">Raça</span>
+              <div class="chips" role="group" aria-label="Raça">
+                <button type="button" class="chip" [attr.aria-pressed]="opcoes().raca === ''" (click)="escolherRaca('')">Aleatória</button>
+                @for (r of racas(); track r.id) {
+                  <button type="button" class="chip" [attr.aria-pressed]="opcoes().raca === r.id" (click)="escolherRaca(r.id)">{{ r.nome }}</button>
+                }
+              </div>
+            }
+          </details>
+        }
+
+        <!-- Poderes -->
+        @if (poderesLista().length) {
+          <details class="card-plain">
+            <summary>{{ rotuloPoderes() }} <span class="row" style="gap: 6px"><span class="resumo-escolha">{{ resumoPoderes() }}</span><app-icon name="baixo" [size]="18" /></span></summary>
+            <span class="tiny muted">
+              Marque até 3 que ele tem que ter; o resto completa sozinho.
+              @if (opcoes().tipo === 'vampiro' || opcoes().tipo === 'carnical') { As do clã escolhido aparecem primeiro, em dourado. }
+            </span>
+            <div class="chips" role="group" [attr.aria-label]="rotuloPoderes() + ' obrigatórios'" style="max-height: 220px; overflow-y: auto">
+              @for (p of poderesLista(); track p.chave) {
+                <button type="button" class="chip" [style.border-color]="p.doGrupo && opcoes().grupo ? 'var(--gold)' : null" [attr.aria-pressed]="poderFixado(p.chave)" (click)="alternarPoder(p.chave)">{{ p.nome }}</button>
+              }
+            </div>
+            @if (opcoes().poderes.length) { <button type="button" class="btn btn-sm" style="align-self: flex-start" (click)="limparPoderes()">Limpar poderes</button> }
+          </details>
+        }
+
+        <!-- Perfil e atributos -->
+        <details class="card-plain">
+          <summary>Perfil e atributos <span class="row" style="gap: 6px"><span class="resumo-escolha">{{ resumoAtributos() }}</span><app-icon name="baixo" [size]="18" /></span></summary>
+          <div class="perfis" role="group" aria-label="Perfil">
+            @for (p of perfis; track p.id) {
+              <button type="button" class="perfil" [attr.aria-pressed]="opcoes().perfil === p.id" (click)="escolherPerfil(p.id)">{{ p.nome }}<span>{{ p.desc }}</span></button>
+            }
+          </div>
+          <label class="check"><input type="checkbox" [checked]="avancado()" (change)="avancado.set(!avancado())" />Fixar atributos à mão</label>
+          @if (avancado()) {
+            <span class="tiny muted">Toque num número para fixar; toque de novo para voltar ao sorteio. Os outros são sorteados com os pontos que sobrarem.</span>
+            @for (g of gruposAtributos(); track g.nome) {
+              <span class="eyebrow" style="font-size: 11px; margin-top: 4px">{{ g.nome }}</span>
+              @for (a of g.itens; track a.id) {
+                <div class="atr-linha">
+                  <span class="small">{{ a.nome }}</span>
+                  <div class="passos" role="group" [attr.aria-label]="a.nome">
+                    @for (v of [1, 2, 3, 4, 5]; track v) {
+                      <button type="button" [attr.aria-pressed]="opcoes().atributos[a.id] === v" (click)="fixarAtributo(a.id, v)">{{ v }}</button>
+                    }
+                  </div>
+                </div>
+              }
+            }
+            @if (resumoAtributos().includes('fixo')) { <button type="button" class="btn btn-sm" style="align-self: flex-start" (click)="limparAtributos()">Limpar atributos</button> }
+          }
+        </details>
+      }
+
+      <div class="row">
+        <button type="button" class="btn btn-primary btn-big grow" (click)="gerar()"><app-icon name="npc" />{{ opcoes().quantidade > 1 ? 'Gerar grupo' : 'Gerar NPC' }}</button>
+        <button type="button" class="btn btn-big" (click)="limparTudo()">Limpar escolhas</button>
+      </div>
       @if (avisoLivro()) { <span class="tiny muted">{{ avisoLivro() }}</span> }
+      @if (aviso()) { <p class="card card-gold small" role="status">{{ aviso() }}</p> }
       @if (erro()) { <p class="card card-red small">{{ erro() }}</p> }
     </div>
 
-    @if (npc(); as n) {
-      <article class="card">
-        <div class="row" style="align-items: flex-start">
-          <div class="col grow" style="gap: 3px">
-            <h2 style="font-size: 30px">{{ n.nome }}</h2>
-            <span class="small" style="color: var(--text-3)">{{ n.grupo }} · {{ poderes.find(p => p.id === poder())?.nome }}</span>
+    <div class="col">
+      @if (gerados().length > 1) {
+        <section class="col" style="gap: 6px" aria-label="NPCs do grupo">
+          <div class="spread" style="align-items: center">
+            <span class="eyebrow">O grupo ({{ gerados().length }})</span>
+            <button type="button" class="btn btn-sm" (click)="salvarGrupo()"><app-icon name="salvar" [size]="16" />Guardar todos</button>
           </div>
-          @if (tipo() !== 'mortal') {
-            <button type="button" class="btn btn-icon" [class.btn-gold]="travado()" [attr.aria-pressed]="travado()" [attr.aria-label]="travado() ? 'Destravar clã, tribo ou organização' : 'Travar clã, tribo ou organização ao gerar de novo'" (click)="travado.set(!travado())">
-              <app-icon [name]="travado() ? 'cadeado' : 'aberto'" />
+          @for (n of gerados(); track n.id) {
+            <button type="button" class="mini" [attr.aria-pressed]="atual()?.id === n.id" (click)="abrir(n)">
+              <span class="col grow" style="gap: 1px">
+                <strong class="small">{{ n.nome }}{{ n.lider ? ' (líder)' : '' }}</strong>
+                <span class="tiny muted">{{ n.grupo }}{{ n.tipo !== 'bestiario' ? ' · ' + nomeNivel(n.poder) : '' }}</span>
+              </span>
+              <span [class]="'tag atitude-' + n.atitude">{{ nomeAtitude(n.atitude) }}</span>
             </button>
           }
-        </div>
-        <div class="grid-2">
-          <div class="tile col" style="gap: 2px"><span class="eyebrow" style="font-size: 11px">Natureza</span><strong class="small">{{ n.natureza }}</strong></div>
-          <div class="tile col" style="gap: 2px"><span class="eyebrow" style="font-size: 11px">Comportamento</span><strong class="small">{{ n.comportamento }}</strong></div>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px">
-          @for (p of n.paradas; track p.k) {
-            <div class="col" style="align-items: center; gap: 2px; padding: 8px 4px; border-radius: 10px; border: 1px solid var(--line-2)">
-              <strong class="red" style="font-size: 22px">{{ p.v }}</strong><span class="tiny muted">{{ p.k }}</span>
+        </section>
+      }
+
+      @if (atual(); as n) {
+        <article class="card">
+          <div class="col" style="gap: 3px">
+            <div class="spread" style="align-items: flex-start; gap: 8px">
+              <h2 style="font-size: 30px">{{ n.nome }}</h2>
+              <span [class]="'tag atitude-' + n.atitude" style="margin-top: 8px">{{ nomeAtitude(n.atitude) }}</span>
+            </div>
+            <span class="small" style="color: var(--text-3)">{{ n.grupo }}{{ n.papel ? ' · ' + n.papel : '' }}{{ n.tipo !== 'bestiario' ? ' · ' + nomeNivel(n.poder) : '' }}{{ n.lider ? ' · líder' : '' }}</span>
+            <span class="tiny muted">{{ n.linha }}</span>
+          </div>
+
+          <div class="col" style="gap: 6px">
+            <span class="tiny muted">Trave o que gostou e role de novo só o resto:</span>
+            <div class="chips" role="group" aria-label="Partes travadas">
+              @for (p of partes; track p.id) {
+                @if (!(n.tipo === 'bestiario' && (p.id === 'linhagem' || p.id === 'personalidade'))) {
+                  <button type="button" class="trava" [attr.aria-pressed]="travada(p.id)" (click)="alternarTrava(p.id)"><app-icon [name]="travada(p.id) ? 'cadeado' : 'aberto'" [size]="14" />{{ p.nome }}</button>
+                }
+              }
+            </div>
+          </div>
+
+          @if (n.natureza) {
+            <div class="grid-2">
+              <div class="tile col" style="gap: 2px"><span class="eyebrow" style="font-size: 11px">Natureza</span><strong class="small">{{ n.natureza }}</strong></div>
+              <div class="tile col" style="gap: 2px"><span class="eyebrow" style="font-size: 11px">Comportamento</span><strong class="small">{{ n.comportamento }}</strong></div>
             </div>
           }
-        </div>
-        <div class="grid-3 tiny">
-          @for (a of n.atributos; track a.nome) { <span class="tile spread"><span class="muted">{{ a.nome }}</span><strong>{{ a.valor }}</strong></span> }
-        </div>
-        <div class="chips">
-          @for (p of n.poderes; track p) { <span class="tag">{{ p }}</span> }
-        </div>
-        <p class="small"><strong class="gold">Jeito:</strong> {{ n.jeito }}</p>
-        <p class="small"><strong class="gold">Segredo:</strong> {{ n.segredo }}</p>
-        <p class="small"><strong class="gold">Gancho:</strong> {{ n.gancho }}</p>
-        <div class="row">
-          <button type="button" class="btn btn-primary btn-big grow" (click)="gerar()"><app-icon name="npc" />Gerar outro</button>
-          <button type="button" class="btn btn-big" (click)="salvarEmNotas()"><app-icon name="notas" />Salvar em notas</button>
-        </div>
-      </article>
-    }
+
+          <div style="display: grid; gap: 6px" [style.grid-template-columns]="'repeat(' + paradas().length + ', minmax(0, 1fr))'">
+            @for (p of paradas(); track p.k) {
+              <div class="col" style="align-items: center; gap: 2px; padding: 8px 4px; border-radius: 10px; border: 1px solid var(--line-2)">
+                <strong class="red" style="font-size: 22px">{{ p.v }}</strong><span class="tiny muted">{{ p.k }}</span>
+              </div>
+            }
+          </div>
+
+          <div class="grid-3 tiny">
+            @for (a of n.atributos; track a.id) { <span class="tile spread"><span class="muted">{{ a.nome.slice(0, 3) }}</span><strong>{{ a.valor }}</strong></span> }
+          </div>
+          @if (n.habilidades.length) {
+            <p class="tiny" style="line-height: 1.6"><strong class="gold">Habilidades:</strong> {{ listaHab(n) }}</p>
+          }
+          <div class="chips">
+            @for (e of n.extras; track e.id) { <span class="tag tag-gray">{{ e.nome }} {{ e.valor }}</span> }
+          </div>
+
+          @if (n.poderes.length) {
+            <div class="col" style="gap: 4px">
+              <span class="eyebrow" style="font-size: 11px">Poderes</span>
+              @for (p of n.poderes; track p.nome) {
+                @if (p.aba) {
+                  <a class="small" style="text-decoration: none" routerLink="/biblioteca" [queryParams]="{ aba: p.aba, q: p.nome }" [attr.title]="p.desc"><strong>{{ p.nome }}</strong>&nbsp;@if (p.aba === 'dons') {<span class="tiny muted">nível {{ p.nivel }}</span>} @else {<span class="red">{{ bolinhas(p.nivel ?? 0) }}</span>}</a>
+                } @else {
+                  <span class="small"><strong>{{ p.nome }}</strong>@if (p.desc) {<span class="muted">: {{ p.desc }}</span>}</span>
+                }
+              }
+            </div>
+          } @else {
+            <span class="tiny muted">Sem poderes sobrenaturais.</span>
+          }
+
+          <div class="col" style="gap: 4px">
+            <span class="eyebrow" style="font-size: 11px">Aparência</span>
+            <span class="small">{{ n.aparencia.idade }}; {{ n.aparencia.roupa }}; {{ n.aparencia.detalhe }}.</span>
+            @if (n.aparencia.abraco) { <span class="tiny muted">{{ n.aparencia.abraco }}.</span> }
+          </div>
+          <p class="small"><strong class="gold">Jeito:</strong> {{ n.jeito }}</p>
+          <p class="small"><strong class="gold">Por que se importa com o grupo:</strong> {{ n.motivacao }}</p>
+          <p class="small"><strong class="gold">Segredo:</strong> {{ n.segredo }}</p>
+          <p class="small"><strong class="gold">Gancho:</strong> {{ n.gancho }}</p>
+          @for (t of n.notas; track t) { <p class="tiny muted">{{ t }}</p> }
+
+          <div class="col" style="gap: 6px">
+            <span class="eyebrow" style="font-size: 11px">Rolar direto</span>
+            <div class="rolagens">
+              @for (r of rolagens(); track r.nome) {
+                <button type="button" class="rolar-npc" (click)="rolarNpc(r)">{{ r.nome }}<span>{{ r.formula }} · {{ r.dados }}d · dif. {{ r.dificuldade }}</span></button>
+              }
+            </div>
+            @if (rolagem(); as ro) { <app-resultado [r]="ro.r" [rotulo]="ro.rotulo" /> }
+          </div>
+
+          <div class="row" style="flex-wrap: wrap">
+            <button type="button" class="btn btn-primary btn-big grow" (click)="rolarDeNovo()"><app-icon name="npc" />{{ travas().size ? 'Rolar de novo o destravado' : 'Rolar este de novo' }}</button>
+            <button type="button" class="btn btn-big" [class.btn-gold]="ehSalvo()" [attr.aria-pressed]="ehSalvo()" (click)="alternarSalvo()"><app-icon name="salvar" />{{ ehSalvo() ? 'Guardado' : 'Guardar' }}</button>
+          </div>
+          <div class="row" style="flex-wrap: wrap">
+            <button type="button" class="btn grow" (click)="salvarEmNotas()"><app-icon name="notas" />Mandar para as notas</button>
+            @if (n.linhaId) { <button type="button" class="btn grow" (click)="virarFicha()"><app-icon name="fichas" />Virar ficha completa</button> }
+          </div>
+        </article>
+      }
+    </div>
   </div>
 </div>

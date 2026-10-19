@@ -20,6 +20,11 @@ export class FichasService {
     return f;
   }
 
+  /** Guarda uma ficha montada fora do passo a passo (ex.: NPC que virou ficha). */
+  adicionar(f: Ficha): void {
+    this.salvarLista([f, ...this._fichas()]);
+  }
+
   salvar(f: Ficha): void {
     const atualizada = { ...f, atualizadaEm: new Date().toISOString() };
     this.salvarLista(this._fichas().map((x) => (x.id === f.id ? atualizada : x)));

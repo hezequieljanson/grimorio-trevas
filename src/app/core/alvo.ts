@@ -23,7 +23,7 @@ export interface RolagemAlvo {
 }
 
 /** Primeiro número de um texto ("3+" → 3). Em faixas ("1–3") usa o maior. */
-function numero(v: string | number | undefined): number | null {
+export function numero(v: string | number | undefined): number | null {
   if (typeof v === 'number') return v;
   if (!v) return null;
   const nums = String(v).match(/\d+/g);
@@ -37,7 +37,7 @@ function chave(t: string): string {
 }
 
 /** "Briga 1–3, Esquiva 1" → mapa nome → valor. */
-function lerHabilidades(texto?: string): Map<string, { nome: string; valor: number; faixa: boolean }> {
+export function lerHabilidades(texto?: string): Map<string, { nome: string; valor: number; faixa: boolean }> {
   const m = new Map<string, { nome: string; valor: number; faixa: boolean }>();
   if (!texto) return m;
   for (const parte of texto.split(/[,;]/)) {
