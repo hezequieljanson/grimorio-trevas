@@ -31,9 +31,13 @@ function lerCookie(req, nome) {
 
 export default async function middleware(req) {
   const senha = process.env.SITE_SENHA;
+  const url = new URL(req.url);
+  // Diagnóstico: diz se o portão está rodando e se achou a senha (nunca mostra a senha).
+  if (url.pathname === '/portao') {
+    return new Response(JSON.stringify({ portao: 'rodando', senhaConfigurada: !!senha }), { headers: { 'content-type': 'application/json', 'cache-control': 'no-store' } });
+  }
   if (!senha) return seguir();
 
-  const url = new URL(req.url);
   const certa = await chaveDe(senha);
 
   if (url.pathname === '/entrar' && req.method === 'POST') {
